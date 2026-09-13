@@ -1,3 +1,5 @@
+import { verifiedSample } from "./sample-state.js";
+import { accountParameterNames } from "./configuration.js";
 import { getCatalogueEntry } from "../../src/catalogue/index.js";
 import { TOOL_ENTRY_IDS } from "../../src/server.js";
 import { bindSweepInputs, createSweepRequester } from "./request.js";
@@ -12,6 +14,7 @@ export async function runNightly(
   request: (bound: BoundCatalogueRequest) => Promise<RawOutcome> = createSweepRequester(),
 ) {
   const bound = bindSweepInputs(inputs);
+  const expectedEmpty = new Set((inputs as Array<{ entryId: string; expectEmpty?: boolean }>).filter(row => row.expectEmpty).map(row => row.entryId));
   const requests = new Map(bound.map(item => [item.entryId, item]));
   const expected = [...new Set<string>(Object.values(TOOL_ENTRY_IDS))].sort();
   const baselined = new Set(baseline.entries.map(entry => entry.entryId));
@@ -21,10 +24,15 @@ export async function runNightly(
       ?? getCatalogueEntry(item.entryId).measured?.authTier
       ?? getCatalogueEntry(item.entryId).declared.authTier ?? "public",
     variantKey: item.variantKey,
+    validateEmpty: (body: unknown) => verifiedSample(item.entryId, body, item.variantKey),
   })), entry => request(requests.get(entry.entryId)!));
   const plan = planDriftIssues(baseline, run);
   const observed = new Set(run.observations.map(item => item.entryId));
   const coverage = {
+    sampleCoverage: run.observations.filter(item => accountParameterNames(item.entryId).size > 0
+      && ((item.reason === "empty_result" && !expectedEmpty.has(item.entryId))
+        || (item.shapeCompared && expectedEmpty.has(item.entryId))))
+      .map(item => ({ entryId: item.entryId, reason: item.reason === "empty_result" ? "empty_sample" : "populated_sample" })),
     callable: expected.length,
     configured: bound.length,
     swept: run.entriesSwept,
@@ -36,7 +44,7 @@ export async function runNightly(
     plan,
     coverage,
     complete: run.status === "completed" && coverage.unconfigured.length === 0
-      && coverage.unbaselined.length === 0,
+      && coverage.unbaselined.length === 0 && coverage.sampleCoverage.length === 0,
   };
 }
 

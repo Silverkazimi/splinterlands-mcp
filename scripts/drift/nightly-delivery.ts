@@ -24,6 +24,6 @@ export function publishNightly(result: Awaited<ReturnType<typeof runNightly>>, b
   }
   if (!result.complete && !result.plan.run.blockedEndpoints && result.plan.run.status !== "aborted") {
     publishMaintenanceIssue(repository, "nightly-coverage", "Nightly maintenance coverage",
-      JSON.stringify(summary.coverage, null, 2), run);
+      "Sample coverage gaps are not proof of an API failure or a holdings change. Review sample selection and expected empty states.\n\n" + JSON.stringify(summary.coverage, null, 2), run);
   }
 }
