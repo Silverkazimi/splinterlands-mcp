@@ -18,6 +18,9 @@ The initial release is being prepared. No release has been published from this w
 
 ### Corrected during pre-release verification
 
+- HTTP deadlines cover response-body consumption as well as headers; stalled bodies terminate within the bounded retry policy.
+- TTL caches evict old entries at fixed capacities, preventing unbounded growth across unique collection queries. HTTP identification uses the public package metadata.
+
 - Wrapped upstream errors, authentication gates, blocked requests, malformed results and ambiguous empty responses remain distinct.
 - Observed query parameters, nullable fields and route-specific pagination are represented without overstating specification accuracy.
 - Plot labels, numeric plot references and deed identifiers retain verified relationships and observation times.

@@ -794,3 +794,10 @@ Production guidance targets current Node.js 22 and 24 LTS patches; minimum engin
 ## Maintained lint toolchain
 
 The clean-install audit reported ESLint 9 as end-of-life. ESLint 10.10, @eslint/js 10.0.1 and typescript-eslint 8.70 replace the retired lint toolchain. The shared Node minimum is 22.13 to cover their documented requirements. One redundant initializer was removed under the new recommended rule; runtime behavior is unchanged. Sources: https://eslint.org/version-support/ and https://typescript-eslint.io/users/dependency-versions/ (checked 2026-09-13).
+
+
+## HTTP response lifecycle and cache retention
+
+The per-attempt HTTP deadline covers both headers and body consumption. Transport or body-stream failure follows the existing bounded retry policy and releases the host slot. A regression uses a body that never closes unless its request signal is aborted.
+
+TTL expiration alone does not bound retained unique query keys. The shared cache now purges expired entries on insertion and uses least-recently-used eviction with a default capacity of 128. Metadata is limited to eight entries and projected collection pages to 64. Eviction can require a later re-fetch; it does not extend freshness or imply complete history. These are server retention policies, not upstream API limits.

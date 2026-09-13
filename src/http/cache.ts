@@ -11,7 +11,9 @@ type Entry<Value> = {
 export class TtlCache<Value> {
   private readonly entries = new Map<string, Entry<Value>>();
 
-  constructor(private readonly now: () => number = Date.now) {}
+  constructor(private readonly now: () => number = Date.now, private readonly maxEntries = 128) {
+    if (!Number.isInteger(maxEntries) || maxEntries < 1) throw new RangeError("Cache capacity must be a positive integer");
+  }
 
   get(key: string): Value | undefined {
     const entry = this.entries.get(key);
@@ -22,6 +24,8 @@ export class TtlCache<Value> {
       this.entries.delete(key);
       return undefined;
     }
+    this.entries.delete(key);
+    this.entries.set(key, entry);
     return entry.value;
   }
 
@@ -29,7 +33,13 @@ export class TtlCache<Value> {
     if (!Number.isFinite(ttlMs) || ttlMs <= 0) {
       throw new RangeError("TTL must be a positive finite number");
     }
-    this.entries.set(key, { value, expiresAt: this.now() + ttlMs });
+    const now = this.now();
+    for (const [existingKey, entry] of this.entries) {
+      if (entry.expiresAt <= now) this.entries.delete(existingKey);
+    }
+    this.entries.delete(key);
+    while (this.entries.size >= this.maxEntries) this.entries.delete(this.entries.keys().next().value!);
+    this.entries.set(key, { value, expiresAt: now + ttlMs });
   }
 
   ttl(key: string): number | undefined {

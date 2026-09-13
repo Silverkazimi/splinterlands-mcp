@@ -485,8 +485,8 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   registerHiveTools(server, client, new HermesHiveReader(clientOptions.fetch, clientOptions.timeoutMs));
   registerLineupEstimator(server);
   const now = clientOptions.now ?? Date.now;
-  const metadataCache = new TtlCache<CachedMetadata>(now);
-  const collectionCache = new TtlCache<CachedCollection>(now);
+  const metadataCache = new TtlCache<CachedMetadata>(now, 8);
+  const collectionCache = new TtlCache<CachedCollection>(now, 64);
   const loadCardDefinitions = createCardDefinitionLoader(client, now);
   registerScenarioSnapshot(server, client, loadCardDefinitions, now);
   const landDeedByPlotInputSchema = inputSchemaFor(LAND_DEED_BY_PLOT_ENTRY_ID).extend({ plot_id: plotIdOrLabelSchema });

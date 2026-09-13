@@ -1,3 +1,4 @@
+import packageInfo from "../../package.json" with { type: "json" };
 import {
   BlockTracker,
   cachedAuthOutcome,
@@ -164,8 +165,8 @@ export class SplinterlandsHttpClient {
     this.fetchImpl = options.fetch ?? globalThis.fetch.bind(globalThis);
     this.timeoutMs = options.timeoutMs ?? DEFAULT_TIMEOUT_MS;
     this.responseCapBytes = Math.min(options.responseCapBytes ?? DEFAULT_RESPONSE_CAP, DEFAULT_RESPONSE_CAP);
-    const version = options.version ?? "0.0.0";
-    const repositoryUrl = options.repositoryUrl ?? "https://github.com/OWNER/splinterlands-mcp";
+    const version = options.version ?? packageInfo.version;
+    const repositoryUrl = options.repositoryUrl ?? packageInfo.repository.url;
     this.userAgent = `splinterlands-mcp/${version} (+${repositoryUrl})`;
   }
 
@@ -342,6 +343,8 @@ export class SplinterlandsHttpClient {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), this.timeoutMs);
     let response: Response;
+    let retrievedAt: number;
+    let bodyResult: Awaited<ReturnType<typeof readBody>>;
     try {
       response = await this.fetchImpl(url.toString(), {
         method: "GET",
@@ -349,14 +352,14 @@ export class SplinterlandsHttpClient {
         headers: { Accept: "application/json", "User-Agent": this.userAgent },
         signal: controller.signal,
       });
+      retrievedAt = this.now();
+      bodyResult = await readBody(response, this.responseCapBytes);
     } catch {
       this.breaker.recordFailure(host);
       return { retry: attempt < 2, value: timeoutError(endpoint, this.now()) as HttpResult<Value> };
     } finally {
       clearTimeout(timer);
     }
-    const retrievedAt = this.now();
-    const bodyResult = await readBody(response, this.responseCapBytes);
     if (bodyResult.tooLarge) {
       return {
         retry: false,
