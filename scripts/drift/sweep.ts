@@ -40,7 +40,8 @@ export async function sweep(
       isJson: outcome.isJson,
     });
     const kind = classified.ok ? "success" : classified.kind;
-    const statusIsSuccess = classified.ok && outcome.isJson;
+    const statusIsSuccess = classified.ok && outcome.isJson
+      && (!isEmptyResult(outcome.body) || !entry.validateEmpty || entry.validateEmpty(outcome.body));
     const empty = statusIsSuccess && isEmptyResult(outcome.body);
     const observation: SweepObservation = {
       entryId: entry.entryId,

@@ -1,3 +1,6 @@
+import { classifyResponse, isEmptyResult } from "../../src/http/errors.js";
+import { accountParameterNames } from "./configuration.js";
+import { fixtureIsEmpty, verifiedSample } from "./sample-state.js";
 import { bindSweepInputs, createSweepRequester } from "./request.js";
 import { sanitizeFixture } from "./sanitize-fixture.js";
 import { planFixtureRenewal, type FixtureRenewalPair, RENEWAL_HOLD_FLOOR } from "./renewal.js";
@@ -25,6 +28,7 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
   });
   const failed: Array<{ fixturePath: string; reason: "response" | "review" }> = [];
   const pairs: FixtureRenewalPair[] = [];
+  const coverageGaps: Array<{ fixturePath: string; entryId: string; reason: "empty_sample" | "populated_sample" }> = [];
   const blocked = new Set<string>();
   let reads = 0;
   for (const [index, input] of inputs.entries()) {
@@ -32,9 +36,18 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
     const outcome = await request(binding);
     reads++;
     if (outcome.status === 403) blocked.add(binding.entryId);
-    if (outcome.status < 200 || outcome.status >= 300 || !outcome.isJson) {
+    const classified = classifyResponse({ host: binding.hostname, endpoint: binding.endpointTemplate,
+      status: outcome.status, body: outcome.body, isJson: outcome.isJson });
+    if (!classified.ok || !outcome.isJson) {
       failed.push({ fixturePath: input.fixturePath, reason: "response" });
       if (blocked.size >= 2) break;
+      continue;
+    }
+    const empty = isEmptyResult(outcome.body);
+    if (accountParameterNames(input.entryId).size > 0 && empty !== fixtureIsEmpty(input.existing)
+      && verifiedSample(input.entryId, outcome.body, input.variantKey)) {
+      coverageGaps.push({ fixturePath: input.fixturePath, entryId: input.entryId,
+        reason: empty ? "empty_sample" : "populated_sample" });
       continue;
     }
     try {
@@ -54,7 +67,7 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
   }
   const plan = planFixtureRenewal(pairs, { observedOn: observedAt.slice(0, 10) });
   // Failed or unreviewed captures must not disappear from the batch hold denominator.
-  const holdCount = failed.length + plan.outcomes.filter(outcome => outcome === "hold").length;
+  const holdCount = coverageGaps.length + failed.length + plan.outcomes.filter(outcome => outcome === "hold").length;
   const holdFraction = holdCount / inputs.length;
   const aborted = blocked.size >= 2;
   const blockedByHoldFloor = aborted || holdFraction > RENEWAL_HOLD_FLOOR;
@@ -63,6 +76,6 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
       writes: blockedByHoldFloor ? [] : plan.decisions.filter(decision => decision.outcome === "refresh")
         .map(decision => ({ path: decision.fixturePath, contents: JSON.stringify(decision.recaptured, null, 2) + "\n" })),
       pendingWrites: blockedByHoldFloor ? [] : plan.pendingWrites },
-    failed, reads, total: inputs.length, aborted,
+    failed, coverageGaps, reads, total: inputs.length, aborted,
   };
 }

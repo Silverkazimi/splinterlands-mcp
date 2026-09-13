@@ -54,3 +54,13 @@ Store the resulting arrays in MCP_DRIFT_INPUTS and MCP_FIXTURE_INPUTS repository
     npm run drift:fixtures -- --validate-only
 
 Validation prints only role names and coverage metadata, never resolved account values. Missing roles, unresolved values or partial coverage exit unsuccessfully. Publish mode also refuses missing role secrets before making API calls. Passing validation establishes parameter binding and coverage, not live success or population suitability. Run the hosted workflows manually after configuration and inspect their results and any review PRs before release.
+
+## Changing live account holdings
+
+The account roles are sampling categories, not promises that a player keeps fixed assets. Small means a modest nonempty Land holding, medium means hundreds of plots and large means thousands; the empty role supplies an intentionally empty Land sample. Owners may buy, sell or move assets normally.
+
+Offline regression tests use fixed fixtures. Live jobs compare API behavior and sample coverage without expecting fixed balances or plot counts. A successful, contract-valid change between populated and empty fixture data preserves the original fixture and creates a sample-coverage review. It does not generate an API-shape failure for that transition. A wrapped error, invalid response or unverified shape remains a response or contract review problem.
+
+Nightly recipes may set expectEmpty: true for an intentionally empty account-scoped sample. An unexpected empty result, or population where an empty result was expected, appears under sampleCoverage separately from API drift. Empty responses must satisfy the known endpoint contract before they qualify. Coverage gaps can make the maintenance job require attention; that is not a server outage or proof that somebody sold their assets.
+
+Monthly sample gaps count toward the existing batch hold threshold, so a batch losing substantial representative evidence cannot replace fixtures automatically. Both the old populated fixture and the old empty fixture remain usable offline. Review the account/query selection and supply another approved sample where needed. No account replacement or additional discovery queries are automatic, and these checks do not establish the reason for a holdings change.

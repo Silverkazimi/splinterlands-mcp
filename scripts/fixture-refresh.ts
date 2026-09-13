@@ -46,17 +46,21 @@ async function main() {
   const report = {
     reads: result.reads, configured: result.total, ...coverage,
     aborted: result.aborted, holdFraction: result.plan.holdFraction,
-    held: result.plan.blockedByHoldFloor, failed: result.failed,
+    held: result.plan.blockedByHoldFloor, failed: result.failed, sampleCoverage: result.coverageGaps,
     refreshes: result.plan.writes.length, pending: result.plan.pendingWrites.length,
   };
   console.log(JSON.stringify(report));
   if (publish) {
-    if (result.failed.length > 0 || result.plan.blockedByHoldFloor || unconfigured.length > 0) {
+    if (result.coverageGaps.length > 0) {
+      publishMaintenanceIssue(repository, "fixture-sample-coverage", "Fixture sample coverage needs review",
+        "Successful responses no longer match the fixture's empty/populated sample state. Original fixtures are preserved. Review the sample account or query; this is not evidence of an API failure or proof of a sale.\n\n" + JSON.stringify(result.coverageGaps, null, 2));
+    }
+    if (result.failed.length > 0 || (result.plan.blockedByHoldFloor && result.coverageGaps.length === 0) || unconfigured.length > 0) {
       publishMaintenanceIssue(repository, "fixture-review", "Fixture renewal review", JSON.stringify(report, null, 2));
     }
     await deliverFixtures(process.cwd(), repository, process.env.GITHUB_RUN_ID ?? "", result.plan);
   }
-  if (result.failed.length > 0 || result.plan.blockedByHoldFloor || unconfigured.length > 0) process.exitCode = 1;
+  if (result.failed.length > 0 || result.plan.blockedByHoldFloor || result.coverageGaps.length > 0 || unconfigured.length > 0) process.exitCode = 1;
 }
 main().catch(() => {
   console.error("Fixture renewal failed; configuration and response details are withheld.");

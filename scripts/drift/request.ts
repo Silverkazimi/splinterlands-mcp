@@ -9,6 +9,7 @@ const inputSchema = z.array(z.object({
   entryId: z.string().min(1),
   params: z.record(z.union([z.string().max(1000), z.number().finite(), z.boolean()])),
   variantKey: z.string().optional(),
+  expectEmpty: z.boolean().optional(),
 }).strict()).min(1).max(200);
 const callable = new Set<string>(Object.values(TOOL_ENTRY_IDS));
 export const SWEEP_RESPONSE_CAP = 2 * 1024 * 1024;

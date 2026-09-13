@@ -70,6 +70,7 @@ export type SweepEntry = {
   pathTemplate: string;
   authBaseline: "public" | "requires_auth" | "blocked";
   variantKey?: string;
+  validateEmpty?: (body: unknown) => boolean;
 };
 
 export type RawOutcome = {

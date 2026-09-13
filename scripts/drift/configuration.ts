@@ -9,6 +9,7 @@ const rowSchema = z.object({
   params: z.record(z.union([scalar, z.object({ accountRole: roleSchema }).strict()])),
   variantKey: z.string().optional(),
   fixturePath: z.string().optional(),
+  expectEmpty: z.boolean().optional(),
 }).strict();
 const configSchema = z.array(rowSchema).min(1).max(512);
 

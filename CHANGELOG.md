@@ -18,6 +18,8 @@ The initial release is being prepared. No release has been published from this w
 
 ### Corrected during pre-release verification
 
+- Valid empty/populated account sample changes preserve fixtures and are reported as maintenance coverage gaps rather than API failures; intentionally empty nightly samples are explicit.
+
 - HTTP deadlines cover response-body consumption as well as headers; stalled bodies terminate within the bounded retry policy.
 - TTL caches evict old entries at fixed capacities, preventing unbounded growth across unique collection queries. HTTP identification uses the public package metadata.
 
