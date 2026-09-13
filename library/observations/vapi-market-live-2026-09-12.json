@@ -1,0 +1,141 @@
+{
+  "observedAt": "2026-09-12T09:58:26.175Z",
+  "registeredTools": 131,
+  "results": [
+    {
+      "name": "vapi_market_landing",
+      "args": {},
+      "isError": false,
+      "keys": [
+        "status",
+        "data"
+      ],
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 979
+      },
+      "provenance": {
+        "endpoint": "/market/landing",
+        "traceId": "f77a380a-7dbb-4881-86b6-bb7779dbc4c6",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:58:24.366Z",
+          "ageMs": 699
+        },
+        "requestScope": {}
+      }
+    },
+    {
+      "name": "vapi_market_landing",
+      "args": {
+        "assets": "PACKS,LAND"
+      },
+      "isError": false,
+      "keys": [
+        "status",
+        "data"
+      ],
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 18,
+        "upstreamRows": 18
+      },
+      "provenance": {
+        "endpoint": "/market/landing",
+        "traceId": "94a6a4e0-2ebe-4c5f-b5c7-305cde99c32e",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:58:25.322Z",
+          "ageMs": 0
+        },
+        "requestScope": {
+          "assets": "PACKS,LAND"
+        }
+      }
+    },
+    {
+      "name": "vapi_market_estimated_price",
+      "args": {
+        "asset": "PACKS",
+        "detailId": "ALPHA"
+      },
+      "isError": false,
+      "keys": [
+        "status",
+        "data"
+      ],
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "provenance": {
+        "endpoint": "/market/estimated-price",
+        "traceId": "1c77bac0-ded1-486f-814e-f25f7646a007",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:58:25.486Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "asset": "PACKS",
+          "detailId": "ALPHA"
+        }
+      }
+    },
+    {
+      "name": "vapi_market_asset_metadata",
+      "args": {
+        "assetName": "PACKS",
+        "detailIds": "ALPHA,BETA"
+      },
+      "isError": false,
+      "keys": [
+        "status",
+        "data"
+      ],
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "provenance": {
+        "endpoint": "/market/meta/asset/{assetName}",
+        "traceId": "089e9341-6b5a-4210-a157-a27fdfa6c690",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:58:25.690Z",
+          "ageMs": 2
+        },
+        "requestScope": {
+          "assetName": "PACKS",
+          "detailIds": "ALPHA,BETA"
+        }
+      }
+    },
+    {
+      "name": "vapi_market_asset_metadata",
+      "args": {
+        "assetName": "SKINS"
+      },
+      "isError": false,
+      "keys": [
+        "status",
+        "data"
+      ],
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 788
+      },
+      "provenance": {
+        "endpoint": "/market/meta/asset/{assetName}",
+        "traceId": "8e6476f8-be67-4ebc-8a90-9ad8e80b3042",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:58:25.921Z",
+          "ageMs": 223
+        },
+        "requestScope": {
+          "assetName": "SKINS"
+        }
+      }
+    }
+  ]
+}

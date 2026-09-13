@@ -1,0 +1,96 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:08:28.290318+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/guilds/brawl_sps_rewards",
+    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.total_sps_payout": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].monthly_pool": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].cycle_t1_pool": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].cycle_t2_pool": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].cycle_t3_pool": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].cycle_t4_pool": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].cycle_t5_pool": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t1_num_brawls": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t2_num_brawls": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t3_num_brawls": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t4_num_brawls": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t5_num_brawls": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t1_num_guilds": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t2_num_guilds": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t3_num_guilds": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t4_num_guilds": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].t5_num_guilds": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].total_sps_payout": {
+      "valueClass": "numeric"
+    },
+    "body.sps_reward_records[0].months_remaining": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "total_sps_payout": 62864011.077,
+    "sps_reward_records": [
+      {
+        "cycle": 383,
+        "monthly_pool": 1260000,
+        "cycle_t1_pool": 21000,
+        "cycle_t2_pool": 31500,
+        "cycle_t3_pool": 42000,
+        "cycle_t4_pool": 52500,
+        "cycle_t5_pool": 63000,
+        "t1_num_brawls": 10,
+        "t2_num_brawls": 13,
+        "t3_num_brawls": 10,
+        "t4_num_brawls": 5,
+        "t5_num_brawls": 3,
+        "t1_num_guilds": 96,
+        "t2_num_guilds": 125,
+        "t3_num_guilds": 100,
+        "t4_num_guilds": 50,
+        "t5_num_guilds": 23,
+        "total_sps_payout": 153207.923,
+        "months_remaining": 51
+      }
+    ]
+  }
+}

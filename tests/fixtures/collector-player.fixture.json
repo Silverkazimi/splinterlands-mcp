@@ -1,0 +1,91 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-13T09:33:50.239250+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/collector/{player}",
+    "captureScope": "Complete captured response without transformed values.",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.player": {
+      "valueClass": "name"
+    },
+    "body.data.hasBinder": {
+      "valueClass": "enum"
+    },
+    "body.data.binders[0].id": {
+      "valueClass": "id"
+    },
+    "body.data.binders[0].player": {
+      "valueClass": "name"
+    },
+    "body.data.binders[0].name": {
+      "valueClass": "freetext"
+    },
+    "body.data.binders[0].slug": {
+      "valueClass": "id"
+    },
+    "body.data.binders[0].displayIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.binders[0].pageCount": {
+      "valueClass": "numeric"
+    },
+    "body.data.binders[0].cardCount": {
+      "valueClass": "numeric"
+    },
+    "body.data.binders[0].lastSavedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data.binders[0].coverCosmeticId": {
+      "valueClass": "id"
+    },
+    "body.data.binders[0].ringStyle": {
+      "valueClass": "opaque"
+    },
+    "body.data.binders[0].version": {
+      "valueClass": "numeric"
+    },
+    "body.data.binders[0].unseenGiftCount": {
+      "valueClass": "numeric"
+    },
+    "body.data.selectedBinderId": {
+      "valueClass": "id"
+    },
+    "body.data.tabletopBackgroundId": {
+      "valueClass": "id"
+    },
+    "body.data.blockVisitorStickerPlacement": {
+      "valueClass": "enum"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "player": "sample-account-b",
+      "hasBinder": true,
+      "binders": [
+        {
+          "id": "123",
+          "player": "sample-account-b",
+          "name": "Power Cards",
+          "slug": "power-cards",
+          "displayIndex": 0,
+          "pageCount": 3,
+          "cardCount": 27,
+          "lastSavedDate": "2026-07-07T19:22:02.715Z",
+          "coverCosmeticId": "22",
+          "ringStyle": "black",
+          "version": 43,
+          "unseenGiftCount": 0
+        }
+      ],
+      "selectedBinderId": "123",
+      "tabletopBackgroundId": "3",
+      "blockVisitorStickerPlacement": false
+    }
+  }
+}

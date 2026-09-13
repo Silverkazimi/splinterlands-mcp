@@ -1,0 +1,283 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "sourceUrl": "https://vapi.splinterlands.com/market/player/activity",
+    "observedAt": "2026-09-12T13:55:48.509108+00:00",
+    "captureScope": "Up to three original list rows; activity additionally retains one observed sale row. Complete object response. No field values transformed.",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].id": {
+      "valueClass": "id"
+    },
+    "body.data[0].trxId": {
+      "valueClass": "id"
+    },
+    "body.data[0].purchaseSource": {
+      "valueClass": "name"
+    },
+    "body.data[0].seller": {
+      "valueClass": "name"
+    },
+    "body.data[0].buyer": {
+      "valueClass": "name"
+    },
+    "body.data[0].detailId": {
+      "valueClass": "id"
+    },
+    "body.data[0].itemId": {
+      "valueClass": "id"
+    },
+    "body.data[0].quantity": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].usdValue": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].price": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[0].fee": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].feeCurrency": {
+      "valueClass": "enum"
+    },
+    "body.data[0].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].type": {
+      "valueClass": "enum"
+    },
+    "body.data[0].detailName": {
+      "valueClass": "name"
+    },
+    "body.data[1].id": {
+      "valueClass": "id"
+    },
+    "body.data[1].trxId": {
+      "valueClass": "id"
+    },
+    "body.data[1].purchaseSource": {
+      "valueClass": "name"
+    },
+    "body.data[1].seller": {
+      "valueClass": "name"
+    },
+    "body.data[1].buyer": {
+      "valueClass": "name"
+    },
+    "body.data[1].detailId": {
+      "valueClass": "id"
+    },
+    "body.data[1].itemId": {
+      "valueClass": "id"
+    },
+    "body.data[1].quantity": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].usdValue": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].price": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[1].fee": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].feeCurrency": {
+      "valueClass": "enum"
+    },
+    "body.data[1].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[1].type": {
+      "valueClass": "enum"
+    },
+    "body.data[1].detailName": {
+      "valueClass": "name"
+    },
+    "body.data[2].id": {
+      "valueClass": "id"
+    },
+    "body.data[2].trxId": {
+      "valueClass": "id"
+    },
+    "body.data[2].purchaseSource": {
+      "valueClass": "name"
+    },
+    "body.data[2].seller": {
+      "valueClass": "name"
+    },
+    "body.data[2].buyer": {
+      "valueClass": "name"
+    },
+    "body.data[2].detailId": {
+      "valueClass": "id"
+    },
+    "body.data[2].itemId": {
+      "valueClass": "id"
+    },
+    "body.data[2].quantity": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].usdValue": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].price": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[2].fee": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].feeCurrency": {
+      "valueClass": "enum"
+    },
+    "body.data[2].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[2].type": {
+      "valueClass": "enum"
+    },
+    "body.data[2].detailName": {
+      "valueClass": "name"
+    },
+    "body.data[3].id": {
+      "valueClass": "id"
+    },
+    "body.data[3].trxId": {
+      "valueClass": "id"
+    },
+    "body.data[3].purchaseSource": {
+      "valueClass": "name"
+    },
+    "body.data[3].seller": {
+      "valueClass": "name"
+    },
+    "body.data[3].buyer": {
+      "valueClass": "name"
+    },
+    "body.data[3].detailId": {
+      "valueClass": "id"
+    },
+    "body.data[3].itemId": {
+      "valueClass": "id"
+    },
+    "body.data[3].quantity": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].usdValue": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].price": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[3].fee": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].feeCurrency": {
+      "valueClass": "enum"
+    },
+    "body.data[3].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[3].type": {
+      "valueClass": "enum"
+    },
+    "body.data[3].detailName": {
+      "valueClass": "name"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": [
+      {
+        "id": 451724,
+        "trxId": "d3c28d6020ac691c7f0302b1d43d7977d75f8f88",
+        "purchaseSource": "sample-acct-081",
+        "seller": "sample-acct-074",
+        "buyer": "sample-account-b",
+        "detailId": "298",
+        "itemId": "I-298-05f56f6805c232",
+        "quantity": 1,
+        "usdValue": 15,
+        "price": 15000,
+        "currency": "CREDITS",
+        "fee": 2642.3959999999997,
+        "feeCurrency": "DEC",
+        "createdDate": "2026-08-26T14:57:27.000Z",
+        "type": "purchase",
+        "detailName": "Canyon"
+      },
+      {
+        "id": 451723,
+        "trxId": "d3c28d6020ac691c7f0302b1d43d7977d75f8f88",
+        "purchaseSource": "sample-acct-081",
+        "seller": "sample-acct-074",
+        "buyer": "sample-account-b",
+        "detailId": "298",
+        "itemId": "I-298-bbcac19c30c525",
+        "quantity": 1,
+        "usdValue": 15,
+        "price": 15000,
+        "currency": "CREDITS",
+        "fee": 2642.3959999999997,
+        "feeCurrency": "DEC",
+        "createdDate": "2026-08-26T14:57:27.000Z",
+        "type": "purchase",
+        "detailName": "Canyon"
+      },
+      {
+        "id": 451722,
+        "trxId": "d3c28d6020ac691c7f0302b1d43d7977d75f8f88",
+        "purchaseSource": "sample-acct-081",
+        "seller": "sample-acct-074",
+        "buyer": "sample-account-b",
+        "detailId": "298",
+        "itemId": "I-298-ccb8d7d082f95f",
+        "quantity": 1,
+        "usdValue": 15,
+        "price": 15000,
+        "currency": "CREDITS",
+        "fee": 2642.3959999999997,
+        "feeCurrency": "DEC",
+        "createdDate": "2026-08-26T14:57:27.000Z",
+        "type": "purchase",
+        "detailName": "Canyon"
+      },
+      {
+        "id": 449688,
+        "trxId": "58838edc2c2abeef28694fcd9e3b4e434831f88d",
+        "purchaseSource": "sample-acct-092",
+        "seller": "sample-account-b",
+        "buyer": "sample-acct-070",
+        "detailId": "402",
+        "itemId": "402",
+        "quantity": 1,
+        "usdValue": 14.99,
+        "price": 43651.718,
+        "currency": "DEC",
+        "fee": 2619.103,
+        "feeCurrency": "DEC",
+        "createdDate": "2026-08-24T19:02:39.000Z",
+        "type": "sale",
+        "detailName": "Buttercup Mauler - Cyberpunk"
+      }
+    ]
+  }
+}

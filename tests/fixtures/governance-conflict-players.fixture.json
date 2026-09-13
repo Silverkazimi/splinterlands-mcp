@@ -1,0 +1,64 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:28:23.414554+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/players",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.reward_point_threshold": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player": {
+      "valueClass": "name"
+    },
+    "body.players[0].reward_points": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].progress_to_next": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].last_rp_update": {
+      "valueClass": "timestamp"
+    },
+    "body.players[0].rp_per_hour": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].leaderboard_placement": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].leaderboard_total_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].leaderboard_unclaimed_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].leaderboard_claimed_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].leaderboard_card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].leaderboard_skin_prizes": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "reward_point_threshold": 100000,
+    "players": [
+      {
+        "player": "sample-acct-100",
+        "reward_points": 22117,
+        "progress_to_next": 69284,
+        "last_rp_update": "2026-09-12T09:00:00.988Z",
+        "rp_per_hour": 5551792,
+        "leaderboard_placement": null,
+        "leaderboard_total_prizes": 0,
+        "leaderboard_unclaimed_prizes": 0,
+        "leaderboard_claimed_prizes": 0,
+        "leaderboard_card_prizes": 0,
+        "leaderboard_skin_prizes": 0
+      }
+    ]
+  }
+}

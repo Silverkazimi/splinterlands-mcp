@@ -1,0 +1,1650 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:32:20.719840+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/market/for_sale_packages",
+    "captureScope": "First three root rows; nested records retained unchanged."
+  },
+  "valueClasses": {
+    "body[0].id": {
+      "valueClass": "numeric"
+    },
+    "body[0].market_id": {
+      "valueClass": "id"
+    },
+    "body[0].seller": {
+      "valueClass": "opaque"
+    },
+    "body[0].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body[0].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[0].locked_by": {
+      "valueClass": "opaque"
+    },
+    "body[0].lock_block": {
+      "valueClass": "opaque"
+    },
+    "body[0].desc": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].player": {
+      "valueClass": "name"
+    },
+    "body[0].cards[0].xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].gold": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[0].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[0].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[0].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[0].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].set_id": {
+      "valueClass": "id"
+    },
+    "body[0].cards[0].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[0].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].player": {
+      "valueClass": "name"
+    },
+    "body[0].cards[1].xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].gold": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[1].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[1].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[1].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[1].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].set_id": {
+      "valueClass": "id"
+    },
+    "body[0].cards[1].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[1].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[1].mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].player": {
+      "valueClass": "name"
+    },
+    "body[0].cards[2].xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].gold": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[2].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[2].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[2].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[2].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].set_id": {
+      "valueClass": "id"
+    },
+    "body[0].cards[2].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[0].cards[2].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].cards[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[2].mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].id": {
+      "valueClass": "numeric"
+    },
+    "body[1].market_id": {
+      "valueClass": "id"
+    },
+    "body[1].seller": {
+      "valueClass": "opaque"
+    },
+    "body[1].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[1].currency": {
+      "valueClass": "opaque"
+    },
+    "body[1].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[1].locked_by": {
+      "valueClass": "opaque"
+    },
+    "body[1].lock_block": {
+      "valueClass": "opaque"
+    },
+    "body[1].desc": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].player": {
+      "valueClass": "name"
+    },
+    "body[1].cards[0].xp": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].gold": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[0].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[0].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[0].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[0].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].set_id": {
+      "valueClass": "id"
+    },
+    "body[1].cards[0].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[0].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].player": {
+      "valueClass": "name"
+    },
+    "body[1].cards[1].xp": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].gold": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].last_used_block": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[1].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[1].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[1].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[1].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].set_id": {
+      "valueClass": "id"
+    },
+    "body[1].cards[1].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[1].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[1].mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].player": {
+      "valueClass": "name"
+    },
+    "body[1].cards[2].xp": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].gold": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[2].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[2].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[2].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[2].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].set_id": {
+      "valueClass": "id"
+    },
+    "body[1].cards[2].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[1].cards[2].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].cards[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[2].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].id": {
+      "valueClass": "numeric"
+    },
+    "body[2].market_id": {
+      "valueClass": "id"
+    },
+    "body[2].seller": {
+      "valueClass": "opaque"
+    },
+    "body[2].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[2].currency": {
+      "valueClass": "opaque"
+    },
+    "body[2].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[2].locked_by": {
+      "valueClass": "opaque"
+    },
+    "body[2].lock_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].desc": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].player": {
+      "valueClass": "name"
+    },
+    "body[2].cards[0].xp": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].gold": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[0].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[0].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[0].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[0].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].set_id": {
+      "valueClass": "id"
+    },
+    "body[2].cards[0].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[0].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].player": {
+      "valueClass": "name"
+    },
+    "body[2].cards[1].xp": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].gold": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].last_used_block": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].alpha_xp": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[1].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[1].lock_days": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[1].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[1].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].set_id": {
+      "valueClass": "id"
+    },
+    "body[2].cards[1].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[1].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[1].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].player": {
+      "valueClass": "name"
+    },
+    "body[2].cards[2].xp": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].gold": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[2].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[2].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[2].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[2].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].set_id": {
+      "valueClass": "id"
+    },
+    "body[2].cards[2].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[2].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[2].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].uid": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].player": {
+      "valueClass": "name"
+    },
+    "body[2].cards[3].xp": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].gold": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[3].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[3].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[3].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[3].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].set_id": {
+      "valueClass": "id"
+    },
+    "body[2].cards[3].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[3].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[3].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[3].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].uid": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].player": {
+      "valueClass": "name"
+    },
+    "body[2].cards[4].xp": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].gold": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].last_transferred_block": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].last_used_player": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].last_used_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[4].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[4].lock_days": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[4].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[4].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].card_set": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].set_id": {
+      "valueClass": "id"
+    },
+    "body[2].cards[4].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[2].cards[4].survival_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].cards[4].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[4].mint": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": [
+    {
+      "id": 190153168,
+      "market_id": "79a60e026522fed61527b27ced7f3eb39f559011-0",
+      "seller": "sample-acct-061",
+      "buy_price": "0.150",
+      "currency": "USD",
+      "fee_percent": 600,
+      "locked_by": null,
+      "lock_block": null,
+      "desc": null,
+      "cards": [
+        {
+          "market_item_id": 190153168,
+          "uid": "C7-440-JPR9QGU0C0",
+          "card_detail_id": 440,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": null,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": null,
+          "last_used_date": null,
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 20,
+          "created_date": "2022-01-24T11:29:48.000Z",
+          "created_block": 61206628,
+          "created_tx": "14b8bf5e7945846f3f5f076966b635ad6b6d70c1",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "9.565",
+          "land_dec_stake_needed": 87,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        },
+        {
+          "market_item_id": 190153168,
+          "uid": "C7-440-MZBP5LZ4S0",
+          "card_detail_id": 440,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": null,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": null,
+          "last_used_date": null,
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 20,
+          "created_date": "2022-01-24T11:39:15.000Z",
+          "created_block": 61206813,
+          "created_tx": "efe05346c7512671e89a5deb828250785bfe9d1e",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "9.565",
+          "land_dec_stake_needed": 87,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        },
+        {
+          "market_item_id": 190153168,
+          "uid": "C7-440-UKLWGZXG74",
+          "card_detail_id": 440,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": null,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": null,
+          "last_used_date": null,
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 20,
+          "created_date": "2022-01-26T15:20:18.000Z",
+          "created_block": 61268674,
+          "created_tx": "b36efb6de5599d201afefe0e8aa2700f198fce8c",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "9.565",
+          "land_dec_stake_needed": 87,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        }
+      ]
+    },
+    {
+      "id": 190153171,
+      "market_id": "ac3d9a7a31b522b01c7f8df6ad37a7651808b3c6-0",
+      "seller": "sample-acct-061",
+      "buy_price": "0.100",
+      "currency": "USD",
+      "fee_percent": 600,
+      "locked_by": null,
+      "lock_block": null,
+      "desc": null,
+      "cards": [
+        {
+          "market_item_id": 190153171,
+          "uid": "C7-424-57GMXRBA7K",
+          "card_detail_id": 424,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": null,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": null,
+          "last_used_date": null,
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 5,
+          "created_date": "2023-05-02T08:45:24.000Z",
+          "created_block": 74511673,
+          "created_tx": "c23a7b233776750ebbeafc772384c51cda38cc72",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "2.500",
+          "land_dec_stake_needed": 25,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        },
+        {
+          "market_item_id": 190153171,
+          "uid": "C7-424-FCVG1V2YB4",
+          "card_detail_id": 424,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": 74503276,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": "sample-acct-061",
+          "last_used_date": "2023-05-02T01:45:25.005Z",
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 5,
+          "created_date": "2022-01-28T12:36:42.000Z",
+          "created_block": 61322888,
+          "created_tx": "39228b1f41962b97eafce2ec207ca4370a08496c",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "2.500",
+          "land_dec_stake_needed": 25,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        },
+        {
+          "market_item_id": 190153171,
+          "uid": "C7-424-H4VJPJJ2YO",
+          "card_detail_id": 424,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": null,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": null,
+          "last_used_date": null,
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 5,
+          "created_date": "2022-01-24T11:45:27.000Z",
+          "created_block": 61206937,
+          "created_tx": "05a662b8ec075bf577e1e822d57521cd7344d7eb",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "2.500",
+          "land_dec_stake_needed": 25,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        }
+      ]
+    },
+    {
+      "id": 190154773,
+      "market_id": "aec35134893c861e953080d9e5fbd76d43dc055a-0",
+      "seller": "sample-acct-061",
+      "buy_price": "0.044",
+      "currency": "USD",
+      "fee_percent": 600,
+      "locked_by": null,
+      "lock_block": null,
+      "desc": null,
+      "cards": [
+        {
+          "market_item_id": 190154773,
+          "uid": "C7-409-1GN9SBKQOG",
+          "card_detail_id": 409,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": null,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": null,
+          "last_used_date": null,
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 5,
+          "created_date": "2022-01-28T12:37:06.000Z",
+          "created_block": 61322896,
+          "created_tx": "71e0a80a2a456467f9e07a8c77c1ac5321ef1e29",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "2.500",
+          "land_dec_stake_needed": 25,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        },
+        {
+          "market_item_id": 190154773,
+          "uid": "C7-409-2C5HIJ7LG0",
+          "card_detail_id": 409,
+          "player": "sample-acct-061",
+          "xp": 5,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": 64829556,
+          "last_transferred_block": null,
+          "alpha_xp": 0,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": "sample-acct-061",
+          "last_used_date": "2022-05-30T14:42:26.198Z",
+          "last_transferred_date": null,
+          "lock_days": 0,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 25,
+          "created_date": "2022-01-28T10:43:21.000Z",
+          "created_block": 61320625,
+          "created_tx": "5494fd1df58bd62fb1b583b770a66e2935758b8c",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 5,
+          "land_base_pp": "12.500",
+          "land_dec_stake_needed": 125,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        },
+        {
+          "market_item_id": 190154773,
+          "uid": "C7-409-C5LB59D4FK",
+          "card_detail_id": 409,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": null,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": null,
+          "last_used_date": null,
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 5,
+          "created_date": "2023-05-02T09:56:39.000Z",
+          "created_block": 74513097,
+          "created_tx": "a98c81324f017b8f1b0db8b796e4b8c5e33e6f58",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "2.500",
+          "land_dec_stake_needed": 25,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        },
+        {
+          "market_item_id": 190154773,
+          "uid": "C7-409-IWOZK24F9C",
+          "card_detail_id": 409,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": null,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": null,
+          "last_used_date": null,
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 5,
+          "created_date": "2022-02-12T21:21:39.000Z",
+          "created_block": 61764264,
+          "created_tx": "a32f13c415eb96ff2e2382a5100ce756b1790dd5",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "2.500",
+          "land_dec_stake_needed": 25,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        },
+        {
+          "market_item_id": 190154773,
+          "uid": "C7-409-VYZYSSMZ5S",
+          "card_detail_id": 409,
+          "player": "sample-acct-061",
+          "xp": 1,
+          "gold": false,
+          "edition": 7,
+          "last_used_block": null,
+          "last_transferred_block": null,
+          "alpha_xp": null,
+          "delegated_to": null,
+          "delegation_tx": null,
+          "last_used_player": null,
+          "last_used_date": null,
+          "last_transferred_date": null,
+          "lock_days": null,
+          "unlock_date": null,
+          "unlock_tx": null,
+          "collection_power": 5,
+          "created_date": "2023-05-02T10:19:45.000Z",
+          "created_block": 74513559,
+          "created_tx": "1b2950b8b598e7f5d1d1769f4bdd5918352a775c",
+          "last_buy_price": null,
+          "buy_currency": null,
+          "card_set": "chaos",
+          "bcx": 1,
+          "land_base_pp": "2.500",
+          "land_dec_stake_needed": 25,
+          "set_id": null,
+          "bcx_unbound": 0,
+          "survival_mode_disabled": null,
+          "survival_date": null,
+          "foil": 0,
+          "mint": null
+        }
+      ]
+    }
+  ]
+}

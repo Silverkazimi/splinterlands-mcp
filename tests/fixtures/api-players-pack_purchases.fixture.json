@@ -1,0 +1,29 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T07:48:31.944945+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/pack_purchases",
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+  },
+  "valueClasses": {
+    "body.player": {
+      "valueClass": "name"
+    },
+    "body.count": {
+      "valueClass": "numeric"
+    },
+    "body.packs": {
+      "valueClass": "numeric"
+    },
+    "body.bonus_packs": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "player": "sample-acct-100",
+    "count": 0,
+    "packs": 0,
+    "bonus_packs": 0,
+    "by_type": []
+  }
+}

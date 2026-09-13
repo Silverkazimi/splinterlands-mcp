@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.leak-check/
+fixtures/raw/
+*.log
+.DS_Store
+/.agents/
+/.codex/
+.env
+.env.*
+!.env.example

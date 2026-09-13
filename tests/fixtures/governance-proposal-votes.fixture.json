@@ -1,0 +1,104 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:28:36.956416+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/proposals/votes",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body[0].voter": {
+      "valueClass": "opaque"
+    },
+    "body[0].proposal_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].approve": {
+      "valueClass": "opaque"
+    },
+    "body[0].votes": {
+      "valueClass": "opaque"
+    },
+    "body[0].voter_modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[0].voter_league": {
+      "valueClass": "numeric"
+    },
+    "body[0].voter_avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].voter_title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[0].voter_display_name": {
+      "valueClass": "opaque"
+    },
+    "body[0].voter_title_post": {
+      "valueClass": "opaque"
+    },
+    "body[0].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[1].voter": {
+      "valueClass": "opaque"
+    },
+    "body[1].proposal_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].approve": {
+      "valueClass": "opaque"
+    },
+    "body[1].votes": {
+      "valueClass": "opaque"
+    },
+    "body[1].voter_modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[1].voter_league": {
+      "valueClass": "numeric"
+    },
+    "body[1].voter_avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].voter_title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[1].voter_display_name": {
+      "valueClass": "opaque"
+    },
+    "body[1].voter_title_post": {
+      "valueClass": "opaque"
+    },
+    "body[1].player_avatar": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": [
+    {
+      "voter": "sample-acct-052",
+      "proposal_id": 7525,
+      "approve": true,
+      "votes": "90073390.803",
+      "voter_modern_league": 15,
+      "voter_league": 15,
+      "voter_avatar_id": 0,
+      "voter_title_pre": "Magister",
+      "voter_display_name": null,
+      "voter_title_post": "The Arcane",
+      "player_avatar": "{\"race\":\"orc\",\"background\":8,\"color\":\"Gold\",\"level\":110,\"frame\":10,\"gender\":1,\"body\":1,\"face\":5,\"nose\":1,\"ears\":0,\"skin_color\":2,\"hair\":2,\"eyebrows\":6,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":6,\"eyes_color\":2,\"mouth\":7,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":4,\"cloth_color\":1,\"tattoo\":20,\"accessory\":7,\"accessory_color\":4,\"hat\":0,\"hat_color\":0,\"earrings\":5,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"shard_holder\",\"modern_league\",\"year_joined\",\"runi_holder_1918\"],\"avatar_resets\":1,\"player_card_resets\":2}"
+    },
+    {
+      "voter": "sample-acct-139",
+      "proposal_id": 7525,
+      "approve": true,
+      "votes": "20698827.941",
+      "voter_modern_league": 12,
+      "voter_league": 15,
+      "voter_avatar_id": 1967,
+      "voter_title_pre": "Sentinel",
+      "voter_display_name": null,
+      "voter_title_post": "The Burninator",
+      "player_avatar": "{\"race\":\"human\",\"background\":23,\"color\":\"Red\",\"level\":1,\"frame\":0,\"gender\":1,\"body\":1,\"face\":1,\"nose\":10,\"ears\":0,\"skin_color\":5,\"hair\":7,\"eyebrows\":2,\"mustache\":0,\"beard\":0,\"hair_color\":2,\"eyes\":1,\"eyes_color\":1,\"mouth\":16,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":3,\"cloth_color\":4,\"tattoo\":0,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"card_collection\",\"land_baron\",\"year_joined\",\"shard_holder\"],\"avatar_resets\":0,\"player_card_resets\":0}"
+    }
+  ]
+}

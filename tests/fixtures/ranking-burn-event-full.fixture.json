@@ -1,0 +1,56 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:10:19.146646+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/burn_event_full_leaderboard",
+    "captureScope": "First three list rows; other object fields retained without transformation."
+  },
+  "valueClasses": {
+    "body.leaderboard[0].rank": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].player": {
+      "valueClass": "name"
+    },
+    "body.leaderboard[0].points": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].rank": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].player": {
+      "valueClass": "name"
+    },
+    "body.leaderboard[1].points": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[2].rank": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[2].player": {
+      "valueClass": "name"
+    },
+    "body.leaderboard[2].points": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "leaderboard": [
+      {
+        "rank": "1",
+        "player": "sample-acct-064",
+        "points": "72192933.584"
+      },
+      {
+        "rank": "2",
+        "player": "sample-acct-081",
+        "points": "64332355.172"
+      },
+      {
+        "rank": "3",
+        "player": "sample-acct-101",
+        "points": "57000000.000"
+      }
+    ]
+  }
+}

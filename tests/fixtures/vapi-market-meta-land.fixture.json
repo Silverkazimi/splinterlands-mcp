@@ -1,0 +1,122 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:48:18.172734+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/LAND",
+    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.description": {
+      "valueClass": "opaque"
+    },
+    "body.data.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].circulation": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assetName": "LAND",
+      "description": "Land",
+      "type": "FUNGIBLE",
+      "details": [
+        {
+          "id": "PLOT",
+          "name": "Land Plot Claim",
+          "description": "A Plot is the basic unit of land. Landowners can harvest, refine, and store resources required to mint items. In all of Praetoria, only 150,000 player-owned Plots exist.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_claim_plot_256.png",
+          "icon": "icon_claim_plot.svg",
+          "filterIcon": null,
+          "circulation": 2516
+        },
+        {
+          "id": "TRACT",
+          "name": "Land Tract Claim",
+          "description": "A Tract Claim is a unit of 100 contiguous Plots. Every Tract contains exactly 1 Plot with a Keep.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_claim_tract_256.png",
+          "icon": "icon_claim_tract.svg",
+          "filterIcon": null,
+          "circulation": 20
+        },
+        {
+          "id": "REGION",
+          "name": "Land Region Claim",
+          "description": "A Region Claim is a unit of 1,000 contiguous Plots. Every Region contains exactly 1 Plot with a Castle and 9 Plots with Keeps.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_claim_region_256.png",
+          "icon": "icon_claim_region.svg",
+          "filterIcon": null,
+          "circulation": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T07:48:18.777459+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/recent_teams",
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+  },
+  "valueClasses": {
+    "body[0].summoner.gold": {
+      "valueClass": "enum"
+    },
+    "body[0].summoner.foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].summoner.mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].summoner.card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[0].summoner.level": {
+      "valueClass": "numeric"
+    },
+    "body[0].summoner.edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[0].gold": {
+      "valueClass": "enum"
+    },
+    "body[0].monsters[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[0].mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].monsters[0].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[0].monsters[0].level": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[1].gold": {
+      "valueClass": "enum"
+    },
+    "body[0].monsters[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[1].mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].monsters[1].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[0].monsters[1].level": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[2].gold": {
+      "valueClass": "enum"
+    },
+    "body[0].monsters[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[2].mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].monsters[2].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[0].monsters[2].level": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[2].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[3].gold": {
+      "valueClass": "enum"
+    },
+    "body[0].monsters[3].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[3].mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].monsters[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[0].monsters[3].level": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[3].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[4].gold": {
+      "valueClass": "enum"
+    },
+    "body[0].monsters[4].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[4].mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].monsters[4].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[0].monsters[4].level": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[4].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[5].gold": {
+      "valueClass": "enum"
+    },
+    "body[0].monsters[5].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[5].mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].monsters[5].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[0].monsters[5].level": {
+      "valueClass": "numeric"
+    },
+    "body[0].monsters[5].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].summoner.gold": {
+      "valueClass": "enum"
+    },
+    "body[1].summoner.foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].summoner.mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].summoner.card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[1].summoner.level": {
+      "valueClass": "numeric"
+    },
+    "body[1].summoner.edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[0].gold": {
+      "valueClass": "enum"
+    },
+    "body[1].monsters[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[0].mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].monsters[0].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[1].monsters[0].level": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[1].gold": {
+      "valueClass": "enum"
+    },
+    "body[1].monsters[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[1].mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].monsters[1].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[1].monsters[1].level": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[2].gold": {
+      "valueClass": "enum"
+    },
+    "body[1].monsters[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[2].mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].monsters[2].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[1].monsters[2].level": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[2].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[3].gold": {
+      "valueClass": "enum"
+    },
+    "body[1].monsters[3].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[3].mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].monsters[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[1].monsters[3].level": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[3].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[4].gold": {
+      "valueClass": "enum"
+    },
+    "body[1].monsters[4].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[4].mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].monsters[4].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[1].monsters[4].level": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[4].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[5].gold": {
+      "valueClass": "enum"
+    },
+    "body[1].monsters[5].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[5].mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].monsters[5].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[1].monsters[5].level": {
+      "valueClass": "numeric"
+    },
+    "body[1].monsters[5].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].summoner.gold": {
+      "valueClass": "enum"
+    },
+    "body[2].summoner.foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].summoner.mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].summoner.card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[2].summoner.level": {
+      "valueClass": "numeric"
+    },
+    "body[2].summoner.edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[0].gold": {
+      "valueClass": "enum"
+    },
+    "body[2].monsters[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[0].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].monsters[0].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[2].monsters[0].level": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[1].gold": {
+      "valueClass": "enum"
+    },
+    "body[2].monsters[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[1].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].monsters[1].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[2].monsters[1].level": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[2].gold": {
+      "valueClass": "enum"
+    },
+    "body[2].monsters[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[2].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].monsters[2].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[2].monsters[2].level": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[2].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[3].gold": {
+      "valueClass": "enum"
+    },
+    "body[2].monsters[3].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[3].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].monsters[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[2].monsters[3].level": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[3].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[4].gold": {
+      "valueClass": "enum"
+    },
+    "body[2].monsters[4].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[4].mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].monsters[4].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[2].monsters[4].level": {
+      "valueClass": "numeric"
+    },
+    "body[2].monsters[4].edition": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": [
+    {
+      "summoner": {
+        "gold": true,
+        "foil": 1,
+        "mint": null,
+        "card_detail_id": 291,
+        "level": 4,
+        "edition": 4
+      },
+      "monsters": [
+        {
+          "gold": false,
+          "foil": 0,
+          "mint": "53/95",
+          "card_detail_id": 709,
+          "level": 4,
+          "edition": 2
+        },
+        {
+          "gold": false,
+          "foil": 0,
+          "mint": null,
+          "card_detail_id": 52,
+          "level": 8,
+          "edition": 1
+        },
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 364,
+          "level": 6,
+          "edition": 7
+        },
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 705,
+          "level": 8,
+          "edition": 2
+        },
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 945,
+          "level": 4,
+          "edition": 20
+        },
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 230,
+          "level": 6,
+          "edition": 3
+        }
+      ]
+    },
+    {
+      "summoner": {
+        "gold": true,
+        "foil": 1,
+        "mint": null,
+        "card_detail_id": 236,
+        "level": 4,
+        "edition": 4
+      },
+      "monsters": [
+        {
+          "gold": false,
+          "foil": 3,
+          "mint": "6",
+          "card_detail_id": 775,
+          "level": 4,
+          "edition": 14
+        },
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 609,
+          "level": 10,
+          "edition": 12
+        },
+        {
+          "gold": false,
+          "foil": 3,
+          "mint": "10",
+          "card_detail_id": 956,
+          "level": 8,
+          "edition": 20
+        },
+        {
+          "gold": false,
+          "foil": 0,
+          "mint": null,
+          "card_detail_id": 901,
+          "level": 8,
+          "edition": 18
+        },
+        {
+          "gold": false,
+          "foil": 4,
+          "mint": "5/5",
+          "card_detail_id": 857,
+          "level": 6,
+          "edition": 2
+        },
+        {
+          "gold": true,
+          "foil": 2,
+          "mint": "4/5",
+          "card_detail_id": 794,
+          "level": 4,
+          "edition": 14
+        }
+      ]
+    },
+    {
+      "summoner": {
+        "gold": true,
+        "foil": 1,
+        "mint": null,
+        "card_detail_id": 656,
+        "level": 4,
+        "edition": 12
+      },
+      "monsters": [
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 635,
+          "level": 4,
+          "edition": 2
+        },
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 529,
+          "level": 4,
+          "edition": 10
+        },
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 155,
+          "level": 4,
+          "edition": 4
+        },
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 379,
+          "level": 4,
+          "edition": 7
+        },
+        {
+          "gold": true,
+          "foil": 1,
+          "mint": null,
+          "card_detail_id": 608,
+          "level": 4,
+          "edition": 12
+        }
+      ]
+    }
+  ]
+}

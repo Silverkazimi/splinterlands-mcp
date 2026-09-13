@@ -1,0 +1,115 @@
+{
+  "transport": "built stdio MCP server",
+  "observedAt": "2026-09-12T08:52:40.717Z",
+  "toolCount": 95,
+  "results": [
+    {
+      "name": "battle_queue",
+      "isError": false,
+      "milliseconds": 804,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/battle/battle_queue",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:52:41.522Z",
+          "ageMs": 7
+        }
+      }
+    },
+    {
+      "name": "battle_status",
+      "isError": false,
+      "milliseconds": 153,
+      "keys": [
+        "id",
+        "created_block_num",
+        "expiration_block_num",
+        "player",
+        "team_hash",
+        "match_type",
+        "mana_cap",
+        "opponent",
+        "match_block_num",
+        "status",
+        "reveal_tx",
+        "reveal_block_id",
+        "team",
+        "summoner_level",
+        "ruleset",
+        "inactive",
+        "opponent_player",
+        "opponent_team_hash",
+        "submit_expiration_block_num",
+        "settings",
+        "app",
+        "created_date",
+        "expiration_date",
+        "match_date",
+        "submit_expiration_date",
+        "recent_opponents",
+        "submit_date",
+        "format",
+        "bracket"
+      ],
+      "provenance": {
+        "endpoint": "/battle/status",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:52:41.698Z",
+          "ageMs": 3
+        }
+      }
+    },
+    {
+      "name": "battle_result",
+      "isError": false,
+      "milliseconds": 188,
+      "keys": [
+        "battle_queue_id_1",
+        "battle_queue_id_2",
+        "player_1_rating_initial",
+        "player_2_rating_initial",
+        "winner",
+        "player_1_rating_final",
+        "player_2_rating_final",
+        "details",
+        "player_1",
+        "player_2",
+        "created_date",
+        "match_type",
+        "mana_cap",
+        "current_streak",
+        "ruleset",
+        "inactive",
+        "settings",
+        "block_num",
+        "rshares",
+        "dec_info",
+        "leaderboard",
+        "reward_dec",
+        "reward_sps",
+        "is_surrender",
+        "format",
+        "queue_times",
+        "bracket",
+        "player_1_scholar",
+        "player_2_scholar",
+        "player_1_data",
+        "player_2_data"
+      ],
+      "provenance": {
+        "endpoint": "/battle/result",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:52:41.880Z",
+          "ageMs": 4
+        }
+      }
+    }
+  ]
+}

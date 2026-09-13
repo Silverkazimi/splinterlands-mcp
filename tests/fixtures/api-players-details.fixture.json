@@ -1,0 +1,506 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T20:56:00Z"
+  },
+  "valueClasses": {
+    "body.name": {
+      "valueClass": "name"
+    },
+    "body.join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.rating": {
+      "valueClass": "numeric"
+    },
+    "body.battles": {
+      "valueClass": "numeric"
+    },
+    "body.wins": {
+      "valueClass": "numeric"
+    },
+    "body.current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.champion_points": {
+      "valueClass": "numeric"
+    },
+    "body.capture_rate": {
+      "valueClass": "numeric"
+    },
+    "body.last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.guild.id": {
+      "valueClass": "id"
+    },
+    "body.guild.name": {
+      "valueClass": "freetext"
+    },
+    "body.guild.owner": {
+      "valueClass": "name"
+    },
+    "body.guild.created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.guild.membership_type": {
+      "valueClass": "enum"
+    },
+    "body.guild.language": {
+      "valueClass": "enum"
+    },
+    "body.guild.motto": {
+      "valueClass": "freetext"
+    },
+    "body.guild.description": {
+      "valueClass": "freetext"
+    },
+    "body.guild.data.crest.banner": {
+      "valueClass": "enum"
+    },
+    "body.guild.data.crest.decal": {
+      "valueClass": "enum"
+    },
+    "body.guild.level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.arena.level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.arena.max_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.arena.contrib_gp": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.arena.contrib_dec": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.arena.contrib_crowns": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.library.level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.library.max_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.library.contributions": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.library.contributions_gp": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.perks[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.perks[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.perks[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.max_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.contrib_gp": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.contrib_dec": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.contrib_crowns": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.away_blocked_cards[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.barracks.away_blocked_cards[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.guild_hall.level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.guild_hall.contributions": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.guild_shop.level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.guild_shop.max_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.guild_shop.contrib_gp": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.guild_shop.contrib_dec": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.guild_shop.contrib_crowns": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.quest_lodge.level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.quest_lodge.max_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.quest_lodge.contributions": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.quest_lodge.contributions_gp": {
+      "valueClass": "numeric"
+    },
+    "body.guild.quest_lodge_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.brawl_status": {
+      "valueClass": "numeric"
+    },
+    "body.guild.crowns": {
+      "valueClass": "numeric"
+    },
+    "body.guild.brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.tournament_id": {
+      "valueClass": "id"
+    },
+    "body.guild.spy_uses": {
+      "valueClass": "numeric"
+    },
+    "body.guild.spy_active": {
+      "valueClass": "enum"
+    },
+    "body.guild.max_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.guild.tournament_status": {
+      "valueClass": "numeric"
+    },
+    "body.guild.tournament_data.duration_blocks": {
+      "valueClass": "numeric"
+    },
+    "body.guild.tournament_data.multiple_rounds": {
+      "valueClass": "enum"
+    },
+    "body.guild.tournament_data.cp_min": {
+      "valueClass": "numeric"
+    },
+    "body.guild.tournament_data.spsp_min": {
+      "valueClass": "numeric"
+    },
+    "body.guild.tournament_data.group_size": {
+      "valueClass": "numeric"
+    },
+    "body.guild.tournament_data.create_team_seconds": {
+      "valueClass": "numeric"
+    },
+    "body.guild.tournament_data.challenge_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.tournament_data.guilds[0]": {
+      "valueClass": "id"
+    },
+    "body.guild.tournament_data.guilds[1]": {
+      "valueClass": "id"
+    },
+    "body.guild.tournament_data.guilds[2]": {
+      "valueClass": "id"
+    },
+    "body.starter_pack_purchase": {
+      "valueClass": "enum"
+    },
+    "body.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.display_name": {
+      "valueClass": "name"
+    },
+    "body.title_pre": {
+      "valueClass": "freetext"
+    },
+    "body.title_post": {
+      "valueClass": "freetext"
+    },
+    "body.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.league": {
+      "valueClass": "enum"
+    },
+    "body.adv_msg_sent": {
+      "valueClass": "enum"
+    },
+    "body.is_banned": {
+      "valueClass": "enum"
+    },
+    "body.modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body.modern_battles": {
+      "valueClass": "numeric"
+    },
+    "body.modern_wins": {
+      "valueClass": "numeric"
+    },
+    "body.modern_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.modern_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.modern_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.modern_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.modern_league": {
+      "valueClass": "enum"
+    },
+    "body.modern_adv_msg_sent": {
+      "valueClass": "enum"
+    },
+    "body.survival_rating": {
+      "valueClass": "numeric"
+    },
+    "body.survival_battles": {
+      "valueClass": "numeric"
+    },
+    "body.survival_wins": {
+      "valueClass": "numeric"
+    },
+    "body.survival_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.survival_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.survival_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.survival_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.survival_league": {
+      "valueClass": "enum"
+    },
+    "body.survival_adv_msg_sent": {
+      "valueClass": "enum"
+    },
+    "body.survival_bracket": {
+      "valueClass": "numeric"
+    },
+    "body.foundation_rating": {
+      "valueClass": "numeric"
+    },
+    "body.foundation_battles": {
+      "valueClass": "numeric"
+    },
+    "body.foundation_wins": {
+      "valueClass": "numeric"
+    },
+    "body.foundation_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.foundation_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.foundation_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.foundation_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.foundation_league": {
+      "valueClass": "enum"
+    },
+    "body.foundation_adv_msg_sent": {
+      "valueClass": "enum"
+    },
+    "body.paypal_ban": {
+      "valueClass": "enum"
+    },
+    "body.player_uuid": {
+      "valueClass": "id"
+    },
+    "body.season_pass": {
+      "valueClass": "numeric"
+    },
+    "body.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.burn_sps_rewards": {
+      "valueClass": "enum"
+    },
+    "body.scholared_by": {
+      "valueClass": "name"
+    },
+    "body.season_details": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "name": "sample-acct-100",
+    "join_date": "2021-07-02T14:09:44.595Z",
+    "rating": 6020,
+    "battles": 90363,
+    "wins": 53650,
+    "current_streak": 0,
+    "longest_streak": 28,
+    "max_rating": 12660,
+    "max_rank": 1,
+    "champion_points": 445508,
+    "capture_rate": "0.612849",
+    "last_reward_block": 109743858,
+    "guild": {
+      "id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+      "name": " [KoG] Shield of Glory",
+      "owner": "sample-acct-103",
+      "created_date": "2019-07-30T08:11:00.000Z",
+      "membership_type": "request",
+      "language": "English",
+      "motto": "",
+      "description": "![Caption](https://i.ibb.co/n6qVkhP/BANNER4.gif)\n\nWe are open to all active players who are willing to have fun and climb to the top ranks both as individual player and as a guild. \nWe expect players to participate in the progress of guild with DEC donations and are actively engaged in guild chat. Work with us on a path to glory!",
+      "data": {
+        "crest": {
+          "banner": "yellow",
+          "decal": "shield"
+        }
+      },
+      "level": 10,
+      "buildings": {
+        "arena": {
+          "level": 9,
+          "max_level": 9,
+          "contrib_gp": 1377730,
+          "contrib_dec": 1332324,
+          "contrib_crowns": 7115
+        },
+        "library": {
+          "level": 1,
+          "max_level": 1,
+          "contributions": 0,
+          "contributions_gp": 0
+        },
+        "barracks": {
+          "level": 10,
+          "perks": [
+            0,
+            0,
+            0
+          ],
+          "max_level": 10,
+          "contrib_gp": 3143183,
+          "contrib_dec": 1067877,
+          "contrib_crowns": 11315,
+          "away_blocked_cards": [
+            656,
+            972
+          ]
+        },
+        "guild_hall": {
+          "level": 10,
+          "contributions": 2710000
+        },
+        "guild_shop": {
+          "level": 8,
+          "max_level": 8,
+          "contrib_gp": 142000,
+          "contrib_dec": 1717600,
+          "contrib_crowns": 4315
+        },
+        "quest_lodge": {
+          "level": 10,
+          "max_level": 10,
+          "contributions": 2105,
+          "contributions_gp": 0
+        }
+      },
+      "quest_lodge_level": 10,
+      "brawl_status": 1,
+      "crowns": 31979,
+      "brawl_level": 9,
+      "tournament_id": "GUILD-BC383-BL910-BRAWL1",
+      "spy_uses": 0,
+      "spy_active": false,
+      "max_level": 10,
+      "join_date": "2021-07-04T22:54:45.000Z",
+      "tournament_status": 0,
+      "tournament_data": {
+        "duration_blocks": 57600,
+        "multiple_rounds": false,
+        "cp_min": 0,
+        "spsp_min": 0,
+        "group_size": 10,
+        "create_team_seconds": 258,
+        "challenge_level": 4,
+        "guilds": [
+          "cb84ca426dcb7c8ba072c759b39cf459d4cf7669",
+          "9955504d237b7013295692b3207ed35ad71017de",
+          "391cc53158d4b06e7e5d8f0dfba614267905b8cf"
+        ]
+      }
+    },
+    "starter_pack_purchase": true,
+    "avatar_id": 0,
+    "display_name": null,
+    "title_pre": "Vonarch",
+    "title_post": null,
+    "collection_power": 313906533,
+    "league": 15,
+    "adv_msg_sent": false,
+    "is_banned": false,
+    "modern_rating": 3250,
+    "modern_battles": 958,
+    "modern_wins": 733,
+    "modern_current_streak": 2,
+    "modern_longest_streak": 59,
+    "modern_max_rating": 4607,
+    "modern_max_rank": 8,
+    "modern_league": 11,
+    "modern_adv_msg_sent": false,
+    "survival_rating": 7580,
+    "survival_battles": 21095,
+    "survival_wins": 14697,
+    "survival_current_streak": 4,
+    "survival_longest_streak": 60,
+    "survival_max_rating": 35040,
+    "survival_max_rank": 1,
+    "survival_league": 15,
+    "survival_adv_msg_sent": false,
+    "survival_bracket": 10,
+    "foundation_rating": 0,
+    "foundation_battles": 0,
+    "foundation_wins": 0,
+    "foundation_current_streak": 0,
+    "foundation_longest_streak": 0,
+    "foundation_max_rating": 0,
+    "foundation_max_rank": 0,
+    "foundation_league": 0,
+    "foundation_adv_msg_sent": false,
+    "paypal_ban": null,
+    "player_uuid": "47d85330-50e6-4028-acf7-b71bf3736dcd",
+    "season_pass": 1,
+    "player_avatar": "{\"race\":\"human\",\"background\":0,\"color\":\"Red\",\"level\":1,\"frame\":0,\"gender\":1,\"body\":1,\"face\":1,\"nose\":2,\"ears\":0,\"skin_color\":1,\"hair\":7,\"eyebrows\":1,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":1,\"eyes_color\":1,\"mouth\":13,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":1,\"cloth_color\":1,\"tattoo\":0,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"modern_league\",\"year_joined\",\"\",\"\"],\"is_saved\":false,\"avatar_resets\":0,\"player_card_resets\":0}",
+    "burn_sps_rewards": false,
+    "scholared_by": null,
+    "season_details": {}
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "observedAt": "2026-09-12T13:55:48.509108+00:00",
+  "sourceUrl": "https://vapi.splinterlands.com/swagger/swagger-ui-init.js",
+  "probes": [
+    {
+      "path": "https://vapi.splinterlands.com/market/player/activity",
+      "queryKeys": [
+        "limit",
+        "player"
+      ],
+      "status": 400,
+      "bytes": 134,
+      "rows": null
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/player/all_listings",
+      "queryKeys": [
+        "player"
+      ],
+      "status": 200,
+      "bytes": 12203,
+      "rows": 43
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/landing",
+      "queryKeys": [
+        "assets",
+        "player"
+      ],
+      "status": 200,
+      "bytes": 8553,
+      "rows": null
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/player/listings",
+      "queryKeys": [
+        "asset",
+        "detailId",
+        "player"
+      ],
+      "status": 200,
+      "bytes": 311,
+      "rows": 1
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/player/asset-detail-stats",
+      "queryKeys": [
+        "asset",
+        "detailId",
+        "player"
+      ],
+      "status": 200,
+      "bytes": 50,
+      "rows": null
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/player/activity",
+      "queryKeys": [
+        "limit",
+        "player",
+        "sort",
+        "types"
+      ],
+      "status": 200,
+      "bytes": 1160,
+      "rows": 3
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/player/activity",
+      "queryKeys": [
+        "limit",
+        "offset",
+        "player",
+        "sort",
+        "types"
+      ],
+      "status": 200,
+      "bytes": 397,
+      "rows": 1
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/player/activity",
+      "queryKeys": [
+        "limit",
+        "player",
+        "sort",
+        "types"
+      ],
+      "status": 200,
+      "bytes": 1107,
+      "rows": 3
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/player/activity",
+      "queryKeys": [
+        "limit",
+        "player",
+        "sort",
+        "types"
+      ],
+      "status": 200,
+      "bytes": 406,
+      "rows": 1
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/player/activity",
+      "queryKeys": [
+        "limit",
+        "player",
+        "sort",
+        "types"
+      ],
+      "status": 200,
+      "bytes": 744,
+      "rows": 2
+    },
+    {
+      "path": "https://vapi.splinterlands.com/market/player/activity",
+      "queryKeys": [
+        "limit",
+        "offset",
+        "player",
+        "sort",
+        "types"
+      ],
+      "status": 200,
+      "bytes": 1107,
+      "rows": 3
+    }
+  ],
+  "findings": [
+    "All four account market GET routes returned populated public results.",
+    "Activity without sort returned HTTP 400. Client defaults are types=purchase,sale and sort=desc.",
+    "Sale selected sale rows; asc returned older records.",
+    "offset=1 returned id 449688 for both limit=1 and limit=3, rather than id 451723 (the second unoffset row). No conventional row-offset guarantee.",
+    "PACKS/RIFT per-asset listing matched the all_listings record; stats returned owned=0 and listed=2.",
+    "PACKS landing with player returned numOwned on 15 assets. No arithmetic relationship between owned/listed is inferred."
+  ],
+  "limits": [
+    "Bounded captures do not prove exhaustive historical pagination, every asset, or every activity type.",
+    "No credentials, write operations or auto-fetching of continuation pages."
+  ]
+}

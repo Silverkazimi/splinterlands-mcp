@@ -1,0 +1,3222 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-06T21:19:55Z"
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].id": {
+      "valueClass": "id"
+    },
+    "data[0].project_type": {
+      "valueClass": "enum"
+    },
+    "data[0].project_number": {
+      "valueClass": "id"
+    },
+    "data[0].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[0].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[0].total_time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[0].pp_balance": {
+      "valueClass": "numeric"
+    },
+    "data[0].start_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[0].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[0].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].resource_id": {
+      "valueClass": "id"
+    },
+    "data[0].token_symbol": {
+      "valueClass": "enum"
+    },
+    "data[0].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[0].hours_to_completion": {
+      "valueClass": "numeric"
+    },
+    "data[0].elapsed_hours": {
+      "valueClass": "numeric"
+    },
+    "data[0].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[0].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data[0].wood_required": {
+      "valueClass": "numeric"
+    },
+    "data[0].stone_required": {
+      "valueClass": "numeric"
+    },
+    "data[0].iron_required": {
+      "valueClass": "numeric"
+    },
+    "data[0].is_active": {
+      "valueClass": "enum"
+    },
+    "data[0].destroyed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].is_construction": {
+      "valueClass": "enum"
+    },
+    "data[0].last_action_time": {
+      "valueClass": "timestamp"
+    },
+    "data[0].hours_till_next_op": {
+      "valueClass": "numeric"
+    },
+    "data[0].next_op_allowed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].pp_staked": {
+      "valueClass": "numeric"
+    },
+    "data[0].projected_amount_received": {
+      "valueClass": "numeric"
+    },
+    "data[0].work_per_hour_per_one_pp": {
+      "valueClass": "numeric"
+    },
+    "data[0].project_id": {
+      "valueClass": "id"
+    },
+    "data[0].is_harvesting": {
+      "valueClass": "enum"
+    },
+    "data[0].is_empty": {
+      "valueClass": "enum"
+    },
+    "data[0].is_sps_work": {
+      "valueClass": "enum"
+    },
+    "data[0].sps_mining_reward_debt": {
+      "valueClass": "numeric"
+    },
+    "data[0].latest_sps_reward_block": {
+      "valueClass": "numeric"
+    },
+    "data[0].sps_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "data[0].accumulated_sps_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "data[0].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[0].captured_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[0].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[0].project_created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data[0].max_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[0].region_uid": {
+      "valueClass": "id"
+    },
+    "data[0].hours_since_last_op": {
+      "valueClass": "numeric"
+    },
+    "data[0].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[0].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data[0].rewards_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[0].grain_req_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[0].segments[0].id": {
+      "valueClass": "id"
+    },
+    "data[0].segments[0].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[0].segments[0].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[0].segments[0].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[0].segments[0].project_number": {
+      "valueClass": "id"
+    },
+    "data[0].segments[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].segments[0].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].segments[0].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[0].segments[0].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[0].segments[0].duration": {
+      "valueClass": "numeric"
+    },
+    "data[0].segments[0].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[0].segments[0].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[0].segments[0].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[0].segments[0].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[0].segments[0].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[0].segments[0].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[0].segments[0].source": {
+      "valueClass": "enum"
+    },
+    "data[0].segments[0].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[0].estimated_totem_chance": {
+      "valueClass": "numeric"
+    },
+    "data[0].resource_recipe[0].qty": {
+      "valueClass": "numeric"
+    },
+    "data[0].resource_recipe[0].symbol": {
+      "valueClass": "enum"
+    },
+    "data[0].resource_recipe[1].qty": {
+      "valueClass": "numeric"
+    },
+    "data[0].resource_recipe[1].symbol": {
+      "valueClass": "enum"
+    },
+    "data[0].resource_recipe[2].qty": {
+      "valueClass": "numeric"
+    },
+    "data[0].resource_recipe[2].symbol": {
+      "valueClass": "enum"
+    },
+    "data[0].resource_mint_rate": {
+      "valueClass": "numeric"
+    },
+    "data[1].id": {
+      "valueClass": "id"
+    },
+    "data[1].project_type": {
+      "valueClass": "enum"
+    },
+    "data[1].project_number": {
+      "valueClass": "id"
+    },
+    "data[1].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[1].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[1].total_time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[1].pp_balance": {
+      "valueClass": "numeric"
+    },
+    "data[1].start_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[1].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[1].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].resource_id": {
+      "valueClass": "id"
+    },
+    "data[1].token_symbol": {
+      "valueClass": "enum"
+    },
+    "data[1].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[1].hours_to_completion": {
+      "valueClass": "numeric"
+    },
+    "data[1].elapsed_hours": {
+      "valueClass": "numeric"
+    },
+    "data[1].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[1].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data[1].wood_required": {
+      "valueClass": "numeric"
+    },
+    "data[1].stone_required": {
+      "valueClass": "numeric"
+    },
+    "data[1].iron_required": {
+      "valueClass": "numeric"
+    },
+    "data[1].is_active": {
+      "valueClass": "enum"
+    },
+    "data[1].destroyed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].is_construction": {
+      "valueClass": "enum"
+    },
+    "data[1].last_action_time": {
+      "valueClass": "timestamp"
+    },
+    "data[1].hours_till_next_op": {
+      "valueClass": "numeric"
+    },
+    "data[1].next_op_allowed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].pp_staked": {
+      "valueClass": "numeric"
+    },
+    "data[1].projected_amount_received": {
+      "valueClass": "numeric"
+    },
+    "data[1].work_per_hour_per_one_pp": {
+      "valueClass": "numeric"
+    },
+    "data[1].project_id": {
+      "valueClass": "id"
+    },
+    "data[1].is_harvesting": {
+      "valueClass": "enum"
+    },
+    "data[1].is_empty": {
+      "valueClass": "enum"
+    },
+    "data[1].is_sps_work": {
+      "valueClass": "enum"
+    },
+    "data[1].sps_mining_reward_debt": {
+      "valueClass": "numeric"
+    },
+    "data[1].latest_sps_reward_block": {
+      "valueClass": "numeric"
+    },
+    "data[1].sps_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "data[1].accumulated_sps_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "data[1].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[1].captured_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[1].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[1].project_created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data[1].max_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[1].region_uid": {
+      "valueClass": "id"
+    },
+    "data[1].hours_since_last_op": {
+      "valueClass": "numeric"
+    },
+    "data[1].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[1].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data[1].rewards_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[1].grain_req_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[1].estimated_totem_chance": {
+      "valueClass": "numeric"
+    },
+    "data[1].resource_recipe[0].qty": {
+      "valueClass": "numeric"
+    },
+    "data[1].resource_recipe[0].symbol": {
+      "valueClass": "enum"
+    },
+    "data[1].resource_recipe[1].qty": {
+      "valueClass": "numeric"
+    },
+    "data[1].resource_recipe[1].symbol": {
+      "valueClass": "enum"
+    },
+    "data[1].resource_recipe[2].qty": {
+      "valueClass": "numeric"
+    },
+    "data[1].resource_recipe[2].symbol": {
+      "valueClass": "enum"
+    },
+    "data[1].resource_mint_rate": {
+      "valueClass": "numeric"
+    },
+    "data[2].id": {
+      "valueClass": "id"
+    },
+    "data[2].project_type": {
+      "valueClass": "enum"
+    },
+    "data[2].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[2].total_time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].pp_balance": {
+      "valueClass": "numeric"
+    },
+    "data[2].start_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[2].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[2].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].trx_id": {
+      "valueClass": "id"
+    },
+    "data[2].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[2].resource_id": {
+      "valueClass": "id"
+    },
+    "data[2].token_symbol": {
+      "valueClass": "enum"
+    },
+    "data[2].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[2].hours_to_completion": {
+      "valueClass": "numeric"
+    },
+    "data[2].elapsed_hours": {
+      "valueClass": "numeric"
+    },
+    "data[2].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data[2].wood_required": {
+      "valueClass": "numeric"
+    },
+    "data[2].stone_required": {
+      "valueClass": "numeric"
+    },
+    "data[2].iron_required": {
+      "valueClass": "numeric"
+    },
+    "data[2].is_active": {
+      "valueClass": "enum"
+    },
+    "data[2].destroyed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].is_construction": {
+      "valueClass": "enum"
+    },
+    "data[2].last_action_time": {
+      "valueClass": "timestamp"
+    },
+    "data[2].hours_till_next_op": {
+      "valueClass": "numeric"
+    },
+    "data[2].next_op_allowed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].pp_staked": {
+      "valueClass": "numeric"
+    },
+    "data[2].projected_amount_received": {
+      "valueClass": "numeric"
+    },
+    "data[2].work_per_hour_per_one_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].project_id": {
+      "valueClass": "id"
+    },
+    "data[2].is_harvesting": {
+      "valueClass": "enum"
+    },
+    "data[2].is_empty": {
+      "valueClass": "enum"
+    },
+    "data[2].is_sps_work": {
+      "valueClass": "enum"
+    },
+    "data[2].sps_mining_reward_debt": {
+      "valueClass": "numeric"
+    },
+    "data[2].latest_sps_reward_block": {
+      "valueClass": "numeric"
+    },
+    "data[2].sps_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "data[2].accumulated_sps_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "data[2].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].captured_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[2].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].project_created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data[2].max_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[2].region_uid": {
+      "valueClass": "id"
+    },
+    "data[2].hours_since_last_op": {
+      "valueClass": "numeric"
+    },
+    "data[2].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data[2].rewards_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[2].grain_req_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[0].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[0].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[0].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[0].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[0].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[0].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[0].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[0].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[0].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[0].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[0].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[0].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[0].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[0].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[0].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[0].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[0].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[1].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[1].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[1].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[1].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[1].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[1].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[1].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[1].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[1].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[1].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[1].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[1].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[1].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[1].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[1].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[1].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[1].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[2].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[2].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[2].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[2].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[2].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[2].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[2].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[2].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[2].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[2].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[2].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[2].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[2].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[2].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[2].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[2].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[2].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[3].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[3].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[3].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[3].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[3].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[3].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[3].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[3].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[3].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[3].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[3].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[3].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[3].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[3].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[3].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[3].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[3].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[4].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[4].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[4].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[4].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[4].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[4].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[4].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[4].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[4].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[4].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[4].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[4].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[4].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[4].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[4].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[4].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[4].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[5].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[5].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[5].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[5].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[5].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[5].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[5].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[5].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[5].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[5].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[5].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[5].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[5].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[5].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[5].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[5].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[5].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[5].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[6].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[6].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[6].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[6].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[6].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[6].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[6].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[6].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[6].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[6].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[6].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[6].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[6].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[6].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[6].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[6].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[6].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[6].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[7].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[7].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[7].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[7].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[7].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[7].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[7].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[7].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[7].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[7].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[7].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[7].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[7].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[7].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[7].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[7].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[7].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[7].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[8].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[8].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[8].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[8].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[8].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[8].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[8].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[8].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[8].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[8].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[8].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[8].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[8].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[8].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[8].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[8].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[8].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[8].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[9].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[9].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[9].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[9].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[9].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[9].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[9].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[9].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[9].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[9].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[9].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[9].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[9].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[9].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[9].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[9].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[9].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[9].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[10].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[10].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[10].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[10].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[10].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[10].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[10].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[10].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[10].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[10].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[10].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[10].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[10].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[10].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[10].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[10].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[10].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[10].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[11].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[11].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[11].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[11].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[11].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[11].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[11].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[11].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[11].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[11].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[11].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[11].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[11].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[11].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[11].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[11].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[11].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[11].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[12].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[12].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[12].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[12].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[12].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[12].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[12].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[12].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[12].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[12].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[12].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[12].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[12].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[12].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[12].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[12].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[12].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[12].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[13].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[13].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[13].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[13].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[13].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[13].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[13].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[13].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[13].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[13].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[13].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[13].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[13].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[13].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[13].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[13].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[13].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[13].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[14].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[14].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[14].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[14].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[14].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[14].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[14].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[14].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[14].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[14].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[14].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[14].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[14].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[14].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[14].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[14].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[14].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[14].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[15].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[15].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[15].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[15].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[15].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[15].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[15].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[15].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[15].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[15].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[15].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[15].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[15].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[15].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[15].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[15].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[15].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[15].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[16].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[16].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[16].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[16].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[16].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[16].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[16].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[16].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[16].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[16].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[16].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[16].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[16].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[16].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[16].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[16].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[16].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[16].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[17].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[17].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[17].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[17].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[17].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[17].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[17].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[17].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[17].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[17].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[17].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[17].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[17].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[17].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[17].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[17].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[17].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[17].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[18].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[18].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[18].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[18].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[18].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[18].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[18].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[18].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[18].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[18].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[18].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[18].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[18].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[18].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[18].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[18].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[18].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[18].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[19].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[19].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[19].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[19].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[19].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[19].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[19].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[19].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[19].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[19].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[19].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[19].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[19].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[19].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[19].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[19].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[19].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[19].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[20].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[20].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[20].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[20].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[20].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[20].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[20].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[20].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[20].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[20].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[20].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[20].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[20].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[20].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[20].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[20].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[20].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[20].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[21].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[21].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[21].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[21].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[21].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[21].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[21].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[21].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[21].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[21].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[21].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[21].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[21].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[21].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[21].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[21].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[21].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[21].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[22].id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[22].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].segments[22].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].segments[22].staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[22].project_number": {
+      "valueClass": "id"
+    },
+    "data[2].segments[22].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[22].ended_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].segments[22].closed_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[22].opened_trx": {
+      "valueClass": "id"
+    },
+    "data[2].segments[22].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[22].raw_pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[22].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[22].timecrystal_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[22].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[22].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[22].time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[2].segments[22].source": {
+      "valueClass": "enum"
+    },
+    "data[2].segments[22].end_staked_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].estimated_totem_chance": {
+      "valueClass": "numeric"
+    },
+    "data[2].resource_mint_rate": {
+      "valueClass": "numeric"
+    },
+    "data[3].id": {
+      "valueClass": "id"
+    },
+    "data[3].project_type": {
+      "valueClass": "enum"
+    },
+    "data[3].project_number": {
+      "valueClass": "id"
+    },
+    "data[3].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[3].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[3].total_time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[3].pp_balance": {
+      "valueClass": "numeric"
+    },
+    "data[3].start_date": {
+      "valueClass": "timestamp"
+    },
+    "data[3].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[3].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[3].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[3].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[3].trx_id": {
+      "valueClass": "id"
+    },
+    "data[3].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[3].resource_id": {
+      "valueClass": "id"
+    },
+    "data[3].token_symbol": {
+      "valueClass": "enum"
+    },
+    "data[3].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[3].hours_to_completion": {
+      "valueClass": "numeric"
+    },
+    "data[3].elapsed_hours": {
+      "valueClass": "numeric"
+    },
+    "data[3].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[3].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data[3].wood_required": {
+      "valueClass": "numeric"
+    },
+    "data[3].stone_required": {
+      "valueClass": "numeric"
+    },
+    "data[3].iron_required": {
+      "valueClass": "numeric"
+    },
+    "data[3].is_active": {
+      "valueClass": "enum"
+    },
+    "data[3].destroyed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[3].is_construction": {
+      "valueClass": "enum"
+    },
+    "data[3].last_action_time": {
+      "valueClass": "timestamp"
+    },
+    "data[3].hours_till_next_op": {
+      "valueClass": "numeric"
+    },
+    "data[3].next_op_allowed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[3].pp_staked": {
+      "valueClass": "numeric"
+    },
+    "data[3].projected_amount_received": {
+      "valueClass": "numeric"
+    },
+    "data[3].work_per_hour_per_one_pp": {
+      "valueClass": "numeric"
+    },
+    "data[3].project_id": {
+      "valueClass": "id"
+    },
+    "data[3].is_harvesting": {
+      "valueClass": "enum"
+    },
+    "data[3].is_empty": {
+      "valueClass": "enum"
+    },
+    "data[3].is_sps_work": {
+      "valueClass": "enum"
+    },
+    "data[3].sps_mining_reward_debt": {
+      "valueClass": "numeric"
+    },
+    "data[3].latest_sps_reward_block": {
+      "valueClass": "numeric"
+    },
+    "data[3].sps_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "data[3].accumulated_sps_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "data[3].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[3].captured_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[3].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[3].project_created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[3].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data[3].max_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[3].region_uid": {
+      "valueClass": "id"
+    },
+    "data[3].hours_since_last_op": {
+      "valueClass": "numeric"
+    },
+    "data[3].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[3].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data[3].rewards_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[3].grain_req_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[3].estimated_totem_chance": {
+      "valueClass": "numeric"
+    },
+    "data[3].resource_mint_rate": {
+      "valueClass": "numeric"
+    },
+    "data[4].id": {
+      "valueClass": "id"
+    },
+    "data[4].project_type": {
+      "valueClass": "enum"
+    },
+    "data[4].project_number": {
+      "valueClass": "id"
+    },
+    "data[4].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[4].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[4].total_time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[4].pp_balance": {
+      "valueClass": "numeric"
+    },
+    "data[4].start_date": {
+      "valueClass": "timestamp"
+    },
+    "data[4].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[4].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[4].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[4].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[4].trx_id": {
+      "valueClass": "id"
+    },
+    "data[4].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[4].resource_id": {
+      "valueClass": "id"
+    },
+    "data[4].token_symbol": {
+      "valueClass": "enum"
+    },
+    "data[4].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[4].hours_to_completion": {
+      "valueClass": "numeric"
+    },
+    "data[4].elapsed_hours": {
+      "valueClass": "numeric"
+    },
+    "data[4].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[4].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data[4].wood_required": {
+      "valueClass": "numeric"
+    },
+    "data[4].stone_required": {
+      "valueClass": "numeric"
+    },
+    "data[4].iron_required": {
+      "valueClass": "numeric"
+    },
+    "data[4].is_active": {
+      "valueClass": "enum"
+    },
+    "data[4].destroyed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[4].is_construction": {
+      "valueClass": "enum"
+    },
+    "data[4].last_action_time": {
+      "valueClass": "timestamp"
+    },
+    "data[4].hours_till_next_op": {
+      "valueClass": "numeric"
+    },
+    "data[4].next_op_allowed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[4].pp_staked": {
+      "valueClass": "numeric"
+    },
+    "data[4].projected_amount_received": {
+      "valueClass": "numeric"
+    },
+    "data[4].work_per_hour_per_one_pp": {
+      "valueClass": "numeric"
+    },
+    "data[4].project_id": {
+      "valueClass": "id"
+    },
+    "data[4].is_harvesting": {
+      "valueClass": "enum"
+    },
+    "data[4].is_empty": {
+      "valueClass": "enum"
+    },
+    "data[4].is_sps_work": {
+      "valueClass": "enum"
+    },
+    "data[4].sps_mining_reward_debt": {
+      "valueClass": "numeric"
+    },
+    "data[4].latest_sps_reward_block": {
+      "valueClass": "numeric"
+    },
+    "data[4].sps_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "data[4].accumulated_sps_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "data[4].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[4].captured_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[4].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[4].project_created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[4].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data[4].max_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[4].region_uid": {
+      "valueClass": "id"
+    },
+    "data[4].hours_since_last_op": {
+      "valueClass": "numeric"
+    },
+    "data[4].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[4].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data[4].rewards_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[4].grain_req_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[4].estimated_totem_chance": {
+      "valueClass": "numeric"
+    },
+    "data[4].resource_mint_rate": {
+      "valueClass": "numeric"
+    },
+    "data[5].id": {
+      "valueClass": "id"
+    },
+    "data[5].project_type": {
+      "valueClass": "enum"
+    },
+    "data[5].project_number": {
+      "valueClass": "id"
+    },
+    "data[5].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[5].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[5].total_time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data[5].pp_balance": {
+      "valueClass": "numeric"
+    },
+    "data[5].start_date": {
+      "valueClass": "timestamp"
+    },
+    "data[5].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[5].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[5].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[5].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[5].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[5].trx_id": {
+      "valueClass": "id"
+    },
+    "data[5].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[5].resource_id": {
+      "valueClass": "id"
+    },
+    "data[5].token_symbol": {
+      "valueClass": "enum"
+    },
+    "data[5].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[5].hours_to_completion": {
+      "valueClass": "numeric"
+    },
+    "data[5].elapsed_hours": {
+      "valueClass": "numeric"
+    },
+    "data[5].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data[5].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data[5].wood_required": {
+      "valueClass": "numeric"
+    },
+    "data[5].stone_required": {
+      "valueClass": "numeric"
+    },
+    "data[5].iron_required": {
+      "valueClass": "numeric"
+    },
+    "data[5].is_active": {
+      "valueClass": "enum"
+    },
+    "data[5].destroyed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[5].is_construction": {
+      "valueClass": "enum"
+    },
+    "data[5].last_action_time": {
+      "valueClass": "timestamp"
+    },
+    "data[5].hours_till_next_op": {
+      "valueClass": "numeric"
+    },
+    "data[5].next_op_allowed_date": {
+      "valueClass": "timestamp"
+    },
+    "data[5].pp_staked": {
+      "valueClass": "numeric"
+    },
+    "data[5].projected_amount_received": {
+      "valueClass": "numeric"
+    },
+    "data[5].work_per_hour_per_one_pp": {
+      "valueClass": "numeric"
+    },
+    "data[5].project_id": {
+      "valueClass": "id"
+    },
+    "data[5].is_harvesting": {
+      "valueClass": "enum"
+    },
+    "data[5].is_empty": {
+      "valueClass": "enum"
+    },
+    "data[5].is_sps_work": {
+      "valueClass": "enum"
+    },
+    "data[5].sps_mining_reward_debt": {
+      "valueClass": "numeric"
+    },
+    "data[5].latest_sps_reward_block": {
+      "valueClass": "numeric"
+    },
+    "data[5].sps_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "data[5].accumulated_sps_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "data[5].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[5].captured_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[5].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data[5].project_created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[5].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data[5].max_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data[5].region_uid": {
+      "valueClass": "id"
+    },
+    "data[5].hours_since_last_op": {
+      "valueClass": "numeric"
+    },
+    "data[5].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[5].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data[5].rewards_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[5].grain_req_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[5].estimated_totem_chance": {
+      "valueClass": "numeric"
+    },
+    "data[5].resource_mint_rate": {
+      "valueClass": "numeric"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "id": 44752,
+      "project_type": "worksite_research_construction",
+      "project_number": 1,
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_type_id": 6,
+      "total_time_crystals_used": 0,
+      "pp_balance": 1500000,
+      "start_date": "2023-12-02T02:45:42.000Z",
+      "projected_hours": 0,
+      "projected_end": "2023-12-09T17:55:54.000Z",
+      "completed_date": "2023-12-09T17:55:54.000Z",
+      "created_date": "2023-12-02T02:45:42.000Z",
+      "last_updated_date": "2023-12-09T17:55:54.000Z",
+      "trx_id": "668f309a342d38c77acd5c782a0ebc7e70dafeb5",
+      "block_num": 80660249,
+      "resource_id": 3,
+      "token_symbol": "RESEARCH",
+      "pp_required": 1500000,
+      "hours_to_completion": 0,
+      "elapsed_hours": 183.17,
+      "pp_spent": 1511152.5,
+      "grain_required": 15000,
+      "wood_required": 0,
+      "stone_required": 0,
+      "iron_required": 0,
+      "is_active": false,
+      "destroyed_date": null,
+      "is_construction": true,
+      "last_action_time": "2026-09-05T16:38:33.000Z",
+      "hours_till_next_op": 0,
+      "next_op_allowed_date": null,
+      "pp_staked": 2083.333,
+      "projected_amount_received": 0,
+      "work_per_hour_per_one_pp": 1,
+      "project_id": null,
+      "is_harvesting": false,
+      "is_empty": false,
+      "is_sps_work": null,
+      "sps_mining_reward_debt": 0,
+      "latest_sps_reward_block": 0,
+      "sps_tokens_per_block": 0,
+      "accumulated_sps_rewards_per_share_of_pool": 0,
+      "land_work_type_total_work_type_pp": 738137.472,
+      "captured_tax_rate": 0,
+      "time_crystal_value": 1000,
+      "project_created_date": "2023-12-02T02:45:42.000Z",
+      "worksite_type": "",
+      "max_tax_rate": 0,
+      "region_uid": "PR-PNW-1",
+      "hours_since_last_op": 0,
+      "site_efficiency": 1,
+      "is_runi_staked": false,
+      "rewards_per_hour": 0,
+      "grain_req_per_hour": 0,
+      "segments": [
+        {
+          "id": 124280,
+          "land_project_id": 44752,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 8250,
+          "project_number": 1,
+          "created_date": "2023-12-02T02:45:42.000Z",
+          "ended_date": "2023-12-09T17:55:54.000Z",
+          "closed_trx": "f6aaa7f642c6158261a9ad47549ec81d409e6445",
+          "opened_trx": "668f309a342d38c77acd5c782a0ebc7e70dafeb5",
+          "duration": 183.17,
+          "raw_pp_spent": 1511152.5,
+          "pp_spent": 1511152.5,
+          "timecrystal_pp": 0,
+          "efficiency": 1,
+          "time_crystal_value": 10000,
+          "time_crystals_used": 0,
+          "source": "",
+          "end_staked_pp": 0
+        }
+      ],
+      "estimated_totem_chance": 0,
+      "resource_recipe": [
+        {
+          "qty": 0.005,
+          "symbol": "WOOD"
+        },
+        {
+          "qty": 0.002,
+          "symbol": "STONE"
+        },
+        {
+          "qty": 0.0005,
+          "symbol": "IRON"
+        }
+      ],
+      "resource_mint_rate": 0
+    },
+    {
+      "id": 65787,
+      "project_type": "worksite_research",
+      "project_number": 2,
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_type_id": 9,
+      "total_time_crystals_used": 0,
+      "pp_balance": 0,
+      "start_date": "2023-12-09T17:55:54.000Z",
+      "projected_hours": 0,
+      "projected_end": null,
+      "completed_date": "2025-03-13T23:45:03.000Z",
+      "created_date": "2023-12-09T17:55:54.000Z",
+      "last_updated_date": "2023-12-09T17:55:54.000Z",
+      "trx_id": "f6aaa7f642c6158261a9ad47549ec81d409e6445",
+      "block_num": 80879863,
+      "resource_id": 3,
+      "token_symbol": "RESEARCH",
+      "pp_required": 0,
+      "hours_to_completion": null,
+      "elapsed_hours": 24051.401,
+      "pp_spent": 0,
+      "grain_required": 1725.417,
+      "wood_required": 889.39,
+      "stone_required": 355.756,
+      "iron_required": 88.939,
+      "is_active": false,
+      "destroyed_date": "2025-03-17T01:11:39.000Z",
+      "is_construction": false,
+      "last_action_time": "2026-09-05T16:38:33.000Z",
+      "hours_till_next_op": 0,
+      "next_op_allowed_date": "2026-09-05T17:38:33.000Z",
+      "pp_staked": 6820,
+      "projected_amount_received": 17.61,
+      "work_per_hour_per_one_pp": 0.0001,
+      "project_id": null,
+      "is_harvesting": false,
+      "is_empty": false,
+      "is_sps_work": false,
+      "sps_mining_reward_debt": 0,
+      "latest_sps_reward_block": 0,
+      "sps_tokens_per_block": 0,
+      "accumulated_sps_rewards_per_share_of_pool": 0,
+      "land_work_type_total_work_type_pp": 49823803.593,
+      "captured_tax_rate": 0,
+      "time_crystal_value": 1000,
+      "project_created_date": "2023-12-09T17:55:54.000Z",
+      "worksite_type": "Research Hut",
+      "max_tax_rate": 0,
+      "region_uid": "PR-PNW-1",
+      "hours_since_last_op": 28.69,
+      "site_efficiency": 1,
+      "is_runi_staked": false,
+      "rewards_per_hour": 0.682,
+      "grain_req_per_hour": 60.14,
+      "segments": [],
+      "estimated_totem_chance": 0.00125,
+      "resource_recipe": [
+        {
+          "qty": 0.005,
+          "symbol": "WOOD"
+        },
+        {
+          "qty": 0.002,
+          "symbol": "STONE"
+        },
+        {
+          "qty": 0.0005,
+          "symbol": "IRON"
+        }
+      ],
+      "resource_mint_rate": 0
+    },
+    {
+      "id": 159607,
+      "project_type": "worksite_grain_construction",
+      "project_number": 3,
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_type_id": 7,
+      "total_time_crystals_used": 0,
+      "pp_balance": 50000,
+      "start_date": "2025-03-13T23:45:03.000Z",
+      "projected_hours": 0,
+      "projected_end": "2025-03-14T23:45:04.200Z",
+      "completed_date": "2025-03-17T01:11:39.000Z",
+      "created_date": "2025-03-13T23:45:03.000Z",
+      "last_updated_date": "2025-03-17T01:11:39.000Z",
+      "trx_id": "955477e01b789ea2d30bd38434bb84deaf42d4d8",
+      "block_num": 94112912,
+      "resource_id": 1,
+      "token_symbol": "GRAIN",
+      "pp_required": 50000,
+      "hours_to_completion": 0,
+      "elapsed_hours": 73.443,
+      "pp_spent": 152996.81,
+      "grain_required": 500,
+      "wood_required": 0,
+      "stone_required": 0,
+      "iron_required": 0,
+      "is_active": false,
+      "destroyed_date": null,
+      "is_construction": true,
+      "last_action_time": "2026-09-05T16:38:33.000Z",
+      "hours_till_next_op": 0,
+      "next_op_allowed_date": null,
+      "pp_staked": 2083.333,
+      "projected_amount_received": 0,
+      "work_per_hour_per_one_pp": 1,
+      "project_id": null,
+      "is_harvesting": false,
+      "is_empty": false,
+      "is_sps_work": null,
+      "sps_mining_reward_debt": 0,
+      "latest_sps_reward_block": 0,
+      "sps_tokens_per_block": 0,
+      "accumulated_sps_rewards_per_share_of_pool": 0,
+      "land_work_type_total_work_type_pp": 1170322.404,
+      "captured_tax_rate": 0,
+      "time_crystal_value": 1000,
+      "project_created_date": "2025-03-13T23:45:03.000Z",
+      "worksite_type": "",
+      "max_tax_rate": 0,
+      "region_uid": "PR-PNW-1",
+      "hours_since_last_op": 0,
+      "site_efficiency": 1,
+      "is_runi_staked": false,
+      "rewards_per_hour": 0,
+      "grain_req_per_hour": 0,
+      "segments": [
+        {
+          "id": 618121,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:45:03.000Z",
+          "ended_date": "2025-03-13T23:47:18.000Z",
+          "closed_trx": "fdd09a987772236627c8a692d37f2fa376b37876",
+          "opened_trx": "955477e01b789ea2d30bd38434bb84deaf42d4d8",
+          "duration": 0.038,
+          "raw_pp_spent": 78.125,
+          "pp_spent": 78.125,
+          "timecrystal_pp": 0,
+          "efficiency": 1,
+          "time_crystal_value": 0,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618132,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:47:18.000Z",
+          "ended_date": "2025-03-13T23:48:27.000Z",
+          "closed_trx": "041d8e006229780b409147a420821eac40f2fc4b",
+          "opened_trx": "fdd09a987772236627c8a692d37f2fa376b37876",
+          "duration": 0.019,
+          "raw_pp_spent": 39.931,
+          "pp_spent": 39.851,
+          "timecrystal_pp": 0,
+          "efficiency": 0.998,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618150,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:48:27.000Z",
+          "ended_date": "2025-03-13T23:51:00.000Z",
+          "closed_trx": "b1a697909e30325d3fb927e1c01b46ece6ce205e",
+          "opened_trx": "041d8e006229780b409147a420821eac40f2fc4b",
+          "duration": 0.043,
+          "raw_pp_spent": 88.542,
+          "pp_spent": 88.187,
+          "timecrystal_pp": 0,
+          "efficiency": 0.996,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618174,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:51:00.000Z",
+          "ended_date": "2025-03-13T23:51:39.000Z",
+          "closed_trx": "aa61719f554c49d036775ae4ee76dde0ef294d57",
+          "opened_trx": "b1a697909e30325d3fb927e1c01b46ece6ce205e",
+          "duration": 0.011,
+          "raw_pp_spent": 22.569,
+          "pp_spent": 22.457,
+          "timecrystal_pp": 0,
+          "efficiency": 0.995,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618198,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:51:39.000Z",
+          "ended_date": "2025-03-13T23:51:57.000Z",
+          "closed_trx": "c59f95e6a7c77d9189994528b73aba12c732fd9b",
+          "opened_trx": "aa61719f554c49d036775ae4ee76dde0ef294d57",
+          "duration": 0.005,
+          "raw_pp_spent": 10.417,
+          "pp_spent": 10.344,
+          "timecrystal_pp": 0,
+          "efficiency": 0.993,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618222,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:51:57.000Z",
+          "ended_date": "2025-03-13T23:53:45.000Z",
+          "closed_trx": "1b8f0adbb55b53c507fdbc80dfeb6d49f23c2a05",
+          "opened_trx": "c59f95e6a7c77d9189994528b73aba12c732fd9b",
+          "duration": 0.03,
+          "raw_pp_spent": 62.5,
+          "pp_spent": 61.937,
+          "timecrystal_pp": 0,
+          "efficiency": 0.991,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618253,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:53:45.000Z",
+          "ended_date": "2025-03-13T23:54:18.000Z",
+          "closed_trx": "e2013a7aa4d7815ad40251add96bd5d169cbd671",
+          "opened_trx": "1b8f0adbb55b53c507fdbc80dfeb6d49f23c2a05",
+          "duration": 0.009,
+          "raw_pp_spent": 19.097,
+          "pp_spent": 18.887,
+          "timecrystal_pp": 0,
+          "efficiency": 0.989,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618284,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:54:18.000Z",
+          "ended_date": "2025-03-13T23:54:45.000Z",
+          "closed_trx": "540fdb62f20338846054ba4b712deb2ba10e9bf6",
+          "opened_trx": "e2013a7aa4d7815ad40251add96bd5d169cbd671",
+          "duration": 0.008,
+          "raw_pp_spent": 15.625,
+          "pp_spent": 15.437,
+          "timecrystal_pp": 0,
+          "efficiency": 0.988,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618316,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:54:45.000Z",
+          "ended_date": "2025-03-13T23:55:51.000Z",
+          "closed_trx": "29df4887c7d6efecfaf7724184764db4955192dc",
+          "opened_trx": "540fdb62f20338846054ba4b712deb2ba10e9bf6",
+          "duration": 0.018,
+          "raw_pp_spent": 38.194,
+          "pp_spent": 37.66,
+          "timecrystal_pp": 0,
+          "efficiency": 0.986,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618353,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:55:51.000Z",
+          "ended_date": "2025-03-13T23:56:18.000Z",
+          "closed_trx": "bc777d1ce57b8698f07b1d199204cf3a6d781c22",
+          "opened_trx": "29df4887c7d6efecfaf7724184764db4955192dc",
+          "duration": 0.008,
+          "raw_pp_spent": 15.625,
+          "pp_spent": 15.375,
+          "timecrystal_pp": 0,
+          "efficiency": 0.984,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618389,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:56:18.000Z",
+          "ended_date": "2025-03-13T23:56:57.000Z",
+          "closed_trx": "b85148830fa5a745aa331d344dad4dff3576511f",
+          "opened_trx": "bc777d1ce57b8698f07b1d199204cf3a6d781c22",
+          "duration": 0.011,
+          "raw_pp_spent": 22.569,
+          "pp_spent": 22.186,
+          "timecrystal_pp": 0,
+          "efficiency": 0.983,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618430,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:56:57.000Z",
+          "ended_date": "2025-03-13T23:57:30.000Z",
+          "closed_trx": "60c816e01caa56e16c48ee6017754d3e0c4fd20e",
+          "opened_trx": "b85148830fa5a745aa331d344dad4dff3576511f",
+          "duration": 0.009,
+          "raw_pp_spent": 19.097,
+          "pp_spent": 18.734,
+          "timecrystal_pp": 0,
+          "efficiency": 0.981,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618468,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:57:30.000Z",
+          "ended_date": "2025-03-13T23:58:03.000Z",
+          "closed_trx": "50b37d9bc7c49e44ff31f6009153cc458a2cf352",
+          "opened_trx": "60c816e01caa56e16c48ee6017754d3e0c4fd20e",
+          "duration": 0.009,
+          "raw_pp_spent": 19.097,
+          "pp_spent": 18.696,
+          "timecrystal_pp": 0,
+          "efficiency": 0.979,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618507,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:58:03.000Z",
+          "ended_date": "2025-03-13T23:58:36.000Z",
+          "closed_trx": "e7f020aa0a0aee1933851c1428f51276a931124d",
+          "opened_trx": "50b37d9bc7c49e44ff31f6009153cc458a2cf352",
+          "duration": 0.009,
+          "raw_pp_spent": 19.097,
+          "pp_spent": 18.658,
+          "timecrystal_pp": 0,
+          "efficiency": 0.977,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618547,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:58:36.000Z",
+          "ended_date": "2025-03-13T23:59:21.000Z",
+          "closed_trx": "dd7860caa3bca805cd02a6b7db00d6da5453e4ee",
+          "opened_trx": "e7f020aa0a0aee1933851c1428f51276a931124d",
+          "duration": 0.013,
+          "raw_pp_spent": 26.042,
+          "pp_spent": 25.417,
+          "timecrystal_pp": 0,
+          "efficiency": 0.976,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618588,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-13T23:59:21.000Z",
+          "ended_date": "2025-03-14T00:03:00.000Z",
+          "closed_trx": "842b96d8ad6f2b643a3115d987bb88c8f49ec582",
+          "opened_trx": "dd7860caa3bca805cd02a6b7db00d6da5453e4ee",
+          "duration": 0.061,
+          "raw_pp_spent": 126.736,
+          "pp_spent": 123.441,
+          "timecrystal_pp": 0,
+          "efficiency": 0.974,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618640,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-14T00:03:00.000Z",
+          "ended_date": "2025-03-14T00:04:57.000Z",
+          "closed_trx": "284017d68b019bb1c55ae5b24acecd5bf65d768e",
+          "opened_trx": "842b96d8ad6f2b643a3115d987bb88c8f49ec582",
+          "duration": 0.033,
+          "raw_pp_spent": 67.708,
+          "pp_spent": 65.812,
+          "timecrystal_pp": 0,
+          "efficiency": 0.972,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618691,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-14T00:04:57.000Z",
+          "ended_date": "2025-03-14T00:05:24.000Z",
+          "closed_trx": "568a54b9ed0c3fe448d590734e001197bb1f4f5b",
+          "opened_trx": "284017d68b019bb1c55ae5b24acecd5bf65d768e",
+          "duration": 0.008,
+          "raw_pp_spent": 15.625,
+          "pp_spent": 15.328,
+          "timecrystal_pp": 0,
+          "efficiency": 0.981,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618740,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-14T00:05:24.000Z",
+          "ended_date": "2025-03-14T00:05:30.000Z",
+          "closed_trx": "77b507fafdb9c849a0ef8670624d00c15cf92a6b",
+          "opened_trx": "568a54b9ed0c3fe448d590734e001197bb1f4f5b",
+          "duration": 0.002,
+          "raw_pp_spent": 3.472,
+          "pp_spent": 3.434,
+          "timecrystal_pp": 0,
+          "efficiency": 0.989,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618789,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-14T00:05:30.000Z",
+          "ended_date": "2025-03-14T00:05:36.000Z",
+          "closed_trx": "93619ce3ce8900c30ce45092d9d507271e2e4bdf",
+          "opened_trx": "77b507fafdb9c849a0ef8670624d00c15cf92a6b",
+          "duration": 0.002,
+          "raw_pp_spent": 3.472,
+          "pp_spent": 3.465,
+          "timecrystal_pp": 0,
+          "efficiency": 0.998,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_change",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618838,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-14T00:05:36.000Z",
+          "ended_date": "2025-03-14T00:07:00.000Z",
+          "closed_trx": "c8979e10b242998a2dd76ff7ef3aa1e0eeb946f5",
+          "opened_trx": "93619ce3ce8900c30ce45092d9d507271e2e4bdf",
+          "duration": 0.023,
+          "raw_pp_spent": 48.611,
+          "pp_spent": 48.611,
+          "timecrystal_pp": 0,
+          "efficiency": 1,
+          "time_crystal_value": 1000,
+          "time_crystals_used": 0,
+          "source": "stake_operation",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618883,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-14T00:07:00.000Z",
+          "ended_date": "2025-03-14T00:18:33.000Z",
+          "closed_trx": "bc4029c03bde1b31fbe2f84a6d052d644748854f",
+          "opened_trx": "c8979e10b242998a2dd76ff7ef3aa1e0eeb946f5",
+          "duration": 0.193,
+          "raw_pp_spent": 401.042,
+          "pp_spent": 401.042,
+          "timecrystal_pp": 0,
+          "efficiency": 1,
+          "time_crystal_value": 0,
+          "time_crystals_used": 0,
+          "source": "stake_operation",
+          "end_staked_pp": 2083.333
+        },
+        {
+          "id": 618917,
+          "land_project_id": 159607,
+          "deed_uid": "I-291-aafc48f64a8856",
+          "staked_pp": 2083.333,
+          "project_number": 3,
+          "created_date": "2025-03-14T00:18:33.000Z",
+          "ended_date": "2025-03-17T01:11:39.000Z",
+          "closed_trx": "b882291a49926304a47dc0c0bc72e2ca5e993e39",
+          "opened_trx": "bc4029c03bde1b31fbe2f84a6d052d644748854f",
+          "duration": 72.885,
+          "raw_pp_spent": 151843.726,
+          "pp_spent": 151843.726,
+          "timecrystal_pp": 0,
+          "efficiency": 1,
+          "time_crystal_value": 0,
+          "time_crystals_used": 0,
+          "source": "update_worksite_op",
+          "end_staked_pp": 2083.333
+        }
+      ],
+      "estimated_totem_chance": 0,
+      "resource_recipe": [],
+      "resource_mint_rate": 0.02
+    },
+    {
+      "id": 161272,
+      "project_type": "worksite_grain",
+      "project_number": 4,
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_type_id": 10,
+      "total_time_crystals_used": 0,
+      "pp_balance": 0,
+      "start_date": "2025-03-17T01:11:39.000Z",
+      "projected_hours": 0,
+      "projected_end": null,
+      "completed_date": "2025-04-13T08:29:09.000Z",
+      "created_date": "2025-03-17T01:11:39.000Z",
+      "last_updated_date": "2025-03-17T01:11:39.000Z",
+      "trx_id": "b882291a49926304a47dc0c0bc72e2ca5e993e39",
+      "block_num": 94200958,
+      "resource_id": 1,
+      "token_symbol": "GRAIN",
+      "pp_required": 0,
+      "hours_to_completion": null,
+      "elapsed_hours": 12932.138,
+      "pp_spent": 0,
+      "grain_required": 1725.417,
+      "wood_required": 0,
+      "stone_required": 0,
+      "iron_required": 0,
+      "is_active": false,
+      "destroyed_date": "2025-04-13T08:29:09.000Z",
+      "is_construction": false,
+      "last_action_time": "2026-09-05T16:38:33.000Z",
+      "hours_till_next_op": 0,
+      "next_op_allowed_date": "2026-09-05T17:38:33.000Z",
+      "pp_staked": 6820,
+      "projected_amount_received": 3521.956,
+      "work_per_hour_per_one_pp": 0.02,
+      "project_id": null,
+      "is_harvesting": false,
+      "is_empty": false,
+      "is_sps_work": false,
+      "sps_mining_reward_debt": 0,
+      "latest_sps_reward_block": 0,
+      "sps_tokens_per_block": 0,
+      "accumulated_sps_rewards_per_share_of_pool": 0,
+      "land_work_type_total_work_type_pp": 394056133.452,
+      "captured_tax_rate": 0,
+      "time_crystal_value": 1000,
+      "project_created_date": "2025-03-17T01:11:39.000Z",
+      "worksite_type": "Grain Farm",
+      "max_tax_rate": 0,
+      "region_uid": "PR-PNW-1",
+      "hours_since_last_op": 28.69,
+      "site_efficiency": 1,
+      "is_runi_staked": false,
+      "rewards_per_hour": 136.4,
+      "grain_req_per_hour": 60.14,
+      "segments": [],
+      "estimated_totem_chance": 0.00125,
+      "resource_recipe": [],
+      "resource_mint_rate": 0.02
+    },
+    {
+      "id": 231752,
+      "project_type": "worksite_wood_construction",
+      "project_number": 5,
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_type_id": 34,
+      "total_time_crystals_used": 0,
+      "pp_balance": 0,
+      "start_date": "2025-04-13T08:29:09.000Z",
+      "projected_hours": 0,
+      "projected_end": null,
+      "completed_date": "2025-04-13T08:29:09.000Z",
+      "created_date": "2025-04-13T08:29:09.000Z",
+      "last_updated_date": "2025-04-13T08:29:09.000Z",
+      "trx_id": "f99013e8b8f34788c6216c9a6bbb1832e5eaf434",
+      "block_num": 94986410,
+      "resource_id": 5,
+      "token_symbol": "WOOD",
+      "pp_required": 0,
+      "hours_to_completion": null,
+      "elapsed_hours": 0,
+      "pp_spent": 0,
+      "grain_required": 0,
+      "wood_required": 0,
+      "stone_required": 0,
+      "iron_required": 0,
+      "is_active": false,
+      "destroyed_date": null,
+      "is_construction": true,
+      "last_action_time": "2026-09-05T16:38:33.000Z",
+      "hours_till_next_op": 0,
+      "next_op_allowed_date": null,
+      "pp_staked": 2083.333,
+      "projected_amount_received": 0,
+      "work_per_hour_per_one_pp": 1,
+      "project_id": null,
+      "is_harvesting": false,
+      "is_empty": false,
+      "is_sps_work": null,
+      "sps_mining_reward_debt": 0,
+      "latest_sps_reward_block": 0,
+      "sps_tokens_per_block": 0,
+      "accumulated_sps_rewards_per_share_of_pool": 0,
+      "land_work_type_total_work_type_pp": 700242.226,
+      "captured_tax_rate": 0,
+      "time_crystal_value": 1000,
+      "project_created_date": "2025-04-13T08:29:09.000Z",
+      "worksite_type": "",
+      "max_tax_rate": 0,
+      "region_uid": "PR-PNW-1",
+      "hours_since_last_op": 0,
+      "site_efficiency": 1,
+      "is_runi_staked": false,
+      "rewards_per_hour": 0,
+      "grain_req_per_hour": 0,
+      "segments": [],
+      "estimated_totem_chance": 0,
+      "resource_recipe": [],
+      "resource_mint_rate": 0.005
+    },
+    {
+      "id": 231753,
+      "project_type": "worksite_wood",
+      "project_number": 6,
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_type_id": 37,
+      "total_time_crystals_used": 0,
+      "pp_balance": 0,
+      "start_date": "2025-04-13T08:29:09.000Z",
+      "projected_hours": 0,
+      "projected_end": null,
+      "completed_date": null,
+      "created_date": "2025-04-13T08:29:09.000Z",
+      "last_updated_date": "2025-04-13T08:29:09.000Z",
+      "trx_id": "f99013e8b8f34788c6216c9a6bbb1832e5eaf434",
+      "block_num": 94986410,
+      "resource_id": 5,
+      "token_symbol": "WOOD",
+      "pp_required": 0,
+      "hours_to_completion": null,
+      "elapsed_hours": 12276.846,
+      "pp_spent": 0,
+      "grain_required": 1725.417,
+      "wood_required": 0,
+      "stone_required": 0,
+      "iron_required": 0,
+      "is_active": true,
+      "destroyed_date": null,
+      "is_construction": false,
+      "last_action_time": "2026-09-05T16:38:33.000Z",
+      "hours_till_next_op": 0,
+      "next_op_allowed_date": "2026-09-05T17:38:33.000Z",
+      "pp_staked": 6820,
+      "projected_amount_received": 880.489,
+      "work_per_hour_per_one_pp": 0.005,
+      "project_id": 231753,
+      "is_harvesting": true,
+      "is_empty": false,
+      "is_sps_work": false,
+      "sps_mining_reward_debt": 0,
+      "latest_sps_reward_block": 0,
+      "sps_tokens_per_block": 0,
+      "accumulated_sps_rewards_per_share_of_pool": 0,
+      "land_work_type_total_work_type_pp": 199520344.699,
+      "captured_tax_rate": 0,
+      "time_crystal_value": 1000,
+      "project_created_date": "2025-04-13T08:29:09.000Z",
+      "worksite_type": "Logging Camp",
+      "max_tax_rate": 0,
+      "region_uid": "PR-PNW-1",
+      "hours_since_last_op": 28.69,
+      "site_efficiency": 1,
+      "is_runi_staked": false,
+      "rewards_per_hour": 34.1,
+      "grain_req_per_hour": 60.14,
+      "segments": [],
+      "estimated_totem_chance": 0.00125,
+      "resource_recipe": [],
+      "resource_mint_rate": 0.005
+    }
+  ]
+}

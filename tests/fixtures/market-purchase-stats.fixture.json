@@ -1,0 +1,444 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:32:23.060468+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/purchases/stats",
+    "captureScope": "First three root rows; nested records retained unchanged."
+  },
+  "valueClasses": {
+    "body.packs[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[0].name": {
+      "valueClass": "name"
+    },
+    "body.packs[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[0].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[0].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[0].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[1].name": {
+      "valueClass": "name"
+    },
+    "body.packs[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[1].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[1].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[1].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[2].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[2].name": {
+      "valueClass": "name"
+    },
+    "body.packs[2].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[2].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[2].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[2].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[3].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[3].name": {
+      "valueClass": "name"
+    },
+    "body.packs[3].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[3].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[3].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[3].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[4].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[4].name": {
+      "valueClass": "name"
+    },
+    "body.packs[4].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[4].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[4].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[4].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[5].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[5].name": {
+      "valueClass": "name"
+    },
+    "body.packs[5].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[5].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[5].total_packs_purchased": {
+      "valueClass": "numeric"
+    },
+    "body.packs[5].total_bonus_packs": {
+      "valueClass": "numeric"
+    },
+    "body.packs[5].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[5].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[6].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[6].name": {
+      "valueClass": "name"
+    },
+    "body.packs[6].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[6].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[6].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[6].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[7].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[7].name": {
+      "valueClass": "name"
+    },
+    "body.packs[7].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[7].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[7].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[7].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[8].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[8].name": {
+      "valueClass": "name"
+    },
+    "body.packs[8].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[8].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[8].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[8].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].name": {
+      "valueClass": "name"
+    },
+    "body.packs[9].types[0].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[0].type": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[0].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[0].supply": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[0].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[0].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[1].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[1].type": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[1].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[1].supply": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[1].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[1].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[2].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[2].type": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[2].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[2].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[2].supply": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[2].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[2].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[3].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[3].type": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[3].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[3].supply": {
+      "valueClass": "opaque"
+    },
+    "body.packs[9].types[3].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].types[3].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[9].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[10].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[10].name": {
+      "valueClass": "name"
+    },
+    "body.packs[10].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[10].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[10].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[10].opened": {
+      "valueClass": "numeric"
+    },
+    "body.packs[11].edition": {
+      "valueClass": "numeric"
+    },
+    "body.packs[11].name": {
+      "valueClass": "name"
+    },
+    "body.packs[11].qty": {
+      "valueClass": "numeric"
+    },
+    "body.packs[11].available": {
+      "valueClass": "numeric"
+    },
+    "body.packs[11].burned": {
+      "valueClass": "numeric"
+    },
+    "body.packs[11].opened": {
+      "valueClass": "numeric"
+    },
+    "body.promo_cards": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "packs": [
+      {
+        "edition": 0,
+        "name": "ALPHA",
+        "qty": 300000,
+        "available": 0,
+        "opened": 294308,
+        "burned": 1601
+      },
+      {
+        "edition": 1,
+        "name": "BETA",
+        "qty": 900000,
+        "available": 0,
+        "burned": 0,
+        "opened": 879793
+      },
+      {
+        "edition": 2,
+        "name": "ORB",
+        "qty": 200000,
+        "available": 0,
+        "burned": 0,
+        "opened": 194054
+      },
+      {
+        "edition": 4,
+        "name": "UNTAMED",
+        "qty": 1500000,
+        "available": 0,
+        "burned": 0,
+        "opened": 1459008
+      },
+      {
+        "edition": 5,
+        "name": "DICE",
+        "qty": 300000,
+        "available": 0,
+        "burned": 0,
+        "opened": 294748
+      },
+      {
+        "edition": 7,
+        "name": "CHAOS",
+        "qty": 15000000,
+        "available": 0,
+        "total_packs_purchased": 10419919,
+        "total_bonus_packs": 902628,
+        "burned": 2585132,
+        "opened": 10895748
+      },
+      {
+        "edition": 8,
+        "name": "RIFT",
+        "qty": 3000000,
+        "available": 0,
+        "burned": 1714500,
+        "opened": 977762
+      },
+      {
+        "edition": 9,
+        "name": "NIGHTMARE",
+        "qty": 380390,
+        "available": 1619610,
+        "burned": 0,
+        "opened": 234508
+      },
+      {
+        "edition": 12,
+        "name": "REBELLION",
+        "qty": 10000000,
+        "available": 0,
+        "burned": 8095275,
+        "opened": 959608
+      },
+      {
+        "edition": 14,
+        "name": "CONCLAVE",
+        "types": [
+          {
+            "symbol": "ARCANA",
+            "type": "standard",
+            "qty": 5000000,
+            "available": 0,
+            "supply": "limited",
+            "burned": 4675523,
+            "opened": 305420
+          },
+          {
+            "symbol": "ARCANAL",
+            "type": "legendary",
+            "qty": 500000,
+            "available": 0,
+            "supply": "limited",
+            "burned": 471723,
+            "opened": 24600
+          },
+          {
+            "symbol": "ARCANAA",
+            "type": "alchemy",
+            "qty": 1000000,
+            "available": 0,
+            "supply": "limited",
+            "burned": 807801,
+            "opened": 181093
+          },
+          {
+            "symbol": "ARCANAS",
+            "type": "starter",
+            "qty": 182243,
+            "supply": "unlimited",
+            "burned": 0,
+            "opened": 180564
+          }
+        ],
+        "available": 0
+      },
+      {
+        "edition": 20,
+        "name": "ESCALATION",
+        "qty": 550000,
+        "available": 0,
+        "burned": 0,
+        "opened": 411160
+      },
+      {
+        "edition": 21,
+        "name": "VERICO",
+        "qty": 250000,
+        "available": 0,
+        "burned": 0,
+        "opened": 61674
+      }
+    ],
+    "promo_cards": 10000
+  }
+}

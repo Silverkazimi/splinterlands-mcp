@@ -1,0 +1,8 @@
+{
+  "provenance": { "source": "synthetic", "capturedAt": "2026-09-07T00:00:00Z" },
+  "valueClasses": {
+    "pairs[0]": { "valueClass": "enum" },
+    "pairs[1]": { "valueClass": "enum" }
+  },
+  "pairs": ["equal-shape-different-values", "changed-shape"]
+}

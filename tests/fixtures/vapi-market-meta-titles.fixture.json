@@ -1,0 +1,134 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:48:22.601023+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/TITLES",
+    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.description": {
+      "valueClass": "opaque"
+    },
+    "body.data.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].filterIcon": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assetName": "TITLES",
+      "description": "Title",
+      "type": "NON_FUNGIBLE",
+      "details": [
+        {
+          "id": "327",
+          "name": "The Tower Mage",
+          "circulation": 322,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_active_thetowermage.svg",
+          "description": "\"The Tower Mage\" title was a reward for those who purchased 500 Nightmare packs in the pre-sale event. Provides a 25% bonus to land production!",
+          "icon": "icon_active_thetowermage.svg",
+          "filterIcon": null
+        },
+        {
+          "id": "334",
+          "name": "The Myth Hunter",
+          "circulation": 25,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_active_myth hunter.svg",
+          "description": "\"The Myth Hunter\" title was a leaderboard reward for the Hall of Legends promotional event.  Provides a 50% bonus to land production!",
+          "icon": "icon_active_myth hunter.svg",
+          "filterIcon": null
+        },
+        {
+          "id": "222",
+          "name": "The Watcher",
+          "circulation": 346,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_active_thewatcher.svg",
+          "description": "\"The Watcher\" title was a reward for purchasing 1,000 booster packs during the Riftwatchers presale. Provides a 10% bonus to land production!",
+          "icon": "icon_active_thewatcher.svg",
+          "filterIcon": null
+        }
+      ]
+    }
+  }
+}

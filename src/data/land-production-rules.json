@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-12",
+  "resourceOutputPerProductionPointPerHour": {
+    "GRAIN": 0.02,
+    "WOOD": 0.005,
+    "STONE": 0.002,
+    "IRON": 0.0005
+  },
+  "grainConsumptionPerBaseProductionPointPerHour": 0.01,
+  "grainFarmTerrains": [
+    "plains",
+    "river",
+    "bog",
+    "lake"
+  ],
+  "sources": {
+    "output": "https://support.splinterlands.com/hc/en-us/articles/17695274980756-Resource-Production-FAQ",
+    "foodAndGrainTerrain": "https://support.splinterlands.com/hc/en-us/articles/17636839553684-Grain-FAQ",
+    "woodTerrain": "https://support.splinterlands.com/hc/en-us/articles/35443451170708-Wood-FAQ",
+    "stoneTerrain": "https://support.splinterlands.com/hc/en-us/articles/35443311359124-Stone-FAQ",
+    "ironTerrain": "https://support.splinterlands.com/hc/en-us/articles/35443427666196-Iron-FAQ"
+  },
+  "scope": "Baseline rates, before taxes and ability-specific food discounts. Base production excludes production boosts. Castles and Keeps have a separate tax-based model; SPS output varies with activity. These rates alone do not establish a plot-specific production or food estimate.",
+  "resourceTerrains": {
+    "GRAIN": [
+      "plains",
+      "river",
+      "bog",
+      "lake"
+    ],
+    "WOOD": [
+      "swamp",
+      "forest",
+      "tundra",
+      "jungle"
+    ],
+    "STONE": [
+      "canyon",
+      "desert",
+      "hills"
+    ],
+    "IRON": [
+      "mountain",
+      "badlands",
+      "caldera"
+    ]
+  }
+}

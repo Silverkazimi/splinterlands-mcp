@@ -1,0 +1,318 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:48:20.873295+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/SKINS",
+    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.description": {
+      "valueClass": "opaque"
+    },
+    "body.data.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].print_limit": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].rarity": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].card_edition_ids[0]": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].card_edition_ids[1]": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].image_card_edition_id": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].set": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].card_detail.id": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].card_detail.name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].card_detail.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].card_detail.sub_type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].card_detail.tier": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].card_detail.rarity": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].card_detail.editions": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].skin_name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].print_limit": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].rarity": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].card_edition_ids[0]": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].image_card_edition_id": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].set": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].card_detail.id": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].card_detail.name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].card_detail.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].card_detail.sub_type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].card_detail.tier": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].card_detail.rarity": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].card_detail.editions": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].skin_name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].rarity": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].card_edition_ids[0]": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].image_card_edition_id": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].set": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].card_detail.id": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].card_detail.name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].card_detail.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].card_detail.sub_type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].card_detail.tier": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].card_detail.rarity": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].card_detail.editions": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].skin_name": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assetName": "SKINS",
+      "description": "Player Skins",
+      "type": "FUNGIBLE",
+      "details": [
+        {
+          "id": "183",
+          "name": "Spinetail Fiend - Pastel",
+          "description": "2026 Eggstravaganza Pastel skin from the Reward Shop.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/cards_v2.2/Pastel/Spinetail%20Fiend.jpg",
+          "icon": "https://d36mxiodymuqjm.cloudfront.net/cards_battle_mobile/Pastel/Spinetail%20Fiend.jpg",
+          "filterIcon": "https://d36mxiodymuqjm.cloudfront.net/cards_battle_mobile/Pastel/Spinetail%20Fiend.jpg",
+          "circulation": 420,
+          "print_limit": null,
+          "group": "pastel",
+          "rarity": 1,
+          "card_detail_id": 805,
+          "card_edition_ids": [
+            15,
+            16
+          ],
+          "image_card_edition_id": 15,
+          "set": "Pastel",
+          "card_detail": {
+            "id": 805,
+            "name": "Spinetail Fiend",
+            "type": "Monster",
+            "sub_type": "Fiend",
+            "tier": 15,
+            "rarity": 1,
+            "editions": "15,16"
+          },
+          "skin_name": "Spinetail Fiend"
+        },
+        {
+          "id": "207",
+          "name": "Buttercup Mauler - Sketched",
+          "description": "Conclave Arcana testing reward Skins.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/cards_v2.2/Sketched/Buttercup%20Mauler.jpg",
+          "icon": "https://d36mxiodymuqjm.cloudfront.net/cards_battle_mobile/Sketched/Buttercup%20Mauler.jpg",
+          "filterIcon": "https://d36mxiodymuqjm.cloudfront.net/cards_battle_mobile/Sketched/Buttercup%20Mauler.jpg",
+          "circulation": 22,
+          "print_limit": null,
+          "group": "sketched",
+          "rarity": 1,
+          "card_detail_id": 716,
+          "card_edition_ids": [
+            14
+          ],
+          "image_card_edition_id": 14,
+          "set": "Sketched",
+          "card_detail": {
+            "id": 716,
+            "name": "Buttercup Mauler",
+            "type": "Monster",
+            "sub_type": "Fey",
+            "tier": 14,
+            "rarity": 1,
+            "editions": "14"
+          },
+          "skin_name": "Buttercup Mauler"
+        },
+        {
+          "id": "115",
+          "name": "Akane - Bountiful",
+          "description": "2025 Thanksgiving Bountiful skin from the Reward Shop.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/cards_rebellion/Bountiful/Akane.jpg",
+          "icon": "https://d36mxiodymuqjm.cloudfront.net/cards_rebellion/Bountiful/Akane.jpg",
+          "filterIcon": "https://d36mxiodymuqjm.cloudfront.net/cards_rebellion/Bountiful/Akane.jpg",
+          "circulation": 100,
+          "print_limit": 100,
+          "group": "bountiful",
+          "rarity": 1,
+          "card_detail_id": 647,
+          "card_edition_ids": [
+            12
+          ],
+          "image_card_edition_id": 12,
+          "set": "Bountiful",
+          "card_detail": {
+            "id": 647,
+            "name": "Akane",
+            "type": "Summoner",
+            "sub_type": "Drakoshan",
+            "tier": 12,
+            "rarity": 4,
+            "editions": "12"
+          },
+          "skin_name": "Akane"
+        }
+      ]
+    }
+  }
+}

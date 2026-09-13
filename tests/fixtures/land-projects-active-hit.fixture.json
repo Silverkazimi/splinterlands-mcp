@@ -1,0 +1,243 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-06T21:19:46Z"
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data.id": {
+      "valueClass": "id"
+    },
+    "data.project_type": {
+      "valueClass": "enum"
+    },
+    "data.project_number": {
+      "valueClass": "id"
+    },
+    "data.deed_uid": {
+      "valueClass": "id"
+    },
+    "data.land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data.total_time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data.pp_balance": {
+      "valueClass": "numeric"
+    },
+    "data.start_date": {
+      "valueClass": "timestamp"
+    },
+    "data.projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data.projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data.completed_date": {
+      "valueClass": "timestamp"
+    },
+    "data.created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data.trx_id": {
+      "valueClass": "id"
+    },
+    "data.block_num": {
+      "valueClass": "numeric"
+    },
+    "data.resource_id": {
+      "valueClass": "id"
+    },
+    "data.token_symbol": {
+      "valueClass": "enum"
+    },
+    "data.pp_required": {
+      "valueClass": "numeric"
+    },
+    "data.hours_to_completion": {
+      "valueClass": "numeric"
+    },
+    "data.elapsed_hours": {
+      "valueClass": "numeric"
+    },
+    "data.pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data.grain_required": {
+      "valueClass": "numeric"
+    },
+    "data.wood_required": {
+      "valueClass": "numeric"
+    },
+    "data.stone_required": {
+      "valueClass": "numeric"
+    },
+    "data.iron_required": {
+      "valueClass": "numeric"
+    },
+    "data.is_active": {
+      "valueClass": "enum"
+    },
+    "data.destroyed_date": {
+      "valueClass": "timestamp"
+    },
+    "data.is_construction": {
+      "valueClass": "enum"
+    },
+    "data.last_action_time": {
+      "valueClass": "timestamp"
+    },
+    "data.hours_till_next_op": {
+      "valueClass": "numeric"
+    },
+    "data.next_op_allowed_date": {
+      "valueClass": "timestamp"
+    },
+    "data.pp_staked": {
+      "valueClass": "numeric"
+    },
+    "data.projected_amount_received": {
+      "valueClass": "numeric"
+    },
+    "data.work_per_hour_per_one_pp": {
+      "valueClass": "numeric"
+    },
+    "data.project_id": {
+      "valueClass": "id"
+    },
+    "data.is_harvesting": {
+      "valueClass": "enum"
+    },
+    "data.is_empty": {
+      "valueClass": "enum"
+    },
+    "data.is_sps_work": {
+      "valueClass": "enum"
+    },
+    "data.sps_mining_reward_debt": {
+      "valueClass": "numeric"
+    },
+    "data.latest_sps_reward_block": {
+      "valueClass": "numeric"
+    },
+    "data.sps_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "data.accumulated_sps_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "data.land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data.captured_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data.project_created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_type": {
+      "valueClass": "enum"
+    },
+    "data.max_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.region_uid": {
+      "valueClass": "id"
+    },
+    "data.hours_since_last_op": {
+      "valueClass": "numeric"
+    },
+    "data.site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data.is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data.rewards_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.grain_req_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.segments": {
+      "valueClass": "opaque"
+    },
+    "data.estimated_totem_chance": {
+      "valueClass": "numeric"
+    },
+    "data.resource_mint_rate": {
+      "valueClass": "numeric"
+    }
+  },
+  "status": "success",
+  "data": {
+    "id": 231753,
+    "project_type": "worksite_wood",
+    "project_number": 6,
+    "deed_uid": "I-291-aafc48f64a8856",
+    "land_work_type_id": 37,
+    "total_time_crystals_used": 0,
+    "pp_balance": 0,
+    "start_date": "2025-04-13T08:29:09.000Z",
+    "projected_hours": 0,
+    "projected_end": null,
+    "completed_date": null,
+    "created_date": "2025-04-13T08:29:09.000Z",
+    "last_updated_date": "2025-04-13T08:29:09.000Z",
+    "trx_id": "f99013e8b8f34788c6216c9a6bbb1832e5eaf434",
+    "block_num": 94986410,
+    "resource_id": 5,
+    "token_symbol": "WOOD",
+    "pp_required": 0,
+    "hours_to_completion": null,
+    "elapsed_hours": 12276.844,
+    "pp_spent": 0,
+    "grain_required": 1725.236,
+    "wood_required": 0,
+    "stone_required": 0,
+    "iron_required": 0,
+    "is_active": true,
+    "destroyed_date": null,
+    "is_construction": false,
+    "last_action_time": "2026-09-05T16:38:33.000Z",
+    "hours_till_next_op": 0,
+    "next_op_allowed_date": "2026-09-05T17:38:33.000Z",
+    "pp_staked": 6820,
+    "projected_amount_received": 880.415,
+    "work_per_hour_per_one_pp": 0.005,
+    "project_id": 231753,
+    "is_harvesting": true,
+    "is_empty": false,
+    "is_sps_work": false,
+    "sps_mining_reward_debt": 0,
+    "latest_sps_reward_block": 0,
+    "sps_tokens_per_block": 0,
+    "accumulated_sps_rewards_per_share_of_pool": 0,
+    "land_work_type_total_work_type_pp": 199520344.699,
+    "captured_tax_rate": 0,
+    "time_crystal_value": 1000,
+    "project_created_date": "2025-04-13T08:29:09.000Z",
+    "worksite_type": "Logging Camp",
+    "max_tax_rate": 0,
+    "region_uid": "PR-PNW-1",
+    "hours_since_last_op": 28.687,
+    "site_efficiency": 1,
+    "is_runi_staked": false,
+    "rewards_per_hour": 34.1,
+    "grain_req_per_hour": 60.14,
+    "segments": null,
+    "estimated_totem_chance": 0.00125,
+    "resource_recipe": [],
+    "resource_mint_rate": 0.005
+  }
+}

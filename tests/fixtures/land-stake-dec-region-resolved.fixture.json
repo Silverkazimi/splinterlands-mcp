@@ -1,0 +1,30 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-07T14:29:12Z"
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data.uid": {
+      "valueClass": "id"
+    },
+    "data.dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.dec_staked": {
+      "valueClass": "numeric"
+    },
+    "data.dec_stake_in_use": {
+      "valueClass": "numeric"
+    }
+  },
+  "status": "success",
+  "data": {
+    "uid": "PR-PNW-1",
+    "dec_stake_needed": 8004775,
+    "dec_staked": 8005321,
+    "dec_stake_in_use": 8004775
+  }
+}

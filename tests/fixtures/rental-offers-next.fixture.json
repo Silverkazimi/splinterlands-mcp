@@ -1,0 +1,110 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T10:03:57.705849+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/offers",
+    "captureScope": "Complete bounded public response. No player selector supplied."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].txId": {
+      "valueClass": "id"
+    },
+    "body.data[0].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].lastUpdatedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].player": {
+      "valueClass": "name"
+    },
+    "body.data[0].token": {
+      "valueClass": "enum"
+    },
+    "body.data[0].qtyTotal": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].qtyAvailable": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].cancelTx": {
+      "valueClass": "id"
+    },
+    "body.data[0].expirationBlocks": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].txId": {
+      "valueClass": "id"
+    },
+    "body.data[1].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[1].lastUpdatedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[1].player": {
+      "valueClass": "name"
+    },
+    "body.data[1].token": {
+      "valueClass": "enum"
+    },
+    "body.data[1].qtyTotal": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].qtyAvailable": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].status": {
+      "valueClass": "enum"
+    },
+    "body.data[1].cancelTx": {
+      "valueClass": "id"
+    },
+    "body.data[1].expirationBlocks": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": [
+      {
+        "txId": "4b4763289cfca8fd3efe01a715adde75fb1059cf",
+        "createdDate": "2026-09-07T12:17:57.000Z",
+        "lastUpdatedDate": "2026-09-07T12:17:57.000Z",
+        "player": "sample-acct-052",
+        "token": "SPSP",
+        "qtyTotal": "2000.000",
+        "qtyAvailable": "2000.000",
+        "pricePerToken": "0.002",
+        "status": 1,
+        "cancelTx": null,
+        "expirationBlocks": 201600
+      },
+      {
+        "txId": "588d9db2c0ee72cce8fad182f2d2a600e802c6a8",
+        "createdDate": "2026-09-07T12:17:57.000Z",
+        "lastUpdatedDate": "2026-09-07T12:17:57.000Z",
+        "player": "sample-acct-052",
+        "token": "SPSP",
+        "qtyTotal": "5000.000",
+        "qtyAvailable": "5000.000",
+        "pricePerToken": "0.002",
+        "status": 1,
+        "cancelTx": null,
+        "expirationBlocks": 201600
+      }
+    ]
+  }
+}

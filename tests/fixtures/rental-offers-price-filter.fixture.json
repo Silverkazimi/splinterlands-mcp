@@ -1,0 +1,17 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T10:03:59.589680+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/offers",
+    "captureScope": "Complete bounded public response. No player selector supplied."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:29:56.526654+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/status",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.config.reward_point_threshold": {
+      "valueClass": "numeric"
+    },
+    "body.config.staked_pack_value": {
+      "valueClass": "numeric"
+    },
+    "body.config.max_packs_per_wagon": {
+      "valueClass": "numeric"
+    },
+    "body.config.max_possible_wagon_cp": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "config": {
+      "reward_point_threshold": 100000,
+      "staked_pack_value": 125,
+      "max_packs_per_wagon": 100,
+      "max_possible_wagon_cp": 787500
+    }
+  }
+}

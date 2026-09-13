@@ -1,0 +1,26 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T00:00:00Z"
+  },
+  "valueClasses": {
+    "status": { "valueClass": "enum" },
+    "data[0].title": { "valueClass": "enum" },
+    "data[0].player": { "valueClass": "name" },
+    "data[0].created_date": { "valueClass": "timestamp" },
+    "data[0].avatar_id": { "valueClass": "id" },
+    "data[0].league": { "valueClass": "numeric" },
+    "data[0].modern_league": { "valueClass": "numeric" }
+  },
+  "status": "success",
+  "data": [
+    {
+      "title": "Warden",
+      "player": "sample-acct-067",
+      "created_date": "2024-05-28T15:34:23.831Z",
+      "avatar_id": 15,
+      "league": 13,
+      "modern_league": 11
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-12",
+  "units": "additive decimal fraction; 0.10 means +10 percent",
+  "elements": [
+    "fire",
+    "water",
+    "life",
+    "death",
+    "earth",
+    "dragon"
+  ],
+  "modifiers": {
+    "badlands": {
+      "fire": 0.1,
+      "water": 0,
+      "life": -0.5,
+      "death": 0.1,
+      "earth": -0.5,
+      "dragon": 0
+    },
+    "bog": {
+      "fire": -0.5,
+      "water": 0.1,
+      "life": -0.5,
+      "death": 0.1,
+      "earth": 0,
+      "dragon": 0
+    },
+    "caldera": {
+      "fire": 0.1,
+      "water": 0,
+      "life": 0,
+      "death": -0.5,
+      "earth": -0.5,
+      "dragon": 0.1
+    },
+    "canyon": {
+      "fire": 0.1,
+      "water": -0.5,
+      "life": -0.5,
+      "death": 0.1,
+      "earth": -0.5,
+      "dragon": 0.1
+    },
+    "desert": {
+      "fire": 0.1,
+      "water": -0.5,
+      "life": -0.5,
+      "death": 0,
+      "earth": 0,
+      "dragon": 0.1
+    },
+    "forest": {
+      "fire": 0,
+      "water": 0,
+      "life": 0.1,
+      "death": -0.5,
+      "earth": 0.1,
+      "dragon": -0.5
+    },
+    "hills": {
+      "fire": 0,
+      "water": -0.5,
+      "life": 0.1,
+      "death": -0.5,
+      "earth": 0,
+      "dragon": 0.1
+    },
+    "jungle": {
+      "fire": 0,
+      "water": 0,
+      "life": 0.1,
+      "death": -0.5,
+      "earth": 0.1,
+      "dragon": -0.5
+    },
+    "lake": {
+      "fire": -0.5,
+      "water": 0.1,
+      "life": 0,
+      "death": 0,
+      "earth": 0.1,
+      "dragon": -0.5
+    },
+    "mountain": {
+      "fire": 0.1,
+      "water": -0.5,
+      "life": 0,
+      "death": 0.1,
+      "earth": -0.5,
+      "dragon": 0
+    },
+    "plains": {
+      "fire": 0,
+      "water": -0.5,
+      "life": 0.1,
+      "death": 0,
+      "earth": -0.5,
+      "dragon": 0.1
+    },
+    "river": {
+      "fire": -0.5,
+      "water": 0.1,
+      "life": 0,
+      "death": 0,
+      "earth": 0.1,
+      "dragon": -0.5
+    },
+    "swamp": {
+      "fire": -0.5,
+      "water": 0.1,
+      "life": -0.5,
+      "death": 0.1,
+      "earth": 0,
+      "dragon": 0
+    },
+    "tundra": {
+      "fire": -0.5,
+      "water": 0.1,
+      "life": 0.1,
+      "death": -0.5,
+      "earth": 0.1,
+      "dragon": -0.5
+    }
+  },
+  "source": {
+    "url": "https://support.splinterlands.com/hc/en-us/articles/17774054945044-Terrain-Preferences",
+    "imageUrl": "https://support.splinterlands.com/hc/article_attachments/39939347158036",
+    "imageSha256": "d506ed48e55225c95a150455b0691176d174a3327521292a7f3e0f55c60b8b34",
+    "neutralRule": "Follow the Terrain Preferences whitepaper link from the support article: neutral cards have no terrain bonus or penalty.",
+    "dualElementClient": {
+      "url": "https://splinterlands.com/assets/index-CETWKRFI.js",
+      "sha256": "56f9dfea4528e678852c865dbce6fd464f32161ec91685c5cda3f6e111973372",
+      "function": "getCardBiomeModifier"
+    }
+  },
+  "interpretation": "Blank cells in the official diagram are transcribed as zero (no terrain modifier).",
+  "scope": "Six elemental columns plus a zero neutral modifier and source-backed dual-element selection. Ability-specific terrain overrides are not inferred.",
+  "neutralModifier": 0,
+  "dualElementRule": "Use the larger modifier of the primary and secondary elements; a tie retains the primary element. Public client getCardBiomeModifier behavior."
+}

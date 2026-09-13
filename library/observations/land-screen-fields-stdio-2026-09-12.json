@@ -1,0 +1,41 @@
+{
+  "verifiedAt": "2026-09-12T12:14:14.315Z",
+  "transport": "built stdio",
+  "results": [
+    {
+      "uri": "splinterlands://land/rules/screen-fields",
+      "mimeType": "application/json",
+      "schemaVersion": 1,
+      "reviewedAt": "2026-09-12",
+      "bytes": 2341
+    },
+    {
+      "uri": "splinterlands://land/rules/card-abilities",
+      "mimeType": "application/json",
+      "schemaVersion": 1,
+      "reviewedAt": "2026-09-12",
+      "bytes": 5349
+    },
+    {
+      "uri": "splinterlands://land/rules/terrain",
+      "mimeType": "application/json",
+      "schemaVersion": 1,
+      "reviewedAt": "2026-09-12",
+      "bytes": 1802
+    },
+    {
+      "uri": "splinterlands://land/rules/production",
+      "mimeType": "application/json",
+      "schemaVersion": 1,
+      "reviewedAt": "2026-09-12",
+      "bytes": 747
+    },
+    {
+      "uri": "splinterlands://land/rules/cap",
+      "mimeType": "application/json",
+      "schemaVersion": 1,
+      "reviewedAt": "2026-09-12",
+      "bytes": 1138
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-07T10:50:41Z",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "data.active_land_project_id": {
+      "valueClass": "id"
+    },
+    "data.black_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.blue_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.card_abilities_boost": {
+      "valueClass": "numeric"
+    },
+    "data.card_bloodlines_boost": {
+      "valueClass": "numeric"
+    },
+    "data.dec_stake_needed_discount": {
+      "valueClass": "numeric"
+    },
+    "data.deed_rarity_boost": {
+      "valueClass": "numeric"
+    },
+    "data.deed_status_token_boost": {
+      "valueClass": "numeric"
+    },
+    "data.deed_uid": {
+      "valueClass": "id"
+    },
+    "data.efficiency": {
+      "valueClass": "numeric"
+    },
+    "data.gold_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.grain_food_discount": {
+      "valueClass": "numeric"
+    },
+    "data.green_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.has_completed_first_project": {
+      "valueClass": "enum"
+    },
+    "data.has_labors_luck": {
+      "valueClass": "enum"
+    },
+    "data.is_energized": {
+      "valueClass": "enum"
+    },
+    "data.is_power_core_staked": {
+      "valueClass": "enum"
+    },
+    "data.is_powered": {
+      "valueClass": "enum"
+    },
+    "data.is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data.lite_food_discount": {
+      "valueClass": "numeric"
+    },
+    "data.manager": {
+      "valueClass": "name"
+    },
+    "data.max_workers_allowed": {
+      "valueClass": "numeric"
+    },
+    "data.powered_worker_count": {
+      "valueClass": "numeric"
+    },
+    "data.red_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.region_uid": {
+      "valueClass": "id"
+    },
+    "data.runi_boost": {
+      "valueClass": "numeric"
+    },
+    "data.title_boost": {
+      "valueClass": "numeric"
+    },
+    "data.total_base_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_base_pp_after_cap": {
+      "valueClass": "numeric"
+    },
+    "data.total_base_pp_after_cap_percentage": {
+      "valueClass": "numeric"
+    },
+    "data.total_base_pp_cap": {
+      "valueClass": "numeric"
+    },
+    "data.total_boost": {
+      "valueClass": "numeric"
+    },
+    "data.total_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_card_abilities_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_card_bloodlines_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_construction_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_dec_stake_in_use": {
+      "valueClass": "numeric"
+    },
+    "data.total_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.total_dec_staked": {
+      "valueClass": "numeric"
+    },
+    "data.total_deed_rarity_boost": {
+      "valueClass": "numeric"
+    },
+    "data.total_deed_rarity_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_deed_status_token_boost": {
+      "valueClass": "numeric"
+    },
+    "data.total_deed_status_token_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_harvest_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_runi_boost": {
+      "valueClass": "numeric"
+    },
+    "data.total_runi_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_terrain_boost": {
+      "valueClass": "numeric"
+    },
+    "data.total_terrain_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_title_boost": {
+      "valueClass": "numeric"
+    },
+    "data.total_title_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_totem_boost": {
+      "valueClass": "numeric"
+    },
+    "data.total_totem_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.totem_boost": {
+      "valueClass": "numeric"
+    },
+    "data.white_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.worker_count": {
+      "valueClass": "numeric"
+    },
+    "status": {
+      "valueClass": "enum"
+    }
+  },
+  "status": "success",
+  "data": {
+    "region_uid": "PR-PNW-1",
+    "deed_uid": "I-291-aafc48f64a8856",
+    "is_powered": true,
+    "is_runi_staked": false,
+    "is_power_core_staked": true,
+    "is_energized": false,
+    "has_labors_luck": false,
+    "max_workers_allowed": 5,
+    "runi_boost": 0,
+    "title_boost": 0,
+    "totem_boost": 0,
+    "deed_status_token_boost": 0,
+    "deed_rarity_boost": 0,
+    "card_abilities_boost": 0,
+    "card_bloodlines_boost": 0,
+    "grain_food_discount": 0,
+    "lite_food_discount": -0.03,
+    "dec_stake_needed_discount": 0,
+    "total_boost": 0,
+    "total_base_pp_cap": 100000,
+    "total_base_pp": 6200,
+    "total_base_pp_after_cap": 6200,
+    "total_base_pp_after_cap_percentage": 1,
+    "total_construction_pp": 6820,
+    "total_terrain_boost": 0.1,
+    "total_terrain_boost_pp": 620,
+    "total_dec_stake_needed": 41000,
+    "total_dec_stake_in_use": 41000,
+    "efficiency": 1,
+    "total_deed_rarity_boost": 0,
+    "total_deed_rarity_boost_pp": 0,
+    "total_deed_status_token_boost": 0,
+    "total_deed_status_token_boost_pp": 0,
+    "total_runi_boost": 0,
+    "total_runi_boost_pp": 0,
+    "total_title_boost": 0,
+    "total_title_boost_pp": 0,
+    "total_totem_boost": 0,
+    "total_totem_boost_pp": 0,
+    "total_card_abilities_boost_pp": 0,
+    "total_card_bloodlines_boost_pp": 0,
+    "total_boost_pp": 0,
+    "total_harvest_pp": 6820,
+    "total_work_per_hour": 34.1,
+    "powered_worker_count": 5,
+    "worker_count": 5,
+    "manager": "sample-account-b",
+    "active_land_project_id": 231753,
+    "has_completed_first_project": true,
+    "red_biome_modifier": -0.5,
+    "blue_biome_modifier": 0.1,
+    "white_biome_modifier": -0.5,
+    "black_biome_modifier": 0.1,
+    "green_biome_modifier": 0,
+    "gold_biome_modifier": 0,
+    "total_dec_staked": 8005321
+  }
+}

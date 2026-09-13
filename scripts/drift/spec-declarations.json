@@ -1,0 +1,1646 @@
+{
+  "purpose": "Upstream declarations for review; not verified runtime capabilities or access permissions.",
+  "declarations": [
+    {
+      "source": "vapi",
+      "path": "/",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b2f79d3b423c322690ee9d50f4ab20c91b331cf883a42492b09d0c057244e875"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "25fe0e435c4140a29d155e2a0649d3c3e098d518bb23123e754e5f94c96eb3df"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/{player}/{binderRef}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f3e43c1634f8017e819b2d4d9bffcf0fd474ac754fd3843f15c1b351d419d92a"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/{player}/stickers/all",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "1418740782c8b3e05f27b75b633d6b1c08cde049a78c4c74cf79b9ac05f2ad9f"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/{player}/stickers/for_sale",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "1a7a21fcd474fa77ba741fcb2ae3796f19bf78386469ce659983a2c0804b78a5"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/{player}/stickers/tradeable",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "5db0f69b1d2cd756229124f0ed03c798dd3f0b325c8969dd90cd9ccb9a20a941"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/config",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "c152c08815eba0798d89e8d5561d394acf7d3a5dc484fcce091182e99f14a4d7"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "5c1771da250205ff6b485c530129fd5920a51d3f435c8b1122b9f2a2f321d8be"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "96eba86bd5669510aa976e356c187387e194051d7f684519e30f625d394de257"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/cards/{cardUid}/note",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "bd529d17825767832486fcd07d3157acf9b9bfed836a3820422b9b2fcb997120"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/cards/{cardUid}/note/clear",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "e6cf139c3d7293fc5fc41877985c922423adf435591a8055c02c282005d068c9"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/gift-events/seen",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "a553875a006edb3414cb23bb35335b402a746ac972ac58eacdaac660f7ce232d"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/layout",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "2a2c39081024a55a21cfd82c1ef959c7dfd30e738f8c8bca401ea01566b5baa6"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/layout/clear",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "35c71c2aecb338c4fb7a92bcfbed58eb1e2d24e54f7f520b63247cae2b7b58d6"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/pages/assign",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "dc41c875d98153f077d17fe623d1e5c452a1fcc5e93be7ba080b1bffd82abcce"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/settings",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "964c7f68e327ae9a3e92dbe291911f1c06a5e535e3037a0fdb4bf90e5177c1bb"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/stickers",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "c9d16a251d495ae0ea05af77b8729d90384fa093f0a090a58ff4e98031746e60"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/stickers/clear",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "c368125fca28eb21d4f8f2b1ae52cda31e546844682a589db4a1e29796f68fc4"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/binders/order",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "9c3d001998cb1c9c170c4da2cfba2fc982e37fa8f19878b3e6cc6c5df54b260b"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/room-settings",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "850a48223562e81594b95f042a03eaea260395d2ab57fcd6042962f060470ac4"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/stickers",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "13b131e9a510f0572926236ba75da18e16bd0320edbccf02f33b96ea1ba71d91"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/stickers/{placementId}/delete",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "2427d21c5a3433140cf83e5e11db7e282f73dc630bf4699446a170dd7a1490f1"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/bids",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d561c87350be14231708ea86d47d51b87901fa6d13f2da3bd0c366103f9aff86"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/rentals/bid/{bid}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "fcf7bd501cbc246ec6e7a93ddea70930529aeb1ccddf26159f7c4b34241857f2"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/rentals/player/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f91917eb1fdd0946a42c2ffb7d2e06873793bda4b40c0b07ed7cc4bd32236088"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/v3/bids",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "7266c9627e075775965bcb33d291702cbe8d9cc3913e394aa9e9e4c0b48c270b"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/v3/bids/lowest-price",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9df71a640077d426438d73a510012d6b02808b7527c1f9ebfb269fd72ca35d8e"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/v3/bids/player/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "6ee495ff77811c140405bc653105e2695b2c795c8991daecefe3216daa97c08e"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/v3/offers",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9e9ae57bc41d74da1a595bf6ec43964909dadabf14037a468eea1fdc9b64e729"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/v3/offers/lowest-price",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "efc3ca54cdae1abb83c75ca87af560851f8bdf59fd7f2450fd1d71cbea561cc8"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/v3/offers/pending/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b4d754edb3626f3e297a6817d8c7bec48ae1558d2c8806a390dafd11a0d52c2c"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/v3/offers/player/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "5b53b9c67ba97a9735a7e8caea0437a8fa8e52d3c44fff96bae1a169587e75f5"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/v3/rentals/player/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "980372d8fbace5508b13099d02c891a0b2ef65e291ab6888a6c6073f144feb6b"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation-rental/v3/rentals/player/{player}/{role}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a56db21785f93c8f6f57e9f931ff093540d139b4de72aa8653fc12968c5959f9"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation/delegation/{player}/{target}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "caf4ae1cf7016186cdead7b1c2fee1be2c33dbe137d128655cd1bb3eb3fc4a56"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation/incoming/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b7714dcdbed3eca8e2e278987f814de108f10467f67f310848e9fe749dd647e8"
+    },
+    {
+      "source": "vapi",
+      "path": "/delegation/outgoing/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9d1dec4d3fe772af1e15307ee337e58602a561f9c47090eb38753aac5ecb2644"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/deeds",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "dd99c0b89841fe96f9f83b49c46c39b02330dd85153693cfcb6f4a57afae6872"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/deeds/{plot_id}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "eab50d65c5cd2727b1260f5923513294a0840c1b27549e4031a874e422dd8d8a"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/deeds/details/{deed_uid}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "3a2b03f7d6caa487ffcbbe2a99f3ecf640ffa1af4cb915a851c6b086afc31184"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/deeds/details/id/{plotId}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "607af9452d0dbaa93c320a016f709b60bac67bae380fa6d196c3ce91ff626a09"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/deeds/owned/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "6d52feb3a30eb765cdd81acf9798851e743f2e145b4e749f3fc7acb093eab25a"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/allrewards",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2dc785fccbcb2310acdab180d6e67b6c08fc2a97fa8055647328b7bdc04f54dd"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/landpools",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2bd07ab26ca9e40f9252a7a6c4bdcd73f63478dca5e5cf6359670001e159b132"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/pool/rewards/{token}/{poolId}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b930677e21e9495f4032ddda1553c2a609ea4ae66c876ad4c27de87a5a7f2dbd"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/pools",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2114aba491689a76b4dd8583c6c95a5024c9ca729bda302bddd50557d7df06b5"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/pools/{id}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "cce67097742b0e3ea5321cbaebf9d43bedceabfaf061b1d6aae23a675aba7251"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/pools/{player}/{token}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d77a607e1f1e2536358f01fcb09ce31f32c54810e7b33616e4b6b0878775d2a0"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/poolsbysymbol/{symbol}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "329080ee081f77ccca76e553c850490f6f448ca280c6de7277b537cc4678d1e1"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/quote/{poolId}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "994886f0d20279a2d95df901cf63cc90472a25d4cbaef046353366120c004b51"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/region/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2b2ea5367ddb301fd79ed8cb7fc94c90f3d43dbad93362122cbaa971cfeb7c4f"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/resources/{player}/{token}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b66941ba94ab50e6356b57ec51c3f9e30c1852bfd85b0b7ae87088ca177f676d"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/liquidity/voucherpool",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "47e759ce44718fbcd559dfaa796d3007d354d09349c19d48a42a3d907eba4e9e"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/projects/deed/{deedUid}/active",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "40a6212270413060dfc00d0736f960a95dfd1449b88120cccc17bec3302f561c"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/projects/deed/{deedUid}/list",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f738f55a3f59aecb40c58878d81e33b9072efbfcaea2f50d99e26501e9c836d3"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/projects/deed/{deedUid}/list/count",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "db5ea02dffa236ecac3a6d514f2bd8670307b85b49d2e8dd98e25e87896b5bb7"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/projects/deed/{deedUid}/requirements",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a76209b56cc8a9d2a8759fa8c1396f989cf582e90a7b6b2172adfc82f4dc91de"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/regions/counts",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9afd091c013c8debf583e2f0069e75bcc6951f65fd988b7104c5d41b5c1bfe8b"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/balances/history/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "486715869296f8af8bd2d5a2d61e16b81fb05affc4fbaf5264572a4f50987faa"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/balances/history/{player}/{regionuid}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "489a7972c3390ea6891c9a30bd2358bfa9ee373e524691ffdb399d6211df7436"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/balances/history/{player}/{regionuid}/count",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "70330d6423df415b0208b677dfb0ef7666aa178bae23da29120d7a532b0f1b46"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/balances/history/{player}/count",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "32ea839be0ac5e7dd5736e9e15c8bb7179456719fbdcef09c8d7e85c6188bd99"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/fragment_history/{trx_id}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "991d8f3f55c4fef5805a804e7ba63130e27abf3e3e9f9a22488ea05c7f6d5f0d"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/history/{trx_id}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "12d1b4494bca3bfac995e54e8d187e1b8e7c725cc3904e472339c8515834ca2d"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/leaderboards",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "e8596f818b09b577aa0623845c3bf3029577426bda05fcbe8f1a2232809db2fd"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/liquidity/history/swaps/{pool}/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "1df2cf9a36afb73c28790a8470c02303ef0a89c74d7a154552e23bca75961943"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/liquidity/swaps/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "3c528c1a0a6d5a3f55a2a406626d00e3a26787a6ca1ac36e99e65da010455c66"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/owned",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "cc2c8f081abecaa8b929c5b0cd0fa87a2dc6347adbdbc6d4b275fa1cce438240"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/production/overview",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f4e31564c3340e6280f74ea6219604343fac4f279590c1a682290089d277d64a"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/production/region/harvestable",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d7ee2d8bcbdb6d3a8323207780a24970b47d7fcb161c9f43ed87c4ea433760f3"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/production/region/overview",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "774eb1361f69bbf95190a53673c69955fc84561d64bea27361130401459913f2"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/rewardactions/{deedUID}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2fc307d6fc8d8bfe4b4e0e0d2c9d6cd1374eeb18aadbffa15664f14bb3f32bb7"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/rewardactions/{deedUID}/count",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a5f893d142c3075c64f67f0dfa3a3fdc3c9efe4245239131be712a17afafe26e"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/richlist",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9607164bb03f94a616d0e7384bf48a84e2882701b994bfa65f2342d3db528c7c"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/taxes/{deedUID}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "088bff49b716d962254b2a43a2b02b39562db146fe04557725a1a733d1ec578c"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/titles",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a29c301f07e382f5c586263740bbd9c38d043eaacea2076a538c236587025647"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/titles/assigned",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "c697dd14444fda4b3dd9b21cb4c4afc3cbe20448fc64b89f8f429facca36f41e"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/resources/titles/assigned/{player}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "e5204b462c2856d6769b4e79bc1550943a78bcf860cf9b83aa7c8424f3803c78"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/cards/{stakeTypeUid}/available",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "39830cbcb64bea4a191ccfca5dc736e7eaa4d325a2ba806f31645b2aac5431c8"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/cards/{stakeTypeUid}/grouped",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "536408f9cbd1ff5fe7ca071b2b8b2cf3667a6d000536f41a35e30a8577f86af8"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/dec/overall",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9be0f3d558d0e0d367e36c8f79948ac3e142d5e704909e0702bee107eb443caf"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/dec/region",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2ebe6bfa21551770708308b5cda3fffb8777f0b60e19a3492750fabc776060db"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/decstaked",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "4d8fc86244ee97b1dd2c5a088c88146eab4710e5475ab5a30dc90f1319d18a76"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/deed/details/{deedUid}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "24a7c57e7ab9b13807202f5ea0e870fea61e243cb6530b0c4ebbe13cf60c8a1c"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/deeds/{deedUid}/assets",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a47d40b5acb88dabf34d5c4865eefabfe664582087b3486fb8083d423f4174ff"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/evp/pending-claim",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9e817001b11e49d7521e6ee1b29821ac369b18e76b2cf1e5c50bb99a869a9e48"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/items/{stakeTypeUid}/available",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "0366ae78c74a9931fdf6b3252439b99792af864a0a73e651b57012db4c7d8358"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/stake/items/{stakeTypeUid}/grouped",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "921b8c72b4fc3c449bc53977b74146368a482d75f3af54f7dbe5e17d412f4bec"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/tracts/counts",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "30819ccf2266d80c715bbec6dc88fc7b1129823ebc8ef0f3233f3eef3d0a8298"
+    },
+    {
+      "source": "vapi",
+      "path": "/land/volume",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d2b792f344311172704059dc11de253f85d8ed622bbbffe9224f2031a706bad5"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/debug/listing",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b9da21306ba2b4068e498a915ce1ff145b21efb0ccec7b7f9180fa8d526328d9"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/debug/listing-item",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ca616d3ac6c855aa24dfdcaa460937121a5fdb9c2341e3536a53429b5fa5377e"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/estimated-price",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "5c338692eb7a98fa09e834dc4866c13edad9eda89181e6dc2101e59934385522"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/landing",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "782fc42ba1e4f5bdacbcc89d7628d71d5868710ba77e2c1d248d899d1ee3070b"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/listing-items",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "ae85e20e876840f811c00d9501924eea38319427a10584134e6bdf226f52fcfa"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/meta/asset/{assetName}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "da42a1c8f4bc713e0c75a55d7ed7401b4d20f735bfb8b820a65840277e230f2b"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/player/activity",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "0b206dde41d4a2bef672dbf6bf15fc3f90b4b4dcd8259737512903cae3be32a8"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/player/all_listings",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "4357244bd5ee1afb6c9ee6662402a5b8f49f00a959f35df22cbd674a5637308c"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/player/asset-detail-stats",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b604ac18eabfe426b979259a3c3858be04aac2e699f6a40af6cc8d6ca38f80fd"
+    },
+    {
+      "source": "vapi",
+      "path": "/market/player/listings",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "0d6d7eca978ce13ac558221ee9a35dc46f8f6dcb7e6a5ebd29aa2eed43df49d2"
+    },
+    {
+      "source": "api",
+      "path": "/battle/battle_queue",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b95c0f24f32dde31785c1821c8087d261aed7461ff19cffcc43ab9ebe938f403"
+    },
+    {
+      "source": "api",
+      "path": "/battle/battle_teams_info",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a2c34d04684bdbe41a941db06ceed76bd92c9b3fbc7b548dcdfd8d5ca8fe171f"
+    },
+    {
+      "source": "api",
+      "path": "/battle/battle_tx",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "e257b289e62f8ad60312a80e57581f78509189120372ad37abe18e16d6cd7e09"
+    },
+    {
+      "source": "api",
+      "path": "/battle/history",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d805c34809dcb573ea22085ff07966efa03b946154aba42ec6ab4f98869294f2"
+    },
+    {
+      "source": "api",
+      "path": "/battle/history2",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "071b0b672dcb73a7c62ffbf32a2c19d0654f6c03a6347c9b0f25449f69e2f9d9"
+    },
+    {
+      "source": "api",
+      "path": "/battle/result",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "917c5e699ce2cdfb61ab0436db48954df1a233a199c0e24c75b381da395da8be"
+    },
+    {
+      "source": "api",
+      "path": "/battle/status",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "5e7affcca425b67212f8d1d6419163e07975d31cb0cab16a2067a3dbb437ad70"
+    },
+    {
+      "source": "api",
+      "path": "/battle/submit_ptr",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "bb657b840ddc062ce532e1c71938493cb8865e39d962799c3dd6b10bf8f848be"
+    },
+    {
+      "source": "api",
+      "path": "/cards/get_details",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "c2ac2cc954fdf0d0f6eea1558fc9cd2ac866b2a79760cf81c5d1076eb14ab854"
+    },
+    {
+      "source": "api",
+      "path": "/cards/history",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "eb076f8cb4ffd4337fa877c88b12e93246fc83020f6cce512bad712dadc147e8"
+    },
+    {
+      "source": "api",
+      "path": "/cards/lore",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f94e1a49eb9f88ec146449520432d50cc8cb1eca7343943da7094d7724f29653"
+    },
+    {
+      "source": "api",
+      "path": "/cards/pack_data_wax",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d39c6077ebeacf6870b2618fc9094d7e86c08ab526cc4e5ede03d53cedc8fa3e"
+    },
+    {
+      "source": "api",
+      "path": "/cards/skins",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d39c6077ebeacf6870b2618fc9094d7e86c08ab526cc4e5ede03d53cedc8fa3e"
+    },
+    {
+      "source": "api",
+      "path": "/cards/stats",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d39c6077ebeacf6870b2618fc9094d7e86c08ab526cc4e5ede03d53cedc8fa3e"
+    },
+    {
+      "source": "api",
+      "path": "/cards/trx_lookup",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2a9d78227b140c22cd93bb6ac117673684e5e71fb744f2f1fc69fdd1fe223861"
+    },
+    {
+      "source": "api",
+      "path": "/conflicts/airdrop_distribution",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "e0c2dc245e9c768e42c7a2167c7afedca3aaabac5e68518fb074830b3cf8063d"
+    },
+    {
+      "source": "api",
+      "path": "/conflicts/leaderboard",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "880b33d66e98c86912e78b55ca849948c10bd9b0b40fdb89710518baf59d8a95"
+    },
+    {
+      "source": "api",
+      "path": "/conflicts/leaderboard_with_player",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2b857ef989e393d43478931fead91fd895d072a6b1392a1ed630cecfffc156ce"
+    },
+    {
+      "source": "api",
+      "path": "/conflicts/players",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "c3e91c73861ea966b2549a14aad4a603686274a04b576d89ddcb155238608c70"
+    },
+    {
+      "source": "api",
+      "path": "/conflicts/seasons",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2cf844bdc86f54ccdb88bde0064c97bba27ab3ae442912eed1de2c34b7c405b9"
+    },
+    {
+      "source": "api",
+      "path": "/conflicts/status",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "5e0d2040902f983d76edd438c17a48f0e95b9017d59ccbbc621827e5aaf1f834"
+    },
+    {
+      "source": "api",
+      "path": "/conflicts/wagon",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b0f4e193ca011d6317dafe185593bc53d5500d4e2b65f40e5c9bfead766e8efc"
+    },
+    {
+      "source": "api",
+      "path": "/conflicts/wagon_eligible_cards",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2a552dac606e336377a5560056a339a5011d88a9996e043ca0b4cb1d530f9b9d"
+    },
+    {
+      "source": "api",
+      "path": "/guilds/brawl_records",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9d731d4178c9bd79e8b5d6a207fbc352672b7149da105cb02e95d159aec185f9"
+    },
+    {
+      "source": "api",
+      "path": "/guilds/brawl_sps_rewards",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "032a896fa055f30be6d9d196e5fe497cc26e01e28877621041c8ab05acb5ccc9"
+    },
+    {
+      "source": "api",
+      "path": "/guilds/contributions",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "6e9e4c1fcded4b6a5a46bf610845376bd52ac319624b095c44f25f8cc41af2cc"
+    },
+    {
+      "source": "api",
+      "path": "/guilds/find",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "4b1b9901d6a3c22a36c4ae0ee5ffac380caa9edc1b8b3db1586659a7e2218621"
+    },
+    {
+      "source": "api",
+      "path": "/guilds/list",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "dfc95a9e4fd12430a20bc731fdaf9d9df104343a5bcad76c537a1b9b574272fd"
+    },
+    {
+      "source": "api",
+      "path": "/guilds/members",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "780ffb05830935df196e314bcfe109cd53ea7af0d7548f19c010ba1b1d989834"
+    },
+    {
+      "source": "api",
+      "path": "/last_block",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d39c6077ebeacf6870b2618fc9094d7e86c08ab526cc4e5ede03d53cedc8fa3e"
+    },
+    {
+      "source": "api",
+      "path": "/maintenance_schedule",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "cb715bcfc34ecc2ae07874ca76364b6ae96ae1c6dfb41a59cfdcea49909597a5"
+    },
+    {
+      "source": "api",
+      "path": "/market/active_rentals",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "440d8d1437fc3265c0b25c94d94d9149e62a43f17d66237e96e0e9408ee78e7e"
+    },
+    {
+      "source": "api",
+      "path": "/market/active_status",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "4e79e6d1ef5dd7c0ddb4860ebf5d99da349da9738f72fc7d00f43d1b1494806d"
+    },
+    {
+      "source": "api",
+      "path": "/market/completed_status",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "4e79e6d1ef5dd7c0ddb4860ebf5d99da349da9738f72fc7d00f43d1b1494806d"
+    },
+    {
+      "source": "api",
+      "path": "/market/for_rent_grouped",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "e3d1ee769a11cb0721b03cf095840f616e3267da1d8ee44d55191043b4cdff3e"
+    },
+    {
+      "source": "api",
+      "path": "/market/for_sale_grouped",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "e3d1ee769a11cb0721b03cf095840f616e3267da1d8ee44d55191043b4cdff3e"
+    },
+    {
+      "source": "api",
+      "path": "/market/for_sale_packages",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "89a051276675054b5556ae851cf1e658d78ea69e66bab68807d599ad48205099"
+    },
+    {
+      "source": "api",
+      "path": "/market/history",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "e08af3d3673a5ff47699d97c9db4fb535d283f85ba0e17a58ab455701289ee47"
+    },
+    {
+      "source": "api",
+      "path": "/market/market_query_by_card",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "e70781773122d60fb7a1e5db7bb22c797ce05980eeeec548d95f845c93ad51db"
+    },
+    {
+      "source": "api",
+      "path": "/market/market_query_grouped",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2ae284bd9a0883cd9528f39c1414857529ce2e934f78f902a8d8cb4d94a277df"
+    },
+    {
+      "source": "api",
+      "path": "/market/rental_history",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "4dad6d4dce5a2e55738822c2c666683e66268ebe15c185c7ebd65f83fac8ffb4"
+    },
+    {
+      "source": "api",
+      "path": "/market/status",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "4e79e6d1ef5dd7c0ddb4860ebf5d99da349da9738f72fc7d00f43d1b1494806d"
+    },
+    {
+      "source": "api",
+      "path": "/market/volume",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "89a051276675054b5556ae851cf1e658d78ea69e66bab68807d599ad48205099"
+    },
+    {
+      "source": "api",
+      "path": "/players/archived_balances",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "eda2ce92b2f08b5ab578b36b46d21b23c9bb6fa25b3cb274ebdf53f0cebe6890"
+    },
+    {
+      "source": "api",
+      "path": "/players/authorities",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "2ae107740ad5015df705e43dbf112c1171db5946e630fc3c512e4cbd6e586ee8"
+    },
+    {
+      "source": "api",
+      "path": "/players/avatar/{name}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "76a19f949ec0c04674aa80a32b99d025983807178bc247b030de38e79d100711"
+    },
+    {
+      "source": "api",
+      "path": "/players/balance_history",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f43e2c9642d1f3b886a48de7e32e995bf9d0bd3b75cccc8523dd0d67f8383f56"
+    },
+    {
+      "source": "api",
+      "path": "/players/balances",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "eda2ce92b2f08b5ab578b36b46d21b23c9bb6fa25b3cb274ebdf53f0cebe6890"
+    },
+    {
+      "source": "api",
+      "path": "/players/burn_event_full_leaderboard",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d39c6077ebeacf6870b2618fc9094d7e86c08ab526cc4e5ede03d53cedc8fa3e"
+    },
+    {
+      "source": "api",
+      "path": "/players/burn_event_leaderboard",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d39c6077ebeacf6870b2618fc9094d7e86c08ab526cc4e5ede03d53cedc8fa3e"
+    },
+    {
+      "source": "api",
+      "path": "/players/burn_event_player",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "676681ee672c5f2e00da04e57a9bef73ddfd06726b41515b96161da879d61210"
+    },
+    {
+      "source": "api",
+      "path": "/players/burn_event_prizes",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a7eb9d31b4c1513c6455fc8ad9708833d3ed83fe59fc89be72943476ba6db9d8"
+    },
+    {
+      "source": "api",
+      "path": "/players/card_airdrop",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b04be450d5b6f9597a6f00599ea34e8d7060967e7a6e90dd2bf0811d0209025c"
+    },
+    {
+      "source": "api",
+      "path": "/players/current_rewards",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f9b26af72cb6f4e5d2fa4d77a03acc83cc2584ed074e92b475d9231e2d7ace7e"
+    },
+    {
+      "source": "api",
+      "path": "/players/daily_updates",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d39c6077ebeacf6870b2618fc9094d7e86c08ab526cc4e5ede03d53cedc8fa3e"
+    },
+    {
+      "source": "api",
+      "path": "/players/dec",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "d39c6077ebeacf6870b2618fc9094d7e86c08ab526cc4e5ede03d53cedc8fa3e"
+    },
+    {
+      "source": "api",
+      "path": "/players/details_by_id",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "8d9ed158dc16f62db88a6d2fa0401d5b2f8a0cd85501dc79e5b8352c505fbc20"
+    },
+    {
+      "source": "api",
+      "path": "/players/dyk/{locale}",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ef7830470e454864957230e2d96562d94b5ce86a8d25c847cff70ca631e071ef"
+    },
+    {
+      "source": "api",
+      "path": "/players/energy_purchase_information",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a7eb9d31b4c1513c6455fc8ad9708833d3ed83fe59fc89be72943476ba6db9d8"
+    },
+    {
+      "source": "api",
+      "path": "/players/history",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ad8086a7ab74de455bb1c1a1a8ed4b69af45087d41bcd8df55e1262f1b0a77af"
+    },
+    {
+      "source": "api",
+      "path": "/players/inventory",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "19e19e0c75ae7b350f936af8d024345b9c2600d41607b32e055a791a24e46de2"
+    },
+    {
+      "source": "api",
+      "path": "/players/last_focus_rewards",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f9b26af72cb6f4e5d2fa4d77a03acc83cc2584ed074e92b475d9231e2d7ace7e"
+    },
+    {
+      "source": "api",
+      "path": "/players/last_season_rewards",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f9b26af72cb6f4e5d2fa4d77a03acc83cc2584ed074e92b475d9231e2d7ace7e"
+    },
+    {
+      "source": "api",
+      "path": "/players/leaderboard",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "3fc39ef83128c220ba4106a5d7a9fe6f5e1e5ba117fc9a659977507f00bd7c25"
+    },
+    {
+      "source": "api",
+      "path": "/players/leaderboard_with_player",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9cf0020e6e0cd193b4c5ef253c36f0e1a78cae965219975a1876b555bacff2f7"
+    },
+    {
+      "source": "api",
+      "path": "/players/lp_claim_history",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "78b290cdce6a22475048cf0873ceb25fef669ecaf4481eb3b62be7936cfdfbfb"
+    },
+    {
+      "source": "api",
+      "path": "/players/pack_purchases",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "96abfaa7efe804226a2f19e365dcc7d3e6ac271676a6985fa9e50a162186e814"
+    },
+    {
+      "source": "api",
+      "path": "/players/quests",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f9b26af72cb6f4e5d2fa4d77a03acc83cc2584ed074e92b475d9231e2d7ace7e"
+    },
+    {
+      "source": "api",
+      "path": "/players/rebellion_presale_leaders",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f9b26af72cb6f4e5d2fa4d77a03acc83cc2584ed074e92b475d9231e2d7ace7e"
+    },
+    {
+      "source": "api",
+      "path": "/players/recent_teams",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a25cefaddf9abe990286f75566cb9c812c2cb116cfb23ba7adc69ec854384ff1"
+    },
+    {
+      "source": "api",
+      "path": "/players/referral_payments",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "aba44f55a0d699ca52fc5ca8e574ac84daf1725d6d8fe29ceeaf226089a9a804"
+    },
+    {
+      "source": "api",
+      "path": "/players/referral_users",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "aba44f55a0d699ca52fc5ca8e574ac84daf1725d6d8fe29ceeaf226089a9a804"
+    },
+    {
+      "source": "api",
+      "path": "/players/reward_delegation_history",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "dde072701095456bcd998dec011a668014a6c457322ed90397ba45f2914860a1"
+    },
+    {
+      "source": "api",
+      "path": "/players/reward_delegations",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f9b26af72cb6f4e5d2fa4d77a03acc83cc2584ed074e92b475d9231e2d7ace7e"
+    },
+    {
+      "source": "api",
+      "path": "/players/richlist",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "74459c81fd9dec0abb93e11fbbdd72e24f01c39d1aeed41067d11455b90cee1c"
+    },
+    {
+      "source": "api",
+      "path": "/players/richlist_ranking",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "74459c81fd9dec0abb93e11fbbdd72e24f01c39d1aeed41067d11455b90cee1c"
+    },
+    {
+      "source": "api",
+      "path": "/players/skins",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f9b26af72cb6f4e5d2fa4d77a03acc83cc2584ed074e92b475d9231e2d7ace7e"
+    },
+    {
+      "source": "api",
+      "path": "/players/unclaimed_balance_history",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f1e75c69511f9467b8c5ad2e12987dd53b1d550da95e983884f6ed495218ec9d"
+    },
+    {
+      "source": "api",
+      "path": "/players/unclaimed_balances",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "46f0ade1c09e0f2cb08c4c4dfd2ffad5fe3dd57254f9f4e4430e782f091d88e4"
+    },
+    {
+      "source": "api",
+      "path": "/players/v2/login",
+      "methods": [
+        "get",
+        "post"
+      ],
+      "fingerprint": "9e5691b5e9a1f7d122203996eb2738a1bd4fb1973fb5dfa691fa6a2e2af638e8"
+    },
+    {
+      "source": "api",
+      "path": "/players/v2/logout",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "a8a7e9e81f50c6f4489ca6016278017b0c1ecab56b2f41e51077141ccb3a2a20"
+    },
+    {
+      "source": "api",
+      "path": "/players/voucher",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "676681ee672c5f2e00da04e57a9bef73ddfd06726b41515b96161da879d61210"
+    },
+    {
+      "source": "api",
+      "path": "/proposals/",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "5acd8ad35777ba8b45c65d2c555fce4a3d36df8fc4984a52501a24abcd553df0"
+    },
+    {
+      "source": "api",
+      "path": "/proposals/pending_proposal_count",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ab5915e2b289ed7c20b373c49c6baf1dac9feeaa73fc9bb72f9295bd834e2ee8"
+    },
+    {
+      "source": "api",
+      "path": "/proposals/votes",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b1db0c5f9573a90ada570baa497dd244442d16f2d3010d9e1f09a7c3ae7ad96f"
+    },
+    {
+      "source": "api",
+      "path": "/purchases/check_uniswap_reward",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "067b3d58d44b5a95edb5b8409cf0bcc550f4fd73e371070e2a6eb005c51b93b0"
+    },
+    {
+      "source": "api",
+      "path": "/purchases/settings",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "89a051276675054b5556ae851cf1e658d78ea69e66bab68807d599ad48205099"
+    },
+    {
+      "source": "api",
+      "path": "/purchases/stats",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "89a051276675054b5556ae851cf1e658d78ea69e66bab68807d599ad48205099"
+    },
+    {
+      "source": "api",
+      "path": "/purchases/status",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "aef66c6d6ed19863181f715ef62ae120a974480e15815e278d41551e623b8b6a"
+    },
+    {
+      "source": "api",
+      "path": "/season",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "83a64aff9b4feba29c8528244ee453bfe6563f0a87047840e0eb14a3a7539c41"
+    },
+    {
+      "source": "api",
+      "path": "/settings",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "4b8a2b03109c51e56dabe49b6e29c59abe7d2bdd81a7563fb8dd7bd8b39cc372"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/battles",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "e17964bc39f5cb7d4dd13af99c66baa265eb86c33dce27b35f8dd28e879be396"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/cancelled",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ab5915e2b289ed7c20b373c49c6baf1dac9feeaa73fc9bb72f9295bd834e2ee8"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/completed",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ab5915e2b289ed7c20b373c49c6baf1dac9feeaa73fc9bb72f9295bd834e2ee8"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/crown_pot",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "aef66c6d6ed19863181f715ef62ae120a974480e15815e278d41551e623b8b6a"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/find",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "b091e9d26627ef2b89f13835a855ba51380ea336a729123a714dbb9cbdb76f91"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/find_brawl",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "bcb51abc080e43a6d3b443f44f8670dc3ac04da5e650630c62be927549ad7e3c"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/frays",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "9d732458847ddbc099eb490af6fb9585e3bbe533d364c77b8a4f64324ffa5dab"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/in_progress",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ab5915e2b289ed7c20b373c49c6baf1dac9feeaa73fc9bb72f9295bd834e2ee8"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/mine",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ab5915e2b289ed7c20b373c49c6baf1dac9feeaa73fc9bb72f9295bd834e2ee8"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/prizes",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "89a051276675054b5556ae851cf1e658d78ea69e66bab68807d599ad48205099"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/upcoming",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ab5915e2b289ed7c20b373c49c6baf1dac9feeaa73fc9bb72f9295bd834e2ee8"
+    },
+    {
+      "source": "api",
+      "path": "/tournaments/upcoming_official",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "ab5915e2b289ed7c20b373c49c6baf1dac9feeaa73fc9bb72f9295bd834e2ee8"
+    },
+    {
+      "source": "api",
+      "path": "/transactions/lookup",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "f524dae505cac4768b505879d8b8370a1d946905bc08c872cf700c7f638fa1e2"
+    },
+    {
+      "source": "api",
+      "path": "/transactions/metrics",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "0e218152ffebfea912f42f89be1c0acb77a49dac19a627c0d765441e6aaa70ea"
+    }
+  ]
+}

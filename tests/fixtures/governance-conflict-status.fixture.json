@@ -1,0 +1,520 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:20:10.296789+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/status",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.config.reward_point_threshold": {
+      "valueClass": "numeric"
+    },
+    "body.config.staked_pack_value": {
+      "valueClass": "numeric"
+    },
+    "body.config.max_packs_per_wagon": {
+      "valueClass": "numeric"
+    },
+    "body.config.max_possible_wagon_cp": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.id": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.starts": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.ends": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.season_group": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.reset_block_num": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.card_amount": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.cards_awarded": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.alchemy_potions_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.midnight_potions_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.cards_to_guarantee_one_gold": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.verification_data": {
+      "valueClass": "opaque"
+    },
+    "body.stats.num_wagons": {
+      "valueClass": "numeric"
+    },
+    "body.stats.num_damaged_wagons": {
+      "valueClass": "numeric"
+    },
+    "body.stats.packs_staked": {
+      "valueClass": "numeric"
+    },
+    "body.stats.ca_packs": {
+      "valueClass": "numeric"
+    },
+    "body.stats.ca_alchemy_packs": {
+      "valueClass": "numeric"
+    },
+    "body.stats.ca_legendary_packs": {
+      "valueClass": "numeric"
+    },
+    "body.stats.total_pack_cp": {
+      "valueClass": "numeric"
+    },
+    "body.stats.total_wagon_cp": {
+      "valueClass": "numeric"
+    },
+    "body.stats.packs_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.stats.last_wagon_unstake_all_date": {
+      "valueClass": "timestamp"
+    },
+    "body.stats.last_wagon_stake_all_date": {
+      "valueClass": "timestamp"
+    },
+    "body.stats.max_packs_allowed": {
+      "valueClass": "numeric"
+    },
+    "body.stats.max_point_earning_packs": {
+      "valueClass": "numeric"
+    },
+    "body.player.player": {
+      "valueClass": "name"
+    },
+    "body.player.reward_points": {
+      "valueClass": "numeric"
+    },
+    "body.player.progress_to_next": {
+      "valueClass": "numeric"
+    },
+    "body.player.last_rp_update": {
+      "valueClass": "timestamp"
+    },
+    "body.player.rp_per_hour": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].wagon_uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[0].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[0].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[1].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[1].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[2].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[2].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[3].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[3].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[3].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[3].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[4].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[4].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[4].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[4].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.wagons[0].total_cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].damaged": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].wagon_uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[0].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[0].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[1].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[1].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[2].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[2].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[3].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[3].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[3].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[3].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[4].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[4].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[4].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[4].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.wagons[1].total_cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].damaged": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].wagon_uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[0].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[0].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[1].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[1].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[2].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[2].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[3].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[3].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[3].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[3].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[4].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[4].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[4].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[4].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.wagons[2].total_cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].damaged": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "config": {
+      "reward_point_threshold": 100000,
+      "staked_pack_value": 125,
+      "max_packs_per_wagon": 100,
+      "max_possible_wagon_cp": 787500
+    },
+    "conflict": {
+      "id": 22,
+      "starts": "2026-08-27T16:00:00.000Z",
+      "ends": "2026-09-26T16:00:00.000Z",
+      "season_group": "escalation",
+      "reset_block_num": null,
+      "card_detail_id": 1050,
+      "card_amount": null,
+      "card_guaranteed_chances": 400,
+      "cards_awarded": null,
+      "card_chance_per_entry": "0.0025",
+      "card_gold_chance": "0.000",
+      "card_boosted_gold_chance": "0.000",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": "0",
+      "card_boosted_black_chance": "0",
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": null,
+      "verification_data": null
+    },
+    "stats": {
+      "num_wagons": 110,
+      "num_damaged_wagons": 0,
+      "packs_staked": 0,
+      "ca_packs": 0,
+      "ca_alchemy_packs": 0,
+      "ca_legendary_packs": 0,
+      "total_pack_cp": 0,
+      "total_wagon_cp": 5551792,
+      "packs_updated_date": "2026-05-08T17:20:12.000Z",
+      "last_wagon_unstake_all_date": "2026-08-27T13:50:42.000Z",
+      "last_wagon_stake_all_date": "2026-08-27T15:12:57.000Z",
+      "max_packs_allowed": 11000,
+      "max_point_earning_packs": 11000
+    },
+    "player": {
+      "player": "sample-acct-100",
+      "reward_points": 22117,
+      "progress_to_next": 69284,
+      "last_rp_update": "2026-09-12T09:00:00.988Z",
+      "rp_per_hour": 5551792
+    },
+    "wagons": [
+      {
+        "wagon_uid": "I-326-02HE4DQ6F4",
+        "cards": [
+          {
+            "uid": "BA20-938-000001",
+            "detail_id": 938,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B20-939-SVF02ZIFY8",
+            "detail_id": 939,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B20-952-DNNOVK00WG",
+            "detail_id": 952,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B2-970-AHX41YODQO",
+            "detail_id": 970,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "C2-970-XXNJP93I0G",
+            "detail_id": 970,
+            "bcx": 1,
+            "cp": 500
+          }
+        ],
+        "updated_date": "2026-09-11T11:17:24.000Z",
+        "total_cp": 630500,
+        "damaged": false
+      },
+      {
+        "wagon_uid": "I-326-06HNUGX91S",
+        "cards": [
+          {
+            "uid": "B20-981-QPBL1RPABK",
+            "detail_id": 981,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B20-1039-7XDGERPS00",
+            "detail_id": 1039,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B20-937-0H6NQYB6WW",
+            "detail_id": 937,
+            "bcx": 10,
+            "cp": 78750
+          },
+          {
+            "uid": "G20-931-2TIU1W0H5S",
+            "detail_id": 931,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-931-CZ64S6YJLC",
+            "detail_id": 931,
+            "bcx": 4,
+            "cp": 52500
+          }
+        ],
+        "updated_date": "2026-08-27T15:12:57.000Z",
+        "total_cp": 498750,
+        "damaged": false
+      },
+      {
+        "wagon_uid": "I-326-0I2LJ4VN28",
+        "cards": [
+          {
+            "uid": "G20-959-522HQPSWSW",
+            "detail_id": 959,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-960-6NXFD2E840",
+            "detail_id": 960,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-963-GNTV0IDJ34",
+            "detail_id": 963,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-981-J70HZACPPC",
+            "detail_id": 981,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-981-RCGL9Y6QDC",
+            "detail_id": 981,
+            "bcx": 4,
+            "cp": 52500
+          }
+        ],
+        "updated_date": "2026-08-27T15:12:57.000Z",
+        "total_cp": 262500,
+        "damaged": false
+      }
+    ]
+  }
+}

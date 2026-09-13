@@ -1,0 +1,16 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:19:59.374772+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/last_block",
+    "captureScope": "Complete captured response; no fields removed or decoded."
+  },
+  "valueClasses": {
+    "body.last_block": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "last_block": 109845751
+  }
+}

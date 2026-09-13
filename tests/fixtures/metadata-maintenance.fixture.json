@@ -1,0 +1,36 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:20:00.597449+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/maintenance_schedule",
+    "captureScope": "Complete captured response; no fields removed or decoded."
+  },
+  "valueClasses": {
+    "body.maintenance_windows[0].site_message": {
+      "valueClass": "opaque"
+    },
+    "body.maintenance_windows[0].estimated_start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.maintenance_windows[0].estimated_end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.maintenance_windows[0].status": {
+      "valueClass": "numeric"
+    },
+    "body.window_buffer_ms": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "maintenance_windows": [
+      {
+        "site_message": "",
+        "estimated_start_date": "2026-09-15T15:30:00.000Z",
+        "estimated_end_date": "2026-09-15T22:21:00.000Z",
+        "status": 1
+      }
+    ],
+    "window_buffer_ms": 1800000
+  }
+}

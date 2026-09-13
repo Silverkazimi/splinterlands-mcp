@@ -1,0 +1,410 @@
+{
+  "observedAt": "2026-09-12T11:01:53.247Z",
+  "results": [
+    {
+      "name": "land_deed_by_plot",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "provenance": {
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "37605930-bc2b-41b2-be7b-4bc4f10cf3cc",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:37.817Z",
+          "ageMs": 11
+        },
+        "requestScope": {
+          "plot_id": "2-1-1"
+        }
+      }
+    },
+    {
+      "name": "land_deed_by_uid",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "ca4e894b-df3f-4d6e-a664-d9c7bc8d5b3b",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:38.314Z",
+          "ageMs": 1
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/deeds/details/{deed_uid}",
+        "traceId": "817ab05b-778e-45af-9ad2-0cbc2e4836f0",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:40.360Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "deed_uid": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_projects_active",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "7e03c3f8-24fe-416f-affa-c9166144a031",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:40.751Z",
+          "ageMs": 1
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/projects/deed/{deed_uid}/active",
+        "traceId": "36416369-ce05-4edf-a489-7795c8d65243",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:41.422Z",
+          "ageMs": 0
+        },
+        "requestScope": {
+          "deed_uid": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_projects_history",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "3fb58be9-120a-4fa7-8f3f-9bb92db95a5d",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:41.881Z",
+          "ageMs": 0
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/projects/deed/{deed_uid}/list",
+        "traceId": "0e6b512c-9dda-4743-bfc5-f60de8aafb0f",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:42.238Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "deed_uid": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_projects_count",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "b26dfe2c-f307-4a1d-9b18-3d11bef19ce6",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:42.658Z",
+          "ageMs": 0
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/projects/deed/{deed_uid}/list/count",
+        "traceId": "ba796794-ef19-4db9-b0b5-c86bc77cdfe2",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:43.121Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "deed_uid": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_projects_requirements",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "8c25d2e7-6a00-4160-bd0c-460709ea6750",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:43.462Z",
+          "ageMs": 1
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/projects/deed/{deed_uid}/requirements",
+        "traceId": "747879aa-fced-4d05-ba70-291e3804240f",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:43.990Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "deed_uid": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_stake_assets",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "2ac488a9-86f0-49ca-8e0e-e786f7a41a71",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:44.589Z",
+          "ageMs": 1
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/stake/deeds/{deed_uid}/assets",
+        "traceId": "b82cd96e-3e3f-4e3e-8ce6-4242c3f67bcd",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:45.423Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "deed_uid": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_stake_deed_details",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "b8b3e1e6-ccdf-4283-b024-b3a71c294e29",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:45.946Z",
+          "ageMs": 1
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/stake/deed/details/{deed_uid}",
+        "traceId": "3a3c1f82-5df4-4492-9a8d-2a1b27bbd64e",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:46.419Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "deed_uid": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_resources_taxes",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "a49af0f3-872b-4826-abc7-ae52db0e5366",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:46.952Z",
+          "ageMs": 0
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/resources/taxes/{deedUID}",
+        "traceId": "cdb3e151-3f24-4c4f-a9cc-aff1266ec515",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:47.461Z",
+          "ageMs": 0
+        },
+        "requestScope": {
+          "deedUID": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_resources_rewardactions",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "2e7d1b65-c7a2-4de2-97a9-8a682fb3ed71",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:47.982Z",
+          "ageMs": 1
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/resources/rewardactions/{deedUID}",
+        "traceId": "0c8fd060-cd86-4320-85ab-0df605a6da2b",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:49.106Z",
+          "ageMs": 422
+        },
+        "requestScope": {
+          "deedUID": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_resources_rewardactions_count",
+      "inputKind": "label",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "plot_id": "2-1-1"
+        },
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "95d7aba3-9dd7-4533-9814-9e2ba115f63f",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:50.116Z",
+          "ageMs": 2
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/resources/rewardactions/{deedUID}/count",
+        "traceId": "e94d1015-ce62-4db1-9459-c46aee264ed6",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:51.018Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "deedUID": "I-296-c08b21daf716a6"
+        }
+      }
+    },
+    {
+      "name": "land_deed_by_plot",
+      "inputKind": "deed_uid",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "deed_uid": "I-296-c08b21daf716a6"
+        },
+        "endpoint": "/land/deeds/details/{deed_uid}",
+        "traceId": "636233a0-bda2-4cf7-8c7f-85b025304092",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:51.562Z",
+          "ageMs": 1
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "423a5cf7-00a8-489f-9c97-8a21f5da7ef8",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:52.031Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "plot_id": 101
+        }
+      }
+    },
+    {
+      "name": "land_resources_taxes",
+      "inputKind": "deed_uid",
+      "isError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "resolution": {
+        "requested": {
+          "deed_uid": "I-296-c08b21daf716a6"
+        },
+        "endpoint": "/land/deeds/details/{deed_uid}",
+        "traceId": "f50e2ef3-3b17-4d9c-ada1-acedc94b5465",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:52.662Z",
+          "ageMs": 1
+        }
+      },
+      "provenance": {
+        "endpoint": "/land/resources/taxes/{deedUID}",
+        "traceId": "7e411213-f264-4c3e-9a71-2a85fff60a49",
+        "freshness": {
+          "retrievedAt": "2026-09-12T11:01:53.244Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "deedUID": "I-296-c08b21daf716a6"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:20:06.252996+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/",
+    "captureScope": "Complete captured response; no fields removed or decoded."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.app": {
+      "valueClass": "opaque"
+    },
+    "body.data.version": {
+      "valueClass": "opaque"
+    },
+    "body.data.env": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "app": "sl-vnext-api",
+      "version": "2026.1.7-prod.1_1404",
+      "env": "production"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:28:35.007531+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/leaderboard_with_player",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.player.player": {
+      "valueClass": "name"
+    },
+    "body.player.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.player.title": {
+      "valueClass": "opaque"
+    },
+    "body.player.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.player.league": {
+      "valueClass": "numeric"
+    },
+    "body.player.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.player.guild_id": {
+      "valueClass": "id"
+    },
+    "body.player.guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.player.guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.player.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.player.rank": {
+      "valueClass": "opaque"
+    },
+    "body.player.total_contribution": {
+      "valueClass": "opaque"
+    },
+    "body.player.reward_points": {
+      "valueClass": "numeric"
+    },
+    "body.player.rp_per_hour": {
+      "valueClass": "numeric"
+    },
+    "body.player.num_prizes": {
+      "valueClass": "opaque"
+    },
+    "body.player.num_undamaged_wagons": {
+      "valueClass": "opaque"
+    },
+    "body.player.num_claimed_prizes": {
+      "valueClass": "opaque"
+    },
+    "body.player.leaderboard_placement": {
+      "valueClass": "opaque"
+    },
+    "body.player.leaderboard_total_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.player.leaderboard_unclaimed_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.player.leaderboard_claimed_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.player.leaderboard_card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.player.leaderboard_skin_prizes": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "player": {
+      "player": "sample-acct-100",
+      "avatar_id": 0,
+      "title": null,
+      "title_pre": "Vonarch",
+      "league": 15,
+      "modern_league": 11,
+      "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+      "guild_name": " [KoG] Shield of Glory",
+      "guild_data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
+      "player_avatar": "{\"race\":\"human\",\"background\":0,\"color\":\"Red\",\"level\":1,\"frame\":0,\"gender\":1,\"body\":1,\"face\":1,\"nose\":2,\"ears\":0,\"skin_color\":1,\"hair\":7,\"eyebrows\":1,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":1,\"eyes_color\":1,\"mouth\":13,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":1,\"cloth_color\":1,\"tattoo\":0,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"modern_league\",\"year_joined\",\"\",\"\"],\"is_saved\":false,\"avatar_resets\":0,\"player_card_resets\":0}",
+      "rank": "1",
+      "total_contribution": "2211769284",
+      "reward_points": 22117,
+      "rp_per_hour": 5551792,
+      "num_prizes": null,
+      "num_undamaged_wagons": null,
+      "num_claimed_prizes": null,
+      "leaderboard_placement": null,
+      "leaderboard_total_prizes": 0,
+      "leaderboard_unclaimed_prizes": 0,
+      "leaderboard_claimed_prizes": 0,
+      "leaderboard_card_prizes": 0,
+      "leaderboard_skin_prizes": 0
+    }
+  }
+}

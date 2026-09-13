@@ -1,0 +1,238 @@
+{
+  "transport": "built stdio MCP server",
+  "toolCount": 69,
+  "results": [
+    {
+      "name": "player_balances",
+      "isError": false,
+      "milliseconds": 8052,
+      "rows": 91,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 91,
+        "upstreamRows": 91
+      },
+      "provenance": {
+        "endpoint": "/players/balances",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:21.198Z",
+          "ageMs": 10
+        }
+      }
+    },
+    {
+      "name": "player_archived_balances",
+      "isError": false,
+      "milliseconds": 218,
+      "rows": 18,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 18,
+        "upstreamRows": 18
+      },
+      "provenance": {
+        "endpoint": "/players/archived_balances",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:21.439Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "player_authorities",
+      "isError": false,
+      "milliseconds": 181,
+      "rows": 1,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "provenance": {
+        "endpoint": "/players/authorities",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:21.618Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "player_quests",
+      "isError": false,
+      "milliseconds": 164,
+      "rows": 1,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "provenance": {
+        "endpoint": "/players/quests",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:21.786Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "player_skins",
+      "isError": false,
+      "milliseconds": 285,
+      "rows": 100,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 223
+      },
+      "provenance": {
+        "endpoint": "/players/skins",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:22.068Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "player_lp_claim_history",
+      "isError": false,
+      "milliseconds": 335,
+      "rows": 2,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "provenance": {
+        "endpoint": "/players/lp_claim_history",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:22.406Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "player_reward_delegation_history",
+      "isError": false,
+      "milliseconds": 157,
+      "rows": 2,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "provenance": {
+        "endpoint": "/players/reward_delegation_history",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:22.564Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "player_reward_delegations",
+      "isError": false,
+      "milliseconds": 309,
+      "rows": 3,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 3,
+        "upstreamRows": 3
+      },
+      "provenance": {
+        "endpoint": "/players/reward_delegations",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:22.874Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "player_recent_teams",
+      "isError": false,
+      "milliseconds": 503,
+      "rows": 6,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 6,
+        "upstreamRows": 6
+      },
+      "provenance": {
+        "endpoint": "/players/recent_teams",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:23.377Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "player_pack_purchases",
+      "isError": false,
+      "milliseconds": 534,
+      "rows": null,
+      "provenance": {
+        "endpoint": "/players/pack_purchases",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:23.912Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "player_card_airdrop",
+      "isError": false,
+      "milliseconds": 477,
+      "rows": 26,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 26,
+        "upstreamRows": 26
+      },
+      "provenance": {
+        "endpoint": "/players/card_airdrop",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:24.387Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "player_voucher",
+      "isError": false,
+      "milliseconds": 482,
+      "rows": null,
+      "provenance": {
+        "endpoint": "/players/voucher",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:24.873Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "player_dec",
+      "isError": false,
+      "milliseconds": 514,
+      "rows": null,
+      "provenance": {
+        "endpoint": "/players/dec",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:25.387Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "player_energy_purchase_information",
+      "isError": false,
+      "milliseconds": 562,
+      "rows": null,
+      "provenance": {
+        "endpoint": "/players/energy_purchase_information",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:07:25.950Z",
+          "ageMs": 0
+        }
+      }
+    }
+  ]
+}

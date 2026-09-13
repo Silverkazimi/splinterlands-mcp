@@ -1,0 +1,24 @@
+{
+  "observedAt": "2026-09-12",
+  "sources": [
+    {
+      "url": "https://support.splinterlands.com/hc/en-us/articles/17648191247252-Dark-Energy-FAQ"
+    },
+    {
+      "url": "https://splinterlands.com/assets/CardColorBiomeModifier-VrBrpfnr.js",
+      "sha256": "241ac7d940c3255d85b859a2f6253528a64b3477edc7684bbcf3e1579d349831"
+    }
+  ],
+  "findings": [
+    "The FAQ compares regional staked DEC with regional demand; its 400000/500000 example gives 80% output.",
+    "The public preview applies strongest Dark Discount to raw worker demand, scales by retained/raw base after cap, rounds to three decimals then rounds upward to an integer.",
+    "Fully clipped workers have zero demand. Runi removes plot DEC demand and uses efficiency one."
+  ],
+  "serverPolicy": [
+    "Replace current_plot_required_dec within current_required_dec with new plot demand; hold every other plot and staked DEC fixed.",
+    "Require exactly one supplied-efficiency or regional-snapshot mode.",
+    "Require raw worker demand in regional mode unless Runi removes that demand.",
+    "Zero regional demand uses efficiency one to avoid an undefined ratio."
+  ],
+  "limits": "Public-rule and client-preview based. Regional inputs and backend agreement are not live-verified; moving workers from other plots also requires updating those plots in the supplied snapshot."
+}

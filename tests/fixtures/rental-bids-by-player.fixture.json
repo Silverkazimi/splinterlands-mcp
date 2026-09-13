@@ -1,0 +1,202 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-13T11:08:59.651134+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/bids/player/{player}",
+    "captureScope": "Complete bounded public response; account selected from anonymous market results."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].txId": {
+      "valueClass": "id"
+    },
+    "body.data[0].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].lastUpdatedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].player": {
+      "valueClass": "name"
+    },
+    "body.data[0].token": {
+      "valueClass": "enum"
+    },
+    "body.data[0].qtyTotal": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].qtyAvailable": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].escrow": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[0].cancelTx": {
+      "valueClass": "id"
+    },
+    "body.data[1].txId": {
+      "valueClass": "id"
+    },
+    "body.data[1].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[1].lastUpdatedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[1].player": {
+      "valueClass": "name"
+    },
+    "body.data[1].token": {
+      "valueClass": "enum"
+    },
+    "body.data[1].qtyTotal": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].qtyAvailable": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].escrow": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[1].cancelTx": {
+      "valueClass": "id"
+    },
+    "body.data[2].txId": {
+      "valueClass": "id"
+    },
+    "body.data[2].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[2].lastUpdatedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[2].player": {
+      "valueClass": "name"
+    },
+    "body.data[2].token": {
+      "valueClass": "enum"
+    },
+    "body.data[2].qtyTotal": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].qtyAvailable": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].escrow": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[2].cancelTx": {
+      "valueClass": "id"
+    },
+    "body.data[3].txId": {
+      "valueClass": "id"
+    },
+    "body.data[3].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[3].lastUpdatedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[3].player": {
+      "valueClass": "name"
+    },
+    "body.data[3].token": {
+      "valueClass": "enum"
+    },
+    "body.data[3].qtyTotal": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].qtyAvailable": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].escrow": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[3].cancelTx": {
+      "valueClass": "id"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": [
+      {
+        "txId": "7e0577108903bc8c42fee6c1abf1efce121a61f5-2",
+        "createdDate": "2026-09-11T07:41:45.000Z",
+        "lastUpdatedDate": "2026-09-11T07:41:45.000Z",
+        "player": "sample-acct-062",
+        "token": "SPSP",
+        "qtyTotal": "1000.000",
+        "qtyAvailable": "1000.000",
+        "pricePerToken": "0.001",
+        "escrow": "7.000",
+        "currency": "DEC",
+        "cancelTx": null
+      },
+      {
+        "txId": "7e0577108903bc8c42fee6c1abf1efce121a61f5-3",
+        "createdDate": "2026-09-11T07:41:45.000Z",
+        "lastUpdatedDate": "2026-09-11T07:41:45.000Z",
+        "player": "sample-acct-062",
+        "token": "SPSP",
+        "qtyTotal": "1000.000",
+        "qtyAvailable": "1000.000",
+        "pricePerToken": "0.001",
+        "escrow": "7.000",
+        "currency": "DEC",
+        "cancelTx": null
+      },
+      {
+        "txId": "9a699502bea5f0753527bb5f5fb1ae9a1946ea57-1",
+        "createdDate": "2026-09-11T07:41:39.000Z",
+        "lastUpdatedDate": "2026-09-11T07:41:39.000Z",
+        "player": "sample-acct-062",
+        "token": "SPSP",
+        "qtyTotal": "500.000",
+        "qtyAvailable": "500.000",
+        "pricePerToken": "0.001",
+        "escrow": "3.500",
+        "currency": "DEC",
+        "cancelTx": null
+      },
+      {
+        "txId": "9a699502bea5f0753527bb5f5fb1ae9a1946ea57-2",
+        "createdDate": "2026-09-11T07:41:39.000Z",
+        "lastUpdatedDate": "2026-09-11T07:41:39.000Z",
+        "player": "sample-acct-062",
+        "token": "SPSP",
+        "qtyTotal": "500.000",
+        "qtyAvailable": "500.000",
+        "pricePerToken": "0.001",
+        "escrow": "3.500",
+        "currency": "DEC",
+        "cancelTx": null
+      }
+    ]
+  }
+}

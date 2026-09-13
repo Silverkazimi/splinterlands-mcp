@@ -1,0 +1,1022 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-07T12:50:49Z"
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].region.uid": {
+      "valueClass": "id"
+    },
+    "data[0].region.name": {
+      "valueClass": "enum"
+    },
+    "data[0].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[0].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[0].owned": {
+      "valueClass": "numeric"
+    },
+    "data[0].listed": {
+      "valueClass": "numeric"
+    },
+    "data[1].region.uid": {
+      "valueClass": "id"
+    },
+    "data[1].region.name": {
+      "valueClass": "enum"
+    },
+    "data[1].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[1].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[1].owned": {
+      "valueClass": "numeric"
+    },
+    "data[1].listed": {
+      "valueClass": "numeric"
+    },
+    "data[2].region.uid": {
+      "valueClass": "id"
+    },
+    "data[2].region.name": {
+      "valueClass": "enum"
+    },
+    "data[2].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[2].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[2].owned": {
+      "valueClass": "numeric"
+    },
+    "data[2].listed": {
+      "valueClass": "numeric"
+    },
+    "data[3].region.uid": {
+      "valueClass": "id"
+    },
+    "data[3].region.name": {
+      "valueClass": "enum"
+    },
+    "data[3].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[3].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[3].owned": {
+      "valueClass": "numeric"
+    },
+    "data[3].listed": {
+      "valueClass": "numeric"
+    },
+    "data[4].region.uid": {
+      "valueClass": "id"
+    },
+    "data[4].region.name": {
+      "valueClass": "enum"
+    },
+    "data[4].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[4].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[4].owned": {
+      "valueClass": "numeric"
+    },
+    "data[4].listed": {
+      "valueClass": "numeric"
+    },
+    "data[5].region.uid": {
+      "valueClass": "id"
+    },
+    "data[5].region.name": {
+      "valueClass": "enum"
+    },
+    "data[5].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[5].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[5].owned": {
+      "valueClass": "numeric"
+    },
+    "data[5].listed": {
+      "valueClass": "numeric"
+    },
+    "data[6].region.uid": {
+      "valueClass": "id"
+    },
+    "data[6].region.name": {
+      "valueClass": "enum"
+    },
+    "data[6].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[6].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[6].owned": {
+      "valueClass": "numeric"
+    },
+    "data[6].listed": {
+      "valueClass": "numeric"
+    },
+    "data[7].region.uid": {
+      "valueClass": "id"
+    },
+    "data[7].region.name": {
+      "valueClass": "enum"
+    },
+    "data[7].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[7].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[7].owned": {
+      "valueClass": "numeric"
+    },
+    "data[7].listed": {
+      "valueClass": "numeric"
+    },
+    "data[8].region.uid": {
+      "valueClass": "id"
+    },
+    "data[8].region.name": {
+      "valueClass": "enum"
+    },
+    "data[8].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[8].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[8].owned": {
+      "valueClass": "numeric"
+    },
+    "data[8].listed": {
+      "valueClass": "numeric"
+    },
+    "data[9].region.uid": {
+      "valueClass": "id"
+    },
+    "data[9].region.name": {
+      "valueClass": "enum"
+    },
+    "data[9].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[9].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[9].owned": {
+      "valueClass": "numeric"
+    },
+    "data[9].listed": {
+      "valueClass": "numeric"
+    },
+    "data[10].region.uid": {
+      "valueClass": "id"
+    },
+    "data[10].region.name": {
+      "valueClass": "enum"
+    },
+    "data[10].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[10].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[10].owned": {
+      "valueClass": "numeric"
+    },
+    "data[10].listed": {
+      "valueClass": "numeric"
+    },
+    "data[11].region.uid": {
+      "valueClass": "id"
+    },
+    "data[11].region.name": {
+      "valueClass": "enum"
+    },
+    "data[11].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[11].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[11].owned": {
+      "valueClass": "numeric"
+    },
+    "data[11].listed": {
+      "valueClass": "numeric"
+    },
+    "data[12].region.uid": {
+      "valueClass": "id"
+    },
+    "data[12].region.name": {
+      "valueClass": "enum"
+    },
+    "data[12].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[12].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[12].owned": {
+      "valueClass": "numeric"
+    },
+    "data[12].listed": {
+      "valueClass": "numeric"
+    },
+    "data[13].region.uid": {
+      "valueClass": "id"
+    },
+    "data[13].region.name": {
+      "valueClass": "enum"
+    },
+    "data[13].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[13].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[13].owned": {
+      "valueClass": "numeric"
+    },
+    "data[13].listed": {
+      "valueClass": "numeric"
+    },
+    "data[14].region.uid": {
+      "valueClass": "id"
+    },
+    "data[14].region.name": {
+      "valueClass": "enum"
+    },
+    "data[14].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[14].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[14].owned": {
+      "valueClass": "numeric"
+    },
+    "data[14].listed": {
+      "valueClass": "numeric"
+    },
+    "data[15].region.uid": {
+      "valueClass": "id"
+    },
+    "data[15].region.name": {
+      "valueClass": "enum"
+    },
+    "data[15].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[15].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[15].owned": {
+      "valueClass": "numeric"
+    },
+    "data[15].listed": {
+      "valueClass": "numeric"
+    },
+    "data[16].region.uid": {
+      "valueClass": "id"
+    },
+    "data[16].region.name": {
+      "valueClass": "enum"
+    },
+    "data[16].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[16].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[16].owned": {
+      "valueClass": "numeric"
+    },
+    "data[16].listed": {
+      "valueClass": "numeric"
+    },
+    "data[17].region.uid": {
+      "valueClass": "id"
+    },
+    "data[17].region.name": {
+      "valueClass": "enum"
+    },
+    "data[17].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[17].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[17].owned": {
+      "valueClass": "numeric"
+    },
+    "data[17].listed": {
+      "valueClass": "numeric"
+    },
+    "data[18].region.uid": {
+      "valueClass": "id"
+    },
+    "data[18].region.name": {
+      "valueClass": "enum"
+    },
+    "data[18].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[18].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[18].owned": {
+      "valueClass": "numeric"
+    },
+    "data[18].listed": {
+      "valueClass": "numeric"
+    },
+    "data[19].region.uid": {
+      "valueClass": "id"
+    },
+    "data[19].region.name": {
+      "valueClass": "enum"
+    },
+    "data[19].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[19].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[19].owned": {
+      "valueClass": "numeric"
+    },
+    "data[19].listed": {
+      "valueClass": "numeric"
+    },
+    "data[20].region.uid": {
+      "valueClass": "id"
+    },
+    "data[20].region.name": {
+      "valueClass": "enum"
+    },
+    "data[20].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[20].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[20].owned": {
+      "valueClass": "numeric"
+    },
+    "data[20].listed": {
+      "valueClass": "numeric"
+    },
+    "data[21].region.uid": {
+      "valueClass": "id"
+    },
+    "data[21].region.name": {
+      "valueClass": "enum"
+    },
+    "data[21].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[21].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[21].owned": {
+      "valueClass": "numeric"
+    },
+    "data[21].listed": {
+      "valueClass": "numeric"
+    },
+    "data[22].region.uid": {
+      "valueClass": "id"
+    },
+    "data[22].region.name": {
+      "valueClass": "enum"
+    },
+    "data[22].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[22].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[22].owned": {
+      "valueClass": "numeric"
+    },
+    "data[22].listed": {
+      "valueClass": "numeric"
+    },
+    "data[23].region.uid": {
+      "valueClass": "id"
+    },
+    "data[23].region.name": {
+      "valueClass": "enum"
+    },
+    "data[23].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[23].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[23].owned": {
+      "valueClass": "numeric"
+    },
+    "data[23].listed": {
+      "valueClass": "numeric"
+    },
+    "data[24].region.uid": {
+      "valueClass": "id"
+    },
+    "data[24].region.name": {
+      "valueClass": "enum"
+    },
+    "data[24].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[24].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[24].owned": {
+      "valueClass": "numeric"
+    },
+    "data[24].listed": {
+      "valueClass": "numeric"
+    },
+    "data[25].region.uid": {
+      "valueClass": "id"
+    },
+    "data[25].region.name": {
+      "valueClass": "enum"
+    },
+    "data[25].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[25].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[25].owned": {
+      "valueClass": "numeric"
+    },
+    "data[25].listed": {
+      "valueClass": "numeric"
+    },
+    "data[26].region.uid": {
+      "valueClass": "id"
+    },
+    "data[26].region.name": {
+      "valueClass": "enum"
+    },
+    "data[26].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[26].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[26].owned": {
+      "valueClass": "numeric"
+    },
+    "data[26].listed": {
+      "valueClass": "numeric"
+    },
+    "data[27].region.uid": {
+      "valueClass": "id"
+    },
+    "data[27].region.name": {
+      "valueClass": "enum"
+    },
+    "data[27].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[27].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[27].owned": {
+      "valueClass": "numeric"
+    },
+    "data[27].listed": {
+      "valueClass": "numeric"
+    },
+    "data[28].region.uid": {
+      "valueClass": "id"
+    },
+    "data[28].region.name": {
+      "valueClass": "enum"
+    },
+    "data[28].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[28].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[28].owned": {
+      "valueClass": "numeric"
+    },
+    "data[28].listed": {
+      "valueClass": "numeric"
+    },
+    "data[29].region.uid": {
+      "valueClass": "id"
+    },
+    "data[29].region.name": {
+      "valueClass": "enum"
+    },
+    "data[29].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[29].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[29].owned": {
+      "valueClass": "numeric"
+    },
+    "data[29].listed": {
+      "valueClass": "numeric"
+    },
+    "data[30].region.uid": {
+      "valueClass": "id"
+    },
+    "data[30].region.name": {
+      "valueClass": "enum"
+    },
+    "data[30].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[30].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[30].owned": {
+      "valueClass": "numeric"
+    },
+    "data[30].listed": {
+      "valueClass": "numeric"
+    },
+    "data[31].region.uid": {
+      "valueClass": "id"
+    },
+    "data[31].region.name": {
+      "valueClass": "enum"
+    },
+    "data[31].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[31].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[31].owned": {
+      "valueClass": "numeric"
+    },
+    "data[31].listed": {
+      "valueClass": "numeric"
+    },
+    "data[32].region.uid": {
+      "valueClass": "id"
+    },
+    "data[32].region.name": {
+      "valueClass": "enum"
+    },
+    "data[32].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[32].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[32].owned": {
+      "valueClass": "numeric"
+    },
+    "data[32].listed": {
+      "valueClass": "numeric"
+    },
+    "data[33].region.uid": {
+      "valueClass": "id"
+    },
+    "data[33].region.name": {
+      "valueClass": "enum"
+    },
+    "data[33].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[33].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[33].owned": {
+      "valueClass": "numeric"
+    },
+    "data[33].listed": {
+      "valueClass": "numeric"
+    },
+    "data[34].region.uid": {
+      "valueClass": "id"
+    },
+    "data[34].region.name": {
+      "valueClass": "enum"
+    },
+    "data[34].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[34].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[34].owned": {
+      "valueClass": "numeric"
+    },
+    "data[34].listed": {
+      "valueClass": "numeric"
+    },
+    "data[35].region.uid": {
+      "valueClass": "id"
+    },
+    "data[35].region.name": {
+      "valueClass": "enum"
+    },
+    "data[35].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[35].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data[35].owned": {
+      "valueClass": "numeric"
+    },
+    "data[35].listed": {
+      "valueClass": "numeric"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "region": {
+        "uid": "PR-PNW-1",
+        "name": "Viritas",
+        "region_number": 1
+      },
+      "tract_number": 1,
+      "owned": 38,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-9",
+        "name": "Quegmoor",
+        "region_number": 9
+      },
+      "tract_number": 1,
+      "owned": 6,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-20",
+        "name": "Lumleigh",
+        "region_number": 20
+      },
+      "tract_number": 1,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-62",
+        "name": "Thece",
+        "region_number": 62
+      },
+      "tract_number": 1,
+      "owned": 2,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-121",
+        "name": "Hamford",
+        "region_number": 121
+      },
+      "tract_number": 1,
+      "owned": 9,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-123",
+        "name": "Bakerdire",
+        "region_number": 123
+      },
+      "tract_number": 1,
+      "owned": 6,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-1",
+        "name": "Viritas",
+        "region_number": 1
+      },
+      "tract_number": 2,
+      "owned": 100,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-9",
+        "name": "Quegmoor",
+        "region_number": 9
+      },
+      "tract_number": 2,
+      "owned": 5,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-20",
+        "name": "Lumleigh",
+        "region_number": 20
+      },
+      "tract_number": 2,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-18",
+        "name": "Uprine",
+        "region_number": 18
+      },
+      "tract_number": 3,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-20",
+        "name": "Lumleigh",
+        "region_number": 20
+      },
+      "tract_number": 3,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-115",
+        "name": "Pembrook",
+        "region_number": 115
+      },
+      "tract_number": 3,
+      "owned": 3,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-1",
+        "name": "Viritas",
+        "region_number": 1
+      },
+      "tract_number": 4,
+      "owned": 8,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-13",
+        "name": "Asten",
+        "region_number": 13
+      },
+      "tract_number": 4,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-18",
+        "name": "Uprine",
+        "region_number": 18
+      },
+      "tract_number": 4,
+      "owned": 2,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-1",
+        "name": "Viritas",
+        "region_number": 1
+      },
+      "tract_number": 5,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-9",
+        "name": "Quegmoor",
+        "region_number": 9
+      },
+      "tract_number": 5,
+      "owned": 10,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-18",
+        "name": "Uprine",
+        "region_number": 18
+      },
+      "tract_number": 5,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-69",
+        "name": "Val de Lun",
+        "region_number": 69
+      },
+      "tract_number": 5,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-1",
+        "name": "Viritas",
+        "region_number": 1
+      },
+      "tract_number": 6,
+      "owned": 16,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-18",
+        "name": "Uprine",
+        "region_number": 18
+      },
+      "tract_number": 6,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-1",
+        "name": "Viritas",
+        "region_number": 1
+      },
+      "tract_number": 7,
+      "owned": 17,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-7",
+        "name": "Osburg",
+        "region_number": 7
+      },
+      "tract_number": 7,
+      "owned": 17,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-9",
+        "name": "Quegmoor",
+        "region_number": 9
+      },
+      "tract_number": 7,
+      "owned": 17,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-13",
+        "name": "Asten",
+        "region_number": 13
+      },
+      "tract_number": 7,
+      "owned": 2,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-18",
+        "name": "Uprine",
+        "region_number": 18
+      },
+      "tract_number": 7,
+      "owned": 4,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-62",
+        "name": "Thece",
+        "region_number": 62
+      },
+      "tract_number": 7,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-1",
+        "name": "Viritas",
+        "region_number": 1
+      },
+      "tract_number": 8,
+      "owned": 2,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-12",
+        "name": "Gillith",
+        "region_number": 12
+      },
+      "tract_number": 8,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-121",
+        "name": "Hamford",
+        "region_number": 121
+      },
+      "tract_number": 8,
+      "owned": 2,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-12",
+        "name": "Gillith",
+        "region_number": 12
+      },
+      "tract_number": 9,
+      "owned": 3,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-20",
+        "name": "Lumleigh",
+        "region_number": 20
+      },
+      "tract_number": 9,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-62",
+        "name": "Thece",
+        "region_number": 62
+      },
+      "tract_number": 9,
+      "owned": 10,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-9",
+        "name": "Quegmoor",
+        "region_number": 9
+      },
+      "tract_number": 10,
+      "owned": 1,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-62",
+        "name": "Thece",
+        "region_number": 62
+      },
+      "tract_number": 10,
+      "owned": 4,
+      "listed": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-121",
+        "name": "Hamford",
+        "region_number": 121
+      },
+      "tract_number": 10,
+      "owned": 1,
+      "listed": 0
+    }
+  ]
+}

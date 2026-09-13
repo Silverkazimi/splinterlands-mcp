@@ -1,0 +1,66 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:47:37.621224+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/PACKS",
+    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.description": {
+      "valueClass": "opaque"
+    },
+    "body.data.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].group": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assetName": "PACKS",
+      "description": "Card Pack",
+      "type": "FUNGIBLE",
+      "details": [
+        {
+          "id": "ALPHA",
+          "name": "Alpha Pack",
+          "description": "Alpha packs were the first packs ever sold, beginning with Splinterlands' launch in May 2018. Each pack contains 5 random cards, each of which earn a 10% bonus to reward shares in battle.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_alpha.png",
+          "icon": null,
+          "filterIcon": "icon_edition_alpha.svg",
+          "circulation": 5692,
+          "group": "core"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "transport": "built stdio MCP server",
+  "observedAt": "2026-09-12T09:05:13.024Z",
+  "toolCount": 105,
+  "results": [
+    {
+      "name": "tournament_upcoming",
+      "isError": false,
+      "milliseconds": 933,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 58,
+        "upstreamRows": 58
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/upcoming",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:13.946Z",
+          "ageMs": 10
+        }
+      }
+    },
+    {
+      "name": "tournament_upcoming_official",
+      "isError": false,
+      "milliseconds": 203,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 58,
+        "upstreamRows": 58
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/upcoming_official",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:14.162Z",
+          "ageMs": 4
+        }
+      }
+    },
+    {
+      "name": "tournament_in_progress",
+      "isError": false,
+      "milliseconds": 184,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 8,
+        "upstreamRows": 8
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/in_progress",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:14.367Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "tournament_completed",
+      "isError": false,
+      "milliseconds": 389,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 200
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/completed",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:14.721Z",
+          "ageMs": 16
+        }
+      }
+    },
+    {
+      "name": "tournament_cancelled",
+      "isError": false,
+      "milliseconds": 273,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 200
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/cancelled",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:15.006Z",
+          "ageMs": 10
+        }
+      }
+    },
+    {
+      "name": "tournament_mine",
+      "isError": false,
+      "milliseconds": 263,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 200
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/mine",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:15.276Z",
+          "ageMs": 8
+        }
+      }
+    },
+    {
+      "name": "tournament_find",
+      "isError": false,
+      "milliseconds": 171,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 7,
+        "upstreamRows": 7
+      },
+      "keys": [
+        "id",
+        "created_by",
+        "created_date",
+        "created_block",
+        "name",
+        "description",
+        "start_date",
+        "status",
+        "current_round",
+        "sponsor_name",
+        "sponsor_logo_url",
+        "min_entrants",
+        "max_entrants",
+        "entry_fee",
+        "total_prizes_usd",
+        "data",
+        "sponsor_logo_url_med",
+        "sponsor_logo_url_lg",
+        "payment",
+        "sponsor_url",
+        "checkin_msg_sent",
+        "format",
+        "payment_data",
+        "password_pub_key",
+        "sub_format",
+        "require_kyc",
+        "approved",
+        "allow_lite",
+        "stretch_background",
+        "players",
+        "rounds",
+        "num_players",
+        "total_rounds",
+        "qualifiers"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/find",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:15.464Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "tournament_find_brawl",
+      "isError": false,
+      "milliseconds": 199,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 25,
+        "upstreamRows": 25
+      },
+      "keys": [
+        "id",
+        "format",
+        "sub_format",
+        "start_date",
+        "status",
+        "data",
+        "players",
+        "guilds"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/find_brawl",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:15.663Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "tournament_battles",
+      "isError": false,
+      "milliseconds": 512,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 21,
+        "upstreamRows": 21
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/battles",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:16.171Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "tournament_prizes",
+      "isError": false,
+      "milliseconds": 512,
+      "keys": [
+        "awarded",
+        "upcoming"
+      ],
+      "provenance": {
+        "endpoint": "/tournaments/prizes",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:05:16.691Z",
+          "ageMs": 0
+        }
+      }
+    }
+  ]
+}

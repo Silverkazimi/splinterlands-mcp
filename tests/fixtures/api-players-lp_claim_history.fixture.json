@@ -1,0 +1,64 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T07:47:55.995773+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/lp_claim_history",
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+  },
+  "valueClasses": {
+    "body[0].claim_tx": {
+      "valueClass": "id"
+    },
+    "body[0].address": {
+      "valueClass": "name"
+    },
+    "body[0].player": {
+      "valueClass": "name"
+    },
+    "body[0].claim_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].token": {
+      "valueClass": "enum"
+    },
+    "body[0].qty": {
+      "valueClass": "opaque"
+    },
+    "body[1].claim_tx": {
+      "valueClass": "id"
+    },
+    "body[1].address": {
+      "valueClass": "name"
+    },
+    "body[1].player": {
+      "valueClass": "name"
+    },
+    "body[1].claim_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].token": {
+      "valueClass": "enum"
+    },
+    "body[1].qty": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": [
+    {
+      "claim_tx": "216a3be37df20e5f4058e91f78db9ffafe5edd0e",
+      "address": "sample-acct-100",
+      "player": "sample-acct-100",
+      "claim_date": "2025-04-13T11:45:47.792Z",
+      "token": "SPS",
+      "qty": "7208.779"
+    },
+    {
+      "claim_tx": "b2de6c399738868b6a06f8f886b6d00e781d6311",
+      "address": "sample-acct-100",
+      "player": "sample-acct-100",
+      "claim_date": "2025-04-13T11:45:47.028Z",
+      "token": "SPS",
+      "qty": "720.877"
+    }
+  ]
+}

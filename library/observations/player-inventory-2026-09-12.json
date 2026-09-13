@@ -1,0 +1,29 @@
+{
+  "observedAt": "2026-09-12T13:39:31.561474+00:00",
+  "sourceUrl": "https://api.splinterlands.com/players/inventory",
+  "queries": [
+    {
+      "type": "Land",
+      "status": 200,
+      "bytes": 134147,
+      "rows": 219
+    },
+    {
+      "type": null,
+      "status": 200,
+      "bytes": 249821,
+      "rows": 397
+    }
+  ],
+  "findings": [
+    "Land narrows item types but retains Token rows.",
+    "No Power Core item detail ID 322 appeared in either response.",
+    "Public item metadata identifies Power Core as detail ID 322, type Land, subtype Power Core.",
+    "No paging or populated stake-eligibility behavior is established."
+  ],
+  "clientSource": {
+    "url": "https://splinterlands.com/assets/index-CETWKRFI.js",
+    "sha256": "56f9dfea4528e678852c865dbce6fd464f32161ec91685c5cda3f6e111973372",
+    "finding": "getPlayerInventory sends username and optional type to /players/inventory."
+  }
+}

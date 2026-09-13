@@ -1,0 +1,28 @@
+{
+  "observedAt": "2026-09-12",
+  "sources": [
+    {
+      "url": "https://splinterlands.com/assets/EditWorksiteSlots-CzPVx9CB.js",
+      "sha256": "80eab893274d6a81c2a188e695c2d407aee37c797cb48547f118a011e52c3e0a",
+      "bytes": 73991
+    },
+    {
+      "url": "https://splinterlands.com/assets/CardColorBiomeModifier-VrBrpfnr.js",
+      "sha256": "241ac7d940c3255d85b859a2f6253528a64b3477edc7684bbcf3e1579d349831",
+      "bytes": 39191
+    }
+  ],
+  "findings": [
+    "The public Land editor imports grouped-item and available-item query hooks from its CardColorBiomeModifier module.",
+    "The module defines GET /land/stake/items/{stakeTypeUid}/grouped and GET /land/stake/items/{stakeTypeUid}/available, passing remaining arguments as query parameters.",
+    "The Power Core editor uses stakeTypeUid STK-LND-PCR and both deedUid and player for both queries.",
+    "Grouped Power Core query uses offset=0, limit=1, order_by=1 (boost), order_by_asc=0 (descending). Available-ID query uses offset=0 and limit=1.",
+    "The editor reads the first grouped items entry and available ids. Client expectations are not a captured upstream response contract.",
+    "The same module defines the corresponding cards/{stakeTypeUid}/available and cards/{stakeTypeUid}/grouped queries."
+  ],
+  "limits": [
+    "No account identifier was sent and no endpoint was called for this inspection.",
+    "Earlier empty/null captures remain valid historical observations. This evidence supersedes absence of client usage as a current finding, not the lack of populated wire evidence.",
+    "Availability, authentication behavior and populated row schema still need verification before tool binding."
+  ]
+}

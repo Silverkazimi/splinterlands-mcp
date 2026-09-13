@@ -1,0 +1,6433 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:19:55.767644+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/settings",
+    "captureScope": "Complete captured response; no fields removed or decoded."
+  },
+  "valueClasses": {
+    "body.asset_url": {
+      "valueClass": "opaque"
+    },
+    "body.asset_url_override": {
+      "valueClass": "opaque"
+    },
+    "body.gold_percent": {
+      "valueClass": "numeric"
+    },
+    "body.starter_pack_price": {
+      "valueClass": "numeric"
+    },
+    "body.booster_pack_price": {
+      "valueClass": "numeric"
+    },
+    "body.market_fee": {
+      "valueClass": "numeric"
+    },
+    "body.list_fee_per_listing": {
+      "valueClass": "numeric"
+    },
+    "body.list_expire_in_days": {
+      "valueClass": "numeric"
+    },
+    "body.core_editions[0]": {
+      "valueClass": "numeric"
+    },
+    "body.core_editions[1]": {
+      "valueClass": "numeric"
+    },
+    "body.core_editions[2]": {
+      "valueClass": "numeric"
+    },
+    "body.core_editions[3]": {
+      "valueClass": "numeric"
+    },
+    "body.core_editions[4]": {
+      "valueClass": "numeric"
+    },
+    "body.core_editions[5]": {
+      "valueClass": "numeric"
+    },
+    "body.core_editions[6]": {
+      "valueClass": "numeric"
+    },
+    "body.core_editions[7]": {
+      "valueClass": "numeric"
+    },
+    "body.modern_editions[0]": {
+      "valueClass": "numeric"
+    },
+    "body.modern_editions[1]": {
+      "valueClass": "numeric"
+    },
+    "body.modern_editions[2]": {
+      "valueClass": "numeric"
+    },
+    "body.modern_editions[3]": {
+      "valueClass": "numeric"
+    },
+    "body.modern_card_detail_ids[0]": {
+      "valueClass": "numeric"
+    },
+    "body.soulbound_editions[0]": {
+      "valueClass": "numeric"
+    },
+    "body.soulbound_editions[1]": {
+      "valueClass": "numeric"
+    },
+    "body.soulbound_editions[2]": {
+      "valueClass": "numeric"
+    },
+    "body.soulbound_editions[3]": {
+      "valueClass": "numeric"
+    },
+    "body.soulbound_editions[4]": {
+      "valueClass": "numeric"
+    },
+    "body.non_survival_editions[0]": {
+      "valueClass": "numeric"
+    },
+    "body.non_survival_editions[1]": {
+      "valueClass": "numeric"
+    },
+    "body.non_survival_editions[2]": {
+      "valueClass": "numeric"
+    },
+    "body.non_survival_editions[3]": {
+      "valueClass": "numeric"
+    },
+    "body.event_creation_whitelist[0]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[1]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[2]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[3]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[4]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[5]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[6]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[7]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[8]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[9]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[10]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[11]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[12]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[13]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[14]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[15]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[16]": {
+      "valueClass": "opaque"
+    },
+    "body.event_creation_whitelist[17]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[0]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[1]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[2]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[3]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[4]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[5]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[6]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[7]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[8]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[9]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[10]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[11]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[12]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[13]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[14]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[15]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[16]": {
+      "valueClass": "opaque"
+    },
+    "body.ghost_creation_whitelist[17]": {
+      "valueClass": "opaque"
+    },
+    "body.event_entry_fee_required": {
+      "valueClass": "numeric"
+    },
+    "body.no_entryfee_list[0]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[1]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[2]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[3]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[4]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[5]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[6]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[7]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[8]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[9]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[10]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[11]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[12]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[13]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[14]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[15]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[16]": {
+      "valueClass": "opaque"
+    },
+    "body.no_entryfee_list[17]": {
+      "valueClass": "opaque"
+    },
+    "body.max_event_entrants": {
+      "valueClass": "numeric"
+    },
+    "body.tournaments_creation_fee_dec": {
+      "valueClass": "numeric"
+    },
+    "body.account": {
+      "valueClass": "opaque"
+    },
+    "body.tournament_escrow_account": {
+      "valueClass": "opaque"
+    },
+    "body.prefix": {
+      "valueClass": "opaque"
+    },
+    "body.rarity_pcts[0]": {
+      "valueClass": "numeric"
+    },
+    "body.rarity_pcts[1]": {
+      "valueClass": "numeric"
+    },
+    "body.rarity_pcts[2]": {
+      "valueClass": "numeric"
+    },
+    "body.rarity_pcts[3]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[0][0]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[0][1]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[0][2]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[0][3]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[0][4]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[0][5]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[0][6]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[0][7]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[0][8]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[1][0]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[1][1]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[1][2]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[1][3]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[1][4]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[1][5]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[1][6]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[2][0]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[2][1]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[2][2]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[2][3]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[2][4]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[3][0]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[3][1]": {
+      "valueClass": "numeric"
+    },
+    "body.xp_levels[3][2]": {
+      "valueClass": "numeric"
+    },
+    "body.alpha_xp[0]": {
+      "valueClass": "numeric"
+    },
+    "body.alpha_xp[1]": {
+      "valueClass": "numeric"
+    },
+    "body.alpha_xp[2]": {
+      "valueClass": "numeric"
+    },
+    "body.alpha_xp[3]": {
+      "valueClass": "numeric"
+    },
+    "body.gold_xp[0]": {
+      "valueClass": "numeric"
+    },
+    "body.gold_xp[1]": {
+      "valueClass": "numeric"
+    },
+    "body.gold_xp[2]": {
+      "valueClass": "numeric"
+    },
+    "body.gold_xp[3]": {
+      "valueClass": "numeric"
+    },
+    "body.beta_xp[0]": {
+      "valueClass": "numeric"
+    },
+    "body.beta_xp[1]": {
+      "valueClass": "numeric"
+    },
+    "body.beta_xp[2]": {
+      "valueClass": "numeric"
+    },
+    "body.beta_xp[3]": {
+      "valueClass": "numeric"
+    },
+    "body.beta_gold_xp[0]": {
+      "valueClass": "numeric"
+    },
+    "body.beta_gold_xp[1]": {
+      "valueClass": "numeric"
+    },
+    "body.beta_gold_xp[2]": {
+      "valueClass": "numeric"
+    },
+    "body.beta_gold_xp[3]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][0]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][1]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][2]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][3]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][4]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][5]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][6]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][7]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][8]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[0][9]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[1][0]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[1][1]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[1][2]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[1][3]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[1][4]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[1][5]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[1][6]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[1][7]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[2][0]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[2][1]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[2][2]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[2][3]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[2][4]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[2][5]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[3][0]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[3][1]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[3][2]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates[3][3]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][0]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][1]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][2]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][3]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][4]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][5]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][6]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][7]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][8]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[0][9]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[1][0]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[1][1]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[1][2]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[1][3]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[1][4]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[1][5]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[1][6]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[1][7]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[2][0]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[2][1]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[2][2]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[2][3]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[2][4]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[2][5]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[3][0]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[3][1]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[3][2]": {
+      "valueClass": "numeric"
+    },
+    "body.combine_rates_gold[3][3]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][0]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][1]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][2]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][3]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][4]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][5]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][6]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][7]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][8]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[0][9]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][0]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][1]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][2]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][3]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][4]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][5]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][6]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][7]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][8]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[1][9]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][0]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][1]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][2]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][3]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][4]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][5]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][6]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][7]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][8]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[2][9]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][0]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][1]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][2]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][3]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][4]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][5]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][6]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][7]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][8]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates[3][9]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][0]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][1]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][2]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][3]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][4]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][5]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][6]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][7]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][8]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[0][9]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][0]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][1]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][2]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][3]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][4]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][5]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][6]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][7]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][8]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[1][9]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][0]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][1]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][2]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][3]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][4]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][5]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][6]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][7]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][8]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[2][9]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][0]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][1]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][2]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][3]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][4]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][5]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][6]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][7]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][8]": {
+      "valueClass": "numeric"
+    },
+    "body.sk_combine_rates_gold[3][9]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[0][0]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[0][1]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[0][2]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[0][3]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[0][4]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[1][0]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[1][1]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[1][2]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[1][3]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[2][0]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[2][1]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[2][2]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[3][0]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates[3][1]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[0][0]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[0][1]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[0][2]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[0][3]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[0][4]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[1][0]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[1][1]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[1][2]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[1][3]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[2][0]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[2][1]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[2][2]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[3][0]": {
+      "valueClass": "numeric"
+    },
+    "body.foundations_combine_rates_gold[3][1]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_tier": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_rates[0]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_rates[1]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_rates[2]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_rates[3]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_gold_rates[0]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_gold_rates[1]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_gold_rates[2]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_gold_rates[3]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_black_rates[0]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_black_rates[1]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_black_rates[2]": {
+      "valueClass": "numeric"
+    },
+    "body.card_burn.spark_black_rates[3]": {
+      "valueClass": "numeric"
+    },
+    "body.prizes_per_frontier_draw": {
+      "valueClass": "numeric"
+    },
+    "body.battles.asset_url": {
+      "valueClass": "opaque"
+    },
+    "body.battles.default_expiration_seconds": {
+      "valueClass": "numeric"
+    },
+    "body.battles.reveal_blocks": {
+      "valueClass": "numeric"
+    },
+    "body.battles.win_streak_wins": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[0][0]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[0][1]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[0][2]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[0][3]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[1][0]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[1][1]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[1][2]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[1][3]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[2][0]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[2][1]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[2][2]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[2][3]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[3][0]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[3][1]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[3][2]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[3][3]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[4][0]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[4][1]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[4][2]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_level_requirement[4][3]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.min_battles_for_reset": {
+      "valueClass": "numeric"
+    },
+    "body.battles.modern_glint_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.battles.wild_glint_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.battles.base_glint_earned": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[0]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[1]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[2]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[3]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[4]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[5]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[6]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[7]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[8]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[9]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[10]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[11]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[12]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[13]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[14]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.league_glint_bonus[15]": {
+      "valueClass": "numeric"
+    },
+    "body.battles.wild_pass_required": {
+      "valueClass": "numeric"
+    },
+    "body.battles.survival_enabled": {
+      "valueClass": "numeric"
+    },
+    "body.battles.survival_bracket_start_league": {
+      "valueClass": "numeric"
+    },
+    "body.battles.survival_bracket_start_rating": {
+      "valueClass": "numeric"
+    },
+    "body.energy.price_increase_multiplier": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[0]": {
+      "valueClass": "opaque"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[1]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[2]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[3]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[4]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[5]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[6]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[7]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[8]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[9]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[10]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[11]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[12]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[13]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[14]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.GLINT[15]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[0]": {
+      "valueClass": "opaque"
+    },
+    "body.energy.conversion_rates_by_league.DEC[1]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[2]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[3]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[4]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[5]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[6]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[7]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[8]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[9]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[10]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[11]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[12]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[13]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[14]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC[15]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[0]": {
+      "valueClass": "opaque"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[1]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[2]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[3]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[4]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[5]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[6]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[7]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[8]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[9]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[10]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[11]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[12]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[13]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[14]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.DEC-B[15]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[0]": {
+      "valueClass": "opaque"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[1]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[2]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[3]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[4]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[5]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[6]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[7]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[8]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[9]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[10]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[11]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[12]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[13]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[14]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CREDITS[15]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[0]": {
+      "valueClass": "opaque"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[1]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[2]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[3]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[4]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[5]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[6]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[7]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[8]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[9]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[10]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[11]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[12]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[13]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[14]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.conversion_rates_by_league.CINDER[15]": {
+      "valueClass": "numeric"
+    },
+    "body.energy.energy_purchased_per_price_increase": {
+      "valueClass": "numeric"
+    },
+    "body.energy.hourly_regen_rate": {
+      "valueClass": "numeric"
+    },
+    "body.energy.max_energy": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[0].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[0].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[0].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[0].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[0].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[1].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[1].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[1].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[1].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[1].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[1].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[2].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[2].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[2].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[2].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[2].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[2].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[3].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[3].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[3].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[3].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[3].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[3].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[4].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[4].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[4].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[4].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[4].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[4].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[5].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[5].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[5].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[5].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[5].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[5].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[6].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[6].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[6].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[6].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[6].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[6].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[7].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[7].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[7].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[7].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[7].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[7].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[8].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[8].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[8].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[8].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[8].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[8].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[8].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[9].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[9].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[9].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[9].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[9].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[9].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[9].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[10].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[10].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[10].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[10].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[10].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[10].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[10].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[11].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[11].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[11].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[11].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[11].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[11].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[11].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[12].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[12].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[12].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[12].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[12].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[12].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[12].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[13].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[13].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[13].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[13].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[13].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[13].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[13].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[14].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[14].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[14].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[14].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[14].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[14].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[14].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[15].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[15].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.wild[15].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[15].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[15].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[15].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.wild[15].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[0].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[0].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[0].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[0].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[0].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[1].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[1].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[1].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[1].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[1].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[1].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[2].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[2].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[2].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[2].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[2].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[2].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[3].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[3].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[3].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[3].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[3].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[3].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[4].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[4].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[4].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[4].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[4].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[4].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[5].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[5].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[5].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[5].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[5].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[5].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[6].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[6].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[6].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[6].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[6].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[6].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[7].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[7].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[7].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[7].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[7].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[7].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[8].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[8].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[8].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[8].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[8].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[8].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[8].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[9].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[9].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[9].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[9].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[9].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[9].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[9].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[10].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[10].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[10].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[10].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[10].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[10].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[10].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[11].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[11].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[11].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[11].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[11].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[11].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[11].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[12].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[12].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[12].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[12].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[12].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[12].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[12].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[13].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[13].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[13].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[13].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[13].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[13].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[13].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[14].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[14].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[14].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[14].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[14].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[14].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[14].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[15].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[15].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.modern[15].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[15].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[15].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[15].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.modern[15].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[0].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[0].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[0].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[0].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[0].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[1].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[1].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[1].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[1].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[1].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[2].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[2].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[2].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[2].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[2].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[3].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[3].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[3].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[3].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[3].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[4].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[4].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[4].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[4].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[4].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[5].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[5].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[5].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[5].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[5].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[6].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[6].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[6].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[6].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[6].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[7].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[7].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[7].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[7].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[7].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[8].name": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[8].group": {
+      "valueClass": "opaque"
+    },
+    "body.leagues.foundation[8].level": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[8].min_power": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[8].min_rating": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[8].league_limit": {
+      "valueClass": "numeric"
+    },
+    "body.leagues.foundation[8].season_rating_reset": {
+      "valueClass": "numeric"
+    },
+    "body.dec.ygg_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.warden_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.marshal_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.runeguard_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.sentinel_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.magister_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.overseer_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.vonarch_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.max_burn_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.promo_burn_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.alpha_burn_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.gold_burn_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.gold_burn_bonus_2": {
+      "valueClass": "numeric"
+    },
+    "body.dec.black_burn_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.black_bonus": {
+      "valueClass": "numeric"
+    },
+    "body.dec.untamed_burn_rate[0]": {
+      "valueClass": "numeric"
+    },
+    "body.dec.untamed_burn_rate[1]": {
+      "valueClass": "numeric"
+    },
+    "body.dec.untamed_burn_rate[2]": {
+      "valueClass": "numeric"
+    },
+    "body.dec.untamed_burn_rate[3]": {
+      "valueClass": "numeric"
+    },
+    "body.dec.curve_constant": {
+      "valueClass": "numeric"
+    },
+    "body.dec.curve_reduction": {
+      "valueClass": "numeric"
+    },
+    "body.dec.burn_rate[0]": {
+      "valueClass": "numeric"
+    },
+    "body.dec.burn_rate[1]": {
+      "valueClass": "numeric"
+    },
+    "body.dec.burn_rate[2]": {
+      "valueClass": "numeric"
+    },
+    "body.dec.burn_rate[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.rank_names[0]": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.rank_names[1]": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.rank_names[2]": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.rank_names[3]": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.rank_names[4]": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.brawl_combat_duration": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.top3_bonus_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.guild_shop.cost[0].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.guild_shop.cost[0].levels[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[0].levels[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[0].levels[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[0].levels[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[0].levels[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[0].levels[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[0].levels[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[0].levels[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[0].levels[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[0].levels[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.guild_shop.cost[1].levels[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].levels[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].levels[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].levels[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].levels[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].levels[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].levels[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].levels[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].levels[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_shop.cost[1].levels[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.barracks.cost[0].levels[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].levels[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].levels[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].levels[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].levels[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].levels[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].levels[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].levels[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].levels[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[0].levels[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.barracks.cost[1].levels[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].levels[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].levels[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].levels[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].levels[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].levels[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].levels[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].levels[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].levels[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.barracks.cost[1].levels[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.arena.cost[0].levels[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].levels[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].levels[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].levels[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].levels[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].levels[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].levels[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].levels[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].levels[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[0].levels[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].symbol": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.arena.cost[1].levels[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].levels[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].levels[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].levels[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].levels[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].levels[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].levels[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].levels[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].levels[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.arena.cost[1].levels[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.gp_refund_pct": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_split_pct[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_split_pct[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_split_pct[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.crown_multiplier[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.symbol": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.library.levels[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.levels[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.levels[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.levels[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.levels[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.cards[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.cards[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.cards[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.cards[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.library.cards[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_tier_pct[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_tier_pct[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_tier_pct[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_tier_pct[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_tier_pct[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_full_rewards_min_guilds": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.0": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.1": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.2": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.3": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.4": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.5": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.6": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.7": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.8": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.9": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.10": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.11": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.12": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.13": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.14": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.15": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.16": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.17": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.18": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.19": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.20": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.21": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.22": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.23": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.24": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.25": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.26": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.27": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.28": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.29": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.30": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.31": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.32": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.33": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.34": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.35": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.36": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.37": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.38": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.39": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.40": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.41": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.42": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.43": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.44": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.45": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.46": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.47": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.48": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.49": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.50": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.51": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.52": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.53": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.54": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.55": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.56": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.57": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.58": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay_rates.59": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.brawl_staggered_start_interval": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.brawl_cycle_end_offset": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.brawl_results_duration": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.symbol": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.guild_hall.levels[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.levels[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.levels[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.levels[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.levels[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.levels[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.levels[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.levels[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.levels[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.levels[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.guild_hall.member_limit[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.symbol": {
+      "valueClass": "opaque"
+    },
+    "body.guilds.quest_lodge.levels[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.levels[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.levels[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.levels[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.levels[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.levels[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.levels[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.levels[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.levels[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.quest_lodge.levels[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.current_fray_edition": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.creation_fee": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_decay": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_decay_day_of_month": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.brawl_prep_duration": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.max_brawl_size": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_constant": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.merit_multiplier[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.probation_period": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.dec_bonus_pct[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.sps_reward_initial_pool": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[0]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[1]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[2]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[3]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[4]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[5]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[6]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[7]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[8]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.shop_discount_pct[9]": {
+      "valueClass": "numeric"
+    },
+    "body.guilds.brawl_maintenance_delay": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[0].type": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[0].tournament_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[0].payment_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[0].precision": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[1].currency": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[1].type": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[1].tournament_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[1].payment_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[1].precision": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[2].currency": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[2].type": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[2].tournament_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[2].payment_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[2].precision": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[2].contract_address": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[2].networks.eth": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[2].networks.bsc": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[3].currency": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[3].type": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[3].tournament_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[3].payment_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[3].precision": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[4].currency": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[4].type": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[4].chain": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[4].tournament_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[4].payment_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[4].precision": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[5].currency": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[5].type": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[5].tournament_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[5].payment_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[5].precision": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[5].payment_address": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[6].currency": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[6].type": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[6].tournament_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[6].payment_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[6].precision": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[6].payment_address": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[7].currency": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[7].type": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[7].tournament_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[7].payment_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[7].precision": {
+      "valueClass": "numeric"
+    },
+    "body.supported_currencies[8].name": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[8].currency": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[8].type": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[8].tournament_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[8].payment_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.supported_currencies[8].precision": {
+      "valueClass": "numeric"
+    },
+    "body.transfer_cooldown_blocks": {
+      "valueClass": "numeric"
+    },
+    "body.test_acct_creation": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[0]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[1]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[2]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[3]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[4]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[5]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[6]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[7]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[8]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[9]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[10]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[11]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[12]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[13]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[14]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[15]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[16]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[17]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[18]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[19]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[20]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[21]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[22]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[23]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[24]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[25]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[26]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[27]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[28]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[29]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[30]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[31]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[32]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[33]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[34]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[35]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[36]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[37]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[38]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[39]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[40]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[41]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[42]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[43]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[44]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[45]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[46]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[47]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[48]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[49]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[50]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[51]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[52]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[53]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[54]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[55]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[56]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[57]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[58]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[59]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[60]": {
+      "valueClass": "opaque"
+    },
+    "body.active_auth_ops[61]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[0]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[1]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[2]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[3]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[4]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[5]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[6]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[7]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[8]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[9]": {
+      "valueClass": "opaque"
+    },
+    "body.banned_domains[10]": {
+      "valueClass": "opaque"
+    },
+    "body.version": {
+      "valueClass": "opaque"
+    },
+    "body.config_version": {
+      "valueClass": "numeric"
+    },
+    "body.conflicts.intro_video_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.conflicts.staked_pack_value": {
+      "valueClass": "numeric"
+    },
+    "body.conflicts.reward_point_threshold": {
+      "valueClass": "numeric"
+    },
+    "body.conflicts.max_packs_per_wagon": {
+      "valueClass": "numeric"
+    },
+    "body.sps.unstaking_periods": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher_last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher_acc_tokens_per_share": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_acc_tokens_per_share": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.unstaking_interval_seconds": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher.tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher.reduction_pct": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher.pool_decline": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher.start_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher.pool_start": {
+      "valueClass": "opaque"
+    },
+    "body.sps.staking_rewards_voucher.pool_stop": {
+      "valueClass": "opaque"
+    },
+    "body.sps.staking_rewards.tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards.reduction_blocks": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards.reduction_pct": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards.pool_decline": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards.start_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards.pool_start": {
+      "valueClass": "opaque"
+    },
+    "body.sps.staking_rewards.pool_stop": {
+      "valueClass": "opaque"
+    },
+    "body.battles_disabled": {
+      "valueClass": "numeric"
+    },
+    "body.market_rental.minimum_rental_days": {
+      "valueClass": "numeric"
+    },
+    "body.market_rental.maximum_rental_days": {
+      "valueClass": "numeric"
+    },
+    "body.conversion_rate.sps_dec": {
+      "valueClass": "numeric"
+    },
+    "body.reward_pools.claim_limit": {
+      "valueClass": "numeric"
+    },
+    "body.reward_pools.claim_limit_time": {
+      "valueClass": "numeric"
+    },
+    "body.recaptcha_site_key": {
+      "valueClass": "opaque"
+    },
+    "body.fractional_tokens[0]": {
+      "valueClass": "opaque"
+    },
+    "body.fractional_tokens[1]": {
+      "valueClass": "opaque"
+    },
+    "body.fractional_tokens[2]": {
+      "valueClass": "opaque"
+    },
+    "body.fractional_tokens[3]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[0]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[1]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[2]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[3]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[4]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[5]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[6]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[7]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[8]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[9]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[10]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[11]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[12]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[13]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[14]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[15]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[16]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[17]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[18]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[19]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[20]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[21]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[22]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[23]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[24]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[25]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[26]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[27]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[28]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[29]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[30]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[31]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[32]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[33]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[34]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[35]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[36]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[37]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[38]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[39]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[40]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[41]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[42]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[43]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[44]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[45]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[46]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[47]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[48]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[49]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[50]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[51]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[52]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[53]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[54]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[55]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[56]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[57]": {
+      "valueClass": "opaque"
+    },
+    "body.transferrable_tokens[58]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_cooldown": {
+      "valueClass": "numeric"
+    },
+    "body.delegation_market.delegation_rental_qty_divisor": {
+      "valueClass": "numeric"
+    },
+    "body.delegation_market.delegation_rental_min_qty": {
+      "valueClass": "numeric"
+    },
+    "body.delegation_market.controllers[0]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[1]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[2]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[3]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[4]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[5]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[6]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[7]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[8]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[9]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_market.controllers[10]": {
+      "valueClass": "opaque"
+    },
+    "body.delegation_rental_min_qty": {
+      "valueClass": "numeric"
+    },
+    "body.delegation_rental_max_splits": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.accumulated_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.estimated_current_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.latest_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.rewards_start": {
+      "valueClass": "opaque"
+    },
+    "body.sps_mining_pool.pool_start": {
+      "valueClass": "opaque"
+    },
+    "body.sps_mining_pool.pool_decline": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.pool_stop": {
+      "valueClass": "opaque"
+    },
+    "body.sps_mining_pool.capped_decay_rates.37": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.38": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.39": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.40": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.41": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.42": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.43": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.44": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.45": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.46": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.47": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.48": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.49": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.50": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.51": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.52": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.53": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.54": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.55": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.56": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.57": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.58": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.59": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.60": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.61": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.62": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.63": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.64": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.65": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.66": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.67": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.68": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.69": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.70": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.71": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.72": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.73": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.capped_decay_rates.74": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.initial_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "body.proposal_accounts[0]": {
+      "valueClass": "opaque"
+    },
+    "body.proposal_accounts[1]": {
+      "valueClass": "opaque"
+    },
+    "body.proposal_accounts[2]": {
+      "valueClass": "opaque"
+    },
+    "body.glint_start_season": {
+      "valueClass": "numeric"
+    },
+    "body.eos_glint_multiplier": {
+      "valueClass": "numeric"
+    },
+    "body.hall_of_legends.end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends.verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body.hall_of_legends.verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends.verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends.verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends.start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends.prize_distribution_complete": {
+      "valueClass": "numeric"
+    },
+    "body.hall_of_legends_events[0].event": {
+      "valueClass": "numeric"
+    },
+    "body.hall_of_legends_events[0].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[0].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[0].rare_shop_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends_events[0].legendary_shop_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends_events[1].event": {
+      "valueClass": "numeric"
+    },
+    "body.hall_of_legends_events[1].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[1].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[1].rare_shop_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends_events[1].legendary_shop_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends_events[2].event": {
+      "valueClass": "numeric"
+    },
+    "body.hall_of_legends_events[2].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[2].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[2].rare_shop_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends_events[2].legendary_shop_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends_events[3].event": {
+      "valueClass": "numeric"
+    },
+    "body.hall_of_legends_events[3].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[3].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[3].rare_shop_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends_events[3].legendary_shop_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends_events[4].event": {
+      "valueClass": "numeric"
+    },
+    "body.hall_of_legends_events[4].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[4].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.hall_of_legends_events[4].rare_shop_id": {
+      "valueClass": "id"
+    },
+    "body.hall_of_legends_events[4].legendary_shop_id": {
+      "valueClass": "id"
+    },
+    "body.wild_pass.prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.wild_pass.prices[0].amount": {
+      "valueClass": "numeric"
+    },
+    "body.wild_pass.prices[1].currency": {
+      "valueClass": "opaque"
+    },
+    "body.wild_pass.prices[1].amount": {
+      "valueClass": "numeric"
+    },
+    "body.wild_pass.prices[2].currency": {
+      "valueClass": "opaque"
+    },
+    "body.wild_pass.prices[2].amount": {
+      "valueClass": "numeric"
+    },
+    "body.unbind_config.10.start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.unbind_config.10.cost_multiplier": {
+      "valueClass": "numeric"
+    },
+    "body.unbind_config.10.days_after_increase": {
+      "valueClass": "numeric"
+    },
+    "body.unbind_config.10.days_till_end": {
+      "valueClass": "numeric"
+    },
+    "body.unbind_config.13.start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.unbind_config.13.cost_multiplier": {
+      "valueClass": "numeric"
+    },
+    "body.unbind_config.13.days_after_increase": {
+      "valueClass": "numeric"
+    },
+    "body.unbind_config.13.days_till_end": {
+      "valueClass": "numeric"
+    },
+    "body.unbind_config.18.start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.dec_price": {
+      "valueClass": "numeric"
+    },
+    "body.sps_price": {
+      "valueClass": "numeric"
+    },
+    "body.maintenance_mode": {
+      "valueClass": "opaque"
+    },
+    "body.season.id": {
+      "valueClass": "numeric"
+    },
+    "body.season.name": {
+      "valueClass": "opaque"
+    },
+    "body.season.ends": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[0]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[1]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[2]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[3]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[4]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[5]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[6]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[7]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[8]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[9]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[10]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[11]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[12]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[13]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[14]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reward_packs[15]": {
+      "valueClass": "opaque"
+    },
+    "body.season.reset_block_num": {
+      "valueClass": "opaque"
+    },
+    "body.next_season_end": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.id": {
+      "valueClass": "numeric"
+    },
+    "body.previous_season.name": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.ends": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[0]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[1]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[2]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[3]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[4]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[5]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[6]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[7]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[8]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[9]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[10]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[11]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[12]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[13]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[14]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reward_packs[15]": {
+      "valueClass": "opaque"
+    },
+    "body.previous_season.reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_cycle.id": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_cycle.name": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_cycle.start": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_cycle.status": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_cycle.reset_block_num": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_cycle.end": {
+      "valueClass": "opaque"
+    },
+    "body.last_block": {
+      "valueClass": "numeric"
+    },
+    "body.validator_transitioned": {
+      "valueClass": "opaque"
+    },
+    "body.timestamp": {
+      "valueClass": "numeric"
+    },
+    "body.chain_props.time": {
+      "valueClass": "opaque"
+    },
+    "body.chain_props.ref_block_num": {
+      "valueClass": "numeric"
+    },
+    "body.chain_props.ref_block_id": {
+      "valueClass": "id"
+    },
+    "body.chain_props.ref_block_prefix": {
+      "valueClass": "numeric"
+    },
+    "body.transak_payments_enabled": {
+      "valueClass": "numeric"
+    },
+    "body.dec_max_buy_amount": {
+      "valueClass": "numeric"
+    },
+    "body.sps_max_buy_amount": {
+      "valueClass": "numeric"
+    },
+    "body.paypal_client_id": {
+      "valueClass": "id"
+    },
+    "body.ssc.rpc_url": {
+      "valueClass": "opaque"
+    },
+    "body.ssc.chain_id": {
+      "valueClass": "id"
+    },
+    "body.ssc.hive_rpc_url": {
+      "valueClass": "opaque"
+    },
+    "body.ssc.hive_chain_id": {
+      "valueClass": "id"
+    },
+    "body.bridge.ethereum.DEC.enabled": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.DEC.token_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.DEC.in.contract_type": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.DEC.in.contract_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.DEC.in.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.ethereum.DEC.in.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.ethereum.DEC.out.bridge_account": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.DEC.out.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.ethereum.DEC.out.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.ethereum.DEC.out.memo_prefix": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.SPS.enabled": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.SPS.token_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.SPS.in.contract_type": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.SPS.in.contract_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.SPS.in.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.ethereum.SPS.in.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.ethereum.SPS.out.bridge_account": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.ethereum.SPS.out.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.ethereum.SPS.out.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.ethereum.SPS.out.memo_prefix": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.base.SPS.enabled": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.base.SPS.token_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.base.SPS.in.contract_type": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.base.SPS.in.contract_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.base.SPS.in.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.base.SPS.in.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.base.SPS.out.bridge_account": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.base.SPS.out.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.base.SPS.out.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.base.SPS.out.memo_prefix": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.voucher.bridge_wallet": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.electroneum.ETN.enabled": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.electroneum.ETN.in.contract_type": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.electroneum.ETN.in.contract_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.electroneum.ETN.in.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.electroneum.ETN.in.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.electroneum.ETN.out.bridge_account": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.electroneum.ETN.out.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.electroneum.ETN.out.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.electroneum.ETN.out.memo_prefix": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.DEC.enabled": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.DEC.token_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.DEC.in.contract_type": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.DEC.in.contract_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.DEC.in.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.bsc.DEC.in.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.bsc.DEC.out.bridge_account": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.DEC.out.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.bsc.DEC.out.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.bsc.DEC.out.memo_prefix": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.SPS.enabled": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.SPS.token_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.SPS.in.contract_type": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.SPS.in.contract_address": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.SPS.in.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.bsc.SPS.in.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.bsc.SPS.out.bridge_account": {
+      "valueClass": "opaque"
+    },
+    "body.bridge.bsc.SPS.out.fee_pct": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.bsc.SPS.out.min_amount": {
+      "valueClass": "numeric"
+    },
+    "body.bridge.bsc.SPS.out.memo_prefix": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.withdrawal_fee": {
+      "valueClass": "numeric"
+    },
+    "body.ethereum.sps_withdrawal_fee": {
+      "valueClass": "numeric"
+    },
+    "body.ethereum.contracts.cards.abi.status": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.cards.abi.message": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.cards.abi.result": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.cards.address": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.crystals.abi.status": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.crystals.abi.message": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.crystals.abi.result": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.crystals.address": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.payments.abi.status": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.payments.abi.message": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.payments.abi.result": {
+      "valueClass": "opaque"
+    },
+    "body.ethereum.contracts.payments.address": {
+      "valueClass": "opaque"
+    },
+    "body.wax.login_enabled": {
+      "valueClass": "opaque"
+    },
+    "body.wax.client_id": {
+      "valueClass": "id"
+    },
+    "body.wax.auth_url": {
+      "valueClass": "opaque"
+    },
+    "body.wax.external.token.account": {
+      "valueClass": "opaque"
+    },
+    "body.wax.external.atomicassets.account": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[0]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[1]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[2]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[3]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[4]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[5]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[6]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[7]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[8]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[9]": {
+      "valueClass": "opaque"
+    },
+    "body.api_ops[10]": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "asset_url": "https://d36mxiodymuqjm.cloudfront.net/",
+    "asset_url_override": "https://splinterlands.com/overrides",
+    "gold_percent": 0.02,
+    "starter_pack_price": 10,
+    "booster_pack_price": 2,
+    "market_fee": 400,
+    "list_fee_per_listing": 1,
+    "list_expire_in_days": 30,
+    "core_editions": [
+      0,
+      1,
+      4,
+      7,
+      12,
+      14,
+      15,
+      16
+    ],
+    "modern_editions": [
+      12,
+      14,
+      15,
+      16
+    ],
+    "modern_card_detail_ids": [
+      505
+    ],
+    "soulbound_editions": [
+      6,
+      10,
+      13,
+      16,
+      18
+    ],
+    "non_survival_editions": [
+      9,
+      11,
+      16,
+      19
+    ],
+    "event_creation_whitelist": [
+      "sample-acct-111",
+      "splinterlands",
+      "sample-acct-142",
+      "sample-acct-143",
+      "sample-acct-087",
+      "sample-acct-144",
+      "sample-acct-145",
+      "sample-acct-146",
+      "sample-acct-112",
+      "sample-acct-147",
+      "sample-acct-148",
+      "sample-acct-149",
+      "sample-acct-050",
+      "sample-acct-150",
+      "sample-acct-151",
+      "sample-acct-152",
+      "sample-acct-153",
+      "sample-acct-110"
+    ],
+    "ghost_creation_whitelist": [
+      "sample-acct-111",
+      "splinterlands",
+      "sample-acct-142",
+      "sample-acct-143",
+      "sample-acct-087",
+      "sample-acct-144",
+      "sample-acct-145",
+      "sample-acct-146",
+      "sample-acct-112",
+      "sample-acct-147",
+      "sample-acct-148",
+      "sample-acct-149",
+      "sample-acct-050",
+      "sample-acct-150",
+      "sample-acct-151",
+      "sample-acct-152",
+      "sample-acct-153",
+      "sample-acct-110"
+    ],
+    "event_entry_fee_required": 1,
+    "no_entryfee_list": [
+      "sample-acct-111",
+      "splinterlands",
+      "sample-acct-142",
+      "sample-acct-143",
+      "sample-acct-087",
+      "sample-acct-144",
+      "sample-acct-145",
+      "sample-acct-146",
+      "sample-acct-112",
+      "sample-acct-147",
+      "sample-acct-148",
+      "sample-acct-149",
+      "sample-acct-050",
+      "sample-acct-150",
+      "sample-acct-151",
+      "sample-acct-152",
+      "sample-acct-153",
+      "sample-acct-110"
+    ],
+    "max_event_entrants": 1000,
+    "tournaments_creation_fee_dec": 2000,
+    "account": "steemmonsters",
+    "tournament_escrow_account": "sl-tournaments",
+    "prefix": "",
+    "rarity_pcts": [
+      0.248,
+      0.048,
+      0.008,
+      0
+    ],
+    "xp_levels": [
+      [
+        20,
+        60,
+        160,
+        360,
+        760,
+        1560,
+        2560,
+        4560,
+        7560
+      ],
+      [
+        100,
+        300,
+        700,
+        1500,
+        2500,
+        4500,
+        8500
+      ],
+      [
+        250,
+        750,
+        1750,
+        3750,
+        7750
+      ],
+      [
+        1000,
+        3000,
+        7000
+      ]
+    ],
+    "alpha_xp": [
+      20,
+      100,
+      250,
+      1000
+    ],
+    "gold_xp": [
+      250,
+      500,
+      1000,
+      2500
+    ],
+    "beta_xp": [
+      15,
+      75,
+      175,
+      750
+    ],
+    "beta_gold_xp": [
+      200,
+      400,
+      800,
+      2000
+    ],
+    "combine_rates": [
+      [
+        1,
+        5,
+        14,
+        30,
+        60,
+        100,
+        150,
+        220,
+        300,
+        400
+      ],
+      [
+        1,
+        5,
+        14,
+        25,
+        40,
+        60,
+        85,
+        115
+      ],
+      [
+        1,
+        4,
+        10,
+        20,
+        32,
+        46
+      ],
+      [
+        1,
+        3,
+        6,
+        11
+      ]
+    ],
+    "combine_rates_gold": [
+      [
+        0,
+        0,
+        1,
+        2,
+        5,
+        9,
+        14,
+        20,
+        27,
+        38
+      ],
+      [
+        0,
+        1,
+        2,
+        4,
+        7,
+        11,
+        16,
+        22
+      ],
+      [
+        0,
+        1,
+        2,
+        4,
+        7,
+        10
+      ],
+      [
+        0,
+        1,
+        2,
+        4
+      ]
+    ],
+    "sk_combine_rates": [
+      [
+        1,
+        5,
+        13,
+        25,
+        41,
+        63,
+        89,
+        121,
+        159,
+        200
+      ],
+      [
+        0,
+        0,
+        1,
+        5,
+        11,
+        21,
+        33,
+        47,
+        63,
+        80
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        4,
+        8,
+        13,
+        20,
+        28
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        3,
+        6,
+        10
+      ]
+    ],
+    "sk_combine_rates_gold": [
+      [
+        0,
+        0,
+        1,
+        2,
+        5,
+        9,
+        14,
+        20,
+        27,
+        38
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        2,
+        4,
+        7,
+        11,
+        16,
+        22
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        4,
+        7,
+        10
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        4
+      ]
+    ],
+    "foundations_combine_rates": [
+      [
+        1,
+        5,
+        14,
+        30,
+        60
+      ],
+      [
+        1,
+        5,
+        14,
+        25
+      ],
+      [
+        1,
+        4,
+        10
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "foundations_combine_rates_gold": [
+      [
+        0,
+        0,
+        1,
+        2,
+        5
+      ],
+      [
+        0,
+        1,
+        2,
+        4
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "card_burn": {
+      "spark_tier": 15,
+      "spark_rates": [
+        5,
+        20,
+        100,
+        200
+      ],
+      "spark_gold_rates": [
+        50,
+        250,
+        1500,
+        4000
+      ],
+      "spark_black_rates": [
+        250,
+        1250,
+        5000,
+        10000
+      ]
+    },
+    "prizes_per_frontier_draw": 76,
+    "battles": {
+      "asset_url": "https://d36mxiodymuqjm.cloudfront.net/website/battle/",
+      "default_expiration_seconds": 180,
+      "reveal_blocks": 20,
+      "win_streak_wins": 3,
+      "min_level_requirement": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          2,
+          2,
+          1
+        ],
+        [
+          5,
+          4,
+          3,
+          2
+        ],
+        [
+          8,
+          6,
+          5,
+          3
+        ],
+        [
+          10,
+          8,
+          6,
+          4
+        ]
+      ],
+      "min_battles_for_reset": 1,
+      "modern_glint_bonus": 1.8,
+      "wild_glint_bonus": 1.8,
+      "base_glint_earned": 5,
+      "league_glint_bonus": [
+        16,
+        16,
+        10,
+        7,
+        5.25,
+        3.8,
+        2.7,
+        2.1,
+        1.67,
+        1.3,
+        1.15,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "wild_pass_required": 1,
+      "survival_enabled": 1,
+      "survival_bracket_start_league": 1,
+      "survival_bracket_start_rating": 0
+    },
+    "energy": {
+      "price_increase_multiplier": 0.5,
+      "conversion_rates_by_league": {
+        "GLINT": [
+          null,
+          50,
+          70,
+          100,
+          225,
+          250,
+          400,
+          700,
+          1000,
+          1500,
+          2000,
+          3000,
+          4000,
+          5000,
+          7500,
+          10000
+        ],
+        "DEC": [
+          null,
+          2,
+          5,
+          10,
+          20,
+          40,
+          70,
+          100,
+          130,
+          175,
+          250,
+          325,
+          400,
+          500,
+          500,
+          500
+        ],
+        "DEC-B": [
+          null,
+          2,
+          5,
+          10,
+          20,
+          40,
+          70,
+          100,
+          130,
+          175,
+          250,
+          325,
+          400,
+          500,
+          500,
+          500
+        ],
+        "CREDITS": [
+          null,
+          2,
+          5,
+          10,
+          20,
+          40,
+          70,
+          100,
+          130,
+          175,
+          250,
+          325,
+          400,
+          500,
+          500,
+          500
+        ],
+        "CINDER": [
+          null,
+          3,
+          8,
+          15,
+          30,
+          60,
+          105,
+          150,
+          195,
+          263,
+          375,
+          488,
+          600,
+          750,
+          750,
+          750
+        ]
+      },
+      "energy_purchased_per_price_increase": 25,
+      "hourly_regen_rate": 1,
+      "max_energy": 50
+    },
+    "leagues": {
+      "wild": [
+        {
+          "name": "Wood",
+          "group": "Wood",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 0,
+          "league_limit": 3
+        },
+        {
+          "name": "Bronze III",
+          "group": "Bronze",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 260,
+          "league_limit": 3,
+          "season_rating_reset": 260
+        },
+        {
+          "name": "Bronze II",
+          "group": "Bronze",
+          "level": 4,
+          "min_power": 1000,
+          "min_rating": 400,
+          "league_limit": 3,
+          "season_rating_reset": 300
+        },
+        {
+          "name": "Bronze I",
+          "group": "Bronze",
+          "level": 4,
+          "min_power": 5000,
+          "min_rating": 700,
+          "league_limit": 3,
+          "season_rating_reset": 500
+        },
+        {
+          "name": "Silver III",
+          "group": "Silver",
+          "level": 4,
+          "min_power": 15000,
+          "min_rating": 1000,
+          "league_limit": 6,
+          "season_rating_reset": 600
+        },
+        {
+          "name": "Silver II",
+          "group": "Silver",
+          "level": 4,
+          "min_power": 40000,
+          "min_rating": 1300,
+          "league_limit": 6,
+          "season_rating_reset": 800
+        },
+        {
+          "name": "Silver I",
+          "group": "Silver",
+          "level": 4,
+          "min_power": 70000,
+          "min_rating": 1600,
+          "league_limit": 6,
+          "season_rating_reset": 1100
+        },
+        {
+          "name": "Gold III",
+          "group": "Gold",
+          "level": 4,
+          "min_power": 100000,
+          "min_rating": 1900,
+          "league_limit": 9,
+          "season_rating_reset": 1400
+        },
+        {
+          "name": "Gold II",
+          "group": "Gold",
+          "level": 4,
+          "min_power": 150000,
+          "min_rating": 2200,
+          "league_limit": 9,
+          "season_rating_reset": 1700
+        },
+        {
+          "name": "Gold I",
+          "group": "Gold",
+          "level": 4,
+          "min_power": 200000,
+          "min_rating": 2500,
+          "league_limit": 9,
+          "season_rating_reset": 2000
+        },
+        {
+          "name": "Diamond III",
+          "group": "Diamond",
+          "level": 4,
+          "min_power": 250000,
+          "min_rating": 2800,
+          "league_limit": 12,
+          "season_rating_reset": 2300
+        },
+        {
+          "name": "Diamond II",
+          "group": "Diamond",
+          "level": 4,
+          "min_power": 325000,
+          "min_rating": 3100,
+          "league_limit": 12,
+          "season_rating_reset": 2600
+        },
+        {
+          "name": "Diamond I",
+          "group": "Diamond",
+          "level": 4,
+          "min_power": 400000,
+          "min_rating": 3400,
+          "league_limit": 12,
+          "season_rating_reset": 2900
+        },
+        {
+          "name": "Champion III",
+          "group": "Champion",
+          "level": 4,
+          "min_power": 500000,
+          "min_rating": 3700,
+          "league_limit": 15,
+          "season_rating_reset": 3200
+        },
+        {
+          "name": "Champion II",
+          "group": "Champion",
+          "level": 4,
+          "min_power": 500000,
+          "min_rating": 4000,
+          "league_limit": 15,
+          "season_rating_reset": 3500
+        },
+        {
+          "name": "Champion I",
+          "group": "Champion",
+          "level": 4,
+          "min_power": 500000,
+          "min_rating": 4300,
+          "league_limit": 15,
+          "season_rating_reset": 3800
+        }
+      ],
+      "modern": [
+        {
+          "name": "Wood",
+          "group": "Wood",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 0,
+          "league_limit": 3
+        },
+        {
+          "name": "Bronze III",
+          "group": "Bronze",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 260,
+          "league_limit": 3,
+          "season_rating_reset": 260
+        },
+        {
+          "name": "Bronze II",
+          "group": "Bronze",
+          "level": 4,
+          "min_power": 500,
+          "min_rating": 400,
+          "league_limit": 3,
+          "season_rating_reset": 300
+        },
+        {
+          "name": "Bronze I",
+          "group": "Bronze",
+          "level": 4,
+          "min_power": 2500,
+          "min_rating": 700,
+          "league_limit": 3,
+          "season_rating_reset": 500
+        },
+        {
+          "name": "Silver III",
+          "group": "Silver",
+          "level": 4,
+          "min_power": 7500,
+          "min_rating": 1000,
+          "league_limit": 6,
+          "season_rating_reset": 600
+        },
+        {
+          "name": "Silver II",
+          "group": "Silver",
+          "level": 4,
+          "min_power": 40000,
+          "min_rating": 1300,
+          "league_limit": 6,
+          "season_rating_reset": 800
+        },
+        {
+          "name": "Silver I",
+          "group": "Silver",
+          "level": 4,
+          "min_power": 70000,
+          "min_rating": 1600,
+          "league_limit": 6,
+          "season_rating_reset": 1100
+        },
+        {
+          "name": "Gold III",
+          "group": "Gold",
+          "level": 4,
+          "min_power": 100000,
+          "min_rating": 1900,
+          "league_limit": 9,
+          "season_rating_reset": 1400
+        },
+        {
+          "name": "Gold II",
+          "group": "Gold",
+          "level": 4,
+          "min_power": 150000,
+          "min_rating": 2200,
+          "league_limit": 9,
+          "season_rating_reset": 1700
+        },
+        {
+          "name": "Gold I",
+          "group": "Gold",
+          "level": 4,
+          "min_power": 200000,
+          "min_rating": 2500,
+          "league_limit": 9,
+          "season_rating_reset": 2000
+        },
+        {
+          "name": "Diamond III",
+          "group": "Diamond",
+          "level": 4,
+          "min_power": 250000,
+          "min_rating": 2800,
+          "league_limit": 12,
+          "season_rating_reset": 2300
+        },
+        {
+          "name": "Diamond II",
+          "group": "Diamond",
+          "level": 4,
+          "min_power": 325000,
+          "min_rating": 3100,
+          "league_limit": 12,
+          "season_rating_reset": 2600
+        },
+        {
+          "name": "Diamond I",
+          "group": "Diamond",
+          "level": 4,
+          "min_power": 400000,
+          "min_rating": 3400,
+          "league_limit": 12,
+          "season_rating_reset": 2900
+        },
+        {
+          "name": "Champion III",
+          "group": "Champion",
+          "level": 4,
+          "min_power": 500000,
+          "min_rating": 3700,
+          "league_limit": 15,
+          "season_rating_reset": 3200
+        },
+        {
+          "name": "Champion II",
+          "group": "Champion",
+          "level": 4,
+          "min_power": 500000,
+          "min_rating": 4000,
+          "league_limit": 15,
+          "season_rating_reset": 3500
+        },
+        {
+          "name": "Champion I",
+          "group": "Champion",
+          "level": 4,
+          "min_power": 500000,
+          "min_rating": 4300,
+          "league_limit": 15,
+          "season_rating_reset": 3800
+        }
+      ],
+      "foundation": [
+        {
+          "name": "Bronze III",
+          "group": "Bronze",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 0,
+          "league_limit": 2
+        },
+        {
+          "name": "Bronze II",
+          "group": "Bronze",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 400,
+          "league_limit": 2
+        },
+        {
+          "name": "Bronze I",
+          "group": "Bronze",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 700,
+          "league_limit": 2
+        },
+        {
+          "name": "Silver III",
+          "group": "Silver",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 1000,
+          "league_limit": 5
+        },
+        {
+          "name": "Silver II",
+          "group": "Silver",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 1300,
+          "league_limit": 5
+        },
+        {
+          "name": "Silver I",
+          "group": "Silver",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 1600,
+          "league_limit": 5
+        },
+        {
+          "name": "Gold III",
+          "group": "Gold",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 1900,
+          "league_limit": 8
+        },
+        {
+          "name": "Gold II",
+          "group": "Gold",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 2200,
+          "league_limit": 8
+        },
+        {
+          "name": "Gold I",
+          "group": "Gold",
+          "level": 4,
+          "min_power": 0,
+          "min_rating": 2500,
+          "league_limit": 8,
+          "season_rating_reset": 2500
+        }
+      ]
+    },
+    "dec": {
+      "ygg_bonus": 0.02,
+      "warden_bonus": 0.05,
+      "marshal_bonus": 0.1,
+      "runeguard_bonus": 0.15,
+      "sentinel_bonus": 0.25,
+      "magister_bonus": 0.35,
+      "overseer_bonus": 0.5,
+      "vonarch_bonus": 0.5,
+      "max_burn_bonus": 1.05,
+      "promo_burn_bonus": 2,
+      "alpha_burn_bonus": 2,
+      "gold_burn_bonus": 50,
+      "gold_burn_bonus_2": 25,
+      "black_burn_bonus": 5,
+      "black_bonus": 0.2,
+      "untamed_burn_rate": [
+        10,
+        40,
+        200,
+        1000
+      ],
+      "curve_constant": 3,
+      "curve_reduction": 1000,
+      "burn_rate": [
+        15,
+        60,
+        300,
+        1500
+      ]
+    },
+    "guilds": {
+      "rank_names": [
+        "Member",
+        "Sr. Member",
+        "Officer",
+        "Co-Leader",
+        "Leader"
+      ],
+      "brawl_combat_duration": 172800000,
+      "top3_bonus_enabled": "0",
+      "guild_shop": {
+        "cost": [
+          {
+            "symbol": "DEC",
+            "levels": [
+              10000,
+              20000,
+              30000,
+              50000,
+              100000,
+              250000,
+              500000,
+              750000,
+              1000000,
+              1500000
+            ]
+          },
+          {
+            "symbol": "CROWN",
+            "levels": [
+              0,
+              40,
+              100,
+              250,
+              400,
+              675,
+              1000,
+              1850,
+              2800,
+              4200
+            ]
+          }
+        ]
+      },
+      "barracks": {
+        "cost": [
+          {
+            "symbol": "DEC",
+            "levels": [
+              10000,
+              20000,
+              30000,
+              50000,
+              100000,
+              250000,
+              500000,
+              750000,
+              1000000,
+              1500000
+            ]
+          },
+          {
+            "symbol": "CROWN",
+            "levels": [
+              0,
+              40,
+              100,
+              250,
+              400,
+              675,
+              1000,
+              1850,
+              2800,
+              4200
+            ]
+          }
+        ]
+      },
+      "arena": {
+        "cost": [
+          {
+            "symbol": "DEC",
+            "levels": [
+              10000,
+              20000,
+              30000,
+              50000,
+              100000,
+              250000,
+              500000,
+              750000,
+              1000000,
+              1500000
+            ]
+          },
+          {
+            "symbol": "CROWN",
+            "levels": [
+              0,
+              40,
+              100,
+              250,
+              400,
+              675,
+              1000,
+              1850,
+              2800,
+              4200
+            ]
+          }
+        ]
+      },
+      "gp_refund_pct": 0.9,
+      "crown_split_pct": [
+        0.06,
+        0.04,
+        0.02
+      ],
+      "crown_multiplier": [
+        1,
+        1.5,
+        2.5,
+        3,
+        4,
+        4.5,
+        5.5,
+        6,
+        7,
+        8
+      ],
+      "library": {
+        "symbol": "DEC",
+        "levels": [
+          0,
+          5000,
+          10000,
+          20000,
+          50000
+        ],
+        "cards": [
+          20,
+          50,
+          100,
+          200,
+          500
+        ]
+      },
+      "sps_tier_pct": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "sps_full_rewards_min_guilds": 1,
+      "sps_reward_decay_rates": {
+        "0": 0,
+        "1": 0.51,
+        "2": 0.78,
+        "3": 0.78,
+        "4": 0.78,
+        "5": 0.78,
+        "6": 0.78,
+        "7": 0.78,
+        "8": 0.78,
+        "9": 0.78,
+        "10": 0.78,
+        "11": 0.78,
+        "12": 0.78,
+        "13": 0.78,
+        "14": 0.78,
+        "15": 0.78,
+        "16": 0.78,
+        "17": 0.78,
+        "18": 0.78,
+        "19": 0.78,
+        "20": 0.8,
+        "21": 0.85,
+        "22": 0.89,
+        "23": 0.94,
+        "24": 0.99,
+        "25": 1,
+        "26": 1,
+        "27": 1,
+        "28": 1,
+        "29": 1,
+        "30": 1,
+        "31": 1,
+        "32": 1,
+        "33": 1,
+        "34": 1,
+        "35": 1,
+        "36": 1,
+        "37": 1,
+        "38": 1,
+        "39": 1,
+        "40": 1,
+        "41": 1,
+        "42": 1,
+        "43": 1,
+        "44": 1,
+        "45": 1,
+        "46": 1,
+        "47": 1,
+        "48": 1,
+        "49": 1,
+        "50": 1,
+        "51": 1,
+        "52": 1,
+        "53": 1,
+        "54": 1,
+        "55": 1,
+        "56": 1,
+        "57": 1,
+        "58": 1,
+        "59": 1
+      },
+      "brawl_staggered_start_interval": 120000,
+      "brawl_cycle_end_offset": 3600000,
+      "brawl_results_duration": 86400000,
+      "guild_hall": {
+        "symbol": "DEC",
+        "levels": [
+          0,
+          10000,
+          20000,
+          30000,
+          50000,
+          100000,
+          250000,
+          500000,
+          750000,
+          1000000
+        ],
+        "member_limit": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          21,
+          23,
+          25,
+          27,
+          30
+        ]
+      },
+      "quest_lodge": {
+        "symbol": "SCROLLS",
+        "levels": [
+          15,
+          30,
+          60,
+          100,
+          150,
+          200,
+          250,
+          300,
+          400,
+          600
+        ]
+      },
+      "current_fray_edition": 14,
+      "creation_fee": 10000,
+      "sps_reward_decay": 0.99,
+      "sps_decay_day_of_month": 14,
+      "brawl_prep_duration": 172800000,
+      "max_brawl_size": 10,
+      "merit_constant": 500,
+      "merit_multiplier": [
+        1,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2,
+        2.2,
+        2.4,
+        2.6,
+        3
+      ],
+      "probation_period": 604800000,
+      "dec_bonus_pct": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        12,
+        15,
+        20
+      ],
+      "sps_reward_initial_pool": 1260000,
+      "shop_discount_pct": [
+        0,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "brawl_maintenance_delay": 86400000
+    },
+    "supported_currencies": [
+      {
+        "name": "Dark Energy Crystals",
+        "currency": "DEC",
+        "type": "internal",
+        "tournament_enabled": true,
+        "payment_enabled": false,
+        "usd_value": 0.001,
+        "precision": 3
+      },
+      {
+        "name": "Dollars",
+        "currency": "USD",
+        "type": "paypal",
+        "tournament_enabled": false,
+        "payment_enabled": true,
+        "usd_value": 1,
+        "precision": 2
+      },
+      {
+        "name": "USD Coin",
+        "currency": "USDC",
+        "type": "multi-network",
+        "tournament_enabled": false,
+        "payment_enabled": true,
+        "precision": 18,
+        "contract_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "networks": {
+          "eth": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "bsc": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
+        }
+      },
+      {
+        "name": "Splintershards",
+        "currency": "SPS",
+        "type": "internal",
+        "tournament_enabled": true,
+        "payment_enabled": true,
+        "precision": 3
+      },
+      {
+        "name": "Electroneum",
+        "currency": "ETN",
+        "type": "evm-native",
+        "chain": "electroneum",
+        "tournament_enabled": false,
+        "payment_enabled": true,
+        "precision": 8
+      },
+      {
+        "name": "Hive",
+        "currency": "HIVE",
+        "type": "hive",
+        "tournament_enabled": true,
+        "payment_enabled": true,
+        "precision": 3,
+        "payment_address": "steemmonsters"
+      },
+      {
+        "name": "Hive Dollars",
+        "currency": "HBD",
+        "type": "hive",
+        "tournament_enabled": true,
+        "payment_enabled": true,
+        "precision": 3,
+        "payment_address": "steemmonsters"
+      },
+      {
+        "name": "Vouchers",
+        "currency": "VOUCHER",
+        "type": "internal",
+        "tournament_enabled": true,
+        "payment_enabled": false,
+        "precision": 3
+      },
+      {
+        "name": "ASCENSION",
+        "currency": "ASCENSION",
+        "type": "internal",
+        "tournament_enabled": true,
+        "payment_enabled": false,
+        "precision": 0
+      }
+    ],
+    "transfer_cooldown_blocks": 57600,
+    "test_acct_creation": false,
+    "active_auth_ops": [
+      "create_guild",
+      "guild_contribution",
+      "add_wallet",
+      "market_purchase",
+      "market_rent",
+      "market_renew_rental",
+      "gift_cards",
+      "sell_cards",
+      "cancel_sell",
+      "cancel_all",
+      "update_price",
+      "convert_cards",
+      "gift_packs",
+      "burn_cards",
+      "transfer_skins",
+      "token_transfer",
+      "update_authority",
+      "transfer_items",
+      "trade_title",
+      "lock_assets",
+      "unlock_assets",
+      "cancel_unlock_assets",
+      "token_transfer_multi",
+      "proposal_vote",
+      "delegate_rewards",
+      "undelegate_rewards",
+      "shop_purchase",
+      "marketplace_list",
+      "marketplace_purchase",
+      "marketplace_cancel",
+      "redeem_land",
+      "set_authority",
+      "update_locked_assets",
+      "burn_tokens",
+      "guild_get_gp",
+      "rent_token",
+      "cancel_rent_token",
+      "fill_token_rental",
+      "unstake_tokens",
+      "cancel_unstake_tokens",
+      "reroll_quest",
+      "resource_shipment",
+      "redeem_totem",
+      "cnf_claim_airdrop",
+      "claim_staking_rewards",
+      "credits_to_sk",
+      "guild_leader_promote",
+      "auction_bid",
+      "custom_challenge",
+      "return_delegation",
+      "burn_item",
+      "set_burn_sps_reward",
+      "place_rental_offer",
+      "cancel_rental_offer",
+      "fill_market_rental",
+      "expire_market_rental",
+      "reject_market_rental",
+      "purchase_etn_chest",
+      "claim_land_evp",
+      "apply_sticker",
+      "create_trade_offer",
+      "accept_trade_offer"
+    ],
+    "banned_domains": [
+      "yopmail.com",
+      "yopmail.fr",
+      "yopmail.net",
+      "cool.fr.nf",
+      "jetable.fr.nf",
+      "courriel.fr.nf",
+      "moncourrier.fr.nf",
+      "monemail.fr.nf",
+      "monmail.fr.nf",
+      "hide.biz.st",
+      "mymail.infos.st"
+    ],
+    "version": "0.7.60",
+    "config_version": 208,
+    "conflicts": {
+      "intro_video_enabled": "1",
+      "staked_pack_value": 125,
+      "reward_point_threshold": 100000,
+      "max_packs_per_wagon": 100
+    },
+    "promotions": [],
+    "sps": {
+      "unstaking_periods": 4,
+      "staking_rewards_voucher_last_reward_block": 93444046,
+      "staking_rewards_voucher_acc_tokens_per_share": 0.03267180361330031,
+      "staking_rewards_acc_tokens_per_share": 0.9035009763627191,
+      "staking_rewards_last_reward_block": 93444046,
+      "unstaking_interval_seconds": 604800,
+      "staking_rewards_voucher": {
+        "tokens_per_block": 0.69444,
+        "reduction_pct": 0,
+        "pool_decline": 1,
+        "start_block": 56186000,
+        "pool_start": "2021-08-02 16:56:30",
+        "pool_stop": "2099-01-02 16:56:30"
+      },
+      "staking_rewards": {
+        "tokens_per_block": 8.56164,
+        "reduction_blocks": 864000,
+        "reduction_pct": 1,
+        "pool_decline": 0.99,
+        "start_block": 56186000,
+        "pool_start": "2021-08-02 16:56:30",
+        "pool_stop": "2027-01-02 16:56:30"
+      }
+    },
+    "battles_disabled": 0,
+    "market_rental": {
+      "minimum_rental_days": 2,
+      "maximum_rental_days": 180
+    },
+    "conversion_rate": {
+      "sps_dec": 995
+    },
+    "reward_pools": {
+      "claim_limit": 1,
+      "claim_limit_time": 82800000
+    },
+    "recaptcha_site_key": "6LewDugUAAAAAAI4FohgvADVQIUn7X070UJTzQDB",
+    "fractional_tokens": [
+      "SPS",
+      "DEC",
+      "VOUCHER",
+      "VOUCHER-G"
+    ],
+    "transferrable_tokens": [
+      "SPS",
+      "DEC",
+      "ALPHA",
+      "BETA",
+      "UNTAMED",
+      "ORB",
+      "DICE",
+      "RAFFLE",
+      "PLOT",
+      "TRACT",
+      "REGION",
+      "TOTEMC",
+      "TOTEMR",
+      "TOTEME",
+      "TOTEML",
+      "CHAOS",
+      "VOUCHER",
+      "LICENSE",
+      "RIFT",
+      "NIGHTMARE",
+      "VOUCHER-G",
+      "TC",
+      "REBELLION",
+      "TOTEMFC",
+      "TOTEMFE",
+      "TOTEMFL",
+      "TOTEMFR",
+      "ARCANA",
+      "ARCANAL",
+      "ARCANAA",
+      "MIDNIGHTPOT",
+      "ARCANAS",
+      "FT",
+      "AM",
+      "WAGONKIT",
+      "FOUNDATIONS",
+      "UNBIND_CA_C",
+      "UNBIND_CA_R",
+      "UNBIND_CA_E",
+      "UNBIND_CA_L",
+      "PROMO_TOKEN_26",
+      "GB_25_FINE",
+      "GB_25_AMPLE",
+      "GB_25_GENEROUS",
+      "GB_25_LAVISH",
+      "GB_25_MAGNIFICENT",
+      "FLUX",
+      "POLYMORPH",
+      "PASH",
+      "ESCALATION",
+      "ASCENSION",
+      "LUSTROUS",
+      "ETN",
+      "GB_26_FINE",
+      "GB_26_AMPLE",
+      "GB_26_GENEROUS",
+      "GB_26_LAVISH",
+      "GB_26_MAGNIFICENT",
+      "VERICO"
+    ],
+    "delegation_cooldown": 604800000,
+    "delegation_market": {
+      "delegation_rental_qty_divisor": 500,
+      "delegation_rental_min_qty": 500,
+      "controllers": [
+        "sl-admin-1",
+        "sl-admin-2",
+        "sl-admin-3",
+        "sl-admin-4",
+        "sl-admin-5",
+        "sl-admin-6",
+        "sl-admin-7",
+        "sl-admin-8",
+        "sl-admin-9",
+        "sl-admin-10",
+        "sl-admin-11"
+      ]
+    },
+    "delegation_rental_min_qty": 100,
+    "delegation_rental_max_splits": 10,
+    "sps_mining_pool": {
+      "accumulated_rewards_per_share_of_pool": 0.7195954988141552,
+      "estimated_current_tokens_per_block": 4.6875,
+      "latest_reward_block": 109845288,
+      "rewards_start": "2023-11-29 00:00:00",
+      "pool_start": "2022-10-18 00:00:00",
+      "pool_decline": 0.99,
+      "pool_stop": "2028-10-01 05:00:00",
+      "capped_decay_rates": {
+        "37": 1,
+        "38": 1,
+        "39": 1,
+        "40": 1,
+        "41": 1,
+        "42": 1,
+        "43": 1,
+        "44": 1,
+        "45": 1,
+        "46": 1,
+        "47": 1,
+        "48": 1,
+        "49": 0.99,
+        "50": 0.94,
+        "51": 0.9,
+        "52": 0.85,
+        "53": 0.81,
+        "54": 0.78,
+        "55": 0.78,
+        "56": 0.78,
+        "57": 0.78,
+        "58": 0.78,
+        "59": 0.78,
+        "60": 0.78,
+        "61": 0.78,
+        "62": 0.78,
+        "63": 0.78,
+        "64": 0.78,
+        "65": 0.78,
+        "66": 0.78,
+        "67": 0.78,
+        "68": 0.78,
+        "69": 0.78,
+        "70": 0.78,
+        "71": 0.78,
+        "72": 0.78,
+        "73": 0.58,
+        "74": 0
+      },
+      "initial_tokens_per_block": 4.6875
+    },
+    "proposal_accounts": [
+      "sample-acct-154",
+      "sample-acct-101",
+      "sample-acct-087"
+    ],
+    "glint_start_season": 132,
+    "eos_glint_multiplier": 1,
+    "hall_of_legends": {
+      "end_date": "2025-01-14T20:00:00.000Z",
+      "verification_data": {
+        "block_num": 92440324,
+        "block_id": "05828704eae607cdeaa772aaa70fda7631fd84d8",
+        "prev_block_id": "058287030104f28ee8feddf98836722e28d5b6f1",
+        "trx_id": "sm_hall_of_legends_prizes"
+      },
+      "start_date": "2024-09-10T20:00:00.000Z",
+      "prize_distribution_complete": 1
+    },
+    "hall_of_legends_events": [
+      {
+        "event": 1,
+        "start_date": "2024-09-10T20:00:00Z",
+        "end_date": "2024-09-24T20:00:00Z",
+        "rare_shop_id": "hall_of_legends_rare_card1",
+        "legendary_shop_id": "hall_of_legends_legendary_card1"
+      },
+      {
+        "event": 2,
+        "start_date": "2024-10-08T20:00:00Z",
+        "end_date": "2024-10-22T20:00:00Z",
+        "rare_shop_id": "hall_of_legends_rare_card2",
+        "legendary_shop_id": "hall_of_legends_legendary_card2"
+      },
+      {
+        "event": 3,
+        "start_date": "2024-11-05T20:00:00Z",
+        "end_date": "2024-11-19T20:00:00Z",
+        "rare_shop_id": "hall_of_legends_rare_card3",
+        "legendary_shop_id": "hall_of_legends_legendary_card3"
+      },
+      {
+        "event": 4,
+        "start_date": "2024-12-03T20:00:00Z",
+        "end_date": "2024-12-17T20:00:00Z",
+        "rare_shop_id": "hall_of_legends_rare_card4",
+        "legendary_shop_id": "hall_of_legends_legendary_card4"
+      },
+      {
+        "event": 5,
+        "start_date": "2024-12-31T20:00:00Z",
+        "end_date": "2025-01-14T20:00:00Z",
+        "rare_shop_id": "hall_of_legends_rare_card5",
+        "legendary_shop_id": "hall_of_legends_legendary_card5"
+      }
+    ],
+    "wild_pass": {
+      "prices": [
+        {
+          "currency": "DEC",
+          "amount": 2000
+        },
+        {
+          "currency": "DEC-B",
+          "amount": 2000
+        },
+        {
+          "currency": "CREDITS",
+          "amount": 2000
+        }
+      ]
+    },
+    "unbind_config": {
+      "10": {
+        "start_date": "2024-08-15T15:30:00Z",
+        "cost_multiplier": 10,
+        "days_after_increase": 30,
+        "days_till_end": 180
+      },
+      "13": {
+        "start_date": "2025-10-20T15:30:00Z",
+        "cost_multiplier": 10,
+        "days_after_increase": 30,
+        "days_till_end": 180
+      },
+      "18": {
+        "start_date": "2025-10-20T15:30:00Z"
+      }
+    },
+    "dec_price": 0.0003794,
+    "sps_price": 0.0037362,
+    "maintenance_mode": false,
+    "season": {
+      "id": 190,
+      "name": "Ranked Rewards Season 103",
+      "ends": "2026-09-14T14:00:00.000Z",
+      "reward_packs": [
+        "0",
+        "5",
+        "7",
+        "9",
+        "12",
+        "15",
+        "18",
+        "22",
+        "26",
+        "30",
+        "40",
+        "50",
+        "60",
+        "80",
+        "120",
+        "150"
+      ],
+      "reset_block_num": null
+    },
+    "next_season_end": "2026-09-30T14:00:00.000Z",
+    "previous_season": {
+      "id": 189,
+      "name": "Ranked Rewards Season 102",
+      "ends": "2026-08-31T14:00:00.000Z",
+      "reward_packs": [
+        "0",
+        "5",
+        "7",
+        "9",
+        "12",
+        "15",
+        "18",
+        "22",
+        "26",
+        "30",
+        "40",
+        "50",
+        "60",
+        "80",
+        "120",
+        "150"
+      ],
+      "reset_block_num": 109506627
+    },
+    "brawl_cycle": {
+      "id": 383,
+      "name": "Brawl Cycle 383",
+      "start": "2026-09-07T12:00:00.000Z",
+      "status": 1,
+      "reset_block_num": null,
+      "end": "2026-09-12T13:00:00.000Z"
+    },
+    "last_block": 109845760,
+    "validator_transitioned": true,
+    "timestamp": 1789204795852,
+    "chain_props": {
+      "time": "2026-09-12T09:19:54",
+      "ref_block_num": 109845760,
+      "ref_block_id": "068c1d00cea9a68ff4a175c5d2c23789f7553f5c",
+      "ref_block_prefix": 2410064334
+    },
+    "transak_payments_enabled": 1,
+    "dec_max_buy_amount": 20000000,
+    "sps_max_buy_amount": 500000,
+    "paypal_client_id": "AY8dGLagvS7Svf4Nr3b4Uxu7RSzxJI-6XHe7tIUUrZ8R4pwsaRNdRARaT3xKaXw5wB2XIH214jfeGzTN",
+    "ssc": {
+      "rpc_url": "https://api.steem-engine.net/rpc2",
+      "chain_id": "ssc-mainnet1",
+      "hive_rpc_url": "https://api.hive-engine.com/rpc",
+      "hive_chain_id": "ssc-mainnet-hive"
+    },
+    "bridge": {
+      "ethereum": {
+        "DEC": {
+          "enabled": true,
+          "token_address": "0x9393fdc77090f31c7db989390d43f454b1a6e7f3",
+          "in": {
+            "contract_type": "dao-bridge",
+            "contract_address": "0xAb0efE36EEaD0FE901F8d3CaB3027fB20D6D91Db",
+            "fee_pct": 0.002,
+            "min_amount": 0
+          },
+          "out": {
+            "bridge_account": "deconeth",
+            "fee_pct": 0.002,
+            "min_amount": 25000,
+            "memo_prefix": "bridge:sm-eth-dec:"
+          }
+        },
+        "SPS": {
+          "enabled": true,
+          "token_address": "0x00813E3421E1367353BfE7615c7f7f133C89df74",
+          "in": {
+            "contract_type": "dao-bridge",
+            "contract_address": "0x0B8A76f88AF5fffDc42c6e8dC521bca8d8edC838",
+            "fee_pct": 0.002,
+            "min_amount": 0
+          },
+          "out": {
+            "bridge_account": "spsoneth",
+            "fee_pct": 0.002,
+            "min_amount": 3000,
+            "memo_prefix": "bridge:validator-eth-sps:"
+          }
+        }
+      },
+      "base": {
+        "SPS": {
+          "enabled": true,
+          "token_address": "0x578661e9a09eee6b2cd97d4ded1ccbae7b8516b9",
+          "in": {
+            "contract_type": "dao-bridge",
+            "contract_address": "0x30636788a272D377501c8ca95c0F3B0b400aa7a9",
+            "fee_pct": 0.002,
+            "min_amount": 0
+          },
+          "out": {
+            "bridge_account": "spsonbase",
+            "fee_pct": 0.002,
+            "min_amount": 100,
+            "memo_prefix": "bridge:validator-base-sps:"
+          }
+        }
+      },
+      "voucher": {
+        "bridge_wallet": "validator-bridge"
+      },
+      "electroneum": {
+        "ETN": {
+          "enabled": true,
+          "in": {
+            "contract_type": "native-bridge",
+            "contract_address": "0xEc081F8023B5B76233F66B5Dc32F266191778146",
+            "fee_pct": 0,
+            "min_amount": 0
+          },
+          "out": {
+            "bridge_account": "etnonspl",
+            "fee_pct": 0.002,
+            "min_amount": 1000,
+            "memo_prefix": "bridge:sm-etn-etn:"
+          }
+        }
+      },
+      "bsc": {
+        "DEC": {
+          "enabled": true,
+          "token_address": "0xfA83A32035C4a6E21319A1ac04E5eb66Ccb47F1d",
+          "in": {
+            "contract_type": "dao-bridge",
+            "contract_address": "0xe9d7023f2132d55cbd4ee1f78273cb7a3e74f10a",
+            "fee_pct": 0.002,
+            "min_amount": 0
+          },
+          "out": {
+            "bridge_account": "deconbsc",
+            "fee_pct": 0.002,
+            "min_amount": 1000,
+            "memo_prefix": "bridge:sm-bsc-dec:"
+          }
+        },
+        "SPS": {
+          "enabled": true,
+          "token_address": "0x1633b7157e7638c4d6593436111bf125ee74703f",
+          "in": {
+            "contract_type": "dao-bridge",
+            "contract_address": "0x30636788a272D377501c8ca95c0F3B0b400aa7a9",
+            "fee_pct": 0.002,
+            "min_amount": 0
+          },
+          "out": {
+            "bridge_account": "spsonbsc",
+            "fee_pct": 0.002,
+            "min_amount": 100,
+            "memo_prefix": "bridge:validator-bsc-sps:"
+          }
+        }
+      }
+    },
+    "ethereum": {
+      "withdrawal_fee": 1000,
+      "sps_withdrawal_fee": 25,
+      "contracts": {
+        "cards": {
+          "abi": {
+            "status": "1",
+            "message": "OK",
+            "result": "[{\"constant\":true,\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newBaseURI\",\"type\":\"string\"}],\"name\":\"setDynamicBaseURI\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_ethId\",\"type\":\"uint256\"},{\"name\":\"_newHolder\",\"type\":\"address\"}],\"name\":\"unlockCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"holder\",\"type\":\"address\"}],\"name\":\"tokensOfHolder\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenOfOwnerByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_splinterId\",\"type\":\"string\"},{\"name\":\"_holder\",\"type\":\"address\"}],\"name\":\"mintCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"cardIdForTokenId\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"cards\",\"outputs\":[{\"name\":\"splinterlandsId\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"},{\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_splinterId\",\"type\":\"string\"}],\"name\":\"tokenIdForCardId\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_ethId\",\"type\":\"uint256\"}],\"name\":\"burnCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_ethId\",\"type\":\"uint256\"},{\"name\":\"_steemAddr\",\"type\":\"string\"}],\"name\":\"lockCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"string\"}],\"name\":\"ethIds\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"proxyRegistryAddress\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"baseTokenURI\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newMinter\",\"type\":\"address\"}],\"name\":\"setMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_proxyAddr\",\"type\":\"address\"},{\"name\":\"_minter\",\"type\":\"address\"},{\"name\":\"_baseTokenURI\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"holder\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"cardId\",\"type\":\"string\"},{\"indexed\":false,\"name\":\"steemAddr\",\"type\":\"string\"},{\"indexed\":true,\"name\":\"ethId\",\"type\":\"uint256\"}],\"name\":\"LockCard\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"holder\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"cardId\",\"type\":\"string\"},{\"indexed\":true,\"name\":\"ethId\",\"type\":\"uint256\"}],\"name\":\"MintCard\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"}]"
+          },
+          "address": "0xe3870569f9e1836960bf30b5a45fc743cef0ab0e"
+        },
+        "crystals": {
+          "abi": {
+            "status": "1",
+            "message": "OK",
+            "result": "[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"sender\",\"type\":\"address\"},{\"name\":\"recipient\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"addedValue\",\"type\":\"uint256\"}],\"name\":\"increaseAllowance\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_holder\",\"type\":\"address\"},{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"unlock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"subtractedValue\",\"type\":\"uint256\"}],\"name\":\"decreaseAllowance\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"recipient\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_steemAddr\",\"type\":\"string\"},{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"lock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newMinter\",\"type\":\"address\"}],\"name\":\"setMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"minter\",\"type\":\"address\"}],\"name\":\"SetMinter\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"holder\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"steemAddr\",\"type\":\"string\"}],\"name\":\"LockCrystals\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"}]"
+          },
+          "address": "0x9393fdc77090f31c7db989390d43f454b1a6e7f3"
+        },
+        "payments": {
+          "abi": {
+            "status": "1",
+            "message": "OK",
+            "result": "[{\"constant\":false,\"inputs\":[{\"name\":\"_newWithdrawer\",\"type\":\"address\"}],\"name\":\"setWithdrawer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"tokens\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\"},{\"name\":\"_orderId\",\"type\":\"string\"}],\"name\":\"payToken\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"}],\"name\":\"delist\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"}],\"name\":\"withdrawToken\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numTokens\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newAcceptor\",\"type\":\"address\"}],\"name\":\"setAcceptor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"}],\"name\":\"whitelist\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"withdrawEth\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_orderId\",\"type\":\"string\"}],\"name\":\"payEth\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_acceptor\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"orderId\",\"type\":\"string\"}],\"name\":\"EthPayment\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"token\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"orderId\",\"type\":\"string\"}],\"name\":\"TokenPayment\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}]"
+          },
+          "address": "0x19929Aba99e4c8964bBA92915EfF5D888475fF9a"
+        }
+      }
+    },
+    "wax": {
+      "login_enabled": true,
+      "client_id": "242f65467d00",
+      "auth_url": "https://api-idm.wax.io/v1/authorize",
+      "external": {
+        "token": {
+          "account": "splintrlands"
+        },
+        "atomicassets": {
+          "account": "atomicassets"
+        }
+      }
+    },
+    "api_ops": [
+      "find_match",
+      "cancel_match",
+      "start_match",
+      "submit_team",
+      "team_reveal",
+      "surrender",
+      "accept_challenge",
+      "decline_challenge",
+      "update_set",
+      "create_set",
+      "delete_set"
+    ]
+  }
+}

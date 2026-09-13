@@ -1,0 +1,134 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:48:15.297641+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/COLLECTOR_STICKERS",
+    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.description": {
+      "valueClass": "opaque"
+    },
+    "body.data.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].filterIcon": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assetName": "COLLECTOR_STICKERS",
+      "description": "Collector Sticker",
+      "type": "NON_FUNGIBLE",
+      "details": [
+        {
+          "id": "555",
+          "name": "Collector Sticker - Cool",
+          "description": "Collector Sticker - Cool",
+          "circulation": 25,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/collector/stickers/packs/toxic/sticker-cool.webp",
+          "icon": "collector/stickers/packs/toxic/sticker-cool.webp",
+          "filterIcon": null
+        },
+        {
+          "id": "554",
+          "name": "Collector Sticker - Bug Hunter",
+          "description": "Collector Sticker - Bug Hunter",
+          "circulation": 31,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/collector/stickers/support/sticker-support-bug-hunter.webp",
+          "icon": "collector/stickers/support/sticker-support-bug-hunter.webp",
+          "filterIcon": null
+        },
+        {
+          "id": "556",
+          "name": "Collector Sticker - Favorite",
+          "description": "Collector Sticker - Favorite",
+          "circulation": 12,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/collector/stickers/packs/favorites/sticker-favorite.webp",
+          "icon": "collector/stickers/packs/favorites/sticker-favorite.webp",
+          "filterIcon": null
+        }
+      ]
+    }
+  }
+}

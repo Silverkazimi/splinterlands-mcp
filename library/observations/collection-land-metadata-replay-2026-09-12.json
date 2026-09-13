@@ -1,0 +1,43 @@
+{
+  "observedAt": "2026-09-12T13:02:23.650Z",
+  "source": {
+    "url": "https://api.splinterlands.com/cards/get_details",
+    "retrievedAt": "2026-09-12T11:19:04.427222+00:00",
+    "status": 200,
+    "responseBytes": 1202299,
+    "parsedBodySha256": "7307666d1e0d53fbca75f476e0ed1f37e4d4758e8f9c6d7a29b5e6d3174d6fa4",
+    "digestScope": "JSON.stringify of the captured parsed body; not original transport bytes"
+  },
+  "verification": {
+    "definitionCount": 1101,
+    "abilityTableCount": 60,
+    "projectedLevelsChecked": 1623,
+    "secondaryColorDefinitions": 87,
+    "abilityCodesPreserved": [
+      "ALTERATION",
+      "AURA",
+      "BLOODLINE",
+      "DD",
+      "ENERGIZED",
+      "FORTUNE_SEEKER",
+      "GLINT_RECOVERY",
+      "GRAIN",
+      "IRON",
+      "LL",
+      "RATIONING",
+      "RATIONING_LITE",
+      "STATIC_CHARGE",
+      "STONE",
+      "WOOD"
+    ],
+    "everyElementRecognized": true,
+    "selectedLevelMatchesSource": true,
+    "missingLevelRemainsUnknown": true,
+    "fullAbilityTableOmitted": true
+  },
+  "limits": [
+    "Replay of an earlier anonymous public metadata capture; no fresh network request.",
+    "Collection instance fields, staking state, raw DEC demand and plot labels are not verified by this metadata replay.",
+    "Preserving an ability code does not establish offline estimator support for that code."
+  ]
+}

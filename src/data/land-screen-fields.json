@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-12",
+  "sources": [
+    {
+      "url": "https://splinterlands.com/assets/CardColorBiomeModifier-VrBrpfnr.js",
+      "sha256": "241ac7d940c3255d85b859a2f6253528a64b3477edc7684bbcf3e1579d349831",
+      "bytes": 39191
+    },
+    {
+      "url": "https://splinterlands.com/assets/EditWorksiteSlots-CzPVx9CB.js",
+      "sha256": "80eab893274d6a81c2a188e695c2d407aee37c797cb48547f118a011e52c3e0a",
+      "bytes": 73991
+    },
+    {
+      "url": "https://splinterlands.com/assets/DeedOverview-csLuS5lZ.js",
+      "sha256": "3be3bfd26259eaedc0bebea95af5f3f27c2327a01d13614d6cc6cced3f6c33e7",
+      "bytes": 46974
+    }
+  ],
+  "scope": "Observed public worker-table mapping and separately verified plot overview PRODUCTION / HR formula. Backend agreement and an account screen capture are separate checks. Missing inputs remain unknown. Plot reference labels are explanatory, not inferred screen labels.",
+  "workerFields": [
+    {
+      "apiField": "land_base_pp",
+      "screenLabel": "Base Production",
+      "meaning": "Worker base production before cap clipping; displayed only when powered."
+    },
+    {
+      "apiField": "base_pp_after_cap",
+      "screenLabel": "Base PP after cap",
+      "meaning": "Explicit reference label for retained base; not the Base Production table column."
+    },
+    {
+      "apiField": "terrain_boost_pp",
+      "screenLabel": "Terrain Boost",
+      "meaning": "Terrain contribution after cap allocation."
+    },
+    {
+      "apiField": "total_construction_pp",
+      "screenLabel": "Boostable Production",
+      "meaning": "Retained base plus terrain contribution, before additive production boosts."
+    },
+    {
+      "apiField": "boost_pp",
+      "screenLabel": "Boost",
+      "meaning": "Combined production boost contribution."
+    },
+    {
+      "apiField": "total_harvest_pp",
+      "screenLabel": "Total Production",
+      "meaning": "Boostable production plus boost contributions; distinct from resource units per hour."
+    },
+    {
+      "apiField": "work_per_hour",
+      "screenLabel": "Resource production per hour",
+      "meaning": "Resource output depends on worksite and efficiency; construction uses total_construction_pp instead."
+    }
+  ],
+  "capAllocation": {
+    "workerOrder": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "ordinaryWorkerCap": 100000,
+    "runiProcessedAfterWorkers": true,
+    "runiExcluded": true,
+    "rounding": "Public preview rounds boostable production and each named boost contribution to three decimals before summing total production."
+  },
+  "powerSlots": {
+    "ordinaryWorkersWithCoreOrEnergized": 5,
+    "ordinaryWorkersWithRuniOnly": 4,
+    "runiSeparateSlot": 1,
+    "noPowerSourceOrdinaryWorkers": 0
+  },
+  "limits": [
+    "This is client-source evidence, not a live backend formula verification.",
+    "Buildings with lower caps need their own effective cap.",
+    "Food discount composition and exact resource rounding require further evidence."
+  ],
+  "plotFields": [
+    {
+      "screenLabel": "PRODUCTION / HR",
+      "apiFields": [
+        "total_harvest_pp",
+        "runi_boost",
+        "is_powered",
+        "efficiency"
+      ],
+      "formula": "Positive runi_boost uses total_harvest_pp; otherwise an explicitly powered plot uses total_harvest_pp * efficiency, and an explicitly unpowered plot uses zero.",
+      "units": "Effective production points per hour, distinct from total_work_per_hour resource units.",
+      "formatting": "The server returns the unformatted numeric formula, without client locale rounding."
+    }
+  ]
+}

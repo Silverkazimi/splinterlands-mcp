@@ -1,0 +1,181 @@
+{
+  "transport": "built stdio MCP server",
+  "observedAt": "2026-09-12T09:17:43.822Z",
+  "toolCount": 111,
+  "results": [
+    {
+      "name": "guild_list",
+      "isError": false,
+      "milliseconds": 1031,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "keys": [
+        "num_actionable_mail",
+        "guilds"
+      ],
+      "provenance": {
+        "endpoint": "/guilds/list",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:17:44.848Z",
+          "ageMs": 15
+        }
+      }
+    },
+    {
+      "name": "guild_find",
+      "isError": false,
+      "milliseconds": 1471,
+      "keys": [
+        "id",
+        "name",
+        "owner",
+        "created_date",
+        "membership_type",
+        "language",
+        "description",
+        "motto",
+        "level",
+        "data",
+        "buildings",
+        "brawl_status",
+        "crowns",
+        "brawl_level",
+        "tournament_id",
+        "tournament_status",
+        "tournament_data",
+        "tournament_start_date",
+        "num_members",
+        "rating",
+        "rank",
+        "brawl_stats",
+        "announcements"
+      ],
+      "provenance": {
+        "endpoint": "/guilds/find",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:17:46.350Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "guild_members",
+      "isError": false,
+      "milliseconds": 210,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 30,
+        "upstreamRows": 30
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/guilds/members",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:17:46.552Z",
+          "ageMs": 5
+        }
+      }
+    },
+    {
+      "name": "guild_contributions",
+      "isError": false,
+      "milliseconds": 453,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 50,
+        "upstreamRows": 50
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/guilds/contributions",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:17:47.012Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "guild_brawl_records",
+      "isError": false,
+      "milliseconds": 174,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "keys": [
+        "results"
+      ],
+      "provenance": {
+        "endpoint": "/guilds/brawl_records",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:17:47.192Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "guild_brawl_sps_rewards",
+      "isError": false,
+      "milliseconds": 149,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "keys": [
+        "total_sps_payout",
+        "sps_reward_records"
+      ],
+      "provenance": {
+        "endpoint": "/guilds/brawl_sps_rewards",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:17:47.341Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "guild_brawl_sps_rewards",
+      "isError": false,
+      "milliseconds": 162,
+      "keys": [
+        "total_sps_payout"
+      ],
+      "provenance": {
+        "endpoint": "/guilds/brawl_sps_rewards",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:17:47.504Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "guild_brawl_sps_rewards",
+      "isError": false,
+      "milliseconds": 162,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "keys": [
+        "sps_reward_records"
+      ],
+      "provenance": {
+        "endpoint": "/guilds/brawl_sps_rewards",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:17:47.667Z",
+          "ageMs": 0
+        }
+      }
+    }
+  ]
+}

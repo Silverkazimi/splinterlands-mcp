@@ -1,0 +1,80 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T07:48:00.487732+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/reward_delegation_history",
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+  },
+  "valueClasses": {
+    "body[0].id": {
+      "valueClass": "id"
+    },
+    "body[0].player": {
+      "valueClass": "name"
+    },
+    "body[0].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[0].type": {
+      "valueClass": "enum"
+    },
+    "body[0].token": {
+      "valueClass": "enum"
+    },
+    "body[0].percent": {
+      "valueClass": "numeric"
+    },
+    "body[0].trx_id": {
+      "valueClass": "id"
+    },
+    "body[0].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].id": {
+      "valueClass": "id"
+    },
+    "body[1].player": {
+      "valueClass": "name"
+    },
+    "body[1].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[1].type": {
+      "valueClass": "enum"
+    },
+    "body[1].token": {
+      "valueClass": "enum"
+    },
+    "body[1].percent": {
+      "valueClass": "numeric"
+    },
+    "body[1].trx_id": {
+      "valueClass": "id"
+    },
+    "body[1].delegation_date": {
+      "valueClass": "timestamp"
+    }
+  },
+  "body": [
+    {
+      "id": "5555545",
+      "player": "sample-acct-100",
+      "delegate_to_player": "sample-acct-088",
+      "type": "survival_bracket",
+      "token": "SPS",
+      "percent": 15,
+      "trx_id": "3ccb274a4d68764691ef4f7a0548e99553465008",
+      "delegation_date": "2026-02-16T04:39:15.000Z"
+    },
+    {
+      "id": "5555544",
+      "player": "sample-acct-100",
+      "delegate_to_player": "sample-acct-088",
+      "type": "wild",
+      "token": "SPS",
+      "percent": 15,
+      "trx_id": "738aaa3e94210e932104484465b4a5697228dd17",
+      "delegation_date": "2026-02-16T04:39:12.000Z"
+    }
+  ]
+}

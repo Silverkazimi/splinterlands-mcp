@@ -1,0 +1,128 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:47:41.484715+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/battle/status",
+    "captureScope": "Full captured response; JSON-encoded string fields are not decoded or transformed."
+  },
+  "valueClasses": {
+    "body.id": {
+      "valueClass": "opaque"
+    },
+    "body.created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body.expiration_block_num": {
+      "valueClass": "numeric"
+    },
+    "body.player": {
+      "valueClass": "name"
+    },
+    "body.team_hash": {
+      "valueClass": "opaque"
+    },
+    "body.match_type": {
+      "valueClass": "opaque"
+    },
+    "body.mana_cap": {
+      "valueClass": "numeric"
+    },
+    "body.opponent": {
+      "valueClass": "opaque"
+    },
+    "body.match_block_num": {
+      "valueClass": "numeric"
+    },
+    "body.status": {
+      "valueClass": "numeric"
+    },
+    "body.reveal_tx": {
+      "valueClass": "opaque"
+    },
+    "body.reveal_block_id": {
+      "valueClass": "id"
+    },
+    "body.team": {
+      "valueClass": "opaque"
+    },
+    "body.summoner_level": {
+      "valueClass": "opaque"
+    },
+    "body.ruleset": {
+      "valueClass": "opaque"
+    },
+    "body.inactive": {
+      "valueClass": "opaque"
+    },
+    "body.opponent_player": {
+      "valueClass": "opaque"
+    },
+    "body.opponent_team_hash": {
+      "valueClass": "opaque"
+    },
+    "body.submit_expiration_block_num": {
+      "valueClass": "numeric"
+    },
+    "body.settings": {
+      "valueClass": "opaque"
+    },
+    "body.app": {
+      "valueClass": "opaque"
+    },
+    "body.created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body.match_date": {
+      "valueClass": "timestamp"
+    },
+    "body.submit_expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body.recent_opponents": {
+      "valueClass": "opaque"
+    },
+    "body.submit_date": {
+      "valueClass": "timestamp"
+    },
+    "body.format": {
+      "valueClass": "opaque"
+    },
+    "body.bracket": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "id": "sl_93de50358e9467fbb7751a8146d043a4",
+    "created_block_num": 109844391,
+    "expiration_block_num": 109844451,
+    "player": "sample-acct-100",
+    "team_hash": "462f011743a38230396980c795ecef50",
+    "match_type": "Ranked",
+    "mana_cap": 53,
+    "opponent": "sl_6164d33e80687e97fbe0b5bdcede2baf",
+    "match_block_num": 0,
+    "status": 2,
+    "reveal_tx": "sl_08873f86ea26ffba2f247273ef68a167",
+    "reveal_block_id": "109844410",
+    "team": "{\"summoner\":\"G12-656-2B76Q19UR4\",\"monsters\":[\"G2-635-0JPK1AU35C\",\"G12-572-8IVKLLL32O\",\"B2-969-558P89WIAO\",\"GA14-794-000004\",\"C2-709-0053\",\"BA17-974-000008\"],\"secret\":\"Ts3UxKMHhC\",\"ptrOption\":{\"id\":\"eternal_tofu1\",\"ranks\":[{\"rank\":5,\"team\":\"team\"},{\"rank\":1,\"team\":\"team\"},{\"rank\":2,\"team\":\"team\"}]},\"levels\":null}",
+    "summoner_level": null,
+    "ruleset": "Global Warming|Equal Opportunity|Explosive Weaponry",
+    "inactive": "White",
+    "opponent_player": "sample-acct-096",
+    "opponent_team_hash": "da025d2ac0a41ab8e562742c7a1897d3",
+    "submit_expiration_block_num": 0,
+    "settings": "{\"rating_level\":4}",
+    "app": null,
+    "created_date": "2026-09-12T08:11:58.092Z",
+    "expiration_date": "2026-09-12T08:14:58.092Z",
+    "match_date": "2026-09-12T08:12:30.758Z",
+    "submit_expiration_date": "2026-09-12T08:15:47.312Z",
+    "recent_opponents": null,
+    "submit_date": "2026-09-12T08:13:11.516Z",
+    "format": null,
+    "bracket": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:11:36.918547+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/richlist_ranking",
+    "captureScope": "First three list rows; other object fields retained without transformation."
+  },
+  "valueClasses": {
+    "body.rank": {
+      "valueClass": "numeric"
+    },
+    "body.player": {
+      "valueClass": "name"
+    },
+    "body.balance": {
+      "valueClass": "numeric"
+    },
+    "body.token_type": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "rank": 84,
+    "player": "sample-acct-100",
+    "balance": 3168948.119,
+    "token_type": "DEC"
+  }
+}

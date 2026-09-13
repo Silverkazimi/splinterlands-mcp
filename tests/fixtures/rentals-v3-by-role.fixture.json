@@ -1,0 +1,266 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-13T11:08:59.651134+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/rentals/player/{player}/{role}",
+    "captureScope": "Complete bounded public response; account selected from anonymous market results."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].txId": {
+      "valueClass": "id"
+    },
+    "body.data[0].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].bidTxId": {
+      "valueClass": "id"
+    },
+    "body.data[0].offerTxId": {
+      "valueClass": "id"
+    },
+    "body.data[0].borrower": {
+      "valueClass": "name"
+    },
+    "body.data[0].lender": {
+      "valueClass": "name"
+    },
+    "body.data[0].token": {
+      "valueClass": "enum"
+    },
+    "body.data[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].expirationBlocks": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].paymentAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].paymentCurrency": {
+      "valueClass": "enum"
+    },
+    "body.data[0].escrowAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].fillTx": {
+      "valueClass": "id"
+    },
+    "body.data[1].txId": {
+      "valueClass": "id"
+    },
+    "body.data[1].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[1].bidTxId": {
+      "valueClass": "id"
+    },
+    "body.data[1].offerTxId": {
+      "valueClass": "id"
+    },
+    "body.data[1].borrower": {
+      "valueClass": "name"
+    },
+    "body.data[1].lender": {
+      "valueClass": "name"
+    },
+    "body.data[1].token": {
+      "valueClass": "enum"
+    },
+    "body.data[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].expirationBlocks": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].paymentAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].paymentCurrency": {
+      "valueClass": "enum"
+    },
+    "body.data[1].escrowAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].status": {
+      "valueClass": "enum"
+    },
+    "body.data[1].fillTx": {
+      "valueClass": "id"
+    },
+    "body.data[2].txId": {
+      "valueClass": "id"
+    },
+    "body.data[2].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[2].bidTxId": {
+      "valueClass": "id"
+    },
+    "body.data[2].offerTxId": {
+      "valueClass": "id"
+    },
+    "body.data[2].borrower": {
+      "valueClass": "name"
+    },
+    "body.data[2].lender": {
+      "valueClass": "name"
+    },
+    "body.data[2].token": {
+      "valueClass": "enum"
+    },
+    "body.data[2].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].expirationBlocks": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].paymentAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].paymentCurrency": {
+      "valueClass": "enum"
+    },
+    "body.data[2].escrowAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].status": {
+      "valueClass": "enum"
+    },
+    "body.data[2].fillTx": {
+      "valueClass": "id"
+    },
+    "body.data[3].txId": {
+      "valueClass": "id"
+    },
+    "body.data[3].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[3].bidTxId": {
+      "valueClass": "id"
+    },
+    "body.data[3].offerTxId": {
+      "valueClass": "id"
+    },
+    "body.data[3].borrower": {
+      "valueClass": "name"
+    },
+    "body.data[3].lender": {
+      "valueClass": "name"
+    },
+    "body.data[3].token": {
+      "valueClass": "enum"
+    },
+    "body.data[3].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].pricePerToken": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].expirationBlocks": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].paymentAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].paymentCurrency": {
+      "valueClass": "enum"
+    },
+    "body.data[3].escrowAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].status": {
+      "valueClass": "enum"
+    },
+    "body.data[3].fillTx": {
+      "valueClass": "id"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": [
+      {
+        "txId": "8d2f9f1ad3e0f9f02f60582609ec8c2f319a8e51-1-match-1",
+        "createdDate": "2026-09-13T10:21:27.000Z",
+        "bidTxId": "8d2f9f1ad3e0f9f02f60582609ec8c2f319a8e51-1",
+        "offerTxId": "8d169a308994c5d7b33eddf796e85ce4914515f3",
+        "borrower": "sample-acct-066",
+        "lender": "sample-acct-100",
+        "token": "SPSP",
+        "qty": "500.000",
+        "pricePerToken": "0.002",
+        "expirationBlocks": 201600,
+        "paymentAmount": "7.000",
+        "paymentCurrency": "DEC",
+        "escrowAmount": "7.000",
+        "status": 0,
+        "fillTx": null
+      },
+      {
+        "txId": "347dc86ce869d2b0f860349fe261bf8df1ca5977-1-match-1",
+        "createdDate": "2026-09-13T10:21:24.000Z",
+        "bidTxId": "347dc86ce869d2b0f860349fe261bf8df1ca5977-1",
+        "offerTxId": "8d169a308994c5d7b33eddf796e85ce4914515f3",
+        "borrower": "sample-acct-066",
+        "lender": "sample-acct-100",
+        "token": "SPSP",
+        "qty": "1000.000",
+        "pricePerToken": "0.002",
+        "expirationBlocks": 201600,
+        "paymentAmount": "14.000",
+        "paymentCurrency": "DEC",
+        "escrowAmount": "14.000",
+        "status": 0,
+        "fillTx": null
+      },
+      {
+        "txId": "376a62a122a78c5f05f8f355b209d593e5ab1aad-1-match-1",
+        "createdDate": "2026-09-13T10:21:21.000Z",
+        "bidTxId": "376a62a122a78c5f05f8f355b209d593e5ab1aad-1",
+        "offerTxId": "7cbe5ea1cf7fac479c893b9467a06d8527827b75",
+        "borrower": "sample-acct-066",
+        "lender": "sample-acct-100",
+        "token": "SPSP",
+        "qty": "500.000",
+        "pricePerToken": "0.002",
+        "expirationBlocks": 201600,
+        "paymentAmount": "7.000",
+        "paymentCurrency": "DEC",
+        "escrowAmount": "7.000",
+        "status": 0,
+        "fillTx": null
+      },
+      {
+        "txId": "376a62a122a78c5f05f8f355b209d593e5ab1aad-1-match-2",
+        "createdDate": "2026-09-13T10:21:21.000Z",
+        "bidTxId": "376a62a122a78c5f05f8f355b209d593e5ab1aad-1",
+        "offerTxId": "96b86182552fa40eaee44a265d44238234476daa",
+        "borrower": "sample-acct-066",
+        "lender": "sample-acct-100",
+        "token": "SPSP",
+        "qty": "500.000",
+        "pricePerToken": "0.002",
+        "expirationBlocks": 201600,
+        "paymentAmount": "7.000",
+        "paymentCurrency": "DEC",
+        "escrowAmount": "7.000",
+        "status": 0,
+        "fillTx": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T20:56:00Z"
+  },
+  "valueClasses": {
+    "body[0].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[0].id": {
+      "valueClass": "id"
+    },
+    "body[0].player": {
+      "valueClass": "name"
+    },
+    "body[0].token": {
+      "valueClass": "enum"
+    },
+    "body[0].type": {
+      "valueClass": "enum"
+    },
+    "body[0].amount": {
+      "valueClass": "numeric"
+    },
+    "body[0].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[0].trx_id": {
+      "valueClass": "id"
+    },
+    "body[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].to_player": {
+      "valueClass": "name"
+    },
+    "body[0].status": {
+      "valueClass": "enum"
+    },
+    "body[0].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].action": {
+      "valueClass": "enum"
+    },
+    "body[0].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[0].block_result": {
+      "valueClass": "enum"
+    },
+    "body[1].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[1].id": {
+      "valueClass": "id"
+    },
+    "body[1].player": {
+      "valueClass": "name"
+    },
+    "body[1].token": {
+      "valueClass": "enum"
+    },
+    "body[1].type": {
+      "valueClass": "enum"
+    },
+    "body[1].amount": {
+      "valueClass": "numeric"
+    },
+    "body[1].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[1].trx_id": {
+      "valueClass": "id"
+    },
+    "body[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].to_player": {
+      "valueClass": "name"
+    },
+    "body[1].status": {
+      "valueClass": "enum"
+    },
+    "body[1].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].action": {
+      "valueClass": "enum"
+    },
+    "body[1].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[1].block_result": {
+      "valueClass": "enum"
+    },
+    "body[2].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[2].id": {
+      "valueClass": "id"
+    },
+    "body[2].player": {
+      "valueClass": "name"
+    },
+    "body[2].token": {
+      "valueClass": "enum"
+    },
+    "body[2].type": {
+      "valueClass": "enum"
+    },
+    "body[2].amount": {
+      "valueClass": "numeric"
+    },
+    "body[2].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[2].trx_id": {
+      "valueClass": "id"
+    },
+    "body[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].to_player": {
+      "valueClass": "name"
+    },
+    "body[2].status": {
+      "valueClass": "enum"
+    },
+    "body[2].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].action": {
+      "valueClass": "enum"
+    },
+    "body[2].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[2].block_result": {
+      "valueClass": "enum"
+    }
+  },
+  "body": [
+    {
+      "reward_action": "claimed",
+      "id": "1495375501",
+      "player": "sample-acct-100",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-494.683",
+      "block_num": 0,
+      "trx_id": "d7c8b4d505952a9c46d18e528dde8624c5a36bb3",
+      "created_date": "2026-09-08T20:34:28.124Z",
+      "to_player": "sample-acct-088",
+      "status": "completed",
+      "last_block_action_date": "2026-09-08T20:34:33.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495375500",
+      "player": "sample-acct-100",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-2803.207",
+      "block_num": 0,
+      "trx_id": "b23db736f3052a2b563a0cd6f85311d7eee8971d",
+      "created_date": "2026-09-08T20:34:28.096Z",
+      "to_player": "sample-acct-100",
+      "status": "completed",
+      "last_block_action_date": "2026-09-08T20:34:33.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495367065",
+      "player": "sample-acct-100",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "45.995",
+      "block_num": 109742585,
+      "trx_id": "sl_c253399af951d72c31dd09101fb10156",
+      "created_date": "2026-09-08T19:08:25.765Z",
+      "to_player": "sample-acct-100",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    }
+  ]
+}

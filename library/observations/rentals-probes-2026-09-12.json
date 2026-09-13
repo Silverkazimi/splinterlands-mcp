@@ -1,0 +1,309 @@
+[
+  {
+    "case": "bids-four",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 4,
+      "offset": 0
+    },
+    "observedAt": "2026-09-12T10:04:02.488246+00:00",
+    "httpStatus": 200,
+    "bytes": 1214,
+    "rows": 4,
+    "error": null
+  },
+  {
+    "case": "bids-lowest",
+    "path": "/delegation-rental/v3/bids/lowest-price",
+    "params": {},
+    "observedAt": "2026-09-12T10:02:47.985099+00:00",
+    "httpStatus": 200,
+    "bytes": 45,
+    "rows": null,
+    "error": null
+  },
+  {
+    "case": "bids-max-price-one",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 2,
+      "maxPrice": 1
+    },
+    "observedAt": "2026-09-12T10:06:02.897055+00:00",
+    "httpStatus": 200,
+    "bytes": 621,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "bids-max-price",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 2,
+      "maxPrice": 0.001
+    },
+    "observedAt": "2026-09-12T10:05:10.660133+00:00",
+    "httpStatus": 400,
+    "bytes": 160,
+    "rows": null,
+    "error": "Validation failed (numeric string is expected)"
+  },
+  {
+    "case": "bids-max-quantity",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 2,
+      "maxQuantity": 1000
+    },
+    "observedAt": "2026-09-12T10:05:11.554770+00:00",
+    "httpStatus": 200,
+    "bytes": 621,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "bids-min-price-decimal",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 2,
+      "minPrice": 0.001
+    },
+    "observedAt": "2026-09-12T10:06:04.638736+00:00",
+    "httpStatus": 400,
+    "bytes": 160,
+    "rows": null,
+    "error": "Validation failed (numeric string is expected)"
+  },
+  {
+    "case": "bids-next",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 2,
+      "offset": 2
+    },
+    "observedAt": "2026-09-12T10:04:01.604392+00:00",
+    "httpStatus": 200,
+    "bytes": 622,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "bids-price-filter",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 2,
+      "minPrice": 1
+    },
+    "observedAt": "2026-09-12T10:04:04.723341+00:00",
+    "httpStatus": 200,
+    "bytes": 30,
+    "rows": 0,
+    "error": null
+  },
+  {
+    "case": "bids-quantity-filter",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 2,
+      "minQuantity": 10000
+    },
+    "observedAt": "2026-09-12T10:04:05.744927+00:00",
+    "httpStatus": 200,
+    "bytes": 630,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "bids-range",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 2,
+      "minQuantity": 10000,
+      "maxQuantity": 10000
+    },
+    "observedAt": "2026-09-12T10:05:12.421627+00:00",
+    "httpStatus": 200,
+    "bytes": 626,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "bids",
+    "path": "/delegation-rental/v3/bids",
+    "params": {
+      "limit": 2,
+      "offset": 0
+    },
+    "observedAt": "2026-09-12T10:02:45.798812+00:00",
+    "httpStatus": 200,
+    "bytes": 621,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "legacy-bids-one",
+    "path": "/delegation-rental/bids",
+    "params": {
+      "limit": 1
+    },
+    "observedAt": "2026-09-12T10:04:06.730753+00:00",
+    "httpStatus": null,
+    "bytes": null,
+    "rows": null,
+    "error": "The read operation timed out"
+  },
+  {
+    "case": "legacy-bids",
+    "path": "/delegation-rental/bids",
+    "params": {
+      "limit": 2,
+      "offset": 0
+    },
+    "observedAt": "2026-09-12T10:02:49.436027+00:00",
+    "httpStatus": null,
+    "bytes": null,
+    "rows": null,
+    "error": "The read operation timed out"
+  },
+  {
+    "case": "offers-four",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 4,
+      "offset": 0
+    },
+    "observedAt": "2026-09-12T10:03:58.685308+00:00",
+    "httpStatus": 200,
+    "bytes": 1225,
+    "rows": 4,
+    "error": null
+  },
+  {
+    "case": "offers-lowest",
+    "path": "/delegation-rental/v3/offers/lowest-price",
+    "params": {},
+    "observedAt": "2026-09-12T10:02:46.898887+00:00",
+    "httpStatus": 200,
+    "bytes": 45,
+    "rows": null,
+    "error": null
+  },
+  {
+    "case": "offers-max-price-one",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 2,
+      "maxPrice": 1
+    },
+    "observedAt": "2026-09-12T10:05:55.626768+00:00",
+    "httpStatus": 200,
+    "bytes": 627,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "offers-max-price",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 2,
+      "maxPrice": 0.001
+    },
+    "observedAt": "2026-09-12T10:05:07.552633+00:00",
+    "httpStatus": 400,
+    "bytes": 160,
+    "rows": null,
+    "error": "Validation failed (numeric string is expected)"
+  },
+  {
+    "case": "offers-max-quantity",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 2,
+      "maxQuantity": 1000
+    },
+    "observedAt": "2026-09-12T10:05:08.493753+00:00",
+    "httpStatus": 200,
+    "bytes": 625,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "offers-min-price-decimal",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 2,
+      "minPrice": 0.001
+    },
+    "observedAt": "2026-09-12T10:06:01.938641+00:00",
+    "httpStatus": 400,
+    "bytes": 160,
+    "rows": null,
+    "error": "Validation failed (numeric string is expected)"
+  },
+  {
+    "case": "offers-next",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 2,
+      "offset": 2
+    },
+    "observedAt": "2026-09-12T10:03:57.705849+00:00",
+    "httpStatus": 200,
+    "bytes": 627,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "offers-price-filter",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 2,
+      "minPrice": 1
+    },
+    "observedAt": "2026-09-12T10:03:59.589680+00:00",
+    "httpStatus": 200,
+    "bytes": 30,
+    "rows": 0,
+    "error": null
+  },
+  {
+    "case": "offers-quantity-filter",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 2,
+      "minQuantity": 10000
+    },
+    "observedAt": "2026-09-12T10:04:00.621876+00:00",
+    "httpStatus": 200,
+    "bytes": 631,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "offers-range",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 2,
+      "minQuantity": 10000,
+      "maxQuantity": 10000
+    },
+    "observedAt": "2026-09-12T10:05:09.386712+00:00",
+    "httpStatus": 200,
+    "bytes": 631,
+    "rows": 2,
+    "error": null
+  },
+  {
+    "case": "offers",
+    "path": "/delegation-rental/v3/offers",
+    "params": {
+      "limit": 2,
+      "offset": 0
+    },
+    "observedAt": "2026-09-12T10:02:44.663919+00:00",
+    "httpStatus": 200,
+    "bytes": 627,
+    "rows": 2,
+    "error": null
+  }
+]

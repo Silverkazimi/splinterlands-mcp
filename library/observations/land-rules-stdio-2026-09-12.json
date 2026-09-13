@@ -1,0 +1,27 @@
+{
+  "verifiedAt": "2026-09-12T11:44:44.339Z",
+  "transport": "built stdio",
+  "results": [
+    {
+      "uri": "splinterlands://land/rules/terrain",
+      "mimeType": "application/json",
+      "schemaVersion": 1,
+      "reviewedAt": "2026-09-12",
+      "bytes": 1802
+    },
+    {
+      "uri": "splinterlands://land/rules/production",
+      "mimeType": "application/json",
+      "schemaVersion": 1,
+      "reviewedAt": "2026-09-12",
+      "bytes": 747
+    },
+    {
+      "uri": "splinterlands://land/rules/cap",
+      "mimeType": "application/json",
+      "schemaVersion": 1,
+      "reviewedAt": "2026-09-12",
+      "bytes": 679
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "observedAt": "2026-09-12",
+  "sources": [
+    {
+      "url": "https://splinterlands.com/assets/index-CETWKRFI.js",
+      "sha256": "56f9dfea4528e678852c865dbce6fd464f32161ec91685c5cda3f6e111973372"
+    },
+    {
+      "url": "https://splinterlands.com/assets/CardDetail-C2ylhUAj.js",
+      "sha256": "818a4f8a54c5ef15174e5f2b9ea96f306f23595c4979d2f655db0d14a7394e05"
+    }
+  ],
+  "findings": [
+    "Public client isCardStaked requires a past stake_start_date and no end date.",
+    "Public client isCardUnstaking requires a past start and future end date.",
+    "Card details navigate to a plot using stake_region and stake_plot.",
+    "The server deliberately treats missing fields as unknown, stricter than the client default.",
+    "Numeric stake_plot wire acceptance is server policy pending a live collection capture; unexpected types are refused."
+  ],
+  "limits": [
+    "No account data was fetched for this inspection.",
+    "No verified padded plot labels are derived from numeric stake_plot."
+  ]
+}

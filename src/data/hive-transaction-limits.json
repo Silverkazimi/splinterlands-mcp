@@ -1,0 +1,48 @@
+{
+  "as_of": "2026-09-13",
+  "source_revision": "1584099c3054a97f02abfb4788b23f02eea98728",
+  "terms": {
+    "transaction": "A signed container of operations.",
+    "signature": "An authorization signature; its count is not the number of operations or cards.",
+    "operation": "One protocol operation; a custom_json payload can describe many items.",
+    "item": "An application-level card or other entry inside one operation."
+  },
+  "limits": [
+    {
+      "dimension": "Stock node admission",
+      "value": 5,
+      "unit": "custom operations per impacted account per block, including pending admission",
+      "scope": "Pinned stock Hive implementation; not a universal transaction item limit or an assertion about every node's policy.",
+      "source": "https://github.com/openhive-network/hive/blob/1584099c3054a97f02abfb4788b23f02eea98728/libraries/protocol/include/hive/protocol/config.hpp#L476",
+      "enforcement": "https://github.com/openhive-network/hive/blob/1584099c3054a97f02abfb4788b23f02eea98728/libraries/chain/database.cpp#L592"
+    },
+    {
+      "dimension": "Custom JSON payload",
+      "value": 8192,
+      "unit": "UTF-8 bytes",
+      "scope": "Pinned evaluator checks; item capacity depends on the encoded payload.",
+      "source": "https://github.com/openhive-network/hive/blob/1584099c3054a97f02abfb4788b23f02eea98728/libraries/chain/hive_evaluator.cpp#L337"
+    },
+    {
+      "dimension": "Transaction admission size",
+      "formula": "current maximum block size minus 256 bytes",
+      "scope": "Do not substitute a universal 64 KiB constant.",
+      "source": "https://github.com/openhive-network/hive/blob/1584099c3054a97f02abfb4788b23f02eea98728/libraries/chain/database.cpp#L560"
+    },
+    {
+      "dimension": "Client batching policy",
+      "value": null,
+      "scope": "A wallet or application may choose a smaller batch. A four-operation policy does not imply four cards per transaction."
+    },
+    {
+      "dimension": "Maximum cards",
+      "value": null,
+      "scope": "No universal maximum is established. Operation schema, application validation and byte budgets matter. A successful sample is a lower bound, not a maximum."
+    }
+  ],
+  "workflow": [
+    "hive_account_history with explicit account and optional custom_json_id",
+    "transaction_inspect with a returned trx_id"
+  ],
+  "scope": "Read evidence only. This resource does not change wallet, signer, or application batching policies."
+}

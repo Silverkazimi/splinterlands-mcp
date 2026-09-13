@@ -1,0 +1,52 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-13T11:16:54.595892+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/delegation/incoming/{player}",
+    "captureScope": "Complete bounded public response; participants discovered from public rental/delegation data."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].amount": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].lastDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].lastManualDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].lastMarketDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].lastDelegationTransactionId": {
+      "valueClass": "id"
+    },
+    "body.data[0].player": {
+      "valueClass": "name"
+    },
+    "body.data[0].isFromRental": {
+      "valueClass": "enum"
+    },
+    "body.data[0].rentalDelegationAmount": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": [
+      {
+        "amount": "25000.000",
+        "lastDelegationDate": "2026-09-06T11:06:09.000Z",
+        "lastManualDelegationDate": null,
+        "lastMarketDelegationDate": "2026-09-06T11:05:54.000Z",
+        "lastDelegationTransactionId": "c6ce7caabae35e1a632c42f5c35cb5e01ea5e2a0",
+        "player": "sample-acct-098",
+        "isFromRental": true,
+        "rentalDelegationAmount": "25000.000"
+      }
+    ]
+  }
+}

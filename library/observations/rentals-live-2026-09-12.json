@@ -1,0 +1,163 @@
+{
+  "observedAt": "2026-09-12T10:11:45.081Z",
+  "registeredTools": 135,
+  "results": [
+    {
+      "name": "rental_offers",
+      "args": {
+        "limit": 2,
+        "offset": 0
+      },
+      "isError": false,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "provenance": {
+        "endpoint": "/delegation-rental/v3/offers",
+        "traceId": "b014403c-e6af-416e-94e2-fd3b5d608655",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:11:43.456Z",
+          "ageMs": 13
+        },
+        "requestScope": {
+          "offset": 0,
+          "limit": 2
+        }
+      }
+    },
+    {
+      "name": "rental_bids",
+      "args": {
+        "limit": 2,
+        "offset": 0
+      },
+      "isError": false,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "provenance": {
+        "endpoint": "/delegation-rental/v3/bids",
+        "traceId": "ce82440f-da4f-41bb-a510-7c416f135704",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:11:43.641Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "offset": 0,
+          "limit": 2
+        }
+      }
+    },
+    {
+      "name": "rental_offers_lowest_price",
+      "args": {},
+      "isError": false,
+      "provenance": {
+        "endpoint": "/delegation-rental/v3/offers/lowest-price",
+        "traceId": "bea33e81-f6c1-4c04-b17a-ff0b922da078",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:11:43.813Z",
+          "ageMs": 2
+        },
+        "requestScope": {}
+      }
+    },
+    {
+      "name": "rental_bids_lowest_price",
+      "args": {},
+      "isError": false,
+      "provenance": {
+        "endpoint": "/delegation-rental/v3/bids/lowest-price",
+        "traceId": "fae96e9d-4047-4a02-9c23-516db876f089",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:11:43.972Z",
+          "ageMs": 1
+        },
+        "requestScope": {}
+      }
+    },
+    {
+      "name": "rental_offers",
+      "args": {
+        "limit": 2,
+        "minQuantity": 10000,
+        "maxQuantity": 10000
+      },
+      "isError": false,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "provenance": {
+        "endpoint": "/delegation-rental/v3/offers",
+        "traceId": "de264abd-6150-4741-b464-60568b20ffb6",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:11:44.371Z",
+          "ageMs": 2
+        },
+        "requestScope": {
+          "limit": 2,
+          "minQuantity": 10000,
+          "maxQuantity": 10000
+        }
+      }
+    },
+    {
+      "name": "rental_bids",
+      "args": {
+        "limit": 2,
+        "minQuantity": 10000,
+        "maxQuantity": 10000
+      },
+      "isError": false,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "provenance": {
+        "endpoint": "/delegation-rental/v3/bids",
+        "traceId": "f7aaa48a-6c0c-4d61-a080-1b19d765c343",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:11:44.531Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "limit": 2,
+          "minQuantity": 10000,
+          "maxQuantity": 10000
+        }
+      }
+    },
+    {
+      "name": "rental_offers",
+      "args": {
+        "limit": 2,
+        "minPrice": 1
+      },
+      "isError": false,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 0,
+        "upstreamRows": 0
+      },
+      "provenance": {
+        "endpoint": "/delegation-rental/v3/offers",
+        "traceId": "0d6fea81-5de7-498f-9f18-43c5d0ba407c",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:11:45.077Z",
+          "ageMs": 2
+        },
+        "requestScope": {
+          "limit": 2,
+          "minPrice": 1
+        }
+      }
+    }
+  ]
+}

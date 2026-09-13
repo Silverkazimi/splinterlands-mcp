@@ -1,0 +1,76 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "sourceUrl": "https://vapi.splinterlands.com/market/player/listings",
+    "observedAt": "2026-09-12T13:55:12.165038+00:00",
+    "captureScope": "Up to three original list rows; activity additionally retains one observed sale row. Complete object response. No field values transformed."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].id": {
+      "valueClass": "id"
+    },
+    "body.data[0].listingId": {
+      "valueClass": "id"
+    },
+    "body.data[0].assetId": {
+      "valueClass": "id"
+    },
+    "body.data[0].status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].detailId": {
+      "valueClass": "id"
+    },
+    "body.data[0].itemId": {
+      "valueClass": "id"
+    },
+    "body.data[0].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[0].listingPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].quantity": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].quantityRemaining": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].updatedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].assetName": {
+      "valueClass": "enum"
+    },
+    "body.data[0].closedDate": {
+      "valueClass": "timestamp"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": [
+      {
+        "id": 1918272,
+        "listingId": 647013,
+        "assetId": 1,
+        "status": 1,
+        "detailId": "RIFT",
+        "itemId": "RIFT",
+        "currency": "USD",
+        "listingPrice": 1.4,
+        "quantity": 2,
+        "quantityRemaining": 2,
+        "createdDate": "2025-06-28T12:04:33.000Z",
+        "updatedDate": "2025-06-28T12:04:33.000Z",
+        "closedDate": null,
+        "assetName": "PACKS"
+      }
+    ]
+  }
+}

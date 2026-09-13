@@ -1,0 +1,92 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:29:59.649714+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/seasons",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.id": {
+      "valueClass": "numeric"
+    },
+    "body.starts": {
+      "valueClass": "opaque"
+    },
+    "body.ends": {
+      "valueClass": "opaque"
+    },
+    "body.season_group": {
+      "valueClass": "opaque"
+    },
+    "body.reset_block_num": {
+      "valueClass": "opaque"
+    },
+    "body.card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.card_amount": {
+      "valueClass": "opaque"
+    },
+    "body.card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body.cards_awarded": {
+      "valueClass": "opaque"
+    },
+    "body.card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body.card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body.card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body.alchemy_potions_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body.card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body.card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body.midnight_potions_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body.cards_to_guarantee_one_gold": {
+      "valueClass": "opaque"
+    },
+    "body.cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "opaque"
+    },
+    "body.voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body.verification_data": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "id": 22,
+    "starts": "2026-08-27T16:00:00.000Z",
+    "ends": "2026-09-26T16:00:00.000Z",
+    "season_group": "escalation",
+    "reset_block_num": null,
+    "card_detail_id": 1050,
+    "card_amount": null,
+    "card_guaranteed_chances": 400,
+    "cards_awarded": null,
+    "card_chance_per_entry": "0.0025",
+    "card_gold_chance": "0.000",
+    "card_boosted_gold_chance": "0.000",
+    "alchemy_potions_to_boost": null,
+    "card_black_chance": "0",
+    "card_boosted_black_chance": "0",
+    "midnight_potions_to_boost": null,
+    "cards_to_guarantee_one_gold": null,
+    "cards_to_guarantee_one_gold_full_potions": null,
+    "voucher_cost_to_boost": null,
+    "verification_data": null
+  }
+}

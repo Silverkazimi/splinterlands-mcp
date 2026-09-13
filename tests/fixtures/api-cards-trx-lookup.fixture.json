@@ -1,0 +1,33 @@
+{
+  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
+  "valueClasses": {
+    "trx_info.id": { "valueClass": "id" },
+    "trx_info.block_id": { "valueClass": "id" },
+    "trx_info.prev_block_id": { "valueClass": "id" },
+    "trx_info.type": { "valueClass": "enum" },
+    "trx_info.player": { "valueClass": "name" },
+    "trx_info.data": { "valueClass": "opaque" },
+    "trx_info.success": { "valueClass": "enum" },
+    "trx_info.error": { "valueClass": "opaque" },
+    "trx_info.block_num": { "valueClass": "numeric" },
+    "trx_info.created_date": { "valueClass": "timestamp" },
+    "trx_info.result": { "valueClass": "opaque" },
+    "trx_info.steem_price": { "valueClass": "numeric" },
+    "trx_info.sbd_price": { "valueClass": "numeric" }
+  },
+  "trx_info": {
+    "id": "fixture-trx",
+    "block_id": "fixture-block",
+    "prev_block_id": "fixture-prev",
+    "type": "market_purchase",
+    "player": "fixture_account",
+    "data": "{}",
+    "success": true,
+    "error": null,
+    "block_num": 1,
+    "created_date": "2026-09-08T00:00:00.000Z",
+    "result": "{}",
+    "steem_price": null,
+    "sbd_price": null
+  }
+}

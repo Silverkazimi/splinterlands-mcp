@@ -1,0 +1,364 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-06T21:20:18Z"
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[0].land_work_requirement_id": {
+      "valueClass": "id"
+    },
+    "data[0].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[0].land_work_type_parent_id": {
+      "valueClass": "id"
+    },
+    "data[0].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[0].land_work_type_name": {
+      "valueClass": "enum"
+    },
+    "data[0].land_work_type_is_construction": {
+      "valueClass": "enum"
+    },
+    "data[0].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[0].allow_time_crystals": {
+      "valueClass": "enum"
+    },
+    "data[0].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[0].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[0].work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[1].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[1].land_work_requirement_id": {
+      "valueClass": "id"
+    },
+    "data[1].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[1].land_work_type_parent_id": {
+      "valueClass": "id"
+    },
+    "data[1].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[1].land_work_type_name": {
+      "valueClass": "enum"
+    },
+    "data[1].land_work_type_is_construction": {
+      "valueClass": "enum"
+    },
+    "data[1].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[1].allow_time_crystals": {
+      "valueClass": "enum"
+    },
+    "data[1].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[1].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[1].work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[2].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].land_work_requirement_id": {
+      "valueClass": "id"
+    },
+    "data[2].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[2].land_work_type_parent_id": {
+      "valueClass": "id"
+    },
+    "data[2].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].land_work_type_name": {
+      "valueClass": "enum"
+    },
+    "data[2].land_work_type_is_construction": {
+      "valueClass": "enum"
+    },
+    "data[2].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[2].allow_time_crystals": {
+      "valueClass": "enum"
+    },
+    "data[2].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[2].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[2].work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[3].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[3].land_work_requirement_id": {
+      "valueClass": "id"
+    },
+    "data[3].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[3].land_work_type_parent_id": {
+      "valueClass": "id"
+    },
+    "data[3].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[3].land_work_type_name": {
+      "valueClass": "enum"
+    },
+    "data[3].land_work_type_is_construction": {
+      "valueClass": "enum"
+    },
+    "data[3].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[3].allow_time_crystals": {
+      "valueClass": "enum"
+    },
+    "data[3].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[3].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[3].work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[4].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[4].land_work_requirement_id": {
+      "valueClass": "id"
+    },
+    "data[4].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[4].land_work_type_parent_id": {
+      "valueClass": "id"
+    },
+    "data[4].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[4].land_work_type_name": {
+      "valueClass": "enum"
+    },
+    "data[4].land_work_type_is_construction": {
+      "valueClass": "enum"
+    },
+    "data[4].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[4].allow_time_crystals": {
+      "valueClass": "enum"
+    },
+    "data[4].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[4].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[4].work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[5].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[5].land_work_requirement_id": {
+      "valueClass": "id"
+    },
+    "data[5].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[5].land_work_type_parent_id": {
+      "valueClass": "id"
+    },
+    "data[5].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[5].land_work_type_name": {
+      "valueClass": "enum"
+    },
+    "data[5].land_work_type_is_construction": {
+      "valueClass": "enum"
+    },
+    "data[5].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[5].allow_time_crystals": {
+      "valueClass": "enum"
+    },
+    "data[5].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[5].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[5].work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[6].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[6].land_work_requirement_id": {
+      "valueClass": "id"
+    },
+    "data[6].land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[6].land_work_type_parent_id": {
+      "valueClass": "id"
+    },
+    "data[6].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data[6].land_work_type_name": {
+      "valueClass": "enum"
+    },
+    "data[6].land_work_type_is_construction": {
+      "valueClass": "enum"
+    },
+    "data[6].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data[6].allow_time_crystals": {
+      "valueClass": "enum"
+    },
+    "data[6].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data[6].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data[6].work_per_hour": {
+      "valueClass": "numeric"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_requirement_id": 1,
+      "land_work_type_id": 6,
+      "land_work_type_parent_id": null,
+      "land_work_type_total_work_type_pp": 738137.472,
+      "land_work_type_name": "worksite_research_construction",
+      "land_work_type_is_construction": true,
+      "pp_required": 1500000,
+      "allow_time_crystals": true,
+      "projected_hours": 24,
+      "projected_end": "2026-09-07T21:20:19.168Z",
+      "work_per_hour": "6820.0000"
+    },
+    {
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_requirement_id": 13,
+      "land_work_type_id": 5,
+      "land_work_type_parent_id": null,
+      "land_work_type_total_work_type_pp": 1069860.762,
+      "land_work_type_name": "worksite_sps_construction",
+      "land_work_type_is_construction": true,
+      "pp_required": 1500000,
+      "allow_time_crystals": true,
+      "projected_hours": 24,
+      "projected_end": "2026-09-07T21:20:19.168Z",
+      "work_per_hour": "6820.0000"
+    },
+    {
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_requirement_id": 25,
+      "land_work_type_id": 7,
+      "land_work_type_parent_id": null,
+      "land_work_type_total_work_type_pp": 1170322.404,
+      "land_work_type_name": "worksite_grain_construction",
+      "land_work_type_is_construction": true,
+      "pp_required": 1500000,
+      "allow_time_crystals": true,
+      "projected_hours": 24,
+      "projected_end": "2026-09-07T21:20:19.168Z",
+      "work_per_hour": "6820.0000"
+    },
+    {
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_requirement_id": 67,
+      "land_work_type_id": 34,
+      "land_work_type_parent_id": null,
+      "land_work_type_total_work_type_pp": 700242.226,
+      "land_work_type_name": "worksite_wood_construction",
+      "land_work_type_is_construction": true,
+      "pp_required": 1500000,
+      "allow_time_crystals": true,
+      "projected_hours": 24,
+      "projected_end": "2026-09-07T21:20:19.168Z",
+      "work_per_hour": "6820.0000"
+    },
+    {
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_requirement_id": 79,
+      "land_work_type_id": 35,
+      "land_work_type_parent_id": null,
+      "land_work_type_total_work_type_pp": 572117.69,
+      "land_work_type_name": "worksite_stone_construction",
+      "land_work_type_is_construction": true,
+      "pp_required": 1500000,
+      "allow_time_crystals": true,
+      "projected_hours": 24,
+      "projected_end": "2026-09-07T21:20:19.168Z",
+      "work_per_hour": "6820.0000"
+    },
+    {
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_requirement_id": 91,
+      "land_work_type_id": 36,
+      "land_work_type_parent_id": null,
+      "land_work_type_total_work_type_pp": 222937.878,
+      "land_work_type_name": "worksite_iron_construction",
+      "land_work_type_is_construction": true,
+      "pp_required": 1500000,
+      "allow_time_crystals": true,
+      "projected_hours": 24,
+      "projected_end": "2026-09-07T21:20:19.168Z",
+      "work_per_hour": "6820.0000"
+    },
+    {
+      "deed_uid": "I-291-aafc48f64a8856",
+      "land_work_requirement_id": 133,
+      "land_work_type_id": 67,
+      "land_work_type_parent_id": null,
+      "land_work_type_total_work_type_pp": 21756.365,
+      "land_work_type_name": "worksite_aura_construction",
+      "land_work_type_is_construction": true,
+      "pp_required": 1500000,
+      "allow_time_crystals": true,
+      "projected_hours": 24,
+      "projected_end": "2026-09-07T21:20:19.168Z",
+      "work_per_hour": "6820.0000"
+    }
+  ]
+}

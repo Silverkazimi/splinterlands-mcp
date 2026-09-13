@@ -1,0 +1,350 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:29:57.503791+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/status",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.stats.total_wagon_cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].wagon_uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[0].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[0].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[1].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[1].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[2].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[2].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[3].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[3].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[3].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[3].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[4].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[0].cards[4].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[4].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].cards[4].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.wagons[0].total_cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[0].damaged": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].wagon_uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[0].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[0].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[1].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[1].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[2].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[2].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[3].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[3].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[3].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[3].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[4].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[1].cards[4].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[4].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].cards[4].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.wagons[1].total_cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[1].damaged": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].wagon_uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[0].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[0].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[1].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[1].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[2].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[2].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[3].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[3].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[3].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[3].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[4].uid": {
+      "valueClass": "opaque"
+    },
+    "body.wagons[2].cards[4].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[4].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].cards[4].cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.wagons[2].total_cp": {
+      "valueClass": "numeric"
+    },
+    "body.wagons[2].damaged": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "stats": {
+      "total_wagon_cp": 5551792
+    },
+    "wagons": [
+      {
+        "wagon_uid": "I-326-02HE4DQ6F4",
+        "cards": [
+          {
+            "uid": "BA20-938-000001",
+            "detail_id": 938,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B20-939-SVF02ZIFY8",
+            "detail_id": 939,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B20-952-DNNOVK00WG",
+            "detail_id": 952,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B2-970-AHX41YODQO",
+            "detail_id": 970,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "C2-970-XXNJP93I0G",
+            "detail_id": 970,
+            "bcx": 1,
+            "cp": 500
+          }
+        ],
+        "updated_date": "2026-09-11T11:17:24.000Z",
+        "total_cp": 630500,
+        "damaged": false
+      },
+      {
+        "wagon_uid": "I-326-06HNUGX91S",
+        "cards": [
+          {
+            "uid": "B20-981-QPBL1RPABK",
+            "detail_id": 981,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B20-1039-7XDGERPS00",
+            "detail_id": 1039,
+            "bcx": 4,
+            "cp": 157500
+          },
+          {
+            "uid": "B20-937-0H6NQYB6WW",
+            "detail_id": 937,
+            "bcx": 10,
+            "cp": 78750
+          },
+          {
+            "uid": "G20-931-2TIU1W0H5S",
+            "detail_id": 931,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-931-CZ64S6YJLC",
+            "detail_id": 931,
+            "bcx": 4,
+            "cp": 52500
+          }
+        ],
+        "updated_date": "2026-08-27T15:12:57.000Z",
+        "total_cp": 498750,
+        "damaged": false
+      },
+      {
+        "wagon_uid": "I-326-0I2LJ4VN28",
+        "cards": [
+          {
+            "uid": "G20-959-522HQPSWSW",
+            "detail_id": 959,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-960-6NXFD2E840",
+            "detail_id": 960,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-963-GNTV0IDJ34",
+            "detail_id": 963,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-981-J70HZACPPC",
+            "detail_id": 981,
+            "bcx": 4,
+            "cp": 52500
+          },
+          {
+            "uid": "G20-981-RCGL9Y6QDC",
+            "detail_id": 981,
+            "bcx": 4,
+            "cp": 52500
+          }
+        ],
+        "updated_date": "2026-08-27T15:12:57.000Z",
+        "total_cp": 262500,
+        "damaged": false
+      }
+    ]
+  }
+}

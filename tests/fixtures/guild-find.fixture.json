@@ -1,0 +1,991 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:07:25.497717+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/guilds/find",
+    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.id": {
+      "valueClass": "opaque"
+    },
+    "body.name": {
+      "valueClass": "name"
+    },
+    "body.owner": {
+      "valueClass": "opaque"
+    },
+    "body.created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.membership_type": {
+      "valueClass": "opaque"
+    },
+    "body.language": {
+      "valueClass": "opaque"
+    },
+    "body.description": {
+      "valueClass": "opaque"
+    },
+    "body.motto": {
+      "valueClass": "opaque"
+    },
+    "body.level": {
+      "valueClass": "numeric"
+    },
+    "body.data": {
+      "valueClass": "opaque"
+    },
+    "body.buildings": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_status": {
+      "valueClass": "numeric"
+    },
+    "body.crowns": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.tournament_id": {
+      "valueClass": "id"
+    },
+    "body.tournament_status": {
+      "valueClass": "numeric"
+    },
+    "body.tournament_data": {
+      "valueClass": "opaque"
+    },
+    "body.tournament_start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.num_members": {
+      "valueClass": "opaque"
+    },
+    "body.rating": {
+      "valueClass": "opaque"
+    },
+    "body.rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[0].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[0].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[0].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[0].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[0].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[0].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[1].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[1].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[1].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[1].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[1].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[1].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[2].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[2].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[2].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[2].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[2].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[2].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[3].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[3].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[3].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[3].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[3].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[3].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[4].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[4].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[4].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[4].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[4].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[4].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[5].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[5].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[5].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[5].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[5].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[5].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[6].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[6].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[6].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[6].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[6].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[6].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[7].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[7].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[7].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[7].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[7].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[7].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[8].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[8].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[8].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[8].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[8].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[8].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[9].guild_id": {
+      "valueClass": "id"
+    },
+    "body.brawl_stats.results[9].brawl_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].losses": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].draws": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].pts": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.brawl_stats.results[9].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.results[9].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[9].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.results[9].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[0].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[0].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[0].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.fray_counts[1].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[1].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[1].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.fray_counts[2].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[2].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[2].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.fray_counts[3].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[3].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[3].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.fray_counts[4].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[4].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[4].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.fray_counts[5].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[5].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[5].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.fray_counts[6].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[6].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[6].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.fray_counts[7].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[7].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[7].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.fray_counts[8].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[8].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[8].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.fray_counts[9].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[9].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.fray_counts[9].count": {
+      "valueClass": "opaque"
+    },
+    "body.brawl_stats.start_cycle": {
+      "valueClass": "numeric"
+    },
+    "body.brawl_stats.end_cycle": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+    "name": " [KoG] Shield of Glory",
+    "owner": "sample-acct-103",
+    "created_date": "2019-07-30T08:11:00.000Z",
+    "membership_type": "request",
+    "language": "English",
+    "description": "![Caption](https://i.ibb.co/n6qVkhP/BANNER4.gif)\n\nWe are open to all active players who are willing to have fun and climb to the top ranks both as individual player and as a guild. \nWe expect players to participate in the progress of guild with DEC donations and are actively engaged in guild chat. Work with us on a path to glory!",
+    "motto": "",
+    "level": 10,
+    "data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
+    "buildings": "{\"arena\":{\"level\":9,\"max_level\":9,\"contrib_gp\":1377730,\"contrib_dec\":1332324,\"contrib_crowns\":7115},\"library\":{\"level\":1,\"max_level\":1,\"contributions\":0,\"contributions_gp\":0},\"barracks\":{\"level\":10,\"perks\":[0,0,0,0,0,0,0,0,0,0],\"max_level\":10,\"contrib_gp\":3143183,\"contrib_dec\":1067877,\"contrib_crowns\":11315,\"away_blocked_cards\":[656,972]},\"guild_hall\":{\"level\":10,\"contributions\":2710000},\"guild_shop\":{\"level\":8,\"max_level\":8,\"contrib_gp\":142000,\"contrib_dec\":1717600,\"contrib_crowns\":4315},\"quest_lodge\":{\"level\":10,\"max_level\":10,\"contributions\":2105,\"contributions_gp\":0}}",
+    "brawl_status": 1,
+    "crowns": 32191,
+    "brawl_level": 9,
+    "tournament_id": "GUILD-BC383-BL910-BRAWL1",
+    "tournament_status": 2,
+    "tournament_data": "{\"duration_blocks\":57600,\"multiple_rounds\":false,\"cp_min\":0,\"spsp_min\":0,\"group_size\":10,\"create_team_seconds\":258,\"challenge_level\":4,\"guilds\":[\"cb84ca426dcb7c8ba072c759b39cf459d4cf7669\",\"9955504d237b7013295692b3207ed35ad71017de\",\"391cc53158d4b06e7e5d8f0dfba614267905b8cf\",\"504d6bb3bd478422e3a68e98e6c8eea257636709\",\"e44cee2650de14f2cf00fa540ab6cdec32882271\",\"9e90a6ae5ea3f798434028d947dcfc7dcee6a8d3\",\"8046de93f2168b672dc9aaee388289ceb55dc551\",\"fed429d93e7f4cfe82c4322750290dffa6a56786\"],\"crown_pot\":1261,\"sps_pot\":21000}",
+    "tournament_start_date": "2026-09-09T13:16:00.000Z",
+    "num_members": "30",
+    "rating": "127050",
+    "rank": "1",
+    "brawl_stats": {
+      "results": [
+        {
+          "cycle": 373,
+          "tournament_id": "GUILD-BC373-BL910-BRAWL3",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 2,
+          "wins": 94,
+          "losses": 56,
+          "draws": 0,
+          "pts": 282,
+          "top_payout": 0,
+          "other_payout": 196,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-07-20T03:20:09.000Z",
+          "total_merits_payout": 206976,
+          "member_merits_payout": 9408,
+          "total_sps_payout": "3453.516",
+          "member_sps_payout": "156.978",
+          "auto_wins": 0
+        },
+        {
+          "cycle": 374,
+          "tournament_id": "GUILD-BC374-BL910-BRAWL1",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 2,
+          "wins": 106,
+          "losses": 69,
+          "draws": 0,
+          "pts": 318,
+          "top_payout": 0,
+          "other_payout": 188,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-07-25T04:16:12.000Z",
+          "total_merits_payout": 207552,
+          "member_merits_payout": 9024,
+          "total_sps_payout": "3011.643",
+          "member_sps_payout": "130.941",
+          "auto_wins": 0
+        },
+        {
+          "cycle": 375,
+          "tournament_id": "GUILD-BC375-BL910-BRAWL1",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 3,
+          "wins": 96,
+          "losses": 74,
+          "draws": 0,
+          "pts": 303,
+          "top_payout": 0,
+          "other_payout": 181,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-07-31T05:21:09.000Z",
+          "total_merits_payout": 165072,
+          "member_merits_payout": 8688,
+          "total_sps_payout": "2346.367",
+          "member_sps_payout": "123.493",
+          "auto_wins": 5
+        },
+        {
+          "cycle": 376,
+          "tournament_id": "GUILD-BC376-BL910-BRAWL3",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 3,
+          "wins": 82,
+          "losses": 68,
+          "draws": 0,
+          "pts": 246,
+          "top_payout": 0,
+          "other_payout": 164,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-08-05T06:20:18.000Z",
+          "total_merits_payout": 157440,
+          "member_merits_payout": 7872,
+          "total_sps_payout": "2674.960",
+          "member_sps_payout": "133.748",
+          "auto_wins": 0
+        },
+        {
+          "cycle": 377,
+          "tournament_id": "GUILD-BC377-BL910-BRAWL3",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 2,
+          "wins": 92,
+          "losses": 52,
+          "draws": 0,
+          "pts": 294,
+          "top_payout": 0,
+          "other_payout": 200,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-08-10T07:20:12.000Z",
+          "total_merits_payout": 201600,
+          "member_merits_payout": 9600,
+          "total_sps_payout": "3330.873",
+          "member_sps_payout": "158.613",
+          "auto_wins": 6
+        },
+        {
+          "cycle": 378,
+          "tournament_id": "GUILD-BC378-BL910-BRAWL1",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 1,
+          "wins": 122,
+          "losses": 46,
+          "draws": 0,
+          "pts": 387,
+          "top_payout": 0,
+          "other_payout": 227,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-08-15T08:15:09.000Z",
+          "total_merits_payout": 250608,
+          "member_merits_payout": 10896,
+          "total_sps_payout": "3665.119",
+          "member_sps_payout": "159.353",
+          "auto_wins": 7
+        },
+        {
+          "cycle": 379,
+          "tournament_id": "GUILD-BC379-BL910-BRAWL1",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 3,
+          "wins": 107,
+          "losses": 68,
+          "draws": 0,
+          "pts": 321,
+          "top_payout": 0,
+          "other_payout": 195,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-08-21T09:21:12.000Z",
+          "total_merits_payout": 209931,
+          "member_merits_payout": 9360,
+          "total_sps_payout": "2917.329",
+          "member_sps_payout": "130.072",
+          "auto_wins": 0
+        },
+        {
+          "cycle": 380,
+          "tournament_id": "GUILD-BC380-BL910-BRAWL3",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 3,
+          "wins": 75,
+          "losses": 62,
+          "draws": 0,
+          "pts": 264,
+          "top_payout": 0,
+          "other_payout": 184,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-08-26T10:22:18.000Z",
+          "total_merits_payout": 180173,
+          "member_merits_payout": 8832,
+          "total_sps_payout": "2933.785",
+          "member_sps_payout": "143.813",
+          "auto_wins": 13
+        },
+        {
+          "cycle": 381,
+          "tournament_id": "GUILD-BC381-BL910-BRAWL2",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 1,
+          "wins": 107,
+          "losses": 55,
+          "draws": 0,
+          "pts": 360,
+          "top_payout": 0,
+          "other_payout": 212,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-08-31T11:20:06.000Z",
+          "total_merits_payout": 213696,
+          "member_merits_payout": 10176,
+          "total_sps_payout": "3090.213",
+          "member_sps_payout": "147.153",
+          "auto_wins": 13
+        },
+        {
+          "cycle": 382,
+          "tournament_id": "GUILD-BC382-BL910-BRAWL3",
+          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "brawl_rank": 2,
+          "wins": 83,
+          "losses": 46,
+          "draws": 0,
+          "pts": 312,
+          "top_payout": 0,
+          "other_payout": 212,
+          "brawl_level": 9,
+          "guild_rank": 1,
+          "created_date": "2026-09-05T12:22:18.000Z",
+          "total_merits_payout": 203520,
+          "member_merits_payout": 10176,
+          "total_sps_payout": "3399.220",
+          "member_sps_payout": "169.961",
+          "auto_wins": 21
+        }
+      ],
+      "fray_counts": [
+        {
+          "cycle": 373,
+          "brawl_level": 9,
+          "count": "25"
+        },
+        {
+          "cycle": 374,
+          "brawl_level": 9,
+          "count": "25"
+        },
+        {
+          "cycle": 375,
+          "brawl_level": 9,
+          "count": "25"
+        },
+        {
+          "cycle": 376,
+          "brawl_level": 9,
+          "count": "25"
+        },
+        {
+          "cycle": 377,
+          "brawl_level": 9,
+          "count": "25"
+        },
+        {
+          "cycle": 378,
+          "brawl_level": 9,
+          "count": "25"
+        },
+        {
+          "cycle": 379,
+          "brawl_level": 9,
+          "count": "25"
+        },
+        {
+          "cycle": 380,
+          "brawl_level": 9,
+          "count": "25"
+        },
+        {
+          "cycle": 381,
+          "brawl_level": 9,
+          "count": "25"
+        },
+        {
+          "cycle": 382,
+          "brawl_level": 9,
+          "count": "25"
+        }
+      ],
+      "start_cycle": 373,
+      "end_cycle": 382
+    },
+    "announcements": []
+  }
+}

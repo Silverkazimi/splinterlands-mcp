@@ -1,0 +1,18 @@
+- name: drift:auth
+  color: "b60205"
+  description: Endpoint access tier changed
+- name: drift:blocked
+  color: "d93f0b"
+  description: Upstream blocked the runner
+- name: drift:removed
+  color: "5319e7"
+  description: A baseline key path was removed
+- name: drift:added
+  color: "0e8a16"
+  description: A new response key path appeared
+- name: drift:shape
+  color: "fbca04"
+  description: A response key path changed type
+- name: drift:spec-unreachable
+  color: "1d76db"
+  description: The public specification was unreachable
