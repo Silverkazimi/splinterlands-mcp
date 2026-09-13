@@ -1,0 +1,5414 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-07T12:50:44Z"
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].region.uid": {
+      "valueClass": "id"
+    },
+    "data[0].region.name": {
+      "valueClass": "enum"
+    },
+    "data[0].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[0].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[0].owned": {
+      "valueClass": "numeric"
+    },
+    "data[0].listed": {
+      "valueClass": "numeric"
+    },
+    "data[0].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[0].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[1].region.uid": {
+      "valueClass": "id"
+    },
+    "data[1].region.name": {
+      "valueClass": "enum"
+    },
+    "data[1].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[1].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[1].owned": {
+      "valueClass": "numeric"
+    },
+    "data[1].listed": {
+      "valueClass": "numeric"
+    },
+    "data[1].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[1].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[2].region.uid": {
+      "valueClass": "id"
+    },
+    "data[2].region.name": {
+      "valueClass": "enum"
+    },
+    "data[2].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[2].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[2].owned": {
+      "valueClass": "numeric"
+    },
+    "data[2].listed": {
+      "valueClass": "numeric"
+    },
+    "data[2].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[2].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[3].region.uid": {
+      "valueClass": "id"
+    },
+    "data[3].region.name": {
+      "valueClass": "enum"
+    },
+    "data[3].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[3].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[3].owned": {
+      "valueClass": "numeric"
+    },
+    "data[3].listed": {
+      "valueClass": "numeric"
+    },
+    "data[3].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[3].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[4].region.uid": {
+      "valueClass": "id"
+    },
+    "data[4].region.name": {
+      "valueClass": "enum"
+    },
+    "data[4].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[4].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[4].owned": {
+      "valueClass": "numeric"
+    },
+    "data[4].listed": {
+      "valueClass": "numeric"
+    },
+    "data[4].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[4].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[5].region.uid": {
+      "valueClass": "id"
+    },
+    "data[5].region.name": {
+      "valueClass": "enum"
+    },
+    "data[5].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[5].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[5].owned": {
+      "valueClass": "numeric"
+    },
+    "data[5].listed": {
+      "valueClass": "numeric"
+    },
+    "data[5].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[5].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[6].region.uid": {
+      "valueClass": "id"
+    },
+    "data[6].region.name": {
+      "valueClass": "enum"
+    },
+    "data[6].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[6].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[6].owned": {
+      "valueClass": "numeric"
+    },
+    "data[6].listed": {
+      "valueClass": "numeric"
+    },
+    "data[6].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[6].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[7].region.uid": {
+      "valueClass": "id"
+    },
+    "data[7].region.name": {
+      "valueClass": "enum"
+    },
+    "data[7].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[7].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[7].owned": {
+      "valueClass": "numeric"
+    },
+    "data[7].listed": {
+      "valueClass": "numeric"
+    },
+    "data[7].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[7].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[8].region.uid": {
+      "valueClass": "id"
+    },
+    "data[8].region.name": {
+      "valueClass": "enum"
+    },
+    "data[8].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[8].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[8].owned": {
+      "valueClass": "numeric"
+    },
+    "data[8].listed": {
+      "valueClass": "numeric"
+    },
+    "data[8].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[8].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[9].region.uid": {
+      "valueClass": "id"
+    },
+    "data[9].region.name": {
+      "valueClass": "enum"
+    },
+    "data[9].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[9].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[9].owned": {
+      "valueClass": "numeric"
+    },
+    "data[9].listed": {
+      "valueClass": "numeric"
+    },
+    "data[9].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[9].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[10].region.uid": {
+      "valueClass": "id"
+    },
+    "data[10].region.name": {
+      "valueClass": "enum"
+    },
+    "data[10].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[10].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[10].owned": {
+      "valueClass": "numeric"
+    },
+    "data[10].listed": {
+      "valueClass": "numeric"
+    },
+    "data[10].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[10].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[11].region.uid": {
+      "valueClass": "id"
+    },
+    "data[11].region.name": {
+      "valueClass": "enum"
+    },
+    "data[11].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[11].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[11].owned": {
+      "valueClass": "numeric"
+    },
+    "data[11].listed": {
+      "valueClass": "numeric"
+    },
+    "data[11].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[11].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[12].region.uid": {
+      "valueClass": "id"
+    },
+    "data[12].region.name": {
+      "valueClass": "enum"
+    },
+    "data[12].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[12].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[12].owned": {
+      "valueClass": "numeric"
+    },
+    "data[12].listed": {
+      "valueClass": "numeric"
+    },
+    "data[12].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[12].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[13].region.uid": {
+      "valueClass": "id"
+    },
+    "data[13].region.name": {
+      "valueClass": "enum"
+    },
+    "data[13].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[13].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[13].owned": {
+      "valueClass": "numeric"
+    },
+    "data[13].listed": {
+      "valueClass": "numeric"
+    },
+    "data[13].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[13].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[14].region.uid": {
+      "valueClass": "id"
+    },
+    "data[14].region.name": {
+      "valueClass": "enum"
+    },
+    "data[14].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[14].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[14].owned": {
+      "valueClass": "numeric"
+    },
+    "data[14].listed": {
+      "valueClass": "numeric"
+    },
+    "data[14].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[14].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[15].region.uid": {
+      "valueClass": "id"
+    },
+    "data[15].region.name": {
+      "valueClass": "enum"
+    },
+    "data[15].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[15].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[15].owned": {
+      "valueClass": "numeric"
+    },
+    "data[15].listed": {
+      "valueClass": "numeric"
+    },
+    "data[15].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[15].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[16].region.uid": {
+      "valueClass": "id"
+    },
+    "data[16].region.name": {
+      "valueClass": "enum"
+    },
+    "data[16].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[16].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[16].owned": {
+      "valueClass": "numeric"
+    },
+    "data[16].listed": {
+      "valueClass": "numeric"
+    },
+    "data[16].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[16].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[17].region.uid": {
+      "valueClass": "id"
+    },
+    "data[17].region.name": {
+      "valueClass": "enum"
+    },
+    "data[17].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[17].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[17].owned": {
+      "valueClass": "numeric"
+    },
+    "data[17].listed": {
+      "valueClass": "numeric"
+    },
+    "data[17].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[17].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[18].region.uid": {
+      "valueClass": "id"
+    },
+    "data[18].region.name": {
+      "valueClass": "enum"
+    },
+    "data[18].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[18].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[18].owned": {
+      "valueClass": "numeric"
+    },
+    "data[18].listed": {
+      "valueClass": "numeric"
+    },
+    "data[18].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[18].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[19].region.uid": {
+      "valueClass": "id"
+    },
+    "data[19].region.name": {
+      "valueClass": "enum"
+    },
+    "data[19].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[19].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[19].owned": {
+      "valueClass": "numeric"
+    },
+    "data[19].listed": {
+      "valueClass": "numeric"
+    },
+    "data[19].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[19].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[20].region.uid": {
+      "valueClass": "id"
+    },
+    "data[20].region.name": {
+      "valueClass": "enum"
+    },
+    "data[20].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[20].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[20].owned": {
+      "valueClass": "numeric"
+    },
+    "data[20].listed": {
+      "valueClass": "numeric"
+    },
+    "data[20].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[20].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[21].region.uid": {
+      "valueClass": "id"
+    },
+    "data[21].region.name": {
+      "valueClass": "enum"
+    },
+    "data[21].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[21].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[21].owned": {
+      "valueClass": "numeric"
+    },
+    "data[21].listed": {
+      "valueClass": "numeric"
+    },
+    "data[21].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[21].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[22].region.uid": {
+      "valueClass": "id"
+    },
+    "data[22].region.name": {
+      "valueClass": "enum"
+    },
+    "data[22].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[22].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[22].owned": {
+      "valueClass": "numeric"
+    },
+    "data[22].listed": {
+      "valueClass": "numeric"
+    },
+    "data[22].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[22].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[23].region.uid": {
+      "valueClass": "id"
+    },
+    "data[23].region.name": {
+      "valueClass": "enum"
+    },
+    "data[23].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[23].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[23].owned": {
+      "valueClass": "numeric"
+    },
+    "data[23].listed": {
+      "valueClass": "numeric"
+    },
+    "data[23].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[23].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[24].region.uid": {
+      "valueClass": "id"
+    },
+    "data[24].region.name": {
+      "valueClass": "enum"
+    },
+    "data[24].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[24].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[24].owned": {
+      "valueClass": "numeric"
+    },
+    "data[24].listed": {
+      "valueClass": "numeric"
+    },
+    "data[24].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[24].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[25].region.uid": {
+      "valueClass": "id"
+    },
+    "data[25].region.name": {
+      "valueClass": "enum"
+    },
+    "data[25].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[25].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[25].owned": {
+      "valueClass": "numeric"
+    },
+    "data[25].listed": {
+      "valueClass": "numeric"
+    },
+    "data[25].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[25].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[26].region.uid": {
+      "valueClass": "id"
+    },
+    "data[26].region.name": {
+      "valueClass": "enum"
+    },
+    "data[26].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[26].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[26].owned": {
+      "valueClass": "numeric"
+    },
+    "data[26].listed": {
+      "valueClass": "numeric"
+    },
+    "data[26].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[26].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[27].region.uid": {
+      "valueClass": "id"
+    },
+    "data[27].region.name": {
+      "valueClass": "enum"
+    },
+    "data[27].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[27].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[27].owned": {
+      "valueClass": "numeric"
+    },
+    "data[27].listed": {
+      "valueClass": "numeric"
+    },
+    "data[27].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[27].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[28].region.uid": {
+      "valueClass": "id"
+    },
+    "data[28].region.name": {
+      "valueClass": "enum"
+    },
+    "data[28].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[28].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[28].owned": {
+      "valueClass": "numeric"
+    },
+    "data[28].listed": {
+      "valueClass": "numeric"
+    },
+    "data[28].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[28].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[29].region.uid": {
+      "valueClass": "id"
+    },
+    "data[29].region.name": {
+      "valueClass": "enum"
+    },
+    "data[29].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[29].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[29].owned": {
+      "valueClass": "numeric"
+    },
+    "data[29].listed": {
+      "valueClass": "numeric"
+    },
+    "data[29].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[29].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[30].region.uid": {
+      "valueClass": "id"
+    },
+    "data[30].region.name": {
+      "valueClass": "enum"
+    },
+    "data[30].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[30].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[30].owned": {
+      "valueClass": "numeric"
+    },
+    "data[30].listed": {
+      "valueClass": "numeric"
+    },
+    "data[30].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[30].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[31].region.uid": {
+      "valueClass": "id"
+    },
+    "data[31].region.name": {
+      "valueClass": "enum"
+    },
+    "data[31].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[31].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[31].owned": {
+      "valueClass": "numeric"
+    },
+    "data[31].listed": {
+      "valueClass": "numeric"
+    },
+    "data[31].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[31].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[32].region.uid": {
+      "valueClass": "id"
+    },
+    "data[32].region.name": {
+      "valueClass": "enum"
+    },
+    "data[32].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[32].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[32].owned": {
+      "valueClass": "numeric"
+    },
+    "data[32].listed": {
+      "valueClass": "numeric"
+    },
+    "data[32].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[32].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[33].region.uid": {
+      "valueClass": "id"
+    },
+    "data[33].region.name": {
+      "valueClass": "enum"
+    },
+    "data[33].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[33].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[33].owned": {
+      "valueClass": "numeric"
+    },
+    "data[33].listed": {
+      "valueClass": "numeric"
+    },
+    "data[33].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[33].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[34].region.uid": {
+      "valueClass": "id"
+    },
+    "data[34].region.name": {
+      "valueClass": "enum"
+    },
+    "data[34].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[34].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[34].owned": {
+      "valueClass": "numeric"
+    },
+    "data[34].listed": {
+      "valueClass": "numeric"
+    },
+    "data[34].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[34].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[35].region.uid": {
+      "valueClass": "id"
+    },
+    "data[35].region.name": {
+      "valueClass": "enum"
+    },
+    "data[35].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[35].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[35].owned": {
+      "valueClass": "numeric"
+    },
+    "data[35].listed": {
+      "valueClass": "numeric"
+    },
+    "data[35].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[35].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[36].region.uid": {
+      "valueClass": "id"
+    },
+    "data[36].region.name": {
+      "valueClass": "enum"
+    },
+    "data[36].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[36].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[36].owned": {
+      "valueClass": "numeric"
+    },
+    "data[36].listed": {
+      "valueClass": "numeric"
+    },
+    "data[36].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[36].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[37].region.uid": {
+      "valueClass": "id"
+    },
+    "data[37].region.name": {
+      "valueClass": "enum"
+    },
+    "data[37].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[37].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[37].owned": {
+      "valueClass": "numeric"
+    },
+    "data[37].listed": {
+      "valueClass": "numeric"
+    },
+    "data[37].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[37].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[38].region.uid": {
+      "valueClass": "id"
+    },
+    "data[38].region.name": {
+      "valueClass": "enum"
+    },
+    "data[38].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[38].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[38].owned": {
+      "valueClass": "numeric"
+    },
+    "data[38].listed": {
+      "valueClass": "numeric"
+    },
+    "data[38].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[38].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[39].region.uid": {
+      "valueClass": "id"
+    },
+    "data[39].region.name": {
+      "valueClass": "enum"
+    },
+    "data[39].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[39].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[39].owned": {
+      "valueClass": "numeric"
+    },
+    "data[39].listed": {
+      "valueClass": "numeric"
+    },
+    "data[39].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[39].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[40].region.uid": {
+      "valueClass": "id"
+    },
+    "data[40].region.name": {
+      "valueClass": "enum"
+    },
+    "data[40].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[40].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[40].owned": {
+      "valueClass": "numeric"
+    },
+    "data[40].listed": {
+      "valueClass": "numeric"
+    },
+    "data[40].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[40].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[41].region.uid": {
+      "valueClass": "id"
+    },
+    "data[41].region.name": {
+      "valueClass": "enum"
+    },
+    "data[41].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[41].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[41].owned": {
+      "valueClass": "numeric"
+    },
+    "data[41].listed": {
+      "valueClass": "numeric"
+    },
+    "data[41].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[41].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[42].region.uid": {
+      "valueClass": "id"
+    },
+    "data[42].region.name": {
+      "valueClass": "enum"
+    },
+    "data[42].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[42].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[42].owned": {
+      "valueClass": "numeric"
+    },
+    "data[42].listed": {
+      "valueClass": "numeric"
+    },
+    "data[42].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[42].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[43].region.uid": {
+      "valueClass": "id"
+    },
+    "data[43].region.name": {
+      "valueClass": "enum"
+    },
+    "data[43].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[43].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[43].owned": {
+      "valueClass": "numeric"
+    },
+    "data[43].listed": {
+      "valueClass": "numeric"
+    },
+    "data[43].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[43].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[44].region.uid": {
+      "valueClass": "id"
+    },
+    "data[44].region.name": {
+      "valueClass": "enum"
+    },
+    "data[44].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[44].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[44].owned": {
+      "valueClass": "numeric"
+    },
+    "data[44].listed": {
+      "valueClass": "numeric"
+    },
+    "data[44].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[44].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[45].region.uid": {
+      "valueClass": "id"
+    },
+    "data[45].region.name": {
+      "valueClass": "enum"
+    },
+    "data[45].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[45].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[45].owned": {
+      "valueClass": "numeric"
+    },
+    "data[45].listed": {
+      "valueClass": "numeric"
+    },
+    "data[45].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[45].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[46].region.uid": {
+      "valueClass": "id"
+    },
+    "data[46].region.name": {
+      "valueClass": "enum"
+    },
+    "data[46].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[46].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[46].owned": {
+      "valueClass": "numeric"
+    },
+    "data[46].listed": {
+      "valueClass": "numeric"
+    },
+    "data[46].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[46].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[47].region.uid": {
+      "valueClass": "id"
+    },
+    "data[47].region.name": {
+      "valueClass": "enum"
+    },
+    "data[47].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[47].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[47].owned": {
+      "valueClass": "numeric"
+    },
+    "data[47].listed": {
+      "valueClass": "numeric"
+    },
+    "data[47].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[47].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[48].region.uid": {
+      "valueClass": "id"
+    },
+    "data[48].region.name": {
+      "valueClass": "enum"
+    },
+    "data[48].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[48].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[48].owned": {
+      "valueClass": "numeric"
+    },
+    "data[48].listed": {
+      "valueClass": "numeric"
+    },
+    "data[48].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[48].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[49].region.uid": {
+      "valueClass": "id"
+    },
+    "data[49].region.name": {
+      "valueClass": "enum"
+    },
+    "data[49].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[49].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[49].owned": {
+      "valueClass": "numeric"
+    },
+    "data[49].listed": {
+      "valueClass": "numeric"
+    },
+    "data[49].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[49].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[50].region.uid": {
+      "valueClass": "id"
+    },
+    "data[50].region.name": {
+      "valueClass": "enum"
+    },
+    "data[50].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[50].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[50].owned": {
+      "valueClass": "numeric"
+    },
+    "data[50].listed": {
+      "valueClass": "numeric"
+    },
+    "data[50].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[50].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[51].region.uid": {
+      "valueClass": "id"
+    },
+    "data[51].region.name": {
+      "valueClass": "enum"
+    },
+    "data[51].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[51].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[51].owned": {
+      "valueClass": "numeric"
+    },
+    "data[51].listed": {
+      "valueClass": "numeric"
+    },
+    "data[51].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[51].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[52].region.uid": {
+      "valueClass": "id"
+    },
+    "data[52].region.name": {
+      "valueClass": "enum"
+    },
+    "data[52].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[52].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[52].owned": {
+      "valueClass": "numeric"
+    },
+    "data[52].listed": {
+      "valueClass": "numeric"
+    },
+    "data[52].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[52].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[53].region.uid": {
+      "valueClass": "id"
+    },
+    "data[53].region.name": {
+      "valueClass": "enum"
+    },
+    "data[53].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[53].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[53].owned": {
+      "valueClass": "numeric"
+    },
+    "data[53].listed": {
+      "valueClass": "numeric"
+    },
+    "data[53].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[53].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[54].region.uid": {
+      "valueClass": "id"
+    },
+    "data[54].region.name": {
+      "valueClass": "enum"
+    },
+    "data[54].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[54].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[54].owned": {
+      "valueClass": "numeric"
+    },
+    "data[54].listed": {
+      "valueClass": "numeric"
+    },
+    "data[54].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[54].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[55].region.uid": {
+      "valueClass": "id"
+    },
+    "data[55].region.name": {
+      "valueClass": "enum"
+    },
+    "data[55].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[55].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[55].owned": {
+      "valueClass": "numeric"
+    },
+    "data[55].listed": {
+      "valueClass": "numeric"
+    },
+    "data[55].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[55].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[56].region.uid": {
+      "valueClass": "id"
+    },
+    "data[56].region.name": {
+      "valueClass": "enum"
+    },
+    "data[56].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[56].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[56].owned": {
+      "valueClass": "numeric"
+    },
+    "data[56].listed": {
+      "valueClass": "numeric"
+    },
+    "data[56].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[56].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[57].region.uid": {
+      "valueClass": "id"
+    },
+    "data[57].region.name": {
+      "valueClass": "enum"
+    },
+    "data[57].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[57].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[57].owned": {
+      "valueClass": "numeric"
+    },
+    "data[57].listed": {
+      "valueClass": "numeric"
+    },
+    "data[57].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[57].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[58].region.uid": {
+      "valueClass": "id"
+    },
+    "data[58].region.name": {
+      "valueClass": "enum"
+    },
+    "data[58].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[58].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[58].owned": {
+      "valueClass": "numeric"
+    },
+    "data[58].listed": {
+      "valueClass": "numeric"
+    },
+    "data[58].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[58].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[59].region.uid": {
+      "valueClass": "id"
+    },
+    "data[59].region.name": {
+      "valueClass": "enum"
+    },
+    "data[59].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[59].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[59].owned": {
+      "valueClass": "numeric"
+    },
+    "data[59].listed": {
+      "valueClass": "numeric"
+    },
+    "data[59].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[59].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[60].region.uid": {
+      "valueClass": "id"
+    },
+    "data[60].region.name": {
+      "valueClass": "enum"
+    },
+    "data[60].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[60].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[60].owned": {
+      "valueClass": "numeric"
+    },
+    "data[60].listed": {
+      "valueClass": "numeric"
+    },
+    "data[60].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[60].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[61].region.uid": {
+      "valueClass": "id"
+    },
+    "data[61].region.name": {
+      "valueClass": "enum"
+    },
+    "data[61].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[61].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[61].owned": {
+      "valueClass": "numeric"
+    },
+    "data[61].listed": {
+      "valueClass": "numeric"
+    },
+    "data[61].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[61].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[62].region.uid": {
+      "valueClass": "id"
+    },
+    "data[62].region.name": {
+      "valueClass": "enum"
+    },
+    "data[62].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[62].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[62].owned": {
+      "valueClass": "numeric"
+    },
+    "data[62].listed": {
+      "valueClass": "numeric"
+    },
+    "data[62].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[62].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[63].region.uid": {
+      "valueClass": "id"
+    },
+    "data[63].region.name": {
+      "valueClass": "enum"
+    },
+    "data[63].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[63].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[63].owned": {
+      "valueClass": "numeric"
+    },
+    "data[63].listed": {
+      "valueClass": "numeric"
+    },
+    "data[63].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[63].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[64].region.uid": {
+      "valueClass": "id"
+    },
+    "data[64].region.name": {
+      "valueClass": "enum"
+    },
+    "data[64].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[64].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[64].owned": {
+      "valueClass": "numeric"
+    },
+    "data[64].listed": {
+      "valueClass": "numeric"
+    },
+    "data[64].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[64].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[65].region.uid": {
+      "valueClass": "id"
+    },
+    "data[65].region.name": {
+      "valueClass": "enum"
+    },
+    "data[65].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[65].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[65].owned": {
+      "valueClass": "numeric"
+    },
+    "data[65].listed": {
+      "valueClass": "numeric"
+    },
+    "data[65].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[65].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[66].region.uid": {
+      "valueClass": "id"
+    },
+    "data[66].region.name": {
+      "valueClass": "enum"
+    },
+    "data[66].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[66].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[66].owned": {
+      "valueClass": "numeric"
+    },
+    "data[66].listed": {
+      "valueClass": "numeric"
+    },
+    "data[66].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[66].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[67].region.uid": {
+      "valueClass": "id"
+    },
+    "data[67].region.name": {
+      "valueClass": "enum"
+    },
+    "data[67].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[67].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[67].owned": {
+      "valueClass": "numeric"
+    },
+    "data[67].listed": {
+      "valueClass": "numeric"
+    },
+    "data[67].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[67].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[68].region.uid": {
+      "valueClass": "id"
+    },
+    "data[68].region.name": {
+      "valueClass": "enum"
+    },
+    "data[68].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[68].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[68].owned": {
+      "valueClass": "numeric"
+    },
+    "data[68].listed": {
+      "valueClass": "numeric"
+    },
+    "data[68].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[68].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[69].region.uid": {
+      "valueClass": "id"
+    },
+    "data[69].region.name": {
+      "valueClass": "enum"
+    },
+    "data[69].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[69].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[69].owned": {
+      "valueClass": "numeric"
+    },
+    "data[69].listed": {
+      "valueClass": "numeric"
+    },
+    "data[69].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[69].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[70].region.uid": {
+      "valueClass": "id"
+    },
+    "data[70].region.name": {
+      "valueClass": "enum"
+    },
+    "data[70].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[70].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[70].owned": {
+      "valueClass": "numeric"
+    },
+    "data[70].listed": {
+      "valueClass": "numeric"
+    },
+    "data[70].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[70].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[71].region.uid": {
+      "valueClass": "id"
+    },
+    "data[71].region.name": {
+      "valueClass": "enum"
+    },
+    "data[71].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[71].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[71].owned": {
+      "valueClass": "numeric"
+    },
+    "data[71].listed": {
+      "valueClass": "numeric"
+    },
+    "data[71].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[71].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[72].region.uid": {
+      "valueClass": "id"
+    },
+    "data[72].region.name": {
+      "valueClass": "enum"
+    },
+    "data[72].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[72].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[72].owned": {
+      "valueClass": "numeric"
+    },
+    "data[72].listed": {
+      "valueClass": "numeric"
+    },
+    "data[72].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[72].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[73].region.uid": {
+      "valueClass": "id"
+    },
+    "data[73].region.name": {
+      "valueClass": "enum"
+    },
+    "data[73].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[73].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[73].owned": {
+      "valueClass": "numeric"
+    },
+    "data[73].listed": {
+      "valueClass": "numeric"
+    },
+    "data[73].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[73].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[74].region.uid": {
+      "valueClass": "id"
+    },
+    "data[74].region.name": {
+      "valueClass": "enum"
+    },
+    "data[74].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[74].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[74].owned": {
+      "valueClass": "numeric"
+    },
+    "data[74].listed": {
+      "valueClass": "numeric"
+    },
+    "data[74].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[74].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[75].region.uid": {
+      "valueClass": "id"
+    },
+    "data[75].region.name": {
+      "valueClass": "enum"
+    },
+    "data[75].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[75].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[75].owned": {
+      "valueClass": "numeric"
+    },
+    "data[75].listed": {
+      "valueClass": "numeric"
+    },
+    "data[75].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[75].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[76].region.uid": {
+      "valueClass": "id"
+    },
+    "data[76].region.name": {
+      "valueClass": "enum"
+    },
+    "data[76].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[76].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[76].owned": {
+      "valueClass": "numeric"
+    },
+    "data[76].listed": {
+      "valueClass": "numeric"
+    },
+    "data[76].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[76].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[77].region.uid": {
+      "valueClass": "id"
+    },
+    "data[77].region.name": {
+      "valueClass": "enum"
+    },
+    "data[77].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[77].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[77].owned": {
+      "valueClass": "numeric"
+    },
+    "data[77].listed": {
+      "valueClass": "numeric"
+    },
+    "data[77].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[77].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[78].region.uid": {
+      "valueClass": "id"
+    },
+    "data[78].region.name": {
+      "valueClass": "enum"
+    },
+    "data[78].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[78].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[78].owned": {
+      "valueClass": "numeric"
+    },
+    "data[78].listed": {
+      "valueClass": "numeric"
+    },
+    "data[78].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[78].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[79].region.uid": {
+      "valueClass": "id"
+    },
+    "data[79].region.name": {
+      "valueClass": "enum"
+    },
+    "data[79].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[79].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[79].owned": {
+      "valueClass": "numeric"
+    },
+    "data[79].listed": {
+      "valueClass": "numeric"
+    },
+    "data[79].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[79].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[80].region.uid": {
+      "valueClass": "id"
+    },
+    "data[80].region.name": {
+      "valueClass": "enum"
+    },
+    "data[80].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[80].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[80].owned": {
+      "valueClass": "numeric"
+    },
+    "data[80].listed": {
+      "valueClass": "numeric"
+    },
+    "data[80].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[80].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[81].region.uid": {
+      "valueClass": "id"
+    },
+    "data[81].region.name": {
+      "valueClass": "enum"
+    },
+    "data[81].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[81].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[81].owned": {
+      "valueClass": "numeric"
+    },
+    "data[81].listed": {
+      "valueClass": "numeric"
+    },
+    "data[81].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[81].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[82].region.uid": {
+      "valueClass": "id"
+    },
+    "data[82].region.name": {
+      "valueClass": "enum"
+    },
+    "data[82].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[82].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[82].owned": {
+      "valueClass": "numeric"
+    },
+    "data[82].listed": {
+      "valueClass": "numeric"
+    },
+    "data[82].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[82].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[83].region.uid": {
+      "valueClass": "id"
+    },
+    "data[83].region.name": {
+      "valueClass": "enum"
+    },
+    "data[83].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[83].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[83].owned": {
+      "valueClass": "numeric"
+    },
+    "data[83].listed": {
+      "valueClass": "numeric"
+    },
+    "data[83].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[83].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[84].region.uid": {
+      "valueClass": "id"
+    },
+    "data[84].region.name": {
+      "valueClass": "enum"
+    },
+    "data[84].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[84].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[84].owned": {
+      "valueClass": "numeric"
+    },
+    "data[84].listed": {
+      "valueClass": "numeric"
+    },
+    "data[84].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[84].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[85].region.uid": {
+      "valueClass": "id"
+    },
+    "data[85].region.name": {
+      "valueClass": "enum"
+    },
+    "data[85].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[85].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[85].owned": {
+      "valueClass": "numeric"
+    },
+    "data[85].listed": {
+      "valueClass": "numeric"
+    },
+    "data[85].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[85].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[86].region.uid": {
+      "valueClass": "id"
+    },
+    "data[86].region.name": {
+      "valueClass": "enum"
+    },
+    "data[86].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[86].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[86].owned": {
+      "valueClass": "numeric"
+    },
+    "data[86].listed": {
+      "valueClass": "numeric"
+    },
+    "data[86].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[86].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[87].region.uid": {
+      "valueClass": "id"
+    },
+    "data[87].region.name": {
+      "valueClass": "enum"
+    },
+    "data[87].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[87].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[87].owned": {
+      "valueClass": "numeric"
+    },
+    "data[87].listed": {
+      "valueClass": "numeric"
+    },
+    "data[87].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[87].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[88].region.uid": {
+      "valueClass": "id"
+    },
+    "data[88].region.name": {
+      "valueClass": "enum"
+    },
+    "data[88].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[88].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[88].owned": {
+      "valueClass": "numeric"
+    },
+    "data[88].listed": {
+      "valueClass": "numeric"
+    },
+    "data[88].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[88].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[89].region.uid": {
+      "valueClass": "id"
+    },
+    "data[89].region.name": {
+      "valueClass": "enum"
+    },
+    "data[89].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[89].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[89].owned": {
+      "valueClass": "numeric"
+    },
+    "data[89].listed": {
+      "valueClass": "numeric"
+    },
+    "data[89].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[89].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[90].region.uid": {
+      "valueClass": "id"
+    },
+    "data[90].region.name": {
+      "valueClass": "enum"
+    },
+    "data[90].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[90].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[90].owned": {
+      "valueClass": "numeric"
+    },
+    "data[90].listed": {
+      "valueClass": "numeric"
+    },
+    "data[90].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[90].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[91].region.uid": {
+      "valueClass": "id"
+    },
+    "data[91].region.name": {
+      "valueClass": "enum"
+    },
+    "data[91].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[91].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[91].owned": {
+      "valueClass": "numeric"
+    },
+    "data[91].listed": {
+      "valueClass": "numeric"
+    },
+    "data[91].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[91].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[92].region.uid": {
+      "valueClass": "id"
+    },
+    "data[92].region.name": {
+      "valueClass": "enum"
+    },
+    "data[92].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[92].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[92].owned": {
+      "valueClass": "numeric"
+    },
+    "data[92].listed": {
+      "valueClass": "numeric"
+    },
+    "data[92].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[92].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[93].region.uid": {
+      "valueClass": "id"
+    },
+    "data[93].region.name": {
+      "valueClass": "enum"
+    },
+    "data[93].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[93].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[93].owned": {
+      "valueClass": "numeric"
+    },
+    "data[93].listed": {
+      "valueClass": "numeric"
+    },
+    "data[93].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[93].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[94].region.uid": {
+      "valueClass": "id"
+    },
+    "data[94].region.name": {
+      "valueClass": "enum"
+    },
+    "data[94].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[94].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[94].owned": {
+      "valueClass": "numeric"
+    },
+    "data[94].listed": {
+      "valueClass": "numeric"
+    },
+    "data[94].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[94].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[95].region.uid": {
+      "valueClass": "id"
+    },
+    "data[95].region.name": {
+      "valueClass": "enum"
+    },
+    "data[95].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[95].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[95].owned": {
+      "valueClass": "numeric"
+    },
+    "data[95].listed": {
+      "valueClass": "numeric"
+    },
+    "data[95].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[95].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[96].region.uid": {
+      "valueClass": "id"
+    },
+    "data[96].region.name": {
+      "valueClass": "enum"
+    },
+    "data[96].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[96].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[96].owned": {
+      "valueClass": "numeric"
+    },
+    "data[96].listed": {
+      "valueClass": "numeric"
+    },
+    "data[96].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[96].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[97].region.uid": {
+      "valueClass": "id"
+    },
+    "data[97].region.name": {
+      "valueClass": "enum"
+    },
+    "data[97].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[97].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[97].owned": {
+      "valueClass": "numeric"
+    },
+    "data[97].listed": {
+      "valueClass": "numeric"
+    },
+    "data[97].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[97].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[98].region.uid": {
+      "valueClass": "id"
+    },
+    "data[98].region.name": {
+      "valueClass": "enum"
+    },
+    "data[98].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[98].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[98].owned": {
+      "valueClass": "numeric"
+    },
+    "data[98].listed": {
+      "valueClass": "numeric"
+    },
+    "data[98].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[98].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[99].region.uid": {
+      "valueClass": "id"
+    },
+    "data[99].region.name": {
+      "valueClass": "enum"
+    },
+    "data[99].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[99].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[99].owned": {
+      "valueClass": "numeric"
+    },
+    "data[99].listed": {
+      "valueClass": "numeric"
+    },
+    "data[99].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[99].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[100].region.uid": {
+      "valueClass": "id"
+    },
+    "data[100].region.name": {
+      "valueClass": "enum"
+    },
+    "data[100].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[100].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[100].owned": {
+      "valueClass": "numeric"
+    },
+    "data[100].listed": {
+      "valueClass": "numeric"
+    },
+    "data[100].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[100].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[101].region.uid": {
+      "valueClass": "id"
+    },
+    "data[101].region.name": {
+      "valueClass": "enum"
+    },
+    "data[101].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[101].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[101].owned": {
+      "valueClass": "numeric"
+    },
+    "data[101].listed": {
+      "valueClass": "numeric"
+    },
+    "data[101].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[101].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[102].region.uid": {
+      "valueClass": "id"
+    },
+    "data[102].region.name": {
+      "valueClass": "enum"
+    },
+    "data[102].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[102].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[102].owned": {
+      "valueClass": "numeric"
+    },
+    "data[102].listed": {
+      "valueClass": "numeric"
+    },
+    "data[102].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[102].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[103].region.uid": {
+      "valueClass": "id"
+    },
+    "data[103].region.name": {
+      "valueClass": "enum"
+    },
+    "data[103].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[103].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[103].owned": {
+      "valueClass": "numeric"
+    },
+    "data[103].listed": {
+      "valueClass": "numeric"
+    },
+    "data[103].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[103].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[104].region.uid": {
+      "valueClass": "id"
+    },
+    "data[104].region.name": {
+      "valueClass": "enum"
+    },
+    "data[104].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[104].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[104].owned": {
+      "valueClass": "numeric"
+    },
+    "data[104].listed": {
+      "valueClass": "numeric"
+    },
+    "data[104].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[104].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[105].region.uid": {
+      "valueClass": "id"
+    },
+    "data[105].region.name": {
+      "valueClass": "enum"
+    },
+    "data[105].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[105].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[105].owned": {
+      "valueClass": "numeric"
+    },
+    "data[105].listed": {
+      "valueClass": "numeric"
+    },
+    "data[105].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[105].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[106].region.uid": {
+      "valueClass": "id"
+    },
+    "data[106].region.name": {
+      "valueClass": "enum"
+    },
+    "data[106].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[106].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[106].owned": {
+      "valueClass": "numeric"
+    },
+    "data[106].listed": {
+      "valueClass": "numeric"
+    },
+    "data[106].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[106].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[107].region.uid": {
+      "valueClass": "id"
+    },
+    "data[107].region.name": {
+      "valueClass": "enum"
+    },
+    "data[107].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[107].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[107].owned": {
+      "valueClass": "numeric"
+    },
+    "data[107].listed": {
+      "valueClass": "numeric"
+    },
+    "data[107].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[107].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[108].region.uid": {
+      "valueClass": "id"
+    },
+    "data[108].region.name": {
+      "valueClass": "enum"
+    },
+    "data[108].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[108].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[108].owned": {
+      "valueClass": "numeric"
+    },
+    "data[108].listed": {
+      "valueClass": "numeric"
+    },
+    "data[108].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[108].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[109].region.uid": {
+      "valueClass": "id"
+    },
+    "data[109].region.name": {
+      "valueClass": "enum"
+    },
+    "data[109].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[109].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[109].owned": {
+      "valueClass": "numeric"
+    },
+    "data[109].listed": {
+      "valueClass": "numeric"
+    },
+    "data[109].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[109].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[110].region.uid": {
+      "valueClass": "id"
+    },
+    "data[110].region.name": {
+      "valueClass": "enum"
+    },
+    "data[110].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[110].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[110].owned": {
+      "valueClass": "numeric"
+    },
+    "data[110].listed": {
+      "valueClass": "numeric"
+    },
+    "data[110].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[110].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[111].region.uid": {
+      "valueClass": "id"
+    },
+    "data[111].region.name": {
+      "valueClass": "enum"
+    },
+    "data[111].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[111].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[111].owned": {
+      "valueClass": "numeric"
+    },
+    "data[111].listed": {
+      "valueClass": "numeric"
+    },
+    "data[111].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[111].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[112].region.uid": {
+      "valueClass": "id"
+    },
+    "data[112].region.name": {
+      "valueClass": "enum"
+    },
+    "data[112].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[112].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[112].owned": {
+      "valueClass": "numeric"
+    },
+    "data[112].listed": {
+      "valueClass": "numeric"
+    },
+    "data[112].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[112].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[113].region.uid": {
+      "valueClass": "id"
+    },
+    "data[113].region.name": {
+      "valueClass": "enum"
+    },
+    "data[113].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[113].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[113].owned": {
+      "valueClass": "numeric"
+    },
+    "data[113].listed": {
+      "valueClass": "numeric"
+    },
+    "data[113].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[113].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[114].region.uid": {
+      "valueClass": "id"
+    },
+    "data[114].region.name": {
+      "valueClass": "enum"
+    },
+    "data[114].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[114].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[114].owned": {
+      "valueClass": "numeric"
+    },
+    "data[114].listed": {
+      "valueClass": "numeric"
+    },
+    "data[114].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[114].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[115].region.uid": {
+      "valueClass": "id"
+    },
+    "data[115].region.name": {
+      "valueClass": "enum"
+    },
+    "data[115].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[115].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[115].owned": {
+      "valueClass": "numeric"
+    },
+    "data[115].listed": {
+      "valueClass": "numeric"
+    },
+    "data[115].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[115].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[116].region.uid": {
+      "valueClass": "id"
+    },
+    "data[116].region.name": {
+      "valueClass": "enum"
+    },
+    "data[116].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[116].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[116].owned": {
+      "valueClass": "numeric"
+    },
+    "data[116].listed": {
+      "valueClass": "numeric"
+    },
+    "data[116].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[116].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[117].region.uid": {
+      "valueClass": "id"
+    },
+    "data[117].region.name": {
+      "valueClass": "enum"
+    },
+    "data[117].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[117].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[117].owned": {
+      "valueClass": "numeric"
+    },
+    "data[117].listed": {
+      "valueClass": "numeric"
+    },
+    "data[117].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[117].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[118].region.uid": {
+      "valueClass": "id"
+    },
+    "data[118].region.name": {
+      "valueClass": "enum"
+    },
+    "data[118].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[118].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[118].owned": {
+      "valueClass": "numeric"
+    },
+    "data[118].listed": {
+      "valueClass": "numeric"
+    },
+    "data[118].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[118].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[119].region.uid": {
+      "valueClass": "id"
+    },
+    "data[119].region.name": {
+      "valueClass": "enum"
+    },
+    "data[119].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[119].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[119].owned": {
+      "valueClass": "numeric"
+    },
+    "data[119].listed": {
+      "valueClass": "numeric"
+    },
+    "data[119].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[119].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[120].region.uid": {
+      "valueClass": "id"
+    },
+    "data[120].region.name": {
+      "valueClass": "enum"
+    },
+    "data[120].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[120].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[120].owned": {
+      "valueClass": "numeric"
+    },
+    "data[120].listed": {
+      "valueClass": "numeric"
+    },
+    "data[120].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[120].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[121].region.uid": {
+      "valueClass": "id"
+    },
+    "data[121].region.name": {
+      "valueClass": "enum"
+    },
+    "data[121].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[121].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[121].owned": {
+      "valueClass": "numeric"
+    },
+    "data[121].listed": {
+      "valueClass": "numeric"
+    },
+    "data[121].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[121].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[122].region.uid": {
+      "valueClass": "id"
+    },
+    "data[122].region.name": {
+      "valueClass": "enum"
+    },
+    "data[122].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[122].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[122].owned": {
+      "valueClass": "numeric"
+    },
+    "data[122].listed": {
+      "valueClass": "numeric"
+    },
+    "data[122].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[122].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[123].region.uid": {
+      "valueClass": "id"
+    },
+    "data[123].region.name": {
+      "valueClass": "enum"
+    },
+    "data[123].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[123].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[123].owned": {
+      "valueClass": "numeric"
+    },
+    "data[123].listed": {
+      "valueClass": "numeric"
+    },
+    "data[123].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[123].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[124].region.uid": {
+      "valueClass": "id"
+    },
+    "data[124].region.name": {
+      "valueClass": "enum"
+    },
+    "data[124].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[124].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[124].owned": {
+      "valueClass": "numeric"
+    },
+    "data[124].listed": {
+      "valueClass": "numeric"
+    },
+    "data[124].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[124].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[125].region.uid": {
+      "valueClass": "id"
+    },
+    "data[125].region.name": {
+      "valueClass": "enum"
+    },
+    "data[125].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[125].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[125].owned": {
+      "valueClass": "numeric"
+    },
+    "data[125].listed": {
+      "valueClass": "numeric"
+    },
+    "data[125].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[125].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[126].region.uid": {
+      "valueClass": "id"
+    },
+    "data[126].region.name": {
+      "valueClass": "enum"
+    },
+    "data[126].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[126].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[126].owned": {
+      "valueClass": "numeric"
+    },
+    "data[126].listed": {
+      "valueClass": "numeric"
+    },
+    "data[126].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[126].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[127].region.uid": {
+      "valueClass": "id"
+    },
+    "data[127].region.name": {
+      "valueClass": "enum"
+    },
+    "data[127].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[127].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[127].owned": {
+      "valueClass": "numeric"
+    },
+    "data[127].listed": {
+      "valueClass": "numeric"
+    },
+    "data[127].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[127].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[128].region.uid": {
+      "valueClass": "id"
+    },
+    "data[128].region.name": {
+      "valueClass": "enum"
+    },
+    "data[128].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[128].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[128].owned": {
+      "valueClass": "numeric"
+    },
+    "data[128].listed": {
+      "valueClass": "numeric"
+    },
+    "data[128].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[128].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[129].region.uid": {
+      "valueClass": "id"
+    },
+    "data[129].region.name": {
+      "valueClass": "enum"
+    },
+    "data[129].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[129].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[129].owned": {
+      "valueClass": "numeric"
+    },
+    "data[129].listed": {
+      "valueClass": "numeric"
+    },
+    "data[129].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[129].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[130].region.uid": {
+      "valueClass": "id"
+    },
+    "data[130].region.name": {
+      "valueClass": "enum"
+    },
+    "data[130].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[130].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[130].owned": {
+      "valueClass": "numeric"
+    },
+    "data[130].listed": {
+      "valueClass": "numeric"
+    },
+    "data[130].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[130].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[131].region.uid": {
+      "valueClass": "id"
+    },
+    "data[131].region.name": {
+      "valueClass": "enum"
+    },
+    "data[131].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[131].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[131].owned": {
+      "valueClass": "numeric"
+    },
+    "data[131].listed": {
+      "valueClass": "numeric"
+    },
+    "data[131].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[131].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[132].region.uid": {
+      "valueClass": "id"
+    },
+    "data[132].region.name": {
+      "valueClass": "enum"
+    },
+    "data[132].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[132].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[132].owned": {
+      "valueClass": "numeric"
+    },
+    "data[132].listed": {
+      "valueClass": "numeric"
+    },
+    "data[132].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[132].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[133].region.uid": {
+      "valueClass": "id"
+    },
+    "data[133].region.name": {
+      "valueClass": "enum"
+    },
+    "data[133].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[133].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[133].owned": {
+      "valueClass": "numeric"
+    },
+    "data[133].listed": {
+      "valueClass": "numeric"
+    },
+    "data[133].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[133].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[134].region.uid": {
+      "valueClass": "id"
+    },
+    "data[134].region.name": {
+      "valueClass": "enum"
+    },
+    "data[134].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[134].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[134].owned": {
+      "valueClass": "numeric"
+    },
+    "data[134].listed": {
+      "valueClass": "numeric"
+    },
+    "data[134].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[134].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[135].region.uid": {
+      "valueClass": "id"
+    },
+    "data[135].region.name": {
+      "valueClass": "enum"
+    },
+    "data[135].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[135].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[135].owned": {
+      "valueClass": "numeric"
+    },
+    "data[135].listed": {
+      "valueClass": "numeric"
+    },
+    "data[135].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[135].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[136].region.uid": {
+      "valueClass": "id"
+    },
+    "data[136].region.name": {
+      "valueClass": "enum"
+    },
+    "data[136].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[136].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[136].owned": {
+      "valueClass": "numeric"
+    },
+    "data[136].listed": {
+      "valueClass": "numeric"
+    },
+    "data[136].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[136].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[137].region.uid": {
+      "valueClass": "id"
+    },
+    "data[137].region.name": {
+      "valueClass": "enum"
+    },
+    "data[137].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[137].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[137].owned": {
+      "valueClass": "numeric"
+    },
+    "data[137].listed": {
+      "valueClass": "numeric"
+    },
+    "data[137].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[137].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[138].region.uid": {
+      "valueClass": "id"
+    },
+    "data[138].region.name": {
+      "valueClass": "enum"
+    },
+    "data[138].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[138].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[138].owned": {
+      "valueClass": "numeric"
+    },
+    "data[138].listed": {
+      "valueClass": "numeric"
+    },
+    "data[138].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[138].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[139].region.uid": {
+      "valueClass": "id"
+    },
+    "data[139].region.name": {
+      "valueClass": "enum"
+    },
+    "data[139].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[139].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[139].owned": {
+      "valueClass": "numeric"
+    },
+    "data[139].listed": {
+      "valueClass": "numeric"
+    },
+    "data[139].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[139].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[140].region.uid": {
+      "valueClass": "id"
+    },
+    "data[140].region.name": {
+      "valueClass": "enum"
+    },
+    "data[140].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[140].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[140].owned": {
+      "valueClass": "numeric"
+    },
+    "data[140].listed": {
+      "valueClass": "numeric"
+    },
+    "data[140].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[140].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[141].region.uid": {
+      "valueClass": "id"
+    },
+    "data[141].region.name": {
+      "valueClass": "enum"
+    },
+    "data[141].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[141].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[141].owned": {
+      "valueClass": "numeric"
+    },
+    "data[141].listed": {
+      "valueClass": "numeric"
+    },
+    "data[141].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[141].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[142].region.uid": {
+      "valueClass": "id"
+    },
+    "data[142].region.name": {
+      "valueClass": "enum"
+    },
+    "data[142].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[142].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[142].owned": {
+      "valueClass": "numeric"
+    },
+    "data[142].listed": {
+      "valueClass": "numeric"
+    },
+    "data[142].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[142].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[143].region.uid": {
+      "valueClass": "id"
+    },
+    "data[143].region.name": {
+      "valueClass": "enum"
+    },
+    "data[143].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[143].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[143].owned": {
+      "valueClass": "numeric"
+    },
+    "data[143].listed": {
+      "valueClass": "numeric"
+    },
+    "data[143].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[143].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[144].region.uid": {
+      "valueClass": "id"
+    },
+    "data[144].region.name": {
+      "valueClass": "enum"
+    },
+    "data[144].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[144].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[144].owned": {
+      "valueClass": "numeric"
+    },
+    "data[144].listed": {
+      "valueClass": "numeric"
+    },
+    "data[144].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[144].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[145].region.uid": {
+      "valueClass": "id"
+    },
+    "data[145].region.name": {
+      "valueClass": "enum"
+    },
+    "data[145].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[145].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[145].owned": {
+      "valueClass": "numeric"
+    },
+    "data[145].listed": {
+      "valueClass": "numeric"
+    },
+    "data[145].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[145].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[146].region.uid": {
+      "valueClass": "id"
+    },
+    "data[146].region.name": {
+      "valueClass": "enum"
+    },
+    "data[146].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[146].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[146].owned": {
+      "valueClass": "numeric"
+    },
+    "data[146].listed": {
+      "valueClass": "numeric"
+    },
+    "data[146].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[146].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[147].region.uid": {
+      "valueClass": "id"
+    },
+    "data[147].region.name": {
+      "valueClass": "enum"
+    },
+    "data[147].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[147].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[147].owned": {
+      "valueClass": "numeric"
+    },
+    "data[147].listed": {
+      "valueClass": "numeric"
+    },
+    "data[147].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[147].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[148].region.uid": {
+      "valueClass": "id"
+    },
+    "data[148].region.name": {
+      "valueClass": "enum"
+    },
+    "data[148].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[148].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[148].owned": {
+      "valueClass": "numeric"
+    },
+    "data[148].listed": {
+      "valueClass": "numeric"
+    },
+    "data[148].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[148].dec_stake": {
+      "valueClass": "numeric"
+    },
+    "data[149].region.uid": {
+      "valueClass": "id"
+    },
+    "data[149].region.name": {
+      "valueClass": "enum"
+    },
+    "data[149].region.region_number": {
+      "valueClass": "numeric"
+    },
+    "data[149].for_sale": {
+      "valueClass": "numeric"
+    },
+    "data[149].owned": {
+      "valueClass": "numeric"
+    },
+    "data[149].listed": {
+      "valueClass": "numeric"
+    },
+    "data[149].min_price": {
+      "valueClass": "numeric"
+    },
+    "data[149].dec_stake": {
+      "valueClass": "numeric"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "region": {
+        "uid": "PR-PNW-1",
+        "name": "Viritas",
+        "region_number": 1
+      },
+      "for_sale": 40,
+      "owned": 182,
+      "listed": 0,
+      "min_price": 15,
+      "dec_stake": 8005321
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-2",
+        "name": "Tresgaard",
+        "region_number": 2
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-3",
+        "name": "Wyvernshire",
+        "region_number": 3
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-4",
+        "name": "Balchilven",
+        "region_number": 4
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-5",
+        "name": "Ickledown",
+        "region_number": 5
+      },
+      "for_sale": 6,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 11,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-6",
+        "name": "Jadestone",
+        "region_number": 6
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-7",
+        "name": "Osburg",
+        "region_number": 7
+      },
+      "for_sale": 36,
+      "owned": 17,
+      "listed": 0,
+      "min_price": 12,
+      "dec_stake": 844546
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-8",
+        "name": "Saragar",
+        "region_number": 8
+      },
+      "for_sale": 24,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 12,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-9",
+        "name": "Quegmoor",
+        "region_number": 9
+      },
+      "for_sale": 15,
+      "owned": 39,
+      "listed": 0,
+      "min_price": 14,
+      "dec_stake": 1608500
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-10",
+        "name": "Highmoor",
+        "region_number": 10
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-11",
+        "name": "Weard",
+        "region_number": 11
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-12",
+        "name": "Gillith",
+        "region_number": 12
+      },
+      "for_sale": 103,
+      "owned": 4,
+      "listed": 0,
+      "min_price": 9,
+      "dec_stake": 135000
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-13",
+        "name": "Asten",
+        "region_number": 13
+      },
+      "for_sale": 23,
+      "owned": 3,
+      "listed": 0,
+      "min_price": 14,
+      "dec_stake": 150000
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-14",
+        "name": "Harkden",
+        "region_number": 14
+      },
+      "for_sale": 41,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 15,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-15",
+        "name": "Kelworthania",
+        "region_number": 15
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-16",
+        "name": "Xustrucia",
+        "region_number": 16
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-17",
+        "name": "Yorric Dale",
+        "region_number": 17
+      },
+      "for_sale": 30,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 23,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-18",
+        "name": "Uprine",
+        "region_number": 18
+      },
+      "for_sale": 42,
+      "owned": 9,
+      "listed": 0,
+      "min_price": 10,
+      "dec_stake": 353375
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-19",
+        "name": "Thistledon",
+        "region_number": 19
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-PNW-20",
+        "name": "Lumleigh",
+        "region_number": 20
+      },
+      "for_sale": 20,
+      "owned": 4,
+      "listed": 0,
+      "min_price": 50,
+      "dec_stake": 191000
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-21",
+        "name": "Hollowborne",
+        "region_number": 21
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-22",
+        "name": "Celestine",
+        "region_number": 22
+      },
+      "for_sale": 28,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 9.989,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-23",
+        "name": "Baxdon",
+        "region_number": 23
+      },
+      "for_sale": 7,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 13,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-24",
+        "name": "Novus Sol",
+        "region_number": 24
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-25",
+        "name": "Bastionfel",
+        "region_number": 25
+      },
+      "for_sale": 20,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 45,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-26",
+        "name": "Torensguard",
+        "region_number": 26
+      },
+      "for_sale": 15,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 45,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-27",
+        "name": "Tashuna",
+        "region_number": 27
+      },
+      "for_sale": 47,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 9,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-28",
+        "name": "Briarwood",
+        "region_number": 28
+      },
+      "for_sale": 142,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 12,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-29",
+        "name": "Kinpath",
+        "region_number": 29
+      },
+      "for_sale": 55,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 29,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-30",
+        "name": "Ventian",
+        "region_number": 30
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-31",
+        "name": "El Telria",
+        "region_number": 31
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-32",
+        "name": "Zelria",
+        "region_number": 32
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-33",
+        "name": "Abadonia",
+        "region_number": 33
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-34",
+        "name": "Janistan",
+        "region_number": 34
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-35",
+        "name": "Solvera",
+        "region_number": 35
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-36",
+        "name": "Talopolis",
+        "region_number": 36
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-37",
+        "name": "Wildcall",
+        "region_number": 37
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-38",
+        "name": "Laera",
+        "region_number": 38
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-39",
+        "name": "Hearthen",
+        "region_number": 39
+      },
+      "for_sale": 1,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 950,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-40",
+        "name": "Rutherford",
+        "region_number": 40
+      },
+      "for_sale": 12,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 25,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-BRL-41",
+        "name": "Pandon Reach",
+        "region_number": 41
+      },
+      "for_sale": 15,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 10,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-42",
+        "name": "Gentry Heights",
+        "region_number": 42
+      },
+      "for_sale": 41,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 20,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-43",
+        "name": "Ros de Dell",
+        "region_number": 43
+      },
+      "for_sale": 8,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 36,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-44",
+        "name": "Tidings",
+        "region_number": 44
+      },
+      "for_sale": 64,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 12,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-45",
+        "name": "D'ettore",
+        "region_number": 45
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-46",
+        "name": "Thalos",
+        "region_number": 46
+      },
+      "for_sale": 25,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 11,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-47",
+        "name": "Rason Detiir",
+        "region_number": 47
+      },
+      "for_sale": 15,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 25,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-48",
+        "name": "Tridale",
+        "region_number": 48
+      },
+      "for_sale": 45,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 15,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-49",
+        "name": "Aldremis",
+        "region_number": 49
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-50",
+        "name": "Ia'telda",
+        "region_number": 50
+      },
+      "for_sale": 17,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 20,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-51",
+        "name": "Ritrough",
+        "region_number": 51
+      },
+      "for_sale": 15,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 29.95,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-52",
+        "name": "Maritria",
+        "region_number": 52
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-53",
+        "name": "Althainia",
+        "region_number": 53
+      },
+      "for_sale": 22,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 12.5,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-54",
+        "name": "Urcht Dire",
+        "region_number": 54
+      },
+      "for_sale": 54,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 19.499,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-55",
+        "name": "Ollistock",
+        "region_number": 55
+      },
+      "for_sale": 2,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 23,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-56",
+        "name": "Vonburg",
+        "region_number": 56
+      },
+      "for_sale": 1,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 24.99,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-57",
+        "name": "Edril",
+        "region_number": 57
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-58",
+        "name": "Moonfall",
+        "region_number": 58
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-59",
+        "name": "Lunaden",
+        "region_number": 59
+      },
+      "for_sale": 15,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 28,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-60",
+        "name": "Trauton",
+        "region_number": 60
+      },
+      "for_sale": 105,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 49,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-61",
+        "name": "Wethen Chapel",
+        "region_number": 61
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-62",
+        "name": "Thece",
+        "region_number": 62
+      },
+      "for_sale": 63,
+      "owned": 17,
+      "listed": 0,
+      "min_price": 12,
+      "dec_stake": 779000
+    },
+    {
+      "region": {
+        "uid": "PR-LOP-63",
+        "name": "Champlain",
+        "region_number": 63
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-64",
+        "name": "Malrose",
+        "region_number": 64
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-65",
+        "name": "Mandar Camden",
+        "region_number": 65
+      },
+      "for_sale": 115,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 8.5,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-66",
+        "name": "Nav'stok",
+        "region_number": 66
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-67",
+        "name": "Stonefall",
+        "region_number": 67
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-68",
+        "name": "Ta los",
+        "region_number": 68
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-69",
+        "name": "Val de Lun",
+        "region_number": 69
+      },
+      "for_sale": 14,
+      "owned": 1,
+      "listed": 0,
+      "min_price": 19.995,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-70",
+        "name": "Balabar",
+        "region_number": 70
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-71",
+        "name": "Kalita",
+        "region_number": 71
+      },
+      "for_sale": 6,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 50,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-72",
+        "name": "Whittacer",
+        "region_number": 72
+      },
+      "for_sale": 11,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 27,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-73",
+        "name": "Hacrax",
+        "region_number": 73
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-74",
+        "name": "Mors Deep",
+        "region_number": 74
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-75",
+        "name": "Azerc Mizrek",
+        "region_number": 75
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-76",
+        "name": "Asgersan",
+        "region_number": 76
+      },
+      "for_sale": 4,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 160,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-77",
+        "name": "Darkmooth",
+        "region_number": 77
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-78",
+        "name": "Dunbright",
+        "region_number": 78
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-79",
+        "name": "Westerbrau",
+        "region_number": 79
+      },
+      "for_sale": 16,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 41.95,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-80",
+        "name": "Findell",
+        "region_number": 80
+      },
+      "for_sale": 4,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 20,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-81",
+        "name": "Dorthan Dell",
+        "region_number": 81
+      },
+      "for_sale": 95,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 10.5,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-82",
+        "name": "Khang'wei",
+        "region_number": 82
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-83",
+        "name": "Shijan",
+        "region_number": 83
+      },
+      "for_sale": 32,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 24,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-84",
+        "name": "Xo Zhang",
+        "region_number": 84
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-CEF-85",
+        "name": "Xiang Pho",
+        "region_number": 85
+      },
+      "for_sale": 329,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 10,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-86",
+        "name": "Felixia",
+        "region_number": 86
+      },
+      "for_sale": 22,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 17,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-87",
+        "name": "Gattar",
+        "region_number": 87
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-88",
+        "name": "Barencroft",
+        "region_number": 88
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-89",
+        "name": "Shiredale",
+        "region_number": 89
+      },
+      "for_sale": 7,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 25,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-90",
+        "name": "Swubia",
+        "region_number": 90
+      },
+      "for_sale": 34,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 8.25,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-91",
+        "name": "Aaraview",
+        "region_number": 91
+      },
+      "for_sale": 5,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 74.949,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-92",
+        "name": "Zilac",
+        "region_number": 92
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-93",
+        "name": "Jamonji",
+        "region_number": 93
+      },
+      "for_sale": 51,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 12.5,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-94",
+        "name": "Shu Vho",
+        "region_number": 94
+      },
+      "for_sale": 25,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 12.5,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-95",
+        "name": "Afrijan",
+        "region_number": 95
+      },
+      "for_sale": 10,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 11.35,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-96",
+        "name": "Udrium",
+        "region_number": 96
+      },
+      "for_sale": 8,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 20,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-97",
+        "name": "Kairis",
+        "region_number": 97
+      },
+      "for_sale": 4,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 55,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-98",
+        "name": "Sonn",
+        "region_number": 98
+      },
+      "for_sale": 6,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 21,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-99",
+        "name": "Gorrondale",
+        "region_number": 99
+      },
+      "for_sale": 16,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 20,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-100",
+        "name": "Greathland",
+        "region_number": 100
+      },
+      "for_sale": 55,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 12.999,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-101",
+        "name": "Valens",
+        "region_number": 101
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-102",
+        "name": "Kithden",
+        "region_number": 102
+      },
+      "for_sale": 18,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 28,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-103",
+        "name": "Dennant",
+        "region_number": 103
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-104",
+        "name": "Cer Zann",
+        "region_number": 104
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-105",
+        "name": "Jostile",
+        "region_number": 105
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-WNE-106",
+        "name": "Almyst",
+        "region_number": 106
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-107",
+        "name": "Ganth",
+        "region_number": 107
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-108",
+        "name": "Sheyton",
+        "region_number": 108
+      },
+      "for_sale": 7,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 14,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-109",
+        "name": "Penduline Mir",
+        "region_number": 109
+      },
+      "for_sale": 7,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 20,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-110",
+        "name": "Galeshire",
+        "region_number": 110
+      },
+      "for_sale": 19,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 20,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-111",
+        "name": "Ecclestone",
+        "region_number": 111
+      },
+      "for_sale": 16,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 10,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-112",
+        "name": "Warken Reeve",
+        "region_number": 112
+      },
+      "for_sale": 25,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 15,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-113",
+        "name": "Kesmire",
+        "region_number": 113
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-114",
+        "name": "Tostrington",
+        "region_number": 114
+      },
+      "for_sale": 17,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 30,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-115",
+        "name": "Pembrook",
+        "region_number": 115
+      },
+      "for_sale": 11,
+      "owned": 3,
+      "listed": 0,
+      "min_price": 16,
+      "dec_stake": 150000
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-116",
+        "name": "Sorenview",
+        "region_number": 116
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-117",
+        "name": "Rustdale",
+        "region_number": 117
+      },
+      "for_sale": 17,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 26,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-118",
+        "name": "Everfall",
+        "region_number": 118
+      },
+      "for_sale": 4,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 12.5,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-119",
+        "name": "Lonshire",
+        "region_number": 119
+      },
+      "for_sale": 21,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 13,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-120",
+        "name": "Bredaine",
+        "region_number": 120
+      },
+      "for_sale": 15,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 13.5,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-121",
+        "name": "Hamford",
+        "region_number": 121
+      },
+      "for_sale": 13,
+      "owned": 12,
+      "listed": 0,
+      "min_price": 64,
+      "dec_stake": 551406
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-122",
+        "name": "Freemont",
+        "region_number": 122
+      },
+      "for_sale": 3,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 14,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-123",
+        "name": "Bakerdire",
+        "region_number": 123
+      },
+      "for_sale": 73,
+      "owned": 6,
+      "listed": 0,
+      "min_price": 10.329,
+      "dec_stake": 50000
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-124",
+        "name": "Camarthen",
+        "region_number": 124
+      },
+      "for_sale": 57,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 50,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-125",
+        "name": "Oxborough",
+        "region_number": 125
+      },
+      "for_sale": 11,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 66,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-126",
+        "name": "Vexington",
+        "region_number": 126
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-127",
+        "name": "Hammerset",
+        "region_number": 127
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-GLL-128",
+        "name": "Sanctuary",
+        "region_number": 128
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-129",
+        "name": "Balewatch",
+        "region_number": 129
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-130",
+        "name": "Daggerdale",
+        "region_number": 130
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-131",
+        "name": "Ashland",
+        "region_number": 131
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-132",
+        "name": "Queenstone",
+        "region_number": 132
+      },
+      "for_sale": 36,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 24,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-133",
+        "name": "Ravenwood",
+        "region_number": 133
+      },
+      "for_sale": 35,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 10.329,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-134",
+        "name": "Smithen",
+        "region_number": 134
+      },
+      "for_sale": 21,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 10.329,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-135",
+        "name": "Hartshone",
+        "region_number": 135
+      },
+      "for_sale": 38,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 18,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-136",
+        "name": "Yumbra",
+        "region_number": 136
+      },
+      "for_sale": 47,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 10,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-137",
+        "name": "Goresong",
+        "region_number": 137
+      },
+      "for_sale": 33,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 15,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-138",
+        "name": "Shadowvale",
+        "region_number": 138
+      },
+      "for_sale": 35,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 28.79,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-139",
+        "name": "Virren",
+        "region_number": 139
+      },
+      "for_sale": 76,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 20,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-140",
+        "name": "Doom Edin",
+        "region_number": 140
+      },
+      "for_sale": 27,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 12.5,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-141",
+        "name": "Glorhiel",
+        "region_number": 141
+      },
+      "for_sale": 6,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 29.994,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-142",
+        "name": "Gillan Dol",
+        "region_number": 142
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-143",
+        "name": "Dryae Tor",
+        "region_number": 143
+      },
+      "for_sale": 13,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 11,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-144",
+        "name": "Avvon",
+        "region_number": 144
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-145",
+        "name": "Kutrar",
+        "region_number": 145
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-146",
+        "name": "Leisin",
+        "region_number": 146
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-147",
+        "name": "Eboch Kor",
+        "region_number": 147
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-148",
+        "name": "Warglen",
+        "region_number": 148
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-149",
+        "name": "Morshavn",
+        "region_number": 149
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    },
+    {
+      "region": {
+        "uid": "PR-SHC-150",
+        "name": "Shireboro",
+        "region_number": 150
+      },
+      "for_sale": 0,
+      "owned": 0,
+      "listed": 0,
+      "min_price": 0,
+      "dec_stake": 0
+    }
+  ]
+}

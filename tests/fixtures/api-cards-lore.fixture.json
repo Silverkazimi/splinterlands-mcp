@@ -1,0 +1,9 @@
+{
+  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
+  "valueClasses": {
+    "card_detail_id": { "valueClass": "id" },
+    "text": { "valueClass": "freetext" }
+  },
+  "card_detail_id": 1,
+  "text": "Fixture lore text."
+}

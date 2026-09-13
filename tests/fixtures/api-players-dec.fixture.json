@@ -1,0 +1,54 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T07:48:34.840305+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/dec",
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+  },
+  "valueClasses": {
+    "body.dec.burned_cards": {
+      "valueClass": "numeric"
+    },
+    "body.dec.burn_event": {
+      "valueClass": "numeric"
+    },
+    "body.dec.inflation": {
+      "valueClass": "numeric"
+    },
+    "body.dec.market_burn_fee": {
+      "valueClass": "numeric"
+    },
+    "body.dec.market_list_fee": {
+      "valueClass": "numeric"
+    },
+    "body.dec.modern_inflation": {
+      "valueClass": "numeric"
+    },
+    "body.dec.rental_burn_fee": {
+      "valueClass": "numeric"
+    },
+    "body.dec.shop": {
+      "valueClass": "numeric"
+    },
+    "body.dec.token_rental_burn_fee": {
+      "valueClass": "numeric"
+    },
+    "body.dec.token_rental_fee": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "dec": {
+      "burned_cards": -1304612043.143,
+      "burn_event": 380759257.877,
+      "inflation": -2662118369.014,
+      "market_burn_fee": 432254742.887,
+      "market_list_fee": 57957010,
+      "modern_inflation": -31659016.055,
+      "rental_burn_fee": 20752734.357,
+      "shop": 3255160154.034,
+      "token_rental_burn_fee": 5333201.649,
+      "token_rental_fee": 862142
+    }
+  }
+}

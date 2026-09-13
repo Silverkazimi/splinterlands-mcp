@@ -1,0 +1,751 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-13T09:33:51.885844+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/collector/{player}/{binderRef}",
+    "captureScope": "Complete captured response without transformed values.",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.id": {
+      "valueClass": "id"
+    },
+    "body.data.player": {
+      "valueClass": "name"
+    },
+    "body.data.name": {
+      "valueClass": "freetext"
+    },
+    "body.data.slug": {
+      "valueClass": "id"
+    },
+    "body.data.displayIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pageCount": {
+      "valueClass": "numeric"
+    },
+    "body.data.cardCount": {
+      "valueClass": "numeric"
+    },
+    "body.data.lastSavedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data.coverCosmeticId": {
+      "valueClass": "id"
+    },
+    "body.data.ringStyle": {
+      "valueClass": "opaque"
+    },
+    "body.data.version": {
+      "valueClass": "numeric"
+    },
+    "body.data.unseenGiftCount": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].pageIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].pageType": {
+      "valueClass": "opaque"
+    },
+    "body.data.pages[0].slots[0].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[0].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].slots[0].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[1].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[1].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].slots[1].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[2].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[2].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].slots[2].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[3].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[3].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].slots[3].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[4].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[4].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].slots[4].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[5].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[5].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].slots[5].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[6].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[6].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].slots[6].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[7].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[7].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].slots[7].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[8].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[0].slots[8].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[0].slots[8].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].pageIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].pageType": {
+      "valueClass": "opaque"
+    },
+    "body.data.pages[1].slots[0].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[0].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].slots[0].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[1].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[1].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].slots[1].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[2].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[2].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].slots[2].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[3].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[3].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].slots[3].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[4].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[4].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].slots[4].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[5].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[5].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].slots[5].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[6].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[6].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].slots[6].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[7].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[7].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].slots[7].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[8].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[1].slots[8].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[1].slots[8].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].pageIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].pageType": {
+      "valueClass": "opaque"
+    },
+    "body.data.pages[2].slots[0].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[0].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].slots[0].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[1].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[1].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].slots[1].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[2].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[2].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].slots[2].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[3].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[3].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].slots[3].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[4].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[4].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].slots[4].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[5].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[5].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].slots[5].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[6].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[6].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].slots[6].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[7].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[7].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].slots[7].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[8].id": {
+      "valueClass": "id"
+    },
+    "body.data.pages[2].slots[8].slotIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.pages[2].slots[8].cardUid": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[0].id": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[0].itemUid": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[0].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[0].surface": {
+      "valueClass": "opaque"
+    },
+    "body.data.stickerPlacements[0].pageId": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[0].slotId": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[0].x": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[0].y": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[0].rotation": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[0].scale": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[0].zIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[0].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[0].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[0].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[0].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[0].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[0].cosmetic.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.stickerPlacements[0].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data.stickerPlacements[0].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.stickerPlacements[0].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[1].id": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[1].itemUid": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[1].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[1].surface": {
+      "valueClass": "opaque"
+    },
+    "body.data.stickerPlacements[1].pageId": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[1].slotId": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[1].x": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[1].y": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[1].rotation": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[1].scale": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[1].zIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[1].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[1].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[1].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[1].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[1].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[1].cosmetic.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.stickerPlacements[1].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data.stickerPlacements[1].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.stickerPlacements[1].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[2].id": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[2].itemUid": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[2].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[2].surface": {
+      "valueClass": "opaque"
+    },
+    "body.data.stickerPlacements[2].pageId": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[2].slotId": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[2].x": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[2].y": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[2].rotation": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[2].scale": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[2].zIndex": {
+      "valueClass": "numeric"
+    },
+    "body.data.stickerPlacements[2].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[2].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[2].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data.stickerPlacements[2].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[2].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data.stickerPlacements[2].cosmetic.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.stickerPlacements[2].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data.stickerPlacements[2].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.stickerPlacements[2].cosmetic.isPremium": {
+      "valueClass": "enum"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "id": "123",
+      "player": "sample-account-b",
+      "name": "Power Cards",
+      "slug": "power-cards",
+      "displayIndex": 0,
+      "pageCount": 3,
+      "cardCount": 27,
+      "lastSavedDate": "2026-07-07T19:22:02.715Z",
+      "coverCosmeticId": "22",
+      "ringStyle": "black",
+      "version": 43,
+      "unseenGiftCount": 0,
+      "pages": [
+        {
+          "id": "423",
+          "pageIndex": 0,
+          "pageType": "card_sleeve",
+          "slots": [
+            {
+              "id": "3799",
+              "slotIndex": 0,
+              "cardUid": "C2-635-70ELBFPKG0"
+            },
+            {
+              "id": "3800",
+              "slotIndex": 1,
+              "cardUid": "C2-633-W8WCVKBVPC"
+            },
+            {
+              "id": "3801",
+              "slotIndex": 2,
+              "cardUid": "C7-352-6SNKQ327WW"
+            },
+            {
+              "id": "3802",
+              "slotIndex": 3,
+              "cardUid": "C2-506-23WOZGGGM8"
+            },
+            {
+              "id": "3803",
+              "slotIndex": 4,
+              "cardUid": "G12-650-2Q1V330WV4"
+            },
+            {
+              "id": "3804",
+              "slotIndex": 5,
+              "cardUid": "C2-505-0000000083"
+            },
+            {
+              "id": "3805",
+              "slotIndex": 6,
+              "cardUid": "C8-497-NL7LYWAK8G"
+            },
+            {
+              "id": "3806",
+              "slotIndex": 7,
+              "cardUid": "C10-516-0R7UTG4TZK"
+            },
+            {
+              "id": "3807",
+              "slotIndex": 8,
+              "cardUid": "C8-474-0Z95TVLBA8"
+            }
+          ]
+        },
+        {
+          "id": "424",
+          "pageIndex": 1,
+          "pageType": "card_sleeve",
+          "slots": [
+            {
+              "id": "3808",
+              "slotIndex": 0,
+              "cardUid": "C7-509-0JGL1UXLY8"
+            },
+            {
+              "id": "3809",
+              "slotIndex": 1,
+              "cardUid": "C8-469-PONVP4EVU8"
+            },
+            {
+              "id": "3810",
+              "slotIndex": 2,
+              "cardUid": "C8-560-1SA9WUZSIO"
+            },
+            {
+              "id": "3811",
+              "slotIndex": 3,
+              "cardUid": "C10-529-DXC7W804E8"
+            },
+            {
+              "id": "3812",
+              "slotIndex": 4,
+              "cardUid": "C8-504-2D1RLO7IS0"
+            },
+            {
+              "id": "3813",
+              "slotIndex": 5,
+              "cardUid": "C8-479-1241R7J4LC"
+            },
+            {
+              "id": "3814",
+              "slotIndex": 6,
+              "cardUid": "C2-449-BTDXWBQ51S"
+            },
+            {
+              "id": "3815",
+              "slotIndex": 7,
+              "cardUid": "C8-492-01HWU4PG9C"
+            },
+            {
+              "id": "3816",
+              "slotIndex": 8,
+              "cardUid": "C7-450-1ORKZ9HL28"
+            }
+          ]
+        },
+        {
+          "id": "425",
+          "pageIndex": 2,
+          "pageType": "card_sleeve",
+          "slots": [
+            {
+              "id": "3817",
+              "slotIndex": 0,
+              "cardUid": "C7-554-46MV01ZHQO"
+            },
+            {
+              "id": "3818",
+              "slotIndex": 1,
+              "cardUid": "C2-493-03GAQT1KU8"
+            },
+            {
+              "id": "3819",
+              "slotIndex": 2,
+              "cardUid": "C7-442-2UC4ZXC4PS"
+            },
+            {
+              "id": "3820",
+              "slotIndex": 3,
+              "cardUid": "G10-540-GVEDQ67KPS"
+            },
+            {
+              "id": "3821",
+              "slotIndex": 4,
+              "cardUid": "G13-700-12NQ5WWAKG"
+            },
+            {
+              "id": "3822",
+              "slotIndex": 5,
+              "cardUid": "G13-684-3RFUAURZKW"
+            },
+            {
+              "id": "3823",
+              "slotIndex": 6,
+              "cardUid": "G13-668-5HUNNG6WM8"
+            },
+            {
+              "id": "3824",
+              "slotIndex": 7,
+              "cardUid": "C4-291-3JNYCH0S1S"
+            },
+            {
+              "id": "3825",
+              "slotIndex": 8,
+              "cardUid": "C5-259-0WCHBF7SLS"
+            }
+          ]
+        }
+      ],
+      "notes": [],
+      "stickerPlacements": [
+        {
+          "id": "93",
+          "itemUid": "I-583-e6e0af629c84",
+          "stickerUid": "I-583-e6e0af629c84",
+          "surface": "page",
+          "pageId": "423",
+          "slotId": null,
+          "x": 20.4064,
+          "y": 25.9764,
+          "rotation": -6,
+          "scale": 0.86,
+          "zIndex": 10,
+          "isSoulbound": true,
+          "isTradeable": false,
+          "isListed": false,
+          "cosmetic": {
+            "id": "50",
+            "key": "sticker_support_you_rock",
+            "type": "sticker",
+            "name": "You Rock",
+            "assetUrl": "collector/stickers/support/sticker-support-you-rock.webp",
+            "isPremium": false
+          }
+        },
+        {
+          "id": "94",
+          "itemUid": "I-584-1b04ec7f8124",
+          "stickerUid": "I-584-1b04ec7f8124",
+          "surface": "page",
+          "pageId": "425",
+          "slotId": null,
+          "x": 92,
+          "y": 57.0486,
+          "rotation": 6,
+          "scale": 0.82,
+          "zIndex": 10,
+          "isSoulbound": true,
+          "isTradeable": false,
+          "isListed": false,
+          "cosmetic": {
+            "id": "70",
+            "key": "anniversary_8_balloon",
+            "type": "sticker",
+            "name": "8th Anniversary Balloon",
+            "assetUrl": "collector/stickers/events/anniversary-8/sticker-anniversary-8-balloon.webp",
+            "isPremium": false
+          }
+        },
+        {
+          "id": "96",
+          "itemUid": "I-577-61263e33bef7",
+          "stickerUid": "I-577-61263e33bef7",
+          "surface": "binder_cover",
+          "pageId": null,
+          "slotId": null,
+          "x": 59.9472,
+          "y": 81.0582,
+          "rotation": -6,
+          "scale": 1,
+          "zIndex": 20,
+          "isSoulbound": true,
+          "isTradeable": false,
+          "isListed": false,
+          "cosmetic": {
+            "id": "55",
+            "key": "collector_year_joined_2022",
+            "type": "sticker",
+            "name": "Year Joined 2022",
+            "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-22_192.webp",
+            "isPremium": false
+          }
+        }
+      ],
+      "giftEvents": []
+    }
+  }
+}

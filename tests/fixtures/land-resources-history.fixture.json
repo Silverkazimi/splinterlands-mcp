@@ -1,0 +1,107 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-07T00:00:00Z",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].id": {
+      "valueClass": "id"
+    },
+    "data[0].region_number": {
+      "valueClass": "numeric"
+    },
+    "data[0].player": {
+      "valueClass": "name"
+    },
+    "data[0].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].end_balance": {
+      "valueClass": "numeric"
+    },
+    "data[0].operation_id": {
+      "valueClass": "id"
+    },
+    "data[0].resource_id": {
+      "valueClass": "id"
+    },
+    "data[0].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history": {
+      "valueClass": "opaque"
+    },
+    "data[0].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].id": {
+      "valueClass": "id"
+    },
+    "data[1].region_number": {
+      "valueClass": "numeric"
+    },
+    "data[1].player": {
+      "valueClass": "name"
+    },
+    "data[1].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].end_balance": {
+      "valueClass": "numeric"
+    },
+    "data[1].operation_id": {
+      "valueClass": "id"
+    },
+    "data[1].resource_id": {
+      "valueClass": "id"
+    },
+    "data[1].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history": {
+      "valueClass": "opaque"
+    },
+    "data[1].counterparty": {
+      "valueClass": "enum"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "id": 38696850,
+      "region_number": 1,
+      "player": "sample-account-b",
+      "amount": -6278.29,
+      "end_balance": 44447644.152,
+      "operation_id": 1,
+      "resource_id": 1,
+      "trx_id": "a5cc07d54c3f5b6e30bf120be7f672606cecb0a6",
+      "created_date": "2026-09-05T16:38:33.000Z",
+      "balance_history": [],
+      "counterparty": "$LAND_GRAIN_CONSUMED"
+    },
+    {
+      "id": 38696851,
+      "region_number": 1,
+      "player": "sample-account-b",
+      "amount": 15256.246,
+      "end_balance": 44462900.398,
+      "operation_id": 3,
+      "resource_id": 1,
+      "trx_id": "a5cc07d54c3f5b6e30bf120be7f672606cecb0a6",
+      "created_date": "2026-09-05T16:38:33.000Z",
+      "balance_history": [],
+      "counterparty": "$LAND_GRAIN_MINT"
+    }
+  ]
+}

@@ -1,0 +1,845 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T00:00:00Z",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].id": {
+      "valueClass": "id"
+    },
+    "data[0].region_number": {
+      "valueClass": "numeric"
+    },
+    "data[0].player": {
+      "valueClass": "name"
+    },
+    "data[0].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].end_balance": {
+      "valueClass": "numeric"
+    },
+    "data[0].operation_id": {
+      "valueClass": "id"
+    },
+    "data[0].resource_id": {
+      "valueClass": "id"
+    },
+    "data[0].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history": {
+      "valueClass": "opaque"
+    },
+    "data[0].balance_history[0].player": {
+      "valueClass": "name"
+    },
+    "data[0].balance_history[0].token": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[0].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[0].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[0].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[0].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[0].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].balance_history[0].type": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[0].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[0].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[1].player": {
+      "valueClass": "name"
+    },
+    "data[0].balance_history[1].token": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[1].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[1].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[1].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[1].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[1].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].balance_history[1].type": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[1].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[1].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[2].player": {
+      "valueClass": "name"
+    },
+    "data[0].balance_history[2].token": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[2].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[2].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[2].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[2].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[2].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].balance_history[2].type": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[2].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[2].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[3].player": {
+      "valueClass": "name"
+    },
+    "data[0].balance_history[3].token": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[3].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[3].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[3].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[3].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[3].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].balance_history[3].type": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[3].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[3].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[4].player": {
+      "valueClass": "name"
+    },
+    "data[0].balance_history[4].token": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[4].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[4].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[4].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[4].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[4].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].balance_history[4].type": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[4].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[4].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[5].player": {
+      "valueClass": "name"
+    },
+    "data[0].balance_history[5].token": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[5].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[5].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[5].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[5].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[5].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].balance_history[5].type": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[5].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[5].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[5].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[6].player": {
+      "valueClass": "name"
+    },
+    "data[0].balance_history[6].token": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[6].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[6].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[6].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[6].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[6].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].balance_history[6].type": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[6].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[6].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[6].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[7].player": {
+      "valueClass": "name"
+    },
+    "data[0].balance_history[7].token": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[7].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[7].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[7].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[7].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].balance_history[7].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].balance_history[7].type": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[7].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].balance_history[7].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[0].balance_history[7].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].id": {
+      "valueClass": "id"
+    },
+    "data[1].region_number": {
+      "valueClass": "numeric"
+    },
+    "data[1].player": {
+      "valueClass": "name"
+    },
+    "data[1].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].end_balance": {
+      "valueClass": "numeric"
+    },
+    "data[1].operation_id": {
+      "valueClass": "id"
+    },
+    "data[1].resource_id": {
+      "valueClass": "id"
+    },
+    "data[1].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history": {
+      "valueClass": "opaque"
+    },
+    "data[1].balance_history[0].player": {
+      "valueClass": "name"
+    },
+    "data[1].balance_history[0].token": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[0].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[0].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[0].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[0].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[0].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].balance_history[0].type": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[0].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[0].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[1].player": {
+      "valueClass": "name"
+    },
+    "data[1].balance_history[1].token": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[1].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[1].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[1].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[1].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[1].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].balance_history[1].type": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[1].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[1].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[2].player": {
+      "valueClass": "name"
+    },
+    "data[1].balance_history[2].token": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[2].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[2].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[2].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[2].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[2].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].balance_history[2].type": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[2].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[2].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[3].player": {
+      "valueClass": "name"
+    },
+    "data[1].balance_history[3].token": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[3].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[3].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[3].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[3].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[3].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].balance_history[3].type": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[3].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[3].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[4].player": {
+      "valueClass": "name"
+    },
+    "data[1].balance_history[4].token": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[4].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[4].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[4].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[4].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[4].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].balance_history[4].type": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[4].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[4].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[5].player": {
+      "valueClass": "name"
+    },
+    "data[1].balance_history[5].token": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[5].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[5].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[5].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[5].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[5].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].balance_history[5].type": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[5].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[5].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[5].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[6].player": {
+      "valueClass": "name"
+    },
+    "data[1].balance_history[6].token": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[6].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[6].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[6].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[6].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[6].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].balance_history[6].type": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[6].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[6].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[6].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[7].player": {
+      "valueClass": "name"
+    },
+    "data[1].balance_history[7].token": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[7].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[7].balance_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[7].balance_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[7].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].balance_history[7].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].balance_history[7].type": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[7].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].balance_history[7].counterparty": {
+      "valueClass": "enum"
+    },
+    "data[1].balance_history[7].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].counterparty": {
+      "valueClass": "enum"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "id": 38538180,
+      "region_number": 41,
+      "player": "sample-account-a",
+      "amount": 16332.706,
+      "end_balance": 551325.749,
+      "operation_id": 27,
+      "resource_id": 5,
+      "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+      "created_date": "2026-08-31T11:42:45.000Z",
+      "balance_history": [
+        {
+          "player": "$LAND_WOOD_MINT",
+          "token": "WOOD",
+          "amount": -16332.706,
+          "balance_start": -9671804455.785,
+          "balance_end": -9671820788.491,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_player_resource_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_PLAYER_SHARE_CLAIMED",
+          "last_update_date": "2026-08-31T11:42:48.761Z"
+        },
+        {
+          "player": "$LAND_PLAYER_SHARE_CLAIMED",
+          "token": "WOOD",
+          "amount": 16332.706,
+          "balance_start": 9211616999.218,
+          "balance_end": 9211633331.924,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_player_resource_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_WOOD_MINT",
+          "last_update_date": "2026-08-31T11:42:48.761Z"
+        },
+        {
+          "player": "$LAND_WOOD_MINT",
+          "token": "WOOD",
+          "amount": -655.123,
+          "balance_start": -9671820788.491,
+          "balance_end": -9671821443.614,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_uncaptured_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_TAXES_BURNED",
+          "last_update_date": "2026-08-31T11:42:48.761Z"
+        },
+        {
+          "player": "$LAND_TAXES_BURNED",
+          "token": "WOOD",
+          "amount": 655.123,
+          "balance_start": 436381827.205,
+          "balance_end": 436382482.328,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_uncaptured_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_WOOD_MINT",
+          "last_update_date": "2026-08-31T11:42:48.761Z"
+        },
+        {
+          "player": "$LAND_WOOD_MINT",
+          "token": "WOOD",
+          "amount": -350.246,
+          "balance_start": -9671821443.614,
+          "balance_end": -9671821793.86,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_resource_castle_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_REGION-41",
+          "last_update_date": "2026-08-31T11:42:48.764Z"
+        },
+        {
+          "player": "$LAND_REGION-41",
+          "token": "WOOD",
+          "amount": 350.246,
+          "balance_start": 10823.251,
+          "balance_end": 11173.497,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_resource_castle_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_WOOD_MINT",
+          "last_update_date": "2026-08-31T11:42:48.764Z"
+        },
+        {
+          "player": "$LAND_WOOD_MINT",
+          "token": "WOOD",
+          "amount": -809.376,
+          "balance_start": -9671821793.86,
+          "balance_end": -9671822603.236,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_resource_keep_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_REGION-41-TRACT-9",
+          "last_update_date": "2026-08-31T11:42:48.766Z"
+        },
+        {
+          "player": "$LAND_REGION-41-TRACT-9",
+          "token": "WOOD",
+          "amount": 809.376,
+          "balance_start": 180439.54,
+          "balance_end": 181248.916,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_resource_keep_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_WOOD_MINT",
+          "last_update_date": "2026-08-31T11:42:48.766Z"
+        }
+      ],
+      "counterparty": "$LAND_WOOD_MINT"
+    },
+    {
+      "id": 38538179,
+      "region_number": 41,
+      "player": "sample-account-a",
+      "amount": -9165.379,
+      "end_balance": 13469323.242,
+      "operation_id": 28,
+      "resource_id": 1,
+      "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+      "created_date": "2026-08-31T11:42:45.000Z",
+      "balance_history": [
+        {
+          "player": "$LAND_WOOD_MINT",
+          "token": "WOOD",
+          "amount": -16332.706,
+          "balance_start": -9671804455.785,
+          "balance_end": -9671820788.491,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_player_resource_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_PLAYER_SHARE_CLAIMED",
+          "last_update_date": "2026-08-31T11:42:48.761Z"
+        },
+        {
+          "player": "$LAND_PLAYER_SHARE_CLAIMED",
+          "token": "WOOD",
+          "amount": 16332.706,
+          "balance_start": 9211616999.218,
+          "balance_end": 9211633331.924,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_player_resource_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_WOOD_MINT",
+          "last_update_date": "2026-08-31T11:42:48.761Z"
+        },
+        {
+          "player": "$LAND_WOOD_MINT",
+          "token": "WOOD",
+          "amount": -655.123,
+          "balance_start": -9671820788.491,
+          "balance_end": -9671821443.614,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_uncaptured_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_TAXES_BURNED",
+          "last_update_date": "2026-08-31T11:42:48.761Z"
+        },
+        {
+          "player": "$LAND_TAXES_BURNED",
+          "token": "WOOD",
+          "amount": 655.123,
+          "balance_start": 436381827.205,
+          "balance_end": 436382482.328,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_uncaptured_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_WOOD_MINT",
+          "last_update_date": "2026-08-31T11:42:48.761Z"
+        },
+        {
+          "player": "$LAND_WOOD_MINT",
+          "token": "WOOD",
+          "amount": -350.246,
+          "balance_start": -9671821443.614,
+          "balance_end": -9671821793.86,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_resource_castle_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_REGION-41",
+          "last_update_date": "2026-08-31T11:42:48.764Z"
+        },
+        {
+          "player": "$LAND_REGION-41",
+          "token": "WOOD",
+          "amount": 350.246,
+          "balance_start": 10823.251,
+          "balance_end": 11173.497,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_resource_castle_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_WOOD_MINT",
+          "last_update_date": "2026-08-31T11:42:48.764Z"
+        },
+        {
+          "player": "$LAND_WOOD_MINT",
+          "token": "WOOD",
+          "amount": -809.376,
+          "balance_start": -9671821793.86,
+          "balance_end": -9671822603.236,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_resource_keep_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_REGION-41-TRACT-9",
+          "last_update_date": "2026-08-31T11:42:48.766Z"
+        },
+        {
+          "player": "$LAND_REGION-41-TRACT-9",
+          "token": "WOOD",
+          "amount": 809.376,
+          "balance_start": 180439.54,
+          "balance_end": 181248.916,
+          "block_num": 109503887,
+          "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
+          "type": "land_resource_keep_tax_mint",
+          "created_date": "2026-08-31T11:42:48.721Z",
+          "counterparty": "$LAND_WOOD_MINT",
+          "last_update_date": "2026-08-31T11:42:48.766Z"
+        }
+      ],
+      "counterparty": "$LAND_GRAIN_CONSUMED"
+    }
+  ]
+}

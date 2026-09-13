@@ -1,0 +1,264 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:32:14.098811+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/market/rental_history",
+    "captureScope": "First three root rows; nested records retained unchanged."
+  },
+  "valueClasses": {
+    "body[0].id": {
+      "valueClass": "numeric"
+    },
+    "body[0].sell_trx_id": {
+      "valueClass": "id"
+    },
+    "body[0].seller": {
+      "valueClass": "opaque"
+    },
+    "body[0].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[0].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[0].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[0].rental_type": {
+      "valueClass": "opaque"
+    },
+    "body[0].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].rental_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].rental_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].renter": {
+      "valueClass": "opaque"
+    },
+    "body[0].status": {
+      "valueClass": "numeric"
+    },
+    "body[0].market_account": {
+      "valueClass": "opaque"
+    },
+    "body[0].rental_days": {
+      "valueClass": "numeric"
+    },
+    "body[0].next_rental_payment": {
+      "valueClass": "opaque"
+    },
+    "body[0].payment_currency": {
+      "valueClass": "opaque"
+    },
+    "body[0].payment_amount": {
+      "valueClass": "opaque"
+    },
+    "body[0].escrow_currency": {
+      "valueClass": "opaque"
+    },
+    "body[0].escrow_amount": {
+      "valueClass": "opaque"
+    },
+    "body[0].paid_amount": {
+      "valueClass": "opaque"
+    },
+    "body[0].cancel_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cancel_player": {
+      "valueClass": "opaque"
+    },
+    "body[0].cancel_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].card_id": {
+      "valueClass": "id"
+    },
+    "body[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].gold": {
+      "valueClass": "opaque"
+    },
+    "body[0].xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].oid": {
+      "valueClass": "opaque"
+    },
+    "body[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].rental_season_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].id": {
+      "valueClass": "numeric"
+    },
+    "body[1].sell_trx_id": {
+      "valueClass": "id"
+    },
+    "body[1].seller": {
+      "valueClass": "opaque"
+    },
+    "body[1].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[1].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[1].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[1].rental_type": {
+      "valueClass": "opaque"
+    },
+    "body[1].market_item_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].rental_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].rental_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].renter": {
+      "valueClass": "opaque"
+    },
+    "body[1].status": {
+      "valueClass": "numeric"
+    },
+    "body[1].market_account": {
+      "valueClass": "opaque"
+    },
+    "body[1].rental_days": {
+      "valueClass": "numeric"
+    },
+    "body[1].next_rental_payment": {
+      "valueClass": "opaque"
+    },
+    "body[1].payment_currency": {
+      "valueClass": "opaque"
+    },
+    "body[1].payment_amount": {
+      "valueClass": "opaque"
+    },
+    "body[1].escrow_currency": {
+      "valueClass": "opaque"
+    },
+    "body[1].escrow_amount": {
+      "valueClass": "opaque"
+    },
+    "body[1].paid_amount": {
+      "valueClass": "opaque"
+    },
+    "body[1].cancel_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].cancel_player": {
+      "valueClass": "opaque"
+    },
+    "body[1].cancel_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].card_id": {
+      "valueClass": "id"
+    },
+    "body[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].gold": {
+      "valueClass": "opaque"
+    },
+    "body[1].xp": {
+      "valueClass": "numeric"
+    },
+    "body[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].oid": {
+      "valueClass": "opaque"
+    },
+    "body[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].rental_season_id": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": [
+    {
+      "id": 188444626,
+      "sell_trx_id": "a2bacdd512899e180d8b1aa41b555172dba1d27a-0",
+      "seller": "vugtis",
+      "num_cards": 1,
+      "buy_price": "999.000",
+      "fee_percent": 600,
+      "rental_type": "season",
+      "market_item_id": 188444626,
+      "rental_tx": "51992558530bf5c1c4d9797624b0b3a2e175e412",
+      "rental_date": "2026-08-31T14:09:09.000Z",
+      "renter": "gamer08",
+      "status": 1,
+      "market_account": "sps.dao.revenue",
+      "rental_days": 14,
+      "next_rental_payment": "2026-09-14T14:09:09.000Z",
+      "payment_currency": "DEC",
+      "payment_amount": "13979.652",
+      "escrow_currency": "DEC",
+      "escrow_amount": "13979.652",
+      "paid_amount": "13979.652",
+      "cancel_tx": null,
+      "cancel_player": null,
+      "cancel_date": null,
+      "card_id": "C2-709-0044",
+      "card_detail_id": 709,
+      "gold": false,
+      "xp": 11,
+      "edition": 2,
+      "oid": "8403395",
+      "foil": 0,
+      "rental_season_id": 190
+    },
+    {
+      "id": 188444626,
+      "sell_trx_id": "a2bacdd512899e180d8b1aa41b555172dba1d27a-0",
+      "seller": "vugtis",
+      "num_cards": 1,
+      "buy_price": "999.000",
+      "fee_percent": 600,
+      "rental_type": "season",
+      "market_item_id": 188444626,
+      "rental_tx": "fd33c555be9e679abc16920dc5b3f3f8668d7832",
+      "rental_date": "2026-08-15T14:20:33.000Z",
+      "renter": "ghiper",
+      "status": 2,
+      "market_account": "sps.dao.revenue",
+      "rental_days": 16,
+      "next_rental_payment": "2026-08-31T14:20:33.000Z",
+      "payment_currency": "DEC",
+      "payment_amount": "15969.743",
+      "escrow_currency": "DEC",
+      "escrow_amount": "15969.743",
+      "paid_amount": "15969.743",
+      "cancel_tx": null,
+      "cancel_player": null,
+      "cancel_date": null,
+      "card_id": "C2-709-0044",
+      "card_detail_id": 709,
+      "gold": false,
+      "xp": 11,
+      "edition": 2,
+      "oid": "8372258",
+      "foil": 0,
+      "rental_season_id": 189
+    }
+  ]
+}

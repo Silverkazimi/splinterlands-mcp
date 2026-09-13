@@ -1,0 +1,172 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:47:35.118764+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/PACKS",
+    "captureScope": "First three complete records plus the observed null-circulation record; independent summaries preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.description": {
+      "valueClass": "opaque"
+    },
+    "body.data.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].circulation": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].subGroup": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assetName": "PACKS",
+      "description": "Card Pack",
+      "type": "FUNGIBLE",
+      "details": [
+        {
+          "id": "ALPHA",
+          "name": "Alpha Pack",
+          "description": "Alpha packs were the first packs ever sold, beginning with Splinterlands' launch in May 2018. Each pack contains 5 random cards, each of which earn a 10% bonus to reward shares in battle.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_alpha.png",
+          "icon": null,
+          "filterIcon": "icon_edition_alpha.svg",
+          "circulation": 5692,
+          "group": "core"
+        },
+        {
+          "id": "BETA",
+          "name": "Beta Pack",
+          "description": "Each Beta pack contains 5 random Beta versions of the same cards from the Alpha edition, plus the addition of Neutral cards and new Epic and Legendary archons. Cards from the Beta edition earn a 5% bonus to reward shares in battle.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_beta.png",
+          "icon": null,
+          "filterIcon": "icon_edition_beta.svg",
+          "circulation": 20207,
+          "group": "core"
+        },
+        {
+          "id": "ORB",
+          "name": "Essence Orb",
+          "description": "The Essence Orb mini-set consists of 12 promo cards that earn a 10% bonus to reward shares in battle. Each pack contains 5 random cards.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_orb.png",
+          "icon": null,
+          "filterIcon": "icon_edition_essenceorbs.svg",
+          "circulation": 5946,
+          "group": "expansions"
+        },
+        {
+          "id": "FOUNDATIONS",
+          "name": "Foundations Pack",
+          "description": "The Foundations set consists of 53 cards, and each pack contains 5 random cards. Does NOT contain any Gold Arcane or Black Foils.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/img_pack_foundations_250.png",
+          "icon": null,
+          "filterIcon": "icon-edition-foundations.svg",
+          "circulation": null,
+          "group": "core",
+          "subGroup": "Foundations Packs"
+        }
+      ]
+    }
+  }
+}

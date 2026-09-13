@@ -1,0 +1,242 @@
+{
+  "transport": "built stdio MCP server",
+  "observedAt": "2026-09-12T08:29:20.541Z",
+  "toolCount": 77,
+  "results": [
+    {
+      "name": "player_leaderboard",
+      "isError": false,
+      "milliseconds": 1104,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 20,
+        "upstreamRows": 20
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/players/leaderboard",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:29:21.640Z",
+          "ageMs": 11
+        }
+      }
+    },
+    {
+      "name": "player_leaderboard_with_player",
+      "isError": false,
+      "milliseconds": 189,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 20,
+        "upstreamRows": 20
+      },
+      "keys": [
+        "player",
+        "leaderboard"
+      ],
+      "provenance": {
+        "endpoint": "/players/leaderboard_with_player",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:29:21.859Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "player_richlist",
+      "isError": false,
+      "milliseconds": 25249,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "keys": [
+        "token_type",
+        "total_accounts",
+        "total_quantity",
+        "richlist",
+        "player_rank"
+      ],
+      "provenance": {
+        "endpoint": "/players/richlist",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:29:47.113Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "player_richlist_ranking",
+      "isError": false,
+      "milliseconds": 1055,
+      "keys": [
+        "rank",
+        "player",
+        "balance",
+        "token_type"
+      ],
+      "provenance": {
+        "endpoint": "/players/richlist_ranking",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:29:48.168Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "player_burn_event_leaderboard",
+      "isError": false,
+      "milliseconds": 7992,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 200
+      },
+      "keys": [
+        "leaderboard",
+        "totals"
+      ],
+      "provenance": {
+        "endpoint": "/players/burn_event_leaderboard",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:29:56.147Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "player_burn_event_full_leaderboard",
+      "isError": false,
+      "milliseconds": 590,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 3344
+      },
+      "keys": [
+        "leaderboard"
+      ],
+      "provenance": {
+        "endpoint": "/players/burn_event_full_leaderboard",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:29:56.576Z",
+          "ageMs": 145
+        }
+      }
+    },
+    {
+      "name": "player_presale_leaders",
+      "isError": false,
+      "milliseconds": 935,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 300
+      },
+      "keys": [
+        "total_packs_purchased",
+        "total_bonus_packs",
+        "players",
+        "curr_player"
+      ],
+      "provenance": {
+        "endpoint": "/players/rebellion_presale_leaders",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:29:57.463Z",
+          "ageMs": 201
+        }
+      }
+    },
+    {
+      "name": "player_season",
+      "isError": false,
+      "milliseconds": 142,
+      "keys": [
+        "id",
+        "ends",
+        "reset_block_num"
+      ],
+      "provenance": {
+        "endpoint": "/season",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:29:57.825Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "player_profile",
+      "isError": false,
+      "milliseconds": 160,
+      "keys": [
+        "name",
+        "join_date",
+        "rating",
+        "battles",
+        "wins",
+        "current_streak",
+        "longest_streak",
+        "max_rating",
+        "max_rank",
+        "champion_points",
+        "capture_rate",
+        "last_reward_block",
+        "guild",
+        "starter_pack_purchase",
+        "avatar_id",
+        "display_name",
+        "title_pre",
+        "title_post",
+        "collection_power",
+        "league",
+        "adv_msg_sent",
+        "is_banned",
+        "modern_rating",
+        "modern_battles",
+        "modern_wins",
+        "modern_current_streak",
+        "modern_longest_streak",
+        "modern_max_rating",
+        "modern_max_rank",
+        "modern_league",
+        "modern_adv_msg_sent",
+        "survival_rating",
+        "survival_battles",
+        "survival_wins",
+        "survival_current_streak",
+        "survival_longest_streak",
+        "survival_max_rating",
+        "survival_max_rank",
+        "survival_league",
+        "survival_adv_msg_sent",
+        "survival_bracket",
+        "foundation_rating",
+        "foundation_battles",
+        "foundation_wins",
+        "foundation_current_streak",
+        "foundation_longest_streak",
+        "foundation_max_rating",
+        "foundation_max_rank",
+        "foundation_league",
+        "foundation_adv_msg_sent",
+        "paypal_ban",
+        "player_uuid",
+        "season_pass",
+        "player_avatar",
+        "burn_sps_rewards",
+        "scholared_by",
+        "season_details"
+      ],
+      "provenance": {
+        "endpoint": "/players/details",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:29:57.984Z",
+          "ageMs": 1
+        }
+      }
+    }
+  ]
+}

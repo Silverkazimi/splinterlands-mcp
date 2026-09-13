@@ -1,0 +1,172 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T11:19:04.427222+00:00"
+  },
+  "valueClasses": {
+    "body[0].id": {
+      "valueClass": "numeric"
+    },
+    "body[0].name": {
+      "valueClass": "enum"
+    },
+    "body[0].color": {
+      "valueClass": "enum"
+    },
+    "body[0].type": {
+      "valueClass": "enum"
+    },
+    "body[0].sub_type": {
+      "valueClass": "enum"
+    },
+    "body[0].rarity": {
+      "valueClass": "numeric"
+    },
+    "body[0].drop_rate": {
+      "valueClass": "numeric"
+    },
+    "body[0].stats.importIndex": {
+      "valueClass": "numeric"
+    },
+    "body[0].is_starter": {
+      "valueClass": "enum"
+    },
+    "body[0].editions": {
+      "valueClass": "enum"
+    },
+    "body[0].created_block_num": {
+      "valueClass": "enum"
+    },
+    "body[0].last_update_tx": {
+      "valueClass": "enum"
+    },
+    "body[0].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[0].is_promo": {
+      "valueClass": "enum"
+    },
+    "body[0].tier": {
+      "valueClass": "numeric"
+    },
+    "body[0].secondary_color": {
+      "valueClass": "enum"
+    },
+    "body[0].stake_type_id": {
+      "valueClass": "enum"
+    },
+    "body[0].print_start_date": {
+      "valueClass": "enum"
+    },
+    "body[0].game_type": {
+      "valueClass": "enum"
+    },
+    "body[0].no_pp": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].distribution[0].gold": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].distribution[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].distribution[0].num_cards": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[0].unbound_cards": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[0].total_xp": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[0].num_burned": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[0].total_burned_xp": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].distribution[1].gold": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].distribution[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].distribution[1].num_cards": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[1].unbound_cards": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[1].total_xp": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[1].num_burned": {
+      "valueClass": "enum"
+    },
+    "body[0].distribution[1].total_burned_xp": {
+      "valueClass": "enum"
+    }
+  },
+  "body": [
+    {
+      "id": 10001,
+      "name": "Gloom Owl",
+      "color": "Gray",
+      "type": "Tower",
+      "sub_type": null,
+      "rarity": 1,
+      "drop_rate": 0,
+      "stats": {
+        "importIndex": 1
+      },
+      "is_starter": false,
+      "editions": "9",
+      "created_block_num": null,
+      "last_update_tx": null,
+      "total_printed": 40908,
+      "is_promo": false,
+      "tier": 9,
+      "secondary_color": null,
+      "stake_type_id": null,
+      "print_start_date": null,
+      "game_type": "soulkeep",
+      "no_pp": false,
+      "distribution": [
+        {
+          "card_detail_id": 10001,
+          "gold": false,
+          "foil": 0,
+          "edition": 9,
+          "num_cards": "10653",
+          "unbound_cards": "0",
+          "total_xp": "26759",
+          "num_burned": "4184",
+          "total_burned_xp": "12690"
+        },
+        {
+          "card_detail_id": 10001,
+          "gold": true,
+          "foil": 1,
+          "edition": 9,
+          "num_cards": "788",
+          "unbound_cards": "0",
+          "total_xp": "1065",
+          "num_burned": "229",
+          "total_burned_xp": "394"
+        }
+      ]
+    }
+  ]
+}

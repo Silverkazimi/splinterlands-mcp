@@ -1,0 +1,24 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:11:33.493303+00:00",
+    "sourceUrl": "https://api.splinterlands.com/season",
+    "captureScope": "First three list rows; other object fields retained without transformation."
+  },
+  "valueClasses": {
+    "body.id": {
+      "valueClass": "numeric"
+    },
+    "body.ends": {
+      "valueClass": "timestamp"
+    },
+    "body.reset_block_num": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "id": 190,
+    "ends": "2026-09-14T14:00:00.000Z",
+    "reset_block_num": null
+  }
+}

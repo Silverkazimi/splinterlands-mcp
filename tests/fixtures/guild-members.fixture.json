@@ -1,0 +1,234 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:07:26.717847+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/guilds/members",
+    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+  },
+  "valueClasses": {
+    "body[0].guild_id": {
+      "valueClass": "id"
+    },
+    "body[0].player": {
+      "valueClass": "name"
+    },
+    "body[0].rank": {
+      "valueClass": "numeric"
+    },
+    "body[0].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].status": {
+      "valueClass": "opaque"
+    },
+    "body[0].data": {
+      "valueClass": "opaque"
+    },
+    "body[0].rating": {
+      "valueClass": "numeric"
+    },
+    "body[0].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[0].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[0].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[0].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[0].league": {
+      "valueClass": "numeric"
+    },
+    "body[0].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[0].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[0].starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body[0].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[0].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[1].guild_id": {
+      "valueClass": "id"
+    },
+    "body[1].player": {
+      "valueClass": "name"
+    },
+    "body[1].rank": {
+      "valueClass": "numeric"
+    },
+    "body[1].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].status": {
+      "valueClass": "opaque"
+    },
+    "body[1].data": {
+      "valueClass": "opaque"
+    },
+    "body[1].rating": {
+      "valueClass": "numeric"
+    },
+    "body[1].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[1].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[1].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[1].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[1].league": {
+      "valueClass": "numeric"
+    },
+    "body[1].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[1].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[1].starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body[1].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[1].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[2].guild_id": {
+      "valueClass": "id"
+    },
+    "body[2].player": {
+      "valueClass": "name"
+    },
+    "body[2].rank": {
+      "valueClass": "numeric"
+    },
+    "body[2].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].status": {
+      "valueClass": "opaque"
+    },
+    "body[2].data": {
+      "valueClass": "opaque"
+    },
+    "body[2].rating": {
+      "valueClass": "numeric"
+    },
+    "body[2].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[2].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[2].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[2].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[2].league": {
+      "valueClass": "numeric"
+    },
+    "body[2].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[2].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[2].starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body[2].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[2].is_online": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": [
+    {
+      "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+      "player": "jakkal",
+      "rank": 1,
+      "join_date": "2026-06-01T14:44:06.000Z",
+      "status": "active",
+      "data": "{\"contributions\":{\"quest_lodge\":68,\"quest_lodge_gp\":0}}",
+      "rating": 4140,
+      "modern_rating": 2340,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 14,
+      "modern_league": 8,
+      "collection_power": 3435117,
+      "starter_pack_purchase": true,
+      "player_avatar": "{\"race\":\"human\",\"background\":3,\"color\":\"Green\",\"level\":15,\"frame\":5,\"gender\":1,\"body\":1,\"face\":2,\"nose\":10,\"ears\":0,\"skin_color\":5,\"hair\":2,\"eyebrows\":4,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":7,\"eyes_color\":7,\"mouth\":20,\"complexion\":4,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":8,\"cloth_color\":3,\"tattoo\":8,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":2,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"wild_league\",\"champion_points\",\"shard_holder\",\"year_joined\"],\"is_saved\":false,\"avatar_resets\":0,\"player_card_resets\":0}",
+      "is_online": false
+    },
+    {
+      "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+      "player": "bossnoah",
+      "rank": 1,
+      "join_date": "2026-05-13T14:57:15.000Z",
+      "status": "active",
+      "data": "{\"contributions\":{\"quest_lodge\":69,\"quest_lodge_gp\":0}}",
+      "rating": 4420,
+      "modern_rating": 0,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 15,
+      "modern_league": 0,
+      "collection_power": 4329081,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+      "player": "cav0",
+      "rank": 1,
+      "join_date": "2025-12-01T13:03:33.000Z",
+      "status": "active",
+      "data": "{\"contributions\":{\"quest_lodge\":108,\"quest_lodge_gp\":0}}",
+      "rating": 2300,
+      "modern_rating": 3800,
+      "avatar_id": 0,
+      "title_pre": "Warden",
+      "title_post": "The Emergent",
+      "display_name": null,
+      "league": 8,
+      "modern_league": 13,
+      "collection_power": 4299676,
+      "starter_pack_purchase": true,
+      "player_avatar": "{\"race\":\"human\",\"background\":13,\"color\":\"White\",\"level\":39,\"frame\":22,\"gender\":1,\"body\":1,\"face\":1,\"nose\":10,\"ears\":0,\"skin_color\":3,\"hair\":4,\"eyebrows\":5,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":4,\"eyes_color\":3,\"mouth\":2,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":7,\"cloth_color\":3,\"tattoo\":20,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"modern_league\",\"\",\"\",\"\"],\"is_saved\":false,\"avatar_resets\":0,\"player_card_resets\":3}",
+      "is_online": false
+    }
+  ]
+}

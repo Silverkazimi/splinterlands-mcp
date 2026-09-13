@@ -1,0 +1,1453 @@
+{
+  "schema": "land-result-contract-evidence/v1",
+  "captures": [
+    {
+      "fixture": "tests/fixtures/land-deed-by-plot-hit.fixture.json",
+      "endpointId": "vapi.land.deeds.by-plot",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/deeds/{plot_id}",
+      "request": {
+        "path": "/land/deeds/13339",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T14:37:45Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 1013,
+      "rowCount": 1,
+      "rawResponseSha256": "76ab4a5a6c983fab7e119b898089079b8ec56e2391b9b98d5939e924805a265e",
+      "uncertainty": {
+        "observedNullOnlyUnknownTypePaths": [
+          "data.castle",
+          "data.keep"
+        ],
+        "absentFields": "none observed; all 41 deed keys were present",
+        "notes": "The deed is returned directly under data; no wrapper arrays or detail sections are present."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-deed-by-plot-miss.fixture.json",
+      "endpointId": "vapi.land.deeds.by-plot",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/deeds/{plot_id}",
+      "request": {
+        "path": "/land/deeds/999999999999",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T14:37:52Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 32,
+      "rowCount": 0,
+      "rawResponseSha256": "46062cc10aed23dfff73eab8b2bdb89f65c6f4b912a2eb2e31328cc9128e7559",
+      "uncertainty": {
+        "emptyResult": "data is explicitly null; no field is invented and the upstream envelope is returned unchanged"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-deeds-search-limited.fixture.json",
+      "endpointId": "vapi.land.deeds.search",
+      "variantKey": "limited",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/deeds",
+      "request": {
+        "path": "/land/deeds",
+        "query": {
+          "limit": 3
+        }
+      },
+      "capturedAt": "2026-09-06T14:38:42Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 10452,
+      "rowCount": 3,
+      "rowCounts": {
+        "deeds": 3,
+        "worksite_details": 2,
+        "staking_details": 3
+      },
+      "rawResponseSha256": "4009cb1c843003e8e1634289f07e351b2387e8c9cf15a8a9e3bf17bda8603452",
+      "uncertainty": {
+        "observedNullOnlyUnknownTypePaths": [
+          "data.deeds[].castle",
+          "data.deeds[].keep",
+          "data.worksite_details[].segments",
+          "data.worksite_details[].completed_date",
+          "data.worksite_details[].destroyed_date",
+          "data.worksite_details[].hours_to_completion",
+          "data.worksite_details[].projected_end"
+        ],
+        "absentFields": "none observed; every row in each object type had the complete measured key set",
+        "traps": {
+          "data.deeds[].tax_rate": "numeric-looking string; retain JSON string",
+          "data.deeds[].stats": "embedded JSON string; do not parse",
+          "data.deeds[].land_stats": "embedded JSON string; do not parse",
+          "data.deeds[].worksite_type": "empty string is distinct from null"
+        }
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-deeds-search-ordered-empty.fixture.json",
+      "endpointId": "vapi.land.deeds.search",
+      "variantKey": "ordered",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/deeds",
+      "request": {
+        "path": "/land/deeds",
+        "query": {
+          "orderBy": "desc"
+        }
+      },
+      "capturedAt": "2026-09-06T14:38:49Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "emptyResult": "data is a bare empty array; child object fields are unobserved in this sample"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-deed-by-uid-hit.fixture.json",
+      "endpointId": "vapi.land.deeds.details-by-uid",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/deeds/details/{deed_uid}",
+      "request": {
+        "path": "/land/deeds/details/I-296-d14043817866fa",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T19:28:59Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 996,
+      "rowCount": 1,
+      "rawResponseSha256": "ad43f24e367723180839bb032f997e95345a70e6b6a9c8baf687ad6b379de598",
+      "uncertainty": {
+        "observedNullOnlyUnknownTypePaths": [
+          "data.resource_id",
+          "data.resource_symbol",
+          "data.castle",
+          "data.keep"
+        ],
+        "absentFields": "data.worksite_type and data.rarity_sort_value were absent from the 39-field deed hit",
+        "wireTypeDivergence": {
+          "data.market_id": "number here; string in by-plot and search",
+          "data.listing_price": "number here; string in search",
+          "data.market_listing_id": "number here; string in by-plot and search",
+          "data.tax_rate": "number here; string in by-plot and search"
+        },
+        "notes": "The deed is returned directly under data. The raw response hash is for the captured bytes before account-value pseudonymisation. The absent UID response was the same 32-byte success envelope and hash as the existing by-plot miss fixture."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-active-hit.fixture.json",
+      "endpointId": "vapi.land.projects.active",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/active",
+      "request": {
+        "path": "/land/projects/deed/I-291-aafc48f64a8856/active",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:19:46Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 1570,
+      "rowCount": 1,
+      "rawResponseSha256": "6e89f3fa9a0eff6dbf35b0af9dbe32e9c7ebd87027ac171a3351281693562880",
+      "uncertainty": {
+        "observedNullOnlyUnknownTypePaths": [
+          "data.segments",
+          "data.completed_date",
+          "data.destroyed_date",
+          "data.hours_to_completion",
+          "data.projected_end"
+        ],
+        "notes": "Three active bodies were observed in this capture round (deed B hit, deed C single, deed A null); only two distinct shapes appeared (a populated record and data: null), so the null-only paths above rest on two populated observations."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-active-none.fixture.json",
+      "endpointId": "vapi.land.projects.active",
+      "variantKey": "empty",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/active",
+      "request": {
+        "path": "/land/projects/deed/I-296-d14043817866fa/active",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:19:49Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 32,
+      "rowCount": 0,
+      "rawResponseSha256": "46062cc10aed23dfff73eab8b2bdb89f65c6f4b912a2eb2e31328cc9128e7559",
+      "uncertainty": {
+        "emptyResult": "data is explicitly null for a deed with no active project; no field is invented and the upstream envelope is returned unchanged"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-active-single.fixture.json",
+      "endpointId": "vapi.land.projects.active",
+      "variantKey": "single",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/active",
+      "request": {
+        "path": "/land/projects/deed/I-296-3f7a71183eda45/active",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:19:52Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 1505,
+      "rowCount": 1,
+      "rawResponseSha256": "3206a2c2ac15c6a5cccd37228fa99f165a015b779ee7e6bb7007ae18c8edac2c",
+      "uncertainty": {
+        "notes": "deed C's only project (id 2886); the same id as land-projects-history-single's sole row, which is what makes the two routes directly comparable for this deed."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-history-rows.fixture.json",
+      "endpointId": "vapi.land.projects.history",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/list",
+      "request": {
+        "path": "/land/projects/deed/I-291-aafc48f64a8856/list",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:19:55Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 21493,
+      "rowCount": 6,
+      "rawResponseSha256": "7d229125631c1637884053de5f6b9a57d9e2635b9267ff2db2334311cd866c8a",
+      "uncertainty": {
+        "nullableObservedBothWays": [
+          "destroyed_date",
+          "is_sps_work",
+          "project_id",
+          "completed_date",
+          "next_op_allowed_date",
+          "hours_to_completion",
+          "projected_end"
+        ],
+        "absentFields": "none observed; all 58 keys present in all 6 rows",
+        "upstreamMaximum": "untested \u2014 the observed deeds had too few records to reveal a cap on an unlimited call"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-history-limited.fixture.json",
+      "endpointId": "vapi.land.projects.history",
+      "variantKey": "limited",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/list",
+      "request": {
+        "path": "/land/projects/deed/I-291-aafc48f64a8856/list",
+        "query": {
+          "limit": 2
+        }
+      },
+      "capturedAt": "2026-09-06T21:19:58Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 3841,
+      "rowCount": 2,
+      "rawResponseSha256": "ce20754c773cb83a0b13df79d0c36c954e3e0d2a8d2dd6f5eb2a8b2359c492b5",
+      "uncertainty": {
+        "notes": "limit=2 returned the first two ids of land-projects-history-rows' six-row list (44752, 65787), unchanged in order."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-history-empty.fixture.json",
+      "endpointId": "vapi.land.projects.history",
+      "variantKey": "empty",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/list",
+      "request": {
+        "path": "/land/projects/deed/I-296-d14043817866fa/list",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:20:01Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "emptyResult": "data is a bare empty array for a deed with no project history"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-history-single.fixture.json",
+      "endpointId": "vapi.land.projects.history",
+      "variantKey": "single",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/list",
+      "request": {
+        "path": "/land/projects/deed/I-296-3f7a71183eda45/list",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:20:04Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 1505,
+      "rowCount": 1,
+      "rawResponseSha256": "71bfa1e2eeb791807125c07acfa50a2cf7027467a64fde72a4da8cc109d833ce",
+      "uncertainty": {
+        "notes": "deed C's only history row (id 2886), matching land-projects-active-single's record."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-count.fixture.json",
+      "endpointId": "vapi.land.projects.history.count",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/list/count",
+      "request": {
+        "path": "/land/projects/deed/I-291-aafc48f64a8856/list/count",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:20:07Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 39,
+      "rowCount": 6,
+      "rawResponseSha256": "8eeeb5ebc98562071b79c53b4e7bb4f3db4748261e1a27e817f3971d69746c0c",
+      "uncertainty": {
+        "notes": "count (6) equals the row count returned by an unlimited /list call on the same deed in this capture round; agreement observed, not a proven equivalence of the two populations."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-count-zero.fixture.json",
+      "endpointId": "vapi.land.projects.history.count",
+      "variantKey": "zero",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/list/count",
+      "request": {
+        "path": "/land/projects/deed/I-296-d14043817866fa/list/count",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:20:10Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 39,
+      "rowCount": 0,
+      "rawResponseSha256": "7a5248b8c297a5714a323146083c2f131462c23e38213de36297d54bdbc9c2ce",
+      "uncertainty": {
+        "notes": "count is 0 for a deed with no project history; zero is an answer, not an empty result."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-count-single.fixture.json",
+      "endpointId": "vapi.land.projects.history.count",
+      "variantKey": "single",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/list/count",
+      "request": {
+        "path": "/land/projects/deed/I-296-3f7a71183eda45/list/count",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:20:12Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 39,
+      "rowCount": 1,
+      "rawResponseSha256": "199de47ea2247d80954130413d00036d1327eb20aeec4f0f12bb463ae6bb1df7",
+      "uncertainty": {
+        "notes": "count (1) equals the single row returned by /list and the single record returned by /active on the same deed."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-requirements-sentinel.fixture.json",
+      "endpointId": "vapi.land.projects.requirements",
+      "variantKey": "sentinel",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/requirements",
+      "request": {
+        "path": "/land/projects/deed/I-296-d14043817866fa/requirements",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:20:15Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 2873,
+      "rowCount": 7,
+      "rawResponseSha256": "23234714b1240774684699bf9e6b9fa498fb5837ee8a6f100e4452be1b3bd48a",
+      "uncertainty": {
+        "observedNullOnlyUnknownTypePaths": [
+          "data[].land_work_type_parent_id"
+        ],
+        "notes": "the sentinel shape: work_per_hour \"0.0000\", projected_hours 999999999.999, projected_end roughly five thousand years ahead of the request instant."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-requirements-real.fixture.json",
+      "endpointId": "vapi.land.projects.requirements",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/requirements",
+      "request": {
+        "path": "/land/projects/deed/I-291-aafc48f64a8856/requirements",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:20:18Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 2817,
+      "rowCount": 7,
+      "rawResponseSha256": "c21b634bfb371d16319a31a0065406e987828dc992eb4cd2b10059e987f5c3cb",
+      "uncertainty": {
+        "observedNullOnlyUnknownTypePaths": [
+          "data[].land_work_type_parent_id"
+        ],
+        "notes": "land_work_type_is_construction was true in all 14 rows observed across the two requirements bodies (deed A and deed B) and is deliberately not constrained to that value in the predicate.",
+        "sentinelObservation": "On 2026-09-06 deed A returned seven requirement rows all reporting work_per_hour \"0.0000\", projected_hours 999999999.999, and a projected_end about five thousand years after the request instant; deed B returned seven rows with a non-zero rate (\"6820.0000\") and a projection about a day ahead. The pairing was observed at deed level on two deeds; no rule linking the rate to the projection is claimed."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-projects-requirements-none.fixture.json",
+      "endpointId": "vapi.land.projects.requirements",
+      "variantKey": "empty",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/requirements",
+      "request": {
+        "path": "/land/projects/deed/I-296-3f7a71183eda45/requirements",
+        "query": {}
+      },
+      "capturedAt": "2026-09-06T21:20:21Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 32,
+      "rowCount": 0,
+      "rawResponseSha256": "46062cc10aed23dfff73eab8b2bdb89f65c6f4b912a2eb2e31328cc9128e7559",
+      "uncertainty": {
+        "emptyResult": "data is explicitly null for a deed with exactly one project and no requirements rows"
+      }
+    },
+    {
+      "endpointId": "vapi.land.projects.history",
+      "variantKey": "offset-probe",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/list",
+      "request": {
+        "path": "/land/projects/deed/I-291-aafc48f64a8856/list",
+        "query": {
+          "offset": 1
+        }
+      },
+      "capturedAt": "2026-09-06T21:20:24Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 21498,
+      "rowCount": 6,
+      "returnedIds": [
+        44752,
+        65787,
+        159607,
+        161272,
+        231752,
+        231753
+      ],
+      "rawResponseSha256": "f4740699c378e0ee188b1c1566ec4513a74e1277e417f31386725f0417459e05",
+      "notes": "request-only record: offset probe, no fixture (behaviour, not shape)"
+    },
+    {
+      "endpointId": "vapi.land.projects.history",
+      "variantKey": "offset-probe",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/projects/deed/{deed_uid}/list",
+      "request": {
+        "path": "/land/projects/deed/I-291-aafc48f64a8856/list",
+        "query": {
+          "limit": 2,
+          "offset": 2
+        }
+      },
+      "capturedAt": "2026-09-06T21:20:27Z",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "byteSize": 3842,
+      "rowCount": 2,
+      "returnedIds": [
+        44752,
+        65787
+      ],
+      "rawResponseSha256": "c7fd56c468ec69e31718e2bd6e78c8e749402b9ce462ccea9d7a3258c965e714",
+      "notes": "request-only record: offset probe, no fixture (behaviour, not shape)"
+    },
+    {
+      "fixture": "tests/fixtures/land-volume.fixture.json",
+      "endpointId": "vapi.land.volume",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/volume",
+      "request": {
+        "path": "/land/volume",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T08:29:17Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 58,
+      "rowCount": 1,
+      "rawResponseSha256": "6083046677117f0880f5fa1eadde1f627021696b3ec927e69108f648e82b53b7",
+      "uncertainty": {
+        "typeBasis": "sum and count are declared string on a single observation; this API is known to serialise the same field differently across routes",
+        "semantics": "what the two figures measure, and over what period, is not stated by the response",
+        "rowCount": "the response is a single object, not a row array; rowCount is recorded as 1 to mean one record, not one of several rows"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-regions-counts-empty.fixture.json",
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T08:29:20Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "rowShape": "unknown \u2014 no response containing rows has been captured from this route",
+        "emptyResult": "data is an empty array; the envelope is returned unchanged and no field is invented",
+        "scopeInterpretation": "an empty list is consistent both with the selectors being ignored and with the selectors working over an empty unscoped population; no request this repository makes distinguishes them"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-tracts-counts-empty.fixture.json",
+      "endpointId": "vapi.land.tracts.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/tracts/counts",
+      "request": {
+        "path": "/land/tracts/counts",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T08:29:23Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "rowShape": "unknown \u2014 no response containing rows has been captured from this route",
+        "emptyResult": "data is an empty array; the envelope is returned unchanged and no field is invented",
+        "scopeInterpretation": "an empty list is consistent both with the selectors being ignored and with the selectors working over an empty unscoped population; no request this repository makes distinguishes them"
+      }
+    },
+    {
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "status": "active"
+        }
+      },
+      "capturedAt": "2026-09-07T08:29:27Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: status=active returned the same empty envelope as the unscoped request; no fixture, body is byte-identical to F2"
+      }
+    },
+    {
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "status": "not_a_real_status"
+        }
+      },
+      "capturedAt": "2026-09-07T08:29:30Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: status value is not one the specification defines; it was accepted without complaint rather than rejected. Body is byte-identical to F2"
+      }
+    },
+    {
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "plot_type": "keep"
+        }
+      },
+      "capturedAt": "2026-09-07T08:29:33Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: plot_type=keep returned the same empty envelope as the unscoped request; no fixture, body is byte-identical to F2"
+      }
+    },
+    {
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "kingdom_type": "azmare"
+        }
+      },
+      "capturedAt": "2026-09-07T08:29:36Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: kingdom_type=azmare returned the same empty envelope as the unscoped request; no fixture, body is byte-identical to F2"
+      }
+    },
+    {
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "magic_type": "life"
+        }
+      },
+      "capturedAt": "2026-09-07T08:29:39Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: magic_type=life returned the same empty envelope as the unscoped request; no fixture, body is byte-identical to F2"
+      }
+    },
+    {
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "rarity": "common"
+        }
+      },
+      "capturedAt": "2026-09-07T08:29:42Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: rarity=common returned the same empty envelope as the unscoped request; no fixture, body is byte-identical to F2"
+      }
+    },
+    {
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "geography": "arid"
+        }
+      },
+      "capturedAt": "2026-09-07T08:29:45Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: geography=arid returned the same empty envelope as the unscoped request; no fixture, body is byte-identical to F2"
+      }
+    },
+    {
+      "endpointId": "vapi.land.tracts.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/tracts/counts",
+      "request": {
+        "path": "/land/tracts/counts",
+        "query": {
+          "geography": "arid"
+        }
+      },
+      "capturedAt": "2026-09-07T08:29:48Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: geography is not a declared query parameter of this route (the tracts entry declares player alone); this measures the route tolerating an undeclared query name, not the geography selector. Body is byte-identical to F3",
+        "declared": false
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-deeds-owned-hit.fixture.json",
+      "endpointId": "vapi.land.deeds.owned",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/deeds/owned/{player}",
+      "request": {
+        "path": "/land/deeds/owned/sample-account-b",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T09:57:47Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 395,
+      "rowCount": 12,
+      "rawResponseSha256": "9e26f32f85d4670580b7c348e29c2ed3f04518d88e85d3f526d9b770ec759e30",
+      "uncertainty": {
+        "notes": "data is a per-region plot tally, one row per region the player holds deeds in. uid names a region, not a deed; player is not echoed in the body."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-deeds-owned-none.fixture.json",
+      "endpointId": "vapi.land.deeds.owned",
+      "variantKey": "absent",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/deeds/owned/{player}",
+      "request": {
+        "path": "/land/deeds/owned/zzz_no_such_account_zzz",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T09:57:55Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 32,
+      "rowCount": 0,
+      "rawResponseSha256": "46062cc10aed23dfff73eab8b2bdb89f65c6f4b912a2eb2e31328cc9128e7559",
+      "uncertainty": {
+        "emptyResult": "data is explicitly null for an unrecognized account name; no field is invented and the upstream envelope is returned unchanged"
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.owned",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/deeds/owned/{player}",
+      "request": {
+        "path": "/land/deeds/owned/sample-account-b",
+        "query": {
+          "limit": 2
+        }
+      },
+      "capturedAt": "2026-09-07T09:58:03Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 395,
+      "rowCount": 12,
+      "rawResponseSha256": "9e26f32f85d4670580b7c348e29c2ed3f04518d88e85d3f526d9b770ec759e30",
+      "uncertainty": {
+        "notes": "request-only record: limit is not a declared query parameter of this route; body is byte-identical to the hit capture, so limit is inert here"
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.owned",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/deeds/owned/{player}",
+      "request": {
+        "path": "/land/deeds/owned/sample-account-b",
+        "query": {
+          "offset": 5
+        }
+      },
+      "capturedAt": "2026-09-07T09:58:12Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 395,
+      "rowCount": 12,
+      "rawResponseSha256": "9e26f32f85d4670580b7c348e29c2ed3f04518d88e85d3f526d9b770ec759e30",
+      "uncertainty": {
+        "notes": "request-only record: offset is not a declared query parameter of this route; body is byte-identical to the hit capture, so offset is inert here"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-stake-assets-empty.fixture.json",
+      "endpointId": "vapi.land.stake.deeds-assets",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/deeds/{deed_uid}/assets",
+      "request": {
+        "path": "/land/stake/deeds/I-296-d14043817866fa/assets",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T10:50:31Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 51,
+      "rowCount": 0,
+      "rawResponseSha256": "858b3effd1ee785a249ed401932f6e6522dbcab9130108c5365c494294abf168",
+      "uncertainty": {
+        "emptyShape": "cards and items are present and empty and data is a present object, so the shared isEmptyResult short-circuit does not treat this body as empty; the declarative fingerprint alone would reject it, which is why this entry validates through a predicate"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-stake-assets-rows.fixture.json",
+      "endpointId": "vapi.land.stake.deeds-assets",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/deeds/{deed_uid}/assets",
+      "request": {
+        "path": "/land/stake/deeds/I-291-aafc48f64a8856/assets",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T10:50:33Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 5740,
+      "rowCount": 5,
+      "rawResponseSha256": "f5fc9441cedbe2e8d8c579e4e635255eb1a686e2ef7444f66245c59999f0d4d0",
+      "uncertainty": {
+        "itemCount": 1,
+        "undeclaredNullKeys": "delegated_to, rental_type and stake_ref_id are present in every row and null in every row; a null-only observation establishes no type, so none is declared",
+        "rowCoverage": "five cards and one item (R2) / five cards and two items (R3) from two deeds held by one account; no deed carrying a staked Runi was observed, so the observed rows are not a sample of every kind of staked card",
+        "wireTypes": "boost, production-point and work figures are JSON strings on this route"
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.deeds-assets",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/deeds/{deed_uid}/assets",
+      "request": {
+        "path": "/land/stake/deeds/I-296-3f7a71183eda45/assets",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T10:50:36Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 6031,
+      "rowCount": 5,
+      "rawResponseSha256": "863dae06916bf293a8234125bedf3fba0e070041b8478e98d35037e46e11078b",
+      "uncertainty": {
+        "itemCount": 2,
+        "undeclaredNullKeys": "delegated_to, rental_type and stake_ref_id are present in every row and null in every row; a null-only observation establishes no type, so none is declared",
+        "rowCoverage": "five cards and one item (R2) / five cards and two items (R3) from two deeds held by one account; no deed carrying a staked Runi was observed, so the observed rows are not a sample of every kind of staked card",
+        "wireTypes": "boost, production-point and work figures are JSON strings on this route"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-stake-deed-details-zeroed.fixture.json",
+      "endpointId": "vapi.land.stake.deed-details",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/deed/details/{deed_uid}",
+      "request": {
+        "path": "/land/stake/deed/details/I-296-d14043817866fa",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T10:50:38Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 1435,
+      "rowCount": 1,
+      "rawResponseSha256": "b2cbf65aa93be576304f14733f396f7f445ecd6d239ce7728f6cc01c60bc0fa2",
+      "uncertainty": {
+        "blankShape": "a deed with nothing staked returns all 56 fields present, numeric fields zero, boolean flags false, active_land_project_id null"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-stake-deed-details-active.fixture.json",
+      "endpointId": "vapi.land.stake.deed-details",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/deed/details/{deed_uid}",
+      "request": {
+        "path": "/land/stake/deed/details/I-291-aafc48f64a8856",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T10:50:41Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 1469,
+      "rowCount": 1,
+      "rawResponseSha256": "7cb8b402ec50abd6fe5f9e06d041a2de23608152473db5628ea3e49446977201",
+      "uncertainty": {
+        "wireTypes": "the deed-level boost and total figures are JSON numbers on this route, while the per-card equivalents on the assets route are JSON strings; neither is normalised",
+        "recordConvergence": "this record has the same field set and types as the staking_details rows already validated for the deeds-search route; the declaration is kept per entry"
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.deed-details",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/deed/details/{deed_uid}",
+      "request": {
+        "path": "/land/stake/deed/details/I-296-3f7a71183eda45",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T10:50:43Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 1486,
+      "rowCount": 1,
+      "rawResponseSha256": "73b07d572c91b98565797ed92225fb9ab0d719c9d59bfb963e23c67c208b3c00",
+      "uncertainty": {
+        "wireTypes": "the deed-level boost and total figures are JSON numbers on this route, while the per-card equivalents on the assets route are JSON strings; neither is normalised",
+        "recordConvergence": "this record has the same field set and types as the staking_details rows already validated for the deeds-search route; the declaration is kept per entry"
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.deeds-assets",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/deeds/{deed_uid}/assets",
+      "request": {
+        "path": "/land/stake/deeds/I-000-zzzznotadeedzzzz/assets",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T10:50:46Z",
+      "httpStatus": 400,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 165,
+      "rowCount": 0,
+      "rawResponseSha256": "76cceea1335db22b847351fb1e2e5aa178865a9c08af50dae765ef298b78ddf8",
+      "uncertainty": {
+        "notes": "request-only record: a syntactically synthetic, non-existent deed uid returns HTTP 400 with a fail envelope ({message, status:\"fail\", timestamp, traceId}) rather than the vapi {status,data} envelope used by every other capture on this route; no data field is present, so no empty-collection branch is exercised by this input"
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.deed-details",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/deed/details/{deed_uid}",
+      "request": {
+        "path": "/land/stake/deed/details/I-000-zzzznotadeedzzzz",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T10:50:49Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 32,
+      "rowCount": 0,
+      "rawResponseSha256": "46062cc10aed23dfff73eab8b2bdb89f65c6f4b912a2eb2e31328cc9128e7559",
+      "uncertainty": {
+        "notes": "request-only record: the same synthetic non-existent deed uid returns HTTP 200 with the vapi {status,data} envelope and data: null, the shared empty-result convention this repository already treats as an empty result on every predicate-validated route, rather than a populated record or an error"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-regions-counts-rows.fixture.json",
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "player": "sample-account-b"
+        }
+      },
+      "capturedAt": "2026-09-07T12:50:44Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 19933,
+      "rowCount": 150,
+      "rawResponseSha256": "6e7bedfc09ab59f55459e41663093eac31d9757ddc70d1c297fd56d47ee095cf",
+      "uncertainty": {
+        "rowShape": "one row per game region regardless of holdings: region.uid, region.name, region.region_number, for_sale, owned, listed, min_price, dec_stake; all 8 leaves present and non-null on every one of the 150 rows",
+        "absentFields": "none observed; every row carries the same key set",
+        "scopeInterpretation": "for_sale and min_price are identical between this scoped call and the R5 non-existent-account call below (byte-identical per-region), so those two fields are region-wide marketplace figures, not player-scoped; owned and dec_stake differ between the two calls and read 0 for the non-existent account, so those two are player-scoped"
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-tracts-counts-rows.fixture.json",
+      "endpointId": "vapi.land.tracts.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/tracts/counts",
+      "request": {
+        "path": "/land/tracts/counts",
+        "query": {
+          "player": "sample-account-b"
+        }
+      },
+      "capturedAt": "2026-09-07T12:50:49Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 3802,
+      "rowCount": 36,
+      "rawResponseSha256": "5b803089a97c077053125e3aebe636667f1ee85c9b3843c7fac1e054839e6288",
+      "uncertainty": {
+        "rowShape": "one row per (region, tract_number) combination the account holds a deed in: region.uid, region.name, region.region_number, tract_number, owned, listed; all 6 leaves present and non-null on every one of the 36 rows",
+        "absentFields": "none observed; every row carries the same key set",
+        "scopeInterpretation": "unlike the region-counts route, no unscoped or non-existent-account row set was captured for this route beyond the empty envelope already on file, so whether any field here is player-wide rather than player-scoped is unmeasured"
+      }
+    },
+    {
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "player": "zzz_no_such_account_zzz"
+        }
+      },
+      "capturedAt": "2026-09-07T12:51:00Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 19871,
+      "rowCount": 150,
+      "rawResponseSha256": "8a194a6a9df7c95be864c421635996c414990d8c5ad05f5e8ecb14834e8113bc",
+      "uncertainty": {
+        "notes": "request-only record, structurally unexpected: a synthetic non-existent account does NOT return data: [] on this route. It returns the same 150-region row set as a real account, with owned and dec_stake read as 0 on every row (86 of the 150 rows still carry non-zero for_sale/min_price, which are apparently region-wide rather than player-scoped, see the R1 capture above). This route's per-player emptiness convention differs from the deed-details route's data: null convention already on file for an unknown identifier; no fixture is added for this shape because it is a variant of the already-captured row shape, not a new one."
+      }
+    },
+    {
+      "endpointId": "vapi.land.regions.counts",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/regions/counts",
+      "request": {
+        "path": "/land/regions/counts",
+        "query": {
+          "player": "sample-account-b",
+          "status": "active"
+        }
+      },
+      "capturedAt": "2026-09-07T12:51:04Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 19933,
+      "rowCount": 150,
+      "rawResponseSha256": "6e7bedfc09ab59f55459e41663093eac31d9757ddc70d1c297fd56d47ee095cf",
+      "uncertainty": {
+        "notes": "request-only record: status=active alongside a real player scope returns a byte-identical body to the unscoped-status R1 capture above (same rawResponseSha256). status was already measured inert unscoped (see gap history); it is inert scoped as well."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-stake-dec-overall.fixture.json",
+      "endpointId": "vapi.land.stake.dec-overall",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/dec/overall",
+      "request": {
+        "path": "/land/stake/dec/overall",
+        "query": {
+          "player": "sample-account-b"
+        }
+      },
+      "capturedAt": "2026-09-07T14:26:54Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 36,
+      "rowCount": 0,
+      "rawResponseSha256": "33b4a537e37e5001da5ef2509bd3cc3483bed8767a07d7d648fd929136027f87",
+      "uncertainty": {
+        "notes": "12818148 is exactly the sum of this account's eleven decstaked row amounts (R4/F2), observed as one account at one instant; no tool derives one figure from the other."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-overall",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/dec/overall",
+      "request": {
+        "path": "/land/stake/dec/overall",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T14:26:57Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 29,
+      "rowCount": 0,
+      "rawResponseSha256": "41f61e36617e1557752051654c402783c861ea1c61a7070ec81178fa2f7eaec5",
+      "uncertainty": {
+        "notes": "request-only record: no parameters at all answered HTTP 200 with the number zero, the same well-formed answer an account with nothing staked would produce; player is measured not inert (supplying it changed the answer from 0 to 12818148, R1)."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-overall",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/dec/overall",
+      "request": {
+        "path": "/land/stake/dec/overall",
+        "query": {
+          "player": "zzznosuchaccount000"
+        }
+      },
+      "capturedAt": "2026-09-07T14:27:12Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 29,
+      "rowCount": 0,
+      "rawResponseSha256": "41f61e36617e1557752051654c402783c861ea1c61a7070ec81178fa2f7eaec5",
+      "uncertainty": {
+        "notes": "request-only record: player was a syntactically valid, obviously synthetic name matching no real account; the answer was the number zero, byte-identical to the unscoped R2 answer, indistinguishable from a real account with nothing staked. Selects <SENTENCE-A> form A."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-stake-decstaked-rows.fixture.json",
+      "endpointId": "vapi.land.stake.dec-staked",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/decstaked",
+      "request": {
+        "path": "/land/stake/decstaked",
+        "query": {
+          "player": "sample-account-b"
+        }
+      },
+      "capturedAt": "2026-09-07T14:27:15Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 2633,
+      "rowCount": 11,
+      "rawResponseSha256": "3b313a38940d29abb4804aa94dd2956a7c814eb6b70ffc053234422cb195eb25",
+      "uncertainty": {
+        "notes": "Eleven rows, one key set (id, region_uid, player, amount, percent_claimable, last_trx, created_date, last_updated_date), no nulls, every numeric field a genuine JSON number. Amount sum 12818148 equals R1's dec/overall figure exactly; the PR-PNW-1 row's amount (8005321) equals R7's dec_staked, and the PR-GLL-121 row's amount (551406) equals R8's dec_staked."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-stake-decstaked-none.fixture.json",
+      "endpointId": "vapi.land.stake.dec-staked",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/decstaked",
+      "request": {
+        "path": "/land/stake/decstaked",
+        "query": {
+          "player": "zzznosuchaccount000"
+        }
+      },
+      "capturedAt": "2026-09-07T14:27:51Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "name was a syntactically valid, obviously synthetic name matching no real account; the empty array is byte-identical to the unscoped R6 answer, so an empty answer distinguishes neither case."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-staked",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/decstaked",
+      "request": {
+        "path": "/land/stake/decstaked",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T14:27:54Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: no parameters at all answered HTTP 200 with an empty array, byte-identical to R5's non-existent-account answer; player is measured not inert."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-stake-dec-region-resolved.fixture.json",
+      "endpointId": "vapi.land.stake.dec-region",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/dec/region",
+      "request": {
+        "path": "/land/stake/dec/region",
+        "query": {
+          "player": "sample-account-b",
+          "region_uid": "PR-PNW-1"
+        }
+      },
+      "capturedAt": "2026-09-07T14:28:06Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 121,
+      "rowCount": 0,
+      "rawResponseSha256": "900d2a43536da468d4b57b16af61dfa7f883aa6264e315e1189e1f8e61a46ef6",
+      "uncertainty": {
+        "notes": "the object branch, a region this account holds stake in; dec_staked (8005321) equals this account's decstaked row for PR-PNW-1 (R4/F2); dec_stake_needed (8004775) sits just under dec_staked."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-region",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/dec/region",
+      "request": {
+        "path": "/land/stake/dec/region",
+        "query": {
+          "player": "sample-account-b",
+          "region_uid": "PR-GLL-121"
+        }
+      },
+      "capturedAt": "2026-09-07T14:28:09Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 120,
+      "rowCount": 0,
+      "rawResponseSha256": "ae83a347b44ac5c24a2f6fd4d24a650ac039591db4b5d3899684cf13c319222d",
+      "uncertainty": {
+        "notes": "request-only record: a second, different region_uid for the same account returned different figures (all three 551406, matching this account's decstaked row for PR-GLL-121 in R4/F2), pinning that different region uids produce different answers."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-region",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/dec/region",
+      "request": {
+        "path": "/land/stake/dec/region",
+        "query": {
+          "player": "sample-account-b",
+          "region_uid": "PR-PNW-2"
+        }
+      },
+      "capturedAt": "2026-09-07T14:28:22Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 103,
+      "rowCount": 0,
+      "rawResponseSha256": "dec1113ae8999c08cd681ac850951459a67570c3f57dd7e043d99a7b43685d0e",
+      "uncertainty": {
+        "notes": "STRUCTURALLY UNEXPECTED relative to the plan's anticipated shape: region_uid is a valid, resolvable region (see land-regions-counts-rows fixture) in which this account holds no decstaked row, and the upstream answered with the OBJECT branch \u2014 {uid, dec_stake_needed:0, dec_staked:0, dec_stake_in_use:0} \u2014 not an empty array. Per the plan's own contingency (its fixture section), no F5 fixture is written from this body; this record is its only durable home. This means the empty-array branch of dec/region's contract is, on every input observed by this row, reached only by a request missing region_uid or player entirely (R10, R11, R12), never by a fully-scoped no-stake request."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-region",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/dec/region",
+      "request": {
+        "path": "/land/stake/dec/region",
+        "query": {
+          "player": "sample-account-b"
+        }
+      },
+      "capturedAt": "2026-09-07T14:28:25Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: region_uid omitted, player supplied; answered with an empty array, byte-identical to the fully-unscoped R11 and the player-omitted R12."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-region",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/dec/region",
+      "request": {
+        "path": "/land/stake/dec/region",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T14:28:45Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "request-only record: no parameters at all answered HTTP 200 with an empty array, byte-identical to R10 and R12."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-region",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/dec/region",
+      "request": {
+        "path": "/land/stake/dec/region",
+        "query": {
+          "region_uid": "PR-PNW-1"
+        }
+      },
+      "capturedAt": "2026-09-07T14:28:48Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 30,
+      "rowCount": 0,
+      "rawResponseSha256": "20bc1392a17b383b46fffc33c8e796755452883bfcfc2d33c90342ea70227639",
+      "uncertainty": {
+        "notes": "THE SCOPE-DECIDING REQUEST: the same region_uid as R7 (PR-PNW-1), with player omitted. Answered {\"status\":\"success\",\"data\":[]} \u2014 an EMPTY ARRAY, not R7's object and not R7's figures. Selects <SENTENCE-B> form B: removing player changed the answer from a resolved object to an empty result, so the request's account is part of what dec_staked/dec_stake_needed/dec_stake_in_use describe; the route did not fall back to a region-wide total when player was dropped. This is the row's decisive scope measurement."
+      }
+    },
+    {
+      "fixture": "tests/fixtures/land-stake-evp-pending-claim.fixture.json",
+      "endpointId": "vapi.land.stake.evp-pending-claim",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/evp/pending-claim",
+      "request": {
+        "path": "/land/stake/evp/pending-claim",
+        "query": {
+          "player": "sample-account-b"
+        }
+      },
+      "capturedAt": "2026-09-07T14:29:06Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 54,
+      "rowCount": 0,
+      "rawResponseSha256": "c16b3b9d481e6456dc1c13a7330579513f366a642d7aa2704fed48510b470a9d",
+      "uncertainty": {
+        "notes": "a real account's pending_claim_amount was measured as zero."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.evp-pending-claim",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/evp/pending-claim",
+      "request": {
+        "path": "/land/stake/evp/pending-claim",
+        "query": {
+          "player": "zzznosuchaccount000"
+        }
+      },
+      "capturedAt": "2026-09-07T14:29:09Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 54,
+      "rowCount": 0,
+      "rawResponseSha256": "c16b3b9d481e6456dc1c13a7330579513f366a642d7aa2704fed48510b470a9d",
+      "uncertainty": {
+        "notes": "name was a syntactically valid, obviously synthetic name matching no real account; answered zero, byte-identical to R13's real-account answer and R15's unscoped answer. Because R13's real account also measured zero, this does not establish that the route cannot distinguish an unknown account from a real one with nothing pending \u2014 that remains untested, not disproved."
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.evp-pending-claim",
+      "variantKey": "default",
+      "method": "GET",
+      "host": "vapi",
+      "pathTemplate": "/land/stake/evp/pending-claim",
+      "request": {
+        "path": "/land/stake/evp/pending-claim",
+        "query": {}
+      },
+      "capturedAt": "2026-09-07T14:29:12Z",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "byteSize": 54,
+      "rowCount": 0,
+      "rawResponseSha256": "c16b3b9d481e6456dc1c13a7330579513f366a642d7aa2704fed48510b470a9d",
+      "uncertainty": {
+        "notes": "request-only record: no parameters at all answered HTTP 200 with zero, byte-identical to R13 and R14. Selects <SENTENCE-C> form A (a call with no parameters answered 200 with a figure, not an error or empty result)."
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "variantKey": "default",
+      "terminalStatus": "temporarily_unavailable",
+      "attempts": [
+        {
+          "capturedAt": "2026-09-06T14:37:56Z",
+          "httpStatus": null,
+          "byteSize": 0
+        },
+        {
+          "capturedAt": "2026-09-06T14:38:56Z",
+          "httpStatus": null,
+          "byteSize": 0
+        }
+      ],
+      "reason": "Client-side timeout with no response bytes or HTTP status; no default-shape contract is inferred."
+    }
+  ]
+}

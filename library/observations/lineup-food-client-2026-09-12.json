@@ -1,0 +1,15 @@
+{
+  "observedAt": "2026-09-12",
+  "source": {
+    "url": "https://splinterlands.com/assets/EditWorksiteSlots-CzPVx9CB.js",
+    "sha256": "80eab893274d6a81c2a188e695c2d407aee37c797cb48547f118a011e52c3e0a"
+  },
+  "findings": [
+    "The preview uses retained base (boostable minus terrain) for food.",
+    "At retained base <=20000 it adds Rationing and Light Rationing reductions; above the threshold it applies only Rationing.",
+    "Food is retained base times efficiency times one plus applicable reductions times 0.01, rounded to two decimals.",
+    "Runi overrides regional efficiency to one.",
+    "Castle/Keep preview food is zero; their tax model is not implemented by this estimator."
+  ],
+  "scope": "Public client preview inspection; no live backend comparison. Per-worker preview resource output is rounded to three decimals before summing."
+}

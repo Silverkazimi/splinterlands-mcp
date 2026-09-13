@@ -1,0 +1,389 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-07T14:29:12Z",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].id": {
+      "valueClass": "id"
+    },
+    "data[0].region_uid": {
+      "valueClass": "id"
+    },
+    "data[0].player": {
+      "valueClass": "name"
+    },
+    "data[0].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[0].last_trx": {
+      "valueClass": "id"
+    },
+    "data[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].id": {
+      "valueClass": "id"
+    },
+    "data[1].region_uid": {
+      "valueClass": "id"
+    },
+    "data[1].player": {
+      "valueClass": "name"
+    },
+    "data[1].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[1].last_trx": {
+      "valueClass": "id"
+    },
+    "data[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].id": {
+      "valueClass": "id"
+    },
+    "data[2].region_uid": {
+      "valueClass": "id"
+    },
+    "data[2].player": {
+      "valueClass": "name"
+    },
+    "data[2].amount": {
+      "valueClass": "numeric"
+    },
+    "data[2].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[2].last_trx": {
+      "valueClass": "id"
+    },
+    "data[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[3].id": {
+      "valueClass": "id"
+    },
+    "data[3].region_uid": {
+      "valueClass": "id"
+    },
+    "data[3].player": {
+      "valueClass": "name"
+    },
+    "data[3].amount": {
+      "valueClass": "numeric"
+    },
+    "data[3].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[3].last_trx": {
+      "valueClass": "id"
+    },
+    "data[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[3].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[4].id": {
+      "valueClass": "id"
+    },
+    "data[4].region_uid": {
+      "valueClass": "id"
+    },
+    "data[4].player": {
+      "valueClass": "name"
+    },
+    "data[4].amount": {
+      "valueClass": "numeric"
+    },
+    "data[4].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[4].last_trx": {
+      "valueClass": "id"
+    },
+    "data[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[4].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[5].id": {
+      "valueClass": "id"
+    },
+    "data[5].region_uid": {
+      "valueClass": "id"
+    },
+    "data[5].player": {
+      "valueClass": "name"
+    },
+    "data[5].amount": {
+      "valueClass": "numeric"
+    },
+    "data[5].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[5].last_trx": {
+      "valueClass": "id"
+    },
+    "data[5].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[5].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[6].id": {
+      "valueClass": "id"
+    },
+    "data[6].region_uid": {
+      "valueClass": "id"
+    },
+    "data[6].player": {
+      "valueClass": "name"
+    },
+    "data[6].amount": {
+      "valueClass": "numeric"
+    },
+    "data[6].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[6].last_trx": {
+      "valueClass": "id"
+    },
+    "data[6].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[6].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[7].id": {
+      "valueClass": "id"
+    },
+    "data[7].region_uid": {
+      "valueClass": "id"
+    },
+    "data[7].player": {
+      "valueClass": "name"
+    },
+    "data[7].amount": {
+      "valueClass": "numeric"
+    },
+    "data[7].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[7].last_trx": {
+      "valueClass": "id"
+    },
+    "data[7].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[7].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[8].id": {
+      "valueClass": "id"
+    },
+    "data[8].region_uid": {
+      "valueClass": "id"
+    },
+    "data[8].player": {
+      "valueClass": "name"
+    },
+    "data[8].amount": {
+      "valueClass": "numeric"
+    },
+    "data[8].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[8].last_trx": {
+      "valueClass": "id"
+    },
+    "data[8].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[8].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[9].id": {
+      "valueClass": "id"
+    },
+    "data[9].region_uid": {
+      "valueClass": "id"
+    },
+    "data[9].player": {
+      "valueClass": "name"
+    },
+    "data[9].amount": {
+      "valueClass": "numeric"
+    },
+    "data[9].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[9].last_trx": {
+      "valueClass": "id"
+    },
+    "data[9].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[9].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[10].id": {
+      "valueClass": "id"
+    },
+    "data[10].region_uid": {
+      "valueClass": "id"
+    },
+    "data[10].player": {
+      "valueClass": "name"
+    },
+    "data[10].amount": {
+      "valueClass": "numeric"
+    },
+    "data[10].percent_claimable": {
+      "valueClass": "numeric"
+    },
+    "data[10].last_trx": {
+      "valueClass": "id"
+    },
+    "data[10].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[10].last_updated_date": {
+      "valueClass": "timestamp"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "id": 15511,
+      "region_uid": "PR-PNW-13",
+      "player": "sample-account-b",
+      "amount": 150000,
+      "percent_claimable": 1,
+      "last_trx": "2677a281cde4674d6f3291a82fbf2f40e49c1774",
+      "created_date": "2024-12-24T07:48:12.795Z",
+      "last_updated_date": "2024-12-24T07:48:12.795Z"
+    },
+    {
+      "id": 15512,
+      "region_uid": "PR-PNW-20",
+      "player": "sample-account-b",
+      "amount": 191000,
+      "percent_claimable": 1,
+      "last_trx": "e7f3039dbe7589d7d9917b621ad68672e4fb9ac1",
+      "created_date": "2024-12-24T08:00:42.589Z",
+      "last_updated_date": "2024-12-24T08:00:42.589Z"
+    },
+    {
+      "id": 8978,
+      "region_uid": "PR-PNW-12",
+      "player": "sample-account-b",
+      "amount": 135000,
+      "percent_claimable": 1,
+      "last_trx": "c3028764f5cb36e956c91a1549b473852053dd7c",
+      "created_date": "2024-06-24T00:16:26.957Z",
+      "last_updated_date": "2024-06-24T00:16:26.957Z"
+    },
+    {
+      "id": 9011,
+      "region_uid": "PR-PNW-18",
+      "player": "sample-account-b",
+      "amount": 353375,
+      "percent_claimable": 1,
+      "last_trx": "b3ffe895fa38161f0bd88a7ed17c79247edfd73c",
+      "created_date": "2024-07-01T11:06:14.946Z",
+      "last_updated_date": "2024-07-01T11:06:14.946Z"
+    },
+    {
+      "id": 56,
+      "region_uid": "PR-LOP-62",
+      "player": "sample-account-b",
+      "amount": 779000,
+      "percent_claimable": 1,
+      "last_trx": "00880bbd33ec27f2ec9fa056b4af79875c768d35",
+      "created_date": "2023-11-28T20:58:42.128Z",
+      "last_updated_date": "2023-11-28T20:58:42.128Z"
+    },
+    {
+      "id": 71,
+      "region_uid": "PR-GLL-121",
+      "player": "sample-account-b",
+      "amount": 551406,
+      "percent_claimable": 1,
+      "last_trx": "e0351ac6ec086404c1d11969458522027437038a",
+      "created_date": "2023-11-28T20:59:21.796Z",
+      "last_updated_date": "2023-11-28T20:59:21.796Z"
+    },
+    {
+      "id": 5244,
+      "region_uid": "PR-PNW-7",
+      "player": "sample-account-b",
+      "amount": 844546,
+      "percent_claimable": 1,
+      "last_trx": "20d51e22d9dfa0e6dc1a4d167a8db56aded9b2a0",
+      "created_date": "2024-01-28T00:13:51.504Z",
+      "last_updated_date": "2024-01-28T00:13:51.504Z"
+    },
+    {
+      "id": 38,
+      "region_uid": "PR-PNW-1",
+      "player": "sample-account-b",
+      "amount": 8005321,
+      "percent_claimable": 1,
+      "last_trx": "cf7010fec6e3166fa82f0f96a5ca40263f461b7d",
+      "created_date": "2023-11-28T20:55:27.475Z",
+      "last_updated_date": "2023-11-28T20:55:27.475Z"
+    },
+    {
+      "id": 43,
+      "region_uid": "PR-PNW-9",
+      "player": "sample-account-b",
+      "amount": 1608500,
+      "percent_claimable": 1,
+      "last_trx": "d3b93f32443dab7f0c63ab4144941fecb5e1741f",
+      "created_date": "2023-11-28T20:56:24.429Z",
+      "last_updated_date": "2023-11-28T20:56:24.429Z"
+    },
+    {
+      "id": 68311,
+      "region_uid": "PR-GLL-123",
+      "player": "sample-account-b",
+      "amount": 50000,
+      "percent_claimable": 1,
+      "last_trx": "065a248312aec22d37b07885e86bd291219e32a5",
+      "created_date": "2026-07-25T14:34:12.304Z",
+      "last_updated_date": "2026-07-25T14:34:12.304Z"
+    },
+    {
+      "id": 46003,
+      "region_uid": "PR-GLL-115",
+      "player": "sample-account-b",
+      "amount": 150000,
+      "percent_claimable": 1,
+      "last_trx": "d1732b4f6e2be05cbd4ac2703273abe41e10d092",
+      "created_date": "2025-11-30T11:32:00.745Z",
+      "last_updated_date": "2025-11-30T11:32:00.745Z"
+    }
+  ]
+}

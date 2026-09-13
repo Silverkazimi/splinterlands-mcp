@@ -1,0 +1,18 @@
+{
+  "provenance": { "source": "synthetic", "capturedAt": "2026-09-07T00:00:00Z" },
+  "valueClasses": {
+    "entryId": { "valueClass": "id" },
+    "baseline.status": { "valueClass": "enum" },
+    "baseline.data": { "valueClass": "enum" },
+    "baseline.data.sum": { "valueClass": "numeric" },
+    "baseline.data.count": { "valueClass": "numeric" },
+    "observed.status": { "valueClass": "enum" },
+    "observed.data": { "valueClass": "enum" },
+    "observed.data.sum": { "valueClass": "numeric" },
+    "observed.data.count": { "valueClass": "numeric" },
+    "observed.data.extra": { "valueClass": "enum" }
+  },
+  "entryId": "vapi.land.volume",
+  "baseline": { "status": "string", "data": "object", "data.sum": "string", "data.count": "string" },
+  "observed": { "status": "string", "data": "object", "data.sum": "string", "data.count": "number", "data.extra": "boolean" }
+}

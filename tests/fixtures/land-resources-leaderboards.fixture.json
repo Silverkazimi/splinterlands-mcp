@@ -1,0 +1,53 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-07T00:00:00Z",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].rank": {
+      "valueClass": "numeric"
+    },
+    "data[0].player": {
+      "valueClass": "name"
+    },
+    "data[0].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].amount2": {
+      "valueClass": "numeric"
+    },
+    "data[0].resource_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[0].guild": {
+      "valueClass": "opaque"
+    },
+    "data[0].title_pre": {
+      "valueClass": "opaque"
+    },
+    "data[0].data": {
+      "valueClass": "opaque"
+    },
+    "data[0].id": {
+      "valueClass": "id"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "rank": 177,
+      "player": "sample-account-a",
+      "amount": 0,
+      "amount2": 0,
+      "resource_per_hour": 0,
+      "guild": "Creators",
+      "title_pre": "",
+      "data": "{\"crest\":{\"banner\":\"teal\",\"decal\":\"shield\"}}",
+      "id": "captured-leaderboard-row"
+    }
+  ]
+}

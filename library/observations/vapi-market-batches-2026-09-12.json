@@ -1,0 +1,29 @@
+[
+  {
+    "requestedIds": 100,
+    "queryCharacters": 379,
+    "httpStatus": 200,
+    "returnedRecords": 100,
+    "identitiesMatch": true,
+    "responseBytes": 70774,
+    "observedAt": "2026-09-12T10:01:40.597511+00:00"
+  },
+  {
+    "requestedIds": 101,
+    "queryCharacters": 382,
+    "httpStatus": 200,
+    "returnedRecords": 101,
+    "identitiesMatch": true,
+    "responseBytes": 71556,
+    "observedAt": "2026-09-12T10:01:41.938378+00:00"
+  },
+  {
+    "requestedIds": 788,
+    "queryCharacters": 3043,
+    "httpStatus": 200,
+    "returnedRecords": 788,
+    "identitiesMatch": true,
+    "responseBytes": 556548,
+    "observedAt": "2026-09-12T10:01:43.165177+00:00"
+  }
+]

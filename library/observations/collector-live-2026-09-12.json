@@ -1,0 +1,31 @@
+{
+  "observedAt": "2026-09-12T10:19:50.135Z",
+  "registeredTools": 136,
+  "name": "collector_config",
+  "isError": false,
+  "sections": [
+    "freePagesPerBinder",
+    "maxPagesPerBinder",
+    "cardSlotsPerPage",
+    "visibleBookshelfSlots",
+    "claim",
+    "placeholderCosmetics",
+    "shopItems",
+    "featuredAccounts",
+    "cosmetics"
+  ],
+  "counts": {
+    "shopItems": 10,
+    "featuredAccounts": 6,
+    "cosmetics": 70
+  },
+  "provenance": {
+    "endpoint": "/collector/config",
+    "traceId": "c2e4858d-469e-4993-aa73-94c8d21c6167",
+    "freshness": {
+      "retrievedAt": "2026-09-12T10:19:50.114Z",
+      "ageMs": 5
+    },
+    "requestScope": {}
+  }
+}

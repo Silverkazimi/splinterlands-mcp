@@ -1,0 +1,126 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:20:11.548842+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/wagon_eligible_cards",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.total_cards": {
+      "valueClass": "numeric"
+    },
+    "body.groups[0].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[0].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[0].gold": {
+      "valueClass": "opaque"
+    },
+    "body.groups[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[0].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[0].uids[1]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[1].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[1].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[1].gold": {
+      "valueClass": "opaque"
+    },
+    "body.groups[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[1].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[1].uids[1]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[2].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[2].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[2].gold": {
+      "valueClass": "opaque"
+    },
+    "body.groups[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[2].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[2].uids[1]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[2].qty": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "total_cards": 248,
+    "groups": [
+      {
+        "cp": 500,
+        "detail_id": 970,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "C2-970-Y1F7AUJUUO",
+          "C2-970-Y5W49DI0ZK"
+        ],
+        "qty": 3
+      },
+      {
+        "cp": 500,
+        "detail_id": 979,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "C20-979-4M6EKS2SF4",
+          "C20-979-5XW2YO12HC"
+        ],
+        "qty": 45
+      },
+      {
+        "cp": 500,
+        "detail_id": 981,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "C20-981-34FYK4LJLC",
+          "C20-981-54KE36BYPS"
+        ],
+        "qty": 94
+      }
+    ]
+  }
+}

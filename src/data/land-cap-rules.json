@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-12",
+  "worksiteBaseProductionCap": 100000,
+  "appliesBeforeBoosts": true,
+  "runiExcludedFromCap": true,
+  "buildingCap": "May be lower and changes with building level; no universal building value supplied.",
+  "allocationOrder": "The public client preview allocates ordinary workers in ascending slot order (1 through 5); later slots absorb overflow. Runi is processed separately after ordinary workers and is excluded from the cap.",
+  "sources": [
+    "https://support.splinterlands.com/hc/en-us/articles/17661708957972-Card-and-Item-Staking-on-Land-FAQ",
+    "https://support.splinterlands.com/hc/en-us/articles/17695274980756-Resource-Production-FAQ"
+  ],
+  "capDetailsSource": "Follow the Worker Production whitepaper link on the Resource Production FAQ, section Max Base Production Limit.",
+  "allocationEvidence": {
+    "resource": "splinterlands://land/rules/screen-fields",
+    "source": {
+      "url": "https://splinterlands.com/assets/CardColorBiomeModifier-VrBrpfnr.js",
+      "sha256": "241ac7d940c3255d85b859a2f6253528a64b3477edc7684bbcf3e1579d349831",
+      "bytes": 39191
+    },
+    "scope": "Observed public client preview; backend agreement remains a separate check."
+  }
+}

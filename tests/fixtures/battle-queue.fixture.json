@@ -1,0 +1,130 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:47:03.557245+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/battle/battle_queue",
+    "captureScope": "Full captured response; JSON-encoded string fields are not decoded or transformed."
+  },
+  "valueClasses": {
+    "body[0].id": {
+      "valueClass": "opaque"
+    },
+    "body[0].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[0].expiration_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[0].player": {
+      "valueClass": "name"
+    },
+    "body[0].team_hash": {
+      "valueClass": "opaque"
+    },
+    "body[0].match_type": {
+      "valueClass": "opaque"
+    },
+    "body[0].mana_cap": {
+      "valueClass": "opaque"
+    },
+    "body[0].opponent": {
+      "valueClass": "opaque"
+    },
+    "body[0].match_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[0].status": {
+      "valueClass": "numeric"
+    },
+    "body[0].reveal_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].reveal_block_id": {
+      "valueClass": "id"
+    },
+    "body[0].team": {
+      "valueClass": "opaque"
+    },
+    "body[0].summoner_level": {
+      "valueClass": "opaque"
+    },
+    "body[0].ruleset": {
+      "valueClass": "opaque"
+    },
+    "body[0].inactive": {
+      "valueClass": "opaque"
+    },
+    "body[0].opponent_player": {
+      "valueClass": "opaque"
+    },
+    "body[0].opponent_team_hash": {
+      "valueClass": "opaque"
+    },
+    "body[0].submit_expiration_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[0].settings": {
+      "valueClass": "opaque"
+    },
+    "body[0].app": {
+      "valueClass": "opaque"
+    },
+    "body[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].match_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].submit_expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].recent_opponents": {
+      "valueClass": "opaque"
+    },
+    "body[0].submit_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].format": {
+      "valueClass": "opaque"
+    },
+    "body[0].bracket": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": [
+    {
+      "id": "sl_93de50358e9467fbb7751a8146d043a4",
+      "created_block_num": 109844391,
+      "expiration_block_num": 109844451,
+      "player": "vugtis",
+      "team_hash": "462f011743a38230396980c795ecef50",
+      "match_type": "Ranked",
+      "mana_cap": null,
+      "opponent": "sl_6164d33e80687e97fbe0b5bdcede2baf",
+      "match_block_num": 0,
+      "status": 2,
+      "reveal_tx": "sl_08873f86ea26ffba2f247273ef68a167",
+      "reveal_block_id": "109844410",
+      "team": null,
+      "summoner_level": null,
+      "ruleset": null,
+      "inactive": null,
+      "opponent_player": "the-dark-knight",
+      "opponent_team_hash": "da025d2ac0a41ab8e562742c7a1897d3",
+      "submit_expiration_block_num": 0,
+      "settings": "{\"rating_level\":4}",
+      "app": null,
+      "created_date": "2026-09-12T08:11:58.092Z",
+      "expiration_date": "2026-09-12T08:14:58.092Z",
+      "match_date": "2026-09-12T08:12:30.758Z",
+      "submit_expiration_date": "2026-09-12T08:15:47.312Z",
+      "recent_opponents": null,
+      "submit_date": "2026-09-12T08:13:11.516Z",
+      "format": null,
+      "bracket": null
+    }
+  ]
+}

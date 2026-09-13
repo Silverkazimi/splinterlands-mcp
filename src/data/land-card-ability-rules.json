@@ -1,0 +1,684 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-12",
+  "edition": 19,
+  "originalCardIds": [
+    866,
+    867,
+    868,
+    869
+  ],
+  "additionalObservedCardIds": [
+    1051
+  ],
+  "units": "Ability values retain API decimal fractions and signs; negative values denote reductions. Boolean abilities have no numeric value. Level 1 corresponds to array index 0.",
+  "sources": {
+    "api": {
+      "url": "https://api.splinterlands.com/cards/get_details",
+      "observedAt": "2026-09-12T11:19:04.427222+00:00"
+    },
+    "abilityDescriptions": "https://support.splinterlands.com/hc/en-us/articles/44050892625940-Land-Cards-FAQ",
+    "announcement": "https://peakd.com/splinterlands/@splinterlands/splinterlands-inaugural-land-card-edition-full-announcement-and-technical-specification",
+    "lightRationing": "https://support.splinterlands.com/hc/en-us/articles/50737508979348-Verico-Land-Cards-FAQ",
+    "foodInteraction": "https://splinterlands.com/assets/EditWorksiteSlots-CzPVx9CB.js"
+  },
+  "verification": {
+    "originalLevelRowsCompared": 28,
+    "announcementSha256": "c7abd7892eb77958ca34089f22f8bed549827734630a94e669a4f754277b7a53",
+    "note": "The announcement omits the percent sign in one Undying Miner level-1 Bloodline cell; the API supplies 0.15. All numeric values agree under the percent-column interpretation."
+  },
+  "cards": [
+    {
+      "card_detail_id": 866,
+      "card_name": "Tireless Farmhand",
+      "color": "Blue",
+      "sub_type": "Human",
+      "levels": [
+        {
+          "level": 1,
+          "abilities": [
+            [
+              "GRAIN",
+              0.01
+            ]
+          ]
+        },
+        {
+          "level": 2,
+          "abilities": [
+            [
+              "GRAIN",
+              0.03
+            ]
+          ]
+        },
+        {
+          "level": 3,
+          "abilities": [
+            [
+              "GRAIN",
+              0.05
+            ],
+            [
+              "ENERGIZED"
+            ],
+            [
+              "RATIONING",
+              -0.1
+            ]
+          ]
+        },
+        {
+          "level": 4,
+          "abilities": [
+            [
+              "GRAIN",
+              0.1
+            ],
+            [
+              "ENERGIZED"
+            ],
+            [
+              "RATIONING",
+              -0.15
+            ]
+          ]
+        },
+        {
+          "level": 5,
+          "abilities": [
+            [
+              "GRAIN",
+              0.15
+            ],
+            [
+              "ENERGIZED"
+            ],
+            [
+              "RATIONING",
+              -0.2
+            ],
+            [
+              "DD",
+              -0.5
+            ]
+          ]
+        },
+        {
+          "level": 6,
+          "abilities": [
+            [
+              "GRAIN",
+              0.2
+            ],
+            [
+              "ENERGIZED"
+            ],
+            [
+              "RATIONING",
+              -0.25
+            ],
+            [
+              "DD",
+              -0.5
+            ]
+          ]
+        },
+        {
+          "level": 7,
+          "abilities": [
+            [
+              "GRAIN",
+              0.3
+            ],
+            [
+              "ENERGIZED"
+            ],
+            [
+              "RATIONING",
+              -0.3
+            ],
+            [
+              "DD",
+              -0.5
+            ]
+          ]
+        },
+        {
+          "level": 8,
+          "abilities": [
+            [
+              "GRAIN",
+              0.4
+            ],
+            [
+              "ENERGIZED"
+            ],
+            [
+              "RATIONING",
+              -0.3
+            ],
+            [
+              "DD",
+              -0.5
+            ]
+          ]
+        },
+        {
+          "level": 9,
+          "abilities": [
+            [
+              "GRAIN",
+              0.5
+            ],
+            [
+              "ENERGIZED"
+            ],
+            [
+              "RATIONING",
+              -0.3
+            ],
+            [
+              "DD",
+              -0.5
+            ]
+          ]
+        },
+        {
+          "level": 10,
+          "abilities": [
+            [
+              "GRAIN",
+              0.6
+            ],
+            [
+              "ENERGIZED"
+            ],
+            [
+              "RATIONING",
+              -0.3
+            ],
+            [
+              "DD",
+              -0.5
+            ],
+            [
+              "LL"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "card_detail_id": 867,
+      "card_name": "Kinbound Druid",
+      "color": "Green",
+      "sub_type": "Elf",
+      "levels": [
+        {
+          "level": 1,
+          "abilities": [
+            [
+              "DD",
+              -0.05
+            ],
+            [
+              "BLOODLINE",
+              0.05,
+              "Elf"
+            ]
+          ]
+        },
+        {
+          "level": 2,
+          "abilities": [
+            [
+              "DD",
+              -0.1
+            ],
+            [
+              "BLOODLINE",
+              0.07,
+              "Elf"
+            ],
+            [
+              "WOOD",
+              0.1
+            ],
+            [
+              "ENERGIZED"
+            ]
+          ]
+        },
+        {
+          "level": 3,
+          "abilities": [
+            [
+              "DD",
+              -0.2
+            ],
+            [
+              "BLOODLINE",
+              0.1,
+              "Elf"
+            ],
+            [
+              "WOOD",
+              0.2
+            ],
+            [
+              "ENERGIZED"
+            ]
+          ]
+        },
+        {
+          "level": 4,
+          "abilities": [
+            [
+              "DD",
+              -0.5
+            ],
+            [
+              "BLOODLINE",
+              0.15,
+              "Elf"
+            ],
+            [
+              "WOOD",
+              0.3
+            ],
+            [
+              "ENERGIZED"
+            ]
+          ]
+        },
+        {
+          "level": 5,
+          "abilities": [
+            [
+              "DD",
+              -0.7
+            ],
+            [
+              "BLOODLINE",
+              0.2,
+              "Elf"
+            ],
+            [
+              "WOOD",
+              0.4
+            ],
+            [
+              "ENERGIZED"
+            ]
+          ]
+        },
+        {
+          "level": 6,
+          "abilities": [
+            [
+              "DD",
+              -0.85
+            ],
+            [
+              "BLOODLINE",
+              0.25,
+              "Elf"
+            ],
+            [
+              "WOOD",
+              0.5
+            ],
+            [
+              "ENERGIZED"
+            ]
+          ]
+        },
+        {
+          "level": 7,
+          "abilities": [
+            [
+              "DD",
+              -0.99
+            ],
+            [
+              "BLOODLINE",
+              0.3,
+              "Elf"
+            ],
+            [
+              "WOOD",
+              0.6
+            ],
+            [
+              "ENERGIZED"
+            ]
+          ]
+        },
+        {
+          "level": 8,
+          "abilities": [
+            [
+              "DD",
+              -0.99
+            ],
+            [
+              "BLOODLINE",
+              0.3,
+              "Elf"
+            ],
+            [
+              "WOOD",
+              0.7
+            ],
+            [
+              "ENERGIZED"
+            ],
+            [
+              "LL"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "card_detail_id": 868,
+      "card_name": "Toiling Ox",
+      "color": "White",
+      "sub_type": "Mundane Beast",
+      "levels": [
+        {
+          "level": 1,
+          "abilities": [
+            [
+              "DD",
+              -0.15
+            ],
+            [
+              "BLOODLINE",
+              0.05,
+              "Mundane Beast"
+            ],
+            [
+              "GRAIN",
+              0.05
+            ]
+          ]
+        },
+        {
+          "level": 2,
+          "abilities": [
+            [
+              "DD",
+              -0.4
+            ],
+            [
+              "BLOODLINE",
+              0.07,
+              "Mundane Beast"
+            ],
+            [
+              "GRAIN",
+              0.15
+            ]
+          ]
+        },
+        {
+          "level": 3,
+          "abilities": [
+            [
+              "DD",
+              -0.6
+            ],
+            [
+              "BLOODLINE",
+              0.1,
+              "Mundane Beast"
+            ],
+            [
+              "GRAIN",
+              0.3
+            ]
+          ]
+        },
+        {
+          "level": 4,
+          "abilities": [
+            [
+              "DD",
+              -0.6
+            ],
+            [
+              "BLOODLINE",
+              0.15,
+              "Mundane Beast"
+            ],
+            [
+              "GRAIN",
+              0.5
+            ]
+          ]
+        },
+        {
+          "level": 5,
+          "abilities": [
+            [
+              "DD",
+              -0.7
+            ],
+            [
+              "BLOODLINE",
+              0.2,
+              "Mundane Beast"
+            ],
+            [
+              "GRAIN",
+              0.7
+            ],
+            [
+              "STONE",
+              0.65
+            ]
+          ]
+        },
+        {
+          "level": 6,
+          "abilities": [
+            [
+              "DD",
+              -0.8
+            ],
+            [
+              "BLOODLINE",
+              0.25,
+              "Mundane Beast"
+            ],
+            [
+              "GRAIN",
+              0.8
+            ],
+            [
+              "STONE",
+              0.85
+            ],
+            [
+              "LL"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "card_detail_id": 869,
+      "card_name": "Undying Miner",
+      "color": "Black",
+      "sub_type": "Undead",
+      "levels": [
+        {
+          "level": 1,
+          "abilities": [
+            [
+              "IRON",
+              0.25
+            ],
+            [
+              "DD",
+              -0.7
+            ],
+            [
+              "BLOODLINE",
+              0.15,
+              "Undead"
+            ]
+          ]
+        },
+        {
+          "level": 2,
+          "abilities": [
+            [
+              "IRON",
+              0.5
+            ],
+            [
+              "DD",
+              -0.8
+            ],
+            [
+              "BLOODLINE",
+              0.2,
+              "Undead"
+            ]
+          ]
+        },
+        {
+          "level": 3,
+          "abilities": [
+            [
+              "IRON",
+              0.8
+            ],
+            [
+              "DD",
+              -0.9
+            ],
+            [
+              "BLOODLINE",
+              0.3,
+              "Undead"
+            ],
+            [
+              "AURA",
+              0.75
+            ]
+          ]
+        },
+        {
+          "level": 4,
+          "abilities": [
+            [
+              "IRON",
+              1
+            ],
+            [
+              "DD",
+              -0.99
+            ],
+            [
+              "BLOODLINE",
+              0.3,
+              "Undead"
+            ],
+            [
+              "AURA",
+              1
+            ],
+            [
+              "LL"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "card_detail_id": 1051,
+      "card_name": "Lumina Lightweaver",
+      "color": "Green",
+      "sub_type": "Human",
+      "levels": [
+        {
+          "level": 1,
+          "abilities": []
+        },
+        {
+          "level": 2,
+          "abilities": []
+        },
+        {
+          "level": 3,
+          "abilities": []
+        },
+        {
+          "level": 4,
+          "abilities": []
+        },
+        {
+          "level": 5,
+          "abilities": []
+        },
+        {
+          "level": 6,
+          "abilities": []
+        },
+        {
+          "level": 7,
+          "abilities": []
+        },
+        {
+          "level": 8,
+          "abilities": []
+        },
+        {
+          "level": 9,
+          "abilities": []
+        },
+        {
+          "level": 10,
+          "abilities": [
+            [
+              "ENERGIZED"
+            ],
+            [
+              "RATIONING_LITE",
+              -0.1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "abilityCodes": {
+    "GRAIN": "Bountiful Grain",
+    "WOOD": "Bountiful Wood",
+    "STONE": "Bountiful Stone",
+    "IRON": "Bountiful Iron",
+    "AURA": "Bountiful Aura",
+    "DD": "Dark Discount",
+    "ENERGIZED": "Energized",
+    "RATIONING": "Rationing",
+    "RATIONING_LITE": "Light Rationing",
+    "BLOODLINE": "Toil and Kin; third tuple value identifies the required bloodline",
+    "LL": "Labor\u2019s Luck"
+  },
+  "rules": {
+    "sameAbility": "Use the strongest applicable effect, not the sum.",
+    "distinctAbilities": "Different applicable production abilities add together. Different target bloodlines are distinct Toil and Kin abilities.",
+    "bloodlineRequiresAnotherMatchingWorker": true,
+    "energizedActsAsPowerCore": true,
+    "rationingAppliesToCastlesAndKeeps": false,
+    "lightRationingMaximumBaseProduction": 20000,
+    "lightRationingAppliesToCastlesAndKeeps": false,
+    "landCardAbilitiesRemainActiveAtBaseCap": true,
+    "rationingAndLightRationing": "Observed public preview adds their strongest reductions when retained base is at most 20000; only Rationing applies above that threshold. Backend agreement remains pending."
+  },
+  "scope": "Dated edition-19 metadata and public ability rules. No automatic updates, reward probability estimate, worker-cap allocation or complete lineup estimator is supplied."
+}

@@ -1,0 +1,29 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T00:00:00Z",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].title": {
+      "valueClass": "enum"
+    },
+    "data[0].player": {
+      "valueClass": "name"
+    },
+    "data[0].created_date": {
+      "valueClass": "timestamp"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "title": "Warden",
+      "player": "sample-account-a",
+      "created_date": "2024-05-28T15:34:23.831Z"
+    }
+  ]
+}

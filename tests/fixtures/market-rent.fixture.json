@@ -1,0 +1,162 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:32:07.755868+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/market/for_rent_grouped",
+    "captureScope": "First three root rows; nested records retained unchanged."
+  },
+  "valueClasses": {
+    "body[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].gold": {
+      "valueClass": "opaque"
+    },
+    "body[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].level": {
+      "valueClass": "numeric"
+    },
+    "body[0].low_price_bcx": {
+      "valueClass": "numeric"
+    },
+    "body[0].low_price": {
+      "valueClass": "numeric"
+    },
+    "body[0].high_price": {
+      "valueClass": "numeric"
+    },
+    "body[0].mana": {
+      "valueClass": "numeric"
+    },
+    "body[0].season_qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].daily_qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].gold": {
+      "valueClass": "opaque"
+    },
+    "body[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].level": {
+      "valueClass": "numeric"
+    },
+    "body[1].low_price_bcx": {
+      "valueClass": "numeric"
+    },
+    "body[1].low_price": {
+      "valueClass": "numeric"
+    },
+    "body[1].high_price": {
+      "valueClass": "numeric"
+    },
+    "body[1].mana": {
+      "valueClass": "numeric"
+    },
+    "body[1].season_qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].daily_qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].gold": {
+      "valueClass": "opaque"
+    },
+    "body[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].level": {
+      "valueClass": "numeric"
+    },
+    "body[2].low_price_bcx": {
+      "valueClass": "numeric"
+    },
+    "body[2].low_price": {
+      "valueClass": "numeric"
+    },
+    "body[2].high_price": {
+      "valueClass": "numeric"
+    },
+    "body[2].mana": {
+      "valueClass": "numeric"
+    },
+    "body[2].season_qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].daily_qty": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": [
+    {
+      "card_detail_id": 1,
+      "gold": false,
+      "foil": 0,
+      "edition": 0,
+      "qty": 3,
+      "level": 1,
+      "low_price_bcx": 0.053,
+      "low_price": 1,
+      "high_price": 1,
+      "mana": 3,
+      "season_qty": 3,
+      "daily_qty": 0
+    },
+    {
+      "card_detail_id": 473,
+      "gold": false,
+      "foil": 0,
+      "edition": 8,
+      "qty": 28,
+      "level": 1,
+      "low_price_bcx": 0.017,
+      "low_price": 1,
+      "high_price": 4.595,
+      "mana": 5,
+      "season_qty": 28,
+      "daily_qty": 0
+    },
+    {
+      "card_detail_id": 636,
+      "gold": false,
+      "foil": 0,
+      "edition": 12,
+      "qty": 11,
+      "level": 1,
+      "low_price_bcx": 3.096,
+      "low_price": 3.096,
+      "high_price": 60.4,
+      "mana": 9,
+      "season_qty": 11,
+      "daily_qty": 0
+    }
+  ]
+}

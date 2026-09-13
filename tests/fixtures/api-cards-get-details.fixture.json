@@ -1,0 +1,39 @@
+{
+  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
+  "valueClasses": {
+    "body[0].id": { "valueClass": "id" },
+    "body[0].name": { "valueClass": "enum" },
+    "body[0].color": { "valueClass": "enum" },
+    "body[0].type": { "valueClass": "enum" },
+    "body[0].sub_type": { "valueClass": "enum" },
+    "body[0].rarity": { "valueClass": "enum" },
+    "body[0].drop_rate": { "valueClass": "numeric" },
+    "body[0].stats": { "valueClass": "opaque" },
+    "body[0].stats.mana": { "valueClass": "opaque" },
+    "body[0].stats.mana[0]": { "valueClass": "numeric" },
+    "body[0].stats.mana[1]": { "valueClass": "numeric" },
+    "body[0].stats.abilities": { "valueClass": "opaque" },
+    "body[0].stats.abilities[0]": { "valueClass": "opaque" },
+    "body[0].editions": { "valueClass": "enum" },
+    "body[0].total_printed": { "valueClass": "numeric" },
+    "body[0].distribution": { "valueClass": "opaque" },
+    "body[0].distribution[0].num_cards": { "valueClass": "numeric" },
+    "body[0].distribution[0].unbound_cards": { "valueClass": "numeric" },
+    "body[0].distribution[0].total_xp": { "valueClass": "numeric" },
+    "body[0].distribution[0].num_burned": { "valueClass": "numeric" },
+    "body[0].distribution[0].total_burned_xp": { "valueClass": "numeric" }
+  },
+  "body": [{
+    "id": 1,
+    "name": "Fixture Card",
+    "color": "Red",
+    "type": "Summoner",
+    "sub_type": "None",
+    "rarity": 1,
+    "drop_rate": 1,
+    "stats": { "mana": [4, 5], "abilities": [[]] },
+    "editions": "0,1",
+    "total_printed": 100,
+    "distribution": [{ "num_cards": "10", "unbound_cards": "5", "total_xp": "20", "num_burned": "1", "total_burned_xp": "2" }]
+  }]
+}

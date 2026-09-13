@@ -1,0 +1,194 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-13T09:33:55.932180+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/collector/{player}/stickers/all",
+    "captureScope": "Complete captured response without transformed values."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data[0].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[0].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[0].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[0].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[0].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[0].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[0].cosmetic.type": {
+      "valueClass": "opaque"
+    },
+    "body.data[0].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[0].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[0].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[1].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[1].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[1].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[1].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[1].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[1].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[1].cosmetic.type": {
+      "valueClass": "opaque"
+    },
+    "body.data[1].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[1].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[1].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[2].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[2].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[2].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[2].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[2].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[2].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[2].cosmetic.type": {
+      "valueClass": "opaque"
+    },
+    "body.data[2].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[2].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[2].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[3].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[3].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[3].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[3].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[3].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[3].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[3].cosmetic.type": {
+      "valueClass": "opaque"
+    },
+    "body.data[3].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[3].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[3].cosmetic.isPremium": {
+      "valueClass": "enum"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": [
+      {
+        "stickerUid": "I-584-1b04ec7f8124",
+        "isSoulbound": true,
+        "isTradeable": false,
+        "isListed": false,
+        "cosmetic": {
+          "id": "70",
+          "key": "anniversary_8_balloon",
+          "type": "sticker",
+          "name": "8th Anniversary Balloon",
+          "assetUrl": "collector/stickers/events/anniversary-8/sticker-anniversary-8-balloon.webp",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-583-e6e0af629c84",
+        "isSoulbound": true,
+        "isTradeable": false,
+        "isListed": false,
+        "cosmetic": {
+          "id": "50",
+          "key": "sticker_support_you_rock",
+          "type": "sticker",
+          "name": "You Rock",
+          "assetUrl": "collector/stickers/support/sticker-support-you-rock.webp",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-560-ed104d1bd5bc",
+        "isSoulbound": true,
+        "isTradeable": false,
+        "isListed": false,
+        "cosmetic": {
+          "id": "46",
+          "key": "sticker_support_maintenance_wen",
+          "type": "sticker",
+          "name": "Maintenance: Wen?",
+          "assetUrl": "collector/stickers/support/sticker-support-maintenance-wen.webp",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-577-61263e33bef7",
+        "isSoulbound": true,
+        "isTradeable": false,
+        "isListed": false,
+        "cosmetic": {
+          "id": "55",
+          "key": "collector_year_joined_2022",
+          "type": "sticker",
+          "name": "Year Joined 2022",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-22_192.webp",
+          "isPremium": false
+        }
+      }
+    ]
+  }
+}

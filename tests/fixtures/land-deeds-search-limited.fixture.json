@@ -1,0 +1,1658 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-06T14:38:42Z"
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].map_name": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].region_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].tract_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].plot_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].region_number": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].plot_number": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].territory": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].region_uid": {
+      "valueClass": "id"
+    },
+    "data.deeds[0].resource_id": {
+      "valueClass": "id"
+    },
+    "data.deeds[0].resource_symbol": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[0].magic_type": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].stats": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[0].deed_uid": {
+      "valueClass": "id"
+    },
+    "data.deeds[0].player": {
+      "valueClass": "name"
+    },
+    "data.deeds[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.deeds[0].listed": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].lock_days": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "data.deeds[0].in_use": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].deed_type": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].land_stats": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[0].region_name": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].market_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data.deeds[0].market_id": {
+      "valueClass": "id"
+    },
+    "data.deeds[0].listing_price": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].market_listing_id": {
+      "valueClass": "id"
+    },
+    "data.deeds[0].market_listing_status_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].castle": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[0].keep": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[0].rarity": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].plot_status": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].hex_code": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[0].tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].item_detail_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].created_tx": {
+      "valueClass": "id"
+    },
+    "data.deeds[0].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data.deeds[0].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].rarity_sort_value": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[0].is_construction": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].map_name": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].region_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].tract_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].plot_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].region_number": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].plot_number": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].territory": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].region_uid": {
+      "valueClass": "id"
+    },
+    "data.deeds[1].resource_id": {
+      "valueClass": "id"
+    },
+    "data.deeds[1].resource_symbol": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].magic_type": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].stats": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[1].deed_uid": {
+      "valueClass": "id"
+    },
+    "data.deeds[1].player": {
+      "valueClass": "name"
+    },
+    "data.deeds[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.deeds[1].listed": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].lock_days": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[1].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "data.deeds[1].in_use": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].deed_type": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].land_stats": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[1].region_name": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].market_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data.deeds[1].market_id": {
+      "valueClass": "id"
+    },
+    "data.deeds[1].listing_price": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].market_listing_id": {
+      "valueClass": "id"
+    },
+    "data.deeds[1].market_listing_status_id": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[1].castle": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[1].keep": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[1].rarity": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].plot_status": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].hex_code": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[1].tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].item_detail_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].created_tx": {
+      "valueClass": "id"
+    },
+    "data.deeds[1].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data.deeds[1].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].rarity_sort_value": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[1].is_construction": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].map_name": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].region_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].tract_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].plot_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].region_number": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].tract_number": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].plot_number": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].territory": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].region_uid": {
+      "valueClass": "id"
+    },
+    "data.deeds[2].resource_id": {
+      "valueClass": "id"
+    },
+    "data.deeds[2].resource_symbol": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].magic_type": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].stats": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[2].deed_uid": {
+      "valueClass": "id"
+    },
+    "data.deeds[2].player": {
+      "valueClass": "name"
+    },
+    "data.deeds[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.deeds[2].listed": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].lock_days": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "data.deeds[2].in_use": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].deed_type": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].land_stats": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[2].region_name": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].market_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data.deeds[2].market_id": {
+      "valueClass": "id"
+    },
+    "data.deeds[2].listing_price": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].market_listing_id": {
+      "valueClass": "id"
+    },
+    "data.deeds[2].market_listing_status_id": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[2].castle": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[2].keep": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[2].rarity": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].plot_status": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].hex_code": {
+      "valueClass": "opaque"
+    },
+    "data.deeds[2].tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].item_detail_id": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].created_tx": {
+      "valueClass": "id"
+    },
+    "data.deeds[2].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data.deeds[2].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].rarity_sort_value": {
+      "valueClass": "numeric"
+    },
+    "data.deeds[2].is_construction": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].id": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].project_type": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].project_number": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].deed_uid": {
+      "valueClass": "id"
+    },
+    "data.worksite_details[0].land_work_type_id": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].total_time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].pp_balance": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].start_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[0].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[0].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[0].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[0].trx_id": {
+      "valueClass": "id"
+    },
+    "data.worksite_details[0].block_num": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].resource_id": {
+      "valueClass": "id"
+    },
+    "data.worksite_details[0].token_symbol": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].hours_to_completion": {
+      "valueClass": "opaque"
+    },
+    "data.worksite_details[0].elapsed_hours": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].wood_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].stone_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].iron_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].is_active": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].destroyed_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[0].is_construction": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].last_action_time": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[0].hours_till_next_op": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].next_op_allowed_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[0].pp_staked": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].projected_amount_received": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].work_per_hour_per_one_pp": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].project_id": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].is_harvesting": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].is_empty": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].is_sps_work": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].sps_mining_reward_debt": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].latest_sps_reward_block": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].sps_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].accumulated_sps_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].captured_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].project_created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[0].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].max_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].region_uid": {
+      "valueClass": "id"
+    },
+    "data.worksite_details[0].hours_since_last_op": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[0].rewards_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].grain_req_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].segments": {
+      "valueClass": "opaque"
+    },
+    "data.worksite_details[0].estimated_totem_chance": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].resource_mint_rate": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].id": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].project_type": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[1].project_number": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].deed_uid": {
+      "valueClass": "id"
+    },
+    "data.worksite_details[1].land_work_type_id": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].total_time_crystals_used": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].pp_balance": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].start_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[1].projected_hours": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].projected_end": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[1].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[1].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[1].trx_id": {
+      "valueClass": "id"
+    },
+    "data.worksite_details[1].block_num": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].resource_id": {
+      "valueClass": "id"
+    },
+    "data.worksite_details[1].token_symbol": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[1].pp_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].hours_to_completion": {
+      "valueClass": "opaque"
+    },
+    "data.worksite_details[1].elapsed_hours": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].pp_spent": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].wood_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].stone_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].iron_required": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].is_active": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[1].destroyed_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[1].is_construction": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[1].last_action_time": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[1].hours_till_next_op": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].next_op_allowed_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[1].pp_staked": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].projected_amount_received": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].work_per_hour_per_one_pp": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].project_id": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].is_harvesting": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[1].is_empty": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[1].is_sps_work": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[1].sps_mining_reward_debt": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].latest_sps_reward_block": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].sps_tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].accumulated_sps_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].land_work_type_total_work_type_pp": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].captured_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].project_created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.worksite_details[1].worksite_type": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[1].max_tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].region_uid": {
+      "valueClass": "id"
+    },
+    "data.worksite_details[1].hours_since_last_op": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data.worksite_details[1].rewards_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].grain_req_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].segments": {
+      "valueClass": "opaque"
+    },
+    "data.worksite_details[1].estimated_totem_chance": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[1].resource_mint_rate": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].region_uid": {
+      "valueClass": "id"
+    },
+    "data.staking_details[0].deed_uid": {
+      "valueClass": "id"
+    },
+    "data.staking_details[0].is_powered": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[0].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[0].is_power_core_staked": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[0].is_energized": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[0].has_labors_luck": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[0].max_workers_allowed": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].runi_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].title_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].totem_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].deed_status_token_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].deed_rarity_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].card_abilities_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].card_bloodlines_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].grain_food_discount": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].lite_food_discount": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].dec_stake_needed_discount": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_base_pp_cap": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_base_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_base_pp_after_cap": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_base_pp_after_cap_percentage": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_construction_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_terrain_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_terrain_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_dec_stake_in_use": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_deed_rarity_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_deed_rarity_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_deed_status_token_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_deed_status_token_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_runi_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_runi_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_title_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_title_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_totem_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_totem_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_card_abilities_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_card_bloodlines_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_harvest_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].powered_worker_count": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].worker_count": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].manager": {
+      "valueClass": "name"
+    },
+    "data.staking_details[0].active_land_project_id": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].has_completed_first_project": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[0].red_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].blue_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].white_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].black_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].green_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].gold_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[0].total_dec_staked": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].region_uid": {
+      "valueClass": "id"
+    },
+    "data.staking_details[1].deed_uid": {
+      "valueClass": "id"
+    },
+    "data.staking_details[1].is_powered": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[1].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[1].is_power_core_staked": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[1].is_energized": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[1].has_labors_luck": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[1].max_workers_allowed": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].runi_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].title_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].totem_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].deed_status_token_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].deed_rarity_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].card_abilities_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].card_bloodlines_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].grain_food_discount": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].lite_food_discount": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].dec_stake_needed_discount": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_base_pp_cap": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_base_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_base_pp_after_cap": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_base_pp_after_cap_percentage": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_construction_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_terrain_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_terrain_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_dec_stake_in_use": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_deed_rarity_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_deed_rarity_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_deed_status_token_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_deed_status_token_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_runi_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_runi_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_title_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_title_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_totem_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_totem_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_card_abilities_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_card_bloodlines_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_harvest_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].powered_worker_count": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].worker_count": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].manager": {
+      "valueClass": "name"
+    },
+    "data.staking_details[1].active_land_project_id": {
+      "valueClass": "opaque"
+    },
+    "data.staking_details[1].has_completed_first_project": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[1].red_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].blue_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].white_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].black_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].green_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].gold_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[1].total_dec_staked": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].region_uid": {
+      "valueClass": "id"
+    },
+    "data.staking_details[2].deed_uid": {
+      "valueClass": "id"
+    },
+    "data.staking_details[2].is_powered": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[2].is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[2].is_power_core_staked": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[2].is_energized": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[2].has_labors_luck": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[2].max_workers_allowed": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].runi_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].title_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].totem_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].deed_status_token_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].deed_rarity_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].card_abilities_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].card_bloodlines_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].grain_food_discount": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].lite_food_discount": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].dec_stake_needed_discount": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_base_pp_cap": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_base_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_base_pp_after_cap": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_base_pp_after_cap_percentage": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_construction_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_terrain_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_terrain_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_dec_stake_in_use": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].efficiency": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_deed_rarity_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_deed_rarity_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_deed_status_token_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_deed_status_token_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_runi_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_runi_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_title_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_title_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_totem_boost": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_totem_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_card_abilities_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_card_bloodlines_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_harvest_pp": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_work_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].powered_worker_count": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].worker_count": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].manager": {
+      "valueClass": "name"
+    },
+    "data.staking_details[2].active_land_project_id": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].has_completed_first_project": {
+      "valueClass": "enum"
+    },
+    "data.staking_details[2].red_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].blue_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].white_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].black_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].green_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].gold_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.staking_details[2].total_dec_staked": {
+      "valueClass": "numeric"
+    }
+  },
+  "status": "success",
+  "data": {
+    "deeds": [
+      {
+        "map_name": "Praetoria",
+        "region_id": 1,
+        "tract_id": 1,
+        "plot_id": 1,
+        "region_number": 1,
+        "tract_number": 1,
+        "plot_number": 1,
+        "territory": "Pristine Northwest",
+        "region_uid": "PR-PNW-1",
+        "resource_id": null,
+        "resource_symbol": null,
+        "magic_type": "",
+        "stats": "{\"building_in_box\":true,\"unstable_totem\":true}",
+        "deed_uid": "I-296-d14043817866fa",
+        "player": "__synthetic_player_b__",
+        "created_date": "2023-04-04T18:12:08.799Z",
+        "listed": true,
+        "lock_days": 5,
+        "unlock_date": "2023-11-18T23:39:48.000Z",
+        "in_use": false,
+        "deed_type": "Tundra",
+        "land_stats": "{ \"resources\": [\"wood\"] }",
+        "region_name": "Viritas",
+        "market_updated_date": "2023-12-30T00:06:06.000Z",
+        "market_id": "285587",
+        "listing_price": "100000",
+        "market_listing_id": "269007",
+        "market_listing_status_id": 1,
+        "castle": null,
+        "keep": null,
+        "rarity": "common",
+        "plot_status": "natural",
+        "hex_code": "#DACDA1",
+        "tax_rate": "0.10",
+        "item_detail_id": 296,
+        "created_block_num": 73717759,
+        "created_tx": "189a8dd16df1f6dc3beda3e5f403875b36a8fa52",
+        "worksite_type": "",
+        "time_crystal_value": 10000,
+        "rarity_sort_value": 1,
+        "is_construction": true
+      },
+      {
+        "map_name": "Praetoria",
+        "region_id": 1,
+        "tract_id": 1,
+        "plot_id": 2,
+        "region_number": 1,
+        "tract_number": 1,
+        "plot_number": 2,
+        "territory": "Pristine Northwest",
+        "region_uid": "PR-PNW-1",
+        "resource_id": 5,
+        "resource_symbol": "WOOD",
+        "magic_type": "",
+        "stats": "{\"building_in_box\":true,\"unstable_totem\":true}",
+        "deed_uid": "I-296-d9f6e28a6711a0",
+        "player": "__synthetic_player_c__",
+        "created_date": "2023-04-04T18:21:18.474Z",
+        "listed": false,
+        "lock_days": null,
+        "unlock_date": null,
+        "in_use": true,
+        "deed_type": "Tundra",
+        "land_stats": "{ \"resources\": [\"wood\"] }",
+        "region_name": "Viritas",
+        "market_updated_date": null,
+        "market_id": null,
+        "listing_price": null,
+        "market_listing_id": null,
+        "market_listing_status_id": null,
+        "castle": null,
+        "keep": null,
+        "rarity": "common",
+        "plot_status": "natural",
+        "hex_code": "#DACDA1",
+        "tax_rate": "0.10",
+        "item_detail_id": 296,
+        "created_block_num": 73717942,
+        "created_tx": "21e47baf8708eaab3b3e0db937dd418de819fe99",
+        "worksite_type": "Logging Camp",
+        "time_crystal_value": 1000,
+        "rarity_sort_value": 1,
+        "is_construction": false
+      },
+      {
+        "map_name": "Praetoria",
+        "region_id": 1,
+        "tract_id": 1,
+        "plot_id": 3,
+        "region_number": 1,
+        "tract_number": 1,
+        "plot_number": 3,
+        "territory": "Pristine Northwest",
+        "region_uid": "PR-PNW-1",
+        "resource_id": 1,
+        "resource_symbol": "GRAIN",
+        "magic_type": "",
+        "stats": "{\"building_in_box\":true,\"unstable_totem\":true}",
+        "deed_uid": "I-296-7fee942ff309cf",
+        "player": "__synthetic_player_d__",
+        "created_date": "2023-04-04T20:37:26.990Z",
+        "listed": false,
+        "lock_days": 7,
+        "unlock_date": "2024-11-10T02:38:48.000Z",
+        "in_use": false,
+        "deed_type": "Tundra",
+        "land_stats": "{ \"resources\": [\"wood\"] }",
+        "region_name": "Viritas",
+        "market_updated_date": null,
+        "market_id": null,
+        "listing_price": null,
+        "market_listing_id": null,
+        "market_listing_status_id": null,
+        "castle": null,
+        "keep": null,
+        "rarity": "rare",
+        "plot_status": "natural",
+        "hex_code": "#DACDA1",
+        "tax_rate": "0.10",
+        "item_detail_id": 296,
+        "created_block_num": 73720665,
+        "created_tx": "90fbc3e2709f37c6841b054a132069728a942ac0",
+        "worksite_type": "Grain Farm",
+        "time_crystal_value": 1000,
+        "rarity_sort_value": 2,
+        "is_construction": false
+      }
+    ],
+    "worksite_details": [
+      {
+        "id": 60174,
+        "project_type": "worksite_grain",
+        "project_number": 2,
+        "deed_uid": "I-296-7fee942ff309cf",
+        "land_work_type_id": 10,
+        "total_time_crystals_used": 0,
+        "pp_balance": 0,
+        "start_date": "2023-12-06T21:24:54.000Z",
+        "projected_hours": 0,
+        "projected_end": null,
+        "completed_date": null,
+        "created_date": "2023-12-06T21:24:54.000Z",
+        "last_updated_date": "2023-12-06T21:24:54.000Z",
+        "trx_id": "127be15e5a597b79eeffee19d031b45344b80e52",
+        "block_num": 80797711,
+        "resource_id": 1,
+        "token_symbol": "GRAIN",
+        "pp_required": 0,
+        "hours_to_completion": null,
+        "elapsed_hours": 24113.23,
+        "pp_spent": 0,
+        "grain_required": 0,
+        "wood_required": 0,
+        "stone_required": 0,
+        "iron_required": 0,
+        "is_active": true,
+        "destroyed_date": null,
+        "is_construction": false,
+        "last_action_time": "2025-04-22T12:40:15.000Z",
+        "hours_till_next_op": 0,
+        "next_op_allowed_date": "2025-04-22T13:40:15.000Z",
+        "pp_staked": 0,
+        "projected_amount_received": 0,
+        "work_per_hour_per_one_pp": 0,
+        "project_id": 60174,
+        "is_harvesting": true,
+        "is_empty": false,
+        "is_sps_work": false,
+        "sps_mining_reward_debt": 0,
+        "latest_sps_reward_block": 0,
+        "sps_tokens_per_block": 0,
+        "accumulated_sps_rewards_per_share_of_pool": 0,
+        "land_work_type_total_work_type_pp": 394006375.337,
+        "captured_tax_rate": 0,
+        "time_crystal_value": 1000,
+        "project_created_date": "2023-12-06T21:24:54.000Z",
+        "worksite_type": "Grain Farm",
+        "max_tax_rate": 0,
+        "region_uid": "PR-PNW-1",
+        "hours_since_last_op": 12049.974,
+        "site_efficiency": 1,
+        "is_runi_staked": false,
+        "rewards_per_hour": 0,
+        "grain_req_per_hour": 0,
+        "segments": null,
+        "estimated_totem_chance": 0,
+        "resource_recipe": [],
+        "resource_mint_rate": 0.02
+      },
+      {
+        "id": 246168,
+        "project_type": "worksite_wood",
+        "project_number": 4,
+        "deed_uid": "I-296-d9f6e28a6711a0",
+        "land_work_type_id": 37,
+        "total_time_crystals_used": 0,
+        "pp_balance": 0,
+        "start_date": "2025-05-23T23:12:27.000Z",
+        "projected_hours": 0,
+        "projected_end": null,
+        "completed_date": null,
+        "created_date": "2025-05-23T23:12:27.000Z",
+        "last_updated_date": "2025-05-23T23:12:27.000Z",
+        "trx_id": "f16300939d2e6f7a7e4e7def1a7ce295ce1420a9",
+        "block_num": 96154203,
+        "resource_id": 5,
+        "token_symbol": "WOOD",
+        "pp_required": 0,
+        "hours_to_completion": null,
+        "elapsed_hours": 11295.438,
+        "pp_spent": 0,
+        "grain_required": 15402.096,
+        "wood_required": 0,
+        "stone_required": 0,
+        "iron_required": 0,
+        "is_active": true,
+        "destroyed_date": null,
+        "is_construction": false,
+        "last_action_time": "2025-08-15T16:36:51.000Z",
+        "hours_till_next_op": 0,
+        "next_op_allowed_date": "2025-08-15T17:36:51.000Z",
+        "pp_staked": 9941.176,
+        "projected_amount_received": 7515.529,
+        "work_per_hour_per_one_pp": 0.005,
+        "project_id": 246168,
+        "is_harvesting": true,
+        "is_empty": false,
+        "is_sps_work": false,
+        "sps_mining_reward_debt": 0,
+        "latest_sps_reward_block": 0,
+        "sps_tokens_per_block": 0,
+        "accumulated_sps_rewards_per_share_of_pool": 0,
+        "land_work_type_total_work_type_pp": 199373956.323,
+        "captured_tax_rate": 0,
+        "time_crystal_value": 1000,
+        "project_created_date": "2025-05-23T23:12:27.000Z",
+        "worksite_type": "Logging Camp",
+        "max_tax_rate": 0,
+        "region_uid": "PR-PNW-1",
+        "hours_since_last_op": 9286.031,
+        "site_efficiency": 1,
+        "is_runi_staked": false,
+        "rewards_per_hour": 49.706,
+        "grain_req_per_hour": 91.679,
+        "segments": null,
+        "estimated_totem_chance": 0.59593,
+        "resource_recipe": [],
+        "resource_mint_rate": 0.005
+      }
+    ],
+    "staking_details": [
+      {
+        "region_uid": "PR-PNW-1",
+        "deed_uid": "I-296-7fee942ff309cf",
+        "is_powered": false,
+        "is_runi_staked": false,
+        "is_power_core_staked": false,
+        "is_energized": false,
+        "has_labors_luck": false,
+        "max_workers_allowed": 0,
+        "runi_boost": 0,
+        "title_boost": 0,
+        "totem_boost": 0,
+        "deed_status_token_boost": 0,
+        "deed_rarity_boost": 0.1,
+        "card_abilities_boost": 0,
+        "card_bloodlines_boost": 0,
+        "grain_food_discount": 0,
+        "lite_food_discount": 0,
+        "dec_stake_needed_discount": 0,
+        "total_boost": 0.1,
+        "total_base_pp_cap": 100000,
+        "total_base_pp": 0,
+        "total_base_pp_after_cap": 0,
+        "total_base_pp_after_cap_percentage": 0,
+        "total_construction_pp": 0,
+        "total_terrain_boost": 0,
+        "total_terrain_boost_pp": 0,
+        "total_dec_stake_needed": 0,
+        "total_dec_stake_in_use": 0,
+        "efficiency": 1,
+        "total_deed_rarity_boost": 0.1,
+        "total_deed_rarity_boost_pp": 0,
+        "total_deed_status_token_boost": 0,
+        "total_deed_status_token_boost_pp": 0,
+        "total_runi_boost": 0,
+        "total_runi_boost_pp": 0,
+        "total_title_boost": 0,
+        "total_title_boost_pp": 0,
+        "total_totem_boost": 0.1,
+        "total_totem_boost_pp": 0,
+        "total_card_abilities_boost_pp": 0,
+        "total_card_bloodlines_boost_pp": 0,
+        "total_boost_pp": 0,
+        "total_harvest_pp": 0,
+        "total_work_per_hour": 0,
+        "powered_worker_count": 0,
+        "worker_count": 0,
+        "manager": "__synthetic_player_d__",
+        "active_land_project_id": 60174,
+        "has_completed_first_project": true,
+        "red_biome_modifier": -0.5,
+        "blue_biome_modifier": 0.1,
+        "white_biome_modifier": 0.1,
+        "black_biome_modifier": -0.5,
+        "green_biome_modifier": 0.1,
+        "gold_biome_modifier": -0.5,
+        "total_dec_staked": 0
+      },
+      {
+        "region_uid": "PR-PNW-1",
+        "deed_uid": "I-296-d14043817866fa",
+        "is_powered": false,
+        "is_runi_staked": false,
+        "is_power_core_staked": false,
+        "is_energized": false,
+        "has_labors_luck": false,
+        "max_workers_allowed": 0,
+        "runi_boost": 0,
+        "title_boost": 0,
+        "totem_boost": 0,
+        "deed_status_token_boost": 0,
+        "deed_rarity_boost": 0,
+        "card_abilities_boost": 0,
+        "card_bloodlines_boost": 0,
+        "grain_food_discount": 0,
+        "lite_food_discount": 0,
+        "dec_stake_needed_discount": 0,
+        "total_boost": 0,
+        "total_base_pp_cap": 0,
+        "total_base_pp": 0,
+        "total_base_pp_after_cap": 0,
+        "total_base_pp_after_cap_percentage": 0,
+        "total_construction_pp": 0,
+        "total_terrain_boost": 0,
+        "total_terrain_boost_pp": 0,
+        "total_dec_stake_needed": 0,
+        "total_dec_stake_in_use": 0,
+        "efficiency": 0,
+        "total_deed_rarity_boost": 0,
+        "total_deed_rarity_boost_pp": 0,
+        "total_deed_status_token_boost": 0,
+        "total_deed_status_token_boost_pp": 0,
+        "total_runi_boost": 0,
+        "total_runi_boost_pp": 0,
+        "total_title_boost": 0,
+        "total_title_boost_pp": 0,
+        "total_totem_boost": 0,
+        "total_totem_boost_pp": 0,
+        "total_card_abilities_boost_pp": 0,
+        "total_card_bloodlines_boost_pp": 0,
+        "total_boost_pp": 0,
+        "total_harvest_pp": 0,
+        "total_work_per_hour": 0,
+        "powered_worker_count": 0,
+        "worker_count": 0,
+        "manager": "__synthetic_player_b__",
+        "active_land_project_id": null,
+        "has_completed_first_project": false,
+        "red_biome_modifier": -0.5,
+        "blue_biome_modifier": 0.1,
+        "white_biome_modifier": 0.1,
+        "black_biome_modifier": -0.5,
+        "green_biome_modifier": 0.1,
+        "gold_biome_modifier": -0.5,
+        "total_dec_staked": 0
+      },
+      {
+        "region_uid": "PR-PNW-1",
+        "deed_uid": "I-296-d9f6e28a6711a0",
+        "is_powered": true,
+        "is_runi_staked": false,
+        "is_power_core_staked": true,
+        "is_energized": false,
+        "has_labors_luck": false,
+        "max_workers_allowed": 5,
+        "runi_boost": 0,
+        "title_boost": 0.25,
+        "totem_boost": 0,
+        "deed_status_token_boost": 0,
+        "deed_rarity_boost": 0,
+        "card_abilities_boost": 0,
+        "card_bloodlines_boost": 0,
+        "grain_food_discount": 0,
+        "lite_food_discount": 0,
+        "dec_stake_needed_discount": 0,
+        "total_boost": 0.25,
+        "total_base_pp_cap": 100000,
+        "total_base_pp": 9167.914,
+        "total_base_pp_after_cap": 9167.914,
+        "total_base_pp_after_cap_percentage": 1,
+        "total_construction_pp": 7952.941,
+        "total_terrain_boost": -0.133,
+        "total_terrain_boost_pp": -1214.974,
+        "total_dec_stake_needed": 3222,
+        "total_dec_stake_in_use": 3222,
+        "efficiency": 1,
+        "total_deed_rarity_boost": 0,
+        "total_deed_rarity_boost_pp": 0,
+        "total_deed_status_token_boost": 0,
+        "total_deed_status_token_boost_pp": 0,
+        "total_runi_boost": 0,
+        "total_runi_boost_pp": 0,
+        "total_title_boost": 0.25,
+        "total_title_boost_pp": 1988.236,
+        "total_totem_boost": 0,
+        "total_totem_boost_pp": 0,
+        "total_card_abilities_boost_pp": 0,
+        "total_card_bloodlines_boost_pp": 0,
+        "total_boost_pp": 1988.236,
+        "total_harvest_pp": 9941.176,
+        "total_work_per_hour": 49.705,
+        "powered_worker_count": 5,
+        "worker_count": 5,
+        "manager": "__synthetic_player_c__",
+        "active_land_project_id": 246168,
+        "has_completed_first_project": true,
+        "red_biome_modifier": -0.5,
+        "blue_biome_modifier": 0.1,
+        "white_biome_modifier": 0.1,
+        "black_biome_modifier": -0.5,
+        "green_biome_modifier": 0.1,
+        "gold_biome_modifier": -0.5,
+        "total_dec_staked": 3222
+      }
+    ]
+  }
+}

@@ -1,0 +1,2584 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T10:13:45.973932+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/collector/config",
+    "captureScope": "Complete anonymous configuration response; no account identifier sent."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data.freePagesPerBinder": {
+      "valueClass": "numeric"
+    },
+    "body.data.maxPagesPerBinder": {
+      "valueClass": "numeric"
+    },
+    "body.data.cardSlotsPerPage": {
+      "valueClass": "numeric"
+    },
+    "body.data.visibleBookshelfSlots": {
+      "valueClass": "numeric"
+    },
+    "body.data.claim.enabled": {
+      "valueClass": "enum"
+    },
+    "body.data.claim.availability": {
+      "valueClass": "opaque"
+    },
+    "body.data.claim.expiresAt": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[0].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[0].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[1].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[1].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[2].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[2].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[3].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[3].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[4].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[4].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[5].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[5].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[6].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[6].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[7].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.tabletopBackgrounds[7].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[0].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[1].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[2].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[3].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[4].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[5].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[6].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[7].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[8].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[8].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[9].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[9].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[10].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[10].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[11].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[11].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[12].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[12].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[13].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[13].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[14].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[14].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[15].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[15].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[16].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[16].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[17].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[17].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[18].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[18].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[19].key": {
+      "valueClass": "id"
+    },
+    "body.data.placeholderCosmetics.coverCosmetics[19].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[0].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[0].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[0].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[0].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[0].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[0].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[1].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[1].maxQty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[1].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[1].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[1].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[1].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[1].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[2].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[2].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[2].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[2].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[2].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[2].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[2].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[2].placeholderPrice": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[3].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[3].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[3].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[3].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[3].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[3].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[3].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[3].placeholderPrice": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[4].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[4].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[4].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[4].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[4].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[4].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[4].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[4].placeholderPrice": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[5].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[5].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[5].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[5].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[5].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[5].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[5].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[5].placeholderPrice": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[6].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[6].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[6].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[6].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[6].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[6].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[6].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[6].placeholderPrice": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[7].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[7].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[7].maxQty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[7].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[7].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[7].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[7].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[7].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[8].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[8].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[8].maxQty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[8].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[8].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[8].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[8].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[8].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[9].id": {
+      "valueClass": "id"
+    },
+    "body.data.shopItems[9].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[9].maxQty": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[9].currency": {
+      "valueClass": "enum"
+    },
+    "body.data.shopItems[9].currencies[0]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[9].currencies[1]": {
+      "valueClass": "opaque"
+    },
+    "body.data.shopItems[9].priceDec": {
+      "valueClass": "numeric"
+    },
+    "body.data.shopItems[9].operation": {
+      "valueClass": "enum"
+    },
+    "body.data.featuredAccounts[0].username": {
+      "valueClass": "name"
+    },
+    "body.data.featuredAccounts[1].username": {
+      "valueClass": "name"
+    },
+    "body.data.featuredAccounts[2].username": {
+      "valueClass": "name"
+    },
+    "body.data.featuredAccounts[3].username": {
+      "valueClass": "name"
+    },
+    "body.data.featuredAccounts[4].username": {
+      "valueClass": "name"
+    },
+    "body.data.featuredAccounts[5].username": {
+      "valueClass": "name"
+    },
+    "body.data.cosmetics[0].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[0].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[0].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[0].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[0].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[1].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[1].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[1].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[1].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[1].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[2].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[2].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[2].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[2].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[2].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[3].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[3].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[3].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[3].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[3].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[4].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[4].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[4].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[4].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[4].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[5].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[5].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[5].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[5].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[5].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[6].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[6].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[6].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[6].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[6].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[7].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[7].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[7].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[7].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[7].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[8].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[8].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[8].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[8].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[8].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[8].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[9].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[9].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[9].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[9].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[9].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[9].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[10].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[10].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[10].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[10].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[10].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[10].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[11].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[11].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[11].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[11].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[11].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[11].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[12].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[12].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[12].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[12].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[12].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[12].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[13].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[13].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[13].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[13].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[13].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[13].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[14].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[14].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[14].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[14].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[14].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[14].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[15].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[15].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[15].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[15].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[15].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[15].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[16].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[16].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[16].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[16].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[16].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[16].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[17].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[17].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[17].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[17].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[17].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[17].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[18].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[18].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[18].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[18].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[18].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[18].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[19].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[19].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[19].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[19].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[19].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[19].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[20].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[20].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[20].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[20].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[20].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[20].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[21].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[21].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[21].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[21].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[21].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[21].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[22].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[22].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[22].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[22].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[22].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[22].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[23].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[23].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[23].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[23].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[23].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[23].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[24].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[24].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[24].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[24].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[24].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[24].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[25].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[25].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[25].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[25].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[25].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[25].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[26].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[26].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[26].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[26].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[26].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[26].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[27].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[27].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[27].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[27].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[27].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[27].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[28].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[28].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[28].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[28].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[28].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[28].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[29].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[29].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[29].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[29].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[29].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[29].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[30].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[30].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[30].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[30].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[30].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[30].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[31].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[31].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[31].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[31].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[31].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[31].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[32].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[32].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[32].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[32].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[32].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[32].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[33].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[33].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[33].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[33].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[33].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[33].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[34].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[34].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[34].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[34].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[34].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[34].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[35].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[35].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[35].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[35].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[35].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[35].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[36].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[36].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[36].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[36].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[36].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[36].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[37].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[37].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[37].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[37].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[37].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[37].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[38].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[38].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[38].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[38].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[38].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[38].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[39].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[39].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[39].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[39].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[39].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[39].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[40].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[40].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[40].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[40].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[40].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[40].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[41].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[41].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[41].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[41].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[41].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[41].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[42].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[42].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[42].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[42].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[42].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[42].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[43].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[43].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[43].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[43].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[43].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[43].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[44].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[44].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[44].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[44].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[44].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[44].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[45].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[45].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[45].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[45].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[45].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[45].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[46].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[46].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[46].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[46].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[46].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[46].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[47].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[47].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[47].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[47].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[47].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[47].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[48].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[48].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[48].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[48].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[48].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[48].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[49].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[49].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[49].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[49].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[49].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[49].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[50].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[50].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[50].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[50].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[50].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[50].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[51].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[51].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[51].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[51].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[51].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[51].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[52].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[52].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[52].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[52].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[52].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[52].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[53].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[53].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[53].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[53].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[53].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[53].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[54].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[54].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[54].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[54].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[54].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[54].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[55].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[55].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[55].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[55].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[55].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[55].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[56].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[56].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[56].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[56].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[56].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[56].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[57].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[57].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[57].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[57].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[57].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[57].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[58].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[58].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[58].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[58].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[58].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[58].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[59].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[59].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[59].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[59].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[59].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[59].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[60].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[60].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[60].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[60].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[60].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[60].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[61].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[61].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[61].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[61].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[61].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[61].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[62].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[62].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[62].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[62].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[62].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[62].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[63].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[63].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[63].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[63].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[63].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[63].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[64].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[64].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[64].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[64].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[64].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[64].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[65].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[65].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[65].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[65].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[65].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[65].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[66].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[66].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[66].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[66].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[66].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[66].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[67].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[67].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[67].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[67].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[67].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[67].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[68].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[68].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[68].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[68].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[68].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[68].isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[69].id": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[69].key": {
+      "valueClass": "id"
+    },
+    "body.data.cosmetics[69].type": {
+      "valueClass": "enum"
+    },
+    "body.data.cosmetics[69].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[69].assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data.cosmetics[69].isPremium": {
+      "valueClass": "enum"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "freePagesPerBinder": 3,
+      "maxPagesPerBinder": 30,
+      "cardSlotsPerPage": 9,
+      "visibleBookshelfSlots": 5,
+      "claim": {
+        "enabled": true,
+        "availability": "indefinite",
+        "expiresAt": null
+      },
+      "placeholderCosmetics": {
+        "tabletopBackgrounds": [
+          {
+            "key": "tabletop_standard1",
+            "name": "Wood",
+            "assetUrl": "collector/tabletops/wood.webp"
+          },
+          {
+            "key": "tabletop_standard2",
+            "name": "Canvas",
+            "assetUrl": "collector/tabletops/canvas.webp"
+          },
+          {
+            "key": "tabletop_standard3",
+            "name": "Splinterlands OG",
+            "assetUrl": "collector/tabletops/spl-og.webp"
+          },
+          {
+            "key": "tabletop_background_premium_01",
+            "name": "Air",
+            "assetUrl": "collector/tabletops/air.webp"
+          },
+          {
+            "key": "tabletop_background_premium_02",
+            "name": "Death",
+            "assetUrl": "collector/tabletops/death.webp"
+          },
+          {
+            "key": "tabletop_background_premium_03",
+            "name": "Earth",
+            "assetUrl": "collector/tabletops/earth.webp"
+          },
+          {
+            "key": "tabletop_background_premium_04",
+            "name": "Space",
+            "assetUrl": "collector/tabletops/space.webp"
+          },
+          {
+            "key": "tabletop_background_premium_05",
+            "name": "Fire",
+            "assetUrl": "collector/tabletops/fire.webp"
+          }
+        ],
+        "coverCosmetics": [
+          {
+            "key": "binder_cover_sunlit_gold",
+            "name": "Fire"
+          },
+          {
+            "key": "binder_cover_classic_ember_red",
+            "name": "Ember Red"
+          },
+          {
+            "key": "binder_cover_moonlit_silver",
+            "name": "Dragon"
+          },
+          {
+            "key": "binder_cover_collector_orange",
+            "name": "Collector Orange"
+          },
+          {
+            "key": "binder_cover_classic_sunlit_gold",
+            "name": "Sunlit Gold"
+          },
+          {
+            "key": "binder_cover_legendary_yellow",
+            "name": "Legendary Yellow"
+          },
+          {
+            "key": "binder_cover_aged_leather",
+            "name": "Life"
+          },
+          {
+            "key": "binder_cover_royal_indigo",
+            "name": "Aged Leather"
+          },
+          {
+            "key": "binder_cover_classic_aged_leather",
+            "name": "Classic Aged Leather"
+          },
+          {
+            "key": "binder_cover_relic_green",
+            "name": "Earth"
+          },
+          {
+            "key": "binder_cover_classic_relic_green",
+            "name": "Relic Green"
+          },
+          {
+            "key": "binder_cover_ember_red",
+            "name": "Water"
+          },
+          {
+            "key": "binder_cover_classic_teal",
+            "name": "Teal"
+          },
+          {
+            "key": "binder_cover_arcane_violet",
+            "name": "Neutral"
+          },
+          {
+            "key": "binder_cover_classic_moonlit_silver",
+            "name": "Moonlit Silver"
+          },
+          {
+            "key": "binder_cover_teal",
+            "name": "Death"
+          },
+          {
+            "key": "binder_cover_classic_arcane_violet",
+            "name": "Arcane Violet"
+          },
+          {
+            "key": "binder_cover_classic_royal_indigo",
+            "name": "Royal Indigo"
+          },
+          {
+            "key": "binder_cover_obsidian",
+            "name": "Obsidian"
+          },
+          {
+            "key": "binder_cover_classic_obsidian",
+            "name": "Classic Obsidian"
+          }
+        ]
+      },
+      "shopItems": [
+        {
+          "id": "collector_binder",
+          "qty": 1,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 5000,
+          "operation": "sm_shop_purchase"
+        },
+        {
+          "id": "collector_binder_page",
+          "qty": 1,
+          "maxQty": 30,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 200,
+          "operation": "sm_shop_purchase"
+        },
+        {
+          "id": "collector_tabletop_background_premium_01",
+          "qty": 1,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 3000,
+          "operation": "sm_shop_purchase",
+          "placeholderPrice": true
+        },
+        {
+          "id": "collector_tabletop_background_premium_02",
+          "qty": 1,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 3000,
+          "operation": "sm_shop_purchase",
+          "placeholderPrice": true
+        },
+        {
+          "id": "collector_tabletop_background_premium_03",
+          "qty": 1,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 3000,
+          "operation": "sm_shop_purchase",
+          "placeholderPrice": true
+        },
+        {
+          "id": "collector_tabletop_background_premium_04",
+          "qty": 1,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 3000,
+          "operation": "sm_shop_purchase",
+          "placeholderPrice": true
+        },
+        {
+          "id": "collector_tabletop_background_premium_05",
+          "qty": 1,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 3000,
+          "operation": "sm_shop_purchase",
+          "placeholderPrice": true
+        },
+        {
+          "id": "collector_sticker_pack_toxic",
+          "qty": 1,
+          "maxQty": 30,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 750,
+          "operation": "sm_shop_purchase"
+        },
+        {
+          "id": "collector_sticker_pack_favorites",
+          "qty": 1,
+          "maxQty": 30,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 500,
+          "operation": "sm_shop_purchase"
+        },
+        {
+          "id": "collector_sticker_pack_animals",
+          "qty": 1,
+          "maxQty": 30,
+          "currency": "DEC",
+          "currencies": [
+            "DEC",
+            "CREDITS"
+          ],
+          "priceDec": 750,
+          "operation": "sm_shop_purchase"
+        }
+      ],
+      "featuredAccounts": [
+        {
+          "username": "lilyfire"
+        },
+        {
+          "username": "royaleagle"
+        },
+        {
+          "username": "thebadwitch"
+        },
+        {
+          "username": "blazekos"
+        },
+        {
+          "username": "elclements"
+        },
+        {
+          "username": "nickelbunker"
+        }
+      ],
+      "cosmetics": [
+        {
+          "id": "12",
+          "key": "binder_cover_royal_indigo",
+          "type": "binder_cover",
+          "name": "Aged Leather",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "26",
+          "key": "binder_cover_classic_arcane_violet",
+          "type": "binder_cover",
+          "name": "Arcane Violet",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "22",
+          "key": "binder_cover_classic_aged_leather",
+          "type": "binder_cover",
+          "name": "Classic Aged Leather",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "23",
+          "key": "binder_cover_classic_obsidian",
+          "type": "binder_cover",
+          "name": "Classic Obsidian",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "27",
+          "key": "binder_cover_collector_orange",
+          "type": "binder_cover",
+          "name": "Collector Orange",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "15",
+          "key": "binder_cover_teal",
+          "type": "binder_cover",
+          "name": "Death",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "16",
+          "key": "binder_cover_moonlit_silver",
+          "type": "binder_cover",
+          "name": "Dragon",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "11",
+          "key": "binder_cover_relic_green",
+          "type": "binder_cover",
+          "name": "Earth",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "19",
+          "key": "binder_cover_classic_ember_red",
+          "type": "binder_cover",
+          "name": "Ember Red",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "9",
+          "key": "binder_cover_sunlit_gold",
+          "type": "binder_cover",
+          "name": "Fire",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "28",
+          "key": "binder_cover_legendary_yellow",
+          "type": "binder_cover",
+          "name": "Legendary Yellow",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "13",
+          "key": "binder_cover_aged_leather",
+          "type": "binder_cover",
+          "name": "Life",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "25",
+          "key": "binder_cover_classic_moonlit_silver",
+          "type": "binder_cover",
+          "name": "Moonlit Silver",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "17",
+          "key": "binder_cover_arcane_violet",
+          "type": "binder_cover",
+          "name": "Neutral",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "14",
+          "key": "binder_cover_obsidian",
+          "type": "binder_cover",
+          "name": "Obsidian",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "20",
+          "key": "binder_cover_classic_relic_green",
+          "type": "binder_cover",
+          "name": "Relic Green",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "21",
+          "key": "binder_cover_classic_royal_indigo",
+          "type": "binder_cover",
+          "name": "Royal Indigo",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "18",
+          "key": "binder_cover_classic_sunlit_gold",
+          "type": "binder_cover",
+          "name": "Sunlit Gold",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "24",
+          "key": "binder_cover_classic_teal",
+          "type": "binder_cover",
+          "name": "Teal",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "10",
+          "key": "binder_cover_ember_red",
+          "type": "binder_cover",
+          "name": "Water",
+          "assetUrl": null,
+          "isPremium": false
+        },
+        {
+          "id": "70",
+          "key": "anniversary_8_balloon",
+          "type": "sticker",
+          "name": "8th Anniversary Balloon",
+          "assetUrl": "collector/stickers/events/anniversary-8/sticker-anniversary-8-balloon.webp",
+          "isPremium": false
+        },
+        {
+          "id": "29",
+          "key": "sticker_banger",
+          "type": "sticker",
+          "name": "Banger",
+          "assetUrl": "collector/stickers/packs/toxic/sticker-banger.webp",
+          "isPremium": false
+        },
+        {
+          "id": "38",
+          "key": "sticker_animal_beaver",
+          "type": "sticker",
+          "name": "Beaver",
+          "assetUrl": "collector/stickers/animals/sticker-animal-beaver.webp",
+          "isPremium": false
+        },
+        {
+          "id": "44",
+          "key": "sticker_support_bug_hunter",
+          "type": "sticker",
+          "name": "Bug Hunter",
+          "assetUrl": "collector/stickers/support/sticker-support-bug-hunter.webp",
+          "isPremium": false
+        },
+        {
+          "id": "30",
+          "key": "sticker_cool",
+          "type": "sticker",
+          "name": "Cool",
+          "assetUrl": "collector/stickers/packs/toxic/sticker-cool.webp",
+          "isPremium": false
+        },
+        {
+          "id": "31",
+          "key": "sticker_favorite",
+          "type": "sticker",
+          "name": "Favorite",
+          "assetUrl": "collector/stickers/packs/favorites/sticker-favorite.webp",
+          "isPremium": false
+        },
+        {
+          "id": "39",
+          "key": "sticker_animal_giraffe",
+          "type": "sticker",
+          "name": "Giraffe",
+          "assetUrl": "collector/stickers/animals/sticker-animal-giraffe.webp",
+          "isPremium": false
+        },
+        {
+          "id": "43",
+          "key": "sticker_animal_llama",
+          "type": "sticker",
+          "name": "Llama",
+          "assetUrl": "collector/stickers/animals/sticker-animal-llama.webp",
+          "isPremium": false
+        },
+        {
+          "id": "45",
+          "key": "sticker_support_maintenance_how_long",
+          "type": "sticker",
+          "name": "Maintenance: How Long?",
+          "assetUrl": "collector/stickers/support/sticker-support-maintenance-how-long.webp",
+          "isPremium": false
+        },
+        {
+          "id": "46",
+          "key": "sticker_support_maintenance_wen",
+          "type": "sticker",
+          "name": "Maintenance: Wen?",
+          "assetUrl": "collector/stickers/support/sticker-support-maintenance-wen.webp",
+          "isPremium": false
+        },
+        {
+          "id": "47",
+          "key": "sticker_support_maintenance_why",
+          "type": "sticker",
+          "name": "Maintenance: Why?",
+          "assetUrl": "collector/stickers/support/sticker-support-maintenance-why.webp",
+          "isPremium": false
+        },
+        {
+          "id": "32",
+          "key": "sticker_og",
+          "type": "sticker",
+          "name": "OG",
+          "assetUrl": "collector/stickers/packs/favorites/sticker-og.webp",
+          "isPremium": false
+        },
+        {
+          "id": "48",
+          "key": "sticker_support_patience",
+          "type": "sticker",
+          "name": "Patience",
+          "assetUrl": "collector/stickers/support/sticker-support-patience.webp",
+          "isPremium": false
+        },
+        {
+          "id": "40",
+          "key": "sticker_animal_pink_critter",
+          "type": "sticker",
+          "name": "Pink Critter",
+          "assetUrl": "collector/stickers/animals/sticker-animal-pink-critter.webp",
+          "isPremium": false
+        },
+        {
+          "id": "33",
+          "key": "sticker_rad",
+          "type": "sticker",
+          "name": "Rad",
+          "assetUrl": "collector/stickers/packs/toxic/sticker-rad.webp",
+          "isPremium": false
+        },
+        {
+          "id": "34",
+          "key": "sticker_sick",
+          "type": "sticker",
+          "name": "Sick",
+          "assetUrl": "collector/stickers/packs/toxic/sticker-sick.webp",
+          "isPremium": false
+        },
+        {
+          "id": "67",
+          "key": "splinterfest_2022",
+          "type": "sticker",
+          "name": "Splinterfest 2022",
+          "assetUrl": "collector/stickers/events/splinterfest-2022/sticker-splinterfest-2022.webp",
+          "isPremium": false
+        },
+        {
+          "id": "68",
+          "key": "splinterfest_2022_ga",
+          "type": "sticker",
+          "name": "Splinterfest 2022 GA",
+          "assetUrl": "collector/stickers/events/splinterfest-2022/sticker-splinterfest-2022-ga.webp",
+          "isPremium": false
+        },
+        {
+          "id": "69",
+          "key": "splinterfest_2022_vip",
+          "type": "sticker",
+          "name": "Splinterfest 2022 VIP",
+          "assetUrl": "collector/stickers/events/splinterfest-2022/sticker-splinterfest-2022-vip.webp",
+          "isPremium": false
+        },
+        {
+          "id": "49",
+          "key": "sticker_support_thank_you",
+          "type": "sticker",
+          "name": "Thank You",
+          "assetUrl": "collector/stickers/support/sticker-support-thank-you.webp",
+          "isPremium": false
+        },
+        {
+          "id": "35",
+          "key": "sticker_top_10",
+          "type": "sticker",
+          "name": "Top 10",
+          "assetUrl": "collector/stickers/packs/favorites/sticker-top-10.webp",
+          "isPremium": false
+        },
+        {
+          "id": "36",
+          "key": "sticker_top_20",
+          "type": "sticker",
+          "name": "Top 20",
+          "assetUrl": "collector/stickers/packs/favorites/sticker-top-20.webp",
+          "isPremium": false
+        },
+        {
+          "id": "37",
+          "key": "sticker_toxic",
+          "type": "sticker",
+          "name": "Toxic",
+          "assetUrl": "collector/stickers/packs/toxic/sticker-toxic.webp",
+          "isPremium": false
+        },
+        {
+          "id": "41",
+          "key": "sticker_animal_trex",
+          "type": "sticker",
+          "name": "T-Rex",
+          "assetUrl": "collector/stickers/animals/sticker-animal-trex.webp",
+          "isPremium": false
+        },
+        {
+          "id": "42",
+          "key": "sticker_animal_turtle",
+          "type": "sticker",
+          "name": "Turtle",
+          "assetUrl": "collector/stickers/animals/sticker-animal-turtle.webp",
+          "isPremium": false
+        },
+        {
+          "id": "61",
+          "key": "winterfest_2025_mags",
+          "type": "sticker",
+          "name": "Winterfest 2025 Mags",
+          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-mags.webp",
+          "isPremium": false
+        },
+        {
+          "id": "62",
+          "key": "winterfest_2025_vin_common",
+          "type": "sticker",
+          "name": "Winterfest 2025 Vin Common",
+          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-common.webp",
+          "isPremium": false
+        },
+        {
+          "id": "64",
+          "key": "winterfest_2025_vin_epic",
+          "type": "sticker",
+          "name": "Winterfest 2025 Vin Epic",
+          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-epic.webp",
+          "isPremium": false
+        },
+        {
+          "id": "65",
+          "key": "winterfest_2025_vin_legendary_1",
+          "type": "sticker",
+          "name": "Winterfest 2025 Vin Legendary I",
+          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-legendary-1.webp",
+          "isPremium": false
+        },
+        {
+          "id": "66",
+          "key": "winterfest_2025_vin_legendary_2",
+          "type": "sticker",
+          "name": "Winterfest 2025 Vin Legendary II",
+          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-legendary-2.webp",
+          "isPremium": false
+        },
+        {
+          "id": "63",
+          "key": "winterfest_2025_vin_rare",
+          "type": "sticker",
+          "name": "Winterfest 2025 Vin Rare",
+          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-rare.webp",
+          "isPremium": false
+        },
+        {
+          "id": "51",
+          "key": "collector_year_joined_2018",
+          "type": "sticker",
+          "name": "Year Joined 2018",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-18_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "52",
+          "key": "collector_year_joined_2019",
+          "type": "sticker",
+          "name": "Year Joined 2019",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-19_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "53",
+          "key": "collector_year_joined_2020",
+          "type": "sticker",
+          "name": "Year Joined 2020",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-20_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "54",
+          "key": "collector_year_joined_2021",
+          "type": "sticker",
+          "name": "Year Joined 2021",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-21_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "55",
+          "key": "collector_year_joined_2022",
+          "type": "sticker",
+          "name": "Year Joined 2022",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-22_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "56",
+          "key": "collector_year_joined_2023",
+          "type": "sticker",
+          "name": "Year Joined 2023",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-23_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "57",
+          "key": "collector_year_joined_2024",
+          "type": "sticker",
+          "name": "Year Joined 2024",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-24_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "58",
+          "key": "collector_year_joined_2025",
+          "type": "sticker",
+          "name": "Year Joined 2025",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-25_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "59",
+          "key": "collector_year_joined_2026",
+          "type": "sticker",
+          "name": "Year Joined 2026",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-26_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "60",
+          "key": "collector_year_joined_2027",
+          "type": "sticker",
+          "name": "Year Joined 2027",
+          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-27_192.webp",
+          "isPremium": false
+        },
+        {
+          "id": "50",
+          "key": "sticker_support_you_rock",
+          "type": "sticker",
+          "name": "You Rock",
+          "assetUrl": "collector/stickers/support/sticker-support-you-rock.webp",
+          "isPremium": false
+        },
+        {
+          "id": "4",
+          "key": "tabletop_background_premium_01",
+          "type": "tabletop_background",
+          "name": "Air",
+          "assetUrl": "collector/tabletops/air.webp",
+          "isPremium": true
+        },
+        {
+          "id": "2",
+          "key": "tabletop_standard2",
+          "type": "tabletop_background",
+          "name": "Canvas",
+          "assetUrl": "collector/tabletops/canvas.webp",
+          "isPremium": false
+        },
+        {
+          "id": "5",
+          "key": "tabletop_background_premium_02",
+          "type": "tabletop_background",
+          "name": "Death",
+          "assetUrl": "collector/tabletops/death.webp",
+          "isPremium": true
+        },
+        {
+          "id": "6",
+          "key": "tabletop_background_premium_03",
+          "type": "tabletop_background",
+          "name": "Earth",
+          "assetUrl": "collector/tabletops/earth.webp",
+          "isPremium": true
+        },
+        {
+          "id": "8",
+          "key": "tabletop_background_premium_05",
+          "type": "tabletop_background",
+          "name": "Fire",
+          "assetUrl": "collector/tabletops/fire.webp",
+          "isPremium": true
+        },
+        {
+          "id": "7",
+          "key": "tabletop_background_premium_04",
+          "type": "tabletop_background",
+          "name": "Space",
+          "assetUrl": "collector/tabletops/space.webp",
+          "isPremium": true
+        },
+        {
+          "id": "3",
+          "key": "tabletop_standard3",
+          "type": "tabletop_background",
+          "name": "Splinterlands OG",
+          "assetUrl": "collector/tabletops/spl-og.webp",
+          "isPremium": false
+        },
+        {
+          "id": "1",
+          "key": "tabletop_standard1",
+          "type": "tabletop_background",
+          "name": "Wood",
+          "assetUrl": "collector/tabletops/wood.webp",
+          "isPremium": false
+        }
+      ]
+    }
+  }
+}

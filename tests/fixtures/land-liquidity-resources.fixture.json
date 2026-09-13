@@ -1,0 +1,53 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T00:00:00Z",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].id": {
+      "valueClass": "id"
+    },
+    "data[0].region_name": {
+      "valueClass": "name"
+    },
+    "data[0].region_number": {
+      "valueClass": "id"
+    },
+    "data[0].region_uid": {
+      "valueClass": "id"
+    },
+    "data[0].player": {
+      "valueClass": "name"
+    },
+    "data[0].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].resource_symbol": {
+      "valueClass": "enum"
+    },
+    "data[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].last_updated_date": {
+      "valueClass": "timestamp"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "id": 1902,
+      "region_name": "Mandar Camden",
+      "region_number": 65,
+      "region_uid": "PR-CEF-65",
+      "player": "sample-account-a",
+      "amount": 20722901.171,
+      "resource_symbol": "GRAIN",
+      "created_date": "2023-11-28T21:53:48.000Z",
+      "last_updated_date": "2026-09-07T20:45:15.000Z"
+    }
+  ]
+}

@@ -1,0 +1,1313 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:56:07.939649+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/tournaments/find",
+    "captureScope": "First three root rows or players; other nested fields retain their captured values."
+  },
+  "valueClasses": {
+    "body.id": {
+      "valueClass": "opaque"
+    },
+    "body.created_by": {
+      "valueClass": "opaque"
+    },
+    "body.created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.created_block": {
+      "valueClass": "numeric"
+    },
+    "body.name": {
+      "valueClass": "name"
+    },
+    "body.description": {
+      "valueClass": "opaque"
+    },
+    "body.start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.status": {
+      "valueClass": "numeric"
+    },
+    "body.current_round": {
+      "valueClass": "numeric"
+    },
+    "body.sponsor_name": {
+      "valueClass": "opaque"
+    },
+    "body.sponsor_logo_url": {
+      "valueClass": "opaque"
+    },
+    "body.min_entrants": {
+      "valueClass": "numeric"
+    },
+    "body.max_entrants": {
+      "valueClass": "opaque"
+    },
+    "body.entry_fee": {
+      "valueClass": "opaque"
+    },
+    "body.total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body.data.allowed_cards.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.allowed_cards.foil": {
+      "valueClass": "opaque"
+    },
+    "body.data.allowed_cards.epoch": {
+      "valueClass": "opaque"
+    },
+    "body.data.allowed_cards.ghost": {
+      "valueClass": "opaque"
+    },
+    "body.data.allowed_cards.gladiator": {
+      "valueClass": "opaque"
+    },
+    "body.data.prizes.payouts[0].start_place": {
+      "valueClass": "numeric"
+    },
+    "body.data.prizes.payouts[0].end_place": {
+      "valueClass": "numeric"
+    },
+    "body.data.prizes.payouts[0].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.prizes.payouts[0].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body.data.prizes.payouts[0].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body.data.prizes.payouts[0].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body.data.total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body.data.duration_blocks": {
+      "valueClass": "numeric"
+    },
+    "body.data.multiple_rounds": {
+      "valueClass": "opaque"
+    },
+    "body.data.spsp_min": {
+      "valueClass": "numeric"
+    },
+    "body.data.cp_min": {
+      "valueClass": "numeric"
+    },
+    "body.data.alternate_fee.value": {
+      "valueClass": "opaque"
+    },
+    "body.data.rating_level": {
+      "valueClass": "numeric"
+    },
+    "body.data.best_of": {
+      "valueClass": "numeric"
+    },
+    "body.data.rounds[0].type": {
+      "valueClass": "opaque"
+    },
+    "body.data.rounds[0].best_of": {
+      "valueClass": "numeric"
+    },
+    "body.data.rounds[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.rounds[1].type": {
+      "valueClass": "opaque"
+    },
+    "body.data.rounds[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data.rounds[1].best_of": {
+      "valueClass": "numeric"
+    },
+    "body.data.group_size": {
+      "valueClass": "numeric"
+    },
+    "body.data.create_team_seconds": {
+      "valueClass": "numeric"
+    },
+    "body.data.winners_bracket": {
+      "valueClass": "numeric"
+    },
+    "body.data.allow_player_card": {
+      "valueClass": "opaque"
+    },
+    "body.sponsor_logo_url_med": {
+      "valueClass": "opaque"
+    },
+    "body.sponsor_logo_url_lg": {
+      "valueClass": "opaque"
+    },
+    "body.payment": {
+      "valueClass": "opaque"
+    },
+    "body.sponsor_url": {
+      "valueClass": "opaque"
+    },
+    "body.checkin_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.format": {
+      "valueClass": "opaque"
+    },
+    "body.payment_data": {
+      "valueClass": "opaque"
+    },
+    "body.password_pub_key": {
+      "valueClass": "opaque"
+    },
+    "body.sub_format": {
+      "valueClass": "opaque"
+    },
+    "body.require_kyc": {
+      "valueClass": "opaque"
+    },
+    "body.approved": {
+      "valueClass": "opaque"
+    },
+    "body.allow_lite": {
+      "valueClass": "opaque"
+    },
+    "body.stretch_background": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.players[0].player": {
+      "valueClass": "name"
+    },
+    "body.players[0].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[0].join_trx_id": {
+      "valueClass": "id"
+    },
+    "body.players[0].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].finish": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].prize": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].prize_payout_trx_id": {
+      "valueClass": "id"
+    },
+    "body.players[0].checkin_tx": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].checked_in": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].fee_amount": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].ext_prize_info": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.name": {
+      "valueClass": "name"
+    },
+    "body.players[0].player_data.join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[0].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_bracket": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.foundation_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.foundation_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.foundation_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.foundation_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.foundation_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.foundation_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.foundation_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.champion_points": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.last_reward_time": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.last_foundation_battle": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild_motto": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.guild_quest_lodge_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.foundation_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.modern_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.survival_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.alt_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.is_banned": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.player_uuid": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.paypal_ban": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.season_pass": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.burn_sps_rewards": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.scholared_by": {
+      "valueClass": "name"
+    },
+    "body.players[1].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.players[1].player": {
+      "valueClass": "name"
+    },
+    "body.players[1].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[1].join_trx_id": {
+      "valueClass": "id"
+    },
+    "body.players[1].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].finish": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].prize": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].prize_payout_trx_id": {
+      "valueClass": "id"
+    },
+    "body.players[1].checkin_tx": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].checked_in": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].fee_amount": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].ext_prize_info": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.name": {
+      "valueClass": "name"
+    },
+    "body.players[1].player_data.join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[1].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_bracket": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.foundation_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.foundation_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.foundation_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.foundation_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.foundation_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.foundation_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.champion_points": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.last_reward_time": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.last_foundation_battle": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild_motto": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.guild_quest_lodge_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.foundation_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.modern_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.survival_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.alt_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.is_banned": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.player_uuid": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.paypal_ban": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.season_pass": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.burn_sps_rewards": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.scholared_by": {
+      "valueClass": "name"
+    },
+    "body.players[2].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.players[2].player": {
+      "valueClass": "name"
+    },
+    "body.players[2].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[2].join_trx_id": {
+      "valueClass": "id"
+    },
+    "body.players[2].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].finish": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].prize": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].prize_payout_trx_id": {
+      "valueClass": "id"
+    },
+    "body.players[2].checkin_tx": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].checked_in": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].fee_amount": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].ext_prize_info": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.name": {
+      "valueClass": "name"
+    },
+    "body.players[2].player_data.join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[2].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_bracket": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.foundation_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.champion_points": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.foundation_capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.last_reward_time": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.last_foundation_battle": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild_motto": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.guild_quest_lodge_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.modern_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.survival_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.foundation_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.alt_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.is_banned": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.player_uuid": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.paypal_ban": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.season_pass": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.burn_sps_rewards": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.scholared_by": {
+      "valueClass": "name"
+    },
+    "body.rounds[0].tournament_id": {
+      "valueClass": "id"
+    },
+    "body.rounds[0].round": {
+      "valueClass": "numeric"
+    },
+    "body.rounds[0].start_block": {
+      "valueClass": "numeric"
+    },
+    "body.rounds[0].status": {
+      "valueClass": "numeric"
+    },
+    "body.rounds[0].best_of": {
+      "valueClass": "numeric"
+    },
+    "body.rounds[0].num_swiss_groups": {
+      "valueClass": "numeric"
+    },
+    "body.rounds[0].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body.rounds[0].num_swiss_winners": {
+      "valueClass": "numeric"
+    },
+    "body.rounds[0].auto_wins": {
+      "valueClass": "opaque"
+    },
+    "body.num_players": {
+      "valueClass": "numeric"
+    },
+    "body.total_rounds": {
+      "valueClass": "numeric"
+    },
+    "body.qualifiers": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "id": "a0b84ec642df58e7af0f2ffd479103dc13f864da",
+    "created_by": "sps.tournaments",
+    "created_date": "2026-08-25T23:33:18.000Z",
+    "created_block": 109345774,
+    "name": "Scholar Showcase: Gold Modern",
+    "description": "Come show off your skills and you might just catch the eye of a top account holder looking for a new champion to lead their account to victory and share the spoils of the Arena!",
+    "start_date": "2026-09-11T05:00:00.000Z",
+    "status": 2,
+    "current_round": 1,
+    "sponsor_name": "SPS DAO",
+    "sponsor_logo_url": "Scholar Shocase.jpg",
+    "min_entrants": 4,
+    "max_entrants": null,
+    "entry_fee": null,
+    "total_prizes_usd": 1,
+    "data": {
+      "allowed_cards": {
+        "type": "all",
+        "foil": "all",
+        "sets": [],
+        "epoch": "modern",
+        "ghost": true,
+        "gladiator": false
+      },
+      "prizes": {
+        "payouts": [
+          {
+            "start_place": 1,
+            "end_place": 1,
+            "items": [
+              {
+                "qty": 1,
+                "type": "CUSTOM",
+                "usd_value": 1,
+                "text": "You the champ!"
+              }
+            ]
+          }
+        ]
+      },
+      "total_prizes_usd": 1,
+      "duration_blocks": 28800,
+      "multiple_rounds": true,
+      "spsp_min": 0,
+      "cp_min": 0,
+      "alternate_fee": {
+        "value": "none"
+      },
+      "rating_level": 3,
+      "best_of": 3,
+      "rounds": [
+        {
+          "type": "qualifier",
+          "best_of": 1,
+          "qty": 1
+        },
+        {
+          "type": "last",
+          "qty": 1,
+          "best_of": 5
+        }
+      ],
+      "group_size": 12,
+      "create_team_seconds": 288,
+      "winners_bracket": 30,
+      "allow_player_card": false
+    },
+    "sponsor_logo_url_med": "Scholar Shocase.jpg",
+    "sponsor_logo_url_lg": "",
+    "payment": null,
+    "sponsor_url": "https://sps.splinterlands.com/",
+    "checkin_msg_sent": false,
+    "format": "swiss",
+    "payment_data": "[]",
+    "password_pub_key": null,
+    "sub_format": null,
+    "require_kyc": true,
+    "approved": true,
+    "allow_lite": false,
+    "stretch_background": false,
+    "players": [
+      {
+        "tournament_id": "a0b84ec642df58e7af0f2ffd479103dc13f864da",
+        "player": "rampagemn",
+        "join_date": "2026-08-26T19:02:06.000Z",
+        "join_trx_id": "5d6ae38973000d0882f3b322e0c36bb4cfdc4c4f",
+        "wins": 6,
+        "losses": 0,
+        "draws": 0,
+        "finish": 1,
+        "prize": null,
+        "prize_payout_trx_id": null,
+        "checkin_tx": null,
+        "checked_in": true,
+        "fee_amount": null,
+        "meta_pts": 84,
+        "meta_pts_float": 3020,
+        "defeated": "zeromar,omikeee,leggendario,pancakepie,dardoc,kaibagt",
+        "ext_prize_info": null,
+        "player_data": {
+          "name": "rampagemn",
+          "join_date": "2026-07-18T22:45:54.641Z",
+          "rating": 0,
+          "battles": 0,
+          "wins": 0,
+          "current_streak": 0,
+          "longest_streak": 0,
+          "max_rating": 0,
+          "max_rank": 0,
+          "modern_rating": 2980,
+          "modern_battles": 1528,
+          "modern_wins": 772,
+          "modern_current_streak": 0,
+          "modern_longest_streak": 9,
+          "modern_max_rating": 3060,
+          "modern_max_rank": 13,
+          "survival_rating": 2440,
+          "survival_battles": 1591,
+          "survival_wins": 927,
+          "survival_current_streak": 0,
+          "survival_longest_streak": 22,
+          "survival_max_rating": 2460,
+          "survival_max_rank": 46,
+          "survival_bracket": 3,
+          "foundation_rating": 3020,
+          "foundation_battles": 1171,
+          "foundation_wins": 631,
+          "foundation_current_streak": 1,
+          "foundation_longest_streak": 12,
+          "foundation_max_rating": 3840,
+          "foundation_max_rank": 5,
+          "champion_points": 0,
+          "capture_rate": "7.469313",
+          "foundation_capture_rate": "45.473835",
+          "last_reward_block": 109838458,
+          "last_reward_time": "2026-09-12T03:14:16.445Z",
+          "last_foundation_battle": "2026-09-07T17:37:27.228Z",
+          "guild": "15025741ba69bb91272ee8adb91b7db12baa9a87",
+          "guild_name": "The Arch-Mage Mastermind ",
+          "guild_motto": "Discipline - Consistentcy - Comradery",
+          "guild_data": "{\"crest\":{\"banner\":\"orange\",\"decal\":\"staff\"}}",
+          "guild_level": 7,
+          "guild_quest_lodge_level": 7,
+          "starter_pack_purchase": true,
+          "avatar_id": 0,
+          "display_name": null,
+          "title_pre": null,
+          "title_post": null,
+          "collection_power": 109452,
+          "league": 0,
+          "modern_league": 10,
+          "survival_league": 8,
+          "foundation_league": 8,
+          "adv_msg_sent": false,
+          "modern_adv_msg_sent": false,
+          "survival_adv_msg_sent": false,
+          "foundation_adv_msg_sent": false,
+          "alt_name": "rampage2026_lite",
+          "is_banned": false,
+          "player_uuid": "ed9222ea-f8c1-4d7b-9f7c-ebaba6963c51",
+          "paypal_ban": null,
+          "season_pass": null,
+          "player_avatar": "{\"race\":\"elf\",\"background\":5,\"color\":\"Blue\",\"level\":12,\"frame\":5,\"gender\":2,\"body\":1,\"face\":5,\"nose\":6,\"ears\":5,\"skin_color\":2,\"hair\":4,\"eyebrows\":5,\"mustache\":0,\"beard\":0,\"hair_color\":4,\"eyes\":5,\"eyes_color\":1,\"mouth\":2,\"complexion\":0,\"scars\":5,\"outfit\":0,\"outfit_color\":0,\"cloth\":1,\"cloth_color\":3,\"tattoo\":4,\"accessory\":6,\"accessory_color\":1,\"hat\":80,\"hat_color\":0,\"earrings\":2,\"earrings_color\":1,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"modern_league\",\"year_joined\",\"champion_points\",\"frontier_league\"],\"avatar_resets\":1,\"player_card_resets\":5}",
+          "burn_sps_rewards": false,
+          "scholared_by": null
+        }
+      },
+      {
+        "tournament_id": "a0b84ec642df58e7af0f2ffd479103dc13f864da",
+        "player": "dardoc",
+        "join_date": "2026-09-07T16:04:54.000Z",
+        "join_trx_id": "cc784ce46562c976d3ca9595615d08110688e6b0",
+        "wins": 5,
+        "losses": 1,
+        "draws": 0,
+        "finish": 2,
+        "prize": null,
+        "prize_payout_trx_id": null,
+        "checkin_tx": null,
+        "checked_in": true,
+        "fee_amount": null,
+        "meta_pts": 54,
+        "meta_pts_float": 3480,
+        "defeated": "zeromar,omikeee,leggendario,pancakepie,kaibagt",
+        "ext_prize_info": null,
+        "player_data": {
+          "name": "dardoc",
+          "join_date": "2021-09-12T12:04:07.847Z",
+          "rating": 2900,
+          "battles": 4740,
+          "wins": 2345,
+          "current_streak": 1,
+          "longest_streak": 16,
+          "max_rating": 3680,
+          "max_rank": 2,
+          "modern_rating": 3560,
+          "modern_battles": 4017,
+          "modern_wins": 1983,
+          "modern_current_streak": 0,
+          "modern_longest_streak": 19,
+          "modern_max_rating": 3880,
+          "modern_max_rank": 1,
+          "survival_rating": 600,
+          "survival_battles": 175,
+          "survival_wins": 128,
+          "survival_current_streak": 0,
+          "survival_longest_streak": 20,
+          "survival_max_rating": 1120,
+          "survival_max_rank": 386,
+          "survival_bracket": null,
+          "foundation_rating": 2500,
+          "foundation_battles": 1296,
+          "foundation_wins": 677,
+          "foundation_current_streak": 3,
+          "foundation_longest_streak": 13,
+          "foundation_max_rating": 3600,
+          "foundation_max_rank": 8,
+          "champion_points": 60,
+          "capture_rate": "0.560241",
+          "foundation_capture_rate": "10.615686",
+          "last_reward_block": 109842711,
+          "last_reward_time": "2026-09-12T06:48:02.158Z",
+          "last_foundation_battle": "2026-08-31T01:00:22.501Z",
+          "guild": "f01aa8265af37e6f8ff737dcbeb08b6437390daa",
+          "guild_name": "Splinter Gods",
+          "guild_motto": "Build Together. Fight Together. Thrive As One.",
+          "guild_data": "{\"crest\":{\"banner\":\"teal\",\"decal\":\"skull\"}}",
+          "guild_level": 8,
+          "guild_quest_lodge_level": 8,
+          "starter_pack_purchase": true,
+          "avatar_id": 7,
+          "display_name": null,
+          "title_pre": null,
+          "title_post": null,
+          "collection_power": 283230,
+          "league": 10,
+          "modern_league": 12,
+          "survival_league": 2,
+          "foundation_league": 8,
+          "adv_msg_sent": false,
+          "modern_adv_msg_sent": false,
+          "survival_adv_msg_sent": false,
+          "foundation_adv_msg_sent": false,
+          "alt_name": "initiate_108185",
+          "is_banned": false,
+          "player_uuid": "12dd7ed5-ea63-47f5-9713-cdb5c8ce2f54",
+          "paypal_ban": null,
+          "season_pass": null,
+          "player_avatar": "{\"race\":\"orc\",\"background\":3,\"color\":\"Green\",\"level\":15,\"frame\":5,\"gender\":2,\"body\":1,\"face\":1,\"nose\":1,\"ears\":0,\"skin_color\":3,\"hair\":3,\"eyebrows\":1,\"mustache\":0,\"beard\":0,\"hair_color\":7,\"eyes\":1,\"eyes_color\":3,\"mouth\":8,\"complexion\":0,\"scars\":5,\"outfit\":0,\"outfit_color\":0,\"cloth\":4,\"cloth_color\":1,\"tattoo\":2,\"accessory\":2,\"accessory_color\":1,\"hat\":0,\"hat_color\":0,\"earrings\":3,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"champion_points\",\"\",\"\",\"\"],\"avatar_resets\":0,\"player_card_resets\":1}",
+          "burn_sps_rewards": false,
+          "scholared_by": null
+        }
+      },
+      {
+        "tournament_id": "a0b84ec642df58e7af0f2ffd479103dc13f864da",
+        "player": "pancakepie",
+        "join_date": "2026-09-09T22:04:42.000Z",
+        "join_trx_id": "5813dee4bcc4cbca92892f073cfaaf619dcffd60",
+        "wins": 4,
+        "losses": 2,
+        "draws": 0,
+        "finish": 3,
+        "prize": null,
+        "prize_payout_trx_id": null,
+        "checkin_tx": null,
+        "checked_in": true,
+        "fee_amount": null,
+        "meta_pts": 30,
+        "meta_pts_float": 2300,
+        "defeated": "zeromar,omikeee,leggendario,kaibagt",
+        "ext_prize_info": null,
+        "player_data": {
+          "name": "pancakepie",
+          "join_date": "2024-10-08T03:12:10.976Z",
+          "rating": 1700,
+          "battles": 60,
+          "wins": 14,
+          "current_streak": 0,
+          "longest_streak": 8,
+          "max_rating": 300,
+          "max_rank": 315,
+          "modern_rating": 2340,
+          "modern_battles": 9267,
+          "modern_wins": 4638,
+          "modern_current_streak": 0,
+          "modern_longest_streak": 13,
+          "modern_max_rating": 2620,
+          "modern_max_rank": 67,
+          "survival_rating": 0,
+          "survival_battles": 71,
+          "survival_wins": 23,
+          "survival_current_streak": 0,
+          "survival_longest_streak": 8,
+          "survival_max_rating": 300,
+          "survival_max_rank": 330,
+          "survival_bracket": null,
+          "foundation_rating": 3120,
+          "foundation_battles": 2043,
+          "foundation_wins": 1071,
+          "foundation_current_streak": 1,
+          "foundation_longest_streak": 9,
+          "foundation_max_rating": 3740,
+          "foundation_max_rank": 5,
+          "champion_points": 0,
+          "capture_rate": "44.182174",
+          "foundation_capture_rate": "54.000000",
+          "last_reward_block": 109839142,
+          "last_reward_time": "2026-09-12T03:48:57.735Z",
+          "last_foundation_battle": "2026-09-12T00:17:22.265Z",
+          "guild": "15025741ba69bb91272ee8adb91b7db12baa9a87",
+          "guild_name": "The Arch-Mage Mastermind ",
+          "guild_motto": "Discipline - Consistentcy - Comradery",
+          "guild_data": "{\"crest\":{\"banner\":\"orange\",\"decal\":\"staff\"}}",
+          "guild_level": 7,
+          "guild_quest_lodge_level": 7,
+          "starter_pack_purchase": true,
+          "avatar_id": 8,
+          "display_name": null,
+          "title_pre": null,
+          "title_post": null,
+          "collection_power": 162700,
+          "league": 6,
+          "modern_league": 8,
+          "survival_league": 1,
+          "foundation_league": 8,
+          "adv_msg_sent": false,
+          "modern_adv_msg_sent": false,
+          "survival_adv_msg_sent": false,
+          "foundation_adv_msg_sent": false,
+          "alt_name": "neophyte_135736",
+          "is_banned": false,
+          "player_uuid": "919c2798-3f31-4be9-a93d-db7fc8aa2f34",
+          "paypal_ban": null,
+          "season_pass": null,
+          "player_avatar": "{\"race\":\"human\",\"background\":15,\"color\":\"Red\",\"level\":22,\"frame\":5,\"gender\":1,\"body\":1,\"face\":2,\"nose\":8,\"ears\":0,\"skin_color\":5,\"hair\":6,\"eyebrows\":4,\"mustache\":0,\"beard\":0,\"hair_color\":3,\"eyes\":13,\"eyes_color\":5,\"mouth\":5,\"complexion\":6,\"scars\":7,\"outfit\":0,\"outfit_color\":0,\"cloth\":108,\"cloth_color\":0,\"tattoo\":20,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"frontier_league\",\"modern_league\",\"champion_points\",\"year_joined\"],\"avatar_resets\":2,\"player_card_resets\":5}",
+          "burn_sps_rewards": false,
+          "scholared_by": null
+        }
+      }
+    ],
+    "rounds": [
+      {
+        "tournament_id": "a0b84ec642df58e7af0f2ffd479103dc13f864da",
+        "round": 1,
+        "start_block": 109811847,
+        "status": 2,
+        "best_of": 1,
+        "num_swiss_groups": 1,
+        "start_date": "2026-09-11T05:00:00.000Z",
+        "num_swiss_winners": 0,
+        "auto_wins": null
+      }
+    ],
+    "num_players": 7,
+    "total_rounds": 1,
+    "qualifiers": 0
+  }
+}

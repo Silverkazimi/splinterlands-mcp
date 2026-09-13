@@ -1,0 +1,66 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T07:47:47.522050+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/archived_balances",
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+  },
+  "valueClasses": {
+    "body[0].player": {
+      "valueClass": "name"
+    },
+    "body[0].token": {
+      "valueClass": "enum"
+    },
+    "body[0].balance": {
+      "valueClass": "numeric"
+    },
+    "body[0].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].player": {
+      "valueClass": "name"
+    },
+    "body[1].token": {
+      "valueClass": "enum"
+    },
+    "body[1].balance": {
+      "valueClass": "numeric"
+    },
+    "body[1].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].player": {
+      "valueClass": "name"
+    },
+    "body[2].token": {
+      "valueClass": "enum"
+    },
+    "body[2].balance": {
+      "valueClass": "numeric"
+    },
+    "body[2].last_update_date": {
+      "valueClass": "timestamp"
+    }
+  },
+  "body": [
+    {
+      "player": "vugtis",
+      "token": "EOY_PROMO_2022",
+      "balance": 3920,
+      "last_update_date": "2022-12-22T13:24:33.007Z"
+    },
+    {
+      "player": "vugtis",
+      "token": "EOY_PROMO_2022_GOLD",
+      "balance": 80,
+      "last_update_date": "2022-12-22T13:24:33.007Z"
+    },
+    {
+      "player": "vugtis",
+      "token": "LUX_VEGA_GENERAL",
+      "balance": 2,
+      "last_update_date": "2022-11-15T21:00:31.242Z"
+    }
+  ]
+}

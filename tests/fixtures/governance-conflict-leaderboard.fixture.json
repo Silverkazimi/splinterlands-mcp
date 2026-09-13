@@ -1,0 +1,3110 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:28:25.692370+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/leaderboard",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.leaderboard[0].player": {
+      "valueClass": "name"
+    },
+    "body.leaderboard[0].total_contribution": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].reward_points": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].rp_per_hour": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].num_prizes": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].num_undamaged_wagons": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].num_claimed_prizes": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].title": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].guild_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard[0].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].player": {
+      "valueClass": "name"
+    },
+    "body.leaderboard[1].total_contribution": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].reward_points": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].rp_per_hour": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].num_prizes": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].num_undamaged_wagons": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].num_claimed_prizes": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].title": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].guild_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard[1].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[2].player": {
+      "valueClass": "name"
+    },
+    "body.leaderboard[2].total_contribution": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[2].reward_points": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[2].rp_per_hour": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[2].num_prizes": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[2].num_undamaged_wagons": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[2].num_claimed_prizes": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[2].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[2].title": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[2].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[2].league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[2].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[2].guild_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard[2].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[2].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[2].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.totals.total_reward_points": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[3].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[3].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[3].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[3].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[3].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[3].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[4].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[4].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[4].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[4].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[4].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[4].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[4].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[4].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[4].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[4].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[5].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[5].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[5].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[5].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[5].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[5].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[5].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[5].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[5].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[5].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[6].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[6].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[6].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[6].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[6].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[6].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[6].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[6].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[6].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[6].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[7].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[7].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[7].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[7].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[7].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[7].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[7].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[7].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[7].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[7].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[8].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[8].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[8].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[8].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[8].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[8].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[8].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[8].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[8].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[8].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[9].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[9].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[9].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[9].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[9].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[9].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[9].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[9].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[9].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[9].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[10].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[10].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[0].prizes[10].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[10].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[0].prizes[10].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[10].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[10].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[10].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[10].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[0].prizes[10].skin_card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[3].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[3].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[3].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[3].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[3].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[3].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[4].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[4].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[4].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[4].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[4].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[4].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[4].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[4].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[4].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[4].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[5].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[5].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[5].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[5].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[5].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[5].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[5].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[5].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[5].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[5].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[6].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[6].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[6].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[6].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[6].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[6].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[6].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[6].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[6].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[6].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[7].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[7].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[7].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[7].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[7].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[7].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[7].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[7].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[7].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[7].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[8].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[8].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[8].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[8].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[8].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[8].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[8].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[8].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[8].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[8].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[9].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[9].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[1].prizes[9].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[9].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[1].prizes[9].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[9].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[9].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[9].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[9].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[1].prizes[9].skin_card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[2].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[2].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[2].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[3].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[3].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[3].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[3].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[3].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[3].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[2].prizes[4].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[4].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[4].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[4].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[4].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[4].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[4].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[4].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[4].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[4].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[2].prizes[5].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[5].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[5].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[5].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[5].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[5].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[5].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[5].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[5].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[5].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[2].prizes[6].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[6].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[6].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[6].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[6].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[6].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[6].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[6].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[6].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[6].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[2].prizes[7].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[7].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[7].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[7].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[7].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[7].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[7].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[7].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[7].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[7].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[2].prizes[8].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[8].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[2].prizes[8].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[8].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[2].prizes[8].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[8].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[8].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[8].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[8].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[2].prizes[8].skin_card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[3].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[3].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[3].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[3].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[3].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[3].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[3].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[3].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[3].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[3].prizes[4].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[4].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[4].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[4].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[4].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[4].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[4].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[4].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[4].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[4].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[3].prizes[5].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[5].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[5].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[5].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[5].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[5].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[5].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[5].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[5].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[5].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[3].prizes[6].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[6].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[6].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[6].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[6].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[6].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[6].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[6].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[6].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[6].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[3].prizes[7].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[7].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[3].prizes[7].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[7].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[3].prizes[7].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[7].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[7].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[7].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[7].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[3].prizes[7].skin_card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[4].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[4].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[4].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[3].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[3].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[3].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[3].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[3].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[3].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[4].prizes[4].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[4].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[4].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[4].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[4].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[4].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[4].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[4].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[4].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[4].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[4].prizes[5].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[5].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[5].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[5].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[5].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[5].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[5].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[5].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[5].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[5].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[4].prizes[6].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[6].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[4].prizes[6].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[6].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[4].prizes[6].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[6].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[6].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[6].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[6].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[4].prizes[6].skin_card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[5].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[5].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[5].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[5].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[5].prizes[3].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[3].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[3].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[3].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[5].prizes[3].skin_card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[6].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[6].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[6].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[6].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[6].prizes[3].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[3].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[3].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[3].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[6].prizes[3].skin_card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[7].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[7].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[7].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[7].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[7].prizes[3].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[3].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[3].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[3].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[7].prizes[3].skin_card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[8].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[8].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[8].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[8].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[8].prizes[3].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[3].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[3].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[3].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[8].prizes[3].skin_card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].card_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].skin_prizes": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[0].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[0].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[0].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[0].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[0].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[9].prizes[1].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[1].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[1].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[1].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[1].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[9].prizes[2].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[2].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[2].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[2].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[2].skin_card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[9].prizes[3].placement": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[3].prize_number": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard_prizes[9].prizes[3].prize_type": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard_prizes[9].prizes[3].card_xp": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[3].card_edition": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[3].card_tier": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[3].card_foil": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[3].skin_set": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard_prizes[9].prizes[3].skin_card_detail_id": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "leaderboard": [
+      {
+        "player": "vugtis",
+        "total_contribution": "2211769284",
+        "reward_points": 22117,
+        "rp_per_hour": 5551792,
+        "num_prizes": null,
+        "num_undamaged_wagons": null,
+        "num_claimed_prizes": null,
+        "avatar_id": 0,
+        "title": null,
+        "title_pre": "Vonarch",
+        "league": 15,
+        "modern_league": 11,
+        "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+        "guild_name": " [KoG] Shield of Glory",
+        "guild_data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
+        "player_avatar": "{\"race\":\"human\",\"background\":0,\"color\":\"Red\",\"level\":1,\"frame\":0,\"gender\":1,\"body\":1,\"face\":1,\"nose\":2,\"ears\":0,\"skin_color\":1,\"hair\":7,\"eyebrows\":1,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":1,\"eyes_color\":1,\"mouth\":13,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":1,\"cloth_color\":1,\"tattoo\":0,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"modern_league\",\"year_joined\",\"\",\"\"],\"is_saved\":false,\"avatar_resets\":0,\"player_card_resets\":0}"
+      },
+      {
+        "player": "bravetofu",
+        "total_contribution": "2137856587",
+        "reward_points": 21378,
+        "rp_per_hour": 5670703,
+        "num_prizes": null,
+        "num_undamaged_wagons": null,
+        "num_claimed_prizes": null,
+        "avatar_id": 0,
+        "title": "The Arcane",
+        "title_pre": "Magister",
+        "league": 15,
+        "modern_league": 15,
+        "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+        "guild_name": " [KoG] Shield of Glory",
+        "guild_data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
+        "player_avatar": "{\"race\":\"orc\",\"background\":8,\"color\":\"Gold\",\"level\":110,\"frame\":10,\"gender\":1,\"body\":1,\"face\":5,\"nose\":1,\"ears\":0,\"skin_color\":2,\"hair\":2,\"eyebrows\":6,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":6,\"eyes_color\":2,\"mouth\":7,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":4,\"cloth_color\":1,\"tattoo\":20,\"accessory\":7,\"accessory_color\":4,\"hat\":0,\"hat_color\":0,\"earrings\":5,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"shard_holder\",\"modern_league\",\"year_joined\",\"runi_holder_1918\"],\"avatar_resets\":1,\"player_card_resets\":2}"
+      },
+      {
+        "player": "kesryn",
+        "total_contribution": "2017100392",
+        "reward_points": 20171,
+        "rp_per_hour": 5350395,
+        "num_prizes": null,
+        "num_undamaged_wagons": null,
+        "num_claimed_prizes": null,
+        "avatar_id": 4065,
+        "title": "The Myth Hunter",
+        "title_pre": "Overseer",
+        "league": 15,
+        "modern_league": 15,
+        "guild_id": "690d6c7f394698673d41356af80102590c42cb25",
+        "guild_name": "Crypto Friends Forever",
+        "guild_data": "{\"crest\":{\"banner\":\"black\",\"decal\":null}}",
+        "player_avatar": "{\"race\":\"elf\",\"background\":23,\"color\":\"Gold\",\"level\":160,\"frame\":0,\"gender\":1,\"body\":1,\"face\":1,\"nose\":1,\"ears\":3,\"skin_color\":1,\"hair\":4,\"eyebrows\":1,\"mustache\":0,\"beard\":0,\"hair_color\":2,\"eyes\":1,\"eyes_color\":2,\"mouth\":5,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":7,\"cloth_color\":1,\"tattoo\":0,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"year_joined\",\"\",\"\",\"\"],\"is_saved\":false,\"avatar_resets\":0,\"player_card_resets\":3}"
+      }
+    ],
+    "totals": {
+      "total_reward_points": 516109
+    },
+    "leaderboard_prizes": [
+      {
+        "placement": 1,
+        "card_prizes": 10,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 1,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 4,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 5,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 6,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 7,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 8,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 9,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 10,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 1,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      },
+      {
+        "placement": 2,
+        "card_prizes": 9,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 2,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 2,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 2,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 2,
+            "prize_number": 4,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 2,
+            "prize_number": 5,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 2,
+            "prize_number": 6,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 2,
+            "prize_number": 7,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 2,
+            "prize_number": 8,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 2,
+            "prize_number": 9,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 2,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      },
+      {
+        "placement": 3,
+        "card_prizes": 8,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 3,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 3,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 3,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 3,
+            "prize_number": 4,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 3,
+            "prize_number": 5,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 3,
+            "prize_number": 6,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 3,
+            "prize_number": 7,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 3,
+            "prize_number": 8,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 3,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      },
+      {
+        "placement": 4,
+        "card_prizes": 7,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 4,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 4,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 4,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 4,
+            "prize_number": 4,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 4,
+            "prize_number": 5,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 4,
+            "prize_number": 6,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 4,
+            "prize_number": 7,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 4,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      },
+      {
+        "placement": 5,
+        "card_prizes": 6,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 5,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 5,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 5,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 5,
+            "prize_number": 4,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 5,
+            "prize_number": 5,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 5,
+            "prize_number": 6,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 5,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      },
+      {
+        "placement": 6,
+        "card_prizes": 3,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 6,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 6,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 6,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 6,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      },
+      {
+        "placement": 7,
+        "card_prizes": 3,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 7,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 7,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 7,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 7,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      },
+      {
+        "placement": 8,
+        "card_prizes": 3,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 8,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 8,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 8,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 8,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      },
+      {
+        "placement": 9,
+        "card_prizes": 3,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 9,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 9,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 9,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 9,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      },
+      {
+        "placement": 10,
+        "card_prizes": 3,
+        "skin_prizes": 1,
+        "prizes": [
+          {
+            "placement": 10,
+            "prize_number": 1,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 10,
+            "prize_number": 2,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 10,
+            "prize_number": 3,
+            "prize_type": "CARD",
+            "card_detail_id": 1050,
+            "card_xp": 1,
+            "card_edition": 20,
+            "card_tier": 14,
+            "card_foil": 1,
+            "skin_set": null,
+            "skin_card_detail_id": null
+          },
+          {
+            "placement": 10,
+            "prize_number": 1,
+            "prize_type": "SKIN",
+            "card_detail_id": null,
+            "card_xp": null,
+            "card_edition": null,
+            "card_tier": null,
+            "card_foil": null,
+            "skin_set": "Fantastic",
+            "skin_card_detail_id": 1050
+          }
+        ]
+      }
+    ]
+  }
+}

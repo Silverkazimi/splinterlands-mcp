@@ -1,0 +1,122 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:48:23.492499+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/TOTEMS",
+    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.description": {
+      "valueClass": "opaque"
+    },
+    "body.data.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].circulation": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assetName": "TOTEMS",
+      "description": "Totem Claim",
+      "type": "FUNGIBLE",
+      "details": [
+        {
+          "id": "TOTEMC",
+          "name": "Common Totem Claim",
+          "description": "When placed in the building on a Land Plot, Totems can increase production, reduce maintenance costs, or other benefits.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_totem_1_common_300.png",
+          "icon": "icon_claim_totem_common.svg",
+          "filterIcon": null,
+          "circulation": 24305
+        },
+        {
+          "id": "TOTEMR",
+          "name": "Rare Totem Claim",
+          "description": "When placed in the building on a Land Plot, Totems can increase production, reduce maintenance costs, or other benefits. Rare Totems provide greater benefits than Common Totems.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_totem_2_rare_300.png",
+          "icon": "icon_claim_totem_rare.svg",
+          "filterIcon": null,
+          "circulation": 4869
+        },
+        {
+          "id": "TOTEME",
+          "name": "Epic Totem Claim",
+          "description": "When placed in the building on a Land Plot, Totems can increase production, reduce maintenance costs, or other benefits. Epic Totems provide greater benefits than Rare Totems.",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_totem_3_epic_300.png",
+          "icon": "icon_claim_totem_epic.svg",
+          "filterIcon": null,
+          "circulation": 970
+        }
+      ]
+    }
+  }
+}

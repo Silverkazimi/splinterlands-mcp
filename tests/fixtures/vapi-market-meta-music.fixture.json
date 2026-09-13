@@ -1,0 +1,122 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:48:20.003532+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/MUSIC",
+    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.description": {
+      "valueClass": "opaque"
+    },
+    "body.data.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[1].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[1].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[2].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[2].filterIcon": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assetName": "MUSIC",
+      "description": "Splintervibes",
+      "type": "NON_FUNGIBLE",
+      "details": [
+        {
+          "id": "359",
+          "name": "Splintervibes: Bella Ratajowlski",
+          "circulation": 97,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/Bella Ratajowlski.png",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "423",
+          "name": "Splintervibes: Yaba\u2019s Pickle",
+          "circulation": 100,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/Yaba\u2019s Pickle.png",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "400",
+          "name": "Splintervibes: Possibilus The Wise",
+          "circulation": 74,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/Possibilus The Wise.png",
+          "icon": null,
+          "filterIcon": null
+        }
+      ]
+    }
+  }
+}

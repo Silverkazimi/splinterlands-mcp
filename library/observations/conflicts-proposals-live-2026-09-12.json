@@ -1,0 +1,314 @@
+{
+  "transport": "built stdio MCP server",
+  "observedAt": "2026-09-12T09:38:28.618Z",
+  "toolCount": 128,
+  "results": [
+    {
+      "name": "conflict_seasons",
+      "isError": false,
+      "milliseconds": 745,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 24,
+        "upstreamRows": 24
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/seasons",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:29.369Z",
+          "ageMs": 14
+        }
+      }
+    },
+    {
+      "name": "conflict_players",
+      "isError": false,
+      "milliseconds": 151,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "keys": [
+        "reward_point_threshold",
+        "players"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/players",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:29.550Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "conflict_airdrop_distribution",
+      "isError": false,
+      "milliseconds": 158,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "keys": [
+        "conflict",
+        "distribution"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/airdrop_distribution",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:29.708Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "conflict_leaderboard",
+      "isError": false,
+      "milliseconds": 3629,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 200
+      },
+      "keys": [
+        "leaderboard",
+        "totals",
+        "leaderboard_prizes"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/leaderboard",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:33.321Z",
+          "ageMs": 6
+        }
+      }
+    },
+    {
+      "name": "conflict_player_rank",
+      "isError": false,
+      "milliseconds": 263,
+      "keys": [
+        "player"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/leaderboard_with_player",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:33.601Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "conflict_status",
+      "isError": false,
+      "milliseconds": 221,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 110
+      },
+      "keys": [
+        "config",
+        "conflict",
+        "stats",
+        "player",
+        "wagons"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/status",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:33.817Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "conflict_wagon",
+      "isError": false,
+      "milliseconds": 170,
+      "keys": [
+        "player",
+        "wagon_uid",
+        "cards",
+        "updated_date",
+        "total_cp",
+        "damaged"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/wagon",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:33.991Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "conflict_eligible_cards",
+      "isError": false,
+      "milliseconds": 2674,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 12,
+        "upstreamRows": 12
+      },
+      "keys": [
+        "total_cards",
+        "groups"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/wagon_eligible_cards",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:36.664Z",
+          "ageMs": 3
+        }
+      }
+    },
+    {
+      "name": "proposal_list",
+      "isError": false,
+      "milliseconds": 198,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/proposals/",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:36.865Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "proposal_pending_count",
+      "isError": false,
+      "milliseconds": 272,
+      "keys": [
+        "value"
+      ],
+      "provenance": {
+        "endpoint": "/proposals/pending_proposal_count",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:37.139Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "proposal_votes",
+      "isError": false,
+      "milliseconds": 231,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/proposals/votes",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:37.371Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "conflict_seasons",
+      "isError": false,
+      "milliseconds": 173,
+      "keys": [
+        "id",
+        "starts",
+        "ends",
+        "season_group",
+        "reset_block_num",
+        "card_detail_id",
+        "card_amount",
+        "card_guaranteed_chances",
+        "cards_awarded",
+        "card_chance_per_entry",
+        "card_gold_chance",
+        "card_boosted_gold_chance",
+        "alchemy_potions_to_boost",
+        "card_black_chance",
+        "card_boosted_black_chance",
+        "midnight_potions_to_boost",
+        "cards_to_guarantee_one_gold",
+        "cards_to_guarantee_one_gold_full_potions",
+        "voucher_cost_to_boost",
+        "verification_data"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/seasons",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:37.544Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "conflict_status",
+      "isError": false,
+      "milliseconds": 245,
+      "keys": [
+        "config"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/status",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:37.789Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "conflict_status",
+      "isError": false,
+      "milliseconds": 262,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 110
+      },
+      "keys": [
+        "stats",
+        "wagons"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/status",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:38.043Z",
+          "ageMs": 2
+        }
+      }
+    },
+    {
+      "name": "conflict_status",
+      "isError": false,
+      "milliseconds": 429,
+      "keys": [
+        "config",
+        "conflict",
+        "stats",
+        "player"
+      ],
+      "provenance": {
+        "endpoint": "/conflicts/status",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:38:38.480Z",
+          "ageMs": 1
+        }
+      }
+    }
+  ]
+}

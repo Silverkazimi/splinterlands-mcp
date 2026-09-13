@@ -1,0 +1,24 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:28:24.782618+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/airdrop_distribution",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.distribution[0].player": {
+      "valueClass": "name"
+    },
+    "body.distribution[0].num_prizes": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "distribution": [
+      {
+        "player": "vugtis",
+        "num_prizes": 56
+      }
+    ]
+  }
+}

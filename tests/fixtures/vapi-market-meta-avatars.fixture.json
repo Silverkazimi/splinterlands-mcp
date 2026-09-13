@@ -1,0 +1,66 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:48:14.390289+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/AVATARS",
+    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.description": {
+      "valueClass": "opaque"
+    },
+    "body.data.type": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[0].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[0].filterIcon": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assetName": "AVATARS",
+      "description": "Avatar",
+      "type": "NON_FUNGIBLE",
+      "details": [
+        {
+          "id": "328",
+          "name": "Tower Mage Avatar",
+          "circulation": 322,
+          "rarity": null,
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/avatars/outfit/human/1/clot101_c1.webp",
+          "description": "The \"Tower Mage\" avatar was a reward for those who purchased 500 Nightmare packs in the pre-sale event.",
+          "icon": "clot101_c1.webp",
+          "filterIcon": null
+        }
+      ]
+    }
+  }
+}

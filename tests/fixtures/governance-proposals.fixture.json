@@ -1,0 +1,184 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:20:07.304856+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/proposals/",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body[0].id": {
+      "valueClass": "numeric"
+    },
+    "body[0].proposal_number": {
+      "valueClass": "numeric"
+    },
+    "body[0].creator": {
+      "valueClass": "opaque"
+    },
+    "body[0].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].subject": {
+      "valueClass": "opaque"
+    },
+    "body[0].permlink": {
+      "valueClass": "opaque"
+    },
+    "body[0].votes_for": {
+      "valueClass": "opaque"
+    },
+    "body[0].votes_against": {
+      "valueClass": "opaque"
+    },
+    "body[0].voters_for": {
+      "valueClass": "numeric"
+    },
+    "body[0].voters_against": {
+      "valueClass": "numeric"
+    },
+    "body[0].votes_threshold": {
+      "valueClass": "opaque"
+    },
+    "body[0].votes_for_ratio_threshold_percent": {
+      "valueClass": "opaque"
+    },
+    "body[0].proposal_type": {
+      "valueClass": "numeric"
+    },
+    "body[0].creator_modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[0].creator_league": {
+      "valueClass": "numeric"
+    },
+    "body[0].creator_avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].creator_title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[0].creator_display_name": {
+      "valueClass": "opaque"
+    },
+    "body[0].creator_title_post": {
+      "valueClass": "opaque"
+    },
+    "body[0].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[1].id": {
+      "valueClass": "numeric"
+    },
+    "body[1].proposal_number": {
+      "valueClass": "numeric"
+    },
+    "body[1].creator": {
+      "valueClass": "opaque"
+    },
+    "body[1].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].subject": {
+      "valueClass": "opaque"
+    },
+    "body[1].permlink": {
+      "valueClass": "opaque"
+    },
+    "body[1].votes_for": {
+      "valueClass": "opaque"
+    },
+    "body[1].votes_against": {
+      "valueClass": "opaque"
+    },
+    "body[1].voters_for": {
+      "valueClass": "numeric"
+    },
+    "body[1].voters_against": {
+      "valueClass": "numeric"
+    },
+    "body[1].votes_threshold": {
+      "valueClass": "opaque"
+    },
+    "body[1].votes_for_ratio_threshold_percent": {
+      "valueClass": "opaque"
+    },
+    "body[1].proposal_type": {
+      "valueClass": "numeric"
+    },
+    "body[1].creator_modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[1].creator_league": {
+      "valueClass": "numeric"
+    },
+    "body[1].creator_avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].creator_title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[1].creator_display_name": {
+      "valueClass": "opaque"
+    },
+    "body[1].creator_title_post": {
+      "valueClass": "opaque"
+    },
+    "body[1].player_avatar": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": [
+    {
+      "id": 7525,
+      "proposal_number": 306,
+      "creator": "dahoss",
+      "start_date": "2026-08-05T17:00:00.000Z",
+      "end_date": "2026-08-12T17:00:00.000Z",
+      "subject": "Establish Visions of Verico Second Sale Page and Pack Burn Mechanic",
+      "permlink": "sps-dao-proposal-establish-visions-of-verico-second-sale-page-and-pack-burn-mechanic",
+      "votes_for": "236225942.538",
+      "votes_against": "19727747.497",
+      "voters_for": 351,
+      "voters_against": 96,
+      "votes_threshold": "103235516.000",
+      "votes_for_ratio_threshold_percent": "0.6667",
+      "proposal_type": 1,
+      "creator_modern_league": 15,
+      "creator_league": 1,
+      "creator_avatar_id": 3824,
+      "creator_title_pre": "Marshal",
+      "creator_display_name": null,
+      "creator_title_post": "The Watcher",
+      "player_avatar": "{\"race\":\"human\",\"background\":23,\"color\":\"Red\",\"level\":16,\"frame\":0,\"gender\":1,\"body\":1,\"face\":1,\"nose\":10,\"ears\":0,\"skin_color\":1,\"hair\":13,\"eyebrows\":3,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":1,\"eyes_color\":1,\"mouth\":2,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":3,\"cloth_color\":1,\"tattoo\":5,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"runi_holder_2824\",\"8th_anniv\",\"card_collection\",\"modern_league\"],\"avatar_resets\":0,\"player_card_resets\":0}"
+    },
+    {
+      "id": 7393,
+      "proposal_number": 302,
+      "creator": "sps.dao",
+      "start_date": "2026-07-16T01:00:00.000Z",
+      "end_date": "2026-07-23T01:00:00.000Z",
+      "subject": "Amend SMC Contract and Define Strategy",
+      "permlink": "sps-governance-proposal-amend-smc-contract-and-define-strategy",
+      "votes_for": "238049803.624",
+      "votes_against": "10439899.700",
+      "voters_for": 376,
+      "voters_against": 60,
+      "votes_threshold": "102658736.000",
+      "votes_for_ratio_threshold_percent": "0.6667",
+      "proposal_type": 1,
+      "creator_modern_league": 0,
+      "creator_league": 0,
+      "creator_avatar_id": 0,
+      "creator_title_pre": null,
+      "creator_display_name": null,
+      "creator_title_post": null,
+      "player_avatar": null
+    }
+  ]
+}

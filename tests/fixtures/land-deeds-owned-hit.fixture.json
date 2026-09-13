@@ -1,0 +1,134 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-07T09:57:47Z"
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].count": {
+      "valueClass": "numeric"
+    },
+    "data[0].uid": {
+      "valueClass": "id"
+    },
+    "data[1].count": {
+      "valueClass": "numeric"
+    },
+    "data[1].uid": {
+      "valueClass": "id"
+    },
+    "data[2].count": {
+      "valueClass": "numeric"
+    },
+    "data[2].uid": {
+      "valueClass": "id"
+    },
+    "data[3].count": {
+      "valueClass": "numeric"
+    },
+    "data[3].uid": {
+      "valueClass": "id"
+    },
+    "data[4].count": {
+      "valueClass": "numeric"
+    },
+    "data[4].uid": {
+      "valueClass": "id"
+    },
+    "data[5].count": {
+      "valueClass": "numeric"
+    },
+    "data[5].uid": {
+      "valueClass": "id"
+    },
+    "data[6].count": {
+      "valueClass": "numeric"
+    },
+    "data[6].uid": {
+      "valueClass": "id"
+    },
+    "data[7].count": {
+      "valueClass": "numeric"
+    },
+    "data[7].uid": {
+      "valueClass": "id"
+    },
+    "data[8].count": {
+      "valueClass": "numeric"
+    },
+    "data[8].uid": {
+      "valueClass": "id"
+    },
+    "data[9].count": {
+      "valueClass": "numeric"
+    },
+    "data[9].uid": {
+      "valueClass": "id"
+    },
+    "data[10].count": {
+      "valueClass": "numeric"
+    },
+    "data[10].uid": {
+      "valueClass": "id"
+    },
+    "data[11].count": {
+      "valueClass": "numeric"
+    },
+    "data[11].uid": {
+      "valueClass": "id"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "count": 1,
+      "uid": "PR-CEF-69"
+    },
+    {
+      "count": 3,
+      "uid": "PR-GLL-115"
+    },
+    {
+      "count": 12,
+      "uid": "PR-GLL-121"
+    },
+    {
+      "count": 6,
+      "uid": "PR-GLL-123"
+    },
+    {
+      "count": 17,
+      "uid": "PR-LOP-62"
+    },
+    {
+      "count": 182,
+      "uid": "PR-PNW-1"
+    },
+    {
+      "count": 4,
+      "uid": "PR-PNW-12"
+    },
+    {
+      "count": 3,
+      "uid": "PR-PNW-13"
+    },
+    {
+      "count": 9,
+      "uid": "PR-PNW-18"
+    },
+    {
+      "count": 4,
+      "uid": "PR-PNW-20"
+    },
+    {
+      "count": 17,
+      "uid": "PR-PNW-7"
+    },
+    {
+      "count": 39,
+      "uid": "PR-PNW-9"
+    }
+  ]
+}

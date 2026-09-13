@@ -1,0 +1,33 @@
+{
+  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
+  "valueClasses": {
+    "body[0].card_id": { "valueClass": "id" },
+    "body[0].transfer_date": { "valueClass": "timestamp" },
+    "body[0].transfer_type": { "valueClass": "enum" },
+    "body[0].transfer_tx": { "valueClass": "id" },
+    "body[0].from_player": { "valueClass": "name" },
+    "body[0].to_player": { "valueClass": "name" },
+    "body[0].card_detail_id": { "valueClass": "id" },
+    "body[0].xp": { "valueClass": "numeric" },
+    "body[0].gold": { "valueClass": "enum" },
+    "body[0].edition": { "valueClass": "enum" },
+    "body[0].payment_amount": { "valueClass": "numeric" },
+    "body[0].payment_currency": { "valueClass": "enum" },
+    "body[0].combined_cards": { "valueClass": "opaque" }
+  },
+  "body": [{
+    "card_id": "C18-880-A5LJPTHHM8",
+    "transfer_date": "2026-09-08T00:00:00.000Z",
+    "transfer_type": "transfer",
+    "transfer_tx": "fixture-transfer",
+    "from_player": "fixture_from",
+    "to_player": "fixture_to",
+    "card_detail_id": 880,
+    "xp": "1",
+    "gold": false,
+    "edition": 3,
+    "payment_amount": null,
+    "payment_currency": null,
+    "combined_cards": ""
+  }]
+}

@@ -1,0 +1,17 @@
+{
+  "provenance": { "source": "synthetic", "capturedAt": "2026-09-07T00:00:00Z" },
+  "valueClasses": {
+    "status": { "valueClass": "numeric" },
+    "body.message": { "valueClass": "freetext" },
+    "body.status": { "valueClass": "enum" },
+    "body.timestamp": { "valueClass": "timestamp" },
+    "body.traceId": { "valueClass": "opaque" }
+  },
+  "status": 401,
+  "body": {
+    "message": "fail",
+    "status": "fail",
+    "timestamp": "2026-09-07T00:00:00Z",
+    "traceId": "synthetic-trace"
+  }
+}

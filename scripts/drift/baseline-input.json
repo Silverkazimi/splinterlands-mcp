@@ -1,0 +1,682 @@
+{
+  "land-deed-by-plot-hit.fixture.json": {
+    "entryId": "vapi.land.deeds.by-plot"
+  },
+  "land-deed-by-plot-miss.fixture.json": {
+    "entryId": "vapi.land.deeds.by-plot"
+  },
+  "land-deed-by-uid-hit.fixture.json": {
+    "entryId": "vapi.land.deeds.details-by-uid"
+  },
+  "land-deed-listed.fixture.json": {
+    "entryId": "vapi.land.deeds.details-by-id"
+  },
+  "land-deeds-owned-hit.fixture.json": {
+    "entryId": "vapi.land.deeds.owned"
+  },
+  "land-deeds-owned-none.fixture.json": {
+    "entryId": "vapi.land.deeds.owned"
+  },
+  "land-deeds-search-limited.fixture.json": {
+    "entryId": "vapi.land.deeds.search",
+    "variantKey": "limited"
+  },
+  "land-deeds-search-ordered-empty.fixture.json": {
+    "entryId": "vapi.land.deeds.search",
+    "variantKey": "ordered"
+  },
+  "land-projects-active-hit.fixture.json": {
+    "entryId": "vapi.land.projects.deed-active"
+  },
+  "land-projects-active-none.fixture.json": {
+    "entryId": "vapi.land.projects.deed-active"
+  },
+  "land-projects-active-single.fixture.json": {
+    "entryId": "vapi.land.projects.deed-active"
+  },
+  "land-projects-count-single.fixture.json": {
+    "entryId": "vapi.land.projects.list-count"
+  },
+  "land-projects-count-zero.fixture.json": {
+    "entryId": "vapi.land.projects.list-count"
+  },
+  "land-projects-count.fixture.json": {
+    "entryId": "vapi.land.projects.list-count"
+  },
+  "land-projects-history-empty.fixture.json": {
+    "entryId": "vapi.land.projects.list"
+  },
+  "land-projects-history-limited.fixture.json": {
+    "entryId": "vapi.land.projects.list"
+  },
+  "land-projects-history-rows.fixture.json": {
+    "entryId": "vapi.land.projects.list"
+  },
+  "land-projects-history-single.fixture.json": {
+    "entryId": "vapi.land.projects.list"
+  },
+  "land-projects-requirements-none.fixture.json": {
+    "entryId": "vapi.land.projects.requirements"
+  },
+  "land-projects-requirements-real.fixture.json": {
+    "entryId": "vapi.land.projects.requirements"
+  },
+  "land-projects-requirements-sentinel.fixture.json": {
+    "entryId": "vapi.land.projects.requirements"
+  },
+  "land-regions-counts-empty.fixture.json": {
+    "entryId": "vapi.land.regions.counts"
+  },
+  "land-regions-counts-rows.fixture.json": {
+    "entryId": "vapi.land.regions.counts"
+  },
+  "land-stake-assets-empty.fixture.json": {
+    "entryId": "vapi.land.stake.deeds-assets"
+  },
+  "land-stake-assets-rows.fixture.json": {
+    "entryId": "vapi.land.stake.deeds-assets"
+  },
+  "land-stake-dec-overall.fixture.json": {
+    "entryId": "vapi.land.stake.dec-overall"
+  },
+  "land-stake-dec-region-resolved.fixture.json": {
+    "entryId": "vapi.land.stake.dec-region"
+  },
+  "land-stake-decstaked-none.fixture.json": {
+    "entryId": "vapi.land.stake.dec-staked"
+  },
+  "land-stake-decstaked-rows.fixture.json": {
+    "entryId": "vapi.land.stake.dec-staked"
+  },
+  "land-stake-deed-details-active.fixture.json": {
+    "entryId": "vapi.land.stake.deed-details"
+  },
+  "land-stake-deed-details-zeroed.fixture.json": {
+    "entryId": "vapi.land.stake.deed-details"
+  },
+  "land-stake-evp-pending-claim.fixture.json": {
+    "entryId": "vapi.land.stake.evp-pending-claim"
+  },
+  "land-tracts-counts-empty.fixture.json": {
+    "entryId": "vapi.land.tracts.counts"
+  },
+  "land-tracts-counts-rows.fixture.json": {
+    "entryId": "vapi.land.tracts.counts"
+  },
+  "land-volume.fixture.json": {
+    "entryId": "vapi.land.volume"
+  },
+  "land-resources-owned-empty.fixture.json": {
+    "entryId": "vapi.land.resources.owned"
+  },
+  "land-resources-leaderboards.fixture.json": {
+    "entryId": "vapi.land.resources.leaderboards"
+  },
+  "land-resources-richlist.fixture.json": {
+    "entryId": "vapi.land.resources.richlist"
+  },
+  "land-resources-production-region-harvestable-empty.fixture.json": {
+    "entryId": "vapi.land.resources.production-region-harvestable"
+  },
+  "land-resources-taxes-real.fixture.json": {
+    "entryId": "vapi.land.resources.taxes"
+  },
+  "land-resources-taxes-unknown.fixture.json": {
+    "entryId": "vapi.land.resources.taxes"
+  },
+  "land-resources-rewardactions.fixture.json": {
+    "entryId": "vapi.land.resources.rewardactions"
+  },
+  "land-resources-rewardactions-empty.fixture.json": {
+    "entryId": "vapi.land.resources.rewardactions"
+  },
+  "land-resources-rewardactions-count.fixture.json": {
+    "entryId": "vapi.land.resources.rewardactions-count"
+  },
+  "land-resources-history.fixture.json": {
+    "entryId": "vapi.land.resources.history"
+  },
+  "land-resources-history-empty.fixture.json": {
+    "entryId": "vapi.land.resources.history"
+  },
+  "land-resources-fragment-history.fixture.json": {
+    "entryId": "vapi.land.resources.fragment-history"
+  },
+  "land-resources-fragment-history-empty.fixture.json": {
+    "entryId": "vapi.land.resources.fragment-history"
+  },
+  "land-resources-balances-history.fixture.json": {
+    "entryId": "vapi.land.resources.balances-history"
+  },
+  "land-resources-balances-history-empty.fixture.json": {
+    "entryId": "vapi.land.resources.balances-history"
+  },
+  "land-resources-balances-history-count.fixture.json": {
+    "entryId": "vapi.land.resources.balances-history-count"
+  },
+  "land-resources-balances-history-count-empty.fixture.json": {
+    "entryId": "vapi.land.resources.balances-history-count"
+  },
+  "land-resources-titles.fixture.json": {
+    "entryId": "vapi.land.resources.titles"
+  },
+  "land-resources-titles-empty.fixture.json": {
+    "entryId": "vapi.land.resources.titles"
+  },
+  "land-resources-titles-assigned.fixture.json": {
+    "entryId": "vapi.land.resources.titles-assigned"
+  },
+  "land-liquidity-pools.fixture.json": {
+    "entryId": "vapi.land.liquidity.pools"
+  },
+  "land-liquidity-pool-by-id.fixture.json": {
+    "entryId": "vapi.land.liquidity.pools-by-id"
+  },
+  "land-liquidity-pool-by-id-miss.fixture.json": {
+    "entryId": "vapi.land.liquidity.pools-by-id"
+  },
+  "land-liquidity-pool-by-symbol.fixture.json": {
+    "entryId": "vapi.land.liquidity.pools-by-symbol"
+  },
+  "land-liquidity-pool-by-symbol-miss.fixture.json": {
+    "entryId": "vapi.land.liquidity.pools-by-symbol"
+  },
+  "land-resources-liquidity-swaps.fixture.json": {
+    "entryId": "vapi.land.resources.liquidity.swaps"
+  },
+  "land-resources-liquidity-swaps-empty.fixture.json": {
+    "entryId": "vapi.land.resources.liquidity.swaps"
+  },
+  "land-liquidity-allrewards.fixture.json": {
+    "entryId": "vapi.land.liquidity.allrewards"
+  },
+  "land-liquidity-quote.fixture.json": {
+    "entryId": "vapi.land.liquidity.quote"
+  },
+  "land-liquidity-resources.fixture.json": {
+    "entryId": "vapi.land.liquidity.resources"
+  },
+  "land-liquidity-resources-empty.fixture.json": {
+    "entryId": "vapi.land.liquidity.resources"
+  },
+  "land-liquidity-region.fixture.json": {
+    "entryId": "vapi.land.liquidity.region"
+  },
+  "land-liquidity-region-empty.fixture.json": {
+    "entryId": "vapi.land.liquidity.region"
+  },
+  "api-cards-collection.fixture.json": {
+    "entryId": "api.cards.collection"
+  },
+  "api-cards-find.fixture.json": {
+    "entryId": "api.cards.find"
+  },
+  "api-cards-get-details.fixture.json": {
+    "entryId": "api.cards.get-details"
+  },
+  "api-cards-history.fixture.json": {
+    "entryId": "api.cards.history"
+  },
+  "api-cards-lore.fixture.json": {
+    "entryId": "api.cards.lore"
+  },
+  "api-cards-pack-data-wax.fixture.json": {
+    "entryId": "api.cards.pack-data-wax"
+  },
+  "api-cards-skins.fixture.json": {
+    "entryId": "api.cards.skins"
+  },
+  "api-cards-stats.fixture.json": {
+    "entryId": "api.cards.stats"
+  },
+  "api-cards-trx-lookup.fixture.json": {
+    "entryId": "api.cards.trx-lookup"
+  },
+  "api-players-item-details.fixture.json": {
+    "entryId": "api.players.item-details"
+  },
+  "api-players-details.fixture.json": {
+    "entryId": "api.players.details"
+  },
+  "api-players-current-rewards.fixture.json": {
+    "entryId": "api.players.current-rewards"
+  },
+  "api-players-last-season-rewards.fixture.json": {
+    "entryId": "api.players.last-season-rewards"
+  },
+  "api-players-last-focus-rewards.fixture.json": {
+    "entryId": "api.players.last-focus-rewards"
+  },
+  "api-players-unclaimed-balances.fixture.json": {
+    "entryId": "api.players.unclaimed-balances"
+  },
+  "api-players-unclaimed-balance-history.fixture.json": {
+    "entryId": "api.players.unclaimed-balance-history"
+  },
+  "api-players-balances.fixture.json": {
+    "entryId": "api.players.balances"
+  },
+  "api-players-archived_balances.fixture.json": {
+    "entryId": "api.players.archived-balances"
+  },
+  "api-players-authorities.fixture.json": {
+    "entryId": "api.players.authorities"
+  },
+  "api-players-quests.fixture.json": {
+    "entryId": "api.players.quests"
+  },
+  "api-players-skins.fixture.json": {
+    "entryId": "api.players.skins"
+  },
+  "api-players-lp_claim_history.fixture.json": {
+    "entryId": "api.players.lp-claim-history"
+  },
+  "api-players-reward_delegation_history.fixture.json": {
+    "entryId": "api.players.reward-delegation-history"
+  },
+  "api-players-reward_delegations.fixture.json": {
+    "entryId": "api.players.reward-delegations"
+  },
+  "api-players-recent_teams.fixture.json": {
+    "entryId": "api.players.recent-teams"
+  },
+  "api-players-pack_purchases.fixture.json": {
+    "entryId": "api.players.pack-purchases"
+  },
+  "api-players-card_airdrop.fixture.json": {
+    "entryId": "api.players.card-airdrop"
+  },
+  "api-players-voucher.fixture.json": {
+    "entryId": "api.players.voucher"
+  },
+  "api-players-dec.fixture.json": {
+    "entryId": "api.players.dec"
+  },
+  "api-players-energy_purchase_information.fixture.json": {
+    "entryId": "api.players.energy-purchase-information"
+  },
+  "ranking-leaderboard.fixture.json": {
+    "entryId": "api.players.leaderboard"
+  },
+  "ranking-leaderboard-with-player.fixture.json": {
+    "entryId": "api.players.leaderboard-with-player"
+  },
+  "ranking-richlist-with-player.fixture.json": {
+    "entryId": "api.players.richlist"
+  },
+  "ranking-richlist-ranking-retry.fixture.json": {
+    "entryId": "api.players.richlist-ranking"
+  },
+  "ranking-burn-event.fixture.json": {
+    "entryId": "api.players.burn-event-leaderboard"
+  },
+  "ranking-burn-event-full.fixture.json": {
+    "entryId": "api.players.burn-event-full-leaderboard"
+  },
+  "ranking-presale.fixture.json": {
+    "entryId": "api.players.rebellion-presale-leaders"
+  },
+  "ranking-season-valid.fixture.json": {
+    "entryId": "api.season"
+  },
+  "market-sale.fixture.json": {
+    "entryId": "api.market.for-sale-grouped"
+  },
+  "market-rent.fixture.json": {
+    "entryId": "api.market.for-rent-grouped"
+  },
+  "market-active-card.fixture.json": {
+    "entryId": "api.market.active-rentals"
+  },
+  "market-by-card.fixture.json": {
+    "entryId": "api.market.market-query-by-card"
+  },
+  "market-grouped.fixture.json": {
+    "entryId": "api.market.market-query-grouped"
+  },
+  "market-history.fixture.json": {
+    "entryId": "api.market.history"
+  },
+  "market-rental-history.fixture.json": {
+    "entryId": "api.market.rental-history"
+  },
+  "market-volume.fixture.json": {
+    "entryId": "api.market.volume"
+  },
+  "market-status-id.fixture.json": {
+    "entryId": "api.market.status"
+  },
+  "market-active-status-id.fixture.json": {
+    "entryId": "api.market.active-status"
+  },
+  "market-completed-status-id.fixture.json": {
+    "entryId": "api.market.completed-status"
+  },
+  "market-packages.fixture.json": {
+    "entryId": "api.market.for-sale-packages"
+  },
+  "market-purchase-settings.fixture.json": {
+    "entryId": "api.purchases.settings"
+  },
+  "market-purchase-stats.fixture.json": {
+    "entryId": "api.purchases.stats"
+  },
+  "market-uniswap-zero.fixture.json": {
+    "entryId": "api.purchases.check-uniswap-reward"
+  },
+  "battle-queue.fixture.json": {
+    "entryId": "api.battle.battle-queue"
+  },
+  "battle-status.fixture.json": {
+    "entryId": "api.battle.status"
+  },
+  "battle-result.fixture.json": {
+    "entryId": "api.battle.result"
+  },
+  "tournament-upcoming.fixture.json": {
+    "entryId": "api.tournaments.upcoming"
+  },
+  "tournament-upcoming_official.fixture.json": {
+    "entryId": "api.tournaments.upcoming-official"
+  },
+  "tournament-in_progress.fixture.json": {
+    "entryId": "api.tournaments.in-progress"
+  },
+  "tournament-completed.fixture.json": {
+    "entryId": "api.tournaments.completed"
+  },
+  "tournament-cancelled.fixture.json": {
+    "entryId": "api.tournaments.cancelled"
+  },
+  "tournament-mine-creator.fixture.json": {
+    "entryId": "api.tournaments.mine"
+  },
+  "tournament-find.fixture.json": {
+    "entryId": "api.tournaments.find"
+  },
+  "tournament-brawl.fixture.json": {
+    "entryId": "api.tournaments.find-brawl"
+  },
+  "tournament-battles-group-one.fixture.json": {
+    "entryId": "api.tournaments.battles"
+  },
+  "tournament-prizes.fixture.json": {
+    "entryId": "api.tournaments.prizes"
+  },
+  "guild-list-name.fixture.json": {
+    "entryId": "api.guilds.list"
+  },
+  "guild-find.fixture.json": {
+    "entryId": "api.guilds.find"
+  },
+  "guild-members.fixture.json": {
+    "entryId": "api.guilds.members"
+  },
+  "guild-contributions-hall.fixture.json": {
+    "entryId": "api.guilds.contributions"
+  },
+  "guild-records.fixture.json": {
+    "entryId": "api.guilds.brawl-records"
+  },
+  "guild-rewards-cycle.fixture.json": {
+    "entryId": "api.guilds.brawl-sps-rewards"
+  },
+  "metadata-settings.fixture.json": {
+    "entryId": "api.settings"
+  },
+  "metadata-last-block.fixture.json": {
+    "entryId": "api.last-block"
+  },
+  "metadata-maintenance.fixture.json": {
+    "entryId": "api.maintenance-schedule"
+  },
+  "metadata-lookup.fixture.json": {
+    "entryId": "api.transactions.lookup"
+  },
+  "metadata-metrics-filtered.fixture.json": {
+    "entryId": "api.transactions.metrics"
+  },
+  "metadata-health.fixture.json": {
+    "entryId": "vapi.health"
+  },
+  "governance-seasons.fixture.json": {
+    "entryId": "api.conflicts.seasons"
+  },
+  "governance-season-one.fixture.json": {
+    "entryId": "api.conflicts.seasons"
+  },
+  "governance-conflict-players.fixture.json": {
+    "entryId": "api.conflicts.players"
+  },
+  "governance-conflict-airdrop.fixture.json": {
+    "entryId": "api.conflicts.airdrop-distribution"
+  },
+  "governance-airdrop-conflict.fixture.json": {
+    "entryId": "api.conflicts.airdrop-distribution"
+  },
+  "governance-conflict-leaderboard.fixture.json": {
+    "entryId": "api.conflicts.leaderboard"
+  },
+  "governance-conflict-leaderboard-player.fixture.json": {
+    "entryId": "api.conflicts.leaderboard-with-player"
+  },
+  "governance-conflict-status.fixture.json": {
+    "entryId": "api.conflicts.status"
+  },
+  "governance-status-config-one.fixture.json": {
+    "entryId": "api.conflicts.status"
+  },
+  "governance-status-wagons-one.fixture.json": {
+    "entryId": "api.conflicts.status"
+  },
+  "governance-status-no-wagons.fixture.json": {
+    "entryId": "api.conflicts.status"
+  },
+  "governance-conflict-wagon.fixture.json": {
+    "entryId": "api.conflicts.wagon"
+  },
+  "governance-eligible.fixture.json": {
+    "entryId": "api.conflicts.wagon-eligible-cards"
+  },
+  "governance-proposals.fixture.json": {
+    "entryId": "api.proposals.list"
+  },
+  "governance-proposal-count.fixture.json": {
+    "entryId": "api.proposals.pending-proposal-count"
+  },
+  "governance-proposal-votes.fixture.json": {
+    "entryId": "api.proposals.votes"
+  },
+  "vapi-market-landing-packs.fixture.json": {
+    "entryId": "vapi.market.landing"
+  },
+  "vapi-market-landing-public.fixture.json": {
+    "entryId": "vapi.market.landing"
+  },
+  "vapi-market-landing-two.fixture.json": {
+    "entryId": "vapi.market.landing"
+  },
+  "vapi-market-meta-avatars.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-collector_stickers.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-comma.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-consumables.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-deeds.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-json.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-land.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-land_resources.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-music.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-one.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-packs.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-skins.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-titles.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-totem_fragments.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-totem_items.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-meta-totems.fixture.json": {
+    "entryId": "vapi.market.meta.asset"
+  },
+  "vapi-market-price.fixture.json": {
+    "entryId": "vapi.market.estimated-price"
+  },
+  "rental-bids-lowest.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids.lowest-price"
+  },
+  "rental-offers-next.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers"
+  },
+  "rental-offers-max-quantity.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers"
+  },
+  "rental-offers-quantity-filter.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers"
+  },
+  "rental-bids-range.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids"
+  },
+  "rental-offers-lowest.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers.lowest-price"
+  },
+  "rental-offers-max-price-one.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers"
+  },
+  "rental-bids-next.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids"
+  },
+  "rental-offers-four.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers"
+  },
+  "rental-bids-max-quantity.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids"
+  },
+  "rental-bids.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids"
+  },
+  "rental-bids-price-filter.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids"
+  },
+  "rental-offers-range.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers"
+  },
+  "rental-offers-price-filter.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers"
+  },
+  "rental-bids-max-price-one.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids"
+  },
+  "rental-offers.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers"
+  },
+  "rental-bids-quantity-filter.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids"
+  },
+  "rental-bids-four.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids"
+  },
+  "collector-config.fixture.json": {
+    "entryId": "vapi.collector.config"
+  },
+  "plot-label-101.fixture.json": {
+    "entryId": "vapi.land.deeds.by-plot"
+  },
+  "plot-label-15001.fixture.json": {
+    "entryId": "vapi.land.deeds.by-plot"
+  },
+  "plot-uid-unlisted-101.fixture.json": {
+    "entryId": "vapi.land.deeds.details-by-uid"
+  },
+  "plot-uid-unlisted-15001.fixture.json": {
+    "entryId": "vapi.land.deeds.details-by-uid"
+  },
+  "card-definition-null-subtype.fixture.json": {
+    "entryId": "api.cards.get-details"
+  },
+  "api-players-inventory.fixture.json": {
+    "entryId": "api.players.inventory"
+  },
+  "vapi-market-player-activity.fixture.json": {
+    "entryId": "vapi.market.player.activity"
+  },
+  "vapi-market-player-listings.fixture.json": {
+    "entryId": "vapi.market.player.listings"
+  },
+  "vapi-market-player-all-listings.fixture.json": {
+    "entryId": "vapi.market.player.all-listings"
+  },
+  "vapi-market-player-asset-detail-stats.fixture.json": {
+    "entryId": "vapi.market.player.asset-detail-stats"
+  },
+  "rentals-player.fixture.json": {
+    "entryId": "vapi.delegation-rental.rentals.player"
+  },
+  "rentals-bid.fixture.json": {
+    "entryId": "vapi.delegation-rental.rentals.bid"
+  },
+  "collector-player.fixture.json": {
+    "entryId": "vapi.collector.player"
+  },
+  "collector-binder.fixture.json": {
+    "entryId": "vapi.collector.binder"
+  },
+  "collector-stickers.fixture.json": {
+    "entryId": "vapi.collector.stickers.all"
+  },
+  "rental-offers-by-player.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.offers.player"
+  },
+  "rental-bids-by-player.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.bids.player"
+  },
+  "rentals-v3-by-player.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.rentals.player"
+  },
+  "rentals-v3-by-role.fixture.json": {
+    "entryId": "vapi.delegation-rental.v3.rentals.player.role"
+  },
+  "delegations-outgoing.fixture.json": {
+    "entryId": "vapi.delegation.outgoing"
+  },
+  "delegations-incoming.fixture.json": {
+    "entryId": "vapi.delegation.incoming"
+  },
+  "delegation-to-target.fixture.json": {
+    "entryId": "vapi.delegation.delegation"
+  },
+  "collector-stickers-tradeable.fixture.json": {
+    "entryId": "vapi.collector.stickers.tradeable"
+  },
+  "power-core-available.fixture.json": {
+    "entryId": "vapi.land.stake.items-available"
+  },
+  "power-core-grouped.fixture.json": {
+    "entryId": "vapi.land.stake.items-grouped"
+  }
+}

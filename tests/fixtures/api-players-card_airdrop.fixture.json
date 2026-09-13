@@ -1,0 +1,189 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T07:48:32.893248+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/card_airdrop",
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+  },
+  "valueClasses": {
+    "body[0].player": {
+      "valueClass": "name"
+    },
+    "body[0].name": {
+      "valueClass": "opaque"
+    },
+    "body[0].chances": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].id": {
+      "valueClass": "id"
+    },
+    "body[0].cards[0].chance": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].claim_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].claim_trx": {
+      "valueClass": "id"
+    },
+    "body[0].result.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[1].player": {
+      "valueClass": "name"
+    },
+    "body[1].name": {
+      "valueClass": "opaque"
+    },
+    "body[1].chances": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].id": {
+      "valueClass": "id"
+    },
+    "body[1].cards[0].chance": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].claim_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].claim_trx": {
+      "valueClass": "id"
+    },
+    "body[1].result.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[1].result.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[1].result.by_card.298.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[1].result.by_card.298.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[2].player": {
+      "valueClass": "name"
+    },
+    "body[2].name": {
+      "valueClass": "opaque"
+    },
+    "body[2].chances": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].id": {
+      "valueClass": "id"
+    },
+    "body[2].cards[0].chance": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].gold_guarantee": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].claim_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].claim_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].claim_trx": {
+      "valueClass": "id"
+    },
+    "body[2].result.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[2].result.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[2].result.by_card.352.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[2].result.by_card.352.num_gold": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": [
+    {
+      "player": "vugtis",
+      "name": "4th Dice Airdrop",
+      "chances": 110,
+      "cards": [
+        {
+          "id": 297,
+          "chance": 0.00444,
+          "edition": 5
+        }
+      ],
+      "claim_date": "2021-07-18T21:23:18.000Z",
+      "claim_trx": "91472700652010cf645813818f22b4e335f946f6",
+      "result": {
+        "num_regular": 0,
+        "num_gold": 0,
+        "by_card": {}
+      }
+    },
+    {
+      "player": "vugtis",
+      "name": "5th Dice Airdrop",
+      "chances": 264,
+      "cards": [
+        {
+          "id": 298,
+          "chance": 0.004,
+          "edition": 5
+        }
+      ],
+      "claim_date": "2021-08-05T15:17:09.000Z",
+      "claim_trx": "7bea3f274396cde6c1f158341659b51bfdb2cda6",
+      "result": {
+        "num_regular": 1,
+        "num_gold": 0,
+        "by_card": {
+          "298": {
+            "num_regular": 1,
+            "num_gold": 0
+          }
+        }
+      }
+    },
+    {
+      "player": "vugtis",
+      "name": "1st Chaos Legion Airdrop",
+      "chances": 4002,
+      "cards": [
+        {
+          "id": 352,
+          "chance": 0.02,
+          "edition": 7,
+          "gold_guarantee": 1000,
+          "claim_date": "2021-12-08T05:00:00Z"
+        }
+      ],
+      "claim_date": "2021-12-08T05:55:42.000Z",
+      "claim_trx": "72bbd346877bbc73cefddbdfb3700227e66fb6c1",
+      "result": {
+        "num_regular": 76,
+        "num_gold": 4,
+        "by_card": {
+          "352": {
+            "num_regular": 76,
+            "num_gold": 4
+          }
+        }
+      }
+    }
+  ]
+}

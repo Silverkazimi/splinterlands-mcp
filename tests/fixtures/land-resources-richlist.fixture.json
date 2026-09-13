@@ -1,0 +1,33 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-07T00:00:00Z",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].player": {
+      "valueClass": "name"
+    },
+    "data[0].amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].region_uid": {
+      "valueClass": "id"
+    },
+    "data[0].resource_symbol": {
+      "valueClass": "enum"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "player": "sample-account-b",
+      "amount": 44636444.689,
+      "region_uid": "PR-PNW-1",
+      "resource_symbol": "GRAIN"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T20:56:00Z"
+  },
+  "valueClasses": {
+    "body.season_reward_info.season": {
+      "valueClass": "numeric"
+    },
+    "body.season_reward_info.wild_glint": {
+      "valueClass": "numeric"
+    },
+    "body.season_reward_info.modern_glint": {
+      "valueClass": "numeric"
+    },
+    "body.season_reward_info.survival_glint": {
+      "valueClass": "numeric"
+    },
+    "body.season_reward_info.foundation_glint": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "season_reward_info": {
+      "season": 190,
+      "wild_glint": 2525993,
+      "modern_glint": null,
+      "survival_glint": 0,
+      "foundation_glint": null
+    }
+  }
+}

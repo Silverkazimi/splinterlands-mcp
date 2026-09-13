@@ -1,0 +1,38 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-13T11:47:19.037707+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/land/stake/items/{stakeTypeUid}/grouped",
+    "captureScope": "Observed response shape; item identity replaced with a synthetic value where present. Selector identity is not included."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data.items[0].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body.data.items[0].name": {
+      "valueClass": "freetext"
+    },
+    "body.data.items[0].item_count": {
+      "valueClass": "numeric"
+    },
+    "body.data.items[0].boost": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "items": [
+        {
+          "item_detail_id": 322,
+          "name": "Power Core",
+          "item_count": 94,
+          "boost": "0.000"
+        }
+      ]
+    }
+  }
+}

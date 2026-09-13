@@ -1,0 +1,269 @@
+{
+  "schema": "endpoint-observations/v1",
+  "observations": [
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "player",
+      "dimensions": {
+        "observed-negative": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "Measured search requests with a player selector returned deed rows.",
+          "source": "catalogue notes"
+        },
+        "proven-sufficient": {
+          "value": true,
+          "observedAt": "2026-09-06",
+          "reason": "The measured player-scoped search returned the rows it was asked to search.",
+          "source": "catalogue notes"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "tract_id",
+      "dimensions": {
+        "observed-negative": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "Measured search requests with a tract selector returned deed rows.",
+          "source": "catalogue notes"
+        },
+        "proven-sufficient": {
+          "value": true,
+          "observedAt": "2026-09-06",
+          "reason": "The measured tract-scoped search returned the rows it was asked to search.",
+          "source": "catalogue notes"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "region_number",
+      "dimensions": {
+        "observed-negative": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "Measured search requests with a region selector returned deed rows.",
+          "source": "catalogue notes"
+        },
+        "proven-sufficient": {
+          "value": true,
+          "observedAt": "2026-09-06",
+          "reason": "The measured region-scoped search returned the rows it was asked to search.",
+          "source": "catalogue notes"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "limit",
+      "dimensions": {
+        "observed-negative": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "limit=10000 returned exactly 10000 rows; the limit was honoured.",
+          "source": "catalogue notes"
+        },
+        "proven-sufficient": {
+          "value": true,
+          "observedAt": "2026-09-06",
+          "reason": "The measured limit controls the number of returned rows.",
+          "source": "catalogue notes"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "plot_id",
+      "location": "query",
+      "dimensions": {
+        "observed-negative": {
+          "value": true,
+          "observedAt": "2026-09-06",
+          "reason": "The query form of plot_id was tested and ignored by the deeds search.",
+          "source": "endpoint observation record"
+        },
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "The query form did not narrow or identify the requested deed rows.",
+          "source": "endpoint observation record"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "offset",
+      "dimensions": {
+        "observed-negative": {
+          "value": true,
+          "observedAt": "2026-09-06",
+          "reason": "A non-zero offset returned the first rows again instead of advancing the result set.",
+          "source": "catalogue notes"
+        },
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "The measured offset cannot provide a working continuation.",
+          "source": "catalogue notes"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "orderBy",
+      "dimensions": {
+        "observed-negative": {
+          "value": true,
+          "observedAt": "2026-09-06",
+          "reason": "The measured descending orderBy request returned an empty result.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        },
+        "observed-shaped": {
+          "value": true,
+          "observedAt": "2026-09-06",
+          "reason": "The empty VAPI result shape is captured as the ordered variant.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        },
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "The measured orderBy request did not return the requested deed rows.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "status",
+      "dimensions": {
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "The measured status selector did not change the returned result set.",
+          "source": "catalogue notes"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "resource_symbol",
+      "dimensions": {
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "An ignored selector cannot prove a filtered answer.",
+          "source": "catalogue notes"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "territory",
+      "dimensions": {
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "An ignored selector cannot prove a filtered answer.",
+          "source": "catalogue notes"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.deeds.search",
+      "subject": "unparameterized-call",
+      "location": "request",
+      "dimensions": {
+        "observed-negative": {
+          "value": true,
+          "observedAt": "2026-09-06",
+          "reason": "Two unparameterized attempts returned no response bytes or HTTP status; see tests/evidence/land-result-contract-evidence.json.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        },
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-06",
+          "reason": "The unparameterized call did not produce an answer.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-overall",
+      "subject": "unparameterized-call",
+      "location": "request",
+      "dimensions": {
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-07",
+          "reason": "The unparameterized call returned HTTP 200 with a plausible zero that establishes nothing about any account.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-overall",
+      "subject": "player",
+      "dimensions": {
+        "observed-negative": {
+          "value": false,
+          "observedAt": "2026-09-07",
+          "reason": "Supplying player changed the overall answer from the unparameterized zero to the account-scoped figure.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-region",
+      "subject": "unparameterized-call",
+      "location": "request",
+      "dimensions": {
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-07",
+          "reason": "The unparameterized call returned HTTP 200 with an empty array that establishes nothing about any account or region.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-region",
+      "subject": "region_uid",
+      "dimensions": {
+        "observed-negative": {
+          "value": false,
+          "observedAt": "2026-09-07",
+          "reason": "Supplying region_uid changed the answer from the player-only empty array to a resolved region object.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.dec-staked",
+      "subject": "unparameterized-call",
+      "location": "request",
+      "dimensions": {
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-07",
+          "reason": "The unparameterized call returned HTTP 200 with an empty array that establishes nothing about any account.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        }
+      }
+    },
+    {
+      "endpointId": "vapi.land.stake.evp-pending-claim",
+      "subject": "unparameterized-call",
+      "location": "request",
+      "dimensions": {
+        "proven-sufficient": {
+          "value": false,
+          "observedAt": "2026-09-07",
+          "reason": "The unparameterized call returned HTTP 200 with a plausible zero that establishes nothing about any account.",
+          "source": "tests/evidence/land-result-contract-evidence.json"
+        }
+      }
+    }
+  ]
+}

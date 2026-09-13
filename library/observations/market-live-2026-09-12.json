@@ -1,0 +1,345 @@
+{
+  "transport": "built stdio MCP server",
+  "observedAt": "2026-09-12T08:44:06.447Z",
+  "toolCount": 92,
+  "results": [
+    {
+      "name": "market_for_sale_grouped",
+      "isError": false,
+      "milliseconds": 1317,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 2321
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/market/for_sale_grouped",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:07.665Z",
+          "ageMs": 34
+        }
+      }
+    },
+    {
+      "name": "market_for_rent_grouped",
+      "isError": false,
+      "milliseconds": 310,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 1713
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/market/for_rent_grouped",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:08.062Z",
+          "ageMs": 12
+        }
+      }
+    },
+    {
+      "name": "market_active_rentals",
+      "isError": false,
+      "milliseconds": 352,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/market/active_rentals",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:08.456Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "market_query_by_card",
+      "isError": false,
+      "milliseconds": 153,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/market/market_query_by_card",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:08.610Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "market_query_grouped",
+      "isError": false,
+      "milliseconds": 157,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/market/market_query_grouped",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:08.765Z",
+          "ageMs": 3
+        }
+      }
+    },
+    {
+      "name": "market_history",
+      "isError": false,
+      "milliseconds": 214,
+      "resultLimit": {
+        "truncated": true,
+        "returnedRows": 100,
+        "upstreamRows": 126
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/market/history",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:08.976Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "market_rental_history",
+      "isError": false,
+      "milliseconds": 326,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/market/rental_history",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:09.308Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "market_volume",
+      "isError": false,
+      "milliseconds": 248,
+      "keys": [
+        "transactions",
+        "usd_volume",
+        "active_rentals",
+        "daily_rental_amount"
+      ],
+      "provenance": {
+        "endpoint": "/market/volume",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:09.556Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "market_status",
+      "isError": false,
+      "milliseconds": 402,
+      "keys": [
+        "id",
+        "sell_trx_id",
+        "seller",
+        "created_date",
+        "type",
+        "num_cards",
+        "currency",
+        "starting_price",
+        "buy_price",
+        "fee_percent",
+        "expiration_date",
+        "status",
+        "purchaser",
+        "completed_date",
+        "payment",
+        "transaction_id",
+        "lock_block",
+        "locked_by",
+        "desc",
+        "created_block_num",
+        "updated_price",
+        "rental_type",
+        "cards"
+      ],
+      "provenance": {
+        "endpoint": "/market/status",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:09.957Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "market_active_status",
+      "isError": false,
+      "milliseconds": 1950,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/market/active_status",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:11.909Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "market_completed_status",
+      "isError": false,
+      "milliseconds": 149,
+      "keys": [
+        "id",
+        "sell_trx_id",
+        "seller",
+        "created_date",
+        "type",
+        "num_cards",
+        "currency",
+        "starting_price",
+        "buy_price",
+        "fee_percent",
+        "expiration_date",
+        "status",
+        "purchaser",
+        "completed_date",
+        "payment",
+        "transaction_id",
+        "lock_block",
+        "locked_by",
+        "desc",
+        "created_block_num",
+        "updated_price",
+        "rental_type",
+        "card_id",
+        "card_detail_id",
+        "xp",
+        "gold",
+        "edition",
+        "alpha_xp",
+        "bcx",
+        "price_bcx",
+        "power",
+        "rental_season_id",
+        "foil",
+        "cards"
+      ],
+      "provenance": {
+        "endpoint": "/market/completed_status",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:12.057Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "market_for_sale_packages",
+      "isError": false,
+      "milliseconds": 174,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 6,
+        "upstreamRows": 6
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/market/for_sale_packages",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:12.221Z",
+          "ageMs": 3
+        }
+      }
+    },
+    {
+      "name": "purchase_settings",
+      "isError": false,
+      "milliseconds": 146,
+      "keys": [
+        "starter_pack_price",
+        "booster_pack_price",
+        "market_fee",
+        "list_fee_per_listing",
+        "list_expire_in_days"
+      ],
+      "provenance": {
+        "endpoint": "/purchases/settings",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:12.378Z",
+          "ageMs": 0
+        }
+      }
+    },
+    {
+      "name": "purchase_stats",
+      "isError": false,
+      "milliseconds": 334,
+      "keys": [
+        "packs",
+        "promo_cards"
+      ],
+      "provenance": {
+        "endpoint": "/purchases/stats",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:12.711Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "purchase_uniswap_reward",
+      "isError": false,
+      "milliseconds": 240,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "keys": [
+        "data"
+      ],
+      "provenance": {
+        "endpoint": "/purchases/check_uniswap_reward",
+        "freshness": {
+          "retrievedAt": "2026-09-12T08:44:12.952Z",
+          "ageMs": 1
+        }
+      }
+    }
+  ]
+}

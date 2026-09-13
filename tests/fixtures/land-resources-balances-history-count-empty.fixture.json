@@ -1,0 +1,14 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T00:00:00Z"
+  },
+  "valueClasses": {
+    "status": { "valueClass": "enum" },
+    "data.count": { "valueClass": "numeric" }
+  },
+  "status": "success",
+  "data": {
+    "count": 0
+  }
+}

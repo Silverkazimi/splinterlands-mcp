@@ -1,0 +1,120 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:30:01.490608+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/conflicts/airdrop_distribution",
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+  },
+  "valueClasses": {
+    "body.conflict.id": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.starts": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.ends": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.season_group": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.card_amount": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.alchemy_potions_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.midnight_potions_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.cards_to_guarantee_one_gold": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body.conflict.verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body.conflict.verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body.conflict.verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body.conflict.verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body.distribution[0].player": {
+      "valueClass": "name"
+    },
+    "body.distribution[0].num_prizes": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "conflict": {
+      "id": 21,
+      "starts": "2026-07-25T16:00:00.000Z",
+      "ends": "2026-08-24T16:00:00.000Z",
+      "season_group": "escalation",
+      "reset_block_num": 109308007,
+      "card_detail_id": 1039,
+      "card_amount": null,
+      "card_guaranteed_chances": 375,
+      "cards_awarded": 2700,
+      "card_chance_per_entry": "0.00266667",
+      "card_gold_chance": "0.000",
+      "card_boosted_gold_chance": "0.000",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": "0",
+      "card_boosted_black_chance": "0",
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 109308007,
+        "block_id": "0683e8670083e39a05542bb94ff05a156e4b1b39",
+        "prev_block_id": "0683e8665613c73ad3752533473ae5ed21eaf7d4",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    "distribution": [
+      {
+        "player": "vugtis",
+        "num_prizes": 93
+      }
+    ]
+  }
+}

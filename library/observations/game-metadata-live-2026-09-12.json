@@ -1,0 +1,101 @@
+{
+  "transport": "built stdio MCP server",
+  "observedAt": "2026-09-12T09:26:34.768Z",
+  "toolCount": 117,
+  "results": [
+    {
+      "name": "game_settings",
+      "isError": false,
+      "milliseconds": 1535,
+      "provenance": {
+        "endpoint": "/settings",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:26:36.286Z",
+          "ageMs": 16
+        }
+      }
+    },
+    {
+      "name": "game_settings",
+      "isError": false,
+      "milliseconds": 9,
+      "provenance": {
+        "endpoint": "/settings",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:26:36.286Z",
+          "ageMs": 55
+        }
+      }
+    },
+    {
+      "name": "game_last_block",
+      "isError": false,
+      "milliseconds": 155,
+      "provenance": {
+        "endpoint": "/last_block",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:26:36.500Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "game_maintenance",
+      "isError": false,
+      "milliseconds": 169,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 1,
+        "upstreamRows": 1
+      },
+      "provenance": {
+        "endpoint": "/maintenance_schedule",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:26:36.667Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "transaction_lookup",
+      "isError": false,
+      "milliseconds": 167,
+      "provenance": {
+        "endpoint": "/transactions/lookup",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:26:36.836Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "transaction_metrics",
+      "isError": false,
+      "milliseconds": 155,
+      "resultLimit": {
+        "truncated": false,
+        "returnedRows": 2,
+        "upstreamRows": 2
+      },
+      "provenance": {
+        "endpoint": "/transactions/metrics",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:26:36.991Z",
+          "ageMs": 1
+        }
+      }
+    },
+    {
+      "name": "game_vapi_health",
+      "isError": false,
+      "milliseconds": 635,
+      "provenance": {
+        "endpoint": "/",
+        "freshness": {
+          "retrievedAt": "2026-09-12T09:26:37.627Z",
+          "ageMs": 1
+        }
+      }
+    }
+  ]
+}

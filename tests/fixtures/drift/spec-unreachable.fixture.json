@@ -1,0 +1,8 @@
+{
+  "provenance": { "source": "synthetic", "capturedAt": "2026-09-07T00:00:00Z" },
+  "valueClasses": {
+    "reasons[0]": { "valueClass": "enum" },
+    "reasons[1]": { "valueClass": "enum" }
+  },
+  "reasons": ["network", "unparseable"]
+}

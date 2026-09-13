@@ -1,0 +1,1158 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:10:38.606547+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/rebellion_presale_leaders",
+    "captureScope": "First three list rows; other object fields retained without transformation."
+  },
+  "valueClasses": {
+    "body.total_packs_purchased": {
+      "valueClass": "numeric"
+    },
+    "body.total_bonus_packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player": {
+      "valueClass": "name"
+    },
+    "body.players[0].packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].bonus_packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].total_packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].latest_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.name": {
+      "valueClass": "name"
+    },
+    "body.players[0].player_data.join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[0].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_rating": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.survival_battles": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.survival_wins": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.survival_current_streak": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.survival_longest_streak": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.survival_max_rating": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.survival_max_rank": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.survival_bracket": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_rating": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_battles": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_wins": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_current_streak": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_longest_streak": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_max_rating": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_max_rank": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.champion_points": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.last_reward_block": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.last_reward_time": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.last_foundation_battle": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild_motto": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild_level": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.guild_quest_lodge_level": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[0].player_data.survival_league": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_league": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.modern_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.survival_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.foundation_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.alt_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.is_banned": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.player_uuid": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.paypal_ban": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.season_pass": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.burn_sps_rewards": {
+      "valueClass": "opaque"
+    },
+    "body.players[0].player_data.scholared_by": {
+      "valueClass": "name"
+    },
+    "body.players[1].player": {
+      "valueClass": "name"
+    },
+    "body.players[1].packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].bonus_packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].total_packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].latest_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.name": {
+      "valueClass": "name"
+    },
+    "body.players[1].player_data.join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[1].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_bracket": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_rating": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_battles": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_wins": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_current_streak": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_longest_streak": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_max_rating": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_max_rank": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.champion_points": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.last_reward_time": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.last_foundation_battle": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild_motto": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.guild_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.guild_quest_lodge_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.survival_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[1].player_data.foundation_league": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.modern_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.survival_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.foundation_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.alt_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.is_banned": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.player_uuid": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.paypal_ban": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.season_pass": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.burn_sps_rewards": {
+      "valueClass": "opaque"
+    },
+    "body.players[1].player_data.scholared_by": {
+      "valueClass": "name"
+    },
+    "body.players[2].player": {
+      "valueClass": "name"
+    },
+    "body.players[2].packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].bonus_packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].total_packs": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].latest_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.name": {
+      "valueClass": "name"
+    },
+    "body.players[2].player_data.join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[2].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_bracket": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.champion_points": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.foundation_capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.last_reward_time": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.last_foundation_battle": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild_motto": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.guild_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.guild_quest_lodge_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.survival_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.foundation_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.modern_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.survival_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.foundation_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.alt_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.is_banned": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.player_uuid": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.paypal_ban": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.season_pass": {
+      "valueClass": "numeric"
+    },
+    "body.players[2].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.burn_sps_rewards": {
+      "valueClass": "opaque"
+    },
+    "body.players[2].player_data.scholared_by": {
+      "valueClass": "name"
+    },
+    "body.curr_player.rank": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player": {
+      "valueClass": "name"
+    },
+    "body.curr_player.packs": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.bonus_packs": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.total_packs": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.name": {
+      "valueClass": "name"
+    },
+    "body.curr_player.player_data.join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.curr_player.player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.battles": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.wins": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.modern_battles": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.modern_wins": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.modern_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.modern_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.modern_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.modern_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.survival_rating": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.survival_battles": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.survival_wins": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.survival_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.survival_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.survival_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.survival_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.survival_bracket": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.foundation_rating": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.foundation_battles": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.foundation_wins": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.foundation_current_streak": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.foundation_longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.foundation_max_rating": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.foundation_max_rank": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.champion_points": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.foundation_capture_rate": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.last_reward_time": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.last_foundation_battle": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.guild": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.guild_motto": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.guild_level": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.guild_quest_lodge_level": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.survival_league": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.foundation_league": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.modern_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.survival_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.foundation_adv_msg_sent": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.alt_name": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.is_banned": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.player_uuid": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.paypal_ban": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.season_pass": {
+      "valueClass": "numeric"
+    },
+    "body.curr_player.player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.burn_sps_rewards": {
+      "valueClass": "opaque"
+    },
+    "body.curr_player.player_data.scholared_by": {
+      "valueClass": "name"
+    }
+  },
+  "body": {
+    "total_packs_purchased": 441819,
+    "total_bonus_packs": 50846,
+    "players": [
+      {
+        "player": "yggspl-pool",
+        "packs": 13926,
+        "bonus_packs": 2088,
+        "total_packs": 16014,
+        "latest_purchase": "2023-11-15T19:36:36.000Z",
+        "player_data": {
+          "name": "yggspl-pool",
+          "join_date": "2023-10-11T15:49:01.955Z",
+          "rating": 0,
+          "battles": 0,
+          "wins": 0,
+          "current_streak": 0,
+          "longest_streak": 0,
+          "max_rating": 0,
+          "max_rank": 0,
+          "modern_rating": 0,
+          "modern_battles": 0,
+          "modern_wins": 0,
+          "modern_current_streak": 0,
+          "modern_longest_streak": 0,
+          "modern_max_rating": 0,
+          "modern_max_rank": 0,
+          "survival_rating": null,
+          "survival_battles": null,
+          "survival_wins": null,
+          "survival_current_streak": null,
+          "survival_longest_streak": null,
+          "survival_max_rating": null,
+          "survival_max_rank": null,
+          "survival_bracket": null,
+          "foundation_rating": null,
+          "foundation_battles": null,
+          "foundation_wins": null,
+          "foundation_current_streak": null,
+          "foundation_longest_streak": null,
+          "foundation_max_rating": null,
+          "foundation_max_rank": null,
+          "champion_points": 0,
+          "capture_rate": "0.000000",
+          "foundation_capture_rate": null,
+          "last_reward_block": null,
+          "last_reward_time": null,
+          "last_foundation_battle": null,
+          "guild": null,
+          "guild_name": null,
+          "guild_motto": null,
+          "guild_data": null,
+          "guild_level": null,
+          "guild_quest_lodge_level": null,
+          "starter_pack_purchase": true,
+          "avatar_id": 0,
+          "display_name": null,
+          "title_pre": null,
+          "title_post": null,
+          "collection_power": 0,
+          "league": 0,
+          "modern_league": 0,
+          "survival_league": null,
+          "foundation_league": null,
+          "adv_msg_sent": false,
+          "modern_adv_msg_sent": false,
+          "survival_adv_msg_sent": null,
+          "foundation_adv_msg_sent": null,
+          "alt_name": null,
+          "is_banned": false,
+          "player_uuid": "a6c904c8-a6f5-4a8f-9ebd-f2c817b065ce",
+          "paypal_ban": null,
+          "season_pass": null,
+          "player_avatar": null,
+          "burn_sps_rewards": false,
+          "scholared_by": null
+        }
+      },
+      {
+        "player": "abrockman",
+        "packs": 11774,
+        "bonus_packs": 1681,
+        "total_packs": 13455,
+        "latest_purchase": "2023-11-17T17:59:51.000Z",
+        "player_data": {
+          "name": "abrockman",
+          "join_date": "2018-11-27T18:27:52.876Z",
+          "rating": 0,
+          "battles": 11933,
+          "wins": 6111,
+          "current_streak": 0,
+          "longest_streak": 24,
+          "max_rating": 4861,
+          "max_rank": 71,
+          "modern_rating": 0,
+          "modern_battles": 0,
+          "modern_wins": 0,
+          "modern_current_streak": 0,
+          "modern_longest_streak": 0,
+          "modern_max_rating": 1200,
+          "modern_max_rank": 0,
+          "survival_rating": 260,
+          "survival_battles": 38,
+          "survival_wins": 27,
+          "survival_current_streak": 0,
+          "survival_longest_streak": 14,
+          "survival_max_rating": 420,
+          "survival_max_rank": 292,
+          "survival_bracket": null,
+          "foundation_rating": null,
+          "foundation_battles": null,
+          "foundation_wins": null,
+          "foundation_current_streak": null,
+          "foundation_longest_streak": null,
+          "foundation_max_rating": null,
+          "foundation_max_rank": null,
+          "champion_points": 4821,
+          "capture_rate": "50.000000",
+          "foundation_capture_rate": null,
+          "last_reward_block": 73813583,
+          "last_reward_time": "2023-04-08T02:08:13.161Z",
+          "last_foundation_battle": null,
+          "guild": "18452e11b595147d05dcfa9a3eec44c31e7fbc74",
+          "guild_name": "EMP Money Emperors",
+          "guild_motto": "Conquering The Arena & Defi",
+          "guild_data": "{\"crest\":{\"banner\":\"blue\",\"decal\":\"globe\"}}",
+          "guild_level": 10,
+          "guild_quest_lodge_level": 9,
+          "starter_pack_purchase": true,
+          "avatar_id": 0,
+          "display_name": null,
+          "title_pre": "Sentinel",
+          "title_post": null,
+          "collection_power": 10437288,
+          "league": 0,
+          "modern_league": 0,
+          "survival_league": 1,
+          "foundation_league": null,
+          "adv_msg_sent": false,
+          "modern_adv_msg_sent": false,
+          "survival_adv_msg_sent": false,
+          "foundation_adv_msg_sent": null,
+          "alt_name": null,
+          "is_banned": false,
+          "player_uuid": "2020482d-1b11-4726-8e42-e9d029b5aee0",
+          "paypal_ban": null,
+          "season_pass": null,
+          "player_avatar": "{\"race\":\"human\",\"background\":6,\"color\":\"Black\",\"level\":1,\"frame\":3,\"gender\":1,\"body\":1,\"face\":3,\"nose\":9,\"ears\":0,\"skin_color\":1,\"hair\":13,\"eyebrows\":11,\"mustache\":0,\"beard\":0,\"hair_color\":6,\"eyes\":10,\"eyes_color\":2,\"mouth\":22,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":4,\"cloth_color\":2,\"tattoo\":0,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"year_joined\",\"champion_points\",\"shard_holder\",\"land_baron\"],\"avatar_resets\":0,\"player_card_resets\":1}",
+          "burn_sps_rewards": false,
+          "scholared_by": null
+        }
+      },
+      {
+        "player": "bravetofu",
+        "packs": 11297,
+        "bonus_packs": 1658,
+        "total_packs": 12955,
+        "latest_purchase": "2023-11-17T17:59:12.000Z",
+        "player_data": {
+          "name": "bravetofu",
+          "join_date": "2021-10-11T10:59:05.427Z",
+          "rating": 5140,
+          "battles": 45692,
+          "wins": 24143,
+          "current_streak": 0,
+          "longest_streak": 43,
+          "max_rating": 7420,
+          "max_rank": 2,
+          "modern_rating": 5220,
+          "modern_battles": 43793,
+          "modern_wins": 23815,
+          "modern_current_streak": 2,
+          "modern_longest_streak": 17,
+          "modern_max_rating": 5980,
+          "modern_max_rank": 6,
+          "survival_rating": 4460,
+          "survival_battles": 17054,
+          "survival_wins": 11328,
+          "survival_current_streak": 0,
+          "survival_longest_streak": 71,
+          "survival_max_rating": 16580,
+          "survival_max_rank": 1,
+          "survival_bracket": 10,
+          "foundation_rating": 540,
+          "foundation_battles": 43,
+          "foundation_wins": 27,
+          "foundation_current_streak": 4,
+          "foundation_longest_streak": 4,
+          "foundation_max_rating": 540,
+          "foundation_max_rank": 725,
+          "champion_points": 243940,
+          "capture_rate": "9.781655",
+          "foundation_capture_rate": "63.000000",
+          "last_reward_block": 109843590,
+          "last_reward_time": "2026-09-12T07:31:09.000Z",
+          "last_foundation_battle": "2026-07-24T21:27:02.980Z",
+          "guild": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "guild_name": " [KoG] Shield of Glory",
+          "guild_motto": "",
+          "guild_data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
+          "guild_level": 10,
+          "guild_quest_lodge_level": 10,
+          "starter_pack_purchase": true,
+          "avatar_id": 0,
+          "display_name": null,
+          "title_pre": "Magister",
+          "title_post": "The Arcane",
+          "collection_power": 50250000,
+          "league": 15,
+          "modern_league": 15,
+          "survival_league": 15,
+          "foundation_league": 1,
+          "adv_msg_sent": false,
+          "modern_adv_msg_sent": false,
+          "survival_adv_msg_sent": false,
+          "foundation_adv_msg_sent": false,
+          "alt_name": "initiate_794074",
+          "is_banned": false,
+          "player_uuid": "65abfd23-264f-4958-ab65-1e5c20b6564e",
+          "paypal_ban": null,
+          "season_pass": 1,
+          "player_avatar": "{\"race\":\"orc\",\"background\":8,\"color\":\"Gold\",\"level\":110,\"frame\":10,\"gender\":1,\"body\":1,\"face\":5,\"nose\":1,\"ears\":0,\"skin_color\":2,\"hair\":2,\"eyebrows\":6,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":6,\"eyes_color\":2,\"mouth\":7,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":4,\"cloth_color\":1,\"tattoo\":20,\"accessory\":7,\"accessory_color\":4,\"hat\":0,\"hat_color\":0,\"earrings\":5,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"shard_holder\",\"modern_league\",\"year_joined\",\"runi_holder_1918\"],\"avatar_resets\":1,\"player_card_resets\":2}",
+          "burn_sps_rewards": false,
+          "scholared_by": null
+        }
+      }
+    ],
+    "curr_player": {
+      "rank": 17,
+      "player": "vugtis",
+      "packs": 4348,
+      "bonus_packs": 652,
+      "total_packs": 5000,
+      "player_data": {
+        "name": "vugtis",
+        "join_date": "2021-07-02T14:09:44.595Z",
+        "rating": 6540,
+        "battles": 90592,
+        "wins": 53775,
+        "current_streak": 0,
+        "longest_streak": 28,
+        "max_rating": 12660,
+        "max_rank": 1,
+        "modern_rating": 3250,
+        "modern_battles": 958,
+        "modern_wins": 733,
+        "modern_current_streak": 2,
+        "modern_longest_streak": 59,
+        "modern_max_rating": 4607,
+        "modern_max_rank": 8,
+        "survival_rating": 5580,
+        "survival_battles": 21365,
+        "survival_wins": 14864,
+        "survival_current_streak": 0,
+        "survival_longest_streak": 60,
+        "survival_max_rating": 35040,
+        "survival_max_rank": 1,
+        "survival_bracket": 10,
+        "foundation_rating": 0,
+        "foundation_battles": 0,
+        "foundation_wins": 0,
+        "foundation_current_streak": 0,
+        "foundation_longest_streak": 0,
+        "foundation_max_rating": 0,
+        "foundation_max_rank": 0,
+        "champion_points": 445508,
+        "capture_rate": "0.467855",
+        "foundation_capture_rate": null,
+        "last_reward_block": 109843186,
+        "last_reward_time": "2026-09-12T07:11:18.858Z",
+        "last_foundation_battle": null,
+        "guild": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+        "guild_name": " [KoG] Shield of Glory",
+        "guild_motto": "",
+        "guild_data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
+        "guild_level": 10,
+        "guild_quest_lodge_level": 10,
+        "starter_pack_purchase": true,
+        "avatar_id": 0,
+        "display_name": null,
+        "title_pre": "Vonarch",
+        "title_post": null,
+        "collection_power": 313668975,
+        "league": 15,
+        "modern_league": 11,
+        "survival_league": 15,
+        "foundation_league": 0,
+        "adv_msg_sent": false,
+        "modern_adv_msg_sent": false,
+        "survival_adv_msg_sent": false,
+        "foundation_adv_msg_sent": false,
+        "alt_name": "disciple_18534",
+        "is_banned": false,
+        "player_uuid": "47d85330-50e6-4028-acf7-b71bf3736dcd",
+        "paypal_ban": null,
+        "season_pass": 1,
+        "player_avatar": "{\"race\":\"human\",\"background\":0,\"color\":\"Red\",\"level\":1,\"frame\":0,\"gender\":1,\"body\":1,\"face\":1,\"nose\":2,\"ears\":0,\"skin_color\":1,\"hair\":7,\"eyebrows\":1,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":1,\"eyes_color\":1,\"mouth\":13,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":1,\"cloth_color\":1,\"tattoo\":0,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"modern_league\",\"year_joined\",\"\",\"\"],\"is_saved\":false,\"avatar_resets\":0,\"player_card_resets\":0}",
+        "burn_sps_rewards": true,
+        "scholared_by": null
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T20:56:00Z"
+  },
+  "valueClasses": {
+    "body.unclaimed_balances[0].player": {
+      "valueClass": "name"
+    },
+    "body.unclaimed_balances[0].token": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[0].type": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[0].balance": {
+      "valueClass": "numeric"
+    },
+    "body.unclaimed_balances[0].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.unclaimed_balances[1].player": {
+      "valueClass": "name"
+    },
+    "body.unclaimed_balances[1].token": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[1].type": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[1].balance": {
+      "valueClass": "numeric"
+    },
+    "body.unclaimed_balances[1].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.unclaimed_balances[2].player": {
+      "valueClass": "name"
+    },
+    "body.unclaimed_balances[2].token": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[2].type": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[2].balance": {
+      "valueClass": "numeric"
+    },
+    "body.unclaimed_balances[2].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.last_claim_date": {
+      "valueClass": "timestamp"
+    }
+  },
+  "body": {
+    "unclaimed_balances": [
+      {
+        "player": "vugtis",
+        "token": "SPS",
+        "type": "brawl",
+        "balance": "0.000",
+        "last_updated_date": "2026-07-31T23:13:40.043Z"
+      },
+      {
+        "player": "vugtis",
+        "token": "SPS",
+        "type": "focus",
+        "balance": "0.000",
+        "last_updated_date": "2024-04-02T20:07:02.954Z"
+      },
+      {
+        "player": "vugtis",
+        "token": "SPS",
+        "type": "land",
+        "balance": "0.000",
+        "last_updated_date": "2023-04-11T08:20:51.000Z"
+      }
+    ],
+    "last_claim_date": "2026-09-08T20:34:28.124Z"
+  }
+}

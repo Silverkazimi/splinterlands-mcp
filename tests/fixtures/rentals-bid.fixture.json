@@ -1,0 +1,61 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-13T09:20:19.998578+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/rentals/bid/{bid}",
+    "captureScope": "Complete single-row response; values unchanged.",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].txId": {
+      "valueClass": "id"
+    },
+    "body.data[0].bidTxId": {
+      "valueClass": "id"
+    },
+    "body.data[0].createdDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].player": {
+      "valueClass": "name"
+    },
+    "body.data[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].paymentAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].bidder": {
+      "valueClass": "name"
+    },
+    "body.data[0].token": {
+      "valueClass": "enum"
+    },
+    "body.data[0].currency": {
+      "valueClass": "enum"
+    },
+    "body.data[0].pricePerToken": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": [
+      {
+        "txId": "1e47eefcebee39e0a819d09df74e01c43f7100f3",
+        "bidTxId": "d6bffc0cebd94c97ad2ea6b31e0fcc5e75ed1dcd-1",
+        "createdDate": "2024-08-26T19:07:27.000Z",
+        "player": "sample-account-b",
+        "qty": "150000.000",
+        "paymentAmount": "2100.000",
+        "bidder": "clover2001",
+        "token": "SPSP",
+        "currency": "DEC",
+        "pricePerToken": "0.002"
+      }
+    ]
+  }
+}

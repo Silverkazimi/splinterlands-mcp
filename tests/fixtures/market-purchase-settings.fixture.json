@@ -1,0 +1,32 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T08:32:22.124898+00:00",
+    "sourceUrl": "https://api2.splinterlands.com/purchases/settings",
+    "captureScope": "First three root rows; nested records retained unchanged."
+  },
+  "valueClasses": {
+    "body.starter_pack_price": {
+      "valueClass": "numeric"
+    },
+    "body.booster_pack_price": {
+      "valueClass": "numeric"
+    },
+    "body.market_fee": {
+      "valueClass": "numeric"
+    },
+    "body.list_fee_per_listing": {
+      "valueClass": "numeric"
+    },
+    "body.list_expire_in_days": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "starter_pack_price": 10,
+    "booster_pack_price": 2,
+    "market_fee": 400,
+    "list_fee_per_listing": 1,
+    "list_expire_in_days": 30
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-12T09:48:26.106265+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/market/landing",
+    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[0].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[0].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[1].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[1].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[1].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[2].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[2].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[2].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.total": {
+      "valueClass": "numeric"
+    },
+    "body.data.usdVolume24hr": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assets": [
+        {
+          "assetName": "PACKS",
+          "assetDescription": "Card Pack",
+          "detailId": "ALPHA",
+          "detailName": "Alpha Pack",
+          "detailImage": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_alpha.png",
+          "detailIcon": null,
+          "detailFilterIcon": "icon_edition_alpha.svg",
+          "detailDescription": "Alpha packs were the first packs ever sold, beginning with Splinterlands' launch in May 2018. Each pack contains 5 random cards, each of which earn a 10% bonus to reward shares in battle.",
+          "detailGroup": "core",
+          "numCirculation": 5692,
+          "numListed": 50,
+          "prices": [
+            {
+              "currency": "USD",
+              "minPrice": 13.99
+            }
+          ]
+        },
+        {
+          "assetName": "PACKS",
+          "assetDescription": "Card Pack",
+          "detailId": "BETA",
+          "detailName": "Beta Pack",
+          "detailImage": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_beta.png",
+          "detailIcon": null,
+          "detailFilterIcon": "icon_edition_beta.svg",
+          "detailDescription": "Each Beta pack contains 5 random Beta versions of the same cards from the Alpha edition, plus the addition of Neutral cards and new Epic and Legendary archons. Cards from the Beta edition earn a 5% bonus to reward shares in battle.",
+          "detailGroup": "core",
+          "numCirculation": 20207,
+          "numListed": 843,
+          "prices": [
+            {
+              "currency": "USD",
+              "minPrice": 5.99
+            }
+          ]
+        },
+        {
+          "assetName": "PACKS",
+          "assetDescription": "Card Pack",
+          "detailId": "ORB",
+          "detailName": "Essence Orb",
+          "detailImage": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_orb.png",
+          "detailIcon": null,
+          "detailFilterIcon": "icon_edition_essenceorbs.svg",
+          "detailDescription": "The Essence Orb mini-set consists of 12 promo cards that earn a 10% bonus to reward shares in battle. Each pack contains 5 random cards.",
+          "detailGroup": "expansions",
+          "numCirculation": 5946,
+          "numListed": 464,
+          "prices": [
+            {
+              "currency": "USD",
+              "minPrice": 3.989
+            }
+          ]
+        }
+      ],
+      "total": 183429,
+      "usdVolume24hr": 1886.201
+    }
+  }
+}

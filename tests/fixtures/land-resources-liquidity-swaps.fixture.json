@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T00:00:00Z",
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+  },
+  "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].id": {
+      "valueClass": "id"
+    },
+    "data[0].pool_id": {
+      "valueClass": "id"
+    },
+    "data[0].from_player": {
+      "valueClass": "name"
+    },
+    "data[0].sent_symbol": {
+      "valueClass": "enum"
+    },
+    "data[0].sent_quantity": {
+      "valueClass": "numeric"
+    },
+    "data[0].received_symbol": {
+      "valueClass": "enum"
+    },
+    "data[0].received_quantity": {
+      "valueClass": "numeric"
+    },
+    "data[0].pool_resource_quantity_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].pool_resource_quantity_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].pool_dec_quantity_start": {
+      "valueClass": "numeric"
+    },
+    "data[0].pool_dec_quantity_end": {
+      "valueClass": "numeric"
+    },
+    "data[0].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].to_player": {
+      "valueClass": "name"
+    },
+    "data[1].id": {
+      "valueClass": "id"
+    },
+    "data[1].pool_id": {
+      "valueClass": "id"
+    },
+    "data[1].from_player": {
+      "valueClass": "name"
+    },
+    "data[1].sent_symbol": {
+      "valueClass": "enum"
+    },
+    "data[1].sent_quantity": {
+      "valueClass": "numeric"
+    },
+    "data[1].received_symbol": {
+      "valueClass": "enum"
+    },
+    "data[1].received_quantity": {
+      "valueClass": "numeric"
+    },
+    "data[1].pool_resource_quantity_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].pool_resource_quantity_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].pool_dec_quantity_start": {
+      "valueClass": "numeric"
+    },
+    "data[1].pool_dec_quantity_end": {
+      "valueClass": "numeric"
+    },
+    "data[1].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].to_player": {
+      "valueClass": "name"
+    }
+  },
+  "status": "success",
+  "data": [
+    {
+      "id": 169258,
+      "pool_id": 69,
+      "from_player": "sample-account-a",
+      "sent_symbol": "DEC",
+      "sent_quantity": 549.15,
+      "received_symbol": "IRON",
+      "received_quantity": 1600.001,
+      "pool_resource_quantity_start": 25245070.452,
+      "pool_resource_quantity_end": 25243470.451,
+      "pool_dec_quantity_start": 8208011.748,
+      "pool_dec_quantity_end": 8208560.898,
+      "trx_id": "0b591b869ee407a64d4a95a25d1fb38714595272",
+      "created_date": "2025-05-25T09:44:30.000Z",
+      "to_player": "sample-account-a"
+    },
+    {
+      "id": 177912,
+      "pool_id": 34,
+      "from_player": "sample-account-a",
+      "sent_symbol": "DEC",
+      "sent_quantity": 15419.495,
+      "received_symbol": "VOUCHER",
+      "received_quantity": 800,
+      "pool_resource_quantity_start": 827368.744,
+      "pool_resource_quantity_end": 826568.744,
+      "pool_dec_quantity_start": 15093084.871,
+      "pool_dec_quantity_end": 15108504.366,
+      "trx_id": "6ffb6c78a61828617c5de7bdc4aa22452baefb41",
+      "created_date": "2025-05-31T07:54:27.000Z",
+      "to_player": "sample-account-a"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "sourceUrl": "https://api.splinterlands.com/cards/get_details",
+  "observedAt": "2026-09-12T11:19:04.427222+00:00",
+  "status": 200,
+  "bytes": 1202299,
+  "rows": 1101,
+  "uniqueIds": 1101,
+  "colors": [
+    "Black",
+    "Blue",
+    "Gold",
+    "Gray",
+    "Green",
+    "Red",
+    "White"
+  ],
+  "secondaryColors": [
+    "Black",
+    "Blue",
+    "Gold",
+    "Green",
+    "Red",
+    "White"
+  ],
+  "missingJoinFields": 0,
+  "captureSha256": "3eff5f5c7aa60923cf56d83859b99b20cf0f11558e54fbb87e481dba2f61d9ca",
+  "nullSubtypeRows": 51,
+  "projectionVerification": {
+    "passed": true,
+    "routeContractPassed": true,
+    "rows": 1101,
+    "secondaryColorRows": 87
+  },
+  "manaForms": {
+    "number": 107,
+    "array": 884,
+    "absent": 110
+  }
+}

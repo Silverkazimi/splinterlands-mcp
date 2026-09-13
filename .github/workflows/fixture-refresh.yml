@@ -1,0 +1,35 @@
+name: fixture-refresh
+
+on:
+  schedule:
+    - cron: "41 4 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: fixture-refresh
+  cancel-in-progress: false
+
+jobs:
+  fixture-refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/fixture-refresh.ts --publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MCP_FIXTURE_INPUTS: ${{ secrets.MCP_FIXTURE_INPUTS }}
+          ACCOUNT_SMALL: ${{ secrets.ACCOUNT_SMALL }}
+          ACCOUNT_MID: ${{ secrets.ACCOUNT_MID }}
+          ACCOUNT_LARGE: ${{ secrets.ACCOUNT_LARGE }}
+          ACCOUNT_NONE: ${{ secrets.ACCOUNT_NONE }}

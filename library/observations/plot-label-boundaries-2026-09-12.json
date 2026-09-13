@@ -1,0 +1,122 @@
+[
+  {
+    "path": "/land/deeds/1",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:23:23.753734+00:00",
+    "responseBytes": 1046,
+    "coordinates": {
+      "plot_id": 1,
+      "region_number": 1,
+      "tract_number": 1,
+      "plot_number": 1
+    },
+    "candidateMatches": true
+  },
+  {
+    "path": "/land/deeds/100",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:23:24.663072+00:00",
+    "responseBytes": 1009,
+    "coordinates": {
+      "plot_id": 100,
+      "region_number": 1,
+      "tract_number": 1,
+      "plot_number": 100
+    },
+    "candidateMatches": true
+  },
+  {
+    "path": "/land/deeds/101",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:23:25.574004+00:00",
+    "responseBytes": 1011,
+    "coordinates": {
+      "plot_id": 101,
+      "region_number": 2,
+      "tract_number": 1,
+      "plot_number": 1
+    },
+    "candidateMatches": true
+  },
+  {
+    "path": "/land/deeds/1000",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:23:26.504808+00:00",
+    "responseBytes": 1012,
+    "coordinates": {
+      "plot_id": 1000,
+      "region_number": 10,
+      "tract_number": 1,
+      "plot_number": 100
+    },
+    "candidateMatches": true
+  },
+  {
+    "path": "/land/deeds/1001",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:23:27.386259+00:00",
+    "responseBytes": 1009,
+    "coordinates": {
+      "plot_id": 1001,
+      "region_number": 11,
+      "tract_number": 1,
+      "plot_number": 1
+    },
+    "candidateMatches": true
+  },
+  {
+    "path": "/land/deeds/15000",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:25:42.223921+00:00",
+    "responseBytes": 20,
+    "coordinates": {},
+    "candidateMatches": null
+  },
+  {
+    "path": "/land/deeds/15001",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:25:43.113821+00:00",
+    "responseBytes": 982,
+    "coordinates": {
+      "plot_id": 15001,
+      "region_number": 1,
+      "tract_number": 2,
+      "plot_number": 1
+    },
+    "candidateMatches": true
+  },
+  {
+    "path": "/land/deeds/15101",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:25:44.088060+00:00",
+    "responseBytes": 1017,
+    "coordinates": {
+      "plot_id": 15101,
+      "region_number": 2,
+      "tract_number": 2,
+      "plot_number": 1
+    },
+    "candidateMatches": true
+  },
+  {
+    "path": "/land/deeds/30001",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:25:44.933754+00:00",
+    "responseBytes": 989,
+    "coordinates": {
+      "plot_id": 30001,
+      "region_number": 1,
+      "tract_number": 3,
+      "plot_number": 1
+    },
+    "candidateMatches": true
+  },
+  {
+    "path": "/land/deeds/150000",
+    "httpStatus": 200,
+    "observedAt": "2026-09-12T10:23:28.271643+00:00",
+    "responseBytes": 20,
+    "coordinates": {},
+    "candidateMatches": null
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "observedAt": "2026-09-12T10:33:29.520Z",
+  "results": [
+    {
+      "input": "2-1-1",
+      "isError": false,
+      "expectedError": false,
+      "plotReference": {
+        "plot_id": 101,
+        "plot_label": "002-01-001",
+        "deed_uid": "I-296-c08b21daf716a6"
+      },
+      "provenance": {
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "e8f775c5-959d-4259-83c2-0324ffc19e9f",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:33:28.993Z",
+          "ageMs": 8
+        },
+        "requestScope": {
+          "plot_id": "2-1-1"
+        }
+      }
+    },
+    {
+      "input": "001-02-001",
+      "isError": false,
+      "expectedError": false,
+      "plotReference": {
+        "plot_id": 15001,
+        "plot_label": "001-02-001",
+        "deed_uid": "I-294-6adc72fd558a11"
+      },
+      "provenance": {
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "f1e7d543-07aa-4b28-9c86-dee66988aa98",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:33:29.174Z",
+          "ageMs": 0
+        },
+        "requestScope": {
+          "plot_id": "001-02-001"
+        }
+      }
+    },
+    {
+      "input": 15001,
+      "isError": false,
+      "expectedError": false,
+      "plotReference": {
+        "plot_id": 15001,
+        "plot_label": "001-02-001",
+        "deed_uid": "I-294-6adc72fd558a11"
+      },
+      "provenance": {
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "9698ca0b-0824-4bf3-8fab-799546064165",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:33:29.338Z",
+          "ageMs": 1
+        },
+        "requestScope": {
+          "plot_id": 15001
+        }
+      }
+    },
+    {
+      "input": "150-10-100",
+      "isError": true,
+      "expectedError": true,
+      "kind": "plot_resolution_unverified",
+      "provenance": {
+        "endpoint": "/land/deeds/{plot_id}",
+        "traceId": "a248c338-8ae8-44c4-b29e-d5ff405afb8b",
+        "freshness": {
+          "retrievedAt": "2026-09-12T10:33:29.517Z",
+          "ageMs": 0
+        },
+        "requestScope": {
+          "plot_id": "150-10-100"
+        }
+      }
+    }
+  ]
+}

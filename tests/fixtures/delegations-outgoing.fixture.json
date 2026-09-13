@@ -1,0 +1,154 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-13T11:16:54.595892+00:00",
+    "sourceUrl": "https://vapi.splinterlands.com/delegation/outgoing/{player}",
+    "captureScope": "Complete bounded public response; participants discovered from public rental/delegation data."
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data[0].amount": {
+      "valueClass": "numeric"
+    },
+    "body.data[0].lastDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].lastManualDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].lastMarketDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].lastDelegationTransactionId": {
+      "valueClass": "id"
+    },
+    "body.data[0].player": {
+      "valueClass": "name"
+    },
+    "body.data[0].isFromRental": {
+      "valueClass": "enum"
+    },
+    "body.data[0].rentalDelegationAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].amount": {
+      "valueClass": "numeric"
+    },
+    "body.data[1].lastDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[1].lastManualDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[1].lastMarketDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[1].lastDelegationTransactionId": {
+      "valueClass": "id"
+    },
+    "body.data[1].player": {
+      "valueClass": "name"
+    },
+    "body.data[1].isFromRental": {
+      "valueClass": "enum"
+    },
+    "body.data[1].rentalDelegationAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].amount": {
+      "valueClass": "numeric"
+    },
+    "body.data[2].lastDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[2].lastManualDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[2].lastMarketDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[2].lastDelegationTransactionId": {
+      "valueClass": "id"
+    },
+    "body.data[2].player": {
+      "valueClass": "name"
+    },
+    "body.data[2].isFromRental": {
+      "valueClass": "enum"
+    },
+    "body.data[2].rentalDelegationAmount": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].amount": {
+      "valueClass": "numeric"
+    },
+    "body.data[3].lastDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[3].lastManualDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[3].lastMarketDelegationDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[3].lastDelegationTransactionId": {
+      "valueClass": "id"
+    },
+    "body.data[3].player": {
+      "valueClass": "name"
+    },
+    "body.data[3].isFromRental": {
+      "valueClass": "enum"
+    },
+    "body.data[3].rentalDelegationAmount": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": [
+      {
+        "amount": "11500.000",
+        "lastDelegationDate": "2026-09-13T09:10:36.000Z",
+        "lastManualDelegationDate": "2026-09-13T09:10:36.000Z",
+        "lastMarketDelegationDate": "2026-09-13T07:45:15.000Z",
+        "lastDelegationTransactionId": "a706f59f7abd405a722745eb86b8ebba4308bc32",
+        "player": "known4knowledge",
+        "isFromRental": true,
+        "rentalDelegationAmount": "11500.000"
+      },
+      {
+        "amount": "25000.000",
+        "lastDelegationDate": "2026-09-13T07:20:09.000Z",
+        "lastManualDelegationDate": "2026-09-13T07:20:09.000Z",
+        "lastMarketDelegationDate": "2026-09-13T05:52:27.000Z",
+        "lastDelegationTransactionId": "a9e59718f99cb5bc39756240733df995a4d4d5cc",
+        "player": "rayjl60428987",
+        "isFromRental": true,
+        "rentalDelegationAmount": "25000.000"
+      },
+      {
+        "amount": "3000.000",
+        "lastDelegationDate": "2026-09-08T16:30:24.000Z",
+        "lastManualDelegationDate": "2026-09-08T16:30:24.000Z",
+        "lastMarketDelegationDate": "2026-09-08T16:23:15.000Z",
+        "lastDelegationTransactionId": "362756c12e6c983dce184bdd20774bde293e38ed",
+        "player": "dardoc",
+        "isFromRental": true,
+        "rentalDelegationAmount": "3000.000"
+      },
+      {
+        "amount": "71000.000",
+        "lastDelegationDate": "2026-09-07T15:13:42.000Z",
+        "lastManualDelegationDate": null,
+        "lastMarketDelegationDate": "2026-09-07T15:09:03.000Z",
+        "lastDelegationTransactionId": "fdc87fa1f751ae530861c2338ff70505389a6ee9",
+        "player": "tussar11",
+        "isFromRental": true,
+        "rentalDelegationAmount": "71000.000"
+      }
+    ]
+  }
+}
