@@ -58,6 +58,8 @@ export function sanitizeFixture(existing: unknown, captured: unknown, observedAt
       if (!names.has(value)) names.set(value, "sample-account-" + (names.size + 1));
       return names.get(value);
     }
+    if (rule.valueClass === "opaque" && rule.values.has(value)
+      && (typeof value === "boolean" || (typeof value === "number" && Number.isFinite(value)))) return value;
     if (rule.valueClass === "freetext" || rule.valueClass === "opaque") {
       if (typeof value !== "string") throw new Error("Invalid text type.");
       return "[redacted]";
