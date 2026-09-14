@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:07:26.717847+00:00",
     "sourceUrl": "https://api2.splinterlands.com/guilds/members",
-    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body[0].guild_id": {
@@ -52,7 +53,11 @@
       "valueClass": "numeric"
     },
     "body[0].starter_pack_purchase": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[0].player_avatar": {
       "valueClass": "opaque"
@@ -106,7 +111,11 @@
       "valueClass": "numeric"
     },
     "body[1].starter_pack_purchase": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[1].player_avatar": {
       "valueClass": "opaque"
@@ -160,7 +169,11 @@
       "valueClass": "numeric"
     },
     "body[2].starter_pack_purchase": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[2].player_avatar": {
       "valueClass": "opaque"

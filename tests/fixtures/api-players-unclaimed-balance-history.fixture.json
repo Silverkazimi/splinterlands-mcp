@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T20:56:00Z"
+    "observedAt": "2026-09-08T20:56:00Z",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body[0].reward_action": {
@@ -17,7 +18,11 @@
       "valueClass": "enum"
     },
     "body[0].type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
     },
     "body[0].amount": {
       "valueClass": "numeric"
@@ -62,7 +67,11 @@
       "valueClass": "enum"
     },
     "body[1].type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
     },
     "body[1].amount": {
       "valueClass": "numeric"
@@ -107,7 +116,11 @@
       "valueClass": "enum"
     },
     "body[2].type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
     },
     "body[2].amount": {
       "valueClass": "numeric"

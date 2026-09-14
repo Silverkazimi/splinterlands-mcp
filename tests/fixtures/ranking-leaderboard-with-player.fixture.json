@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:11:35.753791+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/leaderboard_with_player",
-    "captureScope": "First three list rows; other object fields retained without transformation."
+    "captureScope": "First three list rows; other object fields retained without transformation.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "ccef4228bf2a4ced3892162e8eacc874c1480041b72b42879f002825e554abf4",
+        "alternateShape": "b2f2c25982745992b53e6886aaf9e00c5b41bac6e9e8ebac8fc75bc9c6238ab2"
+      }
+    ]
   },
   "valueClasses": {
     "body.player.rank": {

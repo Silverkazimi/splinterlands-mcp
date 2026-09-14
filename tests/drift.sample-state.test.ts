@@ -63,3 +63,31 @@ it("does not hide malformed empty envelopes and reports an empty sample becoming
     async () => ({ status: 200, isJson: true, body: body(populated) }));
   expect(filled.coverage.sampleCoverage).toEqual([{ entryId, reason: "populated_sample" }]);
 });
+
+
+it.each([
+  ["api.conflicts.players", "governance-conflict-players", "players"],
+  ["api.conflicts.airdrop-distribution", "governance-conflict-airdrop", "distribution"],
+  ["api.conflicts.wagon-eligible-cards", "governance-eligible", "groups"],
+])("reports named empty lists as coverage gaps for %s", async (id, name, key) => {
+  const existing = fixture(name);
+  const response = { ...(body(existing) as Record<string, unknown>), [key]: [] };
+  const params: Record<string, string> = key === "groups" ? { username: "sample-account" } : { player: "sample-account", id: "21" };
+  const result = await recaptureFixtures([{ entryId: id, fixturePath: "tests/fixtures/" + name + ".fixture.json",
+    params, existing }], async () => ({ status: 200, isJson: true, body: response }));
+  expect(result.failed).toEqual([]);
+  expect(result.coverageGaps).toEqual([{ entryId: id, fixturePath: "tests/fixtures/" + name + ".fixture.json", reason: "empty_sample" }]);
+  expect(result.plan.writes).toEqual([]);
+  expect(result.plan.pendingWrites).toEqual([]);
+  const baseline = JSON.parse(readFileSync("scripts/drift/baseline.json", "utf8")) as DriftBaseline;
+  const request = async () => ({ status: 200, isJson: true, body: response });
+  const nightly = await runNightly([{ entryId: id, params }], baseline, request);
+  expect(nightly.coverage.sampleCoverage).toEqual([{ entryId: id, reason: "empty_sample" }]);
+  expect(nightly.plan.issues).toEqual([]);
+  const expectedEmpty = await runNightly([{ entryId: id, params, expectEmpty: true }], baseline, request);
+  expect(expectedEmpty.coverage.sampleCoverage).toEqual([]);
+  const malformed = await recaptureFixtures([{ entryId: id, fixturePath: "tests/fixtures/" + name + ".fixture.json",
+    params, existing }], async () => ({ status: 200, isJson: true, body: { ...response, [key]: {} } }));
+  expect(malformed.coverageGaps).toEqual([]);
+  expect(malformed.failed[0]?.reason).toBe("review");
+});

@@ -97,169 +97,169 @@
       "valueClass": "numeric"
     },
     "body.event_creation_whitelist[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[3]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[4]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[5]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[6]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[7]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[8]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[9]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[10]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[11]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[12]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[13]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[14]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[15]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[16]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[17]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[3]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[4]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[5]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[6]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[7]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[8]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[9]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[10]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[11]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[12]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[13]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[14]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[15]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[16]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[17]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_entry_fee_required": {
       "valueClass": "numeric"
     },
     "body.no_entryfee_list[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[3]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[4]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[5]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[6]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[7]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[8]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[9]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[10]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[11]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[12]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[13]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[14]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[15]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[16]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[17]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.max_event_entrants": {
       "valueClass": "numeric"
@@ -3844,13 +3844,13 @@
       "valueClass": "numeric"
     },
     "body.proposal_accounts[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.proposal_accounts[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.proposal_accounts[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.glint_start_season": {
       "valueClass": "numeric"
@@ -4508,7 +4508,7 @@
     ],
     "event_creation_whitelist": [
       "sample-acct-111",
-      "splinterlands",
+      "sample-acct-141",
       "sample-acct-142",
       "sample-acct-143",
       "sample-acct-087",
@@ -4528,7 +4528,7 @@
     ],
     "ghost_creation_whitelist": [
       "sample-acct-111",
-      "splinterlands",
+      "sample-acct-141",
       "sample-acct-142",
       "sample-acct-143",
       "sample-acct-087",
@@ -4549,7 +4549,7 @@
     "event_entry_fee_required": 1,
     "no_entryfee_list": [
       "sample-acct-111",
-      "splinterlands",
+      "sample-acct-141",
       "sample-acct-142",
       "sample-acct-143",
       "sample-acct-087",

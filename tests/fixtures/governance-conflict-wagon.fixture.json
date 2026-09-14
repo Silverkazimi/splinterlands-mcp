@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:28:36.024435+00:00",
     "sourceUrl": "https://api2.splinterlands.com/conflicts/wagon",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.player": {

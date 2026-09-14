@@ -3,7 +3,13 @@
     "source": "live-observation",
     "observedAt": "2026-09-13T11:16:54.595892+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/delegation/delegation/{player}/{target}",
-    "captureScope": "Complete bounded public response; participants discovered from public rental/delegation data."
+    "captureScope": "Complete bounded public response; participants discovered from public rental/delegation data.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "fa1375f42f71d2ecebd937664dd71624cd0a699316f9cac053b3b6d613765c9d",
+        "alternateShape": "a873eecda20f6b768c8032bc968b8cf130ed217dbe2aeeb5fcdded0653f3eae0"
+      }
+    ]
   },
   "valueClasses": {
     "body.status": {

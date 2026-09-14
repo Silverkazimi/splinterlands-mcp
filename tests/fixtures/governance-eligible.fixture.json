@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:20:11.548842+00:00",
     "sourceUrl": "https://api2.splinterlands.com/conflicts/wagon_eligible_cards",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged.",
+    "additionalSchemaReview": "Reviewed boolean gold variants and public asset categories against the bounded 2026-09-14 positive-sample captures; existing body values retained."
   },
   "valueClasses": {
     "body.total_cards": {
@@ -16,7 +17,7 @@
       "valueClass": "numeric"
     },
     "body.groups[0].gold": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.groups[0].foil": {
       "valueClass": "numeric"
@@ -40,7 +41,7 @@
       "valueClass": "numeric"
     },
     "body.groups[1].gold": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.groups[1].foil": {
       "valueClass": "numeric"
@@ -64,7 +65,7 @@
       "valueClass": "numeric"
     },
     "body.groups[2].gold": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.groups[2].foil": {
       "valueClass": "numeric"

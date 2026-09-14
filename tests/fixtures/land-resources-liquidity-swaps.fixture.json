@@ -18,13 +18,27 @@
       "valueClass": "name"
     },
     "data[0].sent_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "DEC",
+        "GRAIN",
+        "STONE",
+        "WOOD"
+      ]
     },
     "data[0].sent_quantity": {
       "valueClass": "numeric"
     },
     "data[0].received_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "DEC",
+        "GRAIN",
+        "IRON",
+        "STONE",
+        "VOUCHER",
+        "WOOD"
+      ]
     },
     "data[0].received_quantity": {
       "valueClass": "numeric"
@@ -60,13 +74,27 @@
       "valueClass": "name"
     },
     "data[1].sent_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "DEC",
+        "GRAIN",
+        "STONE",
+        "WOOD"
+      ]
     },
     "data[1].sent_quantity": {
       "valueClass": "numeric"
     },
     "data[1].received_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "DEC",
+        "GRAIN",
+        "IRON",
+        "STONE",
+        "VOUCHER",
+        "WOOD"
+      ]
     },
     "data[1].received_quantity": {
       "valueClass": "numeric"

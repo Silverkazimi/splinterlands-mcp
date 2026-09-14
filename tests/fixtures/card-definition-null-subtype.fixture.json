@@ -1,14 +1,20 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T11:19:04.427222+00:00"
+    "observedAt": "2026-09-12T11:19:04.427222+00:00",
+    "fixtureSample": {
+      "kind": "ids",
+      "ids": [
+        10001
+      ]
+    }
   },
   "valueClasses": {
     "body[0].id": {
       "valueClass": "numeric"
     },
     "body[0].name": {
-      "valueClass": "enum"
+      "valueClass": "freetext"
     },
     "body[0].color": {
       "valueClass": "enum"
@@ -77,19 +83,19 @@
       "valueClass": "numeric"
     },
     "body[0].distribution[0].num_cards": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     },
     "body[0].distribution[0].unbound_cards": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     },
     "body[0].distribution[0].total_xp": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     },
     "body[0].distribution[0].num_burned": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     },
     "body[0].distribution[0].total_burned_xp": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     },
     "body[0].distribution[1].card_detail_id": {
       "valueClass": "numeric"
@@ -104,19 +110,19 @@
       "valueClass": "numeric"
     },
     "body[0].distribution[1].num_cards": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     },
     "body[0].distribution[1].unbound_cards": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     },
     "body[0].distribution[1].total_xp": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     },
     "body[0].distribution[1].num_burned": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     },
     "body[0].distribution[1].total_burned_xp": {
-      "valueClass": "enum"
+      "valueClass": "numeric"
     }
   },
   "body": [

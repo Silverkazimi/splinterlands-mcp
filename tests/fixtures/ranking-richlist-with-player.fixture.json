@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:12:02.261003+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/richlist",
-    "captureScope": "First three list rows; other object fields retained without transformation."
+    "captureScope": "First three list rows; other object fields retained without transformation.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.token_type": {
@@ -49,7 +50,7 @@
     "total_quantity": 5754643149.789,
     "richlist": [
       {
-        "player": "null",
+        "player": "sample-acct-078",
         "balance": 1874595149.649
       },
       {

@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join, basename } from "node:path";
 import { isEmptyResult } from "../../src/http/errors.js";
@@ -58,6 +59,21 @@ function fixtureData(value: unknown): unknown {
   return Object.fromEntries(Object.entries(value).filter(([key]) => key !== "provenance" && key !== "valueClasses"));
 }
 
+export function fixtureShapeId(value: unknown): string {
+  return createHash("sha256").update(JSON.stringify(observeShape(fixtureData(value), 64))).digest("hex");
+}
+
+function reviewedAlternate(existing: unknown, recaptured: unknown): boolean {
+  if (!isRecord(existing) || !isRecord(existing.provenance)) return false;
+  const reviews = existing.provenance.reviewedAlternateShapes;
+  if (!Array.isArray(reviews) || reviews.length === 0 || reviews.length > 32) return false;
+  const validId = (value: unknown): value is string => typeof value === "string" && /^[a-f0-9]{64}$/.test(value);
+  if (!reviews.every(review => isRecord(review) && validId(review.baselineShape) && validId(review.alternateShape))) return false;
+  const baselineShape = fixtureShapeId(existing);
+  const alternateShape = fixtureShapeId(recaptured);
+  return reviews.some(review => review.baselineShape === baselineShape && review.alternateShape === alternateShape);
+}
+
 function prepare(value: unknown, pair: FixtureRenewalPair, options: FixtureRenewalOptions): unknown {
   let prepared = value;
   const pseudonymise = pair.pseudonymise ?? (options.pseudonymise === undefined ? undefined : (candidate: unknown) => options.pseudonymise?.(candidate, pair));
@@ -103,7 +119,11 @@ export function planFixtureRenewal(
     const recaptured = prepare(pair.recaptured, pair, options);
     const deltas = diffShapes(observeShape(fixtureData(existing)), observeShape(fixtureData(recaptured)));
     const emptyRegression = isEmptyResult(recaptured) && !isEmptyResult(existing);
-    const outcome: RenewalOutcome = emptyRegression || deltas.length > 0 ? "hold" : JSON.stringify(existing) === JSON.stringify(recaptured) ? "noop" : "refresh";
+    const changedShape = emptyRegression || deltas.length > 0;
+    // Reviewed alternate states retain the richer existing fixture instead of replacing it.
+    const outcome: RenewalOutcome = changedShape
+      ? reviewedAlternate(existing, recaptured) ? "noop" : "hold"
+      : JSON.stringify(existing) === JSON.stringify(recaptured) ? "noop" : "refresh";
     const decision: RenewalDecision = {
       fixturePath: pair.fixturePath,
       entryId: pair.entryId,

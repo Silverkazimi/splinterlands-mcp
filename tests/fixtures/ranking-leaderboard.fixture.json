@@ -1,9 +1,9 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:10:09.963954+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/leaderboard",
-    "captureScope": "First three list rows; other object fields retained without transformation."
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
   },
   "valueClasses": {
     "body[0].rank": {
@@ -185,16 +185,1156 @@
     },
     "body[2].player_avatar": {
       "valueClass": "opaque"
+    },
+    "body[3].rank": {
+      "valueClass": "numeric"
+    },
+    "body[3].season": {
+      "valueClass": "numeric"
+    },
+    "body[3].player": {
+      "valueClass": "name"
+    },
+    "body[3].rating": {
+      "valueClass": "numeric"
+    },
+    "body[3].battles": {
+      "valueClass": "numeric"
+    },
+    "body[3].wins": {
+      "valueClass": "numeric"
+    },
+    "body[3].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[3].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[3].league": {
+      "valueClass": "numeric"
+    },
+    "body[3].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[3].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[3].guild_id": {
+      "valueClass": "id"
+    },
+    "body[3].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[3].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[3].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[3].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[3].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[3].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[3].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[3].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[4].rank": {
+      "valueClass": "numeric"
+    },
+    "body[4].season": {
+      "valueClass": "numeric"
+    },
+    "body[4].player": {
+      "valueClass": "name"
+    },
+    "body[4].rating": {
+      "valueClass": "numeric"
+    },
+    "body[4].battles": {
+      "valueClass": "numeric"
+    },
+    "body[4].wins": {
+      "valueClass": "numeric"
+    },
+    "body[4].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[4].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[4].league": {
+      "valueClass": "numeric"
+    },
+    "body[4].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[4].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[4].guild_id": {
+      "valueClass": "id"
+    },
+    "body[4].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[4].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[4].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[4].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[4].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[4].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[4].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[4].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[5].rank": {
+      "valueClass": "numeric"
+    },
+    "body[5].season": {
+      "valueClass": "numeric"
+    },
+    "body[5].player": {
+      "valueClass": "name"
+    },
+    "body[5].rating": {
+      "valueClass": "numeric"
+    },
+    "body[5].battles": {
+      "valueClass": "numeric"
+    },
+    "body[5].wins": {
+      "valueClass": "numeric"
+    },
+    "body[5].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[5].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[5].league": {
+      "valueClass": "numeric"
+    },
+    "body[5].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[5].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[5].guild_id": {
+      "valueClass": "id"
+    },
+    "body[5].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[5].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[5].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[5].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[5].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[5].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[5].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[5].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[6].rank": {
+      "valueClass": "numeric"
+    },
+    "body[6].season": {
+      "valueClass": "numeric"
+    },
+    "body[6].player": {
+      "valueClass": "name"
+    },
+    "body[6].rating": {
+      "valueClass": "numeric"
+    },
+    "body[6].battles": {
+      "valueClass": "numeric"
+    },
+    "body[6].wins": {
+      "valueClass": "numeric"
+    },
+    "body[6].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[6].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[6].league": {
+      "valueClass": "numeric"
+    },
+    "body[6].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[6].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[6].guild_id": {
+      "valueClass": "id"
+    },
+    "body[6].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[6].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[6].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[6].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[6].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[6].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[6].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[6].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[7].rank": {
+      "valueClass": "numeric"
+    },
+    "body[7].season": {
+      "valueClass": "numeric"
+    },
+    "body[7].player": {
+      "valueClass": "name"
+    },
+    "body[7].rating": {
+      "valueClass": "numeric"
+    },
+    "body[7].battles": {
+      "valueClass": "numeric"
+    },
+    "body[7].wins": {
+      "valueClass": "numeric"
+    },
+    "body[7].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[7].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[7].league": {
+      "valueClass": "numeric"
+    },
+    "body[7].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[7].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[7].guild_id": {
+      "valueClass": "id"
+    },
+    "body[7].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[7].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[7].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[7].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[7].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[7].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[7].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[7].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[8].rank": {
+      "valueClass": "numeric"
+    },
+    "body[8].season": {
+      "valueClass": "numeric"
+    },
+    "body[8].player": {
+      "valueClass": "name"
+    },
+    "body[8].rating": {
+      "valueClass": "numeric"
+    },
+    "body[8].battles": {
+      "valueClass": "numeric"
+    },
+    "body[8].wins": {
+      "valueClass": "numeric"
+    },
+    "body[8].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[8].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[8].league": {
+      "valueClass": "numeric"
+    },
+    "body[8].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[8].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[8].guild_id": {
+      "valueClass": "id"
+    },
+    "body[8].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[8].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[8].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[8].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[8].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[8].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[8].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[8].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[9].rank": {
+      "valueClass": "numeric"
+    },
+    "body[9].season": {
+      "valueClass": "numeric"
+    },
+    "body[9].player": {
+      "valueClass": "name"
+    },
+    "body[9].rating": {
+      "valueClass": "numeric"
+    },
+    "body[9].battles": {
+      "valueClass": "numeric"
+    },
+    "body[9].wins": {
+      "valueClass": "numeric"
+    },
+    "body[9].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[9].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[9].league": {
+      "valueClass": "numeric"
+    },
+    "body[9].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[9].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[9].guild_id": {
+      "valueClass": "id"
+    },
+    "body[9].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[9].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[9].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[9].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[9].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[9].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[9].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[9].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[10].rank": {
+      "valueClass": "numeric"
+    },
+    "body[10].season": {
+      "valueClass": "numeric"
+    },
+    "body[10].player": {
+      "valueClass": "name"
+    },
+    "body[10].rating": {
+      "valueClass": "numeric"
+    },
+    "body[10].battles": {
+      "valueClass": "numeric"
+    },
+    "body[10].wins": {
+      "valueClass": "numeric"
+    },
+    "body[10].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[10].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[10].league": {
+      "valueClass": "numeric"
+    },
+    "body[10].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[10].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[10].guild_id": {
+      "valueClass": "id"
+    },
+    "body[10].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[10].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[10].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[10].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[10].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[10].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[10].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[10].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[11].rank": {
+      "valueClass": "numeric"
+    },
+    "body[11].season": {
+      "valueClass": "numeric"
+    },
+    "body[11].player": {
+      "valueClass": "name"
+    },
+    "body[11].rating": {
+      "valueClass": "numeric"
+    },
+    "body[11].battles": {
+      "valueClass": "numeric"
+    },
+    "body[11].wins": {
+      "valueClass": "numeric"
+    },
+    "body[11].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[11].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[11].league": {
+      "valueClass": "numeric"
+    },
+    "body[11].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[11].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[11].guild_id": {
+      "valueClass": "id"
+    },
+    "body[11].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[11].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[11].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[11].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[11].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[11].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[11].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[11].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[12].rank": {
+      "valueClass": "numeric"
+    },
+    "body[12].season": {
+      "valueClass": "numeric"
+    },
+    "body[12].player": {
+      "valueClass": "name"
+    },
+    "body[12].rating": {
+      "valueClass": "numeric"
+    },
+    "body[12].battles": {
+      "valueClass": "numeric"
+    },
+    "body[12].wins": {
+      "valueClass": "numeric"
+    },
+    "body[12].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[12].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[12].league": {
+      "valueClass": "numeric"
+    },
+    "body[12].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[12].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[12].guild_id": {
+      "valueClass": "id"
+    },
+    "body[12].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[12].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[12].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[12].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[12].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[12].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[12].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[12].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[13].rank": {
+      "valueClass": "numeric"
+    },
+    "body[13].season": {
+      "valueClass": "numeric"
+    },
+    "body[13].player": {
+      "valueClass": "name"
+    },
+    "body[13].rating": {
+      "valueClass": "numeric"
+    },
+    "body[13].battles": {
+      "valueClass": "numeric"
+    },
+    "body[13].wins": {
+      "valueClass": "numeric"
+    },
+    "body[13].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[13].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[13].league": {
+      "valueClass": "numeric"
+    },
+    "body[13].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[13].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[13].guild_id": {
+      "valueClass": "id"
+    },
+    "body[13].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[13].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[13].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[13].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[13].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[13].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[13].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[13].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[14].rank": {
+      "valueClass": "numeric"
+    },
+    "body[14].season": {
+      "valueClass": "numeric"
+    },
+    "body[14].player": {
+      "valueClass": "name"
+    },
+    "body[14].rating": {
+      "valueClass": "numeric"
+    },
+    "body[14].battles": {
+      "valueClass": "numeric"
+    },
+    "body[14].wins": {
+      "valueClass": "numeric"
+    },
+    "body[14].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[14].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[14].league": {
+      "valueClass": "numeric"
+    },
+    "body[14].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[14].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[14].guild_id": {
+      "valueClass": "id"
+    },
+    "body[14].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[14].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[14].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[14].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[14].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[14].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[14].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[14].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[15].rank": {
+      "valueClass": "numeric"
+    },
+    "body[15].season": {
+      "valueClass": "numeric"
+    },
+    "body[15].player": {
+      "valueClass": "name"
+    },
+    "body[15].rating": {
+      "valueClass": "numeric"
+    },
+    "body[15].battles": {
+      "valueClass": "numeric"
+    },
+    "body[15].wins": {
+      "valueClass": "numeric"
+    },
+    "body[15].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[15].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[15].league": {
+      "valueClass": "numeric"
+    },
+    "body[15].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[15].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[15].guild_id": {
+      "valueClass": "id"
+    },
+    "body[15].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[15].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[15].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[15].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[15].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[15].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[15].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[15].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[16].rank": {
+      "valueClass": "numeric"
+    },
+    "body[16].season": {
+      "valueClass": "numeric"
+    },
+    "body[16].player": {
+      "valueClass": "name"
+    },
+    "body[16].rating": {
+      "valueClass": "numeric"
+    },
+    "body[16].battles": {
+      "valueClass": "numeric"
+    },
+    "body[16].wins": {
+      "valueClass": "numeric"
+    },
+    "body[16].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[16].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[16].league": {
+      "valueClass": "numeric"
+    },
+    "body[16].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[16].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[16].guild_id": {
+      "valueClass": "id"
+    },
+    "body[16].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[16].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[16].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[16].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[16].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[16].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[16].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[16].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[17].rank": {
+      "valueClass": "numeric"
+    },
+    "body[17].season": {
+      "valueClass": "numeric"
+    },
+    "body[17].player": {
+      "valueClass": "name"
+    },
+    "body[17].rating": {
+      "valueClass": "numeric"
+    },
+    "body[17].battles": {
+      "valueClass": "numeric"
+    },
+    "body[17].wins": {
+      "valueClass": "numeric"
+    },
+    "body[17].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[17].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[17].league": {
+      "valueClass": "numeric"
+    },
+    "body[17].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[17].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[17].guild_id": {
+      "valueClass": "id"
+    },
+    "body[17].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[17].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[17].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[17].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[17].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[17].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[17].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[17].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[18].rank": {
+      "valueClass": "numeric"
+    },
+    "body[18].season": {
+      "valueClass": "numeric"
+    },
+    "body[18].player": {
+      "valueClass": "name"
+    },
+    "body[18].rating": {
+      "valueClass": "numeric"
+    },
+    "body[18].battles": {
+      "valueClass": "numeric"
+    },
+    "body[18].wins": {
+      "valueClass": "numeric"
+    },
+    "body[18].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[18].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[18].league": {
+      "valueClass": "numeric"
+    },
+    "body[18].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[18].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[18].guild_id": {
+      "valueClass": "id"
+    },
+    "body[18].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[18].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[18].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[18].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[18].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[18].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[18].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[18].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[19].rank": {
+      "valueClass": "numeric"
+    },
+    "body[19].season": {
+      "valueClass": "numeric"
+    },
+    "body[19].player": {
+      "valueClass": "name"
+    },
+    "body[19].rating": {
+      "valueClass": "numeric"
+    },
+    "body[19].battles": {
+      "valueClass": "numeric"
+    },
+    "body[19].wins": {
+      "valueClass": "numeric"
+    },
+    "body[19].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[19].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[19].league": {
+      "valueClass": "numeric"
+    },
+    "body[19].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[19].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[19].guild_id": {
+      "valueClass": "id"
+    },
+    "body[19].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[19].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[19].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[19].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[19].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[19].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[19].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[19].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[20].rank": {
+      "valueClass": "numeric"
+    },
+    "body[20].season": {
+      "valueClass": "numeric"
+    },
+    "body[20].player": {
+      "valueClass": "name"
+    },
+    "body[20].rating": {
+      "valueClass": "numeric"
+    },
+    "body[20].battles": {
+      "valueClass": "numeric"
+    },
+    "body[20].wins": {
+      "valueClass": "numeric"
+    },
+    "body[20].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[20].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[20].league": {
+      "valueClass": "numeric"
+    },
+    "body[20].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[20].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[20].guild_id": {
+      "valueClass": "id"
+    },
+    "body[20].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[20].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[20].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[20].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[20].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[20].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[20].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[20].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[21].rank": {
+      "valueClass": "numeric"
+    },
+    "body[21].season": {
+      "valueClass": "numeric"
+    },
+    "body[21].player": {
+      "valueClass": "name"
+    },
+    "body[21].rating": {
+      "valueClass": "numeric"
+    },
+    "body[21].battles": {
+      "valueClass": "numeric"
+    },
+    "body[21].wins": {
+      "valueClass": "numeric"
+    },
+    "body[21].longest_streak": {
+      "valueClass": "numeric"
+    },
+    "body[21].max_rating": {
+      "valueClass": "numeric"
+    },
+    "body[21].league": {
+      "valueClass": "numeric"
+    },
+    "body[21].max_league": {
+      "valueClass": "numeric"
+    },
+    "body[21].reward_claim_tx": {
+      "valueClass": "opaque"
+    },
+    "body[21].guild_id": {
+      "valueClass": "id"
+    },
+    "body[21].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body[21].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body[21].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[21].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[21].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[21].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[21].scholared_by": {
+      "valueClass": "name"
+    },
+    "body[21].player_avatar": {
+      "valueClass": "opaque"
     }
   },
   "body": [
     {
       "rank": 1,
       "season": 190,
-      "player": "sample-acct-094",
-      "rating": 3550,
-      "battles": 319,
-      "wins": 185,
+      "player": "sample-account-1",
+      "rating": 3590,
+      "battles": 356,
+      "wins": 202,
       "longest_streak": 20,
       "max_rating": 3730,
       "league": 12,
@@ -208,34 +1348,12 @@
       "title_pre": null,
       "title_post": null,
       "scholared_by": null,
-      "player_avatar": "{\"race\":\"human\",\"background\":5,\"color\":\"Red\",\"level\":1,\"frame\":5,\"gender\":2,\"body\":1,\"face\":3,\"nose\":9,\"ears\":0,\"skin_color\":1,\"hair\":4,\"eyebrows\":3,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":11,\"eyes_color\":4,\"mouth\":3,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":108,\"cloth_color\":1,\"tattoo\":0,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":2,\"earrings_color\":1,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[],\"avatar_resets\":0,\"player_card_resets\":0}"
+      "player_avatar": "[redacted]"
     },
     {
       "rank": 2,
       "season": 190,
-      "player": "sample-acct-054",
-      "rating": 2900,
-      "battles": 421,
-      "wins": 242,
-      "longest_streak": 14,
-      "max_rating": 2960,
-      "league": 10,
-      "max_league": 10,
-      "reward_claim_tx": null,
-      "guild_id": "c24f1804889d4deef0f1377c02499e17310fd8d1",
-      "guild_name": "CYPHER SEVEN",
-      "guild_data": "{\"crest\":{\"banner\":\"teal\",\"decal\":\"tree\"}}",
-      "avatar_id": 8,
-      "display_name": null,
-      "title_pre": null,
-      "title_post": null,
-      "scholared_by": null,
-      "player_avatar": "{\"race\":\"human\",\"background\":15,\"color\":\"Red\",\"level\":11,\"frame\":3,\"gender\":1,\"body\":1,\"face\":2,\"nose\":2,\"ears\":0,\"skin_color\":1,\"hair\":12,\"eyebrows\":3,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":11,\"eyes_color\":1,\"mouth\":5,\"complexion\":0,\"scars\":2,\"outfit\":0,\"outfit_color\":0,\"cloth\":3,\"cloth_color\":1,\"tattoo\":4,\"accessory\":6,\"accessory_color\":1,\"hat\":1,\"hat_color\":0,\"earrings\":2,\"earrings_color\":1,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"modern_league\",\"wild_league\",\"frontier_league\",\"champion_points\"],\"avatar_resets\":0,\"player_card_resets\":0}"
-    },
-    {
-      "rank": 3,
-      "season": 190,
-      "player": "sample-acct-075",
+      "player": "sample-account-2",
       "rating": 2800,
       "battles": 320,
       "wins": 185,
@@ -245,14 +1363,454 @@
       "max_league": 10,
       "reward_claim_tx": null,
       "guild_id": "3581c049c0e08b467ab35f319f1678bd404540d4",
-      "guild_name": "Rusty Badger Army of Fire Breathing Coked Up JAR Heads",
-      "guild_data": "{\"crest\":{\"banner\":\"silver\",\"decal\":\"globe\"}}",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
       "avatar_id": 0,
       "display_name": null,
       "title_pre": null,
       "title_post": null,
       "scholared_by": null,
-      "player_avatar": "{\"race\":\"human\",\"background\":0,\"color\":\"White\",\"level\":1,\"frame\":5,\"gender\":1,\"body\":1,\"face\":1,\"nose\":10,\"ears\":0,\"skin_color\":3,\"hair\":13,\"eyebrows\":2,\"mustache\":0,\"beard\":0,\"hair_color\":6,\"eyes\":4,\"eyes_color\":2,\"mouth\":14,\"complexion\":5,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":3,\"cloth_color\":2,\"tattoo\":20,\"accessory\":2,\"accessory_color\":4,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"\",\"modern_league\",\"year_joined\",\"\"],\"avatar_resets\":0,\"player_card_resets\":2}"
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 3,
+      "season": 190,
+      "player": "sample-account-3",
+      "rating": 2740,
+      "battles": 458,
+      "wins": 256,
+      "longest_streak": 14,
+      "max_rating": 2960,
+      "league": 9,
+      "max_league": 10,
+      "reward_claim_tx": null,
+      "guild_id": "c24f1804889d4deef0f1377c02499e17310fd8d1",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
+      "avatar_id": 8,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 4,
+      "season": 190,
+      "player": "sample-account-4",
+      "rating": 2300,
+      "battles": 301,
+      "wins": 177,
+      "longest_streak": 17,
+      "max_rating": 2680,
+      "league": 8,
+      "max_league": 9,
+      "reward_claim_tx": null,
+      "guild_id": "40b53bf55a18793f405e4733212591f0e709d659",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": "sample-account-2",
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 5,
+      "season": 190,
+      "player": "sample-account-5",
+      "rating": 2280,
+      "battles": 230,
+      "wins": 144,
+      "longest_streak": 10,
+      "max_rating": 2360,
+      "league": 8,
+      "max_league": 8,
+      "reward_claim_tx": null,
+      "guild_id": "6f57e57246029d4dd230796326d2c1667773402b",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 6,
+      "season": 190,
+      "player": "sample-account-6",
+      "rating": 2180,
+      "battles": 132,
+      "wins": 92,
+      "longest_streak": 36,
+      "max_rating": 2320,
+      "league": 7,
+      "max_league": 8,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 1,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": null
+    },
+    {
+      "rank": 7,
+      "season": 190,
+      "player": "sample-account-7",
+      "rating": 1680,
+      "battles": 243,
+      "wins": 139,
+      "longest_streak": 14,
+      "max_rating": 1740,
+      "league": 6,
+      "max_league": 6,
+      "reward_claim_tx": null,
+      "guild_id": "0cb1c5e85f7875fd54770b5bb4e655155c9cc797",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 8,
+      "season": 190,
+      "player": "sample-account-8",
+      "rating": 1440,
+      "battles": 205,
+      "wins": 121,
+      "longest_streak": 10,
+      "max_rating": 1520,
+      "league": 5,
+      "max_league": 5,
+      "reward_claim_tx": null,
+      "guild_id": "f01aa8265af37e6f8ff737dcbeb08b6437390daa",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 9,
+      "season": 190,
+      "player": "sample-account-9",
+      "rating": 1180,
+      "battles": 103,
+      "wins": 58,
+      "longest_streak": 10,
+      "max_rating": 1200,
+      "league": 4,
+      "max_league": 4,
+      "reward_claim_tx": null,
+      "guild_id": "bd27187cf3cee51ea4c533ffaac8eecc73d0226d",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 10,
+      "season": 190,
+      "player": "sample-account-10",
+      "rating": 1140,
+      "battles": 332,
+      "wins": 165,
+      "longest_streak": 7,
+      "max_rating": 1160,
+      "league": 4,
+      "max_league": 4,
+      "reward_claim_tx": null,
+      "guild_id": "444fe3d115b5d6a64319ade5b6a629dfbfafd7b4",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
+      "avatar_id": 10,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 11,
+      "season": 190,
+      "player": "sample-account-11",
+      "rating": 960,
+      "battles": 342,
+      "wins": 166,
+      "longest_streak": 9,
+      "max_rating": 1300,
+      "league": 3,
+      "max_league": 5,
+      "reward_claim_tx": null,
+      "guild_id": "1c4637f144a8a64cce701549f8daf179d01dd1dc",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
+      "avatar_id": 5,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 12,
+      "season": 190,
+      "player": "sample-account-12",
+      "rating": 860,
+      "battles": 327,
+      "wins": 166,
+      "longest_streak": 8,
+      "max_rating": 1040,
+      "league": 3,
+      "max_league": 4,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 13,
+      "season": 190,
+      "player": "sample-account-13",
+      "rating": 860,
+      "battles": 1205,
+      "wins": 545,
+      "longest_streak": 11,
+      "max_rating": 1080,
+      "league": 3,
+      "max_league": 4,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": null
+    },
+    {
+      "rank": 14,
+      "season": 190,
+      "player": "sample-account-14",
+      "rating": 840,
+      "battles": 1166,
+      "wins": 519,
+      "longest_streak": 7,
+      "max_rating": 1020,
+      "league": 3,
+      "max_league": 4,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": null
+    },
+    {
+      "rank": 15,
+      "season": 190,
+      "player": "sample-account-15",
+      "rating": 600,
+      "battles": 1127,
+      "wins": 465,
+      "longest_streak": 7,
+      "max_rating": 860,
+      "league": 2,
+      "max_league": 3,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": null
+    },
+    {
+      "rank": 16,
+      "season": 190,
+      "player": "sample-account-16",
+      "rating": 580,
+      "battles": 1336,
+      "wins": 574,
+      "longest_streak": 9,
+      "max_rating": 920,
+      "league": 2,
+      "max_league": 3,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": null
+    },
+    {
+      "rank": 17,
+      "season": 190,
+      "player": "sample-account-17",
+      "rating": 540,
+      "battles": 358,
+      "wins": 170,
+      "longest_streak": 8,
+      "max_rating": 900,
+      "league": 2,
+      "max_league": 3,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 18,
+      "season": 190,
+      "player": "sample-account-18",
+      "rating": 540,
+      "battles": 1333,
+      "wins": 537,
+      "longest_streak": 8,
+      "max_rating": 800,
+      "league": 2,
+      "max_league": 3,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": null
+    },
+    {
+      "rank": 19,
+      "season": 190,
+      "player": "sample-account-19",
+      "rating": 400,
+      "battles": 1332,
+      "wins": 543,
+      "longest_streak": 5,
+      "max_rating": 580,
+      "league": 2,
+      "max_league": 2,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": null
+    },
+    {
+      "rank": 20,
+      "season": 190,
+      "player": "sample-account-20",
+      "rating": 280,
+      "battles": 347,
+      "wins": 130,
+      "longest_streak": 4,
+      "max_rating": 440,
+      "league": 1,
+      "max_league": 2,
+      "reward_claim_tx": null,
+      "guild_id": "6ef6eaeeac6b0cdaa84aca9826eb21679bc989c9",
+      "guild_name": "[redacted]",
+      "guild_data": "[redacted]",
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 21,
+      "season": 190,
+      "player": "sample-account-21",
+      "rating": 260,
+      "battles": 332,
+      "wins": 124,
+      "longest_streak": 6,
+      "max_rating": 480,
+      "league": 1,
+      "max_league": 2,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": "[redacted]"
+    },
+    {
+      "rank": 22,
+      "season": 190,
+      "player": "sample-account-22",
+      "rating": 260,
+      "battles": 1333,
+      "wins": 483,
+      "longest_streak": 6,
+      "max_rating": 580,
+      "league": 1,
+      "max_league": 2,
+      "reward_claim_tx": null,
+      "guild_id": null,
+      "guild_name": null,
+      "guild_data": null,
+      "avatar_id": 0,
+      "display_name": null,
+      "title_pre": null,
+      "title_post": null,
+      "scholared_by": null,
+      "player_avatar": null
     }
   ]
 }

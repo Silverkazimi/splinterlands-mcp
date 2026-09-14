@@ -1,85 +1,490 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-07T00:00:00Z"
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response."
   },
   "valueClasses": {
-    "status": { "valueClass": "enum" },
-    "data[0].id": { "valueClass": "id" },
-    "data[0].plot_id": { "valueClass": "id" },
-    "data[0].tract_id": { "valueClass": "id" },
-    "data[0].region_uid": { "valueClass": "id" },
-    "data[0].site_efficiency": { "valueClass": "numeric" },
-    "data[0].region_number": { "valueClass": "numeric" },
-    "data[0].land_worksite_id": { "valueClass": "id" },
-    "data[0].land_project_id": { "valueClass": "id" },
-    "data[0].resource_id": { "valueClass": "id" },
-    "data[0].resource_symbol": { "valueClass": "enum" },
-    "data[0].working_pp": { "valueClass": "numeric" },
-    "data[0].duration": { "valueClass": "numeric" },
-    "data[0].deed_uid": { "valueClass": "id" },
-    "data[0].claim_amount": { "valueClass": "numeric" },
-    "data[0].grain_required": { "valueClass": "numeric" },
-    "data[0].claim_amount_eaten": { "valueClass": "numeric" },
-    "data[0].amount_received": { "valueClass": "numeric" },
-    "data[0].tax_burnt": { "valueClass": "numeric" },
-    "data[0].amount_taxed": { "valueClass": "numeric" },
-    "data[0].trx_description": { "valueClass": "freetext" },
-    "data[0].trx_id": { "valueClass": "id" },
-    "data[0].block_num": { "valueClass": "numeric" },
-    "data[0].created_date": { "valueClass": "timestamp" },
-    "data[0].last_updated_date": { "valueClass": "timestamp" },
-    "data[0].fragment_roll": { "valueClass": "opaque" },
-    "data[0].fragment_roll.reward_action_id": { "valueClass": "id" },
-    "data[0].fragment_roll.land_work_type_id": { "valueClass": "id" },
-    "data[0].fragment_roll.land_project_number": { "valueClass": "id" },
-    "data[0].fragment_roll.deed_uid": { "valueClass": "id" },
-    "data[0].fragment_roll.fragment_type": { "valueClass": "opaque" },
-    "data[0].fragment_roll.fragment_found": { "valueClass": "enum" },
-    "data[0].fragment_roll.fragment_chance": { "valueClass": "numeric" },
-    "data[0].fragment_roll.fragment_roll": { "valueClass": "numeric" },
-    "data[0].fragment_roll.labors_luck_uid": { "valueClass": "id" },
-    "data[0].fragment_roll.labors_luck_chance": { "valueClass": "numeric" },
-    "data[0].fragment_roll.labors_luck_roll": { "valueClass": "numeric" },
-    "data[0].fragment_roll.labors_luck_pool_pick": { "valueClass": "opaque" },
-    "data[0].fragment_roll.labors_luck_treasures_left": { "valueClass": "numeric" }
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].id": {
+      "valueClass": "id"
+    },
+    "data[0].plot_id": {
+      "valueClass": "id"
+    },
+    "data[0].tract_id": {
+      "valueClass": "id"
+    },
+    "data[0].region_uid": {
+      "valueClass": "id"
+    },
+    "data[0].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[0].region_number": {
+      "valueClass": "numeric"
+    },
+    "data[0].land_worksite_id": {
+      "valueClass": "id"
+    },
+    "data[0].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[0].resource_id": {
+      "valueClass": "id"
+    },
+    "data[0].resource_symbol": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "GRAIN",
+        "WOOD"
+      ]
+    },
+    "data[0].working_pp": {
+      "valueClass": "numeric"
+    },
+    "data[0].duration": {
+      "valueClass": "numeric"
+    },
+    "data[0].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[0].claim_amount": {
+      "valueClass": "numeric"
+    },
+    "data[0].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data[0].claim_amount_eaten": {
+      "valueClass": "numeric"
+    },
+    "data[0].amount_received": {
+      "valueClass": "numeric"
+    },
+    "data[0].tax_burnt": {
+      "valueClass": "numeric"
+    },
+    "data[0].amount_taxed": {
+      "valueClass": "numeric"
+    },
+    "data[0].trx_description": {
+      "valueClass": "freetext"
+    },
+    "data[0].trx_id": {
+      "valueClass": "id"
+    },
+    "data[0].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[0].fragment_roll.reward_action_id": {
+      "valueClass": "id"
+    },
+    "data[0].fragment_roll.land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[0].fragment_roll.land_project_number": {
+      "valueClass": "id"
+    },
+    "data[0].fragment_roll.deed_uid": {
+      "valueClass": "id"
+    },
+    "data[0].fragment_roll.fragment_type": {
+      "valueClass": "opaque"
+    },
+    "data[0].fragment_roll.fragment_found": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "data[0].fragment_roll.fragment_chance": {
+      "valueClass": "numeric"
+    },
+    "data[0].fragment_roll.fragment_roll": {
+      "valueClass": "numeric"
+    },
+    "data[0].fragment_roll.labors_luck_uid": {
+      "valueClass": "id"
+    },
+    "data[0].fragment_roll.labors_luck_chance": {
+      "valueClass": "numeric"
+    },
+    "data[0].fragment_roll.labors_luck_roll": {
+      "valueClass": "numeric"
+    },
+    "data[0].fragment_roll.labors_luck_pool_pick": {
+      "valueClass": "opaque"
+    },
+    "data[0].fragment_roll.labors_luck_treasures_left": {
+      "valueClass": "numeric"
+    },
+    "data[1].id": {
+      "valueClass": "id"
+    },
+    "data[1].plot_id": {
+      "valueClass": "id"
+    },
+    "data[1].tract_id": {
+      "valueClass": "id"
+    },
+    "data[1].region_uid": {
+      "valueClass": "id"
+    },
+    "data[1].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[1].region_number": {
+      "valueClass": "numeric"
+    },
+    "data[1].land_worksite_id": {
+      "valueClass": "id"
+    },
+    "data[1].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[1].resource_id": {
+      "valueClass": "id"
+    },
+    "data[1].resource_symbol": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "GRAIN",
+        "WOOD"
+      ]
+    },
+    "data[1].working_pp": {
+      "valueClass": "numeric"
+    },
+    "data[1].duration": {
+      "valueClass": "numeric"
+    },
+    "data[1].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[1].claim_amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data[1].claim_amount_eaten": {
+      "valueClass": "numeric"
+    },
+    "data[1].amount_received": {
+      "valueClass": "numeric"
+    },
+    "data[1].tax_burnt": {
+      "valueClass": "numeric"
+    },
+    "data[1].amount_taxed": {
+      "valueClass": "numeric"
+    },
+    "data[1].trx_description": {
+      "valueClass": "freetext"
+    },
+    "data[1].trx_id": {
+      "valueClass": "id"
+    },
+    "data[1].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[1].fragment_roll.reward_action_id": {
+      "valueClass": "id"
+    },
+    "data[1].fragment_roll.land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[1].fragment_roll.land_project_number": {
+      "valueClass": "id"
+    },
+    "data[1].fragment_roll.deed_uid": {
+      "valueClass": "id"
+    },
+    "data[1].fragment_roll.fragment_type": {
+      "valueClass": "opaque"
+    },
+    "data[1].fragment_roll.fragment_found": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "data[1].fragment_roll.fragment_chance": {
+      "valueClass": "numeric"
+    },
+    "data[1].fragment_roll.fragment_roll": {
+      "valueClass": "numeric"
+    },
+    "data[1].fragment_roll.labors_luck_uid": {
+      "valueClass": "id"
+    },
+    "data[1].fragment_roll.labors_luck_chance": {
+      "valueClass": "numeric"
+    },
+    "data[1].fragment_roll.labors_luck_roll": {
+      "valueClass": "numeric"
+    },
+    "data[1].fragment_roll.labors_luck_pool_pick": {
+      "valueClass": "opaque"
+    },
+    "data[1].fragment_roll.labors_luck_treasures_left": {
+      "valueClass": "numeric"
+    },
+    "data[2].id": {
+      "valueClass": "id"
+    },
+    "data[2].plot_id": {
+      "valueClass": "id"
+    },
+    "data[2].tract_id": {
+      "valueClass": "id"
+    },
+    "data[2].region_uid": {
+      "valueClass": "id"
+    },
+    "data[2].site_efficiency": {
+      "valueClass": "numeric"
+    },
+    "data[2].region_number": {
+      "valueClass": "numeric"
+    },
+    "data[2].land_worksite_id": {
+      "valueClass": "id"
+    },
+    "data[2].land_project_id": {
+      "valueClass": "id"
+    },
+    "data[2].resource_id": {
+      "valueClass": "id"
+    },
+    "data[2].resource_symbol": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "GRAIN",
+        "WOOD"
+      ]
+    },
+    "data[2].working_pp": {
+      "valueClass": "numeric"
+    },
+    "data[2].duration": {
+      "valueClass": "numeric"
+    },
+    "data[2].deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].claim_amount": {
+      "valueClass": "numeric"
+    },
+    "data[2].grain_required": {
+      "valueClass": "numeric"
+    },
+    "data[2].claim_amount_eaten": {
+      "valueClass": "numeric"
+    },
+    "data[2].amount_received": {
+      "valueClass": "numeric"
+    },
+    "data[2].tax_burnt": {
+      "valueClass": "numeric"
+    },
+    "data[2].amount_taxed": {
+      "valueClass": "numeric"
+    },
+    "data[2].trx_description": {
+      "valueClass": "freetext"
+    },
+    "data[2].trx_id": {
+      "valueClass": "id"
+    },
+    "data[2].block_num": {
+      "valueClass": "numeric"
+    },
+    "data[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data[2].fragment_roll.reward_action_id": {
+      "valueClass": "id"
+    },
+    "data[2].fragment_roll.land_work_type_id": {
+      "valueClass": "id"
+    },
+    "data[2].fragment_roll.land_project_number": {
+      "valueClass": "id"
+    },
+    "data[2].fragment_roll.deed_uid": {
+      "valueClass": "id"
+    },
+    "data[2].fragment_roll.fragment_type": {
+      "valueClass": "opaque"
+    },
+    "data[2].fragment_roll.fragment_found": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "data[2].fragment_roll.fragment_chance": {
+      "valueClass": "numeric"
+    },
+    "data[2].fragment_roll.fragment_roll": {
+      "valueClass": "numeric"
+    },
+    "data[2].fragment_roll.labors_luck_uid": {
+      "valueClass": "id"
+    },
+    "data[2].fragment_roll.labors_luck_chance": {
+      "valueClass": "numeric"
+    },
+    "data[2].fragment_roll.labors_luck_roll": {
+      "valueClass": "numeric"
+    },
+    "data[2].fragment_roll.labors_luck_pool_pick": {
+      "valueClass": "opaque"
+    },
+    "data[2].fragment_roll.labors_luck_treasures_left": {
+      "valueClass": "numeric"
+    }
   },
   "status": "success",
   "data": [
     {
-      "id": 18417252,
-      "plot_id": 45,
-      "tract_id": 1,
-      "region_uid": "PR-PNW-1",
-      "site_efficiency": 0.999,
-      "region_number": 1,
-      "land_worksite_id": 130149,
-      "land_project_id": 231753,
+      "id": 18530937,
+      "plot_id": 68092,
+      "tract_id": 681,
+      "region_uid": "PR-CEF-81",
+      "site_efficiency": 1,
+      "region_number": 81,
+      "land_worksite_id": 110565,
+      "land_project_id": 197975,
       "resource_id": 5,
       "resource_symbol": "WOOD",
-      "working_pp": 6200,
-      "duration": 22.853,
-      "deed_uid": "I-291-aafc48f64a8856",
-      "claim_amount": 778.508,
-      "grain_required": 1373.005,
+      "working_pp": 18603.47,
+      "duration": 168,
+      "deed_uid": "I-296-bedd733bc7b8c5",
+      "claim_amount": 18908.566,
+      "grain_required": 31253.83,
       "claim_amount_eaten": 0,
-      "amount_received": 700.657,
+      "amount_received": 17017.709,
       "tax_burnt": 0,
-      "amount_taxed": 77.851,
-      "trx_description": "region_PR-PNW-1_harvest_all",
-      "trx_id": "a5cc07d54c3f5b6e30bf120be7f672606cecb0a6",
-      "block_num": 109653409,
-      "created_date": "2026-09-05T16:38:33.000Z",
-      "last_updated_date": "2026-09-05T16:38:33.000Z",
+      "amount_taxed": 1890.857,
+      "trx_description": "[redacted]",
+      "trx_id": "572341661a68b533b9bc8f3727db7fc83d20a9f0",
+      "block_num": 109875310,
+      "created_date": "2026-09-13T10:01:12.000Z",
+      "last_updated_date": "2026-09-13T10:01:12.000Z",
       "fragment_roll": {
         "reward_action_id": null,
         "land_work_type_id": null,
         "land_project_number": null,
-        "deed_uid": "I-291-aafc48f64a8856",
+        "deed_uid": "I-296-bedd733bc7b8c5",
         "fragment_type": null,
         "fragment_found": null,
         "fragment_chance": null,
         "fragment_roll": null,
+        "labors_luck_uid": null,
+        "labors_luck_chance": null,
+        "labors_luck_roll": null,
+        "labors_luck_pool_pick": null,
+        "labors_luck_treasures_left": null
+      }
+    },
+    {
+      "id": 8066361,
+      "plot_id": 68092,
+      "tract_id": 681,
+      "region_uid": "PR-CEF-81",
+      "site_efficiency": 1,
+      "region_number": 81,
+      "land_worksite_id": 21371,
+      "land_project_id": 55605,
+      "resource_id": 1,
+      "resource_symbol": "GRAIN",
+      "working_pp": 18603.47,
+      "duration": 100.795,
+      "deed_uid": "I-296-bedd733bc7b8c5",
+      "claim_amount": 45378.308,
+      "grain_required": 18751.368,
+      "claim_amount_eaten": 0,
+      "amount_received": 40840.477,
+      "tax_burnt": 0,
+      "amount_taxed": 4537.831,
+      "trx_description": "[redacted]",
+      "trx_id": "e5cb6ff9674e7514cdaf23173f7421a3e73255e6",
+      "block_num": 94059834,
+      "created_date": "2025-03-12T03:28:12.000Z",
+      "last_updated_date": "2025-03-12T03:28:12.000Z",
+      "fragment_roll": {
+        "reward_action_id": 55605,
+        "land_work_type_id": 10,
+        "land_project_number": 4,
+        "deed_uid": "I-296-bedd733bc7b8c5",
+        "fragment_type": null,
+        "fragment_found": false,
+        "fragment_chance": 0.01313,
+        "fragment_roll": 0.511,
+        "labors_luck_uid": null,
+        "labors_luck_chance": null,
+        "labors_luck_roll": null,
+        "labors_luck_pool_pick": null,
+        "labors_luck_treasures_left": null
+      }
+    },
+    {
+      "id": 5951237,
+      "plot_id": 68092,
+      "tract_id": 681,
+      "region_uid": "PR-CEF-81",
+      "site_efficiency": 1,
+      "region_number": 81,
+      "land_worksite_id": 21371,
+      "land_project_id": 55605,
+      "resource_id": 1,
+      "resource_symbol": "GRAIN",
+      "working_pp": 18603.47,
+      "duration": 118.132,
+      "deed_uid": "I-296-bedd733bc7b8c5",
+      "claim_amount": 53183.494,
+      "grain_required": 21976.651,
+      "claim_amount_eaten": 0,
+      "amount_received": 47865.145,
+      "tax_burnt": 0,
+      "amount_taxed": 5318.349,
+      "trx_description": "[redacted]",
+      "trx_id": "713bf2e871ea1150983af3561374f7f823eb2f56",
+      "block_num": 89735213,
+      "created_date": "2024-10-12T16:56:21.000Z",
+      "last_updated_date": "2024-10-12T16:56:21.000Z",
+      "fragment_roll": {
+        "reward_action_id": 55605,
+        "land_work_type_id": 10,
+        "land_project_number": 4,
+        "deed_uid": "I-296-bedd733bc7b8c5",
+        "fragment_type": "[redacted]",
+        "fragment_found": true,
+        "fragment_chance": 0.01538,
+        "fragment_roll": 0.014,
         "labors_luck_uid": null,
         "labors_luck_chance": null,
         "labors_luck_roll": null,

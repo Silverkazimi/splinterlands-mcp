@@ -14,9 +14,11 @@ export const PLOT_TOOL_KEYS: Readonly<Record<string, string>> = {
   land_resources_rewardactions_count: "deedUID",
 };
 
-export function plotToolSchema(schema: unknown, key: string): z.AnyZodObject {
+export function plotToolSchema(schema: unknown, key: string): z.ZodObject {
   const base = schema instanceof z.ZodObject ? schema : z.object(schema as z.ZodRawShape);
-  return base.partial({ [key]: true }).extend({
+  const field = base.shape[key];
+  return base.extend({
+    ...(field ? { [key]: field.optional() } : {}),
     plot_id: plotIdOrLabelSchema.optional(),
     deed_uid: z.string().min(1).refine(value => value.trim().length > 0).optional(),
   }).strict();

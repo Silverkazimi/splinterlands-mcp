@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:08:25.120607+00:00",
     "sourceUrl": "https://api2.splinterlands.com/guilds/contributions",
-    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "2c904dd87ba0ccd81f154a6b94cb302f838e1b128923ef03582171a425edd3a2",
+        "alternateShape": "016ad154be11fed912bf8be123fc8b96dd0ef8698b45c772fe7ab9f6024c78a0"
+      }
+    ]
   },
   "valueClasses": {
     "body[0].guild_id": {

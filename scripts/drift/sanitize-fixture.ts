@@ -1,5 +1,6 @@
 type ValueClass = "name" | "enum" | "id" | "numeric" | "timestamp" | "freetext" | "opaque";
-type Rule = { valueClass: ValueClass; values: Set<unknown> };
+type EnumValue = string | boolean | number;
+type Rule = { valueClass: ValueClass; values: Set<unknown>; allowedValues?: Set<EnumValue> };
 const classes = new Set<ValueClass>(["name", "enum", "id", "numeric", "timestamp", "freetext", "opaque"]);
 const record = (value: unknown): value is Record<string, unknown> =>
   typeof value === "object" && value !== null && !Array.isArray(value);
@@ -26,17 +27,53 @@ export function sanitizeFixture(existing: unknown, captured: unknown, observedAt
       const declaration = declarations[path];
       const valueClass = (record(declaration) ? declaration.valueClass : declaration) as ValueClass;
       if (!classes.has(valueClass)) throw new Error("Missing reviewed field classification.");
+      const allowedValues = record(declaration) ? declaration.allowedValues : undefined;
+      if (allowedValues !== undefined && (valueClass !== "enum"
+        || (value !== null && typeof value !== "string" && typeof value !== "boolean" && typeof value !== "number")
+        || !Array.isArray(allowedValues) || allowedValues.length === 0 || allowedValues.length > 128
+        || allowedValues.some(item => (typeof item !== "string" && typeof item !== "boolean" && typeof item !== "number")
+          || (typeof item === "number" && !Number.isFinite(item))
+          || (typeof item === "string" && (item.length > 128
+            || forbiddenText.some(text => text.length > 0 && item.toLowerCase().includes(text.toLowerCase()))))))) {
+        throw new Error("Invalid reviewed enum declaration.");
+      }
       const selectedRules = value === null ? nullRules : rules;
       const rule = selectedRules.get(generic);
       if (rule && rule.valueClass !== valueClass) throw new Error("Conflicting array field classifications.");
-      if (rule) rule.values.add(value);
-      else selectedRules.set(generic, { valueClass, values: new Set([value]) });
+      const current = rule ?? { valueClass, values: new Set<unknown>() };
+      current.values.add(value);
+      if (Array.isArray(allowedValues)) {
+        current.allowedValues ??= new Set<EnumValue>();
+        for (const item of allowedValues as EnumValue[]) {
+          current.values.add(item);
+          current.allowedValues.add(item);
+        }
+        if (current.allowedValues.size > 128) throw new Error("Invalid reviewed enum declaration.");
+      }
+      selectedRules.set(generic, current);
     }
   }
   review(dataOnly(existing), "");
   // Null carries no value to classify; a reviewed non-null observation determines redaction.
-  for (const [path, rule] of nullRules) if (!rules.has(path)) rules.set(path, rule);
-  const valueClasses: Record<string, { valueClass: ValueClass }> = {};
+  for (const [path, rule] of nullRules) {
+    const current = rules.get(path);
+    if (!current) rules.set(path, rule);
+    else if (rule.allowedValues) {
+      if (current.valueClass !== "enum") throw new Error("Conflicting array field classifications.");
+      current.allowedValues ??= new Set<EnumValue>();
+      for (const value of rule.allowedValues) {
+        current.allowedValues.add(value);
+        current.values.add(value);
+      }
+      if (current.allowedValues.size > 128) throw new Error("Invalid reviewed enum declaration.");
+    }
+  }
+  for (const rule of rules.values()) {
+    if (rule.allowedValues && new Set([...rule.values].filter(value => value !== null).map(value => typeof value)).size !== 1) {
+      throw new Error("Invalid reviewed enum declaration.");
+    }
+  }
+  const valueClasses: Record<string, { valueClass: ValueClass; allowedValues?: EnumValue[] }> = {};
   const names = new Map<string, string>();
   function walk(value: unknown, path: string): unknown {
     const generic = generalize(path);
@@ -55,7 +92,8 @@ export function sanitizeFixture(existing: unknown, captured: unknown, observedAt
     }
     const rule = rules.get(generic);
     if (!rule) throw new Error("Unreviewed field.");
-    valueClasses[path] = { valueClass: rule.valueClass };
+    valueClasses[path] = { valueClass: rule.valueClass,
+      ...(rule.allowedValues ? { allowedValues: [...rule.allowedValues].sort() } : {}) };
     if (value === null) return null;
     if (rule.valueClass === "name") {
       if (typeof value !== "string") throw new Error("Invalid name type.");

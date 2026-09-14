@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:33:57.822253+00:00",
     "sourceUrl": "https://api2.splinterlands.com/market/completed_status",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "captureScope": "First three root rows; nested records retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders. Account references in reviewed fields and encoded records use consistent synthetic placeholders."
   },
   "valueClasses": {
     "body.id": {
@@ -13,7 +14,7 @@
       "valueClass": "id"
     },
     "body.seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.created_date": {
       "valueClass": "timestamp"
@@ -43,7 +44,7 @@
       "valueClass": "numeric"
     },
     "body.purchaser": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.completed_date": {
       "valueClass": "timestamp"

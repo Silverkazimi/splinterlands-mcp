@@ -3,7 +3,15 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:56:13.118274+00:00",
     "sourceUrl": "https://api2.splinterlands.com/tournaments/mine",
-    "captureScope": "First three root rows or players; other nested fields retain their captured values."
+    "captureScope": "First three root rows or players; other nested fields retain their captured values.",
+    "redaction": "Name-classified fields use synthetic account placeholders. Account references in reviewed fields and encoded records use consistent synthetic placeholders.",
+    "additionalSchemaReview": "Added a synthetic numeric usd_value prize example after official response review; reviewed boolean tournament options. Existing values retained.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "cd158900f38ba364047c2abdc09b13ca8c1252a75e5b5804eac81f1aee6e2845",
+        "alternateShape": "e80ecd268ceed60b9bf35987761713bb7917e045678279a61e59794602409055"
+      }
+    ]
   },
   "valueClasses": {
     "body[0].id": {
@@ -16,7 +24,7 @@
       "valueClass": "opaque"
     },
     "body[0].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].name": {
       "valueClass": "name"
@@ -172,7 +180,7 @@
       "valueClass": "numeric"
     },
     "body[0].data.multiple_rounds": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body[0].data.spsp_min": {
       "valueClass": "numeric"
@@ -217,7 +225,7 @@
       "valueClass": "numeric"
     },
     "body[0].data.allow_player_card": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body[0].password_pub_key": {
       "valueClass": "opaque"
@@ -238,7 +246,7 @@
       "valueClass": "opaque"
     },
     "body[1].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].name": {
       "valueClass": "name"
@@ -382,7 +390,7 @@
       "valueClass": "numeric"
     },
     "body[1].data.multiple_rounds": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body[1].data.spsp_min": {
       "valueClass": "numeric"
@@ -427,7 +435,7 @@
       "valueClass": "numeric"
     },
     "body[1].data.allow_player_card": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body[1].password_pub_key": {
       "valueClass": "opaque"
@@ -448,7 +456,7 @@
       "valueClass": "opaque"
     },
     "body[2].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[2].name": {
       "valueClass": "name"
@@ -613,7 +621,7 @@
       "valueClass": "numeric"
     },
     "body[2].data.multiple_rounds": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body[2].data.spsp_min": {
       "valueClass": "numeric"
@@ -658,7 +666,7 @@
       "valueClass": "numeric"
     },
     "body[2].data.allow_player_card": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body[2].password_pub_key": {
       "valueClass": "opaque"
@@ -668,6 +676,9 @@
     },
     "body[2].cur_player_entered": {
       "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[0].items[0].usd_value": {
+      "valueClass": "numeric"
     }
   },
   "body": [
@@ -676,7 +687,7 @@
       "format": "swiss",
       "sub_format": null,
       "created_by": "sample-acct-111",
-      "name": "Mount Mox Modern Diamond Invitational",
+      "name": "sample-acct-031",
       "description": "For the most prestigious of the modern tournaments, the Order of the Scale invites the top battles mages to fight in their most prestigious arena: the magnificent Golden Arena of Mount Mox. Where legendary summoners of ages past once fought for fame and glory, today's battle mages now do the same.",
       "start_date": "2026-09-30T13:30:00.000Z",
       "status": 0,
@@ -708,7 +719,8 @@
                 {
                   "qty": 1913.6,
                   "type": "SPS",
-                  "text": ""
+                  "text": "",
+                  "usd_value": 1
                 }
               ]
             },
@@ -805,7 +817,7 @@
       "format": "swiss",
       "sub_format": null,
       "created_by": "sample-acct-111",
-      "name": "Scarred Hand Bronze Cup GF",
+      "name": "sample-acct-037",
       "description": "Hoping to entice battle mages and spectators to his Grimhand Arena in Grimdavik, Arena Master Jared Scarr's latest venture is a series of tournaments in which the participants can use only the most recent card set. Price of admission is exorbitant, but there's never an empty seat in the house.",
       "start_date": "2026-09-30T12:30:00.000Z",
       "status": 0,
@@ -928,7 +940,7 @@
       "format": "swiss",
       "sub_format": null,
       "created_by": "sample-acct-111",
-      "name": "Imperial Academy Bronze Series",
+      "name": "sample-acct-023",
       "description": "In the Imperial Academy's Drakon Crucible, located in the Gloridax Empire's capital city of Oasis, novice battle mages compete amidst the training exercises of the Dragonsguard, which include aerial maneuvers, urban warfare, long-range target practice, and mounted combat.",
       "start_date": "2026-09-30T11:30:00.000Z",
       "status": 0,

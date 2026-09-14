@@ -20,7 +20,7 @@ GitHub maintenance credentials belong only to the scheduled maintenance environm
 
 Never hardcode an account default or maintainer account in runtime code. Public account data can be used in approved read-only verification; review load before querying large accounts. Keep account-specific request recipes outside the repository and use the maintenance role secrets.
 
-Sanitize committed captures using reviewed value classifications. Preserve useful schema and numeric evidence while replacing account names and private free text. Do not copy private project notes, client configuration, personal paths, credentials or session metadata into the public tree. Synthetic account names in tests are acceptable.
+Sanitize committed captures using reviewed value classifications. Preserve useful schema and numeric evidence while replacing account names and private free text. Do not copy private project notes, client configuration, personal paths, credentials or session metadata into the public tree. Name-classified fixture fields must use synthetic placeholders beginning with sample, fixture or synthetic. Real account names belong in private verification evidence, including when the underlying API data is public.
 
 The privacy guard checks repository-relative paths and content. Full mode also checks source and fixture structure. It does not consult a private name list, and passing it is evidence only for the rules it implements. Review the actual diff and release contents as well.
 

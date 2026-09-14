@@ -982,7 +982,7 @@
         },
         "[].name": {
           "type": "string",
-          "valueClass": "enum"
+          "valueClass": "freetext"
         },
         "[].color": {
           "type": "string",
@@ -1170,7 +1170,8 @@
         "[].payment_amount": {
           "type": "number",
           "valueClass": "numeric",
-          "nullable": true
+          "nullable": true,
+          "numericEncoding": "number-or-string"
         },
         "[].payment_currency": {
           "type": "string",
@@ -1884,7 +1885,8 @@
         },
         "player.total_contribution": {
           "type": "string",
-          "valueClass": "opaque"
+          "valueClass": "numeric",
+          "numericEncoding": "number-or-string"
         }
       },
       "requiredKeyPaths": [
@@ -2314,7 +2316,8 @@
         },
         "player": {
           "type": "object",
-          "valueClass": "name"
+          "valueClass": "name",
+          "nullable": true
         },
         "stats": {
           "type": "object",
@@ -3129,19 +3132,23 @@
         },
         "tournament_data": {
           "type": "string",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "tournament_id": {
           "type": "string",
-          "valueClass": "id"
+          "valueClass": "id",
+          "nullable": true
         },
         "tournament_start_date": {
           "type": "string",
-          "valueClass": "timestamp"
+          "valueClass": "timestamp",
+          "nullable": true
         },
         "tournament_status": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         }
       },
       "requiredKeyPaths": [
@@ -5703,7 +5710,8 @@
         },
         "season_reward_info.survival_glint": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         }
       },
       "requiredKeyPaths": [
@@ -6783,7 +6791,7 @@
         },
         "[].name": {
           "type": "string",
-          "valueClass": "enum"
+          "valueClass": "freetext"
         },
         "[].type": {
           "type": "string",
@@ -6796,7 +6804,8 @@
         },
         "[].data": {
           "type": "object",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "[].transferable": {
           "type": "boolean",
@@ -6841,7 +6850,8 @@
         },
         "[].stake_type_id": {
           "type": "number",
-          "valueClass": "id"
+          "valueClass": "id",
+          "nullable": true
         }
       },
       "observedKeyPaths": [
@@ -8542,15 +8552,18 @@
         },
         "[].creator_avatar_id": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         },
         "[].creator_league": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         },
         "[].creator_modern_league": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         },
         "[].creator_title_post": {
           "type": "string",
@@ -10526,7 +10539,8 @@
       "fingerprint": {
         "[].allow_lite": {
           "type": "boolean",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "[].created_by": {
           "type": "string",
@@ -10692,7 +10706,8 @@
       "fingerprint": {
         "[].allow_lite": {
           "type": "boolean",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "[].created_by": {
           "type": "string",
@@ -17109,15 +17124,18 @@
         },
         "data[].fragment_found": {
           "type": "boolean",
-          "valueClass": "enum"
+          "valueClass": "enum",
+          "nullable": true
         },
         "data[].fragment_chance": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         },
         "data[].fragment_roll": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         },
         "data[].trx_id": {
           "type": "string",

@@ -224,8 +224,7 @@ describe("leak-check red/green guards", () => {
     }
   });
 
-  // Fixture privacy requires field classification; synthetic values are a separate publication check.
-  it("accepts a name-classed field whatever its value, but still requires the class", () => {
+  it("requires synthetic placeholders for name-classed fields and retains leaf coverage", () => {
     const root = temporaryRoot();
     const fixture = {
       provenance: { source: "synthetic", capturedAt: "2026-09-04T00:00:00Z" },
@@ -233,6 +232,8 @@ describe("leak-check red/green guards", () => {
       valueClasses: { "data.player": { valueClass: "name" } },
     };
     try {
+      writeFixture(root, { ...fixture, data: { player: "ordinary-account" } });
+      expect(runLeakCheck(root, "--full", false)).toBe(1);
       writeFixture(root, fixture);
       expect(runLeakCheck(root, "--full", false)).toBe(0);
       // The leaf-coverage rule is untouched: drop the declaration and the guard still goes red.
@@ -242,4 +243,52 @@ describe("leak-check red/green guards", () => {
       rmSync(root, { recursive: true, force: true });
     }
   });
+});
+
+it("rejects account references hidden by opaque classification or encoded JSON", () => {
+  const root = temporaryRoot();
+  const base = { provenance: { source: "synthetic", capturedAt: "2026-09-14" },
+    valueClasses: { "data.seller": { valueClass: "opaque" }, "data.details": { valueClass: "opaque" } } };
+  try {
+    for (const data of [
+      { seller: "ordinary-account", details: "{}" },
+      { seller: "sample-acct-001", details: JSON.stringify({ player_1: "ordinary-account" }) },
+      { seller: "sample-acct-001", details: JSON.stringify({ uid: "C1-1-FIXTURE-ordinary-account" }) },
+    ]) {
+      writeFixture(root, { ...base, data });
+      expect(runLeakCheck(root, "--full", false)).toBe(1);
+    }
+    writeFixture(root, { ...base, data: { seller: "sample-acct-001",
+      details: JSON.stringify({ player_1: "sample-acct-001", uid: "C1-1-FIXTURE-sample-acct-001", winner: "DRAW" }) } });
+    expect(runLeakCheck(root, "--full", false)).toBe(0);
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+it("checks account fields and nested account lists independently of leaf classifications", () => {
+  const root = temporaryRoot();
+  function fixture(data: unknown) {
+    const valueClasses: Record<string, {valueClass: string}> = {};
+    function leaves(value: unknown, path: string) {
+      if (Array.isArray(value)) value.forEach((item, index) => leaves(item, path + "[" + index + "]"));
+      else if (value !== null && typeof value === "object")
+        Object.entries(value).forEach(([key, item]) => leaves(item, path + "." + key));
+      else valueClasses[path] = {valueClass: "opaque"};
+    }
+    leaves(data, "data");
+    return {provenance: {source: "synthetic", capturedAt: "2026-09-14"}, data, valueClasses};
+  }
+  try {
+    for (const key of ["loser", "opponent_player", "voter", "market_account", "last_used_player",
+      "event_creation_whitelist", "ghost_creation_whitelist", "no_entryfee_list", "proposal_accounts", "authorities"]) {
+      for (const encoded of [false, true]) {
+        for (const [account, expected] of [["ordinary-account", 1], ["sample-acct-001", 0]] as const) {
+          const data = {[key]: key === "authorities" ? {purchase: [account]} : [account]};
+          writeFixture(root, fixture(encoded ? {details: JSON.stringify(data)} : data));
+          expect(runLeakCheck(root, "--full", false), key).toBe(expected);
+        }
+      }
+    }
+    writeFixture(root, fixture({description: "ordinary prose", unrelated: ["ordinary-value"]}));
+    expect(runLeakCheck(root, "--full", false)).toBe(0);
+  } finally { rmSync(root, {recursive: true, force: true}); }
 });

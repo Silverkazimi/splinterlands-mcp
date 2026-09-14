@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:32:11.535699+00:00",
     "sourceUrl": "https://api2.splinterlands.com/market/market_query_grouped",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "captureScope": "First three root rows; nested records retained unchanged.",
+    "redaction": " Account references in reviewed fields and encoded records use consistent synthetic placeholders."
   },
   "valueClasses": {
     "body[0].card_detail_id": {
@@ -34,7 +35,7 @@
       "valueClass": "numeric"
     },
     "body[0].result[0].seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].result[0].fee_percent": {
       "valueClass": "numeric"
@@ -73,7 +74,7 @@
       "valueClass": "timestamp"
     },
     "body[0].result[0].last_used_player": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].result[0].land_base_pp": {
       "valueClass": "opaque"
@@ -121,7 +122,7 @@
       "valueClass": "numeric"
     },
     "body[0].result[1].seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].result[1].fee_percent": {
       "valueClass": "numeric"
@@ -160,7 +161,7 @@
       "valueClass": "timestamp"
     },
     "body[0].result[1].last_used_player": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].result[1].land_base_pp": {
       "valueClass": "opaque"

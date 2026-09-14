@@ -70,13 +70,17 @@ export const FingerprintFieldSchema = z.object({
   type: JsonTypeSchema,
   valueClass: ValueClassSchema,
   nullable: z.boolean().optional(),
+  numericEncoding: z.literal("number-or-string").optional(),
 }).superRefine((field, context) => {
+  if (field.numericEncoding !== undefined && (field.valueClass !== "numeric" || !["number", "string"].includes(field.type))) {
+    context.addIssue({ code: z.ZodIssueCode.custom, message: "numericEncoding requires a numeric field with number or string type" });
+  }
   if (field.type === "null") {
     context.addIssue({ code: z.ZodIssueCode.custom, message: "type null declarations are not permitted" });
   }
 });
 
-export const FingerprintSchema = z.record(FingerprintFieldSchema).superRefine((fingerprint, context) => {
+export const FingerprintSchema = z.record(z.string(), FingerprintFieldSchema).superRefine((fingerprint, context) => {
   for (const keyPath of Object.keys(fingerprint)) {
     if (keyPath.trim() === "") {
       context.addIssue({ code: z.ZodIssueCode.custom, message: "key path must not be empty", path: [keyPath] });
