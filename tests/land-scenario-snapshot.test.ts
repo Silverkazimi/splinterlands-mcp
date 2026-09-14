@@ -11,7 +11,7 @@ import summaryFixture from "./fixtures/land-stake-deed-details-active.fixture.js
 import regionFixture from "./fixtures/land-stake-dec-region-resolved.fixture.json" with {type:"json"};
 import searchFixture from "./fixtures/land-deeds-search-limited.fixture.json" with {type:"json"};
 import definitionsFixture from "./fixtures/api-cards-get-details.fixture.json" with {type:"json"};
-import collectionFixture from "./fixtures/api-cards-collection.fixture.json" with {type:"json"};
+import collectionFixture from "./fixtures/api-cards-collection.raw.json" with {type:"json"};
 function fixtures(){
  const deed=structuredClone(deedFixture.body);Object.assign(deed.data,{deed_type:"Plains",resource_symbol:"GRAIN"});
  const uid=deed.data.deed_uid,region=deed.data.region_uid;
