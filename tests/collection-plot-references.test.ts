@@ -3,7 +3,7 @@ import {InMemoryTransport} from "@modelcontextprotocol/sdk/inMemory.js";
 import {expect,it} from "vitest";
 import {createServer} from "../src/server.js";
 import definitions from "./fixtures/api-cards-get-details.fixture.json" with {type:"json"};
-import collection from "./fixtures/api-cards-collection.fixture.json" with {type:"json"};
+import collection from "./fixtures/api-cards-collection.raw.json" with {type:"json"};
 import search from "./fixtures/land-deeds-search-limited.fixture.json" with {type:"json"};
 import deed from "./fixtures/plot-label-101.fixture.json" with {type:"json"};
 async function rig(mode="normal"){

@@ -6,7 +6,7 @@ import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { describe, expect, it } from "vitest";
 import { createServer } from "../src/server.js";
 import { indexCardDefinitions, joinCardDefinition } from "../src/card-definitions.js";
-import collection from "./fixtures/api-cards-collection.fixture.json" with { type: "json" };
+import collection from "./fixtures/api-cards-collection.raw.json" with { type: "json" };
 import definitions from "./fixtures/api-cards-get-details.fixture.json" with { type: "json" };
 
 const definitionRows = () => [

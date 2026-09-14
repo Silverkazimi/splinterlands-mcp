@@ -6,7 +6,7 @@ import { describe, expect, it } from "vitest";
 import { withCollectionStaking } from "../src/collection-staking.js";
 import { parseCardsCollection, type ProjectedCollectionCard } from "../src/cards-collection.js";
 import { collectionCardMatches } from "../src/server.js";
-import fixture from "./fixtures/api-cards-collection.fixture.json" with { type: "json" };
+import fixture from "./fixtures/api-cards-collection.raw.json" with { type: "json" };
 const at = Date.parse("2026-09-12T00:00:00Z");
 const base = fixture.body.cards[0] as ProjectedCollectionCard;
 
