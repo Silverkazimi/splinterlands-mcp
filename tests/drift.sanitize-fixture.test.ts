@@ -102,3 +102,18 @@ it("sanitizes null at reviewed container paths without admitting new fields", ()
     [{ verification: "secret", items: [] }],
   ]) expect(() => sanitizeFixture(fixture, { data }, observedAt)).toThrow();
 });
+
+it("accepts both values of reviewed boolean enums while rejecting other enum expansions", () => {
+  for (const prior of [true, false]) {
+    const fixture = { valueClasses: { flag: { valueClass: "enum" } }, flag: prior };
+    expect(sanitizeFixture(fixture, { flag: !prior }, observedAt)).toMatchObject({ flag: !prior });
+    for (const flag of ["true", "false", 0, 1, "private-name"]) {
+      expect(() => sanitizeFixture(fixture, { flag }, observedAt)).toThrow();
+    }
+  }
+  const mixed = { valueClasses: { "data[0].flag": { valueClass: "enum" }, "data[1].flag": { valueClass: "enum" } },
+    data: [{ flag: true }, { flag: "reviewed-label" }] };
+  expect(() => sanitizeFixture(mixed, { data: [{ flag: false }] }, observedAt)).toThrow();
+  const opaque = { valueClasses: { flag: { valueClass: "opaque" } }, flag: false };
+  expect(() => sanitizeFixture(opaque, { flag: true }, observedAt)).toThrow();
+});
