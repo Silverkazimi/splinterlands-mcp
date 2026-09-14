@@ -1,4 +1,5 @@
 import { classifyResponse, isEmptyResult } from "../../src/http/errors.js";
+import { avatarFixtureBody } from "./avatar-fixture.js";
 import { accountParameterNames } from "./configuration.js";
 import { fixtureIsEmpty, verifiedSample } from "./sample-state.js";
 import { bindSweepInputs, createSweepRequester } from "./request.js";
@@ -53,10 +54,13 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
     try {
       const dataKeys = Object.keys(input.existing).filter(key => key !== "provenance" && key !== "valueClasses");
       const wrapped = dataKeys.length === 1 && dataKeys[0] === "body";
-      const captured = wrapped ? { body: outcome.body } : outcome.body;
+      const avatar = input.entryId === "api.players.avatar";
+      const body = avatar ? avatarFixtureBody(input.existing, outcome.body, binding) : outcome.body;
+      const captured = wrapped ? { body } : body;
       const accountKeys = new Set(["name", "username", "player", "players", "owner", "renter", "account", "target"]);
       const forbidden = Object.entries(input.params).filter(([key, value]) => accountKeys.has(key) && typeof value === "string").map(([, value]) => String(value));
       const recaptured = sanitizeFixture(input.existing, captured, observedAt, forbidden);
+      if (avatar) recaptured.provenance.redaction += " Avatar URLs retain reviewed synthetic fixture values.";
       pairs.push({
         fixturePath: input.fixturePath, entryId: input.entryId, existing: input.existing,
         recaptured, host: binding.host, pathTemplate: binding.endpointTemplate,
