@@ -1,6 +1,6 @@
 import { spawnSync } from "node:child_process";
 import { expect, it } from "vitest";
-import { ACCOUNT_ROLES, configuredAccountRoles, resolveMaintenanceInputs } from "../scripts/drift/configuration.js";
+import { ACCOUNT_ROLES, accountParameterNames, configuredAccountRoles, resolveMaintenanceInputs } from "../scripts/drift/configuration.js";
 import { bindSweepInputs } from "../scripts/drift/request.js";
 
 const entryId = "api.battle.battle-queue";
@@ -73,3 +73,16 @@ it("validates monthly fixture bindings offline and refuses missing role secrets 
   expect(publish.status).toBe(1);
   expect(JSON.parse(publish.stdout.trim())).toMatchObject({ status: "configuration-required", missingRoles: ACCOUNT_ROLES });
 }, 45_000);
+
+it("does not require an inert account selector for a card-ID-scoped route", () => {
+  expect(accountParameterNames("api.cards.history").has("username")).toBe(false);
+  expect(bindSweepInputs([{ entryId: "api.cards.history", params: { id: "sample-card" } }])).toHaveLength(1);
+  expect(() => resolveMaintenanceInputs([{ entryId: "api.cards.history",
+    params: { id: "sample-card", username: { accountRole: "ACCOUNT_SMALL" } } }], environment)).toThrow("account selector");
+});
+
+it("distinguishes an item name filter from the profile account name", () => {
+  expect(accountParameterNames("vapi.land.stake.items-grouped").has("name")).toBe(false);
+  expect(accountParameterNames("vapi.land.stake.items-grouped").has("player")).toBe(true);
+  expect(accountParameterNames("api.players.details").has("name")).toBe(true);
+});

@@ -15,8 +15,10 @@ const configSchema = z.array(rowSchema).min(1).max(512);
 
 export function accountParameterNames(entryId: string): Set<string> {
   const entry = getCatalogueEntry(entryId);
-  const names = new Set(["name", "username", "player", "players", "owner", "renter", "account", "target"]);
+  const names = new Set(["username", "player", "players", "owner", "renter", "account", "target"]);
+  if (entryId === "api.players.details") names.add("name");
   return new Set([...entry.pathParams, ...entry.queryParams, ...(entry.observedQueryParams ?? [])]
+    .filter(parameter => !("inertUpstream" in parameter) || !parameter.inertUpstream)
     .filter(parameter => ("isPlayerName" in parameter && parameter.isPlayerName) || names.has(parameter.name))
     .map(parameter => parameter.name));
 }
