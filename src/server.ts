@@ -1627,7 +1627,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   server.registerTool(
     "player_avatar",
     {
-      description: "Resolve one player's legacy profile image link, which may be RUNI artwork and is not the avatar-builder character. Reads the official avatar endpoint once logically, inspects its HTTP 302 Location without following it, and returns avatar_url, image_url and redirect_status. Only HTTPS Splinterlands-domain image destinations are accepted. No image bytes are downloaded; the current image URL may change. A returned avatar does not prove the account exists. No credentials or game writes.",
+      description: "Resolve one player's legacy profile image link, which may be a round RUNI portrait rather than card artwork and is not the avatar-builder character. RUNI card and square artwork variants are documented in library/avatar-artwork.md; this tool resolves only the selected profile link. Reads the official avatar endpoint once logically, inspects its HTTP 302 Location without following it, and returns avatar_url, image_url and redirect_status. Only HTTPS Splinterlands-domain image destinations are accepted. No image bytes are downloaded; the current image URL may change. A returned avatar does not prove the account exists. No credentials or game writes.",
       inputSchema: inputSchemaFor("api.players.avatar"),
     },
     async (params) => {
