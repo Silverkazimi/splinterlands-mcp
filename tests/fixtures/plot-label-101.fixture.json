@@ -34,7 +34,7 @@
       "valueClass": "opaque"
     },
     "body.data.region_uid": {
-      "valueClass": "opaque"
+      "valueClass": "id"
     },
     "body.data.resource_id": {
       "valueClass": "numeric"
@@ -49,13 +49,13 @@
       "valueClass": "opaque"
     },
     "body.data.deed_uid": {
-      "valueClass": "opaque"
+      "valueClass": "id"
     },
     "body.data.player": {
       "valueClass": "name"
     },
     "body.data.created_date": {
-      "valueClass": "opaque"
+      "valueClass": "timestamp"
     },
     "body.data.listed": {
       "valueClass": "opaque"
@@ -109,7 +109,7 @@
       "valueClass": "opaque"
     },
     "body.data.tax_rate": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.data.item_detail_id": {
       "valueClass": "numeric"
@@ -118,7 +118,7 @@
       "valueClass": "numeric"
     },
     "body.data.created_tx": {
-      "valueClass": "opaque"
+      "valueClass": "id"
     },
     "body.data.worksite_type": {
       "valueClass": "opaque"

@@ -34,7 +34,7 @@
       "valueClass": "opaque"
     },
     "body.data.region_uid": {
-      "valueClass": "opaque"
+      "valueClass": "id"
     },
     "body.data.region_name": {
       "valueClass": "opaque"
@@ -52,13 +52,13 @@
       "valueClass": "opaque"
     },
     "body.data.deed_uid": {
-      "valueClass": "opaque"
+      "valueClass": "id"
     },
     "body.data.player": {
       "valueClass": "name"
     },
     "body.data.created_date": {
-      "valueClass": "opaque"
+      "valueClass": "timestamp"
     },
     "body.data.listed": {
       "valueClass": "opaque"
@@ -67,7 +67,7 @@
       "valueClass": "numeric"
     },
     "body.data.unlock_date": {
-      "valueClass": "opaque"
+      "valueClass": "timestamp"
     },
     "body.data.in_use": {
       "valueClass": "opaque"
@@ -79,19 +79,19 @@
       "valueClass": "opaque"
     },
     "body.data.market_updated_date": {
-      "valueClass": "opaque"
+      "valueClass": "timestamp"
     },
     "body.data.market_id": {
-      "valueClass": "opaque"
+      "valueClass": "id"
     },
     "body.data.listing_price": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.data.market_listing_id": {
-      "valueClass": "opaque"
+      "valueClass": "id"
     },
     "body.data.market_listing_status_id": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.data.castle": {
       "valueClass": "opaque"
@@ -118,7 +118,7 @@
       "valueClass": "numeric"
     },
     "body.data.created_tx": {
-      "valueClass": "opaque"
+      "valueClass": "id"
     },
     "body.data.time_crystal_value": {
       "valueClass": "numeric"

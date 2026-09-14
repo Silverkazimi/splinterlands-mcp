@@ -22,7 +22,7 @@
       "valueClass": "numeric"
     },
     "body[0].alpha_xp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].buy_price": {
       "valueClass": "numeric"
@@ -109,7 +109,7 @@
       "valueClass": "numeric"
     },
     "body[1].alpha_xp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].buy_price": {
       "valueClass": "numeric"
