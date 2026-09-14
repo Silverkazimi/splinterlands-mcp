@@ -678,5 +678,8 @@
   },
   "power-core-grouped.fixture.json": {
     "entryId": "vapi.land.stake.items-grouped"
+  },
+  "player-avatar.fixture.json": {
+    "entryId": "api.players.avatar"
   }
 }

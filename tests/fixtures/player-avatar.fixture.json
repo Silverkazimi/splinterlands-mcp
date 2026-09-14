@@ -1,0 +1,25 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-14T07:13:36.769436+00:00",
+    "sourceUrl": "https://api.splinterlands.com/players/avatar/{name}",
+    "captureScope": "JSON projection of HTTP 302 Location; both URLs replaced with synthetic fixture values. No image downloaded.",
+    "upstreamStatus": 302
+  },
+  "valueClasses": {
+    "body.avatar_url": {
+      "valueClass": "id"
+    },
+    "body.image_url": {
+      "valueClass": "id"
+    },
+    "body.redirect_status": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "avatar_url": "https://api.splinterlands.com/players/avatar/fixture-account",
+    "image_url": "https://runi.splinterlands.com/avatars/1000.png",
+    "redirect_status": 302
+  }
+}
