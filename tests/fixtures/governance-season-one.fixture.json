@@ -19,19 +19,19 @@
       "valueClass": "opaque"
     },
     "body.reset_block_num": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.card_detail_id": {
       "valueClass": "numeric"
     },
     "body.card_amount": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.card_guaranteed_chances": {
       "valueClass": "numeric"
     },
     "body.cards_awarded": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.card_chance_per_entry": {
       "valueClass": "opaque"
@@ -43,7 +43,7 @@
       "valueClass": "opaque"
     },
     "body.alchemy_potions_to_boost": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.card_black_chance": {
       "valueClass": "opaque"
@@ -52,13 +52,13 @@
       "valueClass": "opaque"
     },
     "body.midnight_potions_to_boost": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.cards_to_guarantee_one_gold": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.cards_to_guarantee_one_gold_full_potions": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.voucher_cost_to_boost": {
       "valueClass": "opaque"
