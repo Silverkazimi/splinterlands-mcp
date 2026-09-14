@@ -256,6 +256,7 @@ describe("endpoint catalogue guards", () => {
       "/players/dec",
       "/players/energy_purchase_information",
       "/players/avatar/{name}",
+      "/players/player_avatar/{name}",
     ]));
     const entry = catalogue[0];
     expect(entry).toBeDefined();

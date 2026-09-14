@@ -5287,7 +5287,7 @@
       ]
     },
     "owningTool": "player_avatar",
-    "notes": "Measured HTTP 302 redirects to an avatar image. The tool inspects Location without following it and projects avatar_url, image_url and redirect_status into JSON; this contract describes that projection, not an upstream JSON body. Only HTTPS Splinterlands-domain destinations are accepted; credentials, non-default ports and fragments are rejected. No image bytes are fetched. An avatar response does not prove account existence.",
+    "notes": "Legacy profile image redirect; may return a RUNI image, not the avatar-builder character. Measured HTTP 302 redirects to an avatar image. The tool inspects Location without following it and projects avatar_url, image_url and redirect_status into JSON; this contract describes that projection, not an upstream JSON body. Only HTTPS Splinterlands-domain destinations are accepted; credentials, non-default ports and fragments are rejected. No image bytes are fetched. An avatar response does not prove account existence.",
     "provenance": {
       "source": "live-observation",
       "sourceUrl": "https://api.splinterlands.com/players/avatar/{name}",
@@ -5718,6 +5718,233 @@
       "specHash": null,
       "specFetchedAt": null,
       "observedAt": "2026-09-08T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.players.custom-avatar",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/players/player_avatar/{name}",
+    "pathParams": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "isPlayerName": true
+      }
+    ],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-14T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "race": {
+          "type": "string",
+          "valueClass": "enum"
+        },
+        "background": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "color": {
+          "type": "string",
+          "valueClass": "enum"
+        },
+        "level": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "frame": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "gender": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "body": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "face": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "nose": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "ears": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "skin_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "hair": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "eyebrows": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mustache": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "beard": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "hair_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "eyes": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "eyes_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mouth": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "complexion": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "scars": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "outfit": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "outfit_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "cloth": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "cloth_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "tattoo": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "accessory": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "accessory_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "hat": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "hat_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "earrings": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "earrings_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial1": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial1_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial2": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial2_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial3": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial3_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial4": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial4_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial5": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "racial5_color": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "badges[]": {
+          "type": "string",
+          "valueClass": "enum"
+        },
+        "is_saved": {
+          "type": "boolean",
+          "valueClass": "enum"
+        },
+        "avatar_resets": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "player_card_resets": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "requiredKeyPaths": [
+        "level"
+      ],
+      "predicateId": "players.custom-avatar"
+    },
+    "owningTool": "player_custom_avatar",
+    "notes": "Public avatar-builder customization data from the endpoint used by the official client. Level is returned as numeric metadata; it must not be painted onto avatar artwork automatically. Returns data only, not a rendered image. Distinct from the legacy /players/avatar redirect, which may return RUNI artwork. One populated account observed; required level is a conservative tool requirement, not a claim that every account has an avatar. Present captured fields are type-checked; missing cosmetic fields and an empty badge list are accepted. Level must be a non-negative integer.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": "https://api.splinterlands.com/players/player_avatar/{name}",
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-14T00:00:00Z"
     }
   },
   {

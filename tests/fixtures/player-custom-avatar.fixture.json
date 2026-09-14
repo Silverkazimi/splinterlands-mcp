@@ -1,0 +1,210 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-14T00:00:00Z",
+    "sourceUrl": "https://api.splinterlands.com/players/player_avatar/{name}",
+    "captureScope": "Observed custom-avatar response shape; appearance selections, level and reset counts replaced with synthetic values. No image or account identifier included."
+  },
+  "valueClasses": {
+    "body.race": {
+      "valueClass": "enum"
+    },
+    "body.background": {
+      "valueClass": "numeric"
+    },
+    "body.color": {
+      "valueClass": "enum"
+    },
+    "body.level": {
+      "valueClass": "numeric"
+    },
+    "body.frame": {
+      "valueClass": "numeric"
+    },
+    "body.gender": {
+      "valueClass": "numeric"
+    },
+    "body.body": {
+      "valueClass": "numeric"
+    },
+    "body.face": {
+      "valueClass": "numeric"
+    },
+    "body.nose": {
+      "valueClass": "numeric"
+    },
+    "body.ears": {
+      "valueClass": "numeric"
+    },
+    "body.skin_color": {
+      "valueClass": "numeric"
+    },
+    "body.hair": {
+      "valueClass": "numeric"
+    },
+    "body.eyebrows": {
+      "valueClass": "numeric"
+    },
+    "body.mustache": {
+      "valueClass": "numeric"
+    },
+    "body.beard": {
+      "valueClass": "numeric"
+    },
+    "body.hair_color": {
+      "valueClass": "numeric"
+    },
+    "body.eyes": {
+      "valueClass": "numeric"
+    },
+    "body.eyes_color": {
+      "valueClass": "numeric"
+    },
+    "body.mouth": {
+      "valueClass": "numeric"
+    },
+    "body.complexion": {
+      "valueClass": "numeric"
+    },
+    "body.scars": {
+      "valueClass": "numeric"
+    },
+    "body.outfit": {
+      "valueClass": "numeric"
+    },
+    "body.outfit_color": {
+      "valueClass": "numeric"
+    },
+    "body.cloth": {
+      "valueClass": "numeric"
+    },
+    "body.cloth_color": {
+      "valueClass": "numeric"
+    },
+    "body.tattoo": {
+      "valueClass": "numeric"
+    },
+    "body.accessory": {
+      "valueClass": "numeric"
+    },
+    "body.accessory_color": {
+      "valueClass": "numeric"
+    },
+    "body.hat": {
+      "valueClass": "numeric"
+    },
+    "body.hat_color": {
+      "valueClass": "numeric"
+    },
+    "body.earrings": {
+      "valueClass": "numeric"
+    },
+    "body.earrings_color": {
+      "valueClass": "numeric"
+    },
+    "body.racial1": {
+      "valueClass": "numeric"
+    },
+    "body.racial1_color": {
+      "valueClass": "numeric"
+    },
+    "body.racial2": {
+      "valueClass": "numeric"
+    },
+    "body.racial2_color": {
+      "valueClass": "numeric"
+    },
+    "body.racial3": {
+      "valueClass": "numeric"
+    },
+    "body.racial3_color": {
+      "valueClass": "numeric"
+    },
+    "body.racial4": {
+      "valueClass": "numeric"
+    },
+    "body.racial4_color": {
+      "valueClass": "numeric"
+    },
+    "body.racial5": {
+      "valueClass": "numeric"
+    },
+    "body.racial5_color": {
+      "valueClass": "numeric"
+    },
+    "body.is_saved": {
+      "valueClass": "enum"
+    },
+    "body.avatar_resets": {
+      "valueClass": "numeric"
+    },
+    "body.player_card_resets": {
+      "valueClass": "numeric"
+    },
+    "body.badges[0]": {
+      "valueClass": "enum"
+    },
+    "body.badges[1]": {
+      "valueClass": "enum"
+    },
+    "body.badges[2]": {
+      "valueClass": "enum"
+    },
+    "body.badges[3]": {
+      "valueClass": "enum"
+    }
+  },
+  "body": {
+    "race": "orc",
+    "background": 1,
+    "color": "White",
+    "level": 1,
+    "frame": 1,
+    "gender": 1,
+    "body": 1,
+    "face": 1,
+    "nose": 1,
+    "ears": 1,
+    "skin_color": 1,
+    "hair": 1,
+    "eyebrows": 1,
+    "mustache": 1,
+    "beard": 1,
+    "hair_color": 1,
+    "eyes": 1,
+    "eyes_color": 1,
+    "mouth": 1,
+    "complexion": 1,
+    "scars": 1,
+    "outfit": 1,
+    "outfit_color": 1,
+    "cloth": 1,
+    "cloth_color": 1,
+    "tattoo": 1,
+    "accessory": 1,
+    "accessory_color": 1,
+    "hat": 1,
+    "hat_color": 1,
+    "earrings": 1,
+    "earrings_color": 1,
+    "racial1": 1,
+    "racial1_color": 1,
+    "racial2": 1,
+    "racial2_color": 1,
+    "racial3": 1,
+    "racial3_color": 1,
+    "racial4": 1,
+    "racial4_color": 1,
+    "racial5": 1,
+    "racial5_color": 1,
+    "badges": [
+      "year_joined",
+      "shard_holder",
+      "card_collection",
+      "land_baron"
+    ],
+    "is_saved": true,
+    "avatar_resets": 1,
+    "player_card_resets": 1
+  }
+}
