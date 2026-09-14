@@ -85,6 +85,7 @@ export const fixedPatterns: Pattern[] = [
 
 const allowedRuntimeDependencies = new Set([
   "@modelcontextprotocol/sdk",
+  "sharp",
   "zod",
 ]);
 
