@@ -12,7 +12,7 @@ export const HIVE_TOOL_ROUTES: Record<string, string> = {
 };
 const account = z.string().min(3).max(16).regex(/^[a-z][a-z0-9.-]+[a-z0-9]$/);
 const trxId = z.string().regex(/^[a-fA-F0-9]{40}$/).transform((v) => v.toLowerCase());
-const object = z.record(z.unknown());
+const object = z.record(z.string(), z.unknown());
 const operation = z.tuple([z.string(), object]);
 const historyRow = z.tuple([z.number().int().nonnegative(), z.object({
   op: operation, trx_id: trxId, block: z.number().int().nonnegative(),

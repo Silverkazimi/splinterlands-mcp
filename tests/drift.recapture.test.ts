@@ -6,20 +6,20 @@ import { TOOL_ENTRY_IDS } from "../src/server.js";
 const entryId = (TOOL_ENTRY_IDS as Record<string, string>).game_last_block!;
 const input = (suffix: string): RecaptureInput => ({
   fixturePath: "tests/fixtures/capture-" + suffix + ".fixture.json", entryId, params: {},
-  existing: { valueClasses: { "body.height": { valueClass: "numeric" } }, body: { height: 1 } },
+  existing: { valueClasses: { "body.last_block": { valueClass: "numeric" } }, body: { last_block: 1 } },
 });
 it("prepares a sanitized renewal without retaining raw response content", async () => {
   const result = await recaptureFixtures([input("with_underscore")],
-    async () => ({ status: 200, isJson: true, body: { height: 2 } }));
+    async () => ({ status: 200, isJson: true, body: { last_block: 2 } }));
   expect(result.plan.writes).toHaveLength(1);
   expect(result.plan.writes[0]!.path).toBe("tests/fixtures/capture-with_underscore.fixture.json");
-  expect(JSON.parse(result.plan.writes[0]!.contents).body).toEqual({ height: 2 });
+  expect(JSON.parse(result.plan.writes[0]!.contents).body).toEqual({ last_block: 2 });
   expect(result.failed).toEqual([]);
 });
 it("counts unreadable captures in the hold floor and suppresses all writes", async () => {
   let calls = 0;
   const result = await recaptureFixtures([input("a"), input("b")], async () =>
-    ++calls === 1 ? { status: 200, isJson: true, body: { height: 2 } }
+    ++calls === 1 ? { status: 200, isJson: true, body: { last_block: 2 } }
       : { status: 500, isJson: false, body: "private failure" });
   expect(result.plan.holdFraction).toBe(0.5);
   expect(result.plan.blockedByHoldFloor).toBe(true);
@@ -93,4 +93,40 @@ it("rejects a mismatched asset scenario before any batch request", async () => {
   const correct = await recaptureFixtures([{ ...input, params: { assetName: "AVATARS" } }], request);
   expect(correct.failed).toEqual([]);
   expect(reads).toBe(1);
+});
+
+it("holds a small response whose expanded fixture exceeds the loader limit", async () => {
+  const existing = JSON.parse(readFileSync(new URL("./fixtures/api-cards-get-details.fixture.json", import.meta.url), "utf8"));
+  delete existing.provenance.fixtureSample;
+  const result = await recaptureFixtures([{
+    fixturePath: "tests/fixtures/sample.fixture.json", entryId: "api.cards.get-details", params: {},
+    existing,
+  }], async () => ({ status: 200, isJson: true, body: Array.from({ length: 1000 }, (_, id) => ({ ...existing.body[0], id: id + 1 })) }));
+  expect(result.failed).toEqual([{ fixturePath: "tests/fixtures/sample.fixture.json", reason: "review" }]);
+  expect(result.plan.blockedByHoldFloor).toBe(true);
+  expect(result.plan.writes).toEqual([]);
+  expect(result.plan.pendingWrites).toEqual([]);
+});
+
+it("holds contract-invalid responses even when their reviewed scalar class accepts them", async () => {
+  const candidate = input("invalid_contract");
+  candidate.existing = { body: { last_block: 1 }, valueClasses: { "body.last_block": { valueClass: "numeric" } } };
+  const result = await recaptureFixtures([candidate], async () => ({
+    status: 200, isJson: true, body: { last_block: "2" },
+  }));
+  expect(result.failed).toEqual([{ fixturePath: candidate.fixturePath, reason: "review" }]);
+  expect(result.plan.writes).toEqual([]);
+  expect(result.plan.pendingWrites).toEqual([]);
+});
+
+it("holds fixtures when redaction corrupts a valid response envelope", async () => {
+  const existing = JSON.parse(readFileSync(new URL("./fixtures/vapi-market-meta-avatars.fixture.json", import.meta.url), "utf8"));
+  existing.valueClasses["body.status"] = { valueClass: "opaque" };
+  const result = await recaptureFixtures([{
+    fixturePath: "tests/fixtures/vapi-market-meta-avatars.fixture.json",
+    entryId: "vapi.market.meta.asset", params: { assetName: "AVATARS" }, existing,
+  }], async () => ({ status: 200, isJson: true, body: existing.body }));
+  expect(result.failed).toHaveLength(1);
+  expect(result.plan.writes).toEqual([]);
+  expect(result.plan.pendingWrites).toEqual([]);
 });

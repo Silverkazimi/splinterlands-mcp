@@ -4,7 +4,7 @@
     "observedAt": "2026-09-12T14:34:28.989304+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/rentals/player/{player}",
     "captureScope": "Complete single-row response; values unchanged.",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained. Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.status": {

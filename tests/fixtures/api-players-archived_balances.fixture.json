@@ -1,16 +1,34 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T07:47:47.522050+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/archived_balances",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
   },
   "valueClasses": {
     "body[0].player": {
       "valueClass": "name"
     },
     "body[0].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
     },
     "body[0].balance": {
       "valueClass": "numeric"
@@ -22,7 +40,25 @@
       "valueClass": "name"
     },
     "body[1].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
     },
     "body[1].balance": {
       "valueClass": "numeric"
@@ -34,33 +70,491 @@
       "valueClass": "name"
     },
     "body[2].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
     },
     "body[2].balance": {
       "valueClass": "numeric"
     },
     "body[2].last_update_date": {
       "valueClass": "timestamp"
+    },
+    "body[3].player": {
+      "valueClass": "name"
+    },
+    "body[3].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[3].balance": {
+      "valueClass": "numeric"
+    },
+    "body[3].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].player": {
+      "valueClass": "name"
+    },
+    "body[4].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[4].balance": {
+      "valueClass": "numeric"
+    },
+    "body[4].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].player": {
+      "valueClass": "name"
+    },
+    "body[5].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[5].balance": {
+      "valueClass": "numeric"
+    },
+    "body[5].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].player": {
+      "valueClass": "name"
+    },
+    "body[6].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[6].balance": {
+      "valueClass": "numeric"
+    },
+    "body[6].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].player": {
+      "valueClass": "name"
+    },
+    "body[7].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[7].balance": {
+      "valueClass": "numeric"
+    },
+    "body[7].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].player": {
+      "valueClass": "name"
+    },
+    "body[8].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[8].balance": {
+      "valueClass": "numeric"
+    },
+    "body[8].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body[9].player": {
+      "valueClass": "name"
+    },
+    "body[9].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[9].balance": {
+      "valueClass": "numeric"
+    },
+    "body[10].player": {
+      "valueClass": "name"
+    },
+    "body[10].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[10].balance": {
+      "valueClass": "numeric"
+    },
+    "body[11].player": {
+      "valueClass": "name"
+    },
+    "body[11].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[11].balance": {
+      "valueClass": "numeric"
+    },
+    "body[12].player": {
+      "valueClass": "name"
+    },
+    "body[12].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[12].balance": {
+      "valueClass": "numeric"
+    },
+    "body[13].player": {
+      "valueClass": "name"
+    },
+    "body[13].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[13].balance": {
+      "valueClass": "numeric"
+    },
+    "body[14].player": {
+      "valueClass": "name"
+    },
+    "body[14].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[14].balance": {
+      "valueClass": "numeric"
+    },
+    "body[15].player": {
+      "valueClass": "name"
+    },
+    "body[15].token": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ACTIVATED_LICENSE",
+        "EOY_PROMO_2022",
+        "EOY_PROMO_2022_GOLD",
+        "LICENSE",
+        "LUX_VEGA_GENERAL",
+        "MYSTERY",
+        "QUEST",
+        "RAFFLE",
+        "RUNNING_LICENSE",
+        "SPS",
+        "SPSP",
+        "SPSP-IN",
+        "SPSP-OUT",
+        "SPS_DAO_PROMO_CARD",
+        "SPS_DAO_PROMO_CARD_G",
+        "VOUCHER-G"
+      ]
+    },
+    "body[15].balance": {
+      "valueClass": "numeric"
     }
   },
   "body": [
     {
-      "player": "sample-acct-100",
+      "player": "sample-account-1",
       "token": "EOY_PROMO_2022",
-      "balance": 3920,
-      "last_update_date": "2022-12-22T13:24:33.007Z"
+      "balance": 155,
+      "last_update_date": "2023-01-12T20:18:48.250Z"
     },
     {
-      "player": "sample-acct-100",
+      "player": "sample-account-1",
       "token": "EOY_PROMO_2022_GOLD",
-      "balance": 80,
-      "last_update_date": "2022-12-22T13:24:33.007Z"
+      "balance": 2,
+      "last_update_date": "2023-01-12T20:18:26.913Z"
     },
     {
-      "player": "sample-acct-100",
+      "player": "sample-account-1",
       "token": "LUX_VEGA_GENERAL",
-      "balance": 2,
-      "last_update_date": "2022-11-15T21:00:31.242Z"
+      "balance": 1,
+      "last_update_date": "2022-11-15T21:00:09.282Z"
+    },
+    {
+      "player": "sample-account-1",
+      "token": "MYSTERY",
+      "balance": 0,
+      "last_update_date": null
+    },
+    {
+      "player": "sample-account-1",
+      "token": "QUEST",
+      "balance": 0,
+      "last_update_date": null
+    },
+    {
+      "player": "sample-account-1",
+      "token": "RAFFLE",
+      "balance": 142,
+      "last_update_date": null
+    },
+    {
+      "player": "sample-account-1",
+      "token": "SPS_DAO_PROMO_CARD",
+      "balance": 45,
+      "last_update_date": "2023-03-21T17:13:06.208Z"
+    },
+    {
+      "player": "sample-account-1",
+      "token": "SPS_DAO_PROMO_CARD_G",
+      "balance": 5,
+      "last_update_date": "2023-03-21T17:13:06.208Z"
+    },
+    {
+      "player": "sample-account-1",
+      "token": "VOUCHER-G",
+      "balance": 0,
+      "last_update_date": "2024-08-13T23:07:50.329Z"
+    },
+    {
+      "player": "sample-account-1",
+      "token": "ACTIVATED_LICENSE",
+      "balance": 2
+    },
+    {
+      "player": "sample-account-1",
+      "token": "LICENSE",
+      "balance": 0
+    },
+    {
+      "player": "sample-account-1",
+      "token": "RUNNING_LICENSE",
+      "balance": 2
+    },
+    {
+      "player": "sample-account-1",
+      "token": "SPS",
+      "balance": 235.855
+    },
+    {
+      "player": "sample-account-1",
+      "token": "SPSP",
+      "balance": 72196.977
+    },
+    {
+      "player": "sample-account-1",
+      "token": "SPSP-IN",
+      "balance": 150000
+    },
+    {
+      "player": "sample-account-1",
+      "token": "SPSP-OUT",
+      "balance": 0
     }
   ]
 }

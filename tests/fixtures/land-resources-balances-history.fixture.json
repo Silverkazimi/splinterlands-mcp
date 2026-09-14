@@ -2,7 +2,8 @@
   "provenance": {
     "source": "live-observation",
     "observedAt": "2026-09-08T00:00:00Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained. Name-classified fields use synthetic account placeholders.",
+    "additionalSchemaReview": "Reviewed AURA token in the bounded 2026-09-14 resource-history capture. Counterparty strings are synthetic names rather than a closed enum."
   },
   "valueClasses": {
     "status": {
@@ -42,7 +43,11 @@
       "valueClass": "name"
     },
     "data[0].balance_history[0].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[0].balance_history[0].amount": {
       "valueClass": "numeric"
@@ -66,7 +71,7 @@
       "valueClass": "timestamp"
     },
     "data[0].balance_history[0].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[0].balance_history[0].last_update_date": {
       "valueClass": "timestamp"
@@ -75,7 +80,11 @@
       "valueClass": "name"
     },
     "data[0].balance_history[1].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[0].balance_history[1].amount": {
       "valueClass": "numeric"
@@ -99,7 +108,7 @@
       "valueClass": "timestamp"
     },
     "data[0].balance_history[1].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[0].balance_history[1].last_update_date": {
       "valueClass": "timestamp"
@@ -108,7 +117,11 @@
       "valueClass": "name"
     },
     "data[0].balance_history[2].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[0].balance_history[2].amount": {
       "valueClass": "numeric"
@@ -132,7 +145,7 @@
       "valueClass": "timestamp"
     },
     "data[0].balance_history[2].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[0].balance_history[2].last_update_date": {
       "valueClass": "timestamp"
@@ -141,7 +154,11 @@
       "valueClass": "name"
     },
     "data[0].balance_history[3].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[0].balance_history[3].amount": {
       "valueClass": "numeric"
@@ -165,7 +182,7 @@
       "valueClass": "timestamp"
     },
     "data[0].balance_history[3].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[0].balance_history[3].last_update_date": {
       "valueClass": "timestamp"
@@ -174,7 +191,11 @@
       "valueClass": "name"
     },
     "data[0].balance_history[4].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[0].balance_history[4].amount": {
       "valueClass": "numeric"
@@ -198,7 +219,7 @@
       "valueClass": "timestamp"
     },
     "data[0].balance_history[4].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[0].balance_history[4].last_update_date": {
       "valueClass": "timestamp"
@@ -207,7 +228,11 @@
       "valueClass": "name"
     },
     "data[0].balance_history[5].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[0].balance_history[5].amount": {
       "valueClass": "numeric"
@@ -231,7 +256,7 @@
       "valueClass": "timestamp"
     },
     "data[0].balance_history[5].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[0].balance_history[5].last_update_date": {
       "valueClass": "timestamp"
@@ -240,7 +265,11 @@
       "valueClass": "name"
     },
     "data[0].balance_history[6].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[0].balance_history[6].amount": {
       "valueClass": "numeric"
@@ -264,7 +293,7 @@
       "valueClass": "timestamp"
     },
     "data[0].balance_history[6].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[0].balance_history[6].last_update_date": {
       "valueClass": "timestamp"
@@ -273,7 +302,11 @@
       "valueClass": "name"
     },
     "data[0].balance_history[7].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[0].balance_history[7].amount": {
       "valueClass": "numeric"
@@ -297,13 +330,13 @@
       "valueClass": "timestamp"
     },
     "data[0].balance_history[7].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[0].balance_history[7].last_update_date": {
       "valueClass": "timestamp"
     },
     "data[0].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[1].id": {
       "valueClass": "id"
@@ -339,7 +372,11 @@
       "valueClass": "name"
     },
     "data[1].balance_history[0].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[1].balance_history[0].amount": {
       "valueClass": "numeric"
@@ -363,7 +400,7 @@
       "valueClass": "timestamp"
     },
     "data[1].balance_history[0].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[1].balance_history[0].last_update_date": {
       "valueClass": "timestamp"
@@ -372,7 +409,11 @@
       "valueClass": "name"
     },
     "data[1].balance_history[1].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[1].balance_history[1].amount": {
       "valueClass": "numeric"
@@ -396,7 +437,7 @@
       "valueClass": "timestamp"
     },
     "data[1].balance_history[1].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[1].balance_history[1].last_update_date": {
       "valueClass": "timestamp"
@@ -405,7 +446,11 @@
       "valueClass": "name"
     },
     "data[1].balance_history[2].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[1].balance_history[2].amount": {
       "valueClass": "numeric"
@@ -429,7 +474,7 @@
       "valueClass": "timestamp"
     },
     "data[1].balance_history[2].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[1].balance_history[2].last_update_date": {
       "valueClass": "timestamp"
@@ -438,7 +483,11 @@
       "valueClass": "name"
     },
     "data[1].balance_history[3].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[1].balance_history[3].amount": {
       "valueClass": "numeric"
@@ -462,7 +511,7 @@
       "valueClass": "timestamp"
     },
     "data[1].balance_history[3].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[1].balance_history[3].last_update_date": {
       "valueClass": "timestamp"
@@ -471,7 +520,11 @@
       "valueClass": "name"
     },
     "data[1].balance_history[4].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[1].balance_history[4].amount": {
       "valueClass": "numeric"
@@ -495,7 +548,7 @@
       "valueClass": "timestamp"
     },
     "data[1].balance_history[4].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[1].balance_history[4].last_update_date": {
       "valueClass": "timestamp"
@@ -504,7 +557,11 @@
       "valueClass": "name"
     },
     "data[1].balance_history[5].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[1].balance_history[5].amount": {
       "valueClass": "numeric"
@@ -528,7 +585,7 @@
       "valueClass": "timestamp"
     },
     "data[1].balance_history[5].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[1].balance_history[5].last_update_date": {
       "valueClass": "timestamp"
@@ -537,7 +594,11 @@
       "valueClass": "name"
     },
     "data[1].balance_history[6].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[1].balance_history[6].amount": {
       "valueClass": "numeric"
@@ -561,7 +622,7 @@
       "valueClass": "timestamp"
     },
     "data[1].balance_history[6].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[1].balance_history[6].last_update_date": {
       "valueClass": "timestamp"
@@ -570,7 +631,11 @@
       "valueClass": "name"
     },
     "data[1].balance_history[7].token": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "AURA",
+        "WOOD"
+      ]
     },
     "data[1].balance_history[7].amount": {
       "valueClass": "numeric"
@@ -594,13 +659,13 @@
       "valueClass": "timestamp"
     },
     "data[1].balance_history[7].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     },
     "data[1].balance_history[7].last_update_date": {
       "valueClass": "timestamp"
     },
     "data[1].counterparty": {
-      "valueClass": "enum"
+      "valueClass": "name"
     }
   },
   "status": "success",
@@ -617,7 +682,7 @@
       "created_date": "2026-08-31T11:42:45.000Z",
       "balance_history": [
         {
-          "player": "$LAND_WOOD_MINT",
+          "player": "sample-acct-006",
           "token": "WOOD",
           "amount": -16332.706,
           "balance_start": -9671804455.785,
@@ -626,11 +691,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_player_resource_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_PLAYER_SHARE_CLAIMED",
+          "counterparty": "sample-counterparty-1",
           "last_update_date": "2026-08-31T11:42:48.761Z"
         },
         {
-          "player": "$LAND_PLAYER_SHARE_CLAIMED",
+          "player": "sample-acct-002",
           "token": "WOOD",
           "amount": 16332.706,
           "balance_start": 9211616999.218,
@@ -639,11 +704,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_player_resource_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_WOOD_MINT",
+          "counterparty": "sample-counterparty-2",
           "last_update_date": "2026-08-31T11:42:48.761Z"
         },
         {
-          "player": "$LAND_WOOD_MINT",
+          "player": "sample-acct-006",
           "token": "WOOD",
           "amount": -655.123,
           "balance_start": -9671820788.491,
@@ -652,11 +717,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_uncaptured_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_TAXES_BURNED",
+          "counterparty": "sample-counterparty-3",
           "last_update_date": "2026-08-31T11:42:48.761Z"
         },
         {
-          "player": "$LAND_TAXES_BURNED",
+          "player": "sample-acct-005",
           "token": "WOOD",
           "amount": 655.123,
           "balance_start": 436381827.205,
@@ -665,11 +730,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_uncaptured_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_WOOD_MINT",
+          "counterparty": "sample-counterparty-2",
           "last_update_date": "2026-08-31T11:42:48.761Z"
         },
         {
-          "player": "$LAND_WOOD_MINT",
+          "player": "sample-acct-006",
           "token": "WOOD",
           "amount": -350.246,
           "balance_start": -9671821443.614,
@@ -678,11 +743,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_resource_castle_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_REGION-41",
+          "counterparty": "sample-counterparty-4",
           "last_update_date": "2026-08-31T11:42:48.764Z"
         },
         {
-          "player": "$LAND_REGION-41",
+          "player": "sample-acct-003",
           "token": "WOOD",
           "amount": 350.246,
           "balance_start": 10823.251,
@@ -691,11 +756,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_resource_castle_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_WOOD_MINT",
+          "counterparty": "sample-counterparty-2",
           "last_update_date": "2026-08-31T11:42:48.764Z"
         },
         {
-          "player": "$LAND_WOOD_MINT",
+          "player": "sample-acct-006",
           "token": "WOOD",
           "amount": -809.376,
           "balance_start": -9671821793.86,
@@ -704,11 +769,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_resource_keep_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_REGION-41-TRACT-9",
+          "counterparty": "sample-counterparty-5",
           "last_update_date": "2026-08-31T11:42:48.766Z"
         },
         {
-          "player": "$LAND_REGION-41-TRACT-9",
+          "player": "sample-acct-004",
           "token": "WOOD",
           "amount": 809.376,
           "balance_start": 180439.54,
@@ -717,11 +782,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_resource_keep_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_WOOD_MINT",
+          "counterparty": "sample-counterparty-2",
           "last_update_date": "2026-08-31T11:42:48.766Z"
         }
       ],
-      "counterparty": "$LAND_WOOD_MINT"
+      "counterparty": "sample-counterparty-2"
     },
     {
       "id": 38538179,
@@ -735,7 +800,7 @@
       "created_date": "2026-08-31T11:42:45.000Z",
       "balance_history": [
         {
-          "player": "$LAND_WOOD_MINT",
+          "player": "sample-acct-006",
           "token": "WOOD",
           "amount": -16332.706,
           "balance_start": -9671804455.785,
@@ -744,11 +809,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_player_resource_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_PLAYER_SHARE_CLAIMED",
+          "counterparty": "sample-counterparty-1",
           "last_update_date": "2026-08-31T11:42:48.761Z"
         },
         {
-          "player": "$LAND_PLAYER_SHARE_CLAIMED",
+          "player": "sample-acct-002",
           "token": "WOOD",
           "amount": 16332.706,
           "balance_start": 9211616999.218,
@@ -757,11 +822,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_player_resource_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_WOOD_MINT",
+          "counterparty": "sample-counterparty-2",
           "last_update_date": "2026-08-31T11:42:48.761Z"
         },
         {
-          "player": "$LAND_WOOD_MINT",
+          "player": "sample-acct-006",
           "token": "WOOD",
           "amount": -655.123,
           "balance_start": -9671820788.491,
@@ -770,11 +835,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_uncaptured_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_TAXES_BURNED",
+          "counterparty": "sample-counterparty-3",
           "last_update_date": "2026-08-31T11:42:48.761Z"
         },
         {
-          "player": "$LAND_TAXES_BURNED",
+          "player": "sample-acct-005",
           "token": "WOOD",
           "amount": 655.123,
           "balance_start": 436381827.205,
@@ -783,11 +848,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_uncaptured_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_WOOD_MINT",
+          "counterparty": "sample-counterparty-2",
           "last_update_date": "2026-08-31T11:42:48.761Z"
         },
         {
-          "player": "$LAND_WOOD_MINT",
+          "player": "sample-acct-006",
           "token": "WOOD",
           "amount": -350.246,
           "balance_start": -9671821443.614,
@@ -796,11 +861,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_resource_castle_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_REGION-41",
+          "counterparty": "sample-counterparty-4",
           "last_update_date": "2026-08-31T11:42:48.764Z"
         },
         {
-          "player": "$LAND_REGION-41",
+          "player": "sample-acct-003",
           "token": "WOOD",
           "amount": 350.246,
           "balance_start": 10823.251,
@@ -809,11 +874,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_resource_castle_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_WOOD_MINT",
+          "counterparty": "sample-counterparty-2",
           "last_update_date": "2026-08-31T11:42:48.764Z"
         },
         {
-          "player": "$LAND_WOOD_MINT",
+          "player": "sample-acct-006",
           "token": "WOOD",
           "amount": -809.376,
           "balance_start": -9671821793.86,
@@ -822,11 +887,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_resource_keep_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_REGION-41-TRACT-9",
+          "counterparty": "sample-counterparty-5",
           "last_update_date": "2026-08-31T11:42:48.766Z"
         },
         {
-          "player": "$LAND_REGION-41-TRACT-9",
+          "player": "sample-acct-004",
           "token": "WOOD",
           "amount": 809.376,
           "balance_start": 180439.54,
@@ -835,11 +900,11 @@
           "trx_id": "f5dd93f425db861219e4d84fc25ca79449632b6b",
           "type": "land_resource_keep_tax_mint",
           "created_date": "2026-08-31T11:42:48.721Z",
-          "counterparty": "$LAND_WOOD_MINT",
+          "counterparty": "sample-counterparty-2",
           "last_update_date": "2026-08-31T11:42:48.766Z"
         }
       ],
-      "counterparty": "$LAND_GRAIN_CONSUMED"
+      "counterparty": "sample-counterparty-6"
     }
   ]
 }

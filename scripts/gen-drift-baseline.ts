@@ -1,3 +1,5 @@
+import { fixtureShapeId } from "./drift/renewal.js";
+import { verifiedSample } from "./drift/sample-state.js";
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -33,6 +35,25 @@ function fixtureBody(fixture: Record<string, unknown>): unknown {
   return Object.keys(response).length === 1 && Object.hasOwn(response, "body") ? response.body : response;
 }
 
+export function reviewedFixtureShapeIds(fixture: Record<string, unknown>, body: unknown): Set<string> {
+  const ids = new Set([fixtureShapeId({ body })]);
+  const provenance = fixture.provenance as Record<string, unknown> | undefined;
+  for (const [field, shapeKey] of [
+    ["reviewedAlternateShapes", "alternateShape"], ["reviewedResponseShapes", "responseShape"],
+  ] as const) {
+    if (field === "reviewedAlternateShapes" && !Object.hasOwn(fixture, "body")) continue;
+    const reviews = provenance?.[field];
+    if (!Array.isArray(reviews) || reviews.length > 32
+      || !reviews.every(review => review && typeof review === "object"
+        && typeof review.baselineShape === "string" && /^[a-f0-9]{64}$/.test(review.baselineShape)
+        && typeof review[shapeKey] === "string" && /^[a-f0-9]{64}$/.test(review[shapeKey]))) continue;
+    for (const review of reviews) {
+      if (review.baselineShape === fixtureShapeId(fixture)) ids.add(review[shapeKey]);
+    }
+  }
+  return ids;
+}
+
 export function generateBaseline(input: unknown, fixturesDirectory: string, capturedAt: string): DriftBaseline {
   if (typeof input !== "object" || input === null || Array.isArray(input)) {
     throw new TypeError("Drift baseline input must be an object map");
@@ -47,6 +68,8 @@ export function generateBaseline(input: unknown, fixturesDirectory: string, capt
     if (bindings[name] === undefined) throw new Error(`Fixture '${name}' is not present in drift baseline input`);
   }
 
+  const knownEntries = new Set(allCatalogueEntries().map(entry => entry.entryId));
+  const reviewed = new Map<string, Array<{ variantKey: string; shapeIds: string[] }>>();
   const grouped = new Map<string, { shapes: ShapeFingerprint[]; shapeSources: string[]; truncatedAt: Set<string> }>();
   for (const name of fixtureNames) {
     const binding = bindings[name];
@@ -61,6 +84,12 @@ export function generateBaseline(input: unknown, fixturesDirectory: string, capt
       group.shapes.push(shape);
       group.shapeSources.push(name);
       for (const keyPath of shape.truncatedAt) group.truncatedAt.add(keyPath);
+    }
+    if (knownEntries.has(binding.entryId) && !isEmptyResult(body) && verifiedSample(binding.entryId, body, binding.variantKey)) {
+      const ids = reviewedFixtureShapeIds(fixture, body);
+      const variants = reviewed.get(binding.entryId) ?? [];
+      variants.push({ variantKey: binding.variantKey ?? "default", shapeIds: [...ids].sort() });
+      reviewed.set(binding.entryId, variants);
     }
     grouped.set(binding.entryId, group);
   }
@@ -80,6 +109,7 @@ export function generateBaseline(input: unknown, fixturesDirectory: string, capt
       authTier: catalogueEntry.measured?.authTier ?? catalogueEntry.declared.authTier ?? "public",
       statusesObserved: [200],
       shape: mergeShapes(group.shapes),
+      reviewedShapes: reviewed.get(catalogueEntry.entryId) ?? [],
       shapeSources: group.shapeSources.sort((left, right) => left.localeCompare(right)),
       truncatedAt: [...group.truncatedAt].sort((left, right) => left.localeCompare(right)),
       capturedAt,

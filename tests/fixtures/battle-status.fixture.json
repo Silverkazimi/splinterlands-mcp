@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:47:41.484715+00:00",
     "sourceUrl": "https://api2.splinterlands.com/battle/status",
-    "captureScope": "Full captured response; JSON-encoded string fields are not decoded or transformed."
+    "captureScope": "Full captured response; JSON-encoded string fields are not decoded or transformed.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "8da2b4fd5a683c9c4d4cabf4f21ae36acea305e2d1acc07457f29fdf19fee782",
+        "alternateShape": "375f0c093537a237cefeaa1191c2b172b17b46a83ae4e4b3e57c7c72369a657f"
+      }
+    ]
   },
   "valueClasses": {
     "body.id": {
@@ -55,7 +62,7 @@
       "valueClass": "opaque"
     },
     "body.opponent_player": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.opponent_team_hash": {
       "valueClass": "opaque"

@@ -3,7 +3,24 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:10:38.606547+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/rebellion_presale_leaders",
-    "captureScope": "First three list rows; other object fields retained without transformation."
+    "captureScope": "First three list rows; other object fields retained without transformation.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    },
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "8617d64cfae71d34cb305e3bd3815fae79ba6d26b96aedaa5cbfaee9b354d0e1",
+        "alternateShape": "67d22ec857e97d6d751080bb7415f392b1c8c2b7f6c1e6ec8f513d580cf40995"
+      }
+    ],
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "8617d64cfae71d34cb305e3bd3815fae79ba6d26b96aedaa5cbfaee9b354d0e1",
+        "responseShape": "d96d49aadd2f0c9b5dae847999a498cbcfc7958c247bad4d9c6c29afa0991c9f"
+      }
+    ]
   },
   "valueClasses": {
     "body.total_packs_purchased": {
@@ -208,7 +225,11 @@
       "valueClass": "opaque"
     },
     "body.players[0].player_data.paypal_ban": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[0].player_data.season_pass": {
       "valueClass": "opaque"
@@ -217,7 +238,11 @@
       "valueClass": "opaque"
     },
     "body.players[0].player_data.burn_sps_rewards": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[0].player_data.scholared_by": {
       "valueClass": "name"
@@ -418,7 +443,11 @@
       "valueClass": "opaque"
     },
     "body.players[1].player_data.paypal_ban": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[1].player_data.season_pass": {
       "valueClass": "opaque"
@@ -427,7 +456,11 @@
       "valueClass": "opaque"
     },
     "body.players[1].player_data.burn_sps_rewards": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[1].player_data.scholared_by": {
       "valueClass": "name"
@@ -628,7 +661,11 @@
       "valueClass": "opaque"
     },
     "body.players[2].player_data.paypal_ban": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[2].player_data.season_pass": {
       "valueClass": "numeric"
@@ -637,7 +674,11 @@
       "valueClass": "opaque"
     },
     "body.players[2].player_data.burn_sps_rewards": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[2].player_data.scholared_by": {
       "valueClass": "name"
@@ -847,7 +888,11 @@
       "valueClass": "opaque"
     },
     "body.curr_player.player_data.burn_sps_rewards": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.curr_player.player_data.scholared_by": {
       "valueClass": "name"

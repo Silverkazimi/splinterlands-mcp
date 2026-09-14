@@ -54,6 +54,7 @@ export type BaselineEntry = {
   statusesObserved: number[];
   shape: ShapeFingerprint | null;
   shapeSources: string[];
+  reviewedShapes?: Array<{ variantKey: string; shapeIds: string[] }>;
   truncatedAt: string[];
   capturedAt: string;
 };
@@ -70,7 +71,9 @@ export type SweepEntry = {
   pathTemplate: string;
   authBaseline: "public" | "requires_auth" | "blocked";
   variantKey?: string;
+  isEmpty?: (body: unknown) => boolean;
   validateEmpty?: (body: unknown) => boolean;
+  validateResponse?: (body: unknown) => boolean;
 };
 
 export type RawOutcome = {
@@ -88,6 +91,8 @@ export type SweepObservation = {
   authObserved: "public" | "requires_auth" | "blocked";
   shape: ShapeFingerprint | null;
   shapeCompared: boolean;
+  variantKey?: string;
+  validatedShapeId?: string;
   reason?: "empty_result" | "non_success";
 };
 

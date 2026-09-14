@@ -3,11 +3,12 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T10:57:03.978148+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/land/deeds/details/I-296-c08b21daf716a6",
-    "captureScope": "Complete public UID-view response for a numeric map deed; no account selector sent."
+    "captureScope": "Complete public UID-view response for a numeric map deed; no account selector sent.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.status": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.map_name": {
       "valueClass": "opaque"

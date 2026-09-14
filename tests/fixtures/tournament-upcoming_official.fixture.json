@@ -1,9 +1,9 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:55:19.651227+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/tournaments/upcoming_official",
-    "captureScope": "First three root rows or players; other nested fields retain their captured values."
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response."
   },
   "valueClasses": {
     "body[0].id": {
@@ -16,7 +16,7 @@
       "valueClass": "opaque"
     },
     "body[0].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].name": {
       "valueClass": "name"
@@ -69,14 +69,15 @@
     "body[0].data.allowed_cards.sets[0].core": {
       "valueClass": "numeric"
     },
-    "body[0].data.allowed_cards.sets[1].core": {
-      "valueClass": "numeric"
-    },
     "body[0].data.allowed_cards.epoch": {
       "valueClass": "opaque"
     },
     "body[0].data.allowed_cards.ghost": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[0].data.allowed_cards.gladiator": {
       "valueClass": "opaque"
@@ -156,6 +157,21 @@
     "body[0].data.prizes.payouts[4].items[0].text": {
       "valueClass": "opaque"
     },
+    "body[0].data.prizes.payouts[5].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[5].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[5].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[5].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[5].items[0].text": {
+      "valueClass": "opaque"
+    },
     "body[0].data.total_prizes_usd": {
       "valueClass": "numeric"
     },
@@ -163,7 +179,11 @@
       "valueClass": "numeric"
     },
     "body[0].data.multiple_rounds": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[0].data.spsp_min": {
       "valueClass": "numeric"
@@ -229,7 +249,7 @@
       "valueClass": "opaque"
     },
     "body[1].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].name": {
       "valueClass": "name"
@@ -283,7 +303,11 @@
       "valueClass": "opaque"
     },
     "body[1].data.allowed_cards.ghost": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[1].data.allowed_cards.gladiator": {
       "valueClass": "opaque"
@@ -300,7 +324,19 @@
     "body[1].data.prizes.payouts[0].items[0].type": {
       "valueClass": "opaque"
     },
+    "body[1].data.prizes.payouts[0].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
     "body[1].data.prizes.payouts[0].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[0].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[0].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[0].items[1].text": {
       "valueClass": "opaque"
     },
     "body[1].data.prizes.payouts[1].start_place": {
@@ -315,7 +351,19 @@
     "body[1].data.prizes.payouts[1].items[0].type": {
       "valueClass": "opaque"
     },
+    "body[1].data.prizes.payouts[1].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
     "body[1].data.prizes.payouts[1].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[1].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[1].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[1].items[1].text": {
       "valueClass": "opaque"
     },
     "body[1].data.prizes.payouts[2].start_place": {
@@ -348,36 +396,6 @@
     "body[1].data.prizes.payouts[3].items[0].text": {
       "valueClass": "opaque"
     },
-    "body[1].data.prizes.payouts[4].start_place": {
-      "valueClass": "numeric"
-    },
-    "body[1].data.prizes.payouts[4].end_place": {
-      "valueClass": "numeric"
-    },
-    "body[1].data.prizes.payouts[4].items[0].qty": {
-      "valueClass": "numeric"
-    },
-    "body[1].data.prizes.payouts[4].items[0].type": {
-      "valueClass": "opaque"
-    },
-    "body[1].data.prizes.payouts[4].items[0].text": {
-      "valueClass": "opaque"
-    },
-    "body[1].data.prizes.payouts[5].start_place": {
-      "valueClass": "numeric"
-    },
-    "body[1].data.prizes.payouts[5].end_place": {
-      "valueClass": "numeric"
-    },
-    "body[1].data.prizes.payouts[5].items[0].qty": {
-      "valueClass": "numeric"
-    },
-    "body[1].data.prizes.payouts[5].items[0].type": {
-      "valueClass": "opaque"
-    },
-    "body[1].data.prizes.payouts[5].items[0].text": {
-      "valueClass": "opaque"
-    },
     "body[1].data.total_prizes_usd": {
       "valueClass": "numeric"
     },
@@ -385,7 +403,11 @@
       "valueClass": "numeric"
     },
     "body[1].data.multiple_rounds": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[1].data.spsp_min": {
       "valueClass": "numeric"
@@ -398,6 +420,9 @@
     },
     "body[1].data.rating_level": {
       "valueClass": "numeric"
+    },
+    "body[1].data.allow_player_card": {
+      "valueClass": "opaque"
     },
     "body[1].data.best_of": {
       "valueClass": "numeric"
@@ -429,9 +454,6 @@
     "body[1].data.winners_bracket": {
       "valueClass": "numeric"
     },
-    "body[1].data.allow_player_card": {
-      "valueClass": "opaque"
-    },
     "body[1].password_pub_key": {
       "valueClass": "opaque"
     },
@@ -451,7 +473,7 @@
       "valueClass": "opaque"
     },
     "body[2].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[2].name": {
       "valueClass": "name"
@@ -505,7 +527,11 @@
       "valueClass": "opaque"
     },
     "body[2].data.allowed_cards.ghost": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[2].data.allowed_cards.gladiator": {
       "valueClass": "opaque"
@@ -522,82 +548,10 @@
     "body[2].data.prizes.payouts[0].items[0].type": {
       "valueClass": "opaque"
     },
+    "body[2].data.prizes.payouts[0].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
     "body[2].data.prizes.payouts[0].items[0].text": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[1].start_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[1].end_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[1].items[0].qty": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[1].items[0].type": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[1].items[0].text": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[2].start_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[2].end_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[2].items[0].qty": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[2].items[0].type": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[2].items[0].text": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[3].start_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[3].end_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[3].items[0].qty": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[3].items[0].type": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[3].items[0].text": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[4].start_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[4].end_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[4].items[0].qty": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[4].items[0].type": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[4].items[0].text": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[5].start_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[5].end_place": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[5].items[0].qty": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.prizes.payouts[5].items[0].type": {
-      "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[5].items[0].text": {
       "valueClass": "opaque"
     },
     "body[2].data.total_prizes_usd": {
@@ -607,7 +561,11 @@
       "valueClass": "numeric"
     },
     "body[2].data.multiple_rounds": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[2].data.spsp_min": {
       "valueClass": "numeric"
@@ -666,39 +624,35 @@
   },
   "body": [
     {
-      "id": "24c437a8004242870046f9d60db3d3644ebc8f92",
-      "format": "swiss",
+      "id": "[redacted]",
+      "format": "[redacted]",
       "sub_format": null,
-      "created_by": "sample-acct-111",
-      "name": "Imperial Academy Bronze Series GF",
-      "description": "In the Imperial Academy's Drakon Crucible, located in the Gloridax Empire's capital city of Oasis, novice battle mages compete amidst the training exercises of the Dragonsguard, which include aerial maneuvers, urban warfare, long-range target practice, and mounted combat.",
-      "start_date": "2026-09-12T11:30:00.000Z",
+      "created_by": "sample-account-1",
+      "name": "sample-account-2",
+      "description": "[redacted]",
+      "start_date": "2026-09-14T11:30:00.000Z",
       "status": 0,
       "allow_lite": false,
       "current_round": null,
-      "sponsor_name": "SPS DAO",
-      "sponsor_logo_url": "wild bronze gf.jpg",
-      "sponsor_logo_url_med": "wild bronze gf.jpg",
-      "sponsor_logo_url_lg": "",
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
       "min_entrants": 4,
       "max_entrants": null,
-      "entry_fee": "75 DEC",
-      "total_prizes_usd": 10,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 14,
       "data": {
         "allowed_cards": {
-          "type": "all",
-          "foil": "gold_only",
+          "type": "[redacted]",
+          "foil": "[redacted]",
           "sets": [
             {
-              "core": 4,
-              "editions": []
-            },
-            {
-              "core": 7,
+              "core": 14,
               "editions": []
             }
           ],
-          "epoch": "wild",
+          "epoch": "[redacted]",
           "ghost": false,
           "gladiator": false
         },
@@ -707,280 +661,33 @@
             {
               "start_place": 1,
               "end_place": 4,
-              "items": [
-                {
-                  "qty": 146.8,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 5,
-              "end_place": 8,
-              "items": [
-                {
-                  "qty": 110.1,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 9,
-              "end_place": 16,
-              "items": [
-                {
-                  "qty": 73.4,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 17,
-              "end_place": 32,
-              "items": [
-                {
-                  "qty": 45.9,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 33,
-              "end_place": 64,
-              "items": [
-                {
-                  "qty": 18.4,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            }
-          ]
-        },
-        "total_prizes_usd": 10.169887000000001,
-        "duration_blocks": 28800,
-        "multiple_rounds": true,
-        "spsp_min": 7500,
-        "cp_min": 506906,
-        "alternate_fee": {
-          "value": "none"
-        },
-        "rating_level": 1,
-        "best_of": 3,
-        "rounds": [
-          {
-            "type": "qualifier",
-            "best_of": 1,
-            "qty": 1
-          },
-          {
-            "type": "last",
-            "qty": 1,
-            "best_of": 5
-          }
-        ],
-        "group_size": 12,
-        "create_team_seconds": 288,
-        "winners_bracket": 30,
-        "allow_player_card": false
-      },
-      "password_pub_key": null,
-      "entrants": "19",
-      "cur_player_entered": "0"
-    },
-    {
-      "id": "2c9895110d587624ad97f932e3117faeaf80851c",
-      "format": "swiss",
-      "sub_format": null,
-      "created_by": "sample-acct-111",
-      "name": "Victor's Modern Gold Invitational",
-      "description": "Battle mages from across Praetoria travel to Valiants' Providence, the grandiose arena located in the Kingdom of Khymia's capital city of New Dawn, to compete in the Victor's Modern Invitational. Here, they hope to find fortune and glory\u2026 but for every one that does, another finds only shame and defeat.",
-      "start_date": "2026-09-12T12:30:00.000Z",
-      "status": 0,
-      "allow_lite": false,
-      "current_round": null,
-      "sponsor_name": "SPS DAO",
-      "sponsor_logo_url": "modern gold.jpg",
-      "sponsor_logo_url_med": "modern gold.jpg",
-      "sponsor_logo_url_lg": "",
-      "min_entrants": 4,
-      "max_entrants": null,
-      "entry_fee": "400 DEC",
-      "total_prizes_usd": 117,
-      "data": {
-        "allowed_cards": {
-          "type": "all",
-          "foil": "all",
-          "sets": [],
-          "epoch": "modern",
-          "ghost": false,
-          "gladiator": false
-        },
-        "prizes": {
-          "payouts": [
-            {
-              "start_place": 1,
-              "end_place": 4,
-              "items": [
-                {
-                  "qty": 1275.8,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 5,
-              "end_place": 8,
-              "items": [
-                {
-                  "qty": 850.5,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 9,
-              "end_place": 16,
-              "items": [
-                {
-                  "qty": 637.9,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 17,
-              "end_place": 32,
-              "items": [
-                {
-                  "qty": 425.3,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 33,
-              "end_place": 64,
-              "items": [
-                {
-                  "qty": 212.6,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 65,
-              "end_place": 128,
-              "items": [
-                {
-                  "qty": 106.3,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            }
-          ]
-        },
-        "total_prizes_usd": 117.75884540000001,
-        "duration_blocks": 28800,
-        "multiple_rounds": true,
-        "spsp_min": 12000,
-        "cp_min": 67575,
-        "alternate_fee": {
-          "value": "none"
-        },
-        "rating_level": 3,
-        "best_of": 3,
-        "rounds": [
-          {
-            "type": "qualifier",
-            "best_of": 1,
-            "qty": 1
-          },
-          {
-            "type": "last",
-            "qty": 1,
-            "best_of": 5
-          }
-        ],
-        "group_size": 12,
-        "create_team_seconds": 288,
-        "winners_bracket": 30,
-        "allow_player_card": false
-      },
-      "password_pub_key": null,
-      "entrants": "102",
-      "cur_player_entered": "0"
-    },
-    {
-      "id": "645025bc2bec603a1136499d3ce8ddf858a44a6c",
-      "format": "swiss",
-      "sub_format": null,
-      "created_by": "sample-acct-111",
-      "name": "Gauntlet Wild Bronze Invitational",
-      "description": "During the Gauntlet Wild Invitational, thousands of spectators fill the stands of Valiants' Providence in the Kingdom of Khymia's capital city of New Dawn to cheer on their favorite battle mages.",
-      "start_date": "2026-09-13T11:30:00.000Z",
-      "status": 0,
-      "allow_lite": false,
-      "current_round": null,
-      "sponsor_name": "SPS DAO",
-      "sponsor_logo_url": "wild bronze.jpg",
-      "sponsor_logo_url_med": "wild bronze.jpg",
-      "sponsor_logo_url_lg": "",
-      "min_entrants": 4,
-      "max_entrants": null,
-      "entry_fee": "100 DEC",
-      "total_prizes_usd": 29,
-      "data": {
-        "allowed_cards": {
-          "type": "all",
-          "foil": "all",
-          "sets": [],
-          "epoch": "wild",
-          "ghost": false,
-          "gladiator": false
-        },
-        "prizes": {
-          "payouts": [
-            {
-              "start_place": 1,
-              "end_place": 4,
-              "items": [
-                {
-                  "qty": 318.9,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 5,
-              "end_place": 8,
-              "items": [
-                {
-                  "qty": 212.6,
-                  "type": "SPS",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 9,
-              "end_place": 16,
               "items": [
                 {
                   "qty": 159.5,
-                  "type": "SPS",
-                  "text": ""
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 5,
+              "end_place": 8,
+              "items": [
+                {
+                  "qty": 106.3,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 9,
+              "end_place": 16,
+              "items": [
+                {
+                  "qty": 79.7,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
                 }
               ]
             },
@@ -989,9 +696,9 @@
               "end_place": 32,
               "items": [
                 {
-                  "qty": 106.3,
-                  "type": "SPS",
-                  "text": ""
+                  "qty": 53.2,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
                 }
               ]
             },
@@ -1000,9 +707,9 @@
               "end_place": 64,
               "items": [
                 {
-                  "qty": 53.2,
-                  "type": "SPS",
-                  "text": ""
+                  "qty": 26.6,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
                 }
               ]
             },
@@ -1011,32 +718,32 @@
               "end_place": 128,
               "items": [
                 {
-                  "qty": 26.6,
-                  "type": "SPS",
-                  "text": ""
+                  "qty": 13.3,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
                 }
               ]
             }
           ]
         },
-        "total_prizes_usd": 29.4490574,
+        "total_prizes_usd": 14.7266056,
         "duration_blocks": 28800,
         "multiple_rounds": true,
-        "spsp_min": 6000,
-        "cp_min": 44174,
+        "spsp_min": 4000,
+        "cp_min": 18782,
         "alternate_fee": {
-          "value": "none"
+          "value": "[redacted]"
         },
-        "rating_level": 1,
+        "rating_level": 2,
         "best_of": 3,
         "rounds": [
           {
-            "type": "qualifier",
+            "type": "[redacted]",
             "best_of": 1,
             "qty": 1
           },
           {
-            "type": "last",
+            "type": "[redacted]",
             "qty": 1,
             "best_of": 5
           }
@@ -1047,8 +754,202 @@
         "allow_player_card": false
       },
       "password_pub_key": null,
-      "entrants": "83",
-      "cur_player_entered": "0"
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-4",
+      "name": "sample-account-5",
+      "description": "[redacted]",
+      "start_date": "2026-09-14T19:30:00.000Z",
+      "status": 0,
+      "allow_lite": false,
+      "current_round": null,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 2,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [],
+          "epoch": "[redacted]",
+          "ghost": true,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 1,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 2,
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 962,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 2,
+              "end_place": 2,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 0.04,
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 481,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 3,
+              "end_place": 3,
+              "items": [
+                {
+                  "qty": 288,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 4,
+              "end_place": 4,
+              "items": [
+                {
+                  "qty": 192,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 2.6690133,
+        "duration_blocks": 1200,
+        "multiple_rounds": false,
+        "spsp_min": 0,
+        "cp_min": 0,
+        "alternate_fee": {
+          "value": "[redacted]"
+        },
+        "rating_level": 2,
+        "allow_player_card": false,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 1,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ],
+        "group_size": 8,
+        "create_team_seconds": 228,
+        "winners_bracket": 30
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-1",
+      "name": "sample-account-9",
+      "description": "[redacted]",
+      "start_date": "2026-09-16T07:00:00.000Z",
+      "status": 0,
+      "allow_lite": false,
+      "current_round": null,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": null,
+      "total_prizes_usd": 1,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [],
+          "epoch": "[redacted]",
+          "ghost": true,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 1,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 1,
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 1,
+        "duration_blocks": 28800,
+        "multiple_rounds": true,
+        "spsp_min": 0,
+        "cp_min": 0,
+        "alternate_fee": {
+          "value": "[redacted]"
+        },
+        "rating_level": 1,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 1,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ],
+        "group_size": 12,
+        "create_team_seconds": 288,
+        "winners_bracket": 30,
+        "allow_player_card": false
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
     }
   ]
 }

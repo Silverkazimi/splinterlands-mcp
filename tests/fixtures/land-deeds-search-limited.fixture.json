@@ -1,7 +1,20 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-06T14:38:42Z"
+    "observedAt": "2026-09-06T14:38:42Z",
+    "additionalSchemaReview": "Nested schema examples added synthetically from reviewed September 14 field types. Previously missing or empty containers expanded; preceding fields retained. Original observation does not represent these synthetic values.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "e99bf2d64c278bb9600a36198bbb5167c11c02f5a1e6a552a7bead1bb7773d40",
+        "alternateShape": "624d4ece9c1f02d9b4330c9781153df4f2fb769ce28b6531c76b61a71e5bea89"
+      }
+    ],
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "e99bf2d64c278bb9600a36198bbb5167c11c02f5a1e6a552a7bead1bb7773d40",
+        "responseShape": "b0eaa2ccb923110767e7d9484f9a42a9aee713cf051a6ce4b2a04aab19abea0b"
+      }
+    ]
   },
   "valueClasses": {
     "status": {
@@ -29,7 +42,11 @@
       "valueClass": "numeric"
     },
     "data.deeds[0].territory": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Central Fire",
+        "Pristine Northwest"
+      ]
     },
     "data.deeds[0].region_uid": {
       "valueClass": "id"
@@ -68,13 +85,21 @@
       "valueClass": "enum"
     },
     "data.deeds[0].deed_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Lake",
+        "Tundra"
+      ]
     },
     "data.deeds[0].land_stats": {
       "valueClass": "opaque"
     },
     "data.deeds[0].region_name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Dorthan Dell",
+        "Viritas"
+      ]
     },
     "data.deeds[0].market_updated_date": {
       "valueClass": "timestamp"
@@ -119,7 +144,13 @@
       "valueClass": "id"
     },
     "data.deeds[0].worksite_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "Logging Camp",
+        "Grain Farm",
+        "Aura Lab"
+      ]
     },
     "data.deeds[0].time_crystal_value": {
       "valueClass": "numeric"
@@ -152,7 +183,11 @@
       "valueClass": "numeric"
     },
     "data.deeds[1].territory": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Central Fire",
+        "Pristine Northwest"
+      ]
     },
     "data.deeds[1].region_uid": {
       "valueClass": "id"
@@ -161,7 +196,12 @@
       "valueClass": "id"
     },
     "data.deeds[1].resource_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "WOOD",
+        "GRAIN",
+        "AURA"
+      ]
     },
     "data.deeds[1].magic_type": {
       "valueClass": "enum"
@@ -191,13 +231,21 @@
       "valueClass": "enum"
     },
     "data.deeds[1].deed_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Lake",
+        "Tundra"
+      ]
     },
     "data.deeds[1].land_stats": {
       "valueClass": "opaque"
     },
     "data.deeds[1].region_name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Dorthan Dell",
+        "Viritas"
+      ]
     },
     "data.deeds[1].market_updated_date": {
       "valueClass": "timestamp"
@@ -242,7 +290,13 @@
       "valueClass": "id"
     },
     "data.deeds[1].worksite_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "Logging Camp",
+        "Grain Farm",
+        "Aura Lab"
+      ]
     },
     "data.deeds[1].time_crystal_value": {
       "valueClass": "numeric"
@@ -275,7 +329,11 @@
       "valueClass": "numeric"
     },
     "data.deeds[2].territory": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Central Fire",
+        "Pristine Northwest"
+      ]
     },
     "data.deeds[2].region_uid": {
       "valueClass": "id"
@@ -284,7 +342,12 @@
       "valueClass": "id"
     },
     "data.deeds[2].resource_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "WOOD",
+        "GRAIN",
+        "AURA"
+      ]
     },
     "data.deeds[2].magic_type": {
       "valueClass": "enum"
@@ -314,13 +377,21 @@
       "valueClass": "enum"
     },
     "data.deeds[2].deed_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Lake",
+        "Tundra"
+      ]
     },
     "data.deeds[2].land_stats": {
       "valueClass": "opaque"
     },
     "data.deeds[2].region_name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Dorthan Dell",
+        "Viritas"
+      ]
     },
     "data.deeds[2].market_updated_date": {
       "valueClass": "timestamp"
@@ -365,7 +436,13 @@
       "valueClass": "id"
     },
     "data.deeds[2].worksite_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "Logging Camp",
+        "Grain Farm",
+        "Aura Lab"
+      ]
     },
     "data.deeds[2].time_crystal_value": {
       "valueClass": "numeric"
@@ -380,7 +457,12 @@
       "valueClass": "numeric"
     },
     "data.worksite_details[0].project_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "worksite_grain",
+        "worksite_wood",
+        "worksite_aura"
+      ]
     },
     "data.worksite_details[0].project_number": {
       "valueClass": "numeric"
@@ -425,7 +507,12 @@
       "valueClass": "id"
     },
     "data.worksite_details[0].token_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "GRAIN",
+        "WOOD",
+        "AURA"
+      ]
     },
     "data.worksite_details[0].pp_required": {
       "valueClass": "numeric"
@@ -515,7 +602,12 @@
       "valueClass": "timestamp"
     },
     "data.worksite_details[0].worksite_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Grain Farm",
+        "Logging Camp",
+        "Aura Lab"
+      ]
     },
     "data.worksite_details[0].max_tax_rate": {
       "valueClass": "numeric"
@@ -551,7 +643,12 @@
       "valueClass": "numeric"
     },
     "data.worksite_details[1].project_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "worksite_grain",
+        "worksite_wood",
+        "worksite_aura"
+      ]
     },
     "data.worksite_details[1].project_number": {
       "valueClass": "numeric"
@@ -596,7 +693,12 @@
       "valueClass": "id"
     },
     "data.worksite_details[1].token_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "GRAIN",
+        "WOOD",
+        "AURA"
+      ]
     },
     "data.worksite_details[1].pp_required": {
       "valueClass": "numeric"
@@ -686,7 +788,12 @@
       "valueClass": "timestamp"
     },
     "data.worksite_details[1].worksite_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Grain Farm",
+        "Logging Camp",
+        "Aura Lab"
+      ]
     },
     "data.worksite_details[1].max_tax_rate": {
       "valueClass": "numeric"
@@ -1221,6 +1328,17 @@
     },
     "data.staking_details[2].total_dec_staked": {
       "valueClass": "numeric"
+    },
+    "data.worksite_details[0].resource_recipe[0].qty": {
+      "valueClass": "numeric"
+    },
+    "data.worksite_details[0].resource_recipe[0].symbol": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "IRON",
+        "STONE",
+        "WOOD"
+      ]
     }
   },
   "status": "success",
@@ -1414,7 +1532,12 @@
         "grain_req_per_hour": 0,
         "segments": null,
         "estimated_totem_chance": 0,
-        "resource_recipe": [],
+        "resource_recipe": [
+          {
+            "qty": 0,
+            "symbol": "WOOD"
+          }
+        ],
         "resource_mint_rate": 0.02
       },
       {

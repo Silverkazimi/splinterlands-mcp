@@ -4,7 +4,7 @@
     "sourceUrl": "https://vapi.splinterlands.com/market/player/activity",
     "observedAt": "2026-09-12T13:55:48.509108+00:00",
     "captureScope": "Up to three original list rows; activity additionally retains one observed sale row. Complete object response. No field values transformed.",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained. Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.status": {
@@ -222,7 +222,7 @@
         "feeCurrency": "DEC",
         "createdDate": "2026-08-26T14:57:27.000Z",
         "type": "purchase",
-        "detailName": "Canyon"
+        "detailName": "sample-acct-015"
       },
       {
         "id": 451723,
@@ -240,7 +240,7 @@
         "feeCurrency": "DEC",
         "createdDate": "2026-08-26T14:57:27.000Z",
         "type": "purchase",
-        "detailName": "Canyon"
+        "detailName": "sample-acct-015"
       },
       {
         "id": 451722,
@@ -258,7 +258,7 @@
         "feeCurrency": "DEC",
         "createdDate": "2026-08-26T14:57:27.000Z",
         "type": "purchase",
-        "detailName": "Canyon"
+        "detailName": "sample-acct-015"
       },
       {
         "id": 449688,
@@ -276,7 +276,7 @@
         "feeCurrency": "DEC",
         "createdDate": "2026-08-24T19:02:39.000Z",
         "type": "sale",
-        "detailName": "Buttercup Mauler - Cyberpunk"
+        "detailName": "sample-acct-012"
       }
     ]
   }

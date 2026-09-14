@@ -1,4 +1,4 @@
-import { verifiedSample } from "./sample-state.js";
+import { sampleIsEmpty, verifiedSample } from "./sample-state.js";
 import { accountParameterNames } from "./configuration.js";
 import { getCatalogueEntry } from "../../src/catalogue/index.js";
 import { TOOL_ENTRY_IDS } from "../../src/server.js";
@@ -24,7 +24,8 @@ export async function runNightly(
       ?? getCatalogueEntry(item.entryId).measured?.authTier
       ?? getCatalogueEntry(item.entryId).declared.authTier ?? "public",
     variantKey: item.variantKey,
-    validateEmpty: (body: unknown) => verifiedSample(item.entryId, body, item.variantKey),
+    isEmpty: (body: unknown) => sampleIsEmpty(item.entryId, body, item.variantKey),
+    validateResponse: (body: unknown) => verifiedSample(item.entryId, body, item.variantKey),
   })), entry => request(requests.get(entry.entryId)!));
   const plan = planDriftIssues(baseline, run);
   const observed = new Set(run.observations.map(item => item.entryId));

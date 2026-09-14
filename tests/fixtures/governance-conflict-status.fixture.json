@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:20:10.296789+00:00",
     "sourceUrl": "https://api2.splinterlands.com/conflicts/status",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "081ebef944bfb84c456a86e84932b618d23f52f74983bfbe888e57c5fc6a0523",
+        "alternateShape": "436001fc72d580245369d073b8b973f29bb4d0f67db15152f1dcb4912375f78d"
+      }
+    ]
   },
   "valueClasses": {
     "body.config.reward_point_threshold": {

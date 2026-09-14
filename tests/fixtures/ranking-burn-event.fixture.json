@@ -1,9 +1,9 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:10:11.207203+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/burn_event_leaderboard",
-    "captureScope": "First three list rows; other object fields retained without transformation."
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response."
   },
   "valueClasses": {
     "body.leaderboard[0].player": {
@@ -90,48 +90,6 @@
     "body.leaderboard[1].guild_data": {
       "valueClass": "opaque"
     },
-    "body.leaderboard[2].player": {
-      "valueClass": "name"
-    },
-    "body.leaderboard[2].points": {
-      "valueClass": "numeric"
-    },
-    "body.leaderboard[2].dec_burned": {
-      "valueClass": "numeric"
-    },
-    "body.leaderboard[2].dec_b_burned": {
-      "valueClass": "numeric"
-    },
-    "body.leaderboard[2].created_date": {
-      "valueClass": "timestamp"
-    },
-    "body.leaderboard[2].last_update_date": {
-      "valueClass": "timestamp"
-    },
-    "body.leaderboard[2].avatar_id": {
-      "valueClass": "numeric"
-    },
-    "body.leaderboard[2].title": {
-      "valueClass": "opaque"
-    },
-    "body.leaderboard[2].title_pre": {
-      "valueClass": "opaque"
-    },
-    "body.leaderboard[2].league": {
-      "valueClass": "numeric"
-    },
-    "body.leaderboard[2].modern_league": {
-      "valueClass": "numeric"
-    },
-    "body.leaderboard[2].guild_id": {
-      "valueClass": "id"
-    },
-    "body.leaderboard[2].guild_name": {
-      "valueClass": "opaque"
-    },
-    "body.leaderboard[2].guild_data": {
-      "valueClass": "opaque"
-    },
     "body.totals.total_dec_burned": {
       "valueClass": "opaque"
     },
@@ -142,57 +100,41 @@
   "body": {
     "leaderboard": [
       {
-        "player": "sample-acct-064",
+        "player": "sample-account-1",
         "points": "72192933.584",
         "dec_burned": "17605544.000",
         "dec_b_burned": "7487500.000",
         "created_date": "2023-05-30T22:19:23.945Z",
         "last_update_date": "2023-06-29T19:59:03.112Z",
         "avatar_id": 3395,
-        "title": "The Grandmaster",
-        "title_pre": "Magister",
+        "title": "[redacted]",
+        "title_pre": "[redacted]",
         "league": 11,
         "modern_league": 15,
         "guild_id": "504d6bb3bd478422e3a68e98e6c8eea257636709",
-        "guild_name": "Knights United",
-        "guild_data": "{\"crest\":{\"banner\":\"red\",\"decal\":\"sword\"}}"
+        "guild_name": "[redacted]",
+        "guild_data": "[redacted]"
       },
       {
-        "player": "sample-acct-081",
-        "points": "64332355.172",
-        "dec_burned": "21579980.000",
+        "player": "sample-account-26",
+        "points": "7796001.551",
+        "dec_burned": "2977727.000",
         "dec_b_burned": "0.000",
-        "created_date": "2023-05-31T15:14:21.179Z",
-        "last_update_date": "2023-06-14T21:11:27.086Z",
+        "created_date": "2023-05-31T23:28:09.165Z",
+        "last_update_date": "2023-06-06T02:27:09.026Z",
         "avatar_id": 0,
         "title": null,
         "title_pre": null,
-        "league": 0,
-        "modern_league": 0,
-        "guild_id": "e80e77615ee2393a672c636a9bd28394d9497466",
-        "guild_name": "sample-acct-081 [CHAMPS]",
-        "guild_data": "{\"crest\":{\"banner\":\"silver\",\"decal\":\"skull\"}}"
-      },
-      {
-        "player": "sample-acct-101",
-        "points": "57000000.000",
-        "dec_burned": "0.000",
-        "dec_b_burned": "19000000.000",
-        "created_date": "2023-05-30T20:31:02.943Z",
-        "last_update_date": "2023-05-31T18:03:48.121Z",
-        "avatar_id": 1581,
-        "title": "The Burninator",
-        "title_pre": "Magister",
-        "league": 13,
-        "modern_league": 15,
-        "guild_id": "690d6c7f394698673d41356af80102590c42cb25",
-        "guild_name": "Crypto Friends Forever",
-        "guild_data": "{\"crest\":{\"banner\":\"black\",\"decal\":null}}"
+        "league": 12,
+        "modern_league": 9,
+        "guild_id": null,
+        "guild_name": null,
+        "guild_data": null
       }
     ],
     "totals": {
-      "total_dec_burned": "380759257.877",
-      "total_dec_b_burned": "161573729.434"
+      "total_dec_burned": "[redacted]",
+      "total_dec_b_burned": "[redacted]"
     }
   }
 }

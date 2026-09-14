@@ -7,7 +7,7 @@
   },
   "valueClasses": {
     "body.status": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.assetName": {
       "valueClass": "opaque"
@@ -50,7 +50,7 @@
         {
           "id": "TC",
           "name": "Time Crystals",
-          "description": "Time crystals are created by the Continuum to manipulate time. They\u2019re useful for speeding up activities on land, such as worksite construction and upgrades.",
+          "description": "Time crystals are created by the Continuum to manipulate time. They’re useful for speeding up activities on land, such as worksite construction and upgrades.",
           "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_land-resource_time-crystal.png",
           "icon": null,
           "filterIcon": null,

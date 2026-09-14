@@ -9,7 +9,7 @@ import type { RawOutcome } from "./types.js";
 
 const inputSchema = z.array(z.object({
   entryId: z.string().min(1),
-  params: z.record(z.union([z.string().max(1000), z.number().finite(), z.boolean()])),
+  params: z.record(z.string(), z.union([z.string().max(1000), z.number().finite(), z.boolean()])),
   variantKey: z.string().optional(),
   expectEmpty: z.boolean().optional(),
 }).strict()).min(1).max(200);
@@ -22,6 +22,13 @@ function hasResourceScope(entryId: string, params: Record<string, unknown>): boo
   const present = (key: string) => typeof params[key] === "string" && String(params[key]).trim().length > 0;
   if (entryId === "vapi.delegation-rental.v3.bids" || entryId === "vapi.delegation-rental.v3.offers") {
     return typeof params.limit === "number" && Number.isInteger(params.limit) && params.limit >= 1 && params.limit <= 100;
+  }
+  if (entryId === "api.market.active-rentals") {
+    const positiveInteger = (value: unknown) => (typeof value === "string" || typeof value === "number")
+      && /^[1-9][0-9]*$/.test(String(value)) && Number.isSafeInteger(Number(value));
+    const limits = [params.limit, params.take].filter(value => value !== undefined);
+    return positiveInteger(params.card_detail_id) && limits.length > 0
+      && limits.every(value => positiveInteger(value) && Number(value) <= 100);
   }
   if (entryId === "api.guilds.list") return present("name");
   if (entryId === "api.guilds.find" || entryId === "api.tournaments.find") return present("id");

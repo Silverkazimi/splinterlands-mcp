@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:33:48.175729+00:00",
     "sourceUrl": "https://api2.splinterlands.com/market/active_rentals",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "captureScope": "First three root rows; nested records retained unchanged.",
+    "redaction": " Account references in reviewed fields and encoded records use consistent synthetic placeholders."
   },
   "valueClasses": {
     "body[0].id": {
@@ -13,7 +14,7 @@
       "valueClass": "id"
     },
     "body[0].seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].num_cards": {
       "valueClass": "numeric"
@@ -37,13 +38,13 @@
       "valueClass": "timestamp"
     },
     "body[0].renter": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].status": {
       "valueClass": "numeric"
     },
     "body[0].market_account": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].rental_days": {
       "valueClass": "numeric"
@@ -106,7 +107,7 @@
       "valueClass": "id"
     },
     "body[1].seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].num_cards": {
       "valueClass": "numeric"
@@ -130,13 +131,13 @@
       "valueClass": "timestamp"
     },
     "body[1].renter": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].status": {
       "valueClass": "numeric"
     },
     "body[1].market_account": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].rental_days": {
       "valueClass": "numeric"

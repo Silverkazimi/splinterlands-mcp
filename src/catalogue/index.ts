@@ -8,7 +8,7 @@ import {
   type CatalogueEntry,
   type ResultContract,
 } from "./schema.js";
-import { z, type ZodRawShape, type ZodTypeAny } from "zod";
+import { z, type ZodTypeAny } from "zod";
 
 const HOSTS = {
   api: "api.splinterlands.com",
@@ -141,7 +141,7 @@ export function bindableQueryParameters(entry: CatalogueEntry): CatalogueEntry["
 
 export function inputSchemaForCatalogueEntry(entry: CatalogueEntry, variantKey?: string) {
   resolveContract(entry, variantKey);
-  const shape: ZodRawShape = {};
+  const shape: Record<string, ZodTypeAny> = {};
   for (const parameter of entry.pathParams) {
     shape[parameter.name] = schemaForParameter(parameter);
   }

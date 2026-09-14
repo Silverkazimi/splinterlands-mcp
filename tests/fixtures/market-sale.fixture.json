@@ -3,7 +3,23 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:32:05.733735+00:00",
     "sourceUrl": "https://api2.splinterlands.com/market/for_sale_grouped",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "captureScope": "First three root rows; nested records retained unchanged.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    },
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "242eb7b8213ec0dcd394c3b37f0e937db6e58fff16b761eb93d2d6b98659c1f4",
+        "alternateShape": "fec2c290e330a2fdbe6babd4b13b62eb0c6ffa9bd03f122c41c983b6f9ef19c2"
+      }
+    ],
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "242eb7b8213ec0dcd394c3b37f0e937db6e58fff16b761eb93d2d6b98659c1f4",
+        "responseShape": "83cf171c5d36299c0311071fbeb73589492b39bc5f845738d54dc4985d80c833"
+      }
+    ]
   },
   "valueClasses": {
     "body[0].card_detail_id": {

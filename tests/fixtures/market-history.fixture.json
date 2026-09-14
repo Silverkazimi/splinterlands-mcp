@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:32:12.678667+00:00",
     "sourceUrl": "https://api2.splinterlands.com/market/history",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "captureScope": "First three root rows; nested records retained unchanged.",
+    "redaction": " Account references in reviewed fields and encoded records use consistent synthetic placeholders."
   },
   "valueClasses": {
     "body[0].id": {
@@ -13,7 +14,7 @@
       "valueClass": "id"
     },
     "body[0].seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].created_date": {
       "valueClass": "timestamp"
@@ -43,7 +44,7 @@
       "valueClass": "numeric"
     },
     "body[0].purchaser": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].completed_date": {
       "valueClass": "timestamp"
@@ -70,7 +71,11 @@
       "valueClass": "numeric"
     },
     "body[0].gold": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[0].xp": {
       "valueClass": "numeric"
@@ -88,7 +93,7 @@
       "valueClass": "id"
     },
     "body[1].seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].created_date": {
       "valueClass": "timestamp"
@@ -118,7 +123,7 @@
       "valueClass": "numeric"
     },
     "body[1].purchaser": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].completed_date": {
       "valueClass": "timestamp"
@@ -145,7 +150,11 @@
       "valueClass": "numeric"
     },
     "body[1].gold": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[1].xp": {
       "valueClass": "numeric"
@@ -163,7 +172,7 @@
       "valueClass": "id"
     },
     "body[2].seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[2].created_date": {
       "valueClass": "timestamp"
@@ -193,7 +202,7 @@
       "valueClass": "numeric"
     },
     "body[2].purchaser": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[2].completed_date": {
       "valueClass": "timestamp"
@@ -220,7 +229,11 @@
       "valueClass": "numeric"
     },
     "body[2].gold": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[2].xp": {
       "valueClass": "numeric"
