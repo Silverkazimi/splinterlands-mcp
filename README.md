@@ -537,4 +537,4 @@ Four account market tools read activity, per-asset listings, all-listing rows an
 
 player_avatar resolves a legacy profile image redirect, which may return RUNI artwork rather than the custom character. It returns avatar_url, image_url and redirect_status without downloading the image.
 
-player_custom_avatar returns saved avatar-builder settings, including numeric level as metadata. It does not render an image. Level text must not be automatically added to artwork. See [custom avatar data and artwork](library/avatar-artwork.md).
+player_custom_avatar returns saved avatar-builder settings, including numeric level as metadata. Set render=true to compose official artwork layers into a PNG image content block. The artwork contains no level numeral, badges or exemplar level frame/gem; those remain separate interface data. Unknown cosmetics and failed assets return an error instead of partial artwork. See [custom avatar data and artwork](library/avatar-artwork.md).

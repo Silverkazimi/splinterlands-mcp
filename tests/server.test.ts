@@ -232,6 +232,7 @@ describe("land deed MCP protocol", () => {
       const entryId = TOOL_ENTRY_IDS[toolName];
       const keys = Object.keys(inputSchemaFor(entryId).shape);
       if (PLOT_TOOL_KEYS[tool.name]) keys.push("plot_id", "deed_uid");
+      if (tool.name === "player_custom_avatar") keys.push("render");
       if (tool.name === "player_inventory") keys.push("item_detail_id");
       if (tool.name === "cards_collection") keys.push("include_plot_references");
       expect(Object.keys(tool.inputSchema.properties ?? {}).sort()).toEqual([...new Set(keys)].sort());
