@@ -5,7 +5,7 @@ import { TOOL_ENTRY_IDS } from "../../src/server.js";
 import type { RecaptureInput } from "./recapture.js";
 
 const configSchema = z.array(z.object({
-  fixturePath: z.string().regex(/^tests\/fixtures\/[a-z0-9][a-z0-9-]*\.fixture\.json$/),
+  fixturePath: z.string().regex(/^tests\/fixtures\/[a-z0-9][a-z0-9_-]*\.fixture\.json$/),
   entryId: z.string(),
   params: z.record(z.union([z.string().max(1000), z.number().finite(), z.boolean()])),
   variantKey: z.string().optional(),
@@ -38,7 +38,7 @@ export function loadRecaptureInputs(root: string, raw: unknown): RecaptureInput[
 }
 
 export function writeRenewedFixture(root: string, path: string, contents: string): void {
-  if (!/^tests\/fixtures\/(?:pending\/)?[a-z0-9][a-z0-9-]*\.fixture\.json$/.test(path)) throw new Error("Unsafe renewal target.");
+  if (!/^tests\/fixtures\/(?:pending\/)?[a-z0-9][a-z0-9_-]*\.fixture\.json$/.test(path)) throw new Error("Unsafe renewal target.");
   const base = fixtureRoot(root);
   const target = resolve(realpathSync(root), path);
   const parent = dirname(target);
