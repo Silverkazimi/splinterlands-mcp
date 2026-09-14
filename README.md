@@ -6,11 +6,11 @@ an MCP-capable assistant (Claude Desktop, Claude Code, and other MCP clients)
 answer questions about Land, cards, and players by calling Splinterlands' own public endpoints.
 Version `0.0.0` is an unpublished pre-release. Use a current Node.js 22 or 24 LTS patch release (minimum 22.13).
 
-**Status: pre-release.** 162 tools are registered (`src/server.ts`).
+**Status: pre-release.** 163 tools are registered (`src/server.ts`).
 66 call `vapi.splinterlands.com`: 40 Land routes covering deeds, projects,
-counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 89 call
-`api.splinterlands.com`: eight card tools, one item-metadata tool, and 29
-player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads. Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 189 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
+counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 90 call
+`api.splinterlands.com`: eight card tools, one item-metadata tool, and 30
+player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads. Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 190 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
 `library/endpoint-knowledge-tools.md` for the evidence model.
 
 A sixth offline resource, `splinterlands://hive/transaction-limits`, explains source-dated transaction limits and terminology. Three additional tools provide bounded Hive history, full transactions and combined game evidence; see [Hive transaction evidence](library/hive-transaction-evidence.md).
@@ -238,6 +238,7 @@ tools are local and make no upstream request.
 | `player_pack_purchases` | `GET /players/pack_purchases` |
 | `player_presale_leaders` | `GET /players/rebellion_presale_leaders` |
 | `player_avatar` | `GET /players/avatar/{name}` |
+| `player_custom_avatar` | `GET /players/player_avatar/{name}` |
 | `player_profile` | `GET /players/details` |
 | `player_quests` | `GET /players/quests` |
 | `player_recent_teams` | `GET /players/recent_teams` |
@@ -314,7 +315,7 @@ counted by the first call.
   Splinterlands account credential, a Hive posting/active key, or any other
   secret. If you need an endpoint that requires login, this is the wrong
   tool for that endpoint — it will tell you so rather than pretend to work.
-- **Unsupported catalogue routes are excluded.** 34 of the 189 catalogued
+- **Unsupported catalogue routes are excluded.** 34 of the 190 catalogued
   routes are not advertised as tools because their dated probes did not
   produce a usable, distinct, or honestly-selected response. The first group contains three Land routes classified 2026-09-07
   and six market, rental and collector routes classified 2026-09-12:
@@ -534,4 +535,6 @@ The `land_stake_deed_details` response adds `plot_view`: the public overview's `
 
 Four account market tools read activity, per-asset listings, all-listing rows and owned/listed stats. Activity requires player, types and sort; the observed client defaults are `purchase,sale` and `desc`. `asc` returned older rows and `sale` selected sales. `offset=1` did not select the second unoffset record; do not assume conventional row-offset paging. The existing landing tool also returns player-specific numOwned when supplied. See `library/observations/vapi-market-account-2026-09-12.json`.
 
-player_avatar resolves an account’s public avatar to its current HTTPS image link. It returns the reusable avatar_url, current image_url, and upstream redirect_status without downloading the image or following the redirect.
+player_avatar resolves a legacy profile image redirect, which may return RUNI artwork rather than the custom character. It returns avatar_url, image_url and redirect_status without downloading the image.
+
+player_custom_avatar returns saved avatar-builder settings, including numeric level as metadata. It does not render an image. Level text must not be automatically added to artwork. See [custom avatar data and artwork](library/avatar-artwork.md).

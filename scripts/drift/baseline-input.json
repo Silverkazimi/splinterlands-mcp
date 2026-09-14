@@ -681,5 +681,8 @@
   },
   "api-cards-collection-maintenance.fixture.json": {
     "entryId": "api.cards.collection"
+  },
+  "player-custom-avatar.fixture.json": {
+    "entryId": "api.players.custom-avatar"
   }
 }

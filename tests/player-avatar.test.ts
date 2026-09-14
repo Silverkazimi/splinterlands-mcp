@@ -53,3 +53,31 @@ it("does not enable redirects for ordinary JSON routes", async () => {
   }});
   await bound.execute(client);
 });
+
+it("serves the custom avatar level as data without adding image or text overlays", async () => {
+  const calls: string[] = [];
+  const server = createServer({ fetch: async (url) => {
+    calls.push(String(url));
+    return Response.json({ race: "orc", gender: 1, level: 37, face: 3 });
+  } });
+  const client = new Client({ name: "custom-avatar-test", version: "0.0.0" });
+  const [a, b] = InMemoryTransport.createLinkedPair();
+  await server.connect(a); await client.connect(b);
+  try {
+    const result = await client.callTool({ name: "player_custom_avatar", arguments: { name: "fixture-account" } });
+    expect(result.isError).not.toBe(true);
+    expect(result.structuredContent).toEqual({ race: "orc", gender: 1, level: 37, face: 3 });
+    expect(result.content).toEqual([{ type: "text", text: JSON.stringify(result.structuredContent) }]);
+    expect(calls).toEqual(["https://api.splinterlands.com/players/player_avatar/fixture-account"]);
+  } finally { await client.close(); await server.close(); }
+});
+
+it("rejects missing or invalid custom-avatar level metadata", async () => {
+  const bound = bindRequest("api.players.custom-avatar", { name: "fixture-account" });
+  for (const body of [{}, { level: "37" }, { level: -1 }, { level: 1.5 }, { level: 37, badges: [1] }]) {
+    const client = new SplinterlandsHttpClient({ fetch: async () => Response.json(body) });
+    expect((await bound.execute(client)).ok).toBe(false);
+  }
+  const client = new SplinterlandsHttpClient({ fetch: async () => Response.json({ level: 0, badges: [] }) });
+  expect((await bound.execute(client)).ok).toBe(true);
+});
