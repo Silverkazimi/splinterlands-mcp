@@ -27,6 +27,25 @@ export const cataloguePredicates: Readonly<Record<string, CataloguePredicate>> =
 };
 
 export function predicateFor(contract: ResultContract): CataloguePredicate {
+  if (contract.predicateId === "players.profile") {
+    return (body): body is unknown => {
+      if (typeof body !== "object" || body === null || Array.isArray(body)) return false;
+      const guild = (body as Record<string, unknown>).guild;
+      if (typeof guild !== "object" || guild === null || Array.isArray(guild)) return false;
+      const present = (path: string) => {
+        if (path === "guild.tournament_status") return Object.hasOwn(guild, "tournament_status");
+        if (path === "guild.tournament_data" || path.startsWith("guild.tournament_data.")) {
+          return Object.hasOwn(guild, "tournament_data");
+        }
+        return true;
+      };
+      return matchesResultContract(body, {
+        ...contract,
+        fingerprint: Object.fromEntries(Object.entries(contract.fingerprint).filter(([path]) => present(path))),
+        requiredKeyPaths: contract.requiredKeyPaths.filter(present),
+      });
+    };
+  }
   if (contract.predicateId === "collector.config") {
     const root = predicateFor({
       ...contract, predicateId: "vapi-object.captured",
