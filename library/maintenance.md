@@ -80,3 +80,5 @@ When array entries classify null differently from a reviewed non-null value at t
 Opaque booleans and finite numbers are retained only when that exact value was already present at the reviewed field. New opaque scalar values remain held, and opaque strings remain redacted. This supports existing boolean and numeric fixture values without treating an unknown field as a public numeric contract.
 
 Avatar fixture renewal validates the captured redirect against the bound player route and trusted HTTPS image hosts, then retains the reviewed synthetic fixture URLs. Account-bearing URLs stay out of published fixtures; unexpected fields still require review.
+
+Asset metadata recipes must retain the asset category recorded in their fixture. Recapture rejects a category mismatch before sending any batch request. A successful endpoint binding alone does not establish that a recipe exercises its intended scenario.

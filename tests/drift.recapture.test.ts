@@ -82,3 +82,15 @@ it("keeps avatar fixture URLs synthetic while validating the captured redirect",
     expect(held.plan.writes).toEqual([]);
   }
 });
+
+it("rejects a mismatched asset scenario before any batch request", async () => {
+  const existing = JSON.parse(readFileSync(new URL("./fixtures/vapi-market-meta-avatars.fixture.json", import.meta.url), "utf8"));
+  let reads = 0;
+  const request = async () => { reads++; return { status: 200, isJson: true, body: existing.body }; };
+  const input = { fixturePath: "tests/fixtures/vapi-market-meta-avatars.fixture.json", entryId: "vapi.market.meta.asset", params: { assetName: "PACKS" }, existing };
+  await expect(recaptureFixtures([input], request)).rejects.toThrow("Fixture asset selector mismatch.");
+  expect(reads).toBe(0);
+  const correct = await recaptureFixtures([{ ...input, params: { assetName: "AVATARS" } }], request);
+  expect(correct.failed).toEqual([]);
+  expect(reads).toBe(1);
+});
