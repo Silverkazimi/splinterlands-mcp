@@ -24,6 +24,12 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
   if (new Set(inputs.map(item => item.fixturePath)).size !== inputs.length) throw new Error("Duplicate fixture target.");
   const bound = inputs.map(item => {
     if (!/^tests\/fixtures\/[a-z0-9][a-z0-9_-]*\.fixture\.json$/.test(item.fixturePath)) throw new Error("Invalid fixture target.");
+    if (item.entryId === "vapi.market.meta.asset") {
+      const body = item.existing.body as { data?: { assetName?: unknown } } | undefined;
+      if (typeof body?.data?.assetName !== "string" || item.params.assetName !== body.data.assetName) {
+        throw new Error("Fixture asset selector mismatch.");
+      }
+    }
     return bindSweepInputs([{ entryId: item.entryId, params: item.params,
       ...(item.variantKey === undefined ? {} : { variantKey: item.variantKey }) }])[0]!;
   });
