@@ -13988,7 +13988,8 @@
         },
         "data.lock_days": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         },
         "data.magic_type": {
           "type": "string",
@@ -14171,7 +14172,7 @@
       ]
     },
     "owningTool": "land_deed_by_uid",
-    "notes": "Captured GET /land/deeds/details/{deed_uid} returned a direct 39-field Deed under data. worksite_type and rarity_sort_value were absent, not null. market_id, listing_price, and market_listing_id were numbers here, while the by-plot route observed strings; tax_rate was a number here, while by-plot observed a string. The absent response is the success envelope {status: success, data: null}; no field is invented. Evidence recipe and raw-response attestation are retained in tests/evidence/land-result-contract-evidence.json. Follow-up 2026-09-12: two unlisted map deeds returned null listing_price, market_id, market_listing_id, market_listing_status_id, market_updated_date and unlock_date. These captured nulls are preserved, not treated as malformed.",
+    "notes": "Captured GET /land/deeds/details/{deed_uid} returned a direct 39-field Deed under data. worksite_type and rarity_sort_value were absent, not null. market_id, listing_price, and market_listing_id were numbers here, while the by-plot route observed strings; tax_rate was a number here, while by-plot observed a string. The absent response is the success envelope {status: success, data: null}; no field is invented. Evidence recipe and raw-response attestation are retained in tests/evidence/land-result-contract-evidence.json. Follow-up 2026-09-12: two unlisted map deeds returned null listing_price, market_id, market_listing_id, market_listing_status_id, market_updated_date and unlock_date. These captured nulls are preserved, not treated as malformed. Bounded live evidence 2026-09-14: lock_days may be null on an unlocked deed; preserve null without converting it to zero.",
     "provenance": {
       "source": "live-observation",
       "sourceUrl": null,
