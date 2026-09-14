@@ -18,6 +18,9 @@ export const SWEEP_RESPONSE_CAP = 2 * 1024 * 1024;
 
 function hasResourceScope(entryId: string, params: Record<string, unknown>): boolean {
   const present = (key: string) => typeof params[key] === "string" && String(params[key]).trim().length > 0;
+  if (entryId === "vapi.delegation-rental.v3.bids" || entryId === "vapi.delegation-rental.v3.offers") {
+    return typeof params.limit === "number" && Number.isInteger(params.limit) && params.limit >= 1 && params.limit <= 100;
+  }
   if (entryId === "api.guilds.list") return present("name");
   if (entryId === "api.guilds.find" || entryId === "api.tournaments.find") return present("id");
   if (entryId === "api.tournaments.find-brawl") return present("id") && present("guild_id");
