@@ -88,3 +88,17 @@ it("continues redacting opaque strings even when their original value was review
   const fixture = { data: { value: "private text" }, valueClasses: { "data.value": { valueClass: "opaque" } } };
   expect(sanitizeFixture(fixture, { data: { value: "private text" } }, observedAt)).toMatchObject({ data: { value: "[redacted]" } });
 });
+
+it("sanitizes null at reviewed container paths without admitting new fields", () => {
+  const fixture = { valueClasses: { "data[0].verification.block_num": { valueClass: "numeric" }, "data[0].items[0]": { valueClass: "id" } },
+    data: [{ verification: { block_num: 1 }, items: ["fixture-item"] }] };
+  const result = sanitizeFixture(fixture, { data: [{ verification: null, items: null }] }, observedAt);
+  expect(result).toMatchObject({ data: [{ verification: null, items: null }], valueClasses: {
+    "data[0].verification": { valueClass: "opaque" }, "data[0].items": { valueClass: "opaque" },
+  } });
+  for (const data of [
+    [{ verification: null, items: null, private_extra: null }],
+    [{ verification: { private_extra: "secret" }, items: [] }],
+    [{ verification: "secret", items: [] }],
+  ]) expect(() => sanitizeFixture(fixture, { data }, observedAt)).toThrow();
+});
