@@ -1,3 +1,4 @@
+import { parseCardsCollection, COLLECTION_TIMEOUT_MS } from "../../src/cards-collection.js";
 import { avatarRedirectData, isAvatarRequest } from "../../src/http/avatar-redirect.js";
 import { z } from "zod";
 import { bindRequest, type BoundCatalogueRequest } from "../../src/catalogue/index.js";
@@ -43,7 +44,15 @@ export function createSweepRequester(fetcher: typeof fetch = fetch, limiter = ne
     const url = new URL(bound.path.value, "https://" + bound.hostname);
     for (const [key, value] of Object.entries(bound.queryParams)) url.searchParams.set(key, String(value));
     try {
-      const response = await fetcher(url, { method: "GET", redirect: isAvatarRequest(bound.hostname, url.pathname) ? "manual" : "error", signal: AbortSignal.timeout(20_000) });
+      const response = await fetcher(url, { method: "GET", redirect: isAvatarRequest(bound.hostname, url.pathname) ? "manual" : "error", signal: AbortSignal.timeout(bound.entryId === "api.cards.collection" ? COLLECTION_TIMEOUT_MS : 20_000) });
+      if (bound.entryId === "api.cards.collection" && response.ok) {
+        try {
+          const sample = await parseCardsCollection(response, { limit: 3 });
+          return { status: response.status, body: { player: sample.player, cards: sample.cards }, isJson: true };
+        } catch {
+          return { status: response.status, body: null, isJson: false };
+        }
+      }
       if (!response.body) return { status: response.status, body: null, isJson: false };
       const reader = response.body.getReader();
       const chunks: Uint8Array[] = [];

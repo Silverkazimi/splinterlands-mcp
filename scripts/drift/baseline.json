@@ -968,20 +968,9 @@
               "string"
             ]
           },
-          "cards[].last_buy_price": {
-            "types": [
-              "string"
-            ]
-          },
           "cards[].level": {
             "types": [
               "number"
-            ]
-          },
-          "cards[].market_id": {
-            "types": [
-              "null",
-              "string"
             ]
           },
           "cards[].uid": {
@@ -1003,7 +992,7 @@
         "truncatedAt": []
       },
       "shapeSources": [
-        "api-cards-collection.fixture.json"
+        "api-cards-collection-maintenance.fixture.json"
       ],
       "truncatedAt": [],
       "capturedAt": "2026-09-14"
