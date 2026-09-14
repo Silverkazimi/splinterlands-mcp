@@ -11,7 +11,7 @@ const parameters = (entryId: string) => {
   const accounts = accountParameterNames(entryId);
   const required = new Set([...entry.pathParams.map(item => item.name),
     ...entry.queryParams
-      .filter(item => item.measuredRequired === true || item.declaredRequired).map(item => item.name),
+      .filter(item => item.measuredRequired ?? item.declaredRequired).map(item => item.name),
     ...accounts]);
   return Object.fromEntries([...required].sort().map(name => [name, { required: name,
     ...(accounts.has(name) ? { chooseAccountRole: ["ACCOUNT_SMALL", "ACCOUNT_MID", "ACCOUNT_LARGE", "ACCOUNT_NONE"] } : {}) }]));
