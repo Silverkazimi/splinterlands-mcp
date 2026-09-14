@@ -5875,6 +5875,260 @@
       "capturedAt": "2026-09-14"
     },
     {
+      "entryId": "api.players.custom-avatar",
+      "host": "api",
+      "pathTemplate": "/players/player_avatar/{name}",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "accessory": {
+            "types": [
+              "number"
+            ]
+          },
+          "accessory_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "avatar_resets": {
+            "types": [
+              "number"
+            ]
+          },
+          "background": {
+            "types": [
+              "number"
+            ]
+          },
+          "badges": {
+            "types": [
+              "array"
+            ]
+          },
+          "badges[]": {
+            "types": [
+              "string"
+            ]
+          },
+          "beard": {
+            "types": [
+              "number"
+            ]
+          },
+          "body": {
+            "types": [
+              "number"
+            ]
+          },
+          "cloth": {
+            "types": [
+              "number"
+            ]
+          },
+          "cloth_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "color": {
+            "types": [
+              "string"
+            ]
+          },
+          "complexion": {
+            "types": [
+              "number"
+            ]
+          },
+          "earrings": {
+            "types": [
+              "number"
+            ]
+          },
+          "earrings_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "ears": {
+            "types": [
+              "number"
+            ]
+          },
+          "eyebrows": {
+            "types": [
+              "number"
+            ]
+          },
+          "eyes": {
+            "types": [
+              "number"
+            ]
+          },
+          "eyes_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "face": {
+            "types": [
+              "number"
+            ]
+          },
+          "frame": {
+            "types": [
+              "number"
+            ]
+          },
+          "gender": {
+            "types": [
+              "number"
+            ]
+          },
+          "hair": {
+            "types": [
+              "number"
+            ]
+          },
+          "hair_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "hat": {
+            "types": [
+              "number"
+            ]
+          },
+          "hat_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "is_saved": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "level": {
+            "types": [
+              "number"
+            ]
+          },
+          "mouth": {
+            "types": [
+              "number"
+            ]
+          },
+          "mustache": {
+            "types": [
+              "number"
+            ]
+          },
+          "nose": {
+            "types": [
+              "number"
+            ]
+          },
+          "outfit": {
+            "types": [
+              "number"
+            ]
+          },
+          "outfit_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "player_card_resets": {
+            "types": [
+              "number"
+            ]
+          },
+          "race": {
+            "types": [
+              "string"
+            ]
+          },
+          "racial1": {
+            "types": [
+              "number"
+            ]
+          },
+          "racial1_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "racial2": {
+            "types": [
+              "number"
+            ]
+          },
+          "racial2_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "racial3": {
+            "types": [
+              "number"
+            ]
+          },
+          "racial3_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "racial4": {
+            "types": [
+              "number"
+            ]
+          },
+          "racial4_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "racial5": {
+            "types": [
+              "number"
+            ]
+          },
+          "racial5_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "scars": {
+            "types": [
+              "number"
+            ]
+          },
+          "skin_color": {
+            "types": [
+              "number"
+            ]
+          },
+          "tattoo": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "shapeSources": [
+        "player-custom-avatar.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-14"
+    },
+    {
       "entryId": "api.players.dec",
       "host": "api",
       "pathTemplate": "/players/dec",
