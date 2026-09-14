@@ -8,9 +8,10 @@ const input = (suffix: string): RecaptureInput => ({
   existing: { valueClasses: { "body.height": { valueClass: "numeric" } }, body: { height: 1 } },
 });
 it("prepares a sanitized renewal without retaining raw response content", async () => {
-  const result = await recaptureFixtures([input("a")],
+  const result = await recaptureFixtures([input("with_underscore")],
     async () => ({ status: 200, isJson: true, body: { height: 2 } }));
   expect(result.plan.writes).toHaveLength(1);
+  expect(result.plan.writes[0]!.path).toBe("tests/fixtures/capture-with_underscore.fixture.json");
   expect(JSON.parse(result.plan.writes[0]!.contents).body).toEqual({ height: 2 });
   expect(result.failed).toEqual([]);
 });

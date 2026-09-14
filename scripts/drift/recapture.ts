@@ -22,7 +22,7 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
   if (inputs.length === 0 || inputs.length > 512) throw new Error("Invalid recapture count.");
   if (new Set(inputs.map(item => item.fixturePath)).size !== inputs.length) throw new Error("Duplicate fixture target.");
   const bound = inputs.map(item => {
-    if (!/^tests\/fixtures\/[a-z0-9][a-z0-9-]*\.fixture\.json$/.test(item.fixturePath)) throw new Error("Invalid fixture target.");
+    if (!/^tests\/fixtures\/[a-z0-9][a-z0-9_-]*\.fixture\.json$/.test(item.fixturePath)) throw new Error("Invalid fixture target.");
     return bindSweepInputs([{ entryId: item.entryId, params: item.params,
       ...(item.variantKey === undefined ? {} : { variantKey: item.variantKey }) }])[0]!;
   });
