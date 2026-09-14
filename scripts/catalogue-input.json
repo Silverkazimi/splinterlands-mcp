@@ -13658,19 +13658,23 @@
         },
         "guilds[].tournament_data": {
           "type": "string",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "guilds[].tournament_id": {
           "type": "string",
-          "valueClass": "id"
+          "valueClass": "id",
+          "nullable": true
         },
         "guilds[].tournament_start_date": {
           "type": "string",
-          "valueClass": "timestamp"
+          "valueClass": "timestamp",
+          "nullable": true
         },
         "guilds[].tournament_status": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         }
       },
       "requiredKeyPaths": [
@@ -13679,7 +13683,7 @@
       ],
       "predicateId": "object-list.guilds"
     },
-    "notes": "Search guilds by an explicit name filter. The unfiltered response exceeded the 2 MiB transport limit; a specific name returned one guild and an unmatched name returned no guilds. Other declared filters are forwarded without assuming their effectiveness. The bounded list preserves num_actionable_mail and other surrounding fields. Captured unauthenticated 2026-09-12; see library/observations/guilds-2026-09-12.md.",
+    "notes": "Search guilds by an explicit name filter. The unfiltered response exceeded the 2 MiB transport limit; a specific name returned one guild and an unmatched name returned no guilds. Other declared filters are forwarded without assuming their effectiveness. The bounded list preserves num_actionable_mail and other surrounding fields. Captured unauthenticated 2026-09-12; see library/observations/guilds-2026-09-12.md. A bounded filtered 2026-09-14 response had null tournament_data, tournament_id, tournament_start_date and tournament_status. These four fields allow null while preserving their captured non-null types.",
     "provenance": {
       "source": "live-observation",
       "sourceUrl": "https://api2.splinterlands.com/guilds/list",
@@ -15941,9 +15945,9 @@
         "stats.total_wagon_cp",
         "player.player"
       ],
-      "predicateId": "partial-object-list.wagons"
+      "predicateId": "conflicts.status"
     },
-    "notes": "Read conflict configuration, current conflict, player statistics and wagons for an explicit username. Flag strings use 1: only_config=1 returned config alone, only_wagons=1 returned stats and wagons, and exclude_wagons=1 omitted wagons. only_config=true did not reduce the response. Returned wagons are bounded with other requested sections unchanged. Captured unauthenticated 2026-09-12; see library/observations/conflicts-proposals-2026-09-12.md.",
+    "notes": "Read conflict configuration, current conflict, player statistics and wagons for an explicit username. Flag strings use 1: only_config=1 returned config alone, only_wagons=1 returned stats and wagons, and exclude_wagons=1 omitted wagons. only_config=true did not reduce the response. Returned wagons are bounded with other requested sections unchanged. Captured unauthenticated 2026-09-12; see library/observations/conflicts-proposals-2026-09-12.md. A bounded 2026-09-14 capture included unused wagons with cards:[], total_cp:0 and no updated_date. That omission is accepted only for such rows; timestamps, when present, retain their string type.",
     "provenance": {
       "source": "live-observation",
       "sourceUrl": "https://api2.splinterlands.com/conflicts/status",

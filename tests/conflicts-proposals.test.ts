@@ -121,6 +121,24 @@ it("supports single-season and partial-status shapes without manufacturing omitt
   body=bad;expect((await client.callTool({name:"conflict_status",arguments:{username:"fixture_account"}})).isError).toBe(true);
  }
 });
+it("accepts unused wagons without timestamps while checking populated and malformed rows",async()=>{
+ let body:unknown;await connect(async()=>new Response(JSON.stringify(body)));
+ const empty={wagon_uid:"fixture-wagon",cards:[],total_cp:0,damaged:false};
+ body={stats:{total_wagon_cp:0},wagons:[empty]};
+ const result=await client.callTool({name:"conflict_status",arguments:{username:"fixture_account",only_wagons:"1"}});
+ expect(result.isError).not.toBe(true);
+ expect(result.structuredContent).toEqual(body);
+ for(const row of [
+  {...empty,updated_date:123},
+  {...empty,updated_date:null},
+  {...empty,cards:[{uid:"fixture-card"}]},
+  {...empty,total_cp:1},
+  {...empty,damaged:"false"},
+ ]){
+  body={stats:{total_wagon_cp:0},wagons:[row]};
+  expect((await client.callTool({name:"conflict_status",arguments:{username:"fixture_account",only_wagons:"1"}})).isError).toBe(true);
+ }
+});
 it("rejects missing identity, ambiguous conflict aliases and credentials before HTTP",async()=>{
  let requests=0;await connect(async()=>{requests++;return new Response("{}");});
  for(const args of [
