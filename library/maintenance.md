@@ -82,3 +82,5 @@ Opaque booleans and finite numbers are retained only when that exact value was a
 Avatar fixture renewal validates the captured redirect against the bound player route and trusted HTTPS image hosts, then retains the reviewed synthetic fixture URLs. Account-bearing URLs stay out of published fixtures; unexpected fields still require review.
 
 Asset metadata recipes must retain the asset category recorded in their fixture. Recapture rejects a category mismatch before sending any batch request. A successful endpoint binding alone does not establish that a recipe exercises its intended scenario.
+
+The region-count and tract-count empty fixtures use the documented request with no parameters. Maintenance permits exactly this unscoped case on these two routes. A zero-land account is not a substitute for the region-count empty scenario: a player-scoped response contains region rows even with zero owned land.
