@@ -4,46 +4,126 @@
     "observedAt": "2026-09-06T19:28:59Z"
   },
   "valueClasses": {
-    "status": { "valueClass": "enum" },
-    "data.map_name": { "valueClass": "enum" },
-    "data.region_id": { "valueClass": "numeric" },
-    "data.tract_id": { "valueClass": "numeric" },
-    "data.plot_id": { "valueClass": "numeric" },
-    "data.region_number": { "valueClass": "numeric" },
-    "data.tract_number": { "valueClass": "numeric" },
-    "data.plot_number": { "valueClass": "numeric" },
-    "data.territory": { "valueClass": "enum" },
-    "data.region_uid": { "valueClass": "id" },
-    "data.resource_symbol": { "valueClass": "enum" },
-    "data.resource_id": { "valueClass": "id" },
-    "data.magic_type": { "valueClass": "enum" },
-    "data.stats": { "valueClass": "opaque" },
-    "data.deed_uid": { "valueClass": "id" },
-    "data.player": { "valueClass": "name" },
-    "data.created_date": { "valueClass": "timestamp" },
-    "data.listed": { "valueClass": "enum" },
-    "data.lock_days": { "valueClass": "numeric" },
-    "data.unlock_date": { "valueClass": "timestamp" },
-    "data.in_use": { "valueClass": "enum" },
-    "data.deed_type": { "valueClass": "enum" },
-    "data.land_stats": { "valueClass": "opaque" },
-    "data.region_name": { "valueClass": "enum" },
-    "data.market_updated_date": { "valueClass": "timestamp" },
-    "data.market_id": { "valueClass": "id" },
-    "data.listing_price": { "valueClass": "numeric" },
-    "data.market_listing_id": { "valueClass": "id" },
-    "data.market_listing_status_id": { "valueClass": "opaque" },
-    "data.castle": { "valueClass": "opaque" },
-    "data.keep": { "valueClass": "opaque" },
-    "data.rarity": { "valueClass": "enum" },
-    "data.plot_status": { "valueClass": "enum" },
-    "data.hex_code": { "valueClass": "opaque" },
-    "data.tax_rate": { "valueClass": "numeric" },
-    "data.item_detail_id": { "valueClass": "numeric" },
-    "data.created_block_num": { "valueClass": "numeric" },
-    "data.created_tx": { "valueClass": "id" },
-    "data.time_crystal_value": { "valueClass": "numeric" },
-    "data.is_construction": { "valueClass": "enum" }
+    "status": {
+      "valueClass": "enum"
+    },
+    "data.map_name": {
+      "valueClass": "enum"
+    },
+    "data.region_id": {
+      "valueClass": "numeric"
+    },
+    "data.tract_id": {
+      "valueClass": "numeric"
+    },
+    "data.plot_id": {
+      "valueClass": "numeric"
+    },
+    "data.region_number": {
+      "valueClass": "numeric"
+    },
+    "data.tract_number": {
+      "valueClass": "numeric"
+    },
+    "data.plot_number": {
+      "valueClass": "numeric"
+    },
+    "data.territory": {
+      "valueClass": "enum"
+    },
+    "data.region_uid": {
+      "valueClass": "id"
+    },
+    "data.resource_symbol": {
+      "valueClass": "enum"
+    },
+    "data.resource_id": {
+      "valueClass": "id"
+    },
+    "data.magic_type": {
+      "valueClass": "enum"
+    },
+    "data.stats": {
+      "valueClass": "opaque"
+    },
+    "data.deed_uid": {
+      "valueClass": "id"
+    },
+    "data.player": {
+      "valueClass": "name"
+    },
+    "data.created_date": {
+      "valueClass": "timestamp"
+    },
+    "data.listed": {
+      "valueClass": "enum"
+    },
+    "data.lock_days": {
+      "valueClass": "numeric"
+    },
+    "data.unlock_date": {
+      "valueClass": "timestamp"
+    },
+    "data.in_use": {
+      "valueClass": "enum"
+    },
+    "data.deed_type": {
+      "valueClass": "enum"
+    },
+    "data.land_stats": {
+      "valueClass": "opaque"
+    },
+    "data.region_name": {
+      "valueClass": "enum"
+    },
+    "data.market_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "data.market_id": {
+      "valueClass": "id"
+    },
+    "data.listing_price": {
+      "valueClass": "numeric"
+    },
+    "data.market_listing_id": {
+      "valueClass": "id"
+    },
+    "data.market_listing_status_id": {
+      "valueClass": "numeric"
+    },
+    "data.castle": {
+      "valueClass": "opaque"
+    },
+    "data.keep": {
+      "valueClass": "opaque"
+    },
+    "data.rarity": {
+      "valueClass": "enum"
+    },
+    "data.plot_status": {
+      "valueClass": "enum"
+    },
+    "data.hex_code": {
+      "valueClass": "opaque"
+    },
+    "data.tax_rate": {
+      "valueClass": "numeric"
+    },
+    "data.item_detail_id": {
+      "valueClass": "numeric"
+    },
+    "data.created_block_num": {
+      "valueClass": "numeric"
+    },
+    "data.created_tx": {
+      "valueClass": "id"
+    },
+    "data.time_crystal_value": {
+      "valueClass": "numeric"
+    },
+    "data.is_construction": {
+      "valueClass": "enum"
+    }
   },
   "status": "success",
   "data": {

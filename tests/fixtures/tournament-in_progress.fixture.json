@@ -52,7 +52,7 @@
       "valueClass": "numeric"
     },
     "body[0].max_entrants": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].entry_fee": {
       "valueClass": "opaque"
