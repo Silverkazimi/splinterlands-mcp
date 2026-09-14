@@ -33,24 +33,19 @@ describe("endpoint catalogue guards", () => {
   }
 
   function _compileTimePathGuard(client: SplinterlandsHttpClient, outsidePath: { readonly value: string }): void {
-    // Semantic: client.request cannot receive a path made outside the catalogue. Mutation: export createCataloguePath or widen request's path type. Input: an object with the same visible value field still fails TypeScript's opaque brand check.
     // @ts-expect-error An outside object is not a CataloguePath.
     void client.request("api.splinterlands.com", outsidePath);
   }
 
   it("rejects an unbranded runtime path", async () => {
-    // Semantic: runtime callers cannot pass a lookalike path. Mutation: remove isCataloguePath from request. Input: a plain object with the expected value field reaches the runtime boundary and must be rejected before fetch.
     const client = new SplinterlandsHttpClient({ fetch: async () => new Response(JSON.stringify({ value: 1 })) });
     await expect(client.request("api.splinterlands.com", { value: "/hardcoded" } as unknown as CataloguePath)).rejects.toThrow("catalogue path");
   });
 
   it("keeps the test-only path seam explicit", () => {
-    // Semantic: synthetic HTTP tests use a named test-only constructor. Mutation: remove its validation or replace it with a public arbitrary path factory. Input: a valid synthetic path is produced, but its construction is visibly outside the production binding path.
     expect(createTestOnlyCataloguePath("/synthetic").value).toBe("/synthetic");
     expect(() => createTestOnlyCataloguePath("/hardcoded?query=1")).toThrow("Catalogue paths");
   });
-
-  // Semantic: every catalogue entry is callable through the read-only transport. Mutation: remove method from any generated entry. Input: the generated catalogue entry then fails the required method field.
   it("contains only GET entries with unique ids", () => {
     expect(new Set(catalogue.map((entry) => entry.entryId)).size).toBe(catalogue.length);
     expect(catalogue.every((entry) => entry.method === "GET")).toBe(true);
@@ -323,8 +318,6 @@ describe("endpoint catalogue guards", () => {
     expect(stats.notes).not.toContain("fabricates content");
     expect(stats.notes).not.toContain("misdescribes what it selects");
   });
-
-  // Semantic: every declared result key has a human semantic class. Mutation: remove valueClass from one fingerprint field. Input: a synthetic entry with that field reaches the schema and must fail before loading.
   it("rejects a fingerprint field without valueClass", () => {
     const entry = catalogue[0];
     expect(entry).toBeDefined();
@@ -337,8 +330,6 @@ describe("endpoint catalogue guards", () => {
     };
     expect(() => loadCatalogue([broken])).toThrow(/valueClass/);
   });
-
-  // Semantic: auth is a classification with exactly three values. Mutation: replace authTier on a generated entry with an unrecognised value. Input: the changed entry fails zod validation rather than creating a fourth tier.
   it("keeps the auth tier closed", () => {
     expect(catalogue.every((entry) => entry.declared.authTier === null || entry.declared.authTier === "public" || entry.declared.authTier === "requires_auth" || entry.declared.authTier === "blocked")).toBe(true);
     const entry = catalogue[0];
@@ -450,8 +441,6 @@ describe("endpoint catalogue guards", () => {
     }])).toThrow(/sourceUrl|specHash/);
     expect(() => loadCatalogue([{ ...entry, provenance: { source: "unknown" } }])).toThrow(/provenance/);
   });
-
-  // Semantic: tools must obtain parameter validation from the selected entry. Mutation: remove a required path parameter from the binding input. Input: the owned-deeds entry receives an empty object and must fail before a client call can exist.
   it("rejects missing required path parameters as programming errors", () => {
     expect(() => bindRequest("vapi.land.deeds.owned", {})).toThrow(CatalogueProgrammingError);
     try {
@@ -560,13 +549,9 @@ describe("endpoint catalogue guards", () => {
     expect(queries).toHaveLength(1);
     expect(queries[0]).not.toHaveProperty("player");
   });
-
-  // Semantic: an unknown entry cannot reach the transport. Mutation: change a binding call's entryId to one absent from catalogue.json. Input: the resolver has no matching value and must identify the unknown id.
   it("rejects unknown entry ids", () => {
     expect(() => bindRequest("vapi.land.missing", {})).toThrow(/Unknown catalogue entryId/);
   });
-
-  // Semantic: the binding site passes the branded path, symbolic host resolution, query values, and validator to L1. Mutation: change BoundCatalogueRequest.execute to pass any separately assembled path. Input: a catalogue search request with a limit makes the captured request observably different from the bound request if wiring drifts.
   it("binds the contract at the L1 call site", async () => {
     const bound = bindRequest("vapi.land.deeds.search", syntheticSearchParams);
     let seen: { host?: string; path?: unknown; params?: unknown; validate?: unknown } = {};
@@ -588,8 +573,6 @@ describe("endpoint catalogue guards", () => {
     expect(seen?.params).toEqual(syntheticSearchParams);
     expect(typeof seen?.validate).toBe("function");
   });
-
-  // Semantic: the shared fingerprint is stable and preserves semantic classes. Mutation: stop sorting key paths in fingerprint.ts. Input: intentionally reverse-ordered declared fields expose nondeterministic output.
   it("sorts the declared fingerprint through one shared function", () => {
     const contract = {
       envelope: "vapi" as const,
@@ -602,8 +585,6 @@ describe("endpoint catalogue guards", () => {
     expect(Object.keys(fingerprint({ declared: contract }))).toEqual(["a.value", "z.value"]);
     expect(fingerprint({ declared: contract })["a.value"]?.valueClass).toBe("enum");
   });
-
-  // Semantic: each variant names the contract used by its request. Mutation: delete a named variant from the generated entry. Input: selecting that variant must fail instead of silently falling back to default.
   it("does not silently fall back from an unknown variant", () => {
     expect(() => inputSchemaFor("vapi.land.deeds.search", "not-present")).toThrow(/unknown variantKey/);
     expect(bindRequest("vapi.land.deeds.search", syntheticSearchParams, "limited").variantKey).toBe("limited");
