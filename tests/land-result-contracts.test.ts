@@ -679,3 +679,9 @@ describe("captured land result contracts", () => {
     expect(swapsPredicate(stringQuantity)).toBe(false);
   });
 });
+
+it("accepts a null lock duration on an unlocked deed without coercing strings", () => {
+  const accepts = predicateFor(getCatalogueEntry("vapi.land.deeds.details-by-uid").resultContract);
+  expect(accepts({ ...byUidHit, data: { ...byUidHit.data, lock_days: null } })).toBe(true);
+  expect(accepts({ ...byUidHit, data: { ...byUidHit.data, lock_days: "0" } })).toBe(false);
+});
