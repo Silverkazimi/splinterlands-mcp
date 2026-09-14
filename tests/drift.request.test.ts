@@ -105,3 +105,13 @@ it("accepts bounded global rental pages without forcing a player filter", () => 
   }
   expect(() => bindSweepInputs([{ entryId: TOOL_ENTRY_IDS.player_profile, params: { limit: 2 } }])).toThrow();
 });
+
+it("preserves the documented unscoped count scenarios without weakening account routes", () => {
+  for (const entryId of ["vapi.land.regions.counts", "vapi.land.tracts.counts"]) {
+    const bound = bindSweepInputs([{ entryId, params: {} }])[0]!;
+    expect(bound.queryParams).toEqual({});
+    expect(() => bindSweepInputs([{ entryId, params: { player: "" } }])).toThrow();
+  }
+  expect(() => bindSweepInputs([{ entryId: "vapi.land.resources.production-region-harvestable", params: { region_uid: "fixture-region" } }])).toThrow();
+  expect(() => bindSweepInputs([{ entryId: TOOL_ENTRY_IDS.player_profile, params: {} }])).toThrow();
+});
