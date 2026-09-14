@@ -109,7 +109,7 @@
       "valueClass": "opaque"
     },
     "body.data.details[3].circulation": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.data.details[3].group": {
       "valueClass": "opaque"

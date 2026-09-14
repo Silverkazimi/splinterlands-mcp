@@ -43,7 +43,7 @@
       "valueClass": "opaque"
     },
     "body[0].alchemy_potions_to_boost": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].card_black_chance": {
       "valueClass": "opaque"
@@ -52,13 +52,13 @@
       "valueClass": "opaque"
     },
     "body[0].midnight_potions_to_boost": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].cards_to_guarantee_one_gold": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].cards_to_guarantee_one_gold_full_potions": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].voucher_cost_to_boost": {
       "valueClass": "opaque"
@@ -112,7 +112,7 @@
       "valueClass": "opaque"
     },
     "body[1].alchemy_potions_to_boost": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].card_black_chance": {
       "valueClass": "opaque"
@@ -121,13 +121,13 @@
       "valueClass": "opaque"
     },
     "body[1].midnight_potions_to_boost": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].cards_to_guarantee_one_gold": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].cards_to_guarantee_one_gold_full_potions": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].voucher_cost_to_boost": {
       "valueClass": "opaque"
@@ -181,7 +181,7 @@
       "valueClass": "opaque"
     },
     "body[2].alchemy_potions_to_boost": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[2].card_black_chance": {
       "valueClass": "opaque"
@@ -190,13 +190,13 @@
       "valueClass": "opaque"
     },
     "body[2].midnight_potions_to_boost": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[2].cards_to_guarantee_one_gold": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[2].cards_to_guarantee_one_gold_full_potions": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[2].voucher_cost_to_boost": {
       "valueClass": "opaque"

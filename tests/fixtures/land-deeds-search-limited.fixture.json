@@ -182,7 +182,7 @@
       "valueClass": "enum"
     },
     "data.deeds[1].lock_days": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "data.deeds[1].unlock_date": {
       "valueClass": "timestamp"
@@ -212,7 +212,7 @@
       "valueClass": "id"
     },
     "data.deeds[1].market_listing_status_id": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "data.deeds[1].castle": {
       "valueClass": "opaque"
@@ -335,7 +335,7 @@
       "valueClass": "id"
     },
     "data.deeds[2].market_listing_status_id": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "data.deeds[2].castle": {
       "valueClass": "opaque"
@@ -1028,7 +1028,7 @@
       "valueClass": "name"
     },
     "data.staking_details[1].active_land_project_id": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "data.staking_details[1].has_completed_first_project": {
       "valueClass": "enum"
