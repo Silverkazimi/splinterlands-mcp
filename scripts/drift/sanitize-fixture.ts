@@ -71,7 +71,9 @@ export function sanitizeFixture(existing: unknown, captured: unknown, observedAt
     if (typeof value === "string" && forbiddenText.some(text => text.length > 0 && value.toLowerCase().includes(text.toLowerCase()))) {
       throw new Error("Account identifier outside a name field.");
     }
-    if (rule.valueClass === "enum" && !rule.values.has(value)) throw new Error("Unreviewed enum value.");
+    const booleanEnum = rule.valueClass === "enum" && typeof value === "boolean"
+      && [...rule.values].every(reviewed => typeof reviewed === "boolean");
+    if (rule.valueClass === "enum" && !booleanEnum && !rule.values.has(value)) throw new Error("Unreviewed enum value.");
     if (rule.valueClass === "numeric" && !(typeof value === "number" && Number.isFinite(value))
       && !(typeof value === "string" && /^-?\d+(?:\.\d+)?$/.test(value))) throw new Error("Invalid numeric value.");
     if (rule.valueClass === "timestamp" && !(typeof value === "number" && Number.isFinite(value))
