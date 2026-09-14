@@ -6,9 +6,9 @@ an MCP-capable assistant (Claude Desktop, Claude Code, and other MCP clients)
 answer questions about Land, cards, and players by calling Splinterlands' own public endpoints.
 Version `0.0.0` is an unpublished pre-release. Use a current Node.js 22 or 24 LTS patch release (minimum 22.13).
 
-**Status: pre-release.** 161 tools are registered (`src/server.ts`).
+**Status: pre-release.** 162 tools are registered (`src/server.ts`).
 66 call `vapi.splinterlands.com`: 40 Land routes covering deeds, projects,
-counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 88 call
+counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 89 call
 `api.splinterlands.com`: eight card tools, one item-metadata tool, and 29
 player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads. Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 189 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
 `library/endpoint-knowledge-tools.md` for the evidence model.
@@ -237,6 +237,7 @@ tools are local and make no upstream request.
 | `player_lp_claim_history` | `GET /players/lp_claim_history` |
 | `player_pack_purchases` | `GET /players/pack_purchases` |
 | `player_presale_leaders` | `GET /players/rebellion_presale_leaders` |
+| `player_avatar` | `GET /players/avatar/{name}` |
 | `player_profile` | `GET /players/details` |
 | `player_quests` | `GET /players/quests` |
 | `player_recent_teams` | `GET /players/recent_teams` |
@@ -313,7 +314,7 @@ counted by the first call.
   Splinterlands account credential, a Hive posting/active key, or any other
   secret. If you need an endpoint that requires login, this is the wrong
   tool for that endpoint — it will tell you so rather than pretend to work.
-- **Unsupported catalogue routes are excluded.** 35 of the 189 catalogued
+- **Unsupported catalogue routes are excluded.** 34 of the 189 catalogued
   routes are not advertised as tools because their dated probes did not
   produce a usable, distinct, or honestly-selected response. The first group contains three Land routes classified 2026-09-07
   and six market, rental and collector routes classified 2026-09-12:
@@ -370,7 +371,6 @@ counted by the first call.
   | `GET /purchases/status` | Only empty objects captured; no verified populated receipt contract or purchase ID. | 2026-09-12 |
   | `GET /players/inventory` | A measured response was about 986 KB, above this server's 256 KB result bound. | 2026-09-09 |
   | `GET /players/details_by_id` | A genuine numeric player id was not available in the profile response, so a successful lookup was not established. | 2026-09-09 |
-  | `GET /players/avatar/{name}` | HTTP 302 with a text body redirects to an image; redirects were not followed by this JSON-only transport. | 2026-09-12 |
 
 - **No design hook for authentication.** There is no config field, no
   commented-out branch, and no environment variable this server reads to
@@ -427,7 +427,7 @@ apply process-wide, separately for each approved API host:
 | Cache | In-memory only; settings/card-details TTLs are wired at the tool layer (later release), and only the auth-tier cache is active in this version |
 | Access changes | 401 is cached for 15 minutes; 403 stops traffic across both hosts for 60 seconds |
 
-Catalogue requests are HTTPS `GET`s to the two approved game hosts, with redirects and URL
+Catalogue requests are HTTPS `GET`s to the two approved game hosts, with redirect following and URL
 credentials rejected. Responses include a trace ID and retrieval freshness.
 Empty, malformed, gated, blocked, and temporarily unavailable responses remain
 separate outcomes so a tool can explain what happened without making claims
@@ -533,3 +533,5 @@ The `land_stake_deed_details` response adds `plot_view`: the public overview's `
 `player_inventory` requires username and an upstream type filter. The observed `Land` filter still includes Token rows. Optional `item_detail_id` filters all received rows locally before the 100-row/256-KiB result bound; upstream_rows, matched_rows and truncated describe the scope. It does not infer staking eligibility or full holdings. See `library/observations/player-inventory-2026-09-12.json`.
 
 Four account market tools read activity, per-asset listings, all-listing rows and owned/listed stats. Activity requires player, types and sort; the observed client defaults are `purchase,sale` and `desc`. `asc` returned older rows and `sale` selected sales. `offset=1` did not select the second unoffset record; do not assume conventional row-offset paging. The existing landing tool also returns player-specific numOwned when supplied. See `library/observations/vapi-market-account-2026-09-12.json`.
+
+player_avatar resolves an account’s public avatar to its current HTTPS image link. It returns the reusable avatar_url, current image_url, and upstream redirect_status without downloading the image or following the redirect.

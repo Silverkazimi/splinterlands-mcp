@@ -35,3 +35,35 @@ it("cancels oversized responses and suppresses malformed/network response conten
   const failure = createSweepRequester(async () => { throw new Error("private network detail"); });
   expect(await failure(inputs()[0]!)).toEqual({ status: 0, body: null, isJson: false });
 });
+
+it("accepts explicit resource scope without adding an unrelated account", () => {
+  const cases = [
+    {entryId:"api.guilds.list",params:{name:"fixture guild"}},
+    {entryId:"api.guilds.find",params:{id:"fixture-guild"}},
+    {entryId:"api.tournaments.find",params:{id:"fixture-tournament"}},
+    {entryId:"api.tournaments.find-brawl",params:{id:"fixture-brawl",guild_id:"fixture-guild"}},
+    {entryId:"api.tournaments.battles",params:{id:"fixture-tournament",round:"1",swiss_group:"1"}},
+  ];
+  for (const row of cases) {
+    expect(bindSweepInputs([row])).toHaveLength(1);
+    for (const key of Object.keys(row.params)) {
+      const params = {...row.params} as Record<string,string>;
+      delete params[key];
+      expect(() => bindSweepInputs([{entryId:row.entryId,params}])).toThrow();
+    }
+  }
+  expect(() => bindSweepInputs([{entryId:"api.guilds.list",params:{name:" "}}])).toThrow();
+  expect(() => bindSweepInputs([{entryId:TOOL_ENTRY_IDS.player_profile,params:{id:"fixture-id"}}])).toThrow();
+});
+
+it("checks the avatar projection without following its image redirect", async () => {
+  const bound=bindSweepInputs([{entryId:"api.players.avatar",params:{name:"fixture-account"}}])[0]!;
+  let calls=0;
+  const request=createSweepRequester(async(_url,options)=>{
+    calls++;
+    expect(options?.redirect).toBe("manual");
+    return new Response("Found",{status:302,headers:{location:"https://runi.splinterlands.com/avatars/1000.png"}});
+  });
+  expect(await request(bound)).toMatchObject({status:200,isJson:true,body:{redirect_status:302,image_url:"https://runi.splinterlands.com/avatars/1000.png"}});
+  expect(calls).toBe(1);
+});
