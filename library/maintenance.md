@@ -84,3 +84,5 @@ Avatar fixture renewal validates the captured redirect against the bound player 
 Asset metadata recipes must retain the asset category recorded in their fixture. Recapture rejects a category mismatch before sending any batch request. A successful endpoint binding alone does not establish that a recipe exercises its intended scenario.
 
 The region-count and tract-count empty fixtures use the documented request with no parameters. Maintenance permits exactly this unscoped case on these two routes. A zero-land account is not a substitute for the region-count empty scenario: a player-scoped response contains region rows even with zero owned land.
+
+A null at an already reviewed object or array path carries no sensitive content and can be sanitized. This does not admit new paths or unknown nested fields; renewal still applies its independent shape comparison and batch hold rules.
