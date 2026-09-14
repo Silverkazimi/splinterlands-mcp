@@ -2,7 +2,7 @@ import definitionFixture from "./fixtures/api-cards-get-details.fixture.json" wi
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import collectionFixture from "./fixtures/api-cards-collection.fixture.json" with { type: "json" };
+import collectionFixture from "./fixtures/api-cards-collection.raw.json" with { type: "json" };
 import { CollectionParseError, parseCardsCollection, type ProjectedCollectionCard } from "../src/cards-collection.js";
 import { getCatalogueEntry } from "../src/catalogue/index.js";
 import { matchesResultContract } from "../src/catalogue/fingerprint.js";

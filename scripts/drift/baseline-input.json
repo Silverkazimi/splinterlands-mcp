@@ -205,9 +205,6 @@
   "land-liquidity-region-empty.fixture.json": {
     "entryId": "vapi.land.liquidity.region"
   },
-  "api-cards-collection.fixture.json": {
-    "entryId": "api.cards.collection"
-  },
   "api-cards-find.fixture.json": {
     "entryId": "api.cards.find"
   },
@@ -681,5 +678,8 @@
   },
   "player-avatar.fixture.json": {
     "entryId": "api.players.avatar"
+  },
+  "api-cards-collection-maintenance.fixture.json": {
+    "entryId": "api.cards.collection"
   }
 }

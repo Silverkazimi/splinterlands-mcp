@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { expect, it } from "vitest";
 import { bindSweepInputs, createSweepRequester, SWEEP_RESPONSE_CAP } from "../scripts/drift/request.js";
 import { TOOL_ENTRY_IDS } from "../src/server.js";
@@ -66,4 +67,27 @@ it("checks the avatar projection without following its image redirect", async ()
   });
   expect(await request(bound)).toMatchObject({status:200,isJson:true,body:{redirect_status:302,image_url:"https://runi.splinterlands.com/avatars/1000.png"}});
   expect(calls).toBe(1);
+});
+
+it("streams oversized collections while retaining only three projected cards", async () => {
+  const fixture = JSON.parse(readFileSync(new URL("./fixtures/api-cards-collection.raw.json", import.meta.url), "utf8"));
+  const card = fixture.body.cards[0];
+  const body = JSON.stringify({player:"fixture-account",cards:Array.from({length:4},()=>({...card,padding:"x".repeat(550000)}))});
+  expect(Buffer.byteLength(body)).toBeGreaterThan(SWEEP_RESPONSE_CAP);
+  const bound = bindSweepInputs([{entryId:"api.cards.collection",params:{username:"fixture-account"}}])[0]!;
+  const request = createSweepRequester(async()=>new Response(body));
+  const result = await request(bound);
+  expect(result.isJson).toBe(true);
+  const sample = result.body as {cards:unknown[]};
+  expect(sample.cards).toHaveLength(3);
+  expect(sample.cards[0]).not.toHaveProperty("padding");
+  expect(sample.cards[0]).not.toHaveProperty("last_buy_price");
+}, 20000);
+
+it("validates collection cards beyond the retained sample", async () => {
+  const fixture = JSON.parse(readFileSync(new URL("./fixtures/api-cards-collection.raw.json", import.meta.url), "utf8"));
+  const card = fixture.body.cards[0];
+  const bound = bindSweepInputs([{entryId:"api.cards.collection",params:{username:"fixture-account"}}])[0]!;
+  const request=createSweepRequester(async()=>Response.json({player:"fixture-account",cards:[card,card,card,{...card,bcx:"wrong"}]}));
+  expect(await request(bound)).toEqual({status:200,body:null,isJson:false});
 });
