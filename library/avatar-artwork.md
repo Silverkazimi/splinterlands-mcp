@@ -10,6 +10,20 @@ Rendering uses only the mapped CloudFront asset host. It does not follow redirec
 
 The older player_avatar tool resolves a legacy profile image redirect. That endpoint may return RUNI artwork and does not establish the custom character's appearance.
 
+## RUNI image variants
+
+RUNI art is separate from the avatar-builder character. The legacy redirect can select a round portrait; it should not be treated as normal card artwork.
+
+The official RUNI image host exposes these observed paths, where TOKEN_NUMBER is the individual RUNI number:
+
+| Image | Path on https://runi.splinterlands.com | Observed dimensions |
+| --- | --- | --- |
+| Round portrait | /avatars/TOKEN_NUMBER.png | 150 by 150 PNG |
+| Card image | /cards/TOKEN_NUMBER.jpg | 300 by 420 JPEG |
+| Square artwork | /images/TOKEN_NUMBER.png | 3000 by 3000 PNG |
+
+These routes and dimensions were checked for one public RUNI on 2026-09-14. That observation does not establish availability for every token, ownership, or a universal mapping from every card UID. The player_avatar tool only returns the selected legacy redirect URL; it does not fetch these variants or offer a RUNI metadata lookup. A separate variant resolver would need token validation, bounded retrieval and its own acceptance tests.
+
 The mapping is factual asset/configuration data extracted from the public official client: https://splinterlands.com/assets/index-CETWKRFI.js. No account identifier or player-specific selection is embedded in the renderer. Tests compare PNG bytes across level-only changes and exercise unsupported selections, redirect/format/size rejection and MCP image delivery.
 
 ## Refreshing the asset map
