@@ -111,3 +111,17 @@ it("bounds guild lists and brawl records while preserving surrounding fields",as
   expect(result._meta).toMatchObject({resultLimit:{truncated:true,upstreamRows:120,returnedRows:100}});
  }
 });
+
+it("accepts nullable tournament fields but rejects incorrect non-null types",async()=>{
+ const body=capture("list-name") as {guilds:Record<string,unknown>[]};
+ for(const field of ["tournament_data","tournament_id","tournament_start_date","tournament_status"]) body.guilds[0]![field]=null;
+ await connect(async()=>new Response(JSON.stringify(body)));
+ const result=await client.callTool({name:"guild_list",arguments:{name:"fixture guild"}});
+ expect(result.isError).not.toBe(true);
+ expect(result.structuredContent).toEqual(body);
+ for(const field of ["tournament_data","tournament_id","tournament_start_date","tournament_status"]){
+  body.guilds[0]![field]=false;
+  expect((await client.callTool({name:"guild_list",arguments:{name:"fixture guild"}})).isError).toBe(true);
+  body.guilds[0]![field]=null;
+ }
+});
