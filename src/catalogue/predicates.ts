@@ -27,6 +27,20 @@ export const cataloguePredicates: Readonly<Record<string, CataloguePredicate>> =
 };
 
 export function predicateFor(contract: ResultContract): CataloguePredicate {
+  if (contract.predicateId === "players.custom-avatar") {
+    return (body): body is unknown => {
+      if (typeof body !== "object" || body === null || Array.isArray(body)) return false;
+      const data = body as Record<string, unknown>;
+      if (!Number.isInteger(data.level) || (data.level as number) < 0) return false;
+      if (data.badges !== undefined && (!Array.isArray(data.badges) || !data.badges.every(value => typeof value === "string"))) return false;
+      return matchesResultContract(body, {
+        ...contract,
+        fingerprint: Object.fromEntries(Object.entries(contract.fingerprint)
+          .filter(([path]) => !path.includes("[]") && Object.hasOwn(data, path))),
+      });
+    };
+  }
+
   if (contract.predicateId === "conflicts.status") {
     const base = { ...contract, predicateId: "partial-object-list.wagons" };
     return (body): body is unknown => {
