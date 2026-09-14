@@ -68,3 +68,7 @@ Monthly sample gaps count toward the existing batch hold threshold, so a batch l
 ## Collection streaming sample
 
 The collection route has no upstream pagination. Maintenance uses the same 90-second streaming parser and memory guards as the collection tool, validates all cards, and retains at most three projected cards. The general 2 MiB body cap is unchanged for other routes. The collection baseline and monthly fixture cover the MCP projection; the original raw collection fixture remains for parser tests. Unused last_buy_price and market_id fields are outside that projection. A malformed card after the retained sample still fails the check. This is a leading sample, not complete holdings or complete coverage of every optional field.
+
+### Global rental-market samples
+
+The public V3 bids and offers lists may omit the optional player filter when an explicit integer limit from 1 to 100 is supplied, matching the MCP tools. Preserve the original price, quantity and offset filters when configuring scenario fixtures. Account-specific rental routes still require account scope. The existing response-size cap, timeout and pacing remain in effect.
