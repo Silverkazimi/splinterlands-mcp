@@ -52,7 +52,7 @@
       "valueClass": "numeric"
     },
     "body[0].max_entrants": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].entry_fee": {
       "valueClass": "opaque"
@@ -268,7 +268,7 @@
       "valueClass": "numeric"
     },
     "body[1].max_entrants": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].entry_fee": {
       "valueClass": "opaque"
@@ -430,7 +430,7 @@
       "valueClass": "numeric"
     },
     "body[2].max_entrants": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[2].entry_fee": {
       "valueClass": "opaque"
@@ -542,7 +542,7 @@
       "sub_format": null,
       "created_by": "sample-acct-110",
       "name": "Monday Night Madness",
-      "description": "Sponsored by Team Possible. Mondays at 19:30 UTC. Entry: 50 DEC. Modern Silver Ghost Card Event. One one-hour round, groups of up to eight and a maximum of seven matches per player. Four registered players are required.\n\nWeekly prizes, all 13 weeks: 1st\u2014Escalation Pack + 962 DEC; 2nd\u2014Foundation Pack + 481 DEC; 3rd\u2014288 DEC; 4th\u2014192 DEC.\n\nAfter 13 weeks, the Top 8 share 45,000 DEC: 18,000 / 9,000 / 5,400 / 3,375 / 2,813 / 2,475 / 2,250 / 1,687 DEC.\n\nJoin Team Possible's Sunday chats, alternating weekly between 2pm and 10pm Eastern. Team Possible Discord: https://discord.gg/SaKc6X8PZb\n\nOne account per person. Cancelled events are refunded and award no points. prizes and standings are reconciled within 48 hours. Splinterlands Support handles match or platform disputes; use the Phoenix Reborn Discord for other disputes. Discord: https://discord.gg/qfFEJkcZ4Z\n",
+      "description": "Sponsored by Team Possible. Mondays at 19:30 UTC. Entry: 50 DEC. Modern Silver Ghost Card Event. One one-hour round, groups of up to eight and a maximum of seven matches per player. Four registered players are required.\n\nWeekly prizes, all 13 weeks: 1st—Escalation Pack + 962 DEC; 2nd—Foundation Pack + 481 DEC; 3rd—288 DEC; 4th—192 DEC.\n\nAfter 13 weeks, the Top 8 share 45,000 DEC: 18,000 / 9,000 / 5,400 / 3,375 / 2,813 / 2,475 / 2,250 / 1,687 DEC.\n\nJoin Team Possible's Sunday chats, alternating weekly between 2pm and 10pm Eastern. Team Possible Discord: https://discord.gg/SaKc6X8PZb\n\nOne account per person. Cancelled events are refunded and award no points. prizes and standings are reconciled within 48 hours. Splinterlands Support handles match or platform disputes; use the Phoenix Reborn Discord for other disputes. Discord: https://discord.gg/qfFEJkcZ4Z\n",
       "start_date": "2026-10-26T20:30:00.000Z",
       "status": 4,
       "allow_lite": false,
