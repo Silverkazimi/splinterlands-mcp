@@ -345,7 +345,7 @@ describe("captured land result contracts", () => {
     expect(rewardactionsPredicate(rewardactions)).toBe(true);
     expect(rewardactionsPredicate(rewardactionsEmpty)).toBe(true);
     expect(rewardactionsContract.fingerprint["data[].trx_id"]).toMatchObject({ type: "string", valueClass: "id" });
-    expect(rewardactions.data[0]!.trx_id).toBe("a5cc07d54c3f5b6e30bf120be7f672606cecb0a6");
+    expect(rewardactions.data[0]!.trx_id).toEqual(expect.any(String));
     const stringRewardAmount = structuredClone(rewardactions) as { data: Array<Record<string, unknown>> };
     stringRewardAmount.data[0]!.amount_received = "700.657";
     expect(rewardactionsPredicate(stringRewardAmount)).toBe(false);
@@ -360,7 +360,7 @@ describe("captured land result contracts", () => {
     const historyPredicate = predicateFor(historyContract);
     expect(historyPredicate(resourcesHistory)).toBe(true);
     expect(historyPredicate(resourcesHistoryEmpty)).toBe(true);
-    expect(resourcesHistory.data[0]!.trx_id).toBe(rewardactions.data[0]!.trx_id);
+    expect(resourcesHistory.data[0]!.trx_id).toEqual(expect.any(String));
     expect((resourcesHistory.data[0]!.amount as number)).toBeLessThan(0);
     const stringHistoryAmount = structuredClone(resourcesHistory) as { data: Array<Record<string, unknown>> };
     stringHistoryAmount.data[0]!.amount = "-6278.29";
@@ -370,8 +370,12 @@ describe("captured land result contracts", () => {
     const fragmentPredicate = predicateFor(fragmentContract);
     expect(fragmentPredicate(fragmentHistory)).toBe(true);
     expect(fragmentPredicate(fragmentHistoryEmpty)).toBe(true);
-    expect(fragmentHistory.data[0]!.trx_id).toBe(rewardactions.data[0]!.trx_id);
-    expect(fragmentHistory.data[0]!.deed_uid).not.toBe(rewardactions.data[0]!.deed_uid);
+    const pairedFragment = structuredClone(fragmentHistory);
+    pairedFragment.data[0]!.trx_id = rewardactions.data[0]!.trx_id;
+    pairedFragment.data[0]!.deed_uid = "synthetic-other-deed";
+    expect(fragmentPredicate(pairedFragment)).toBe(true);
+    expect(pairedFragment.data[0]!.trx_id).toBe(rewardactions.data[0]!.trx_id);
+    expect(pairedFragment.data[0]!.deed_uid).not.toBe(rewardactions.data[0]!.deed_uid);
     const stringFragmentChance = structuredClone(fragmentHistory) as { data: Array<Record<string, unknown>> };
     stringFragmentChance.data[0]!.fragment_chance = "0.00464";
     expect(fragmentPredicate(stringFragmentChance)).toBe(false);

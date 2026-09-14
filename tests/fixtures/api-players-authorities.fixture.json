@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T07:47:48.585118+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/authorities",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "0f368a0e3e524d38663fa408b342f42ce56c0570f4e3d9f363638552c3734bb3",
+        "alternateShape": "161eaf2632c858f3597837e3fcd0d53fadde0a61cf1b683ab0b8437211777076"
+      }
+    ]
   },
   "valueClasses": {
     "body[0].name": {
@@ -13,188 +20,188 @@
       "valueClass": "enum"
     },
     "body[0].authorities.purchase[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[3]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[4]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[5]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[6]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[7]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[8]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[9]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[10]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[11]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[12]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[13]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[14]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.purchase[15]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.delegation[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[3]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[4]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[5]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[6]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[7]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[8]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[9]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[10]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[11]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[12]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[13]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[14]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[15]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[16]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[17]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[18]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[19]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[20]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[21]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[22]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[23]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[24]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].authorities.rental[25]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     }
   },
   "body": [
     {
-      "name": "vugtis",
+      "name": "sample-acct-100",
       "require_active_auth": true,
       "authorities": {
         "purchase": [
-          "peakmonsters",
-          "splex.bids",
-          "splex.quezacotl",
-          "splex.shiva",
-          "splex.ifrit",
-          "splex.squall",
-          "splex.brothers",
-          "splex.bahamut",
-          "splex.edea",
-          "splex.eden",
-          "splex.laguna",
-          "splex.quistis",
-          "splex.rinoa",
-          "splex.seifer",
-          "splex.siren",
-          "splex.zell"
+          "sample-acct-081",
+          "sample-acct-114",
+          "sample-acct-115",
+          "sample-acct-116",
+          "sample-acct-117",
+          "sample-acct-118",
+          "sample-acct-119",
+          "sample-acct-120",
+          "sample-acct-121",
+          "sample-acct-122",
+          "sample-acct-123",
+          "sample-acct-124",
+          "sample-acct-125",
+          "sample-acct-126",
+          "sample-acct-127",
+          "sample-acct-128"
         ],
         "delegation": [
-          "peakmonsters"
+          "sample-acct-081"
         ],
         "rental": [
-          "peakmonsters",
-          "peakmonsters1",
-          "peakmonsters2",
-          "peakmonsters3",
-          "peakmonsters4",
-          "peakmonsters5",
-          "peakmonsters6",
-          "peakmonsters7",
-          "peakmonsters8",
-          "peakmonsters9",
-          "peakmonsters10",
-          "splex.bids",
-          "splex.quezacotl",
-          "splex.shiva",
-          "splex.ifrit",
-          "splex.squall",
-          "splex.brothers",
-          "splex.bahamut",
-          "splex.edea",
-          "splex.eden",
-          "splex.laguna",
-          "splex.quistis",
-          "splex.rinoa",
-          "splex.seifer",
-          "splex.siren",
-          "splex.zell"
+          "sample-acct-081",
+          "sample-acct-129",
+          "sample-acct-130",
+          "sample-acct-131",
+          "sample-acct-132",
+          "sample-acct-133",
+          "sample-acct-134",
+          "sample-acct-135",
+          "sample-acct-136",
+          "sample-acct-137",
+          "sample-acct-138",
+          "sample-acct-114",
+          "sample-acct-115",
+          "sample-acct-116",
+          "sample-acct-117",
+          "sample-acct-118",
+          "sample-acct-119",
+          "sample-acct-120",
+          "sample-acct-121",
+          "sample-acct-122",
+          "sample-acct-123",
+          "sample-acct-124",
+          "sample-acct-125",
+          "sample-acct-126",
+          "sample-acct-127",
+          "sample-acct-128"
         ]
       }
     }

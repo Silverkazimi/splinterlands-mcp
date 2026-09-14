@@ -1,9 +1,9 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:20:09.268907+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/conflicts/seasons",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
   },
   "valueClasses": {
     "body[0].id": {
@@ -212,29 +212,1451 @@
     },
     "body[2].verification_data.trx_id": {
       "valueClass": "id"
+    },
+    "body[3].id": {
+      "valueClass": "numeric"
+    },
+    "body[3].starts": {
+      "valueClass": "opaque"
+    },
+    "body[3].ends": {
+      "valueClass": "opaque"
+    },
+    "body[3].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[3].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[3].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[3].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[3].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[3].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[3].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[3].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[3].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[3].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[3].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[3].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[3].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[3].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[3].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[3].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[3].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[3].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[3].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[3].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[4].id": {
+      "valueClass": "numeric"
+    },
+    "body[4].starts": {
+      "valueClass": "opaque"
+    },
+    "body[4].ends": {
+      "valueClass": "opaque"
+    },
+    "body[4].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[4].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[4].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[4].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[4].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[4].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[4].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[4].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[4].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[4].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[4].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[4].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[4].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[4].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[4].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[4].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[4].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[4].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[4].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[4].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[5].id": {
+      "valueClass": "numeric"
+    },
+    "body[5].starts": {
+      "valueClass": "opaque"
+    },
+    "body[5].ends": {
+      "valueClass": "opaque"
+    },
+    "body[5].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[5].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[5].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[5].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[5].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[5].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[5].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[5].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[5].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[5].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[5].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[5].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[5].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[5].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[5].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[5].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[5].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[5].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[5].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[5].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[6].id": {
+      "valueClass": "numeric"
+    },
+    "body[6].starts": {
+      "valueClass": "opaque"
+    },
+    "body[6].ends": {
+      "valueClass": "opaque"
+    },
+    "body[6].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[6].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[6].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[6].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[6].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[6].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[6].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[6].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[6].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[6].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[6].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[6].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[6].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[6].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[6].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[6].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[6].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[6].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[6].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[6].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[7].id": {
+      "valueClass": "numeric"
+    },
+    "body[7].starts": {
+      "valueClass": "opaque"
+    },
+    "body[7].ends": {
+      "valueClass": "opaque"
+    },
+    "body[7].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[7].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[7].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[7].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[7].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[7].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[7].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[7].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[7].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[7].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[7].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[7].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[7].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[7].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[7].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[7].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[7].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[7].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[7].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[7].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[8].id": {
+      "valueClass": "numeric"
+    },
+    "body[8].starts": {
+      "valueClass": "opaque"
+    },
+    "body[8].ends": {
+      "valueClass": "opaque"
+    },
+    "body[8].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[8].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[8].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[8].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[8].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[8].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[8].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[8].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[8].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[8].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[8].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[8].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[8].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[8].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[8].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[8].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[8].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[8].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[8].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[8].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[9].id": {
+      "valueClass": "numeric"
+    },
+    "body[9].starts": {
+      "valueClass": "opaque"
+    },
+    "body[9].ends": {
+      "valueClass": "opaque"
+    },
+    "body[9].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[9].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[9].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[9].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[9].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[9].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[9].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[9].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[9].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[9].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[9].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[9].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[9].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[9].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[9].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[9].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[9].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[9].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[9].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[9].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[10].id": {
+      "valueClass": "numeric"
+    },
+    "body[10].starts": {
+      "valueClass": "opaque"
+    },
+    "body[10].ends": {
+      "valueClass": "opaque"
+    },
+    "body[10].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[10].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[10].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[10].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[10].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[10].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[10].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[10].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[10].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[10].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[10].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[10].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[10].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[10].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[10].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[10].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[10].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[10].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[10].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[10].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[11].id": {
+      "valueClass": "numeric"
+    },
+    "body[11].starts": {
+      "valueClass": "opaque"
+    },
+    "body[11].ends": {
+      "valueClass": "opaque"
+    },
+    "body[11].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[11].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[11].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[11].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[11].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[11].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[11].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[11].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[11].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[11].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[11].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[11].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[11].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[11].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[11].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[11].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[11].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[11].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[11].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[11].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[12].id": {
+      "valueClass": "numeric"
+    },
+    "body[12].starts": {
+      "valueClass": "opaque"
+    },
+    "body[12].ends": {
+      "valueClass": "opaque"
+    },
+    "body[12].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[12].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[12].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[12].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[12].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[12].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[12].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[12].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[12].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[12].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[12].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[12].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[12].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[12].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[12].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[12].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[12].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[12].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[12].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[12].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[13].id": {
+      "valueClass": "numeric"
+    },
+    "body[13].starts": {
+      "valueClass": "opaque"
+    },
+    "body[13].ends": {
+      "valueClass": "opaque"
+    },
+    "body[13].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[13].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[13].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[13].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[13].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[13].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[13].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[13].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[13].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[13].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[13].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[13].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[13].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[13].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[13].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[13].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[13].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[13].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[13].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[13].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[14].id": {
+      "valueClass": "numeric"
+    },
+    "body[14].starts": {
+      "valueClass": "opaque"
+    },
+    "body[14].ends": {
+      "valueClass": "opaque"
+    },
+    "body[14].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[14].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[14].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[14].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[14].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[14].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[14].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[14].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[14].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[14].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[14].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[14].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[14].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[14].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[14].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[14].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[14].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[14].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[14].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[14].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[15].id": {
+      "valueClass": "numeric"
+    },
+    "body[15].starts": {
+      "valueClass": "opaque"
+    },
+    "body[15].ends": {
+      "valueClass": "opaque"
+    },
+    "body[15].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[15].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[15].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[15].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[15].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[15].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[15].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[15].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[15].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[15].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[15].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[15].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[15].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[15].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[15].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[15].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[15].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[15].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[15].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[15].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[16].id": {
+      "valueClass": "numeric"
+    },
+    "body[16].starts": {
+      "valueClass": "opaque"
+    },
+    "body[16].ends": {
+      "valueClass": "opaque"
+    },
+    "body[16].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[16].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[16].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[16].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[16].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[16].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[16].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[16].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[16].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[16].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[16].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[16].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[16].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[16].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[16].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[16].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[16].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[16].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[16].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[16].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[17].id": {
+      "valueClass": "numeric"
+    },
+    "body[17].starts": {
+      "valueClass": "opaque"
+    },
+    "body[17].ends": {
+      "valueClass": "opaque"
+    },
+    "body[17].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[17].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[17].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[17].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[17].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[17].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[17].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[17].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[17].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[17].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[17].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[17].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[17].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[17].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[17].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[17].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[17].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[17].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[17].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[17].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[18].id": {
+      "valueClass": "numeric"
+    },
+    "body[18].starts": {
+      "valueClass": "opaque"
+    },
+    "body[18].ends": {
+      "valueClass": "opaque"
+    },
+    "body[18].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[18].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[18].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[18].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[18].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[18].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[18].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[18].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[18].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[18].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[18].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[18].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[18].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[18].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[18].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[18].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[18].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[18].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[18].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[18].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[19].id": {
+      "valueClass": "numeric"
+    },
+    "body[19].starts": {
+      "valueClass": "opaque"
+    },
+    "body[19].ends": {
+      "valueClass": "opaque"
+    },
+    "body[19].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[19].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[19].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[19].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[19].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[19].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[19].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[19].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[19].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[19].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[19].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[19].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[19].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[19].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[19].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[19].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[19].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[19].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[19].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[19].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[20].id": {
+      "valueClass": "numeric"
+    },
+    "body[20].starts": {
+      "valueClass": "opaque"
+    },
+    "body[20].ends": {
+      "valueClass": "opaque"
+    },
+    "body[20].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[20].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[20].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[20].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[20].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[20].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[20].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[20].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[20].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[20].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[20].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[20].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[20].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[20].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[20].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[20].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[20].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body[20].verification_data.block_id": {
+      "valueClass": "id"
+    },
+    "body[20].verification_data.prev_block_id": {
+      "valueClass": "id"
+    },
+    "body[20].verification_data.trx_id": {
+      "valueClass": "id"
+    },
+    "body[21].id": {
+      "valueClass": "numeric"
+    },
+    "body[21].starts": {
+      "valueClass": "opaque"
+    },
+    "body[21].ends": {
+      "valueClass": "opaque"
+    },
+    "body[21].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[21].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[21].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[21].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[21].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[21].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[21].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[21].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[21].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[21].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[21].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[21].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[21].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[21].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[21].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[21].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[21].verification_data": {
+      "valueClass": "opaque"
+    },
+    "body[22].id": {
+      "valueClass": "numeric"
+    },
+    "body[22].starts": {
+      "valueClass": "opaque"
+    },
+    "body[22].ends": {
+      "valueClass": "opaque"
+    },
+    "body[22].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[22].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[22].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[22].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[22].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[22].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[22].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[22].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[22].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[22].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[22].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[22].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[22].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[22].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[22].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[22].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[22].verification_data": {
+      "valueClass": "opaque"
+    },
+    "body[23].id": {
+      "valueClass": "numeric"
+    },
+    "body[23].starts": {
+      "valueClass": "opaque"
+    },
+    "body[23].ends": {
+      "valueClass": "opaque"
+    },
+    "body[23].season_group": {
+      "valueClass": "opaque"
+    },
+    "body[23].reset_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[23].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[23].card_amount": {
+      "valueClass": "numeric"
+    },
+    "body[23].card_guaranteed_chances": {
+      "valueClass": "numeric"
+    },
+    "body[23].cards_awarded": {
+      "valueClass": "numeric"
+    },
+    "body[23].card_chance_per_entry": {
+      "valueClass": "opaque"
+    },
+    "body[23].card_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[23].card_boosted_gold_chance": {
+      "valueClass": "opaque"
+    },
+    "body[23].alchemy_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[23].card_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[23].card_boosted_black_chance": {
+      "valueClass": "opaque"
+    },
+    "body[23].midnight_potions_to_boost": {
+      "valueClass": "numeric"
+    },
+    "body[23].cards_to_guarantee_one_gold": {
+      "valueClass": "numeric"
+    },
+    "body[23].cards_to_guarantee_one_gold_full_potions": {
+      "valueClass": "numeric"
+    },
+    "body[23].voucher_cost_to_boost": {
+      "valueClass": "opaque"
+    },
+    "body[23].verification_data": {
+      "valueClass": "opaque"
     }
   },
   "body": [
     {
       "id": 1,
-      "starts": "2024-01-23T23:30:00.000Z",
-      "ends": "2024-02-22T23:30:00.000Z",
-      "season_group": "rebellion",
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
       "reset_block_num": 83043696,
       "card_detail_id": 648,
       "card_amount": 4000,
       "card_guaranteed_chances": 200,
       "cards_awarded": 4716,
       "card_chance_per_entry": null,
-      "card_gold_chance": "0.020",
-      "card_boosted_gold_chance": "0.040",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
       "alchemy_potions_to_boost": null,
       "card_black_chance": null,
       "card_boosted_black_chance": null,
       "midnight_potions_to_boost": null,
       "cards_to_guarantee_one_gold": null,
       "cards_to_guarantee_one_gold_full_potions": null,
-      "voucher_cost_to_boost": "20.000",
+      "voucher_cost_to_boost": "[redacted]",
       "verification_data": {
         "block_num": 83043696,
         "block_id": "04f325704f398a1ae381da0caddf5e648648c48c",
@@ -244,24 +1666,24 @@
     },
     {
       "id": 2,
-      "starts": "2024-02-22T23:30:00.000Z",
-      "ends": "2024-03-23T23:30:00.000Z",
-      "season_group": "rebellion",
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
       "reset_block_num": 83906644,
       "card_detail_id": 649,
       "card_amount": 4000,
       "card_guaranteed_chances": 250,
       "cards_awarded": 4472,
       "card_chance_per_entry": null,
-      "card_gold_chance": "0.020",
-      "card_boosted_gold_chance": "0.040",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
       "alchemy_potions_to_boost": null,
       "card_black_chance": null,
       "card_boosted_black_chance": null,
       "midnight_potions_to_boost": null,
       "cards_to_guarantee_one_gold": null,
       "cards_to_guarantee_one_gold_full_potions": null,
-      "voucher_cost_to_boost": "20.000",
+      "voucher_cost_to_boost": "[redacted]",
       "verification_data": {
         "block_num": 83906644,
         "block_id": "05005054f0c57317b698ed1e29c48b8de1bd364d",
@@ -271,30 +1693,582 @@
     },
     {
       "id": 3,
-      "starts": "2024-03-23T23:30:00.000Z",
-      "ends": "2024-04-22T23:30:00.000Z",
-      "season_group": "rebellion",
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
       "reset_block_num": 84769572,
       "card_detail_id": 650,
       "card_amount": 4000,
       "card_guaranteed_chances": 275,
       "cards_awarded": 4448,
       "card_chance_per_entry": null,
-      "card_gold_chance": "0.020",
-      "card_boosted_gold_chance": "0.040",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
       "alchemy_potions_to_boost": null,
       "card_black_chance": null,
       "card_boosted_black_chance": null,
       "midnight_potions_to_boost": null,
       "cards_to_guarantee_one_gold": null,
       "cards_to_guarantee_one_gold_full_potions": null,
-      "voucher_cost_to_boost": "20.000",
+      "voucher_cost_to_boost": "[redacted]",
       "verification_data": {
         "block_num": 84769572,
         "block_id": "050d7b24318184ae599644b095ec71bb5ab14880",
         "prev_block_id": "050d7b234cbbda33e73e6f22916e391b72529d46",
         "trx_id": "sm_conflict_event_prizes"
       }
+    },
+    {
+      "id": 4,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 85632775,
+      "card_detail_id": 653,
+      "card_amount": 4000,
+      "card_guaranteed_chances": 300,
+      "cards_awarded": 4441,
+      "card_chance_per_entry": null,
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": null,
+      "card_boosted_black_chance": null,
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": "[redacted]",
+      "verification_data": {
+        "block_num": 85632775,
+        "block_id": "051aa707f61b6a718bd75aab5542dc2a8d975605",
+        "prev_block_id": "051aa706089c6906368605a6c315b30f6852c5f5",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 5,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 86494776,
+      "card_detail_id": 654,
+      "card_amount": 4000,
+      "card_guaranteed_chances": 325,
+      "cards_awarded": 4373,
+      "card_chance_per_entry": null,
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": null,
+      "card_boosted_black_chance": null,
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": "[redacted]",
+      "verification_data": {
+        "block_num": 86494776,
+        "block_id": "0527ce383d1bddde1d0deb2af24b2bbfece56f91",
+        "prev_block_id": "0527ce37fa3e3b31b1c74ef65acf5afecda2998b",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 6,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 87356968,
+      "card_detail_id": 655,
+      "card_amount": 4000,
+      "card_guaranteed_chances": 350,
+      "cards_awarded": 4342,
+      "card_chance_per_entry": null,
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": null,
+      "card_boosted_black_chance": null,
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": "[redacted]",
+      "verification_data": {
+        "block_num": 87356968,
+        "block_id": "0534f6286ff47215e1448cd27a7b943443cb1dae",
+        "prev_block_id": "0534f627338769f3ece208bdbfd5759d6bf37ae3",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 7,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 88219401,
+      "card_detail_id": 656,
+      "card_amount": 4000,
+      "card_guaranteed_chances": 375,
+      "cards_awarded": 4278,
+      "card_chance_per_entry": null,
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": null,
+      "card_boosted_black_chance": null,
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": "[redacted]",
+      "verification_data": {
+        "block_num": 88219401,
+        "block_id": "05421f098915a9e8fa507f92ee017f1972be1c2c",
+        "prev_block_id": "05421f0857eb7ac8008dd9fca3a61b5c71f26840",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 8,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 89081879,
+      "card_detail_id": 657,
+      "card_amount": 4000,
+      "card_guaranteed_chances": 400,
+      "cards_awarded": 4261,
+      "card_chance_per_entry": null,
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": null,
+      "card_boosted_black_chance": null,
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": "[redacted]",
+      "verification_data": {
+        "block_num": 89081879,
+        "block_id": "054f4817d2b8fc2c5b66f310d3524b629b1d9e49",
+        "prev_block_id": "054f48162db28fc8b4175bf8a2658f9b59c53d22",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 9,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 89944405,
+      "card_detail_id": 658,
+      "card_amount": 4000,
+      "card_guaranteed_chances": 425,
+      "cards_awarded": 4202,
+      "card_chance_per_entry": null,
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": null,
+      "card_boosted_black_chance": null,
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": "[redacted]",
+      "verification_data": {
+        "block_num": 89944405,
+        "block_id": "055c715591f8b0fef38ee8e52e7a8bfa8602f465",
+        "prev_block_id": "055c71548eec3550b73b10ae71ff1c6184777efd",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 10,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 98561714,
+      "card_detail_id": 859,
+      "card_amount": null,
+      "card_guaranteed_chances": 800,
+      "cards_awarded": 4509,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": 50,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": 50,
+      "cards_to_guarantee_one_gold": 25,
+      "cards_to_guarantee_one_gold_full_potions": 13,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 98561714,
+        "block_id": "05dfeeb2893666eb424c47d0bfd4e76b6c68be48",
+        "prev_block_id": "05dfeeb13ea58b50b98d08c725ac05974b597633",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 11,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 99511208,
+      "card_detail_id": 860,
+      "card_amount": null,
+      "card_guaranteed_chances": 850,
+      "cards_awarded": 4511,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": 50,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": 50,
+      "cards_to_guarantee_one_gold": 25,
+      "cards_to_guarantee_one_gold_full_potions": 13,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 99511208,
+        "block_id": "05ee6ba8132faff375813a0bdff9943ca288058f",
+        "prev_block_id": "05ee6ba706cf22fec9afd9435bed083fbc646c53",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 12,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 100460538,
+      "card_detail_id": 862,
+      "card_amount": null,
+      "card_guaranteed_chances": 900,
+      "cards_awarded": 4305,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": 50,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": 50,
+      "cards_to_guarantee_one_gold": 25,
+      "cards_to_guarantee_one_gold_full_potions": 13,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 100460538,
+        "block_id": "05fce7fa72097b5d6fe994eb47b38f4873e43878",
+        "prev_block_id": "05fce7f9445f8c685e49751d7bc41ad6b19f1b1c",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 13,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 101409396,
+      "card_detail_id": 870,
+      "card_amount": null,
+      "card_guaranteed_chances": 1200,
+      "cards_awarded": 3421,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": 50,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": 50,
+      "cards_to_guarantee_one_gold": 25,
+      "cards_to_guarantee_one_gold_full_potions": 13,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 101409396,
+        "block_id": "060b62740cbe78334d73285ae69fffe0941825c6",
+        "prev_block_id": "060b62733921e4f929e40a4e7e3a28f2708f6610",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 14,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 102414407,
+      "card_detail_id": 914,
+      "card_amount": null,
+      "card_guaranteed_chances": 1250,
+      "cards_awarded": 3372,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": 50,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": 50,
+      "cards_to_guarantee_one_gold": 25,
+      "cards_to_guarantee_one_gold_full_potions": 13,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 102414407,
+        "block_id": "061ab847297760c301185a5490a39cb38305e083",
+        "prev_block_id": "061ab8469e75805bfe7baa9c5d8267a396c4f4b2",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 15,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 103362542,
+      "card_detail_id": 920,
+      "card_amount": null,
+      "card_guaranteed_chances": 1300,
+      "cards_awarded": 3216,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": 50,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": 50,
+      "cards_to_guarantee_one_gold": 25,
+      "cards_to_guarantee_one_gold_full_potions": 13,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 103362542,
+        "block_id": "06292feed43c7d3dee2cf21285e0325b3312c597",
+        "prev_block_id": "06292fed6a14abcdc03639a1a1943eb344abe1ed",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 16,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 104310943,
+      "card_detail_id": 925,
+      "card_amount": null,
+      "card_guaranteed_chances": 1350,
+      "cards_awarded": 3195,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": 50,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": 50,
+      "cards_to_guarantee_one_gold": 25,
+      "cards_to_guarantee_one_gold_full_potions": 13,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 104310943,
+        "block_id": "0637a89fb8fff47056ea1fbe037ca81c42860d61",
+        "prev_block_id": "0637a89ed1e1c690fa3e3d95a4e4434466a616c4",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 17,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 105259029,
+      "card_detail_id": 971,
+      "card_amount": null,
+      "card_guaranteed_chances": 1400,
+      "cards_awarded": 3326,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": 50,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": 50,
+      "cards_to_guarantee_one_gold": 25,
+      "cards_to_guarantee_one_gold_full_potions": 13,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 105259029,
+        "block_id": "064620154f3cb4962e1c114406bef04c37655ef2",
+        "prev_block_id": "064620142d8f5587fdc30d2c12cc0e0be060a884",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 18,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 106206550,
+      "card_detail_id": 972,
+      "card_amount": null,
+      "card_guaranteed_chances": 1450,
+      "cards_awarded": 3249,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": 50,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": 50,
+      "cards_to_guarantee_one_gold": 25,
+      "cards_to_guarantee_one_gold_full_potions": 13,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 106206550,
+        "block_id": "06549556d5a57651cf00ba51b12560a7a6ebfc63",
+        "prev_block_id": "06549555c15f8e9fa421f440f97b109c92826692",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 19,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 107384102,
+      "card_detail_id": 979,
+      "card_amount": null,
+      "card_guaranteed_chances": 325,
+      "cards_awarded": 2459,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 107384102,
+        "block_id": "06668d26ae81181c7b14c164a1c2104b4d2df2a3",
+        "prev_block_id": "06668d25efc5eca57a94eb719aeb575d510208e4",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 20,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 108360361,
+      "card_detail_id": 981,
+      "card_amount": null,
+      "card_guaranteed_chances": 350,
+      "cards_awarded": 2529,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 108360361,
+        "block_id": "067572a96d20c189f1bd6e06248a835d848d77c1",
+        "prev_block_id": "067572a868049e70e4c2ede86602602e255d7419",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 21,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": 109308007,
+      "card_detail_id": 1039,
+      "card_amount": null,
+      "card_guaranteed_chances": 375,
+      "cards_awarded": 2700,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": null,
+      "verification_data": {
+        "block_num": 109308007,
+        "block_id": "0683e8670083e39a05542bb94ff05a156e4b1b39",
+        "prev_block_id": "0683e8665613c73ad3752533473ae5ed21eaf7d4",
+        "trx_id": "sm_conflict_event_prizes"
+      }
+    },
+    {
+      "id": 22,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": null,
+      "card_detail_id": 1050,
+      "card_amount": null,
+      "card_guaranteed_chances": 400,
+      "cards_awarded": null,
+      "card_chance_per_entry": "[redacted]",
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": null,
+      "verification_data": null
+    },
+    {
+      "id": 23,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": null,
+      "card_detail_id": null,
+      "card_amount": null,
+      "card_guaranteed_chances": null,
+      "cards_awarded": null,
+      "card_chance_per_entry": null,
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": null,
+      "verification_data": null
+    },
+    {
+      "id": 24,
+      "starts": "[redacted]",
+      "ends": "[redacted]",
+      "season_group": "[redacted]",
+      "reset_block_num": null,
+      "card_detail_id": null,
+      "card_amount": null,
+      "card_guaranteed_chances": null,
+      "cards_awarded": null,
+      "card_chance_per_entry": null,
+      "card_gold_chance": "[redacted]",
+      "card_boosted_gold_chance": "[redacted]",
+      "alchemy_potions_to_boost": null,
+      "card_black_chance": "[redacted]",
+      "card_boosted_black_chance": "[redacted]",
+      "midnight_potions_to_boost": null,
+      "cards_to_guarantee_one_gold": null,
+      "cards_to_guarantee_one_gold_full_potions": null,
+      "voucher_cost_to_boost": null,
+      "verification_data": null
     }
   ]
 }

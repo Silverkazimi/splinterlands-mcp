@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:07:30.342524+00:00",
     "sourceUrl": "https://api2.splinterlands.com/guilds/brawl_records",
-    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.results[0].name": {
@@ -199,7 +200,7 @@
   "body": {
     "results": [
       {
-        "name": " [KoG] Shield of Glory",
+        "name": "sample-acct-001",
         "data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
         "total_payout": 212,
         "cycle": 383,
@@ -222,7 +223,7 @@
         "auto_wins": 1
       },
       {
-        "name": " [KoG] Shield of Glory",
+        "name": "sample-acct-001",
         "data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
         "total_payout": 212,
         "cycle": 382,
@@ -245,7 +246,7 @@
         "auto_wins": 21
       },
       {
-        "name": " [KoG] Shield of Glory",
+        "name": "sample-acct-001",
         "data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
         "total_payout": 212,
         "cycle": 381,

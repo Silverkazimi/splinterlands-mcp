@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:08:22.853078+00:00",
     "sourceUrl": "https://api2.splinterlands.com/guilds/list",
-    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders. Account references in reviewed fields and encoded records use consistent synthetic placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "6991efb2639bb483fc451f2384d6c61873ac4d6178bf56d544e8e0ef31e0bf75",
+        "alternateShape": "f99ef582303e3ab27633d9c79fa229be6fbab608686ac608a0840e085493f267"
+      }
+    ]
   },
   "valueClasses": {
     "body.num_actionable_mail": {
@@ -16,7 +23,7 @@
       "valueClass": "name"
     },
     "body.guilds[0].owner": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.guilds[0].created_date": {
       "valueClass": "timestamp"
@@ -78,8 +85,8 @@
     "guilds": [
       {
         "id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-        "name": " [KoG] Shield of Glory",
-        "owner": "zagorlord",
+        "name": "sample-acct-001",
+        "owner": "sample-acct-103",
         "created_date": "2019-07-30T08:11:00.000Z",
         "membership_type": "request",
         "language": "English",

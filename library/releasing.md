@@ -1,6 +1,6 @@
 # Releases and updates
 
-The current tree is an unpublished pre-release. The intended GitHub repository is Silverkazimi/splinterlands-mcp. GitHub publication and npm package publication are separate actions; do not infer registry publication from a GitHub release.
+The source repository is Silverkazimi/splinterlands-mcp. The current development version is 0.0.0; the first accepted versioned release is planned as 1.0.0. GitHub publication and npm package publication are separate actions; do not infer registry publication from a GitHub release.
 
 ## Initial publication
 
@@ -27,7 +27,7 @@ A source repository may be visible while release acceptance is still pending. Do
 
 ## Versioned release
 
-For the first accepted release use the planned 0.1.0 version. Update package.json and package-lock.json together, move the relevant changelog notes into a dated release section, and ensure README installation instructions match the published artifact. Run release checks after the version change.
+For the first accepted release use version 1.0.0 after owner acceptance. Update package.json and package-lock.json together, move the relevant changelog notes into a dated release section, and ensure README installation instructions match the published artifact. Run release checks after the version change.
 
 Tag the exact reviewed commit only after hosted checks pass. Publish release notes describing capability scope, known limitations and the verification performed. Do not move a published tag. For a correction, prepare a new version and tag.
 

@@ -117,3 +117,60 @@ it("accepts both values of reviewed boolean enums while rejecting other enum exp
   const opaque = { valueClasses: { flag: { valueClass: "opaque" } }, flag: false };
   expect(() => sanitizeFixture(opaque, { flag: true }, observedAt)).toThrow();
 });
+
+it("retains explicitly reviewed enum additions across successive renewals", () => {
+  const fixture = { valueClasses: { kind: { valueClass: "enum", allowedValues: ["wood", "stone"] } }, kind: "grain" };
+  const renewed = sanitizeFixture(fixture, { kind: "wood" }, observedAt);
+  expect(renewed).toMatchObject({ kind: "wood", valueClasses: { kind: { allowedValues: ["stone", "wood"] } } });
+  expect(sanitizeFixture(renewed, { kind: "stone" }, observedAt)).toMatchObject({ kind: "stone" });
+  expect(() => sanitizeFixture(renewed, { kind: "unreviewed" }, observedAt)).toThrow("Unreviewed enum");
+  expect(() => sanitizeFixture(fixture, { kind: "wood", extra: "private" }, observedAt)).toThrow();
+});
+it("rejects malformed or account-bearing enum declarations without echoing their values", () => {
+  for (const allowedValues of [[], ["private-owner"], [true], [1], [{}], ["x".repeat(129)], Array(129).fill("wood")]) {
+    const fixture = { valueClasses: { kind: { valueClass: "enum", allowedValues } }, kind: "grain" };
+    expect(() => sanitizeFixture(fixture, { kind: "grain" }, observedAt, ["private-owner"])).toThrow("Invalid reviewed enum declaration.");
+  }
+  for (const valueClass of ["name", "id", "opaque", "numeric"]) {
+    expect(() => sanitizeFixture({ valueClasses: { kind: { valueClass, allowedValues: ["wood"] } }, kind: "grain" },
+      { kind: "wood" }, observedAt)).toThrow("Invalid reviewed enum declaration.");
+  }
+});
+it("preserves reviewed enum additions when a field passes through null", () => {
+  const fixture = { valueClasses: { kind: { valueClass: "enum", allowedValues: ["wood"] } }, kind: "grain" };
+  const empty = sanitizeFixture(fixture, { kind: null }, observedAt);
+  expect(sanitizeFixture(empty, { kind: "wood" }, observedAt)).toMatchObject({ kind: "wood" });
+  expect(() => sanitizeFixture(empty, { kind: "unreviewed" }, observedAt)).toThrow();
+});
+
+it("supports explicitly reviewed empty currency and null-only boolean observations", () => {
+  for (const allowedValues of [["", "DEC"], [false, true]]) {
+    const fixture = { valueClasses: { value: { valueClass: "enum", allowedValues } }, value: null };
+    for (const value of allowedValues) {
+      expect(sanitizeFixture(fixture, { value }, observedAt)).toMatchObject({ value });
+    }
+    for (const value of [1, "private-value", {}]) {
+      expect(() => sanitizeFixture(fixture, { value }, observedAt)).toThrow();
+    }
+  }
+});
+it("rejects incompatible reviewed enum types across array declarations", () => {
+  const fixture = { data: [null, "grain"], valueClasses: {
+    "data[0]": { valueClass: "enum", allowedValues: [false, true] },
+    "data[1]": { valueClass: "enum" },
+  } };
+  expect(() => sanitizeFixture(fixture, { data: [false] }, observedAt)).toThrow("Invalid reviewed enum");
+});
+
+it("permits only explicitly reviewed finite numeric enum additions", () => {
+  const fixture = { edition: 3, valueClasses: { edition: { valueClass: "enum", allowedValues: [1, 3, 4] } } };
+  expect(sanitizeFixture(fixture, { edition: 1 }, observedAt)).toMatchObject({ edition: 1 });
+  for (const edition of [2, "1", true, Infinity, NaN]) {
+    expect(() => sanitizeFixture(fixture, { edition }, observedAt)).toThrow();
+  }
+  for (const value of [Infinity, NaN]) {
+    expect(() => sanitizeFixture({ edition: null, valueClasses: {
+      edition: { valueClass: "enum", allowedValues: [value] },
+    } }, { edition: null }, observedAt)).toThrow("Invalid reviewed enum");
+  }
+});

@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:08:25.120607+00:00",
     "sourceUrl": "https://api2.splinterlands.com/guilds/contributions",
-    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "2c904dd87ba0ccd81f154a6b94cb302f838e1b128923ef03582171a425edd3a2",
+        "alternateShape": "016ad154be11fed912bf8be123fc8b96dd0ef8698b45c772fe7ab9f6024c78a0"
+      }
+    ]
   },
   "valueClasses": {
     "body[0].guild_id": {
@@ -199,7 +206,7 @@
   "body": [
     {
       "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-      "player": "azircon",
+      "player": "sample-acct-049",
       "created_date": "2022-02-21T12:02:54.000Z",
       "tx_id": "f1a46f9dac252cd8b0cb7d2c68c11ba83427f573",
       "amount": 716149,
@@ -222,7 +229,7 @@
     },
     {
       "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-      "player": "rogerkitkit",
+      "player": "sample-acct-086",
       "created_date": "2022-02-20T07:23:27.000Z",
       "tx_id": "84fc4ba7fcf4c994d0aa749120659634c2339113",
       "amount": 2000,
@@ -245,7 +252,7 @@
     },
     {
       "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-      "player": "lenonmc21",
+      "player": "sample-acct-072",
       "created_date": "2022-02-19T05:42:18.000Z",
       "tx_id": "7aee2cde31f32944fdfb95e7dc358e1f3d0f3a55",
       "amount": 500,

@@ -4,9 +4,9 @@
 
 Two unauthenticated probe passes on `api.splinterlands.com`, roughly 175 GET
 requests in total, no token, header or cookie sent. The declaration was fetched
-live rather than transcribed. Subjects were the accounts `vugtis`, `azircon`
-and `bji`, one implausible name, and, for each route, one call with the player
-selector omitted. No request was rate limited.
+live rather than transcribed. Subjects were three public accounts and one implausible name; each route
+also received one call with the player selector omitted. Account identifiers
+are retained only in private verification evidence. No request was rate limited.
 
 Every route below was probed individually. Nothing here is inferred from a
 sibling route, because access on this host has already been measured not to

@@ -1,7 +1,13 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T20:56:00Z"
+    "observedAt": "2026-09-08T20:56:00Z",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "7ba92e92cad9318de52c80cec8e0e0a25db147e2a2ca6846831ee9ba7003c116",
+        "alternateShape": "632c625714e27fe6068030d59e5e8e5ca431b95a3b0c8a9b2a84a7eed11338a9"
+      }
+    ]
   },
   "valueClasses": {
     "body.season_reward_info.season": {

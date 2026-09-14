@@ -836,7 +836,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       inputSchema: landResourcesOwnedInputSchema.shape,
     },
     async (params) => {
-      if (params.player === undefined || params.resource === undefined) {
+      if (params.player === undefined || typeof params.resource !== "string") {
         return {
           isError: true,
           content: [{ type: "text" as const, text: LAND_RESOURCES_OWNED_SCOPE_REFUSAL_TEXT }],
@@ -890,7 +890,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       inputSchema: landResourcesRichlistInputSchema.shape,
     },
     async (params) => {
-      if (params.region === undefined || params.resource === undefined) {
+      if (params.region === undefined || typeof params.resource !== "string") {
         return {
           isError: true,
           content: [{ type: "text" as const, text: LAND_RESOURCES_RICHLIST_SCOPE_REFUSAL_TEXT }],
@@ -923,7 +923,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       inputSchema: landResourcesLeaderboardsInputSchema.shape,
     },
     async (params) => {
-      if (params.region === undefined && params.territory === undefined) {
+      if (typeof params.resource !== "string" || (params.region === undefined && params.territory === undefined)) {
         return {
           isError: true,
           content: [{ type: "text" as const, text: LAND_RESOURCES_LEADERBOARDS_SCOPE_REFUSAL_TEXT }],

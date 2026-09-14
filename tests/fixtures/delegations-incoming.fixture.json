@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-13T11:16:54.595892+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/delegation/incoming/{player}",
-    "captureScope": "Complete bounded public response; participants discovered from public rental/delegation data."
+    "captureScope": "Complete bounded public response; participants discovered from public rental/delegation data.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "c11a3de9ed3cbd854f5710a44eb9ee68de537c67a842c858eeb83afd01c40aca",
+        "alternateShape": "a1877a75bb46c92918d79617d813a1d4f946b770e4e6d31b9689d8f82d08e438"
+      }
+    ]
   },
   "valueClasses": {
     "body.status": {
@@ -43,7 +50,7 @@
         "lastManualDelegationDate": null,
         "lastMarketDelegationDate": "2026-09-06T11:05:54.000Z",
         "lastDelegationTransactionId": "c6ce7caabae35e1a632c42f5c35cb5e01ea5e2a0",
-        "player": "thorlock",
+        "player": "sample-acct-098",
         "isFromRental": true,
         "rentalDelegationAmount": "25000.000"
       }

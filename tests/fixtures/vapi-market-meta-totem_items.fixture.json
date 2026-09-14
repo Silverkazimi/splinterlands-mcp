@@ -7,7 +7,7 @@
   },
   "valueClasses": {
     "body.status": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.assetName": {
       "valueClass": "opaque"
@@ -104,7 +104,7 @@
           "circulation": 21726,
           "rarity": null,
           "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_totem_1_common_300.png",
-          "description": "A Common Totem for use on a deed in land.  Provides a 10% bonus to land production!",
+          "description": "[redacted]",
           "icon": null,
           "filterIcon": null
         },

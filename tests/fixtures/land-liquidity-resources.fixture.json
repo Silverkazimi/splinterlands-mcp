@@ -2,7 +2,7 @@
   "provenance": {
     "source": "live-observation",
     "observedAt": "2026-09-08T00:00:00Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained. Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "status": {
@@ -27,7 +27,11 @@
       "valueClass": "numeric"
     },
     "data[0].resource_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "GRAIN",
+        "WOOD"
+      ]
     },
     "data[0].created_date": {
       "valueClass": "timestamp"
@@ -40,7 +44,7 @@
   "data": [
     {
       "id": 1902,
-      "region_name": "Mandar Camden",
+      "region_name": "sample-acct-028",
       "region_number": 65,
       "region_uid": "PR-CEF-65",
       "player": "sample-account-a",

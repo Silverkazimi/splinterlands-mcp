@@ -1,4 +1,5 @@
 import { mkdtempSync, mkdirSync, writeFileSync, symlinkSync, rmSync, readFileSync } from "node:fs";
+import { MAX_FIXTURE_BYTES } from "../scripts/drift/fixture-limits.js";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { expect, it } from "vitest";
@@ -55,5 +56,24 @@ it("loads and renews existing underscore fixture names without admitting unsafe 
       expect(() => loadRecaptureInputs(root, [{ ...row, fixturePath: unsafe }])).toThrow();
       expect(() => writeRenewedFixture(root, unsafe, "{}")).toThrow();
     }
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+it("rejects oversized UTF-8 fixtures before touching existing or pending files", () => {
+  const root = mkdtempSync(join(tmpdir(), "fixture-size-"));
+  try {
+    mkdirSync(join(root, "tests/fixtures"), { recursive: true });
+    const path = "tests/fixtures/sample.fixture.json";
+    writeFileSync(join(root, path), "{}");
+    const oversized = JSON.stringify({ value: String.fromCharCode(233).repeat(MAX_FIXTURE_BYTES / 2) });
+    expect(oversized.length).toBeLessThan(MAX_FIXTURE_BYTES);
+    for (const target of [path, "tests/fixtures/pending/sample.fixture.json"]) {
+      expect(() => writeRenewedFixture(root, target, oversized)).toThrow("size limit");
+    }
+    expect(readFileSync(join(root, path), "utf8")).toBe("{}");
+    expect(() => readFileSync(join(root, "tests/fixtures/pending/sample.fixture.json"))).toThrow();
+    const boundary = "{}" + " ".repeat(MAX_FIXTURE_BYTES - 2);
+    writeRenewedFixture(root, path, boundary);
+    expect(readFileSync(join(root, path), "utf8")).toBe(boundary);
   } finally { rmSync(root, { recursive: true, force: true }); }
 });

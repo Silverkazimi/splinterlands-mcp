@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T10:05:55.626768+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/offers",
-    "captureScope": "Complete bounded public response. No player selector supplied."
+    "captureScope": "Complete bounded public response. No player selector supplied.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.status": {
@@ -83,7 +84,7 @@
         "txId": "8b06f229cdec681c937721ba4373e784ee2599b9",
         "createdDate": "2026-09-07T12:17:54.000Z",
         "lastUpdatedDate": "2026-09-07T12:17:54.000Z",
-        "player": "bravetofu",
+        "player": "sample-acct-052",
         "token": "SPSP",
         "qtyTotal": "5000.000",
         "qtyAvailable": "5000.000",
@@ -96,7 +97,7 @@
         "txId": "ef76d79093eaddd6b5c65146ef42c2218d26672f",
         "createdDate": "2026-09-07T12:17:54.000Z",
         "lastUpdatedDate": "2026-09-12T08:09:15.000Z",
-        "player": "bravetofu",
+        "player": "sample-acct-052",
         "token": "SPSP",
         "qtyTotal": "2500.000",
         "qtyAvailable": "1500.000",

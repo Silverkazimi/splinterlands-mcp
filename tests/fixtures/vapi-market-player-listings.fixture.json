@@ -3,7 +3,8 @@
     "source": "live-observation",
     "sourceUrl": "https://vapi.splinterlands.com/market/player/listings",
     "observedAt": "2026-09-12T13:55:12.165038+00:00",
-    "captureScope": "Up to three original list rows; activity additionally retains one observed sale row. Complete object response. No field values transformed."
+    "captureScope": "Up to three original list rows; activity additionally retains one observed sale row. Complete object response. No field values transformed.",
+    "additionalSchemaReview": "Reviewed boolean gold variants and public asset categories against the bounded 2026-09-14 positive-sample captures; existing body values retained."
   },
   "valueClasses": {
     "body.status": {
@@ -46,7 +47,11 @@
       "valueClass": "timestamp"
     },
     "body.data[0].assetName": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "PACKS",
+        "SKINS"
+      ]
     },
     "body.data[0].closedDate": {
       "valueClass": "timestamp"

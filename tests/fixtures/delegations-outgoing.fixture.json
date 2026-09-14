@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-13T11:16:54.595892+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/delegation/outgoing/{player}",
-    "captureScope": "Complete bounded public response; participants discovered from public rental/delegation data."
+    "captureScope": "Complete bounded public response; participants discovered from public rental/delegation data.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.status": {
@@ -115,7 +116,7 @@
         "lastManualDelegationDate": "2026-09-13T09:10:36.000Z",
         "lastMarketDelegationDate": "2026-09-13T07:45:15.000Z",
         "lastDelegationTransactionId": "a706f59f7abd405a722745eb86b8ebba4308bc32",
-        "player": "known4knowledge",
+        "player": "sample-acct-069",
         "isFromRental": true,
         "rentalDelegationAmount": "11500.000"
       },
@@ -125,7 +126,7 @@
         "lastManualDelegationDate": "2026-09-13T07:20:09.000Z",
         "lastMarketDelegationDate": "2026-09-13T05:52:27.000Z",
         "lastDelegationTransactionId": "a9e59718f99cb5bc39756240733df995a4d4d5cc",
-        "player": "rayjl60428987",
+        "player": "sample-acct-083",
         "isFromRental": true,
         "rentalDelegationAmount": "25000.000"
       },
@@ -135,7 +136,7 @@
         "lastManualDelegationDate": "2026-09-08T16:30:24.000Z",
         "lastMarketDelegationDate": "2026-09-08T16:23:15.000Z",
         "lastDelegationTransactionId": "362756c12e6c983dce184bdd20774bde293e38ed",
-        "player": "dardoc",
+        "player": "sample-acct-056",
         "isFromRental": true,
         "rentalDelegationAmount": "3000.000"
       },
@@ -145,7 +146,7 @@
         "lastManualDelegationDate": null,
         "lastMarketDelegationDate": "2026-09-07T15:09:03.000Z",
         "lastDelegationTransactionId": "fdc87fa1f751ae530861c2338ff70505389a6ee9",
-        "player": "tussar11",
+        "player": "sample-acct-099",
         "isFromRental": true,
         "rentalDelegationAmount": "71000.000"
       }

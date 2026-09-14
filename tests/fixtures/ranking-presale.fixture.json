@@ -3,7 +3,24 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:10:38.606547+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/rebellion_presale_leaders",
-    "captureScope": "First three list rows; other object fields retained without transformation."
+    "captureScope": "First three list rows; other object fields retained without transformation.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    },
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "8617d64cfae71d34cb305e3bd3815fae79ba6d26b96aedaa5cbfaee9b354d0e1",
+        "alternateShape": "67d22ec857e97d6d751080bb7415f392b1c8c2b7f6c1e6ec8f513d580cf40995"
+      }
+    ],
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "8617d64cfae71d34cb305e3bd3815fae79ba6d26b96aedaa5cbfaee9b354d0e1",
+        "responseShape": "d96d49aadd2f0c9b5dae847999a498cbcfc7958c247bad4d9c6c29afa0991c9f"
+      }
+    ]
   },
   "valueClasses": {
     "body.total_packs_purchased": {
@@ -208,7 +225,11 @@
       "valueClass": "opaque"
     },
     "body.players[0].player_data.paypal_ban": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[0].player_data.season_pass": {
       "valueClass": "opaque"
@@ -217,7 +238,11 @@
       "valueClass": "opaque"
     },
     "body.players[0].player_data.burn_sps_rewards": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[0].player_data.scholared_by": {
       "valueClass": "name"
@@ -418,7 +443,11 @@
       "valueClass": "opaque"
     },
     "body.players[1].player_data.paypal_ban": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[1].player_data.season_pass": {
       "valueClass": "opaque"
@@ -427,7 +456,11 @@
       "valueClass": "opaque"
     },
     "body.players[1].player_data.burn_sps_rewards": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[1].player_data.scholared_by": {
       "valueClass": "name"
@@ -628,7 +661,11 @@
       "valueClass": "opaque"
     },
     "body.players[2].player_data.paypal_ban": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[2].player_data.season_pass": {
       "valueClass": "numeric"
@@ -637,7 +674,11 @@
       "valueClass": "opaque"
     },
     "body.players[2].player_data.burn_sps_rewards": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.players[2].player_data.scholared_by": {
       "valueClass": "name"
@@ -847,7 +888,11 @@
       "valueClass": "opaque"
     },
     "body.curr_player.player_data.burn_sps_rewards": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body.curr_player.player_data.scholared_by": {
       "valueClass": "name"
@@ -858,13 +903,13 @@
     "total_bonus_packs": 50846,
     "players": [
       {
-        "player": "yggspl-pool",
+        "player": "sample-acct-102",
         "packs": 13926,
         "bonus_packs": 2088,
         "total_packs": 16014,
         "latest_purchase": "2023-11-15T19:36:36.000Z",
         "player_data": {
-          "name": "yggspl-pool",
+          "name": "sample-acct-102",
           "join_date": "2023-10-11T15:49:01.955Z",
           "rating": 0,
           "battles": 0,
@@ -932,13 +977,13 @@
         }
       },
       {
-        "player": "abrockman",
+        "player": "sample-acct-048",
         "packs": 11774,
         "bonus_packs": 1681,
         "total_packs": 13455,
         "latest_purchase": "2023-11-17T17:59:51.000Z",
         "player_data": {
-          "name": "abrockman",
+          "name": "sample-acct-048",
           "join_date": "2018-11-27T18:27:52.876Z",
           "rating": 0,
           "battles": 11933,
@@ -1006,13 +1051,13 @@
         }
       },
       {
-        "player": "bravetofu",
+        "player": "sample-acct-052",
         "packs": 11297,
         "bonus_packs": 1658,
         "total_packs": 12955,
         "latest_purchase": "2023-11-17T17:59:12.000Z",
         "player_data": {
-          "name": "bravetofu",
+          "name": "sample-acct-052",
           "join_date": "2021-10-11T10:59:05.427Z",
           "rating": 5140,
           "battles": 45692,
@@ -1082,12 +1127,12 @@
     ],
     "curr_player": {
       "rank": 17,
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "packs": 4348,
       "bonus_packs": 652,
       "total_packs": 5000,
       "player_data": {
-        "name": "vugtis",
+        "name": "sample-acct-100",
         "join_date": "2021-07-02T14:09:44.595Z",
         "rating": 6540,
         "battles": 90592,

@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:10:19.146646+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/burn_event_full_leaderboard",
-    "captureScope": "First three list rows; other object fields retained without transformation."
+    "captureScope": "First three list rows; other object fields retained without transformation.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.leaderboard[0].rank": {
@@ -38,17 +39,17 @@
     "leaderboard": [
       {
         "rank": "1",
-        "player": "housewifeftw",
+        "player": "sample-acct-064",
         "points": "72192933.584"
       },
       {
         "rank": "2",
-        "player": "peakmonsters",
+        "player": "sample-acct-081",
         "points": "64332355.172"
       },
       {
         "rank": "3",
-        "player": "yabapmatt",
+        "player": "sample-acct-101",
         "points": "57000000.000"
       }
     ]

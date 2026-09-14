@@ -7,7 +7,7 @@
   },
   "valueClasses": {
     "body.status": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.assetName": {
       "valueClass": "opaque"
@@ -92,7 +92,7 @@
         {
           "id": "TOTEMFC",
           "name": "Common Totem Fragment",
-          "description": "A fragment of a Common Totem found when harvesting on land. 10 of these can be combined to make a Common Totem.",
+          "description": "[redacted]",
           "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/fragment_common.png",
           "icon": "fragment_common.png",
           "filterIcon": null,

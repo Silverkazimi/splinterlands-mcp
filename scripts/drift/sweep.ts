@@ -1,3 +1,4 @@
+import { fixtureShapeId } from "./renewal.js";
 import { isEmptyResult, classifyResponse } from "../../src/http/errors.js";
 import { observeShape } from "./shape.js";
 import type { RawOutcome, RunRecord, SweepEntry, SweepObservation } from "./types.js";
@@ -40,9 +41,12 @@ export async function sweep(
       isJson: outcome.isJson,
     });
     const kind = classified.ok ? "success" : classified.kind;
+    const emptyBody = (entry.isEmpty ?? isEmptyResult)(outcome.body);
+    const validated = entry.validateResponse?.(outcome.body) === true;
     const statusIsSuccess = classified.ok && outcome.isJson
-      && (!isEmptyResult(outcome.body) || !entry.validateEmpty || entry.validateEmpty(outcome.body));
-    const empty = statusIsSuccess && isEmptyResult(outcome.body);
+      && (!entry.validateResponse || validated)
+      && (!emptyBody || !entry.validateEmpty || entry.validateEmpty(outcome.body));
+    const empty = statusIsSuccess && emptyBody;
     const observation: SweepObservation = {
       entryId: entry.entryId,
       host: entry.host,
@@ -52,6 +56,8 @@ export async function sweep(
       authObserved: authTier(kind),
       shape: statusIsSuccess && !empty ? observeShape(outcome.body) : null,
       shapeCompared: statusIsSuccess && !empty,
+      variantKey: entry.variantKey ?? "default",
+      ...(statusIsSuccess && !empty && validated ? { validatedShapeId: fixtureShapeId({ body: outcome.body }) } : {}),
       ...(empty ? { reason: "empty_result" as const } : statusIsSuccess ? {} : { reason: "non_success" as const }),
     };
     observations.push(observation);

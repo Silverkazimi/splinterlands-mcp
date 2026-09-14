@@ -28,14 +28,18 @@ it("filters a late matching record before output bounds without forwarding the l
  } finally { await test.close(); }
 });
 it("retains mixed Land and Token rows and rejects missing scope before fetching", async () => {
- const test = await rig(fixture.body);
+ const rows = [
+  { ...fixture.body[0]!, item_detail_id: 1, type: "Land" },
+  { ...fixture.body[0]!, item_detail_id: 2, type: "Token" },
+ ];
+ const test = await rig(rows);
  try {
   for (const args of [{ username: "fixture_account" }, { type: "Land" }, { username: "", type: "Land" }]) {
    expect((await test.call(args)).isError).toBe(true);
   }
   expect(test.urls).toHaveLength(0);
   const result = await test.call({ username: "fixture_account", type: "Land" });
-  expect(result.structuredContent).toMatchObject({ data: fixture.body, matched_rows: 2, truncated: false });
+  expect(result.structuredContent).toMatchObject({ data: rows, matched_rows: 2, truncated: false });
   const absent = await test.call({ username: "fixture_account", type: "Land", item_detail_id: 322 });
   expect(absent.structuredContent).toMatchObject({ data: [], upstream_rows: 2, matched_rows: 0, truncated: false });
  } finally { await test.close(); }

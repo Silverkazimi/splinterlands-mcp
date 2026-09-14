@@ -97,169 +97,169 @@
       "valueClass": "numeric"
     },
     "body.event_creation_whitelist[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[3]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[4]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[5]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[6]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[7]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[8]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[9]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[10]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[11]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[12]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[13]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[14]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[15]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[16]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_creation_whitelist[17]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[3]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[4]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[5]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[6]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[7]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[8]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[9]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[10]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[11]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[12]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[13]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[14]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[15]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[16]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.ghost_creation_whitelist[17]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.event_entry_fee_required": {
       "valueClass": "numeric"
     },
     "body.no_entryfee_list[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[3]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[4]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[5]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[6]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[7]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[8]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[9]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[10]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[11]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[12]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[13]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[14]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[15]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[16]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.no_entryfee_list[17]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.max_event_entrants": {
       "valueClass": "numeric"
@@ -3844,13 +3844,13 @@
       "valueClass": "numeric"
     },
     "body.proposal_accounts[0]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.proposal_accounts[1]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.proposal_accounts[2]": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.glint_start_season": {
       "valueClass": "numeric"
@@ -4507,65 +4507,65 @@
       19
     ],
     "event_creation_whitelist": [
-      "sps.tournaments",
-      "splinterlands",
-      "investygator",
-      "sl-cs",
-      "royaleagle",
-      "bunsbagsandcaps",
-      "dejota",
-      "silentriot",
-      "ehmaywuntee",
-      "lorkus",
-      "clove71",
-      "yggspl-official",
-      "blazekos",
-      "bulldog1205",
-      "fluidflame",
-      "keeegs",
-      "pipipetra",
-      "phoenixevents"
+      "sample-acct-111",
+      "sample-acct-141",
+      "sample-acct-142",
+      "sample-acct-143",
+      "sample-acct-087",
+      "sample-acct-144",
+      "sample-acct-145",
+      "sample-acct-146",
+      "sample-acct-112",
+      "sample-acct-147",
+      "sample-acct-148",
+      "sample-acct-149",
+      "sample-acct-050",
+      "sample-acct-150",
+      "sample-acct-151",
+      "sample-acct-152",
+      "sample-acct-153",
+      "sample-acct-110"
     ],
     "ghost_creation_whitelist": [
-      "sps.tournaments",
-      "splinterlands",
-      "investygator",
-      "sl-cs",
-      "royaleagle",
-      "bunsbagsandcaps",
-      "dejota",
-      "silentriot",
-      "ehmaywuntee",
-      "lorkus",
-      "clove71",
-      "yggspl-official",
-      "blazekos",
-      "bulldog1205",
-      "fluidflame",
-      "keeegs",
-      "pipipetra",
-      "phoenixevents"
+      "sample-acct-111",
+      "sample-acct-141",
+      "sample-acct-142",
+      "sample-acct-143",
+      "sample-acct-087",
+      "sample-acct-144",
+      "sample-acct-145",
+      "sample-acct-146",
+      "sample-acct-112",
+      "sample-acct-147",
+      "sample-acct-148",
+      "sample-acct-149",
+      "sample-acct-050",
+      "sample-acct-150",
+      "sample-acct-151",
+      "sample-acct-152",
+      "sample-acct-153",
+      "sample-acct-110"
     ],
     "event_entry_fee_required": 1,
     "no_entryfee_list": [
-      "sps.tournaments",
-      "splinterlands",
-      "investygator",
-      "sl-cs",
-      "royaleagle",
-      "bunsbagsandcaps",
-      "dejota",
-      "silentriot",
-      "ehmaywuntee",
-      "lorkus",
-      "clove71",
-      "yggspl-official",
-      "blazekos",
-      "bulldog1205",
-      "fluidflame",
-      "keeegs",
-      "pipipetra",
-      "phoenixevents"
+      "sample-acct-111",
+      "sample-acct-141",
+      "sample-acct-142",
+      "sample-acct-143",
+      "sample-acct-087",
+      "sample-acct-144",
+      "sample-acct-145",
+      "sample-acct-146",
+      "sample-acct-112",
+      "sample-acct-147",
+      "sample-acct-148",
+      "sample-acct-149",
+      "sample-acct-050",
+      "sample-acct-150",
+      "sample-acct-151",
+      "sample-acct-152",
+      "sample-acct-153",
+      "sample-acct-110"
     ],
     "max_event_entrants": 1000,
     "tournaments_creation_fee_dec": 2000,
@@ -6099,9 +6099,9 @@
       "initial_tokens_per_block": 4.6875
     },
     "proposal_accounts": [
-      "clayboyn",
-      "yabapmatt",
-      "royaleagle"
+      "sample-acct-154",
+      "sample-acct-101",
+      "sample-acct-087"
     ],
     "glint_start_season": 132,
     "eos_glint_multiplier": 1,

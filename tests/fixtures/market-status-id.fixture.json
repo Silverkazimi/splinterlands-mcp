@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:33:55.382783+00:00",
     "sourceUrl": "https://api2.splinterlands.com/market/status",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "captureScope": "First three root rows; nested records retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders. Account references in reviewed fields and encoded records use consistent synthetic placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "e3c6f10d27d9c6cf1eaf77303651127ca2c187c25fb0b662e049f8733db5135f",
+        "alternateShape": "94dc09bd1d03660f19a9322a7ae7278f0746f92382ed7a6c704ff6856da465e7"
+      }
+    ]
   },
   "valueClasses": {
     "body.id": {
@@ -13,7 +20,7 @@
       "valueClass": "id"
     },
     "body.seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.created_date": {
       "valueClass": "timestamp"
@@ -97,7 +104,7 @@
   "body": {
     "id": 190153145,
     "sell_trx_id": "d51870cc626020edd2f481c19131a34ad0025f84-0",
-    "seller": "future24",
+    "seller": "sample-acct-061",
     "created_date": "2026-08-31T10:47:06.000Z",
     "type": "SELL",
     "num_cards": 1,
@@ -121,7 +128,7 @@
       {
         "uid": "C-C7DTOU4G68",
         "card_detail_id": 1,
-        "player": "future24",
+        "player": "sample-acct-061",
         "xp": 0,
         "gold": false,
         "foil": 0,

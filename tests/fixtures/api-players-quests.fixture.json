@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T07:47:49.674368+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/quests",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body[0].id": {
@@ -52,7 +53,7 @@
   "body": [
     {
       "id": "0898f94ef1eda04407a7db982abe63aca08a7448",
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "created_date": "2026-09-11T17:44:03.000Z",
       "created_block": 109827089,
       "name": "wild",

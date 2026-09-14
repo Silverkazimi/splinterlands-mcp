@@ -1,9 +1,9 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:55:22.058557+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/tournaments/completed",
-    "captureScope": "First three root rows or players; other nested fields retain their captured values."
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response."
   },
   "valueClasses": {
     "body[0].id": {
@@ -16,7 +16,7 @@
       "valueClass": "opaque"
     },
     "body[0].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].name": {
       "valueClass": "name"
@@ -70,10 +70,18 @@
       "valueClass": "opaque"
     },
     "body[0].data.allowed_cards.ghost": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[0].data.allowed_cards.gladiator": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[0].data.prizes.payouts[0].start_place": {
       "valueClass": "numeric"
@@ -93,10 +101,67 @@
     "body[0].data.prizes.payouts[0].items[0].text": {
       "valueClass": "opaque"
     },
-    "body[0].data.total_prizes_usd": {
+    "body[0].data.prizes.payouts[0].items[1].qty": {
       "valueClass": "numeric"
     },
-    "body[0].data.duration_blocks": {
+    "body[0].data.prizes.payouts[0].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[0].items[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[0].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[1].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[1].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[1].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[1].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[1].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[1].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[2].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[2].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[2].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[2].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[2].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[3].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[3].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[3].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[3].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[3].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.total_prizes_usd": {
       "valueClass": "numeric"
     },
     "body[0].data.multiple_rounds": {
@@ -111,8 +176,21 @@
     "body[0].data.alternate_fee.value": {
       "valueClass": "opaque"
     },
+    "body[0].data.alternate_fee.min_league": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.alternate_fee.max_league": {
+      "valueClass": "numeric"
+    },
     "body[0].data.rating_level": {
       "valueClass": "numeric"
+    },
+    "body[0].data.allow_player_card": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[0].data.best_of": {
       "valueClass": "numeric"
@@ -135,18 +213,6 @@
     "body[0].data.rounds[1].best_of": {
       "valueClass": "numeric"
     },
-    "body[0].data.group_size": {
-      "valueClass": "numeric"
-    },
-    "body[0].data.create_team_seconds": {
-      "valueClass": "numeric"
-    },
-    "body[0].data.winners_bracket": {
-      "valueClass": "numeric"
-    },
-    "body[0].data.allow_player_card": {
-      "valueClass": "opaque"
-    },
     "body[0].password_pub_key": {
       "valueClass": "opaque"
     },
@@ -166,7 +232,7 @@
       "valueClass": "opaque"
     },
     "body[1].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].name": {
       "valueClass": "name"
@@ -220,10 +286,18 @@
       "valueClass": "opaque"
     },
     "body[1].data.allowed_cards.ghost": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[1].data.allowed_cards.gladiator": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[1].data.prizes.payouts[0].start_place": {
       "valueClass": "numeric"
@@ -295,7 +369,11 @@
       "valueClass": "numeric"
     },
     "body[1].data.allow_player_card": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[1].password_pub_key": {
       "valueClass": "opaque"
@@ -316,7 +394,7 @@
       "valueClass": "opaque"
     },
     "body[2].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[2].name": {
       "valueClass": "name"
@@ -375,14 +453,34 @@
     "body[2].data.allowed_cards.sets[2].core": {
       "valueClass": "numeric"
     },
+    "body[2].data.allowed_cards.sets[3].core": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.allowed_cards.sets[4].core": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.allowed_cards.sets[5].core": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.allowed_cards.sets[6].core": {
+      "valueClass": "numeric"
+    },
     "body[2].data.allowed_cards.epoch": {
       "valueClass": "opaque"
     },
     "body[2].data.allowed_cards.ghost": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[2].data.allowed_cards.gladiator": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[2].data.prizes.payouts[0].start_place": {
       "valueClass": "numeric"
@@ -395,9 +493,6 @@
     },
     "body[2].data.prizes.payouts[0].items[0].type": {
       "valueClass": "opaque"
-    },
-    "body[2].data.prizes.payouts[0].items[0].usd_value": {
-      "valueClass": "numeric"
     },
     "body[2].data.prizes.payouts[0].items[0].text": {
       "valueClass": "opaque"
@@ -462,10 +557,22 @@
     "body[2].data.prizes.payouts[4].items[0].text": {
       "valueClass": "opaque"
     },
-    "body[2].data.total_prizes_usd": {
+    "body[2].data.prizes.payouts[5].start_place": {
       "valueClass": "numeric"
     },
-    "body[2].data.duration_blocks": {
+    "body[2].data.prizes.payouts[5].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[5].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[5].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[5].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.total_prizes_usd": {
       "valueClass": "numeric"
     },
     "body[2].data.multiple_rounds": {
@@ -484,7 +591,11 @@
       "valueClass": "numeric"
     },
     "body[2].data.allow_player_card": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[2].data.best_of": {
       "valueClass": "numeric"
@@ -507,15 +618,6 @@
     "body[2].data.rounds[1].best_of": {
       "valueClass": "numeric"
     },
-    "body[2].data.group_size": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.create_team_seconds": {
-      "valueClass": "numeric"
-    },
-    "body[2].data.winners_bracket": {
-      "valueClass": "numeric"
-    },
     "body[2].password_pub_key": {
       "valueClass": "opaque"
     },
@@ -524,34 +626,511 @@
     },
     "body[2].cur_player_entered": {
       "valueClass": "opaque"
+    },
+    "body[3].id": {
+      "valueClass": "opaque"
+    },
+    "body[3].format": {
+      "valueClass": "opaque"
+    },
+    "body[3].sub_format": {
+      "valueClass": "opaque"
+    },
+    "body[3].created_by": {
+      "valueClass": "name"
+    },
+    "body[3].name": {
+      "valueClass": "name"
+    },
+    "body[3].description": {
+      "valueClass": "opaque"
+    },
+    "body[3].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].status": {
+      "valueClass": "numeric"
+    },
+    "body[3].allow_lite": {
+      "valueClass": "opaque"
+    },
+    "body[3].current_round": {
+      "valueClass": "numeric"
+    },
+    "body[3].sponsor_name": {
+      "valueClass": "opaque"
+    },
+    "body[3].sponsor_logo_url": {
+      "valueClass": "opaque"
+    },
+    "body[3].sponsor_logo_url_med": {
+      "valueClass": "opaque"
+    },
+    "body[3].sponsor_logo_url_lg": {
+      "valueClass": "opaque"
+    },
+    "body[3].min_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[3].max_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[3].entry_fee": {
+      "valueClass": "opaque"
+    },
+    "body[3].total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.allowed_cards.type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.allowed_cards.foil": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.allowed_cards.epoch": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.allowed_cards.ghost": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].data.allowed_cards.gladiator": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].data.prizes.payouts[0].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[0].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[0].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[0].items[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[1].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[1].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[1].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[1].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[1].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[1].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[1].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[1].items[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[1].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[2].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[2].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[2].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[2].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[2].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[2].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[2].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[2].items[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[2].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[3].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[3].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[3].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[3].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[3].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[3].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[3].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[3].items[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[3].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[4].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[4].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[4].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[4].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[4].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[4].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[4].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[4].items[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[4].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[5].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[5].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[5].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[5].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[5].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[5].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[5].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[5].items[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[5].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.duration_blocks": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.multiple_rounds": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.spsp_min": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.cp_min": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.alternate_fee.value": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.rating_level": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.allow_player_card": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].data.best_of": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.rounds[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.rounds[0].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.rounds[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.rounds[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.rounds[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.rounds[1].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.group_size": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.create_team_seconds": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.winners_bracket": {
+      "valueClass": "numeric"
+    },
+    "body[3].password_pub_key": {
+      "valueClass": "opaque"
+    },
+    "body[3].entrants": {
+      "valueClass": "opaque"
+    },
+    "body[3].cur_player_entered": {
+      "valueClass": "opaque"
+    },
+    "body[4].id": {
+      "valueClass": "opaque"
+    },
+    "body[4].format": {
+      "valueClass": "opaque"
+    },
+    "body[4].sub_format": {
+      "valueClass": "opaque"
+    },
+    "body[4].created_by": {
+      "valueClass": "name"
+    },
+    "body[4].name": {
+      "valueClass": "name"
+    },
+    "body[4].description": {
+      "valueClass": "opaque"
+    },
+    "body[4].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].status": {
+      "valueClass": "numeric"
+    },
+    "body[4].allow_lite": {
+      "valueClass": "opaque"
+    },
+    "body[4].current_round": {
+      "valueClass": "numeric"
+    },
+    "body[4].sponsor_name": {
+      "valueClass": "opaque"
+    },
+    "body[4].sponsor_logo_url": {
+      "valueClass": "opaque"
+    },
+    "body[4].sponsor_logo_url_med": {
+      "valueClass": "opaque"
+    },
+    "body[4].sponsor_logo_url_lg": {
+      "valueClass": "opaque"
+    },
+    "body[4].min_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[4].max_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[4].entry_fee": {
+      "valueClass": "opaque"
+    },
+    "body[4].total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.allowed_cards.type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.allowed_cards.foil": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.allowed_cards.sets[0].core": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.allowed_cards.sets[1].core": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.allowed_cards.epoch": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.allowed_cards.ghost": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].data.allowed_cards.gladiator": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].data.prizes.payouts[0].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[0].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[0].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[0].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[0].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[0].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.duration_blocks": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.multiple_rounds": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.spsp_min": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.cp_min": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.alternate_fee.value": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.rating_level": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.allow_player_card": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].data.best_of": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.rounds[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.rounds[0].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.rounds[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.rounds[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.rounds[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.rounds[1].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.group_size": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.create_team_seconds": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.winners_bracket": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.entry_threshold": {
+      "valueClass": "numeric"
+    },
+    "body[4].password_pub_key": {
+      "valueClass": "opaque"
+    },
+    "body[4].entrants": {
+      "valueClass": "opaque"
+    },
+    "body[4].cur_player_entered": {
+      "valueClass": "opaque"
     }
   },
   "body": [
     {
-      "id": "a0b84ec642df58e7af0f2ffd479103dc13f864da",
-      "format": "swiss",
+      "id": "[redacted]",
+      "format": "[redacted]",
       "sub_format": null,
-      "created_by": "sps.tournaments",
-      "name": "Scholar Showcase: Gold Modern",
-      "description": "Come show off your skills and you might just catch the eye of a top account holder looking for a new champion to lead their account to victory and share the spoils of the Arena!",
-      "start_date": "2026-09-11T05:00:00.000Z",
+      "created_by": "sample-account-1",
+      "name": "sample-account-2",
+      "description": "[redacted]",
+      "start_date": "2026-09-12T20:00:00.000Z",
       "status": 2,
       "allow_lite": false,
-      "current_round": 1,
-      "sponsor_name": "SPS DAO",
-      "sponsor_logo_url": "Scholar Shocase.jpg",
-      "sponsor_logo_url_med": "Scholar Shocase.jpg",
-      "sponsor_logo_url_lg": "",
+      "current_round": 5,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
       "min_entrants": 4,
       "max_entrants": null,
-      "entry_fee": null,
-      "total_prizes_usd": 1,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 5,
       "data": {
         "allowed_cards": {
-          "type": "all",
-          "foil": "all",
+          "type": "[redacted]",
+          "foil": "[redacted]",
           "sets": [],
-          "epoch": "modern",
+          "epoch": "[redacted]",
           "ghost": true,
           "gladiator": false
         },
@@ -563,172 +1142,15 @@
               "items": [
                 {
                   "qty": 1,
-                  "type": "CUSTOM",
+                  "type": "[redacted]",
                   "usd_value": 1,
-                  "text": "You the champ!"
-                }
-              ]
-            }
-          ]
-        },
-        "total_prizes_usd": 1,
-        "duration_blocks": 28800,
-        "multiple_rounds": true,
-        "spsp_min": 0,
-        "cp_min": 0,
-        "alternate_fee": {
-          "value": "none"
-        },
-        "rating_level": 3,
-        "best_of": 3,
-        "rounds": [
-          {
-            "type": "qualifier",
-            "best_of": 1,
-            "qty": 1
-          },
-          {
-            "type": "last",
-            "qty": 1,
-            "best_of": 5
-          }
-        ],
-        "group_size": 12,
-        "create_team_seconds": 288,
-        "winners_bracket": 30,
-        "allow_player_card": false
-      },
-      "password_pub_key": null,
-      "entrants": "7",
-      "cur_player_entered": "0"
-    },
-    {
-      "id": "71c143469d6fff6c78b2caffc461b805dbacb5da",
-      "format": "swiss",
-      "sub_format": null,
-      "created_by": "sps.tournaments",
-      "name": "Scholar Showcase: Silver Modern",
-      "description": "Come show off your skills and you might just catch the eye of a top account holder looking for a new champion to lead their account to victory and share the spoils of the Arena!",
-      "start_date": "2026-09-10T05:00:00.000Z",
-      "status": 2,
-      "allow_lite": false,
-      "current_round": 1,
-      "sponsor_name": "SPS DAO",
-      "sponsor_logo_url": "Scholar Shocase.jpg",
-      "sponsor_logo_url_med": "Scholar Shocase.jpg",
-      "sponsor_logo_url_lg": "",
-      "min_entrants": 4,
-      "max_entrants": null,
-      "entry_fee": null,
-      "total_prizes_usd": 1,
-      "data": {
-        "allowed_cards": {
-          "type": "all",
-          "foil": "all",
-          "sets": [],
-          "epoch": "modern",
-          "ghost": true,
-          "gladiator": false
-        },
-        "prizes": {
-          "payouts": [
-            {
-              "start_place": 1,
-              "end_place": 1,
-              "items": [
+                  "text": "[redacted]"
+                },
                 {
                   "qty": 1,
-                  "type": "CUSTOM",
-                  "usd_value": 1,
-                  "text": "You the champ!"
-                }
-              ]
-            }
-          ]
-        },
-        "total_prizes_usd": 1,
-        "duration_blocks": 28800,
-        "multiple_rounds": true,
-        "spsp_min": 0,
-        "cp_min": 0,
-        "alternate_fee": {
-          "value": "none"
-        },
-        "rating_level": 2,
-        "best_of": 3,
-        "rounds": [
-          {
-            "type": "qualifier",
-            "best_of": 1,
-            "qty": 1
-          },
-          {
-            "type": "last",
-            "qty": 1,
-            "best_of": 5
-          }
-        ],
-        "group_size": 12,
-        "create_team_seconds": 288,
-        "winners_bracket": 30,
-        "allow_player_card": false
-      },
-      "password_pub_key": null,
-      "entrants": "9",
-      "cur_player_entered": "0"
-    },
-    {
-      "id": "a23228fd299d14412a3e8327c093f3dd935d0fc7",
-      "format": "swiss",
-      "sub_format": null,
-      "created_by": "ehmaywuntee",
-      "name": "Escalation Ghost Cards!!!",
-      "description": "Come join the fun in a weekly 24hr ghost card tournament where I provide you with a deck of CA & ESC cards plus other random sets at times each week and you battle it out for the top prize! You can also catch my Twitch streams where I do daily play, viewer challenges, and enter my tourney teams. Good luck!\n\nDisclaimer: No multi accounting, bots, or battle helpers; host reserves the right to deny prizes to suspected or confirmed violators.\n",
-      "start_date": "2026-09-10T02:00:00.000Z",
-      "status": 2,
-      "allow_lite": false,
-      "current_round": 1,
-      "sponsor_name": "Ehmaywuntee",
-      "sponsor_logo_url": "EW-PinkCritter256.png",
-      "sponsor_logo_url_med": "EW-PinkCritter256.png",
-      "sponsor_logo_url_lg": "EW-GhostArena1200x800.png",
-      "min_entrants": 4,
-      "max_entrants": 444,
-      "entry_fee": "5 DEC",
-      "total_prizes_usd": 1,
-      "data": {
-        "allowed_cards": {
-          "type": "all",
-          "foil": "gold_only",
-          "sets": [
-            {
-              "core": 14,
-              "editions": []
-            },
-            {
-              "core": 12,
-              "editions": []
-            },
-            {
-              "core": 15,
-              "editions": []
-            }
-          ],
-          "epoch": "modern",
-          "ghost": true,
-          "gladiator": false
-        },
-        "prizes": {
-          "payouts": [
-            {
-              "start_place": 1,
-              "end_place": 1,
-              "items": [
-                {
-                  "qty": 1,
-                  "type": "CUSTOM",
-                  "usd_value": 1,
-                  "text": "1 CA Starter Pack"
+                  "type": "[redacted]",
+                  "usd_value": 2,
+                  "text": "[redacted]"
                 }
               ]
             },
@@ -737,9 +1159,10 @@
               "end_place": 2,
               "items": [
                 {
-                  "qty": 50,
-                  "type": "DEC",
-                  "text": ""
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 2,
+                  "text": "[redacted]"
                 }
               ]
             },
@@ -748,66 +1171,532 @@
               "end_place": 4,
               "items": [
                 {
-                  "qty": 20,
-                  "type": "DEC",
-                  "text": ""
+                  "qty": 25,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
                 }
               ]
             },
             {
               "start_place": 5,
-              "end_place": 8,
-              "items": [
-                {
-                  "qty": 10,
-                  "type": "DEC",
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "start_place": 9,
-              "end_place": 16,
+              "end_place": 10,
               "items": [
                 {
                   "qty": 5,
-                  "type": "DEC",
-                  "text": ""
+                  "type": "[redacted]",
+                  "text": "[redacted]"
                 }
               ]
             }
           ]
         },
-        "total_prizes_usd": 1.0576469999999998,
-        "duration_blocks": 28800,
+        "total_prizes_usd": 5.030384,
         "multiple_rounds": false,
-        "spsp_min": 100,
-        "cp_min": 10,
+        "spsp_min": 0,
+        "cp_min": 0,
         "alternate_fee": {
-          "value": "none"
+          "value": "[redacted]",
+          "min_league": 0,
+          "max_league": 3
+        },
+        "rating_level": 2,
+        "allow_player_card": false,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 3,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ]
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-3",
+      "name": "sample-account-4",
+      "description": "[redacted]",
+      "start_date": "2026-09-12T05:00:00.000Z",
+      "status": 2,
+      "allow_lite": false,
+      "current_round": 1,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": null,
+      "total_prizes_usd": 1,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [],
+          "epoch": "[redacted]",
+          "ghost": true,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 1,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 1,
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 1,
+        "duration_blocks": 28800,
+        "multiple_rounds": true,
+        "spsp_min": 0,
+        "cp_min": 0,
+        "alternate_fee": {
+          "value": "[redacted]"
+        },
+        "rating_level": 4,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 1,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ],
+        "group_size": 12,
+        "create_team_seconds": 288,
+        "winners_bracket": 30,
+        "allow_player_card": false
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-57",
+      "name": "sample-account-58",
+      "description": "[redacted]",
+      "start_date": "2026-08-16T17:00:00.000Z",
+      "status": 2,
+      "allow_lite": false,
+      "current_round": 4,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 5,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [
+            {
+              "core": 12,
+              "editions": []
+            },
+            {
+              "core": 14,
+              "editions": []
+            },
+            {
+              "core": 15,
+              "editions": []
+            },
+            {
+              "core": 7,
+              "editions": []
+            },
+            {
+              "core": 4,
+              "editions": []
+            },
+            {
+              "core": 1,
+              "editions": []
+            },
+            {
+              "core": 0,
+              "editions": []
+            }
+          ],
+          "epoch": "[redacted]",
+          "ghost": false,
+          "gladiator": true
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 1,
+              "items": [
+                {
+                  "qty": 4000,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 2,
+              "end_place": 2,
+              "items": [
+                {
+                  "qty": 3000,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 3,
+              "end_place": 3,
+              "items": [
+                {
+                  "qty": 2500,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 4,
+              "end_place": 4,
+              "items": [
+                {
+                  "qty": 2000,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 5,
+              "end_place": 10,
+              "items": [
+                {
+                  "qty": 1000,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 11,
+              "end_place": 30,
+              "items": [
+                {
+                  "qty": 100,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 5.7525,
+        "multiple_rounds": false,
+        "spsp_min": 0,
+        "cp_min": 0,
+        "alternate_fee": {
+          "value": "[redacted]"
+        },
+        "rating_level": 3,
+        "allow_player_card": true,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 1,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ]
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-61",
+      "name": "sample-account-62",
+      "description": "[redacted]",
+      "start_date": "2026-08-07T04:30:00.000Z",
+      "status": 2,
+      "allow_lite": null,
+      "current_round": 2,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 165,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [],
+          "epoch": "[redacted]",
+          "ghost": false,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 1,
+              "items": [
+                {
+                  "qty": 500,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 5,
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 2,
+              "end_place": 2,
+              "items": [
+                {
+                  "qty": 300,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 5,
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 3,
+              "end_place": 3,
+              "items": [
+                {
+                  "qty": 200,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 5,
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 4,
+              "end_place": 10,
+              "items": [
+                {
+                  "qty": 100,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 50,
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 11,
+              "end_place": 25,
+              "items": [
+                {
+                  "qty": 50,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 50,
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 26,
+              "end_place": 50,
+              "items": [
+                {
+                  "qty": 10,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 50,
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 165.61937999999998,
+        "duration_blocks": 28800,
+        "multiple_rounds": true,
+        "spsp_min": 0,
+        "cp_min": 0,
+        "alternate_fee": {
+          "value": "[redacted]"
+        },
+        "rating_level": 2,
+        "allow_player_card": false,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 1,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ],
+        "group_size": 12,
+        "create_team_seconds": 288,
+        "winners_bracket": 30
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": "[redacted]",
+      "created_by": "sample-account-63",
+      "name": "sample-account-64",
+      "description": "[redacted]",
+      "start_date": "2026-08-04T17:43:51.000Z",
+      "status": 2,
+      "allow_lite": false,
+      "current_round": 1,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": 4,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 1,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [
+            {
+              "core": 15,
+              "editions": []
+            },
+            {
+              "core": 14,
+              "editions": []
+            }
+          ],
+          "epoch": "[redacted]",
+          "ghost": true,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 1,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 1,
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 1,
+        "duration_blocks": 1200,
+        "multiple_rounds": true,
+        "spsp_min": 0,
+        "cp_min": 0,
+        "alternate_fee": {
+          "value": "[redacted]"
         },
         "rating_level": 4,
         "allow_player_card": false,
         "best_of": 3,
         "rounds": [
           {
-            "type": "qualifier",
+            "type": "[redacted]",
             "best_of": 1,
             "qty": 1
           },
           {
-            "type": "last",
+            "type": "[redacted]",
             "qty": 1,
             "best_of": 5
           }
         ],
         "group_size": 15,
-        "create_team_seconds": 288,
-        "winners_bracket": 30
+        "create_team_seconds": 168,
+        "winners_bracket": 30,
+        "entry_threshold": 99
       },
       "password_pub_key": null,
-      "entrants": "20",
-      "cur_player_entered": "0"
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
     }
   ]
 }

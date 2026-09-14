@@ -1,38 +1,276 @@
 {
-  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
-  "valueClasses": {
-    "body[0].id": { "valueClass": "id" },
-    "body[0].name": { "valueClass": "enum" },
-    "body[0].type": { "valueClass": "enum" },
-    "body[0].sub_type": { "valueClass": "enum" },
-    "body[0].data": { "valueClass": "opaque" },
-    "body[0].data.boost": { "valueClass": "numeric" },
-    "body[0].transferable": { "valueClass": "enum" },
-    "body[0].consumable": { "valueClass": "enum" },
-    "body[0].inventory": { "valueClass": "enum" },
-    "body[0].print_limit": { "valueClass": "numeric" },
-    "body[0].total_printed": { "valueClass": "numeric" },
-    "body[0].image_filename": { "valueClass": "opaque" },
-    "body[0].icon_filename": { "valueClass": "opaque" },
-    "body[0].description": { "valueClass": "freetext" },
-    "body[0].rarity": { "valueClass": "enum" },
-    "body[0].stake_type_id": { "valueClass": "id" }
+  "provenance": {
+    "source": "synthetic",
+    "observedAt": "2026-09-08T00:00:00Z",
+    "schemaReview": "Synthetic catalogue example; name is an open text label. Original observedAt dates the schema observation, not a verbatim response.",
+    "additionalSchemaReview": "Combined explicitly synthetic examples of reviewed item metadata field types from September 14; this is schema coverage, not a real item. Payment recipient accounts are synthetic name fields.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "6e61b391cff534e9511dd8fea81ab097fc3023cd71f538aa8ecf6043634d120f",
+        "alternateShape": "95bb8d868d950a6e8552ee690e7cdb1d2c40d43e21a5d62f0173047bdf8e970f"
+      }
+    ]
   },
-  "body": [{
-    "id": 1,
-    "name": "Fixture Item",
-    "type": "token",
-    "sub_type": null,
-    "data": { "boost": 0.5 },
-    "transferable": true,
-    "consumable": false,
-    "inventory": true,
-    "print_limit": null,
-    "total_printed": 10,
-    "image_filename": null,
-    "icon_filename": null,
-    "description": null,
-    "rarity": null,
-    "stake_type_id": 1
-  }]
+  "valueClasses": {
+    "body[0].id": {
+      "valueClass": "id"
+    },
+    "body[0].name": {
+      "valueClass": "freetext"
+    },
+    "body[0].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "token",
+        "Title",
+        "Spellbook",
+        "Token",
+        "Land",
+        "Conflicts",
+        "Avatar",
+        "Music",
+        "Collector Sticker"
+      ]
+    },
+    "body[0].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Currency",
+        "Pack",
+        "Potion",
+        "Land",
+        "Voucher",
+        "License",
+        "Deed",
+        "Booster",
+        "Totem",
+        "Power Core",
+        "Vehicle",
+        "Outfit",
+        "Conflicts",
+        "Unbinding",
+        "Gift Box",
+        "Airdrop Token",
+        "Hat",
+        "Accessory",
+        "Background",
+        "Frame",
+        "Tattoo",
+        "Toxic Sticker Pack",
+        "Animal Sticker Pack",
+        "Support",
+        "Fav Sticker Pack",
+        "Year Joined",
+        "8th Anniversary",
+        "Splinterfest 2022",
+        "Winterfest 2025"
+      ]
+    },
+    "body[0].data": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.boost": {
+      "valueClass": "numeric"
+    },
+    "body[0].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].inventory": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[0].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[0].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[0].icon_filename": {
+      "valueClass": "opaque"
+    },
+    "body[0].description": {
+      "valueClass": "freetext"
+    },
+    "body[0].rarity": {
+      "valueClass": "enum",
+      "allowedValues": [
+        0
+      ]
+    },
+    "body[0].stake_type_id": {
+      "valueClass": "id"
+    },
+    "body[0].data.symbol": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.avatar_info": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.image": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.shopLink": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.pack_type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.long_name": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.artist": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.track_length": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.series": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.burn_value": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.collector_cosmetic_key": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.event": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.source_symbol": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.source_item_name": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.item_backed": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].data.launch_sticker": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].data.support_sticker": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].data.maintenance_sticker": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].data.soulbound_on_creation_exception": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].data.soulbound_on_creation": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].data.edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.year": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.resources[0]": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prices[0].amount": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prices[0].payment_receiving_account": {
+      "valueClass": "name"
+    }
+  },
+  "body": [
+    {
+      "id": 1,
+      "name": "Fixture Item",
+      "type": "token",
+      "sub_type": null,
+      "data": {
+        "boost": 0.5,
+        "symbol": "[redacted]",
+        "avatar_info": "[redacted]",
+        "image": "[redacted]",
+        "shopLink": "[redacted]",
+        "pack_type": "[redacted]",
+        "long_name": "[redacted]",
+        "artist": "[redacted]",
+        "track_length": "[redacted]",
+        "series": "[redacted]",
+        "burn_value": "[redacted]",
+        "collector_cosmetic_key": "[redacted]",
+        "event": "[redacted]",
+        "source_symbol": "[redacted]",
+        "source_item_name": "[redacted]",
+        "item_backed": false,
+        "launch_sticker": false,
+        "support_sticker": false,
+        "maintenance_sticker": false,
+        "soulbound_on_creation_exception": false,
+        "soulbound_on_creation": false,
+        "edition": 0,
+        "year": 0,
+        "resources": [
+          "[redacted]"
+        ],
+        "prices": [
+          {
+            "currency": "[redacted]",
+            "amount": 0,
+            "payment_receiving_account": "sample-account-1"
+          }
+        ]
+      },
+      "transferable": true,
+      "consumable": false,
+      "inventory": true,
+      "print_limit": null,
+      "total_printed": 10,
+      "image_filename": null,
+      "icon_filename": null,
+      "description": null,
+      "rarity": null,
+      "stake_type_id": 1
+    }
+  ]
 }

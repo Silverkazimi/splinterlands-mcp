@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:47:03.557245+00:00",
     "sourceUrl": "https://api2.splinterlands.com/battle/battle_queue",
-    "captureScope": "Full captured response; JSON-encoded string fields are not decoded or transformed."
+    "captureScope": "Full captured response; JSON-encoded string fields are not decoded or transformed.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body[0].id": {
@@ -55,7 +56,7 @@
       "valueClass": "opaque"
     },
     "body[0].opponent_player": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].opponent_team_hash": {
       "valueClass": "opaque"
@@ -99,7 +100,7 @@
       "id": "sl_93de50358e9467fbb7751a8146d043a4",
       "created_block_num": 109844391,
       "expiration_block_num": 109844451,
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "team_hash": "462f011743a38230396980c795ecef50",
       "match_type": "Ranked",
       "mana_cap": null,
@@ -112,7 +113,7 @@
       "summoner_level": null,
       "ruleset": null,
       "inactive": null,
-      "opponent_player": "the-dark-knight",
+      "opponent_player": "sample-acct-096",
       "opponent_team_hash": "da025d2ac0a41ab8e562742c7a1897d3",
       "submit_expiration_block_num": 0,
       "settings": "{\"rating_level\":4}",

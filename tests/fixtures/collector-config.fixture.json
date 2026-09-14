@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T10:13:45.973932+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/collector/config",
-    "captureScope": "Complete anonymous configuration response; no account identifier sent."
+    "captureScope": "Complete anonymous configuration response; no account identifier sent.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.status": {
@@ -1999,22 +2000,22 @@
       ],
       "featuredAccounts": [
         {
-          "username": "lilyfire"
+          "username": "sample-acct-073"
         },
         {
-          "username": "royaleagle"
+          "username": "sample-acct-087"
         },
         {
-          "username": "thebadwitch"
+          "username": "sample-acct-097"
         },
         {
-          "username": "blazekos"
+          "username": "sample-acct-050"
         },
         {
-          "username": "elclements"
+          "username": "sample-acct-058"
         },
         {
-          "username": "nickelbunker"
+          "username": "sample-acct-076"
         }
       ],
       "cosmetics": [

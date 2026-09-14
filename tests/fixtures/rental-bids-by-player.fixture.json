@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-13T11:08:59.651134+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/bids/player/{player}",
-    "captureScope": "Complete bounded public response; account selected from anonymous market results."
+    "captureScope": "Complete bounded public response; account selected from anonymous market results.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.status": {
@@ -149,7 +150,7 @@
         "txId": "7e0577108903bc8c42fee6c1abf1efce121a61f5-2",
         "createdDate": "2026-09-11T07:41:45.000Z",
         "lastUpdatedDate": "2026-09-11T07:41:45.000Z",
-        "player": "ghiper",
+        "player": "sample-acct-062",
         "token": "SPSP",
         "qtyTotal": "1000.000",
         "qtyAvailable": "1000.000",
@@ -162,7 +163,7 @@
         "txId": "7e0577108903bc8c42fee6c1abf1efce121a61f5-3",
         "createdDate": "2026-09-11T07:41:45.000Z",
         "lastUpdatedDate": "2026-09-11T07:41:45.000Z",
-        "player": "ghiper",
+        "player": "sample-acct-062",
         "token": "SPSP",
         "qtyTotal": "1000.000",
         "qtyAvailable": "1000.000",
@@ -175,7 +176,7 @@
         "txId": "9a699502bea5f0753527bb5f5fb1ae9a1946ea57-1",
         "createdDate": "2026-09-11T07:41:39.000Z",
         "lastUpdatedDate": "2026-09-11T07:41:39.000Z",
-        "player": "ghiper",
+        "player": "sample-acct-062",
         "token": "SPSP",
         "qtyTotal": "500.000",
         "qtyAvailable": "500.000",
@@ -188,7 +189,7 @@
         "txId": "9a699502bea5f0753527bb5f5fb1ae9a1946ea57-2",
         "createdDate": "2026-09-11T07:41:39.000Z",
         "lastUpdatedDate": "2026-09-11T07:41:39.000Z",
-        "player": "ghiper",
+        "player": "sample-acct-062",
         "token": "SPSP",
         "qtyTotal": "500.000",
         "qtyAvailable": "500.000",

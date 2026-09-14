@@ -163,6 +163,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "e3ddc6093ff50d55c29e02f9a13875994677c1fd6899cffd81aab961f526e102"
+          ]
+        }
+      ],
       "shapeSources": [
         "battle-queue.fixture.json"
       ],
@@ -879,6 +887,156 @@
               "string"
             ]
           },
+          "tournament": {
+            "types": [
+              "object"
+            ]
+          },
+          "tournament.allow_lite": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "tournament.approved": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "tournament.checkin_msg_sent": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "tournament.created_block": {
+            "types": [
+              "number"
+            ]
+          },
+          "tournament.created_by": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.created_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.current_round": {
+            "types": [
+              "number"
+            ]
+          },
+          "tournament.data": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.description": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.entry_fee": {
+            "types": [
+              "null"
+            ]
+          },
+          "tournament.format": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.id": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.max_entrants": {
+            "types": [
+              "null"
+            ]
+          },
+          "tournament.min_entrants": {
+            "types": [
+              "number"
+            ]
+          },
+          "tournament.name": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.password_pub_key": {
+            "types": [
+              "null"
+            ]
+          },
+          "tournament.payment": {
+            "types": [
+              "null"
+            ]
+          },
+          "tournament.payment_data": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.require_kyc": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "tournament.sponsor_logo_url": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.sponsor_logo_url_lg": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.sponsor_logo_url_med": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.sponsor_name": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.sponsor_url": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.start_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "tournament.status": {
+            "types": [
+              "number"
+            ]
+          },
+          "tournament.stretch_background": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "tournament.sub_format": {
+            "types": [
+              "null"
+            ]
+          },
+          "tournament.total_prizes_usd": {
+            "types": [
+              "number"
+            ]
+          },
           "winner": {
             "types": [
               "string"
@@ -887,6 +1045,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "007660c870c9d44bfbf756ff3745c647c8b9c55c878f013e7be44e837490dae2",
+            "3dcafc157183dda1a294efcf0acae98c942e256f4fde73d08871ff86426de009"
+          ]
+        }
+      ],
       "shapeSources": [
         "battle-result.fixture.json"
       ],
@@ -902,6 +1069,7 @@
         200
       ],
       "shape": null,
+      "reviewedShapes": [],
       "shapeSources": [
         "empty:battle-status.fixture.json"
       ],
@@ -968,9 +1136,32 @@
               "string"
             ]
           },
+          "cards[].land_dec_stake_needed": {
+            "types": [
+              "number"
+            ]
+          },
           "cards[].level": {
             "types": [
               "number"
+            ]
+          },
+          "cards[].stake_end_date": {
+            "types": [
+              "null",
+              "string"
+            ]
+          },
+          "cards[].stake_plot": {
+            "types": [
+              "null",
+              "number"
+            ]
+          },
+          "cards[].stake_start_date": {
+            "types": [
+              "null",
+              "string"
             ]
           },
           "cards[].uid": {
@@ -991,6 +1182,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9fd6635abf07dbfefa7319c3a86d63842095dd548e908bfddb19cdc6f12d5ad3"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-cards-collection-maintenance.fixture.json"
       ],
@@ -1012,6 +1211,11 @@
               "object"
             ]
           },
+          "[].alpha_xp": {
+            "types": [
+              "null"
+            ]
+          },
           "[].bcx": {
             "types": [
               "number"
@@ -1020,6 +1224,31 @@
           "[].bcx_unbound": {
             "types": [
               "number"
+            ]
+          },
+          "[].buy_price": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].cancel_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].cancel_player": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].cancel_tx": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].card_deposited_date": {
+            "types": [
+              "null"
             ]
           },
           "[].card_detail_id": {
@@ -1037,7 +1266,297 @@
               "number"
             ]
           },
+          "[].created_block": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].created_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].created_tx": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].delegated_to": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].delegated_to_display_name": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].delegation_tx": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].details.color": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.created_block_num": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.distribution": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.distribution[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].details.distribution[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.distribution[].edition": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.distribution[].foil": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.distribution[].gold": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].details.distribution[].num_burned": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.distribution[].num_cards": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.distribution[].total_burned_xp": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.distribution[].total_xp": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.distribution[].unbound_cards": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.drop_rate": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.editions": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.game_type": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.is_promo": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].details.is_starter": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].details.last_update_tx": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.name": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.no_pp": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].details.print_start_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].details.rarity": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.secondary_color": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].details.stake_type_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.stats": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].details.stats.abilities": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.stats.abilities[]": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.stats.abilities[][]": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.stats.armor": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.stats.armor[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.stats.attack": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.stats.attack[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.stats.health": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.stats.health[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.stats.magic": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.stats.magic[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.stats.mana": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.stats.mana[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.stats.ranged": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.stats.ranged[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.stats.speed": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].details.stats.speed[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.sub_type": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].details.tier": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.total_printed": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].details.type": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].display_name": {
+            "types": [
+              "string"
+            ]
+          },
           "[].edition": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].expiration_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].foil": {
             "types": [
               "number"
             ]
@@ -1047,14 +1566,179 @@
               "boolean"
             ]
           },
+          "[].land_base_pp": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].land_dec_stake_needed": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].last_buy_currency": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].last_buy_price": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].last_transferred_block": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].last_transferred_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].last_used_block": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].last_used_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].last_used_player": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].lock_days": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].market_created_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].market_id": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].market_listing_status": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].market_listing_type": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].mint": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].next_rental_payment": {
+            "types": [
+              "null"
+            ]
+          },
           "[].player": {
             "types": [
               "string"
             ]
           },
+          "[].renewal_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].renewal_tx": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].rental_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].rental_days": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].rental_type": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].set_id": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].skin": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].stake_end_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].stake_plot": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stake_ref_uid": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stake_region": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stake_start_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].survival_bracket": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].survival_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].survival_mode_disabled": {
+            "types": [
+              "null"
+            ]
+          },
           "[].uid": {
             "types": [
               "string"
+            ]
+          },
+          "[].unlock_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].wagon_uid": {
+            "types": [
+              "null"
             ]
           },
           "[].xp": {
@@ -1065,6 +1749,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "1484b2edbd0bfcdded2fae91ba428a6d5de31c768085c9b35f86830150024c3d"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-cards-find.fixture.json"
       ],
@@ -1093,7 +1785,8 @@
           },
           "[].created_block_num": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "[].distribution": {
@@ -1183,7 +1876,8 @@
           },
           "[].last_update_tx": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].name": {
@@ -1198,7 +1892,8 @@
           },
           "[].print_start_date": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].rarity": {
@@ -1208,12 +1903,14 @@
           },
           "[].secondary_color": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].stake_type_id": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "[].stats": {
@@ -1228,7 +1925,51 @@
           },
           "[].stats.abilities[]": {
             "types": [
-              "array"
+              "array",
+              "string"
+            ]
+          },
+          "[].stats.abilities[][]": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.armor": {
+            "types": [
+              "array",
+              "number"
+            ]
+          },
+          "[].stats.armor[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stats.attack": {
+            "types": [
+              "array",
+              "number"
+            ]
+          },
+          "[].stats.attack[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stats.epoch": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stats.health": {
+            "types": [
+              "array",
+              "number"
+            ]
+          },
+          "[].stats.health[]": {
+            "types": [
+              "number"
             ]
           },
           "[].stats.importIndex": {
@@ -1236,12 +1977,188 @@
               "number"
             ]
           },
-          "[].stats.mana": {
+          "[].stats.land_abilities": {
             "types": [
               "array"
             ]
           },
+          "[].stats.land_abilities[]": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].stats.land_abilities[][]": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].stats.land_abilities[][][]": {
+            "types": [
+              "number",
+              "string"
+            ]
+          },
+          "[].stats.magic": {
+            "types": [
+              "array",
+              "number"
+            ]
+          },
+          "[].stats.magic[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stats.mana": {
+            "types": [
+              "array",
+              "number"
+            ]
+          },
           "[].stats.mana[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stats.ptrOptions": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].stats.ptrOptions[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].stats.ptrOptions[].abilities": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].stats.ptrOptions[].abilities[]": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.ptrOptions[].description": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.ptrOptions[].effect": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.ptrOptions[].id": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.ptrOptions[].imageURL": {
+            "types": [
+              "array",
+              "string"
+            ]
+          },
+          "[].stats.ptrOptions[].imageURL[]": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.ptrOptions[].max": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stats.ptrOptions[].name": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.ptrOptions[].stat_buff": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].stats.ptrOptions[].stat_buff[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stats.ptrOptions[].status_effects": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].stats.ptrOptions[].status_effects[]": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.ptrOptions[].target": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.ptrOptions[].target_type": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.racialSynergy": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].stats.racialSynergy[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].stats.racialSynergy[].abilities": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].stats.racialSynergy[].abilities[]": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.racialSynergy[].race": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].stats.racialSynergy[].stat_buff": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].stats.racialSynergy[].stat_buff[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stats.ranged": {
+            "types": [
+              "array",
+              "number"
+            ]
+          },
+          "[].stats.ranged[]": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stats.speed": {
+            "types": [
+              "array",
+              "number"
+            ]
+          },
+          "[].stats.speed[]": {
             "types": [
               "number"
             ]
@@ -1254,6 +2171,7 @@
           },
           "[].tier": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -1270,6 +2188,20 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d71dffa31a599d0e83f74c9d84e4b13b57523da445c8981b9290b8b65699736e"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "1ee3cf3ef6ff25fa08cacbf51f6d67cb1baf517bf921b51974dd4c5f81d9b0f3"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-cards-get-details.fixture.json",
         "card-definition-null-subtype.fixture.json"
@@ -1324,12 +2256,14 @@
           },
           "[].payment_amount": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].payment_currency": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].to_player": {
@@ -1360,6 +2294,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "adc8caf3feaf139ea3c3d7e6d8696ab99d5d60e37160f0c3155f3a2bd8c33e34"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-cards-history.fixture.json"
       ],
@@ -1389,6 +2331,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "b183cf209779a982fe1f62e4958624da9942b0ce88954463cd959dae53218b57"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-cards-lore.fixture.json"
       ],
@@ -1438,6 +2388,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "3728d63f0c2cde3da3ab6bee87213a1beb04768f3941af5464c489a406adeec9"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-cards-pack-data-wax.fixture.json"
       ],
@@ -1497,6 +2455,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5fecfe333bd1f155601e55dd53ec02c9654795101961eda18e564706b9d6e282"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-cards-skins.fixture.json"
       ],
@@ -1566,6 +2532,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "c824ad74b26f56b7c9a0cc47c1b2cf37ca79d1381acdda98bf3ebc510c6d11ec"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-cards-stats.fixture.json"
       ],
@@ -1655,6 +2629,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "87d29984c443af65b8801905009d0aff4953bb3a57b2c7f29b723395ac42d6ec"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-cards-trx-lookup.fixture.json"
       ],
@@ -1819,6 +2801,21 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0dd71cb6613b8a647f2f11e795c2dfff83e1535180c63911da168805b939bcaf",
+            "ea8ac84507c04d3c660401c642afa841f966d39253287ca0836d211ca5337bdf"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0dd71cb6613b8a647f2f11e795c2dfff83e1535180c63911da168805b939bcaf"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-airdrop-conflict.fixture.json",
         "governance-conflict-airdrop.fixture.json"
@@ -1945,16 +2942,19 @@
           },
           "leaderboard[].guild_data": {
             "types": [
+              "null",
               "string"
             ]
           },
           "leaderboard[].guild_id": {
             "types": [
+              "null",
               "string"
             ]
           },
           "leaderboard[].guild_name": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -1990,6 +2990,7 @@
           },
           "leaderboard[].player_avatar": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -2011,6 +3012,7 @@
           },
           "leaderboard[].title_pre": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -2032,6 +3034,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "cadcf214bd2fe7317b1860ba684b4b22797bd3c49ab693781197bd10fc55a8cb"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-conflict-leaderboard.fixture.json"
       ],
@@ -2171,6 +3181,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "840e5f8a57630a13a3e23dea11114ea7051e01d2fb886a9255bc06641fe571b6",
+            "e21d9f27a3b04c1a98718911215c011aacf443ccbaf9beef5af91264706f69c5"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-conflict-leaderboard-player.fixture.json"
       ],
@@ -2260,6 +3279,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "8c4e5b5bd7ae7e671db20b198f3280addcacee29acef63df9722c065e51e88ef"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-conflict-players.fixture.json"
       ],
@@ -2283,22 +3310,26 @@
           },
           "[].alchemy_potions_to_boost": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "[].card_amount": {
             "types": [
+              "null",
               "number"
             ]
           },
           "[].card_black_chance": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].card_boosted_black_chance": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].card_boosted_gold_chance": {
@@ -2308,11 +3339,13 @@
           },
           "[].card_chance_per_entry": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].card_detail_id": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -2323,22 +3356,26 @@
           },
           "[].card_guaranteed_chances": {
             "types": [
+              "null",
               "number"
             ]
           },
           "[].cards_awarded": {
             "types": [
+              "null",
               "number"
             ]
           },
           "[].cards_to_guarantee_one_gold": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "[].cards_to_guarantee_one_gold_full_potions": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "[].ends": {
@@ -2353,11 +3390,13 @@
           },
           "[].midnight_potions_to_boost": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "[].reset_block_num": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -2373,6 +3412,7 @@
           },
           "[].verification_data": {
             "types": [
+              "null",
               "object"
             ]
           },
@@ -2398,6 +3438,7 @@
           },
           "[].voucher_cost_to_boost": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -2504,6 +3545,20 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "92a678b048b548a1d37097f40a308aee5e42d3548615daee0f08fbfd4d8d35d4"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "b9ca52f38d6ba52153a875a6e0e6818723f4100329a138190288a36b9b363e85"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-season-one.fixture.json",
         "governance-seasons.fixture.json"
@@ -2814,6 +3869,34 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "081ebef944bfb84c456a86e84932b618d23f52f74983bfbe888e57c5fc6a0523",
+            "436001fc72d580245369d073b8b973f29bb4d0f67db15152f1dcb4912375f78d"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "6f124a8d8b8a2e9bbd7c98447d0eecfaf22b8943d3ab54eb5e4fce63a0cd7e92"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "61567635ab7970ac3abd04322277bee659f356828da0583120ec6b20083946c1",
+            "ea0ee1eed75cedbf6945f7f2d220db5bd007ab93a32149188ac22ebdca3f82f5"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "6af90d93bb73e4bc4dfd902a579808301a1436a91776fd5bd461104b69d68c0c"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-conflict-status.fixture.json",
         "governance-status-config-one.fixture.json",
@@ -2891,6 +3974,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0550a217187a59e04cb61a2b3c64ade6837848f40cbe35be1bcf1444d25f42e7"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-conflict-wagon.fixture.json"
       ],
@@ -2965,6 +4056,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "11f36d11ca6364dfcd19bed82329d69d002d77c9800631d4b331e874e7d9a643"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-eligible.fixture.json"
       ],
@@ -3099,6 +4198,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "2efd421d092c48de90e9763376c136ae29c06b8579ebb4249a5a777b765e59a1"
+          ]
+        }
+      ],
       "shapeSources": [
         "guild-records.fixture.json"
       ],
@@ -3228,6 +4335,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "21a7fb70954e5d7b4e5e9060dea195a09623b3aed282509dd42d56d6957b06d5"
+          ]
+        }
+      ],
       "shapeSources": [
         "guild-rewards-cycle.fixture.json"
       ],
@@ -3360,6 +4475,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "016ad154be11fed912bf8be123fc8b96dd0ef8698b45c772fe7ab9f6024c78a0",
+            "2c904dd87ba0ccd81f154a6b94cb302f838e1b128923ef03582171a425edd3a2"
+          ]
+        }
+      ],
       "shapeSources": [
         "guild-contributions-hall.fixture.json"
       ],
@@ -3379,6 +4503,46 @@
           "announcements": {
             "types": [
               "array"
+            ]
+          },
+          "announcements[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "announcements[].created_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "announcements[].id": {
+            "types": [
+              "number"
+            ]
+          },
+          "announcements[].is_private": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "announcements[].message": {
+            "types": [
+              "string"
+            ]
+          },
+          "announcements[].player": {
+            "types": [
+              "string"
+            ]
+          },
+          "announcements[].room_id": {
+            "types": [
+              "string"
+            ]
+          },
+          "announcements[].subject": {
+            "types": [
+              "string"
             ]
           },
           "brawl_level": {
@@ -3629,6 +4793,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "c78c2c04df60a01a8e59edd8bc1227c9e17fd71d0bfe95eb262ded04f0df1968",
+            "ec9e9634b4b279f100f4727c3334300fa562522e73da9b63c3c349dd657ac454"
+          ]
+        }
+      ],
       "shapeSources": [
         "guild-find.fixture.json"
       ],
@@ -3768,6 +4941,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "6991efb2639bb483fc451f2384d6c61873ac4d6178bf56d544e8e0ef31e0bf75",
+            "f99ef582303e3ab27633d9c79fa229be6fbab608686ac608a0840e085493f267"
+          ]
+        }
+      ],
       "shapeSources": [
         "guild-list-name.fixture.json"
       ],
@@ -3885,6 +5067,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "c44ae21de84730bb5c0ee8b0c9a4738570fdbd483137367ba339761b66988a95"
+          ]
+        }
+      ],
       "shapeSources": [
         "guild-members.fixture.json"
       ],
@@ -3909,6 +5099,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d9d30f51c5848cce03ebabde958a137c09f94aa57c0614ddd07b9965ae5e360b"
+          ]
+        }
+      ],
       "shapeSources": [
         "metadata-last-block.fixture.json"
       ],
@@ -3963,6 +5161,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0b8aa445298a753d60e78ccab3bb6c3f40fb579b1d1b8fa0ae9b9807d7ae4711"
+          ]
+        }
+      ],
       "shapeSources": [
         "metadata-maintenance.fixture.json"
       ],
@@ -4142,6 +5348,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5ec47bb4bce02ca3d3625b080e94f1f44ea23daecd60e7b78e6acbba35f907eb"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-active-card.fixture.json"
       ],
@@ -4157,6 +5371,7 @@
         200
       ],
       "shape": null,
+      "reviewedShapes": [],
       "shapeSources": [
         "empty:market-active-status-id.fixture.json"
       ],
@@ -4172,6 +5387,7 @@
         200
       ],
       "shape": null,
+      "reviewedShapes": [],
       "shapeSources": [
         "empty:market-completed-status-id.fixture.json"
       ],
@@ -4240,6 +5456,7 @@
           },
           "[].mana": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -4256,6 +5473,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "83cf171c5d36299c0311071fbeb73589492b39bc5f845738d54dc4985d80c833"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-rent.fixture.json"
       ],
@@ -4340,6 +5565,16 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "242eb7b8213ec0dcd394c3b37f0e937db6e58fff16b761eb93d2d6b98659c1f4",
+            "83cf171c5d36299c0311071fbeb73589492b39bc5f845738d54dc4985d80c833",
+            "fec2c290e330a2fdbe6babd4b13b62eb0c6ffa9bd03f122c41c983b6f9ef19c2"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-sale.fixture.json"
       ],
@@ -4394,7 +5629,8 @@
           },
           "[].cards[].buy_currency": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].cards[].card_detail_id": {
@@ -4414,16 +5650,19 @@
           },
           "[].cards[].created_block": {
             "types": [
+              "null",
               "number"
             ]
           },
           "[].cards[].created_date": {
             "types": [
+              "null",
               "string"
             ]
           },
           "[].cards[].created_tx": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -4434,7 +5673,8 @@
           },
           "[].cards[].delegation_tx": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].cards[].edition": {
@@ -4464,17 +5704,20 @@
           },
           "[].cards[].last_buy_price": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].cards[].last_transferred_block": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "[].cards[].last_transferred_date": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].cards[].last_used_block": {
@@ -4523,11 +5766,13 @@
           },
           "[].cards[].survival_date": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].cards[].survival_mode_disabled": {
             "types": [
+              "boolean",
               "null"
             ]
           },
@@ -4538,12 +5783,14 @@
           },
           "[].cards[].unlock_date": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].cards[].unlock_tx": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].cards[].xp": {
@@ -4558,7 +5805,8 @@
           },
           "[].desc": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].fee_percent": {
@@ -4594,6 +5842,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "fe6b13b5c4dd21326b15ebecf618fb8a692e39b87bd3db6f2238567faa5c4a8a"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-packages.fixture.json"
       ],
@@ -4743,6 +5999,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "238a6a87aa6855a22b5979b655b838356c4dee6189463bcf260678583191e878"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-history.fixture.json"
       ],
@@ -4912,6 +6176,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "2332a006372f464130baeab691b54a3c42a3551cff96b3d8c8b01cbd318fe08f"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-by-card.fixture.json"
       ],
@@ -5101,6 +6373,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9c482508c6e9690353003891ffb801bd1bf57cd810a798d2cbc09d82021b156f"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-grouped.fixture.json"
       ],
@@ -5280,6 +6560,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5ec47bb4bce02ca3d3625b080e94f1f44ea23daecd60e7b78e6acbba35f907eb"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-rental-history.fixture.json"
       ],
@@ -5295,6 +6583,7 @@
         200
       ],
       "shape": null,
+      "reviewedShapes": [],
       "shapeSources": [
         "empty:market-status-id.fixture.json"
       ],
@@ -5334,6 +6623,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "074c6a02f7483b4f4996abd6ae587d905ca438ab5a3f869d6ef18c736af638c1"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-volume.fixture.json"
       ],
@@ -5362,6 +6659,7 @@
           },
           "[].last_update_date": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -5378,6 +6676,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d8a3378d85ea770987e3cc8c2abd2fa52b78621bf73799caf4242b1eccf3de73"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-archived_balances.fixture.json"
       ],
@@ -5447,6 +6753,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0f368a0e3e524d38663fa408b342f42ce56c0570f4e3d9f363638552c3734bb3",
+            "161eaf2632c858f3597837e3fcd0d53fadde0a61cf1b683ab0b8437211777076"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-authorities.fixture.json"
       ],
@@ -5481,6 +6796,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "4de2df2cdf43f4a8e6744775f4f1a71051dee8fea7d5c0ce985f5b1c7b963052"
+          ]
+        }
+      ],
       "shapeSources": [
         "player-avatar.fixture.json"
       ],
@@ -5504,11 +6827,23 @@
           },
           "[].balance": {
             "types": [
+              "number",
+              "string"
+            ]
+          },
+          "[].last_reward_block": {
+            "types": [
               "number"
+            ]
+          },
+          "[].last_reward_time": {
+            "types": [
+              "string"
             ]
           },
           "[].last_update_date": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -5525,6 +6860,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "43748c0f9a02d7a51d879bcdbafe1bda172335b04303b876ddcef874df71aee4"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-balances.fixture.json"
       ],
@@ -5569,6 +6912,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "f8446eaedd1e99c268015fa8b4765ff2f35447a18a48cf220fda6eb6c5576b84"
+          ]
+        }
+      ],
       "shapeSources": [
         "ranking-burn-event-full.fixture.json"
       ],
@@ -5617,16 +6968,19 @@
           },
           "leaderboard[].guild_data": {
             "types": [
+              "null",
               "string"
             ]
           },
           "leaderboard[].guild_id": {
             "types": [
+              "null",
               "string"
             ]
           },
           "leaderboard[].guild_name": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -5685,6 +7039,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "97ec27c486cf7ae152eb7ff5640d0251da5798307137ffdd0ff31bb056e225f9"
+          ]
+        }
+      ],
       "shapeSources": [
         "ranking-burn-event.fixture.json"
       ],
@@ -5727,6 +7089,16 @@
             ]
           },
           "[].cards[].edition": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].cards[].fixed_chance": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].cards[].gold_chance": {
             "types": [
               "number"
             ]
@@ -5776,6 +7148,171 @@
               "object"
             ]
           },
+          "[].result.by_card.224": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.224.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.224.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.235": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.235.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.235.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.236": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.236.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.236.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.239": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.239.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.239.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.254": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.254.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.254.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.278": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.278.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.278.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.279": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.279.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.279.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.292": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.292.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.292.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.293": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.293.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.293.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.294": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.294.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.294.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.295": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.295.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.295.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
           "[].result.by_card.298": {
             "types": [
               "object"
@@ -5806,6 +7343,246 @@
               "number"
             ]
           },
+          "[].result.by_card.443": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.443.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.443.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.444": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.444.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.444.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.445": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.445.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.445.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.446": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.446.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.446.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.447": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.447.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.447.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.448": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.448.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.448.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.450": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.450.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.450.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.463": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.463.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.463.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.464": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.464.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.464.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.507": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.507.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.507.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.509": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.509.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.509.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.553": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.553.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.553.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.554": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.554.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.554.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.558": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.558.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.558.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.559": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.559.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.559.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.633": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].result.by_card.633.num_gold": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].result.by_card.633.num_regular": {
+            "types": [
+              "number"
+            ]
+          },
           "[].result.num_gold": {
             "types": [
               "number"
@@ -5819,6 +7596,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "1a2137eef6efedcc8804db25700f303b3fbbde7b9df369a4cfee7e7a2ca86cdd",
+            "cf35ddbb1dcc3302cda5cf131fa22e8a2c2e7c13a64763cf0e453799a08562dd"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-card_airdrop.fixture.json"
       ],
@@ -5868,6 +7654,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "632c625714e27fe6068030d59e5e8e5ca431b95a3b0c8a9b2a84a7eed11338a9",
+            "7ba92e92cad9318de52c80cec8e0e0a25db147e2a2ca6846831ee9ba7003c116"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-current-rewards.fixture.json"
       ],
@@ -6122,6 +7917,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "f45e6295b6721351d27b073a8b5dedbc699f0d009ff3a97b21975d181a74c70d"
+          ]
+        }
+      ],
       "shapeSources": [
         "player-custom-avatar.fixture.json"
       ],
@@ -6196,6 +7999,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "eadab2c26e4fd45e28d36b5f8c3a10e7bf596dfdd00085485eebe05809659932"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-dec.fixture.json"
       ],
@@ -6412,7 +8223,17 @@
               "number"
             ]
           },
+          "guild.buildings.guild_hall.contributions_gp": {
+            "types": [
+              "number"
+            ]
+          },
           "guild.buildings.guild_hall.level": {
+            "types": [
+              "number"
+            ]
+          },
+          "guild.buildings.guild_hall.max_level": {
             "types": [
               "number"
             ]
@@ -6845,6 +8666,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7dfbb85e48955cd08851a0c3e9929c4bdd9ec14ab71369fa6a332bd4fc4a254b",
+            "b9fd7a9f91948ba48166c469f90d6baaa6a6fc584a5f4c75675960d07071e14d"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-details.fixture.json"
       ],
@@ -6889,6 +8719,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "82769ea61446d2d2f09d42c2a869256e0a15acd80ee504110c2717354f048463"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-energy_purchase_information.fixture.json"
       ],
@@ -6910,12 +8748,75 @@
               "object"
             ]
           },
+          "[].boost": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].can_transfer": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].consumable": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].created_block_num": {
+            "types": [
+              "null",
+              "number"
+            ]
+          },
+          "[].created_date": {
+            "types": [
+              "null",
+              "string"
+            ]
+          },
+          "[].created_tx": {
+            "types": [
+              "null",
+              "string"
+            ]
+          },
+          "[].data": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].image_filename": {
+            "types": [
+              "string"
+            ]
+          },
           "[].in_use": {
             "types": [
               "boolean"
             ]
           },
+          "[].is_soulbound": {
+            "types": [
+              "boolean"
+            ]
+          },
           "[].item_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].listed": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].lock_days": {
             "types": [
               "number"
             ]
@@ -6930,14 +8831,55 @@
               "string"
             ]
           },
+          "[].print_limit": {
+            "types": [
+              "null",
+              "number"
+            ]
+          },
           "[].quantity": {
             "types": [
               "number"
             ]
           },
+          "[].rarity": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].stake_end_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].stake_plot": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stake_region": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].stake_start_date": {
+            "types": [
+              "string"
+            ]
+          },
           "[].sub_type": {
             "types": [
               "string"
+            ]
+          },
+          "[].total_printed": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].transferable": {
+            "types": [
+              "boolean"
             ]
           },
           "[].type": {
@@ -6949,10 +8891,28 @@
             "types": [
               "string"
             ]
+          },
+          "[].unlock_date": {
+            "types": [
+              "null"
+            ]
+          },
+          "[].unlock_tx": {
+            "types": [
+              "null"
+            ]
           }
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9f65961a2f81d08b0e931d664afb343f730feb460a40b0d1f57c01fa728a5ad8"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-inventory.fixture.json"
       ],
@@ -6984,7 +8944,152 @@
               "object"
             ]
           },
+          "[].data.artist": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.avatar_info": {
+            "types": [
+              "string"
+            ]
+          },
           "[].data.boost": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].data.burn_value": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.collector_cosmetic_key": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.edition": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].data.event": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.image": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.item_backed": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].data.launch_sticker": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].data.long_name": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.maintenance_sticker": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].data.pack_type": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.prices": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].data.prices[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].data.prices[].amount": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].data.prices[].currency": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.prices[].payment_receiving_account": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.resources": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].data.resources[]": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.series": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.shopLink": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.soulbound_on_creation": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].data.soulbound_on_creation_exception": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].data.source_item_name": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.source_symbol": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.support_sticker": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "[].data.symbol": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.track_length": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].data.year": {
             "types": [
               "number"
             ]
@@ -7057,6 +9162,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "6e61b391cff534e9511dd8fea81ab097fc3023cd71f538aa8ecf6043634d120f",
+            "95bb8d868d950a6e8552ee690e7cdb1d2c40d43e21a5d62f0173047bdf8e970f"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-item-details.fixture.json"
       ],
@@ -7146,6 +9260,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "463da27ef06e8546578c65eafe118f89e01a139e251f1c71aea9ecda0625ca4b"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-last-focus-rewards.fixture.json"
       ],
@@ -7195,6 +9317,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "632c625714e27fe6068030d59e5e8e5ca431b95a3b0c8a9b2a84a7eed11338a9"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-last-season-rewards.fixture.json"
       ],
@@ -7276,6 +9406,7 @@
           },
           "[].player_avatar": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -7296,7 +9427,8 @@
           },
           "[].scholared_by": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].season": {
@@ -7322,6 +9454,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "519a57c4dcabe49949c893e489c1261063113b322d252182977ab34b1f70b675"
+          ]
+        }
+      ],
       "shapeSources": [
         "ranking-leaderboard.fixture.json"
       ],
@@ -7574,6 +9714,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "b2f2c25982745992b53e6886aaf9e00c5b41bac6e9e8ebac8fc75bc9c6238ab2",
+            "ccef4228bf2a4ced3892162e8eacc874c1480041b72b42879f002825e554abf4"
+          ]
+        }
+      ],
       "shapeSources": [
         "ranking-leaderboard-with-player.fixture.json"
       ],
@@ -7628,6 +9777,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "e3fee3e34e54a2ef1d1a793ecdf998504eb971ac82c0b9e17d09f3ae1d85a3f4"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-lp_claim_history.fixture.json"
       ],
@@ -7672,6 +9829,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "c44b860757f8f34610d7f149d235ac0369ed4705e334b8f74dec979fe416919e"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-pack_purchases.fixture.json"
       ],
@@ -7766,6 +9931,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "e048356e6f5ac5d383c18d1bd782ed75742ab307268d895d47365d8416d2dd78"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-quests.fixture.json"
       ],
@@ -8554,6 +10727,16 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "67d22ec857e97d6d751080bb7415f392b1c8c2b7f6c1e6ec8f513d580cf40995",
+            "8617d64cfae71d34cb305e3bd3815fae79ba6d26b96aedaa5cbfaee9b354d0e1",
+            "d96d49aadd2f0c9b5dae847999a498cbcfc7958c247bad4d9c6c29afa0991c9f"
+          ]
+        }
+      ],
       "shapeSources": [
         "ranking-presale.fixture.json"
       ],
@@ -8654,6 +10837,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "1a8ccfca9c54b831aa654e0340206619e613280ff6fae5d01f8ef3d074707ef7",
+            "b8bc1763f3ce5c3760865f2c35ea6aa565c3b31804d6d975e2c422b4ef6fa360"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-recent_teams.fixture.json"
       ],
@@ -8718,6 +10910,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "3eecfc3776c272f7e2064ed13e7962929fb7b8b77d85761a13bd678469ea987d"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-reward_delegation_history.fixture.json"
       ],
@@ -8777,6 +10977,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "c7dcdd382fdf7566e5bde264850d6d1e78971ee5471c33646b088205c8490811"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-reward_delegations.fixture.json"
       ],
@@ -8851,6 +11059,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "43db33c4f6f799a5f8a8b6fbedabcf9ab0129bc7d07e89479380f95934aa0ae0"
+          ]
+        }
+      ],
       "shapeSources": [
         "ranking-richlist-with-player.fixture.json"
       ],
@@ -8890,6 +11106,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "edfbe38ac35f4d79362598ff178a56b7488db5e8ab87c4e9cded1a58b89f3028"
+          ]
+        }
+      ],
       "shapeSources": [
         "ranking-richlist-ranking-retry.fixture.json"
       ],
@@ -8944,6 +11168,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9856a519667382609d1182c56aede485a48f5e24c1ed4be44de844fe21026e23"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-skins.fixture.json"
       ],
@@ -9045,6 +11277,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "8895488fcb0a6b16bdc5ee680e8083a40e568e6b6a7746b72ad97978c26e16b5"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-unclaimed-balance-history.fixture.json"
       ],
@@ -9104,6 +11344,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "1e32475903721316025670470b988bf0b5bb875ddb50564a60abf7acfc36c6de"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-unclaimed-balances.fixture.json"
       ],
@@ -9133,6 +11381,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d5e13c651439809daadecd328e08d00077cb522fe05eaf8395d27d67464e0460"
+          ]
+        }
+      ],
       "shapeSources": [
         "api-players-voucher.fixture.json"
       ],
@@ -9161,6 +11417,7 @@
           },
           "[].creator_avatar_id": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -9171,11 +11428,13 @@
           },
           "[].creator_league": {
             "types": [
+              "null",
               "number"
             ]
           },
           "[].creator_modern_league": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -9206,10 +11465,20 @@
               "string"
             ]
           },
+          "[].player_approve": {
+            "types": [
+              "null"
+            ]
+          },
           "[].player_avatar": {
             "types": [
               "null",
               "string"
+            ]
+          },
+          "[].player_votes": {
+            "types": [
+              "null"
             ]
           },
           "[].proposal_number": {
@@ -9265,6 +11534,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "710d3d3ce9fe75425f78fd1e4807761bdab0921d8de9bb7b7dc8d3b5e5c90a0f"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-proposals.fixture.json"
       ],
@@ -9289,6 +11566,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "368b769d1ca3561d0d63aae4d6393342a1836c41858a920bda6fc06721e109d3"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-proposal-count.fixture.json"
       ],
@@ -9368,6 +11653,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0443031e349ca1c2678f1fca052679dcb8c8a7a0053509028cc084064901a4f5"
+          ]
+        }
+      ],
       "shapeSources": [
         "governance-proposal-votes.fixture.json"
       ],
@@ -9447,6 +11740,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "1908c18e8fc58bdad764a866f243270157438bc3691f0e5f2e1e93f8f28294fa"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-uniswap-zero.fixture.json"
       ],
@@ -9491,6 +11792,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "6c64afac994f8655ba8b4585a564d3e610e9046f1521b50a0c2c2fa672c94008"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-purchase-settings.fixture.json"
       ],
@@ -9610,6 +11919,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d5316af4ba87cbca3d88849ba9185082101ed40c3ce26141262591dcee5c2274"
+          ]
+        }
+      ],
       "shapeSources": [
         "market-purchase-stats.fixture.json"
       ],
@@ -9644,6 +11961,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5abb2571b1ccd644ee2f62fc966910a3e7340ff17d31aaba4b8e217554b0499e"
+          ]
+        }
+      ],
       "shapeSources": [
         "ranking-season-valid.fixture.json"
       ],
@@ -12663,6 +14988,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "ba0b7d486675e8af22738d80b246a079c5d86ff742d4296a260ab72894061d43"
+          ]
+        }
+      ],
       "shapeSources": [
         "metadata-settings.fixture.json"
       ],
@@ -12761,6 +15094,7 @@
           },
           "[].player_1_data.alt_name": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -12856,31 +15190,37 @@
           },
           "[].player_1_data.guild": {
             "types": [
+              "null",
               "string"
             ]
           },
           "[].player_1_data.guild_data": {
             "types": [
+              "null",
               "string"
             ]
           },
           "[].player_1_data.guild_level": {
             "types": [
+              "null",
               "number"
             ]
           },
           "[].player_1_data.guild_motto": {
             "types": [
+              "null",
               "string"
             ]
           },
           "[].player_1_data.guild_name": {
             "types": [
+              "null",
               "string"
             ]
           },
           "[].player_1_data.guild_quest_lodge_level": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -13001,11 +15341,13 @@
           },
           "[].player_1_data.scholared_by": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].player_1_data.season_pass": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -13026,6 +15368,7 @@
           },
           "[].player_1_data.survival_bracket": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -13071,7 +15414,8 @@
           },
           "[].player_1_data.title_pre": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].player_1_data.wins": {
@@ -13101,6 +15445,7 @@
           },
           "[].player_2_data.alt_name": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -13196,31 +15541,37 @@
           },
           "[].player_2_data.guild": {
             "types": [
+              "null",
               "string"
             ]
           },
           "[].player_2_data.guild_data": {
             "types": [
+              "null",
               "string"
             ]
           },
           "[].player_2_data.guild_level": {
             "types": [
+              "null",
               "number"
             ]
           },
           "[].player_2_data.guild_motto": {
             "types": [
+              "null",
               "string"
             ]
           },
           "[].player_2_data.guild_name": {
             "types": [
+              "null",
               "string"
             ]
           },
           "[].player_2_data.guild_quest_lodge_level": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -13341,12 +15692,14 @@
           },
           "[].player_2_data.scholared_by": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].player_2_data.season_pass": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "[].player_2_data.starter_pack_purchase": {
@@ -13412,7 +15765,8 @@
           },
           "[].player_2_data.title_pre": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].player_2_data.wins": {
@@ -13448,6 +15802,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "38cdc21923c4f3c5c23279627df0dcd00cf06a29f57825d8bb4b55de6da6f864"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-battles-group-one.fixture.json"
       ],
@@ -13471,7 +15833,8 @@
           },
           "[].allow_lite": {
             "types": [
-              "boolean"
+              "boolean",
+              "null"
             ]
           },
           "[].created_by": {
@@ -13529,6 +15892,21 @@
               "array"
             ]
           },
+          "[].data.allowed_cards.sets[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].data.allowed_cards.sets[].core": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].data.allowed_cards.sets[].editions": {
+            "types": [
+              "array"
+            ]
+          },
           "[].data.allowed_cards.type": {
             "types": [
               "string"
@@ -13539,6 +15917,16 @@
               "object"
             ]
           },
+          "[].data.alternate_fee.max_league": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].data.alternate_fee.min_league": {
+            "types": [
+              "number"
+            ]
+          },
           "[].data.alternate_fee.value": {
             "types": [
               "string"
@@ -13546,7 +15934,8 @@
           },
           "[].data.best_of": {
             "types": [
-              "number"
+              "number",
+              "string"
             ]
           },
           "[].data.cp_min": {
@@ -13556,7 +15945,8 @@
           },
           "[].data.create_team_seconds": {
             "types": [
-              "number"
+              "number",
+              "string"
             ]
           },
           "[].data.duration_blocks": {
@@ -13564,9 +15954,15 @@
               "number"
             ]
           },
-          "[].data.group_size": {
+          "[].data.first_usd_value": {
             "types": [
               "number"
+            ]
+          },
+          "[].data.group_size": {
+            "types": [
+              "number",
+              "string"
             ]
           },
           "[].data.multiple_rounds": {
@@ -13646,7 +16042,8 @@
           },
           "[].data.rounds[].best_of": {
             "types": [
-              "number"
+              "number",
+              "string"
             ]
           },
           "[].data.rounds[].qty": {
@@ -13671,7 +16068,8 @@
           },
           "[].data.winners_bracket": {
             "types": [
-              "number"
+              "number",
+              "string"
             ]
           },
           "[].description": {
@@ -13702,7 +16100,8 @@
           },
           "[].max_entrants": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "[].min_entrants": {
@@ -13717,7 +16116,8 @@
           },
           "[].password_pub_key": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].sponsor_logo_url": {
@@ -13752,7 +16152,8 @@
           },
           "[].sub_format": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].total_prizes_usd": {
@@ -13763,6 +16164,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "f392895d0ee5ed9df2d5e164c7351b30ee7cb918e7b899e5a37812b6aee803bc"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-cancelled.fixture.json"
       ],
@@ -13786,7 +16195,8 @@
           },
           "[].allow_lite": {
             "types": [
-              "boolean"
+              "boolean",
+              "null"
             ]
           },
           "[].created_by": {
@@ -13869,6 +16279,16 @@
               "object"
             ]
           },
+          "[].data.alternate_fee.max_league": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].data.alternate_fee.min_league": {
+            "types": [
+              "number"
+            ]
+          },
           "[].data.alternate_fee.value": {
             "types": [
               "string"
@@ -13890,6 +16310,11 @@
             ]
           },
           "[].data.duration_blocks": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].data.entry_threshold": {
             "types": [
               "number"
             ]
@@ -14083,7 +16508,8 @@
           },
           "[].sub_format": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "[].total_prizes_usd": {
@@ -14094,6 +16520,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "6f38bf2108f6e51bfcb6e0a8b8c339e6b3289e82267ea96eeaef0f587c56b22f"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-completed.fixture.json"
       ],
@@ -14407,6 +16841,7 @@
           },
           "players[].defeated": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -14472,6 +16907,7 @@
           },
           "players[].player_data.alt_name": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -14567,31 +17003,37 @@
           },
           "players[].player_data.guild": {
             "types": [
+              "null",
               "string"
             ]
           },
           "players[].player_data.guild_data": {
             "types": [
+              "null",
               "string"
             ]
           },
           "players[].player_data.guild_level": {
             "types": [
+              "null",
               "number"
             ]
           },
           "players[].player_data.guild_motto": {
             "types": [
+              "null",
               "string"
             ]
           },
           "players[].player_data.guild_name": {
             "types": [
+              "null",
               "string"
             ]
           },
           "players[].player_data.guild_quest_lodge_level": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -14712,12 +17154,14 @@
           },
           "players[].player_data.scholared_by": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "players[].player_data.season_pass": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "players[].player_data.starter_pack_purchase": {
@@ -14783,7 +17227,8 @@
           },
           "players[].player_data.title_pre": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "players[].player_data.wins": {
@@ -14934,6 +17379,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "a9c69c520ccd21217b8677059303444708a0093b76cfc52fa1d0c38f4ad20b8d"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-find.fixture.json"
       ],
@@ -15142,6 +17595,7 @@
           },
           "players[].defeated": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -15242,6 +17696,7 @@
           },
           "players[].player_data.player_avatar": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -15257,11 +17712,13 @@
           },
           "players[].player_data.title_post": {
             "types": [
+              "null",
               "string"
             ]
           },
           "players[].player_data.title_pre": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -15293,6 +17750,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "801a4a6be85da06123c79edf5103a0d849b841215f1ecf8abd7dda7668fb511d"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-brawl.fixture.json"
       ],
@@ -15624,6 +18089,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "8b685805336f12375e4464c7d93dea2f0758f369f64e1e8d56258ef2795124b5",
+            "f92d9a612440a754026f804e148f8a0ead82fd34ed7c71d8ba8ea9dfc13b4d99"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-in_progress.fixture.json"
       ],
@@ -15810,6 +18284,11 @@
               "string"
             ]
           },
+          "[].data.prizes.payouts[].items[].usd_value": {
+            "types": [
+              "number"
+            ]
+          },
           "[].data.prizes.payouts[].start_place": {
             "types": [
               "number"
@@ -15948,6 +18427,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "cd158900f38ba364047c2abdc09b13ca8c1252a75e5b5804eac81f1aee6e2845",
+            "e80ecd268ceed60b9bf35987761713bb7917e045678279a61e59794602409055"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-mine-creator.fixture.json"
       ],
@@ -15977,6 +18465,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9a6f23442140c75489eb5831ed69ca9aa00585ee04fa282c28d29dcd70c8e652"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-prizes.fixture.json"
       ],
@@ -16000,7 +18496,8 @@
           },
           "[].allow_lite": {
             "types": [
-              "boolean"
+              "boolean",
+              "null"
             ]
           },
           "[].created_by": {
@@ -16163,6 +18660,11 @@
               "string"
             ]
           },
+          "[].data.prizes.payouts[].items[].usd_value": {
+            "types": [
+              "number"
+            ]
+          },
           "[].data.prizes.payouts[].start_place": {
             "types": [
               "number"
@@ -16225,6 +18727,7 @@
           },
           "[].entry_fee": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -16301,6 +18804,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "38c572c2137e977aff48a825a7d0f518a0ed9d87c3b84cb26b585a4bf99c764e"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-upcoming.fixture.json"
       ],
@@ -16487,6 +18998,11 @@
               "string"
             ]
           },
+          "[].data.prizes.payouts[].items[].usd_value": {
+            "types": [
+              "number"
+            ]
+          },
           "[].data.prizes.payouts[].start_place": {
             "types": [
               "number"
@@ -16549,6 +19065,7 @@
           },
           "[].entry_fee": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -16625,6 +19142,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "1550d72a3fca192ad8f6b8ca1172ba86225f7dd33e41b969fc0edd3bd1af5f9c"
+          ]
+        }
+      ],
       "shapeSources": [
         "tournament-upcoming_official.fixture.json"
       ],
@@ -16714,6 +19239,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "87d29984c443af65b8801905009d0aff4953bb3a57b2c7f29b723395ac42d6ec"
+          ]
+        }
+      ],
       "shapeSources": [
         "metadata-lookup.fixture.json"
       ],
@@ -16763,6 +19296,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "6464eb9a229239e3adb7691be5e7cfaefbf0fbe356a8d65e0f45aa5c00f1fd3c"
+          ]
+        }
+      ],
       "shapeSources": [
         "metadata-metrics-filtered.fixture.json"
       ],
@@ -17028,6 +19569,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "945c93ab8e6661b813718345dc19e4de7e49a9cfe1e0b75a4859a956d9444aff"
+          ]
+        }
+      ],
       "shapeSources": [
         "collector-binder.fixture.json"
       ],
@@ -17258,6 +19807,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9e486e7694ceaeaacf33ed257d39382ff58a9761fd4bf1930ca8d4a5bfaaa458"
+          ]
+        }
+      ],
       "shapeSources": [
         "collector-config.fixture.json"
       ],
@@ -17382,6 +19939,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "24ed521695d8449fb4abe412aa5168f10716caea28bf7284389543543dc6e34f"
+          ]
+        }
+      ],
       "shapeSources": [
         "collector-player.fixture.json"
       ],
@@ -17471,6 +20036,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "ec8298570298b040bf93a60c2d4d516b44fd179573f0188c231b66c7d53d36ba"
+          ]
+        }
+      ],
       "shapeSources": [
         "collector-stickers.fixture.json"
       ],
@@ -17560,6 +20133,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "ec8298570298b040bf93a60c2d4d516b44fd179573f0188c231b66c7d53d36ba"
+          ]
+        }
+      ],
       "shapeSources": [
         "collector-stickers-tradeable.fixture.json"
       ],
@@ -17644,6 +20225,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9cce9166a09c477682eaceaba1c6410fe6b8ecc271a422708ea47ed208144d50"
+          ]
+        }
+      ],
       "shapeSources": [
         "rentals-bid.fixture.json"
       ],
@@ -17728,6 +20317,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9cce9166a09c477682eaceaba1c6410fe6b8ecc271a422708ea47ed208144d50"
+          ]
+        }
+      ],
       "shapeSources": [
         "rentals-player.fixture.json"
       ],
@@ -17817,6 +20414,50 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7ddc5956fdcc271feeae385ede137e15156ab5dce6cc6e61c89aa62505392834"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7ddc5956fdcc271feeae385ede137e15156ab5dce6cc6e61c89aa62505392834"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7ddc5956fdcc271feeae385ede137e15156ab5dce6cc6e61c89aa62505392834"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7ddc5956fdcc271feeae385ede137e15156ab5dce6cc6e61c89aa62505392834"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7ddc5956fdcc271feeae385ede137e15156ab5dce6cc6e61c89aa62505392834"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7ddc5956fdcc271feeae385ede137e15156ab5dce6cc6e61c89aa62505392834"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7ddc5956fdcc271feeae385ede137e15156ab5dce6cc6e61c89aa62505392834"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:rental-bids-price-filter.fixture.json",
         "rental-bids-four.fixture.json",
@@ -17858,6 +20499,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "4b2bcb46e91c437d1d61d5cea7438142734b24a6c43bf3d06ee652af6d412ab1"
+          ]
+        }
+      ],
       "shapeSources": [
         "rental-bids-lowest.fixture.json"
       ],
@@ -17947,6 +20596,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7ddc5956fdcc271feeae385ede137e15156ab5dce6cc6e61c89aa62505392834"
+          ]
+        }
+      ],
       "shapeSources": [
         "rental-bids-by-player.fixture.json"
       ],
@@ -18036,6 +20693,50 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5178ffa6d4ac2cf3524ba24ee3877e9d7bfdad254464fd9ec6189ccee6534f63"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5178ffa6d4ac2cf3524ba24ee3877e9d7bfdad254464fd9ec6189ccee6534f63"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5178ffa6d4ac2cf3524ba24ee3877e9d7bfdad254464fd9ec6189ccee6534f63"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5178ffa6d4ac2cf3524ba24ee3877e9d7bfdad254464fd9ec6189ccee6534f63"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5178ffa6d4ac2cf3524ba24ee3877e9d7bfdad254464fd9ec6189ccee6534f63"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5178ffa6d4ac2cf3524ba24ee3877e9d7bfdad254464fd9ec6189ccee6534f63"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5178ffa6d4ac2cf3524ba24ee3877e9d7bfdad254464fd9ec6189ccee6534f63"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:rental-offers-price-filter.fixture.json",
         "rental-offers-four.fixture.json",
@@ -18077,6 +20778,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "4b2bcb46e91c437d1d61d5cea7438142734b24a6c43bf3d06ee652af6d412ab1"
+          ]
+        }
+      ],
       "shapeSources": [
         "rental-offers-lowest.fixture.json"
       ],
@@ -18166,6 +20875,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5178ffa6d4ac2cf3524ba24ee3877e9d7bfdad254464fd9ec6189ccee6534f63"
+          ]
+        }
+      ],
       "shapeSources": [
         "rental-offers-by-player.fixture.json"
       ],
@@ -18275,6 +20992,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "22d49f97a92e6b49ea949526c1032543877d6b60e990be3e9d3fe5174ecb4e84"
+          ]
+        }
+      ],
       "shapeSources": [
         "rentals-v3-by-player.fixture.json"
       ],
@@ -18384,6 +21109,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "22d49f97a92e6b49ea949526c1032543877d6b60e990be3e9d3fe5174ecb4e84"
+          ]
+        }
+      ],
       "shapeSources": [
         "rentals-v3-by-role.fixture.json"
       ],
@@ -18448,6 +21181,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "a873eecda20f6b768c8032bc968b8cf130ed217dbe2aeeb5fcdded0653f3eae0",
+            "fa1375f42f71d2ecebd937664dd71624cd0a699316f9cac053b3b6d613765c9d"
+          ]
+        }
+      ],
       "shapeSources": [
         "delegation-to-target.fixture.json"
       ],
@@ -18522,6 +21264,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "a1877a75bb46c92918d79617d813a1d4f946b770e4e6d31b9689d8f82d08e438",
+            "c11a3de9ed3cbd854f5710a44eb9ee68de537c67a842c858eeb83afd01c40aca"
+          ]
+        }
+      ],
       "shapeSources": [
         "delegations-incoming.fixture.json"
       ],
@@ -18597,6 +21348,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "2cb8b5be556c753aefede78d30f0f62adf70591367476c351918a53394180305"
+          ]
+        }
+      ],
       "shapeSources": [
         "delegations-outgoing.fixture.json"
       ],
@@ -18641,6 +21400,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "571283c9ba5fcefc8da161756ff8ccd2a8aa4f641584b83a7d23c341cb0552f5"
+          ]
+        }
+      ],
       "shapeSources": [
         "metadata-health.fixture.json"
       ],
@@ -18875,6 +21642,26 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "e434fc5429bc7a0fba0166d93e1c9e456c01dc7024f77a689485a493e40969e2"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "e434fc5429bc7a0fba0166d93e1c9e456c01dc7024f77a689485a493e40969e2"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "e434fc5429bc7a0fba0166d93e1c9e456c01dc7024f77a689485a493e40969e2"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-deed-by-plot-miss.fixture.json",
         "land-deed-by-plot-hit.fixture.json",
@@ -19112,6 +21899,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "6d3cf4c43582409205cb3ccac2cb8f9f52de097233576fc5c9c622667d06c3f2"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-deed-listed.fixture.json"
       ],
@@ -19344,6 +22139,26 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "14c570935092ba60a05a568b45d9aa24d778a098b5540713660cc3550d9b4c3b"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "53f2eebd119706e50fc2010363b0a17e3624e86796c09e28d8fcb7676fd6784d"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "53f2eebd119706e50fc2010363b0a17e3624e86796c09e28d8fcb7676fd6784d"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-deed-by-uid-hit.fixture.json",
         "plot-uid-unlisted-101.fixture.json",
@@ -19390,6 +22205,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "1265472be41603f77a43ef7a55afeb8b3fff912e4b6286be488bb070d9f0a32b"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-deeds-owned-none.fixture.json",
         "land-deeds-owned-hit.fixture.json"
@@ -20157,6 +22980,21 @@
               "array"
             ]
           },
+          "data.worksite_details[].resource_recipe[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "data.worksite_details[].resource_recipe[].qty": {
+            "types": [
+              "number"
+            ]
+          },
+          "data.worksite_details[].resource_recipe[].symbol": {
+            "types": [
+              "string"
+            ]
+          },
           "data.worksite_details[].rewards_per_hour": {
             "types": [
               "number"
@@ -20235,6 +23073,15 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "limited",
+          "shapeIds": [
+            "a9e2deed3b40039b059bdccede9354363460fc2d5fb4e3e09567957d5496e415",
+            "b0eaa2ccb923110767e7d9484f9a42a9aee713cf051a6ce4b2a04aab19abea0b"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-deeds-search-ordered-empty.fixture.json",
         "land-deeds-search-limited.fixture.json"
@@ -20285,6 +23132,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5de2608d7e6b9d9fc0dfc76290439a0d8936e063e72a649799dca8c23b34a02e"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-liquidity-allrewards.fixture.json"
       ],
@@ -20399,6 +23254,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "eee7f7cc048f3e9e2b7f765e6279926ffce6eb3ca18a69eb3e3425201006d0e0"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-liquidity-pools.fixture.json"
       ],
@@ -20488,6 +23351,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "b20fe6708a947d88ac5b50f79242cc8c06efb8e20e3b6f87abd747d3657b5be4"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-liquidity-pool-by-id-miss.fixture.json",
         "land-liquidity-pool-by-id.fixture.json"
@@ -20530,6 +23401,16 @@
               "number"
             ]
           },
+          "data.dec_volume_1": {
+            "types": [
+              "number"
+            ]
+          },
+          "data.dec_volume_30": {
+            "types": [
+              "number"
+            ]
+          },
           "data.id": {
             "types": [
               "number"
@@ -20560,6 +23441,16 @@
               "number"
             ]
           },
+          "data.resource_volume_1": {
+            "types": [
+              "number"
+            ]
+          },
+          "data.resource_volume_30": {
+            "types": [
+              "number"
+            ]
+          },
           "data.token_symbol": {
             "types": [
               "string"
@@ -20578,6 +23469,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "ae6b0295164adcb18e51b3e4aecb084dc44439eea8daba48c902d8501c70455b"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-liquidity-pool-by-symbol-miss.fixture.json",
         "land-liquidity-pool-by-symbol.fixture.json"
@@ -20618,6 +23517,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "ef28f1ee94f8509d3b8da483842156ca30b33d4dd4f623f6c9147faaeb9e7ef2"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-liquidity-quote.fixture.json"
       ],
@@ -20702,6 +23609,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "ec1515b8deacfcee42bb2446ee41bf277e8cf0a1d35cefe077ea2e5a97e516aa"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-liquidity-region-empty.fixture.json",
         "land-liquidity-region.fixture.json"
@@ -20782,6 +23697,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "a398b4a0617e8c231ed9ccead4c7fb36e45ca10016c681b0e600c0bd9fcbe168"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-liquidity-resources-empty.fixture.json",
         "land-liquidity-resources.fixture.json"
@@ -21102,6 +24025,20 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "db8621c18767b9b7a655a2e3dc9432ed11a926497afb70e0c8865400e3a2544f"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "db8621c18767b9b7a655a2e3dc9432ed11a926497afb70e0c8865400e3a2544f"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-projects-active-none.fixture.json",
         "land-projects-active-hit.fixture.json",
@@ -21545,6 +24482,26 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "5efb72531e0ba301183ff444d12e1c7637c906defcbb9e1f0f2da7f1dccdb1de"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "6e2edd7a7648a8abd203c825647df324d3ef512076bef45e1ac9662ee5613b7a"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9a34d93beef9ebe88d9c0e3ecc41167db0d2ece9f12b8f433aefa90f4be2ae9f"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-projects-history-empty.fixture.json",
         "land-projects-history-limited.fixture.json",
@@ -21582,6 +24539,26 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "40d382867cc4826848b11eae0888e19660f61cd733719149dc667815f031de01"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "40d382867cc4826848b11eae0888e19660f61cd733719149dc667815f031de01"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "40d382867cc4826848b11eae0888e19660f61cd733719149dc667815f031de01"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-projects-count-single.fixture.json",
         "land-projects-count-zero.fixture.json",
@@ -21678,6 +24655,20 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "09d6c14728476763673be30ac9ab05a5069050455203fe1ce49edf3f4db95414"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "09d6c14728476763673be30ac9ab05a5069050455203fe1ce49edf3f4db95414"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-projects-requirements-none.fixture.json",
         "land-projects-requirements-real.fixture.json",
@@ -21759,6 +24750,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9b5d85f0a1bed3bd446d7c386dae8cd535034cd1849c35e89a72eed854cb3dcd"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-regions-counts-empty.fixture.json",
         "land-regions-counts-rows.fixture.json"
@@ -21909,6 +24908,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "b568bf501245cc31c6620c0f98602fe857d602eb359a6c9915effbc9bd0f210a"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-resources-balances-history-empty.fixture.json",
         "land-resources-balances-history.fixture.json"
@@ -21944,6 +24951,20 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "40d382867cc4826848b11eae0888e19660f61cd733719149dc667815f031de01"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "40d382867cc4826848b11eae0888e19660f61cd733719149dc667815f031de01"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-resources-balances-history-count-empty.fixture.json",
         "land-resources-balances-history-count.fixture.json"
@@ -21988,16 +25009,19 @@
           },
           "data[].fragment_chance": {
             "types": [
+              "null",
               "number"
             ]
           },
           "data[].fragment_found": {
             "types": [
-              "boolean"
+              "boolean",
+              "null"
             ]
           },
           "data[].fragment_roll": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -22013,22 +25037,26 @@
           },
           "data[].labors_luck_chance": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "data[].labors_luck_pool_pick": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "data[].labors_luck_roll": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "data[].labors_luck_treasures_left": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "data[].labors_luck_uid": {
@@ -22079,6 +25107,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "fe4f6d93db8179c52ee8baea437f5e2e95d40a580032823e53ecf2fb70bc7026"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-resources-fragment-history-empty.fixture.json",
         "land-resources-fragment-history.fixture.json"
@@ -22169,6 +25205,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d6bd364bd70a8c64fde82aee613614d69e992ae322f9e36a4dc6dae8c08ee66c"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-resources-history-empty.fixture.json",
         "land-resources-history.fixture.json"
@@ -22249,6 +25293,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0b14ddd5af7af8094e112b370d3a346738783509a97fdb8b69f658f963528a21"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-resources-leaderboards.fixture.json"
       ],
@@ -22353,6 +25405,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "220554f6d1f77fdcd5d0b3365b1bdc7474d4eabe40b10136cc7ea0b53261e492"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-resources-liquidity-swaps-empty.fixture.json",
         "land-resources-liquidity-swaps.fixture.json"
@@ -22369,6 +25429,7 @@
         200
       ],
       "shape": null,
+      "reviewedShapes": [],
       "shapeSources": [
         "empty:land-resources-owned-empty.fixture.json"
       ],
@@ -22384,6 +25445,7 @@
         200
       ],
       "shape": null,
+      "reviewedShapes": [],
       "shapeSources": [
         "empty:land-resources-production-region-harvestable-empty.fixture.json"
       ],
@@ -22462,22 +25524,26 @@
           },
           "data[].fragment_roll.fragment_chance": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "data[].fragment_roll.fragment_found": {
             "types": [
+              "boolean",
               "null"
             ]
           },
           "data[].fragment_roll.fragment_roll": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "data[].fragment_roll.fragment_type": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "data[].fragment_roll.labors_luck_chance": {
@@ -22507,17 +25573,20 @@
           },
           "data[].fragment_roll.land_project_number": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "data[].fragment_roll.land_work_type_id": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "data[].fragment_roll.reward_action_id": {
             "types": [
-              "null"
+              "null",
+              "number"
             ]
           },
           "data[].grain_required": {
@@ -22608,6 +25677,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "fa2966cd80cad9e0941b1c99913fa8975cc01d9df9255abc76ef510bc93a503b"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-resources-rewardactions-empty.fixture.json",
         "land-resources-rewardactions.fixture.json"
@@ -22643,6 +25720,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "40d382867cc4826848b11eae0888e19660f61cd733719149dc667815f031de01"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-resources-rewardactions-count.fixture.json"
       ],
@@ -22697,6 +25782,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "424aedf5fe2a75543ddeef832f4930825973777643ccc92639ca293ffd1cc3ed"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-resources-richlist.fixture.json"
       ],
@@ -22737,6 +25830,20 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "342d7709433299d5957c5d59f44cdfc2400215ed0f5a12efd1e0772e8b0b83cf"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "2ed5fa30831bda6458d60051884f85c22f42e538df1eec79314c46c937af1e13"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-resources-taxes-real.fixture.json",
         "land-resources-taxes-unknown.fixture.json"
@@ -22787,6 +25894,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "792c56b163846e843194fdfb176bff1692ec677c119990b73dba7c1e40ddaf42"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-resources-titles-empty.fixture.json",
         "land-resources-titles.fixture.json"
@@ -22852,6 +25967,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "c5eb41b6d916e4e42a2d18fb4f0cd47a1b2ffefcf299a064b344d6a5c26c5767"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-resources-titles-assigned.fixture.json"
       ],
@@ -22881,6 +26004,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "fba7e19e72cfba8064a6bb5bd943d2921d5f429f36b46a433f294b1aab34cf85"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-stake-dec-overall.fixture.json"
       ],
@@ -22930,6 +26061,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "68a1665c7c08ac7ee70bab649cade68f4d58e60c58f6222320a7c9f6e19e6695"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-stake-dec-region-resolved.fixture.json"
       ],
@@ -23004,6 +26143,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "89046caceb0a00bd9f84352ca0514a562d88cf66fc8701f70339a92f78db647d"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-stake-decstaked-none.fixture.json",
         "land-stake-decstaked-rows.fixture.json"
@@ -23315,6 +26462,20 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "865ea0fbf98ad68e2cee52fd5c2e93db45ae00a445fb52205eb3c5bb27bca8dc"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "2f5ec165573acc4b0800cd5d9178864cd6bfffbeffeb8a25d93f9b10f0816fb4"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-stake-deed-details-active.fixture.json",
         "land-stake-deed-details-zeroed.fixture.json"
@@ -23625,6 +26786,20 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "4f025781ca4831e610939d1e2f0f0b9b3a44023c326e4e2bb9d2bf4b5a9982b0"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d7feb8236f81ae637fa806bb28d34c8e3ab7c09c0ac7b17cf494c3bef2cd0ab9"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-stake-assets-empty.fixture.json",
         "land-stake-assets-rows.fixture.json"
@@ -23660,6 +26835,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "91f1eccc52b80c3dfad3a46c1470ceaa9b28f579f05d4f1f8d0e586e964698bc"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-stake-evp-pending-claim.fixture.json"
       ],
@@ -23704,6 +26887,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7273f7c73b0ca4ea905bf64ce377e51e9019b7fbf254d78b854ce413c00bdaf5"
+          ]
+        }
+      ],
       "shapeSources": [
         "power-core-available.fixture.json"
       ],
@@ -23763,6 +26954,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0c3ccc98f4093154bbc02be12245d616281163d07d6e8e9db8a6291f4bf06bdb"
+          ]
+        }
+      ],
       "shapeSources": [
         "power-core-grouped.fixture.json"
       ],
@@ -23832,6 +27031,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "bdee4b19d2391d548c3a2ae6fb043a4df06f4835df9e218a0772fc4afc0f88c0"
+          ]
+        }
+      ],
       "shapeSources": [
         "empty:land-tracts-counts-empty.fixture.json",
         "land-tracts-counts-rows.fixture.json"
@@ -23872,6 +27079,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "172cf7e1805d7745b8d7f56633e4061750af77014b557d97541eb576d314015d"
+          ]
+        }
+      ],
       "shapeSources": [
         "land-volume.fixture.json"
       ],
@@ -23931,6 +27146,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "16402f2adf97c45c10c979edb4b6953ddea05efe4b237da292cda07ac0daf7aa"
+          ]
+        }
+      ],
       "shapeSources": [
         "vapi-market-price.fixture.json"
       ],
@@ -23979,6 +27202,7 @@
           },
           "data.assets[].detailFilterIcon": {
             "types": [
+              "null",
               "string"
             ]
           },
@@ -23989,7 +27213,8 @@
           },
           "data.assets[].detailIcon": {
             "types": [
-              "null"
+              "null",
+              "string"
             ]
           },
           "data.assets[].detailId": {
@@ -24007,6 +27232,12 @@
               "string"
             ]
           },
+          "data.assets[].detailRarity": {
+            "types": [
+              "null",
+              "number"
+            ]
+          },
           "data.assets[].detailSubGroup": {
             "types": [
               "string"
@@ -24019,6 +27250,11 @@
             ]
           },
           "data.assets[].numListed": {
+            "types": [
+              "number"
+            ]
+          },
+          "data.assets[].numOwned": {
             "types": [
               "number"
             ]
@@ -24061,6 +27297,26 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "464b3b5575ce1aa1fb8bfbe5bd11b15ec0cf2a8865c8bdd58932576faf05e632"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "464b3b5575ce1aa1fb8bfbe5bd11b15ec0cf2a8865c8bdd58932576faf05e632"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "464b3b5575ce1aa1fb8bfbe5bd11b15ec0cf2a8865c8bdd58932576faf05e632"
+          ]
+        }
+      ],
       "shapeSources": [
         "vapi-market-landing-packs.fixture.json",
         "vapi-market-landing-public.fixture.json",
@@ -24141,6 +27397,7 @@
           },
           "data.details[].card_detail.tier": {
             "types": [
+              "null",
               "number"
             ]
           },
@@ -24247,6 +27504,104 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0153522309ecbaecd7eac5f312f20ba2e6922f3183479f1d2891434d6af11d27"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0153522309ecbaecd7eac5f312f20ba2e6922f3183479f1d2891434d6af11d27"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "09820ded0046729e9364e1892fc550adca3154069d87a8538eaab7397b531ffe"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "08dd90042519734f62230bf55597b024ebca76e141530d6523d80daff39a3bf1"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "2b29f770cd9292f4f5b5a5a3072f75a26057ba4274d012c6a0275d4ba67a03d9"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0fe079ffa44d61ff9e2ee9a919085a00df76544a07cebed3cd888665f79f16be"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0119ab49812b8943f7c3a4c4b03123a69bdf86f48867b9a877ff4df80ed35a59"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "c1153fe91ec72464ed80d1e3b2cdd25573ad4ac704868679753b193daeb2376a"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "2b29f770cd9292f4f5b5a5a3072f75a26057ba4274d012c6a0275d4ba67a03d9"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "09820ded0046729e9364e1892fc550adca3154069d87a8538eaab7397b531ffe"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "b7b2ace353a066770068107e52b45b0137d415e084272af11acb22bf2af84647"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "19c3959bb61ffc26c912fa062e326da4e6090455e38520f3fdf98aa6c56b52bf"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0153522309ecbaecd7eac5f312f20ba2e6922f3183479f1d2891434d6af11d27"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0119ab49812b8943f7c3a4c4b03123a69bdf86f48867b9a877ff4df80ed35a59"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "7a2bd9d8ee3137977dfd3c2254f3f56fe5346d66d0d360602ee1de1459aa6bb5"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "0119ab49812b8943f7c3a4c4b03123a69bdf86f48867b9a877ff4df80ed35a59"
+          ]
+        }
+      ],
       "shapeSources": [
         "vapi-market-meta-avatars.fixture.json",
         "vapi-market-meta-collector_stickers.fixture.json",
@@ -24376,6 +27731,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "df6dfc20e6447411ac782f4b3e8e4131e157dc9ae994c063e2bd24a8f702de92"
+          ]
+        }
+      ],
       "shapeSources": [
         "vapi-market-player-activity.fixture.json"
       ],
@@ -24480,6 +27843,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "053e46131c9be682cbde0f076c670dfc24cae68caea14df4166c008e0eb401b9"
+          ]
+        }
+      ],
       "shapeSources": [
         "vapi-market-player-all-listings.fixture.json"
       ],
@@ -24519,6 +27890,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "b9bcc500fe9381befbcd286e9609992811d7c3c0e8dd2fefbce73c979c4a273f"
+          ]
+        }
+      ],
       "shapeSources": [
         "vapi-market-player-asset-detail-stats.fixture.json"
       ],
@@ -24623,6 +28002,14 @@
         },
         "truncatedAt": []
       },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "053e46131c9be682cbde0f076c670dfc24cae68caea14df4166c008e0eb401b9"
+          ]
+        }
+      ],
       "shapeSources": [
         "vapi-market-player-listings.fixture.json"
       ],
