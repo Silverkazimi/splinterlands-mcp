@@ -40,13 +40,13 @@
       "valueClass": "numeric"
     },
     "body[0].amount_gp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].total_player_gp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].total_guild_gp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].avatar_id": {
       "valueClass": "numeric"
@@ -103,13 +103,13 @@
       "valueClass": "numeric"
     },
     "body[1].amount_gp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].total_player_gp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].total_guild_gp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].avatar_id": {
       "valueClass": "numeric"
@@ -166,13 +166,13 @@
       "valueClass": "numeric"
     },
     "body[2].amount_gp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[2].total_player_gp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[2].total_guild_gp": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[2].avatar_id": {
       "valueClass": "numeric"
