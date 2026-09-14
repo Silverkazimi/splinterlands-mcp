@@ -75,9 +75,6 @@ describe("leak-check red/green guards", () => {
       rmSync(root, { recursive: true, force: true });
     }
   });
-
-
-  // Semantic: the fixed email pattern must exempt every RFC-reserved non-routable suffix. Mutation: revert the negative lookahead to the former generic email expression; this direct content-file input can exhibit that failure by turning all four assertions red.
   it("stays green for every reserved email domain", () => {
     const root = temporaryRoot();
     const filePath = join(root, "reserved-addresses.txt");
@@ -89,8 +86,6 @@ describe("leak-check red/green guards", () => {
       rmSync(root, { recursive: true, force: true });
     }
   });
-
-  // Semantic: the fixed email pattern must still catch a plausible address-shaped value outside the reserved suffix set. Mutation: reverting the narrowing leaves this input red, so it cannot exhibit the reserved-domain regression; the guard above is the mutation-sensitive input shape. Input: a synthetic local part and an unregistered-looking ordinary domain shape.
   it("stays red for a synthetic ordinary-domain address", () => {
     const root = temporaryRoot();
     const filePath = join(root, "ordinary-address.txt");
@@ -103,8 +98,6 @@ describe("leak-check red/green guards", () => {
       rmSync(root, { recursive: true, force: true });
     }
   });
-
-  // Semantic: fixed patterns must inspect file contents. Mutation: add one synthetic fixed-pattern token to a file, then remove that file. Input: a text file containing the token must return red, and the same root without it must return green.
   it("fails and recovers for a planted content token", () => {
     const root = temporaryRoot();
     const filePath = join(root, "probe.txt");
@@ -159,8 +152,6 @@ describe("leak-check red/green guards", () => {
       rmSync(root, { recursive: true, force: true });
     }
   });
-
-  // Semantic: fixed patterns must inspect the complete normalised repository-relative path. Mutation: add one synthetic fixed-pattern token to a directory segment while keeping the basename clean, then remove it. Input: an otherwise empty nested file whose path contains the token must return red, and its removal must return green.
   it("fails and recovers for a planted path token", () => {
     const root = temporaryRoot();
     const directory = join(root, internalToken());
@@ -175,8 +166,6 @@ describe("leak-check red/green guards", () => {
       rmSync(root, { recursive: true, force: true });
     }
   });
-
-  // Semantic: a marked path parameter has neither a literal value nor a default. Mutation: add a default and then a direct value to the marked parameter, removing each plant after the red assertion. Input: the source manifest is the same shape used by the catalogue generator, so both structural mutations must return red and the clean shape must return green.
   it("fails and recovers for a marked-parameter default", () => {
     const root = temporaryRoot();
     const filePath = join(root, "scripts", "catalogue-input.json");
@@ -195,8 +184,6 @@ describe("leak-check red/green guards", () => {
       rmSync(root, { recursive: true, force: true });
     }
   });
-
-  // Semantic: a fixture is traceable to its source and capture time. Mutation: remove the provenance envelope, then restore it. Input: a JSON fixture with a declared data class must return red without provenance and green after restoration.
   it("fails and recovers for missing fixture provenance", () => {
     const root = temporaryRoot();
     try {
@@ -215,8 +202,6 @@ describe("leak-check red/green guards", () => {
       rmSync(root, { recursive: true, force: true });
     }
   });
-
-  // Semantic: every fixture leaf has a declared valueClass. Mutation: remove one declaration, then restore it. Input: the missing map entry is an observable key-path omission and must return red before the declaration is restored.
   it("fails and recovers for an undeclared fixture key path", () => {
     const root = temporaryRoot();
     const base = {
@@ -239,11 +224,7 @@ describe("leak-check red/green guards", () => {
     }
   });
 
-  // Semantic: a name-classed fixture field is accepted whatever its value, because names in fixtures are
-  // permitted (CONTRIBUTING.md, "Account names: not in code, and that is the whole of it"). Until 2026-09-07
-  // this guard demanded a synthetic placeholder; that rule was repealed by the project owner, so this test
-  // asserts the CURRENT rule rather than leaving it unpinned. Mutation: reinstating the synthetic-value check
-  // turns the first expectation red. Input: an ordinary name-shaped value, and a declared name class.
+  // Fixture privacy requires field classification; synthetic values are a separate publication check.
   it("accepts a name-classed field whatever its value, but still requires the class", () => {
     const root = temporaryRoot();
     const fixture = {
