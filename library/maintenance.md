@@ -72,3 +72,7 @@ The collection route has no upstream pagination. Maintenance uses the same 90-se
 ### Global rental-market samples
 
 The public V3 bids and offers lists may omit the optional player filter when an explicit integer limit from 1 to 100 is supplied, matching the MCP tools. Preserve the original price, quantity and offset filters when configuring scenario fixtures. Account-specific rental routes still require account scope. The existing response-size cap, timeout and pacing remain in effect.
+
+### Nullable fixture classifications
+
+When array entries classify null differently from a reviewed non-null value at the same field, renewal uses the non-null classification for redaction and validation. Null-only fields keep their existing rules; their null observations do not establish a new numeric or text contract. Conflicting non-null classifications still stop renewal, as do unreviewed fields, containers and enum values.
