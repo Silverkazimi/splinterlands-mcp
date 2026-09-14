@@ -1,3 +1,4 @@
+import { createAvatarRenderer, AvatarArtworkError } from "./avatar/artwork.js";
 import { collectionPlotReferences } from "./collection-plot-references.js";
 import { registerScenarioSnapshot, SCENARIO_TOOL_ROUTES } from "./land-scenario-snapshot.js";
 import { POWER_CORE_ENTRY_IDS, registerPowerCoreReads } from "./power-core.js";
@@ -482,6 +483,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
     version: "0.0.0",
   });
   const client = new SplinterlandsHttpClient(clientOptions);
+  const renderAvatar = createAvatarRenderer(clientOptions.fetch);
   server.configurePlotReferences(client);
   registerLandRuleResources(server);
   registerHiveTools(server, client, new HermesHiveReader(clientOptions.fetch, clientOptions.timeoutMs));
@@ -1639,14 +1641,26 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   server.registerTool(
     "player_custom_avatar",
     {
-      description: "Read the saved custom avatar-builder settings from the official player_avatar endpoint. Returns numeric level separately as data alongside appearance selections and badges. No image is rendered or downloaded. Level text must not be automatically added to artwork; any client level label is separate. Use this for the custom character, not the legacy RUNI/profile image redirect. No credentials or game writes.",
-      inputSchema: inputSchemaFor("api.players.custom-avatar"),
+      description: "Read the saved custom avatar-builder settings from the official player_avatar endpoint. Returns numeric level separately as data alongside appearance selections and badges. Set render=true to compose the official artwork layers into a PNG; metadata-only calls download no images. Rendered art excludes level text, badges and exemplar level frame/gem overlays. Level text must not be automatically added to artwork; any client level label is separate. Use this for the custom character, not the legacy RUNI/profile image redirect. No credentials or game writes.",
+      inputSchema: inputSchemaFor("api.players.custom-avatar").extend({ render: z.boolean().optional().default(false) }),
     },
     async (params) => {
-      const bound = bindRequest("api.players.custom-avatar", params);
+      const bound = bindRequest("api.players.custom-avatar", { name: params.name });
       const result = await bound.execute(client);
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       const structuredContent = result.data as Record<string, unknown>;
+      if (params.render) {
+        try {
+          const artwork = await renderAvatar(structuredContent);
+          const data = { ...structuredContent, artwork: artwork.metadata };
+          return { content: [{ type: "text" as const, text: JSON.stringify(data) },
+            { type: "image" as const, data: artwork.png.toString("base64"), mimeType: "image/png" }],
+          structuredContent: data, _meta: provenanceMeta(result, bound.endpointTemplate, { name: params.name }) };
+        } catch (error) {
+          const message = error instanceof AvatarArtworkError ? error.message : "Avatar rendering failed.";
+          return { isError: true, content: [{ type: "text" as const, text: message }], structuredContent };
+        }
+      }
       return { content: [{ type: "text" as const, text: JSON.stringify(structuredContent) }], structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );

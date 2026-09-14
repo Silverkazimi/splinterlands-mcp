@@ -801,3 +801,9 @@ The clean-install audit reported ESLint 9 as end-of-life. ESLint 10.10, @eslint/
 The per-attempt HTTP deadline covers both headers and body consumption. Transport or body-stream failure follows the existing bounded retry policy and releases the host slot. A regression uses a body that never closes unless its request signal is aborted.
 
 TTL expiration alone does not bound retained unique query keys. The shared cache now purges expired entries on insertion and uses least-recently-used eviction with a default capacity of 128. Metadata is limited to eight entries and projected collection pages to 64. Eviction can require a later re-fetch; it does not extend freshness or imply complete history. These are server retention policies, not upstream API limits.
+
+## Opt-in custom avatar artwork (2026-09-14)
+
+The legacy avatar redirect can return RUNI art, so the avatar-builder character uses its distinct public metadata endpoint. Level remains metadata. An explicit render option composes the reviewed official layers without interface overlays or a level numeral.
+
+Asset downloads use a separate fixed CloudFront origin and path mapping; the existing two-host catalogue GET client is unchanged. Redirects, caller URLs, unsupported selections, oversized assets and partial renders are refused. A current, pinned sharp dependency provides bounded WebP decoding and PNG composition. The map can be reproduced with a static extractor that never executes downloaded client code; changes require review and live verification.

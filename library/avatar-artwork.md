@@ -1,9 +1,23 @@
 # Custom avatar data and artwork
 
-Use player_custom_avatar for saved avatar-builder settings. Its numeric level field is metadata and remains available to clients independently of artwork. The tool currently returns JSON, not a composed image.
+Use player_custom_avatar for saved avatar-builder settings. Its numeric level field is metadata and remains available independently of artwork. The default call returns JSON only.
 
-Artwork must not automatically include a level numeral. Any level label belongs in the consuming client's interface, separate from the image. The eventual rendering acceptance test must prove that changing only level cannot add or change level text in the artwork.
+Set render to true to request a PNG image content block alongside that JSON. The renderer composes official WebP assets for the saved character, background and chosen frame. It does not paint the level numeral onto the artwork. Badges and the exemplar level frame/gem are interface overlays and are excluded; badge selections and level remain in the metadata. A client can display them separately.
+
+The fixed asset mapping covers the human, elf, orc and dwarf body variants from the official client observed on 2026-09-14. Unknown selections are errors, not silently omitted cosmetics. This is a dated composition, not an upstream pre-rendered-image endpoint. Artwork fidelity beyond the verified mapping must be rechecked when the client changes.
+
+Rendering uses only the mapped CloudFront asset host. It does not follow redirects or accept caller-supplied URLs. At most 24 assets are requested sequentially with a 100 ms interval, a 45-second download deadline, 2 MiB per asset and 24 MiB total. Each input must be a single-frame 768 by 768 WebP. Composition has a 10-second processing limit; output is a 768 by 768 PNG capped at 4 MiB. One render may run per server instance; concurrent renders are refused rather than queued without a limit. Metadata calls retain normal API bounds.
 
 The older player_avatar tool resolves a legacy profile image redirect. That endpoint may return RUNI artwork and does not establish the custom character's appearance.
 
-Custom character layers are configured by the official game client. A single account proof does not establish complete rendering support for all bloodlines, cosmetics, badges or future additions. Production image rendering remains pending.
+The mapping is factual asset/configuration data extracted from the public official client: https://splinterlands.com/assets/index-CETWKRFI.js. No account identifier or player-specific selection is embedded in the renderer. Tests compare PNG bytes across level-only changes and exercise unsupported selections, redirect/format/size rejection and MCP image delivery.
+
+## Refreshing the asset map
+
+Download the current public client bundle referenced by the official website, retaining its source URL and observation date. Run the static extractor against that local file:
+
+    node scripts/extract-avatar-layers.mjs client.js candidate-layers.json https://splinterlands.com/assets/CURRENT-BUNDLE.js YYYY-MM-DD
+
+The extractor parses JavaScript as data and never executes the downloaded bundle. It stops on unfamiliar syntax or changed common-option counts. Review the resulting diff against the official renderer before replacing src/avatar/layers.json, then run the artwork and protocol tests and a bounded live render. Update mappings through a reviewed PR; do not automatically trust a changed bundle. No player account is needed to extract the map.
+
+The renderer uses sharp 0.35.4 (Apache-2.0) for bounded WebP decoding and PNG composition. The runtime dependency is explicitly allowlisted; the installation audit reported no known vulnerabilities. It is loaded only when rendering is requested, and image bytes come from fixed official asset paths rather than arbitrary URLs or filesystem paths.
