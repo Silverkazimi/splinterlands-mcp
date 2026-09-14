@@ -27,6 +27,27 @@ export const cataloguePredicates: Readonly<Record<string, CataloguePredicate>> =
 };
 
 export function predicateFor(contract: ResultContract): CataloguePredicate {
+  if (contract.predicateId === "conflicts.status") {
+    const base = { ...contract, predicateId: "partial-object-list.wagons" };
+    return (body): body is unknown => {
+      if (typeof body !== "object" || body === null || Array.isArray(body)) return false;
+      const record = body as Record<string, unknown>;
+      if (!Object.hasOwn(record, "wagons")) return predicateFor(base)(body);
+      if (!Array.isArray(record.wagons) || !predicateFor(base)({ ...record, wagons: [] })) return false;
+      return record.wagons.every((wagon: unknown) => {
+        if (typeof wagon !== "object" || wagon === null || Array.isArray(wagon)) return false;
+        const row = wagon as Record<string, unknown>;
+        const unused = Array.isArray(row.cards) && row.cards.length === 0
+          && row.total_cp === 0 && !Object.hasOwn(row, "updated_date");
+        const selected = unused ? {
+          ...base,
+          fingerprint: Object.fromEntries(Object.entries(base.fingerprint)
+            .filter(([path]) => path !== "wagons[].updated_date")),
+        } : base;
+        return predicateFor(selected)({ ...record, wagons: [row] });
+      });
+    };
+  }
   if (contract.predicateId === "players.profile") {
     return (body): body is unknown => {
       if (typeof body !== "object" || body === null || Array.isArray(body)) return false;
