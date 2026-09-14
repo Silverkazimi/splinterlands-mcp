@@ -49,6 +49,10 @@ export function sanitizeFixture(existing: unknown, captured: unknown, observedAt
       return Object.fromEntries(Object.entries(value).map(([key, child]) =>
         [key, walk(child, path ? path + "." + key : key)]));
     }
+    if (value === null && containers.has(generic)) {
+      valueClasses[path] = { valueClass: "opaque" };
+      return null;
+    }
     const rule = rules.get(generic);
     if (!rule) throw new Error("Unreviewed field.");
     valueClasses[path] = { valueClass: rule.valueClass };
