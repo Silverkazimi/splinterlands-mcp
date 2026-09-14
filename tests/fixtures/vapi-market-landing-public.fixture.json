@@ -157,7 +157,7 @@
       "valueClass": "opaque"
     },
     "body.data.assets[3].numCirculation": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.data.assets[3].numListed": {
       "valueClass": "numeric"
