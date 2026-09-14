@@ -1,3 +1,4 @@
+import { avatarRedirectData, isAvatarRequest } from "../../src/http/avatar-redirect.js";
 import { z } from "zod";
 import { bindRequest, type BoundCatalogueRequest } from "../../src/catalogue/index.js";
 import { HostRateLimiter } from "../../src/http/ratelimit.js";
@@ -14,13 +15,22 @@ const inputSchema = z.array(z.object({
 const callable = new Set<string>(Object.values(TOOL_ENTRY_IDS));
 export const SWEEP_RESPONSE_CAP = 2 * 1024 * 1024;
 
+function hasResourceScope(entryId: string, params: Record<string, unknown>): boolean {
+  const present = (key: string) => typeof params[key] === "string" && String(params[key]).trim().length > 0;
+  if (entryId === "api.guilds.list") return present("name");
+  if (entryId === "api.guilds.find" || entryId === "api.tournaments.find") return present("id");
+  if (entryId === "api.tournaments.find-brawl") return present("id") && present("guild_id");
+  if (entryId === "api.tournaments.battles") return present("id") && present("round") && present("swiss_group");
+  return false;
+}
+
 export function bindSweepInputs(value: unknown): BoundCatalogueRequest[] {
   const rows = inputSchema.parse(value);
   if (new Set(rows.map(row => row.entryId)).size !== rows.length) throw new Error("Duplicate sweep endpoint.");
   return rows.map(row => {
     if (!callable.has(row.entryId)) throw new Error("Sweep endpoint is not callable.");
     const accountFields = accountParameterNames(row.entryId);
-    if (accountFields.size > 0 && ![...accountFields].some(name => typeof row.params[name] === "string" && String(row.params[name]).trim().length > 0)) {
+    if (accountFields.size > 0 && !hasResourceScope(row.entryId, row.params) && ![...accountFields].some(name => typeof row.params[name] === "string" && String(row.params[name]).trim().length > 0)) {
       throw new Error("Account-aware sweep endpoints require explicit account scope.");
     }
     return bindRequest(row.entryId, row.params, row.variantKey);
@@ -33,7 +43,7 @@ export function createSweepRequester(fetcher: typeof fetch = fetch, limiter = ne
     const url = new URL(bound.path.value, "https://" + bound.hostname);
     for (const [key, value] of Object.entries(bound.queryParams)) url.searchParams.set(key, String(value));
     try {
-      const response = await fetcher(url, { method: "GET", redirect: "error", signal: AbortSignal.timeout(20_000) });
+      const response = await fetcher(url, { method: "GET", redirect: isAvatarRequest(bound.hostname, url.pathname) ? "manual" : "error", signal: AbortSignal.timeout(20_000) });
       if (!response.body) return { status: response.status, body: null, isJson: false };
       const reader = response.body.getReader();
       const chunks: Uint8Array[] = [];
@@ -50,6 +60,11 @@ export function createSweepRequester(fetcher: typeof fetch = fetch, limiter = ne
           chunks.push(part.value);
         }
       } finally { reader.releaseLock(); }
+      if (isAvatarRequest(bound.hostname, url.pathname)) {
+        const body = avatarRedirectData(response, url);
+        // Drift compares the same JSON projection that the MCP exposes; redirect_status preserves HTTP 302.
+        if (body) return { status: 200, body, isJson: true };
+      }
       try {
         return { status: response.status, body: JSON.parse(Buffer.concat(chunks).toString("utf8")) as unknown, isJson: true };
       } catch {

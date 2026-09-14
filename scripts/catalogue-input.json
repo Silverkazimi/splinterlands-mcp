@@ -9181,14 +9181,36 @@
       }
     ],
     "queryParams": [],
-    "owningTool": null,
-    "notes": "Measured 2026-09-12: HTTP 302 with a text/plain body redirects to an image. Redirects were not followed. This JSON-only server does not advertise media redirects as data tools.",
+    "owningTool": "player_avatar",
+    "notes": "Measured HTTP 302 redirects to an avatar image. The tool inspects Location without following it and projects avatar_url, image_url and redirect_status into JSON; this contract describes that projection, not an upstream JSON body. Only HTTPS Splinterlands-domain destinations are accepted; credentials, non-default ports and fragments are rejected. No image bytes are fetched. An avatar response does not prove account existence.",
     "provenance": {
       "source": "live-observation",
       "sourceUrl": "https://api.splinterlands.com/players/avatar/{name}",
       "specHash": null,
       "specFetchedAt": null,
       "observedAt": "2026-09-12T07:47:50.804263+00:00"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "avatar_url": {
+          "type": "string",
+          "valueClass": "id"
+        },
+        "image_url": {
+          "type": "string",
+          "valueClass": "id"
+        },
+        "redirect_status": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "requiredKeyPaths": [
+        "avatar_url",
+        "image_url",
+        "redirect_status"
+      ]
     }
   },
   {
