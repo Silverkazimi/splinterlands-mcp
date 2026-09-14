@@ -895,10 +895,7 @@ describe("land deed MCP protocol", () => {
   });
 
   it("answers for a plot that does not exist instead of calling it malformed", async () => {
-    // Semantic: the two shapes this repository observed for a non-existent plot are successful
-    // empty answers, not failures. Mutation: narrow the shared empty definition back to an empty
-    // data array. Input: an envelope with no data key (observed 2026-09-05) and one whose data is
-    // null (observed 2026-09-04) must both validate and reach the caller as a successful answer.
+    // Missing data and explicit null were both observed upstream (2026-09-05 and 2026-09-04).
     const contract = getCatalogueEntry("vapi.land.deeds.by-plot").resultContract;
     const absent = { status: "success" };
     const nulled = { status: "success", data: null };
@@ -930,9 +927,6 @@ describe("land deed MCP protocol", () => {
   });
 
   it("keeps an empty ownership result tied to the requested account", async () => {
-    // Semantic: an empty owned-deeds list is an answer, not an error and not a bare envelope.
-    // Mutation: drop the empty branch from the owned-deeds tool. Input: an empty data array must
-    // still reach the caller as a successful result whose text states the absence.
     const urls: string[] = [];
     const protocol = await connect(async (input) => {
       urls.push(String(input));
