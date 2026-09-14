@@ -1,27 +1,578 @@
 {
-  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
-  "valueClasses": {
-    "body[0].uid": { "valueClass": "id" },
-    "body[0].player": { "valueClass": "name" },
-    "body[0].card_detail_id": { "valueClass": "id" },
-    "body[0].xp": { "valueClass": "numeric" },
-    "body[0].gold": { "valueClass": "enum" },
-    "body[0].edition": { "valueClass": "enum" },
-    "body[0].card_set": { "valueClass": "enum" },
-    "body[0].collection_power": { "valueClass": "numeric" },
-    "body[0].bcx": { "valueClass": "numeric" },
-    "body[0].bcx_unbound": { "valueClass": "numeric" }
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T00:00:00Z",
+    "additionalSchemaReview": "Missing market, rental, staking, creation and nested definition fields added as explicitly synthetic examples from reviewed September 14 schema. Existing example values retained."
   },
-  "body": [{
-    "uid": "C3-79-0B847L3PGG",
-    "player": "fixture_account",
-    "card_detail_id": 79,
-    "xp": 1,
-    "gold": false,
-    "edition": 3,
-    "card_set": "REBELLION",
-    "collection_power": 10,
-    "bcx": 740,
-    "bcx_unbound": 0
-  }]
+  "valueClasses": {
+    "body[0].uid": {
+      "valueClass": "id"
+    },
+    "body[0].player": {
+      "valueClass": "name"
+    },
+    "body[0].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[0].xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].edition": {
+      "valueClass": "enum"
+    },
+    "body[0].card_set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "REBELLION",
+        "untamed"
+      ]
+    },
+    "body[0].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body[0].bcx_unbound": {
+      "valueClass": "numeric"
+    },
+    "body[0].market_id": {
+      "valueClass": "opaque"
+    },
+    "body[0].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[0].market_listing_type": {
+      "valueClass": "opaque"
+    },
+    "body[0].market_listing_status": {
+      "valueClass": "opaque"
+    },
+    "body[0].market_created_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].rental_type": {
+      "valueClass": "opaque"
+    },
+    "body[0].rental_days": {
+      "valueClass": "opaque"
+    },
+    "body[0].rental_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].next_rental_payment": {
+      "valueClass": "opaque"
+    },
+    "body[0].cancel_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].cancel_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].cancel_player": {
+      "valueClass": "name"
+    },
+    "body[0].last_used_block": {
+      "valueClass": "opaque"
+    },
+    "body[0].last_used_player": {
+      "valueClass": "name"
+    },
+    "body[0].last_used_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].last_transferred_block": {
+      "valueClass": "numeric"
+    },
+    "body[0].last_transferred_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].alpha_xp": {
+      "valueClass": "opaque"
+    },
+    "body[0].delegated_to": {
+      "valueClass": "name"
+    },
+    "body[0].delegation_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].skin": {
+      "valueClass": "opaque"
+    },
+    "body[0].delegated_to_display_name": {
+      "valueClass": "name"
+    },
+    "body[0].display_name": {
+      "valueClass": "name"
+    },
+    "body[0].lock_days": {
+      "valueClass": "numeric"
+    },
+    "body[0].unlock_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].wagon_uid": {
+      "valueClass": "opaque"
+    },
+    "body[0].stake_ref_uid": {
+      "valueClass": "opaque"
+    },
+    "body[0].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].stake_end_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].stake_plot": {
+      "valueClass": "numeric"
+    },
+    "body[0].stake_region": {
+      "valueClass": "numeric"
+    },
+    "body[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].created_block": {
+      "valueClass": "numeric"
+    },
+    "body[0].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].expiration_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].last_buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[0].last_buy_currency": {
+      "valueClass": "opaque"
+    },
+    "body[0].land_base_pp": {
+      "valueClass": "numeric"
+    },
+    "body[0].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body[0].set_id": {
+      "valueClass": "opaque"
+    },
+    "body[0].renewal_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].renewal_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].survival_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].survival_mode_disabled": {
+      "valueClass": "opaque"
+    },
+    "body[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].mint": {
+      "valueClass": "opaque"
+    },
+    "body[0].card_deposited_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].survival_bracket": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.id": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.name": {
+      "valueClass": "freetext"
+    },
+    "body[0].details.color": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.type": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.sub_type": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.rarity": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.drop_rate": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.mana[0]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.mana[1]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.mana[2]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.mana[3]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.attack[0]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.attack[1]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.attack[2]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.attack[3]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.ranged[0]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.ranged[1]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.ranged[2]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.ranged[3]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.magic[0]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.magic[1]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.magic[2]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.magic[3]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.armor[0]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.armor[1]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.armor[2]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.armor[3]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.health[0]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.health[1]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.health[2]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.health[3]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.speed[0]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.speed[1]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.speed[2]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.speed[3]": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.stats.abilities[0][0]": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.stats.abilities[1][0]": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.stats.abilities[2][0]": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.is_starter": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].details.editions": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.last_update_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.is_promo": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].details.tier": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.secondary_color": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.stake_type_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.print_start_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.game_type": {
+      "valueClass": "opaque"
+    },
+    "body[0].details.no_pp": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].details.distribution[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[0].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].details.distribution[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[0].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[0].unbound_cards": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[0].total_xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[0].num_burned": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[0].total_burned_xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[1].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].details.distribution[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[1].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[1].unbound_cards": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[1].total_xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[1].num_burned": {
+      "valueClass": "numeric"
+    },
+    "body[0].details.distribution[1].total_burned_xp": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": [
+    {
+      "uid": "C3-79-0B847L3PGG",
+      "player": "fixture_account",
+      "card_detail_id": 79,
+      "xp": 1,
+      "gold": false,
+      "edition": 3,
+      "card_set": "REBELLION",
+      "collection_power": 10,
+      "bcx": 740,
+      "bcx_unbound": 0,
+      "market_id": null,
+      "buy_price": null,
+      "market_listing_type": null,
+      "market_listing_status": null,
+      "market_created_date": null,
+      "rental_type": null,
+      "rental_days": null,
+      "rental_date": null,
+      "next_rental_payment": null,
+      "cancel_tx": null,
+      "cancel_date": null,
+      "cancel_player": null,
+      "last_used_block": null,
+      "last_used_player": null,
+      "last_used_date": null,
+      "last_transferred_block": 0,
+      "last_transferred_date": "2026-01-01T00:00:00.000Z",
+      "alpha_xp": null,
+      "delegated_to": null,
+      "delegation_tx": "[redacted]",
+      "skin": null,
+      "delegated_to_display_name": null,
+      "display_name": "sample-account-1",
+      "lock_days": 0,
+      "unlock_date": null,
+      "wagon_uid": null,
+      "stake_ref_uid": "[redacted]",
+      "stake_start_date": "2026-01-01T00:00:00.000Z",
+      "stake_end_date": null,
+      "stake_plot": 0,
+      "stake_region": 0,
+      "created_date": "2026-01-01T00:00:00.000Z",
+      "created_block": 0,
+      "created_tx": "[redacted]",
+      "expiration_date": null,
+      "last_buy_price": null,
+      "last_buy_currency": null,
+      "land_base_pp": "0",
+      "land_dec_stake_needed": 0,
+      "set_id": null,
+      "renewal_tx": null,
+      "renewal_date": null,
+      "survival_date": null,
+      "survival_mode_disabled": null,
+      "foil": 0,
+      "mint": null,
+      "card_deposited_date": null,
+      "survival_bracket": null,
+      "details": {
+        "id": 0,
+        "name": "[redacted]",
+        "color": "[redacted]",
+        "type": "[redacted]",
+        "sub_type": "[redacted]",
+        "rarity": 0,
+        "drop_rate": 0,
+        "stats": {
+          "mana": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "attack": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "ranged": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "magic": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "armor": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "health": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "speed": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "abilities": [
+            [
+              "[redacted]"
+            ],
+            [
+              "[redacted]"
+            ],
+            [
+              "[redacted]"
+            ],
+            []
+          ]
+        },
+        "is_starter": false,
+        "editions": "[redacted]",
+        "created_block_num": 0,
+        "last_update_tx": "[redacted]",
+        "total_printed": 0,
+        "is_promo": false,
+        "tier": 0,
+        "secondary_color": null,
+        "stake_type_id": 0,
+        "print_start_date": null,
+        "game_type": "[redacted]",
+        "no_pp": false,
+        "distribution": [
+          {
+            "card_detail_id": 0,
+            "gold": false,
+            "foil": 0,
+            "edition": 0,
+            "num_cards": "0",
+            "unbound_cards": "0",
+            "total_xp": "0",
+            "num_burned": "0",
+            "total_burned_xp": "0"
+          },
+          {
+            "card_detail_id": 0,
+            "gold": false,
+            "foil": 0,
+            "edition": 0,
+            "num_cards": "0",
+            "unbound_cards": "0",
+            "total_xp": "0",
+            "num_burned": "0",
+            "total_burned_xp": "0"
+          }
+        ]
+      }
+    }
+  ]
 }

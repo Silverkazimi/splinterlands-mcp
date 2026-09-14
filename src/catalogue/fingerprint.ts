@@ -113,9 +113,21 @@ export function matchesResultContract(body: unknown, contract: ResultContract): 
   if (Object.keys(contract.fingerprint).length === 0) {
     return true;
   }
+  const flexibleNumbers = Object.entries(contract.fingerprint).filter(([, field]) => field.numericEncoding === "number-or-string");
+  for (const [path, field] of flexibleNumbers) {
+    const values = valueAtPath(body, path);
+    if (values.length === 0 || !values.every(value =>
+      (value === null && field.nullable === true)
+      || (typeof value === "number" && Number.isFinite(value))
+      || (typeof value === "string" && /^-?\d+(?:\.\d+)?$/.test(value) && Number.isFinite(Number(value))))) return false;
+  }
+  const structuralContract = flexibleNumbers.length === 0 ? contract : {
+    ...contract,
+    fingerprint: Object.fromEntries(Object.entries(contract.fingerprint).filter(([, field]) => field.numericEncoding === undefined)),
+  };
   try {
-    const observed = fingerprint({ body, contract });
-    const declared = fingerprint({ declared: contract });
+    const observed = fingerprint({ body, contract: structuralContract });
+    const declared = fingerprint({ declared: structuralContract });
     return Object.entries(declared).every(([path, declaration]) => (
       observed[path]?.type === declaration.type
       || (declaration.nullable === true && observed[path]?.type === "null")

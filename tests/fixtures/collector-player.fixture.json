@@ -8,7 +8,7 @@
   },
   "valueClasses": {
     "body.status": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.player": {
       "valueClass": "name"

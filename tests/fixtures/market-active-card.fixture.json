@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:33:48.175729+00:00",
     "sourceUrl": "https://api2.splinterlands.com/market/active_rentals",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "captureScope": "First three root rows; nested records retained unchanged.",
+    "redaction": " Account references in reviewed fields and encoded records use consistent synthetic placeholders."
   },
   "valueClasses": {
     "body[0].id": {
@@ -13,7 +14,7 @@
       "valueClass": "id"
     },
     "body[0].seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].num_cards": {
       "valueClass": "numeric"
@@ -37,13 +38,13 @@
       "valueClass": "timestamp"
     },
     "body[0].renter": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].status": {
       "valueClass": "numeric"
     },
     "body[0].market_account": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].rental_days": {
       "valueClass": "numeric"
@@ -106,7 +107,7 @@
       "valueClass": "id"
     },
     "body[1].seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].num_cards": {
       "valueClass": "numeric"
@@ -130,13 +131,13 @@
       "valueClass": "timestamp"
     },
     "body[1].renter": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].status": {
       "valueClass": "numeric"
     },
     "body[1].market_account": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].rental_days": {
       "valueClass": "numeric"
@@ -197,7 +198,7 @@
     {
       "id": 179293358,
       "sell_trx_id": "8af7e23fe5e69c74b395f0804d53d9326d3c0dc2-15",
-      "seller": "abh12345",
+      "seller": "sample-acct-047",
       "num_cards": 1,
       "buy_price": "1.883",
       "fee_percent": 600,
@@ -205,9 +206,9 @@
       "market_item_id": 179293358,
       "rental_tx": "3b4e6d98bb1c6e251438eb07cd3230bbfb050763",
       "rental_date": "2025-04-30T22:26:12.000Z",
-      "renter": "rosee",
+      "renter": "sample-acct-105",
       "status": 1,
-      "market_account": "peakmonsters",
+      "market_account": "sample-acct-081",
       "rental_days": 503,
       "next_rental_payment": "2026-09-15T22:26:12.000Z",
       "payment_currency": "DEC",
@@ -230,7 +231,7 @@
     {
       "id": 182477974,
       "sell_trx_id": "4002c116e1fdb900338364846ae38e570ec90bd6-35",
-      "seller": "motherearthist",
+      "seller": "sample-acct-106",
       "num_cards": 1,
       "buy_price": "1.000",
       "fee_percent": 600,
@@ -238,9 +239,9 @@
       "market_item_id": 182477974,
       "rental_tx": "a5c427354e3d8642c1fd5734593351c545571a4b",
       "rental_date": "2025-08-22T23:29:48.000Z",
-      "renter": "ronsplinter",
+      "renter": "sample-acct-107",
       "status": 1,
-      "market_account": "peakmonsters",
+      "market_account": "sample-acct-081",
       "rental_days": 404,
       "next_rental_payment": "2026-09-30T23:29:48.000Z",
       "payment_currency": "DEC",

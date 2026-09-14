@@ -1,33 +1,1419 @@
 {
-  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
-  "valueClasses": {
-    "body[0].card_id": { "valueClass": "id" },
-    "body[0].transfer_date": { "valueClass": "timestamp" },
-    "body[0].transfer_type": { "valueClass": "enum" },
-    "body[0].transfer_tx": { "valueClass": "id" },
-    "body[0].from_player": { "valueClass": "name" },
-    "body[0].to_player": { "valueClass": "name" },
-    "body[0].card_detail_id": { "valueClass": "id" },
-    "body[0].xp": { "valueClass": "numeric" },
-    "body[0].gold": { "valueClass": "enum" },
-    "body[0].edition": { "valueClass": "enum" },
-    "body[0].payment_amount": { "valueClass": "numeric" },
-    "body[0].payment_currency": { "valueClass": "enum" },
-    "body[0].combined_cards": { "valueClass": "opaque" }
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
   },
-  "body": [{
-    "card_id": "C18-880-A5LJPTHHM8",
-    "transfer_date": "2026-09-08T00:00:00.000Z",
-    "transfer_type": "transfer",
-    "transfer_tx": "fixture-transfer",
-    "from_player": "fixture_from",
-    "to_player": "fixture_to",
-    "card_detail_id": 880,
-    "xp": "1",
-    "gold": false,
-    "edition": 3,
-    "payment_amount": null,
-    "payment_currency": null,
-    "combined_cards": ""
-  }]
+  "valueClasses": {
+    "body[0].card_id": {
+      "valueClass": "id"
+    },
+    "body[0].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[0].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[0].from_player": {
+      "valueClass": "name"
+    },
+    "body[0].to_player": {
+      "valueClass": "name"
+    },
+    "body[0].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[0].xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].gold": {
+      "valueClass": "enum"
+    },
+    "body[0].edition": {
+      "valueClass": "enum"
+    },
+    "body[0].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[0].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[0].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[1].card_id": {
+      "valueClass": "id"
+    },
+    "body[1].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[1].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[1].from_player": {
+      "valueClass": "name"
+    },
+    "body[1].to_player": {
+      "valueClass": "name"
+    },
+    "body[1].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[1].xp": {
+      "valueClass": "numeric"
+    },
+    "body[1].gold": {
+      "valueClass": "enum"
+    },
+    "body[1].edition": {
+      "valueClass": "enum"
+    },
+    "body[1].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[1].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[1].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[2].card_id": {
+      "valueClass": "id"
+    },
+    "body[2].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[2].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[2].from_player": {
+      "valueClass": "name"
+    },
+    "body[2].to_player": {
+      "valueClass": "name"
+    },
+    "body[2].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[2].xp": {
+      "valueClass": "numeric"
+    },
+    "body[2].gold": {
+      "valueClass": "enum"
+    },
+    "body[2].edition": {
+      "valueClass": "enum"
+    },
+    "body[2].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[2].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[2].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[3].card_id": {
+      "valueClass": "id"
+    },
+    "body[3].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[3].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[3].from_player": {
+      "valueClass": "name"
+    },
+    "body[3].to_player": {
+      "valueClass": "name"
+    },
+    "body[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[3].xp": {
+      "valueClass": "numeric"
+    },
+    "body[3].gold": {
+      "valueClass": "enum"
+    },
+    "body[3].edition": {
+      "valueClass": "enum"
+    },
+    "body[3].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[3].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[3].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[4].card_id": {
+      "valueClass": "id"
+    },
+    "body[4].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[4].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[4].from_player": {
+      "valueClass": "name"
+    },
+    "body[4].to_player": {
+      "valueClass": "name"
+    },
+    "body[4].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[4].xp": {
+      "valueClass": "numeric"
+    },
+    "body[4].gold": {
+      "valueClass": "enum"
+    },
+    "body[4].edition": {
+      "valueClass": "enum"
+    },
+    "body[4].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[4].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[4].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[5].card_id": {
+      "valueClass": "id"
+    },
+    "body[5].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[5].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[5].from_player": {
+      "valueClass": "name"
+    },
+    "body[5].to_player": {
+      "valueClass": "name"
+    },
+    "body[5].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[5].xp": {
+      "valueClass": "numeric"
+    },
+    "body[5].gold": {
+      "valueClass": "enum"
+    },
+    "body[5].edition": {
+      "valueClass": "enum"
+    },
+    "body[5].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[5].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[5].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[6].card_id": {
+      "valueClass": "id"
+    },
+    "body[6].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[6].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[6].from_player": {
+      "valueClass": "name"
+    },
+    "body[6].to_player": {
+      "valueClass": "name"
+    },
+    "body[6].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[6].xp": {
+      "valueClass": "numeric"
+    },
+    "body[6].gold": {
+      "valueClass": "enum"
+    },
+    "body[6].edition": {
+      "valueClass": "enum"
+    },
+    "body[6].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[6].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[6].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[7].card_id": {
+      "valueClass": "id"
+    },
+    "body[7].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[7].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[7].from_player": {
+      "valueClass": "name"
+    },
+    "body[7].to_player": {
+      "valueClass": "name"
+    },
+    "body[7].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[7].xp": {
+      "valueClass": "numeric"
+    },
+    "body[7].gold": {
+      "valueClass": "enum"
+    },
+    "body[7].edition": {
+      "valueClass": "enum"
+    },
+    "body[7].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[7].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[7].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[8].card_id": {
+      "valueClass": "id"
+    },
+    "body[8].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[8].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[8].from_player": {
+      "valueClass": "name"
+    },
+    "body[8].to_player": {
+      "valueClass": "name"
+    },
+    "body[8].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[8].xp": {
+      "valueClass": "numeric"
+    },
+    "body[8].gold": {
+      "valueClass": "enum"
+    },
+    "body[8].edition": {
+      "valueClass": "enum"
+    },
+    "body[8].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[8].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[8].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[9].card_id": {
+      "valueClass": "id"
+    },
+    "body[9].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[9].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[9].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[9].from_player": {
+      "valueClass": "name"
+    },
+    "body[9].to_player": {
+      "valueClass": "name"
+    },
+    "body[9].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[9].xp": {
+      "valueClass": "numeric"
+    },
+    "body[9].gold": {
+      "valueClass": "enum"
+    },
+    "body[9].edition": {
+      "valueClass": "enum"
+    },
+    "body[9].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[9].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[9].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[10].card_id": {
+      "valueClass": "id"
+    },
+    "body[10].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[10].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[10].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[10].from_player": {
+      "valueClass": "name"
+    },
+    "body[10].to_player": {
+      "valueClass": "name"
+    },
+    "body[10].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[10].xp": {
+      "valueClass": "numeric"
+    },
+    "body[10].gold": {
+      "valueClass": "enum"
+    },
+    "body[10].edition": {
+      "valueClass": "enum"
+    },
+    "body[10].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[10].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[10].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[11].card_id": {
+      "valueClass": "id"
+    },
+    "body[11].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[11].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[11].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[11].from_player": {
+      "valueClass": "name"
+    },
+    "body[11].to_player": {
+      "valueClass": "name"
+    },
+    "body[11].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[11].xp": {
+      "valueClass": "numeric"
+    },
+    "body[11].gold": {
+      "valueClass": "enum"
+    },
+    "body[11].edition": {
+      "valueClass": "enum"
+    },
+    "body[11].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[11].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[11].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[12].card_id": {
+      "valueClass": "id"
+    },
+    "body[12].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[12].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[12].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[12].from_player": {
+      "valueClass": "name"
+    },
+    "body[12].to_player": {
+      "valueClass": "name"
+    },
+    "body[12].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[12].xp": {
+      "valueClass": "numeric"
+    },
+    "body[12].gold": {
+      "valueClass": "enum"
+    },
+    "body[12].edition": {
+      "valueClass": "enum"
+    },
+    "body[12].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[12].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[12].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[13].card_id": {
+      "valueClass": "id"
+    },
+    "body[13].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[13].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[13].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[13].from_player": {
+      "valueClass": "name"
+    },
+    "body[13].to_player": {
+      "valueClass": "name"
+    },
+    "body[13].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[13].xp": {
+      "valueClass": "numeric"
+    },
+    "body[13].gold": {
+      "valueClass": "enum"
+    },
+    "body[13].edition": {
+      "valueClass": "enum"
+    },
+    "body[13].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[13].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[13].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[14].card_id": {
+      "valueClass": "id"
+    },
+    "body[14].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[14].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[14].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[14].from_player": {
+      "valueClass": "name"
+    },
+    "body[14].to_player": {
+      "valueClass": "name"
+    },
+    "body[14].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[14].xp": {
+      "valueClass": "numeric"
+    },
+    "body[14].gold": {
+      "valueClass": "enum"
+    },
+    "body[14].edition": {
+      "valueClass": "enum"
+    },
+    "body[14].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[14].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[14].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[15].card_id": {
+      "valueClass": "id"
+    },
+    "body[15].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[15].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[15].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[15].from_player": {
+      "valueClass": "name"
+    },
+    "body[15].to_player": {
+      "valueClass": "name"
+    },
+    "body[15].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[15].xp": {
+      "valueClass": "numeric"
+    },
+    "body[15].gold": {
+      "valueClass": "enum"
+    },
+    "body[15].edition": {
+      "valueClass": "enum"
+    },
+    "body[15].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[15].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[15].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[16].card_id": {
+      "valueClass": "id"
+    },
+    "body[16].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[16].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[16].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[16].from_player": {
+      "valueClass": "name"
+    },
+    "body[16].to_player": {
+      "valueClass": "name"
+    },
+    "body[16].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[16].xp": {
+      "valueClass": "numeric"
+    },
+    "body[16].gold": {
+      "valueClass": "enum"
+    },
+    "body[16].edition": {
+      "valueClass": "enum"
+    },
+    "body[16].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[16].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[16].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[17].card_id": {
+      "valueClass": "id"
+    },
+    "body[17].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[17].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[17].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[17].from_player": {
+      "valueClass": "name"
+    },
+    "body[17].to_player": {
+      "valueClass": "name"
+    },
+    "body[17].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[17].xp": {
+      "valueClass": "numeric"
+    },
+    "body[17].gold": {
+      "valueClass": "enum"
+    },
+    "body[17].edition": {
+      "valueClass": "enum"
+    },
+    "body[17].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[17].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[17].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[18].card_id": {
+      "valueClass": "id"
+    },
+    "body[18].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[18].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[18].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[18].from_player": {
+      "valueClass": "name"
+    },
+    "body[18].to_player": {
+      "valueClass": "name"
+    },
+    "body[18].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[18].xp": {
+      "valueClass": "numeric"
+    },
+    "body[18].gold": {
+      "valueClass": "enum"
+    },
+    "body[18].edition": {
+      "valueClass": "enum"
+    },
+    "body[18].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[18].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[18].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[19].card_id": {
+      "valueClass": "id"
+    },
+    "body[19].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[19].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[19].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[19].from_player": {
+      "valueClass": "name"
+    },
+    "body[19].to_player": {
+      "valueClass": "name"
+    },
+    "body[19].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[19].xp": {
+      "valueClass": "numeric"
+    },
+    "body[19].gold": {
+      "valueClass": "enum"
+    },
+    "body[19].edition": {
+      "valueClass": "enum"
+    },
+    "body[19].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[19].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[19].combined_cards": {
+      "valueClass": "opaque"
+    },
+    "body[20].card_id": {
+      "valueClass": "id"
+    },
+    "body[20].transfer_date": {
+      "valueClass": "timestamp"
+    },
+    "body[20].transfer_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "current",
+        "delegate",
+        "land_stake",
+        "rental",
+        "rental_complete",
+        "transfer",
+        "undelegate"
+      ]
+    },
+    "body[20].transfer_tx": {
+      "valueClass": "id"
+    },
+    "body[20].from_player": {
+      "valueClass": "name"
+    },
+    "body[20].to_player": {
+      "valueClass": "name"
+    },
+    "body[20].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[20].xp": {
+      "valueClass": "numeric"
+    },
+    "body[20].gold": {
+      "valueClass": "enum"
+    },
+    "body[20].edition": {
+      "valueClass": "enum"
+    },
+    "body[20].payment_amount": {
+      "valueClass": "numeric"
+    },
+    "body[20].payment_currency": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "",
+        "DEC"
+      ]
+    },
+    "body[20].combined_cards": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": [
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2026-09-14T10:15:03.913Z",
+      "transfer_type": "current",
+      "transfer_tx": "",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2023-12-05T08:09:24.000Z",
+      "transfer_type": "land_stake",
+      "transfer_tx": "ec559852ceb6e8dc35895c7cfd2a8ca6f7c744a3",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "0",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": "0",
+      "payment_currency": "",
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2023-12-05T08:04:36.000Z",
+      "transfer_type": "undelegate",
+      "transfer_tx": "dd8b075e2796258532f916423cf11490e007db67",
+      "from_player": "sample-account-2",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-11-26T08:57:06.000Z",
+      "transfer_type": "delegate",
+      "transfer_tx": "2dcce09378a77631ceeba34d06d866874facc3ca",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-2",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-11-23T11:17:18.000Z",
+      "transfer_type": "undelegate",
+      "transfer_tx": "fa1ab6530e66e9b43b7379f3db43a5c6798c5515",
+      "from_player": "sample-account-2",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-11-16T23:29:27.000Z",
+      "transfer_type": "delegate",
+      "transfer_tx": "50a2b7a5db0c7209ee0c7aacb2924a8dbfe64058",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-2",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-11-15T14:27:30.000Z",
+      "transfer_type": "undelegate",
+      "transfer_tx": "8274e20bc4c40eaf8dff58673e83127fd15e3a59",
+      "from_player": "sample-account-3",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-11-14T00:26:15.000Z",
+      "transfer_type": "delegate",
+      "transfer_tx": "eb80ab3ff420d6b5db9c8d12570bfe955cd6477b",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-3",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-10-15T21:06:03.000Z",
+      "transfer_type": "undelegate",
+      "transfer_tx": "e9f66b91b955d58d3accb31d5b63c35dad17eaab",
+      "from_player": "sample-account-4",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-16T10:17:21.000Z",
+      "transfer_type": "delegate",
+      "transfer_tx": "4bfa65cf3d38ff17cbb5569cbebbf94c9b586617",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-4",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-15T10:39:06.000Z",
+      "transfer_type": "rental_complete",
+      "transfer_tx": "sm_rental_payments_56551885",
+      "from_player": "sample-account-5",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-14T10:39:03.000Z",
+      "transfer_type": "rental",
+      "transfer_tx": "1bc8b75e9c1315a092e5ca375f7eb4c8c0abeff9",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-5",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": "275.000",
+      "payment_currency": "DEC",
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-14T10:37:36.000Z",
+      "transfer_type": "rental_complete",
+      "transfer_tx": "sm_rental_payments_56523118",
+      "from_player": "sample-account-6",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-13T10:37:33.000Z",
+      "transfer_type": "rental",
+      "transfer_tx": "02d103be96301b025ce4d57841f7a488022c4ffe",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-6",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": "275.000",
+      "payment_currency": "DEC",
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-13T10:34:36.000Z",
+      "transfer_type": "rental_complete",
+      "transfer_tx": "sm_rental_payments_56494346",
+      "from_player": "sample-account-7",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-12T10:34:33.000Z",
+      "transfer_type": "rental",
+      "transfer_tx": "a96b88aa80e371f3ac6f19e71bfdbd545fa4c355",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-7",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": "275.000",
+      "payment_currency": "DEC",
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-12T08:15:45.000Z",
+      "transfer_type": "rental_complete",
+      "transfer_tx": "sm_rental_payments_56462859",
+      "from_player": "sample-account-8",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-10T08:15:42.000Z",
+      "transfer_type": "rental",
+      "transfer_tx": "acf92fb71d0d2667a7790d8d523157bb8c22f59e",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-8",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": "550.000",
+      "payment_currency": "DEC",
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-08-02T09:07:06.000Z",
+      "transfer_type": "rental_complete",
+      "transfer_tx": "sm_rental_payments_56176641",
+      "from_player": "sample-account-9",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-07-30T09:07:03.000Z",
+      "transfer_type": "rental",
+      "transfer_tx": "cd80bf29cbb4e6bed9c12005e8bcb799b5243acb",
+      "from_player": "sample-account-1",
+      "to_player": "sample-account-9",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": "825.000",
+      "payment_currency": "DEC",
+      "combined_cards": "[redacted]"
+    },
+    {
+      "card_id": "G3-244-C3GK9ODI8W",
+      "transfer_date": "2021-03-15T08:13:48.000Z",
+      "transfer_type": "transfer",
+      "transfer_tx": "296f265f8fe29d978909b01c5718709fccb7ad4b",
+      "from_player": "sample-account-2",
+      "to_player": "sample-account-1",
+      "card_detail_id": 244,
+      "xp": "1",
+      "gold": true,
+      "edition": 3,
+      "payment_amount": null,
+      "payment_currency": null,
+      "combined_cards": "[redacted]"
+    }
+  ]
 }

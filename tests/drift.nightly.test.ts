@@ -8,12 +8,12 @@ const entryId = (TOOL_ENTRY_IDS as Record<string, string>).game_last_block!;
 const entry = getCatalogueEntry(entryId);
 const baseline: DriftBaseline = { capturedAt: "2026-09-13", unbaselined: [], entries: [{
   entryId, host: entry.host, pathTemplate: entry.pathTemplate, authTier: "public",
-  statusesObserved: [200], shape: { fields: {}, truncatedAt: [] },
+  statusesObserved: [200], shape: { fields: { last_block: { types: ["number"] } }, truncatedAt: [] },
   shapeSources: [], truncatedAt: [], capturedAt: "2026-09-13",
 }] };
 it("reports partial coverage and excludes response values and dynamic keys", async () => {
   const result = await runNightly([{ entryId, params: {} }], baseline,
-    async () => ({ status: 200, body: { sensitive_map_key: "private value" }, isJson: true }));
+    async () => ({ status: 200, body: { last_block: 1, sensitive_map_key: "private value" }, isJson: true }));
   expect(result.complete).toBe(false);
   expect(result.coverage.swept).toBe(1);
   expect(result.coverage.unconfigured.length).toBe(result.coverage.callable - 1);

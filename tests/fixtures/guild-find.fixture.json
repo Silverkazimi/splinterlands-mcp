@@ -3,7 +3,15 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:07:25.497717+00:00",
     "sourceUrl": "https://api2.splinterlands.com/guilds/find",
-    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders. Account references in reviewed fields and encoded records use consistent synthetic placeholders.",
+    "additionalSchemaReview": "Nested schema examples added synthetically from reviewed September 14 field types. Previously missing or empty containers expanded; preceding fields retained. Original observation does not represent these synthetic values.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "c78c2c04df60a01a8e59edd8bc1227c9e17fd71d0bfe95eb262ded04f0df1968",
+        "alternateShape": "ec9e9634b4b279f100f4727c3334300fa562522e73da9b63c3c349dd657ac454"
+      }
+    ]
   },
   "valueClasses": {
     "body.id": {
@@ -13,7 +21,7 @@
       "valueClass": "name"
     },
     "body.owner": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.created_date": {
       "valueClass": "timestamp"
@@ -704,12 +712,37 @@
     },
     "body.brawl_stats.end_cycle": {
       "valueClass": "numeric"
+    },
+    "body.announcements[0].id": {
+      "valueClass": "numeric"
+    },
+    "body.announcements[0].room_id": {
+      "valueClass": "opaque"
+    },
+    "body.announcements[0].player": {
+      "valueClass": "name"
+    },
+    "body.announcements[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.announcements[0].subject": {
+      "valueClass": "freetext"
+    },
+    "body.announcements[0].message": {
+      "valueClass": "freetext"
+    },
+    "body.announcements[0].is_private": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     }
   },
   "body": {
     "id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-    "name": " [KoG] Shield of Glory",
-    "owner": "zagorlord",
+    "name": "sample-acct-001",
+    "owner": "sample-acct-103",
     "created_date": "2019-07-30T08:11:00.000Z",
     "membership_type": "request",
     "language": "English",
@@ -986,6 +1019,16 @@
       "start_cycle": 373,
       "end_cycle": 382
     },
-    "announcements": []
+    "announcements": [
+      {
+        "id": 1,
+        "room_id": "synthetic-room",
+        "player": "sample-account-1",
+        "created_date": "2026-01-01T00:00:00.000Z",
+        "subject": "[redacted]",
+        "message": "[redacted]",
+        "is_private": false
+      }
+    ]
   }
 }

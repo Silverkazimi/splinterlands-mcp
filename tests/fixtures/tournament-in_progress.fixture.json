@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:55:21.000953+00:00",
     "sourceUrl": "https://api2.splinterlands.com/tournaments/in_progress",
-    "captureScope": "First three root rows or players; other nested fields retain their captured values."
+    "captureScope": "First three root rows or players; other nested fields retain their captured values.",
+    "redaction": "Name-classified fields use synthetic account placeholders. Account references in reviewed fields and encoded records use consistent synthetic placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "8b685805336f12375e4464c7d93dea2f0758f369f64e1e8d56258ef2795124b5",
+        "alternateShape": "f92d9a612440a754026f804e148f8a0ead82fd34ed7c71d8ba8ea9dfc13b4d99"
+      }
+    ]
   },
   "valueClasses": {
     "body[0].id": {
@@ -16,7 +23,7 @@
       "valueClass": "opaque"
     },
     "body[0].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].name": {
       "valueClass": "name"
@@ -70,7 +77,11 @@
       "valueClass": "opaque"
     },
     "body[0].data.allowed_cards.ghost": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[0].data.allowed_cards.gladiator": {
       "valueClass": "opaque"
@@ -166,7 +177,7 @@
       "valueClass": "opaque"
     },
     "body[1].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].name": {
       "valueClass": "name"
@@ -223,7 +234,11 @@
       "valueClass": "opaque"
     },
     "body[1].data.allowed_cards.ghost": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[1].data.allowed_cards.gladiator": {
       "valueClass": "opaque"
@@ -508,7 +523,7 @@
       "valueClass": "opaque"
     },
     "body[2].created_by": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[2].name": {
       "valueClass": "name"
@@ -565,7 +580,11 @@
       "valueClass": "opaque"
     },
     "body[2].data.allowed_cards.ghost": {
-      "valueClass": "opaque"
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[2].data.allowed_cards.gladiator": {
       "valueClass": "opaque"
@@ -756,8 +775,8 @@
       "id": "f7dccb1b5fa6ed4125192bd330e8ee53417576a7",
       "format": "swiss",
       "sub_format": null,
-      "created_by": "sps.tournaments",
-      "name": "Scholar Showcase: Diamond Modern",
+      "created_by": "sample-acct-111",
+      "name": "sample-acct-038",
       "description": "Come show off your skills and you might just catch the eye of a top account holder looking for a new champion to lead their account to victory and share the spoils of the Arena!",
       "start_date": "2026-09-12T05:00:00.000Z",
       "status": 1,
@@ -831,9 +850,9 @@
       "id": "23adcd684903bc15f616d46db4ae08436362e93c",
       "format": "swiss",
       "sub_format": null,
-      "created_by": "ehmaywuntee",
-      "name": "Arena Vanguard Collab",
-      "description": "The Arena Vanguard monsters are teaming up to offer a special ghost card tournament that gives you the opportunity to win some hard to get Foundation cards. Each of these AV cards were donated by their creator and they can be found at the following socials:\niblast - https://www.twitch.tv/iblastarcade\nmickvir - https://www.twitch.tv/mickvir\nehmaywuntee - https://www.twitch.tv/ehmaywuntee\nking-arminius - https://x.com/KING_ARMINIUS\nourfadedglory - https://www.twitch.tv/ofgplays\nank12c - https://x.com/ANK12C\nbunsbagsandcaps - https://www.twitch.tv/bunsbagsandcaps\n\n*Disclaimer: No multi accounting, bots, or battle helpers; host reserves the right to deny prizes to suspected or confirmed violators.*",
+      "created_by": "sample-acct-112",
+      "name": "sample-acct-009",
+      "description": "[redacted]",
       "start_date": "2026-09-11T23:00:00.000Z",
       "status": 1,
       "allow_lite": false,
@@ -1028,8 +1047,8 @@
       "id": "2694bedf2d04362bef06b2cdc02315a69f642549",
       "format": "swiss",
       "sub_format": null,
-      "created_by": "ehmaywuntee",
-      "name": "Battle For Khan Feywest",
+      "created_by": "sample-acct-112",
+      "name": "sample-acct-011",
       "description": "Thanks to the Splinterlands team, and with the support of the Arena Vanguard, I was able to design a sick card for Foundation and here is one way for you to start getting the copies you need to put him into action! This will be a Foundation only ghost card tournament with all the creator's cards available to test out. I am making it a larger group size as well so that we do not split into groups too soon, but that may mean it will be more battles than most tournaments. Got to make it a worthy grind though, right? More opportunities will continue to come and this tourney may get tweaked as we see how it plays out. Until then, enjoy playing with these cool new cards!\n\n*Disclaimer: No multi accounting, bots, or battle helpers; host reserves the right to deny prizes to suspected or confirmed violators.*",
       "start_date": "2026-09-11T17:00:00.000Z",
       "status": 1,

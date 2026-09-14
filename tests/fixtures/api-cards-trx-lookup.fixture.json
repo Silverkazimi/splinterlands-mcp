@@ -1,19 +1,52 @@
 {
-  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-08T00:00:00Z"
+  },
   "valueClasses": {
-    "trx_info.id": { "valueClass": "id" },
-    "trx_info.block_id": { "valueClass": "id" },
-    "trx_info.prev_block_id": { "valueClass": "id" },
-    "trx_info.type": { "valueClass": "enum" },
-    "trx_info.player": { "valueClass": "name" },
-    "trx_info.data": { "valueClass": "opaque" },
-    "trx_info.success": { "valueClass": "enum" },
-    "trx_info.error": { "valueClass": "opaque" },
-    "trx_info.block_num": { "valueClass": "numeric" },
-    "trx_info.created_date": { "valueClass": "timestamp" },
-    "trx_info.result": { "valueClass": "opaque" },
-    "trx_info.steem_price": { "valueClass": "numeric" },
-    "trx_info.sbd_price": { "valueClass": "numeric" }
+    "trx_info.id": {
+      "valueClass": "id"
+    },
+    "trx_info.block_id": {
+      "valueClass": "id"
+    },
+    "trx_info.prev_block_id": {
+      "valueClass": "id"
+    },
+    "trx_info.type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "gift_cards",
+        "market_purchase"
+      ]
+    },
+    "trx_info.player": {
+      "valueClass": "name"
+    },
+    "trx_info.data": {
+      "valueClass": "opaque"
+    },
+    "trx_info.success": {
+      "valueClass": "enum"
+    },
+    "trx_info.error": {
+      "valueClass": "opaque"
+    },
+    "trx_info.block_num": {
+      "valueClass": "numeric"
+    },
+    "trx_info.created_date": {
+      "valueClass": "timestamp"
+    },
+    "trx_info.result": {
+      "valueClass": "opaque"
+    },
+    "trx_info.steem_price": {
+      "valueClass": "numeric"
+    },
+    "trx_info.sbd_price": {
+      "valueClass": "numeric"
+    }
   },
   "trx_info": {
     "id": "fixture-trx",

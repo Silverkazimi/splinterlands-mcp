@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:30:01.490608+00:00",
     "sourceUrl": "https://api2.splinterlands.com/conflicts/airdrop_distribution",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "ea8ac84507c04d3c660401c642afa841f966d39253287ca0836d211ca5337bdf",
+        "alternateShape": "0dd71cb6613b8a647f2f11e795c2dfff83e1535180c63911da168805b939bcaf"
+      }
+    ]
   },
   "valueClasses": {
     "body.conflict.id": {
@@ -112,7 +119,7 @@
     },
     "distribution": [
       {
-        "player": "vugtis",
+        "player": "sample-acct-100",
         "num_prizes": 93
       }
     ]

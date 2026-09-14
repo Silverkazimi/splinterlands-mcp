@@ -3,7 +3,13 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T07:48:18.777459+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/recent_teams",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "1a8ccfca9c54b831aa654e0340206619e613280ff6fae5d01f8ef3d074707ef7",
+        "alternateShape": "b8bc1763f3ce5c3760865f2c35ea6aa565c3b31804d6d975e2c422b4ef6fa360"
+      }
+    ]
   },
   "valueClasses": {
     "body[0].summoner.gold": {

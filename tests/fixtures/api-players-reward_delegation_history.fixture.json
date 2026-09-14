@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T07:48:00.487732+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/reward_delegation_history",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body[0].id": {
@@ -16,7 +17,16 @@
       "valueClass": "name"
     },
     "body[0].type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
     },
     "body[0].token": {
       "valueClass": "enum"
@@ -40,7 +50,16 @@
       "valueClass": "name"
     },
     "body[1].type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
     },
     "body[1].token": {
       "valueClass": "enum"
@@ -58,8 +77,8 @@
   "body": [
     {
       "id": "5555545",
-      "player": "vugtis",
-      "delegate_to_player": "shbank",
+      "player": "sample-acct-100",
+      "delegate_to_player": "sample-acct-088",
       "type": "survival_bracket",
       "token": "SPS",
       "percent": 15,
@@ -68,8 +87,8 @@
     },
     {
       "id": "5555544",
-      "player": "vugtis",
-      "delegate_to_player": "shbank",
+      "player": "sample-acct-100",
+      "delegate_to_player": "sample-acct-088",
       "type": "wild",
       "token": "SPS",
       "percent": 15,

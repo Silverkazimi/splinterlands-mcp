@@ -18,7 +18,11 @@
       "valueClass": "id"
     },
     "data[0].resource_symbol": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "GRAIN",
+        "WOOD"
+      ]
     }
   },
   "status": "success",

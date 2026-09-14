@@ -6,7 +6,7 @@ const roleSchema = z.enum(ACCOUNT_ROLES);
 const scalar = z.union([z.string().max(1000), z.number().finite(), z.boolean()]);
 const rowSchema = z.object({
   entryId: z.string().min(1),
-  params: z.record(z.union([scalar, z.object({ accountRole: roleSchema }).strict()])),
+  params: z.record(z.string(), z.union([scalar, z.object({ accountRole: roleSchema }).strict()])),
   variantKey: z.string().optional(),
   fixturePath: z.string().optional(),
   expectEmpty: z.boolean().optional(),

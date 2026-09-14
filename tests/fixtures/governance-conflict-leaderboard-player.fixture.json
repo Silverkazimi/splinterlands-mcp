@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:28:35.007531+00:00",
     "sourceUrl": "https://api2.splinterlands.com/conflicts/leaderboard_with_player",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "840e5f8a57630a13a3e23dea11114ea7051e01d2fb886a9255bc06641fe571b6",
+        "alternateShape": "e21d9f27a3b04c1a98718911215c011aacf443ccbaf9beef5af91264706f69c5"
+      }
+    ]
   },
   "valueClasses": {
     "body.player.player": {
@@ -40,7 +47,7 @@
       "valueClass": "opaque"
     },
     "body.player.total_contribution": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.player.reward_points": {
       "valueClass": "numeric"
@@ -78,7 +85,7 @@
   },
   "body": {
     "player": {
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "avatar_id": 0,
       "title": null,
       "title_pre": "Vonarch",

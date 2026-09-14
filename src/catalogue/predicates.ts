@@ -42,10 +42,15 @@ export function predicateFor(contract: ResultContract): CataloguePredicate {
   }
 
   if (contract.predicateId === "conflicts.status") {
-    const base = { ...contract, predicateId: "partial-object-list.wagons" };
+    const template = { ...contract, predicateId: "partial-object-list.wagons" };
     return (body): body is unknown => {
       if (typeof body !== "object" || body === null || Array.isArray(body)) return false;
       const record = body as Record<string, unknown>;
+      const base = record.player === null ? {
+        ...template,
+        fingerprint: Object.fromEntries(Object.entries(template.fingerprint).filter(([path]) => !path.startsWith("player."))),
+        requiredKeyPaths: template.requiredKeyPaths.filter(path => !path.startsWith("player.")),
+      } : template;
       if (!Object.hasOwn(record, "wagons")) return predicateFor(base)(body);
       if (!Array.isArray(record.wagons) || !predicateFor(base)({ ...record, wagons: [] })) return false;
       return record.wagons.every((wagon: unknown) => {

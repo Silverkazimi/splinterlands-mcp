@@ -1,13 +1,14 @@
 import { lstatSync, realpathSync, readFileSync, mkdirSync, writeFileSync } from "node:fs";
 import { resolve, dirname, basename } from "node:path";
 import { z } from "zod";
+import { MAX_FIXTURE_BYTES } from "./fixture-limits.js";
 import { TOOL_ENTRY_IDS } from "../../src/server.js";
 import type { RecaptureInput } from "./recapture.js";
 
 const configSchema = z.array(z.object({
   fixturePath: z.string().regex(/^tests\/fixtures\/[a-z0-9][a-z0-9_-]*\.fixture\.json$/),
   entryId: z.string(),
-  params: z.record(z.union([z.string().max(1000), z.number().finite(), z.boolean()])),
+  params: z.record(z.string(), z.union([z.string().max(1000), z.number().finite(), z.boolean()])),
   variantKey: z.string().optional(),
 }).strict()).min(1).max(512);
 
@@ -28,7 +29,7 @@ export function loadRecaptureInputs(root: string, raw: unknown): RecaptureInput[
     if (!binding || binding.entryId !== item.entryId || (binding.variantKey ?? "default") !== (item.variantKey ?? "default")) throw new Error("Fixture binding mismatch.");
     const path = resolve(base, name);
     const stat = lstatSync(path);
-    if (!stat.isFile() || stat.isSymbolicLink() || stat.nlink !== 1 || realpathSync(path) !== path || stat.size > 2 * 1024 * 1024) throw new Error("Unsafe fixture file.");
+    if (!stat.isFile() || stat.isSymbolicLink() || stat.nlink !== 1 || realpathSync(path) !== path || stat.size > MAX_FIXTURE_BYTES) throw new Error("Unsafe fixture file.");
     const existing: unknown = JSON.parse(readFileSync(path, "utf8"));
     if (!existing || typeof existing !== "object" || Array.isArray(existing)) throw new Error("Invalid fixture envelope.");
     return { fixturePath: item.fixturePath, entryId: item.entryId, params: item.params,
@@ -38,6 +39,7 @@ export function loadRecaptureInputs(root: string, raw: unknown): RecaptureInput[
 }
 
 export function writeRenewedFixture(root: string, path: string, contents: string): void {
+  if (Buffer.byteLength(contents, "utf8") > MAX_FIXTURE_BYTES) throw new Error("Fixture exceeds size limit.");
   if (!/^tests\/fixtures\/(?:pending\/)?[a-z0-9][a-z0-9_-]*\.fixture\.json$/.test(path)) throw new Error("Unsafe renewal target.");
   const base = fixtureRoot(root);
   const target = resolve(realpathSync(root), path);

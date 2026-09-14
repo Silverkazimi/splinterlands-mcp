@@ -11,7 +11,22 @@
       "valueClass": "id"
     },
     "data[0].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[0].region.region_number": {
       "valueClass": "numeric"
@@ -29,7 +44,22 @@
       "valueClass": "id"
     },
     "data[1].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[1].region.region_number": {
       "valueClass": "numeric"
@@ -47,7 +77,22 @@
       "valueClass": "id"
     },
     "data[2].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[2].region.region_number": {
       "valueClass": "numeric"
@@ -65,7 +110,22 @@
       "valueClass": "id"
     },
     "data[3].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[3].region.region_number": {
       "valueClass": "numeric"
@@ -83,7 +143,22 @@
       "valueClass": "id"
     },
     "data[4].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[4].region.region_number": {
       "valueClass": "numeric"
@@ -101,7 +176,22 @@
       "valueClass": "id"
     },
     "data[5].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[5].region.region_number": {
       "valueClass": "numeric"
@@ -119,7 +209,22 @@
       "valueClass": "id"
     },
     "data[6].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[6].region.region_number": {
       "valueClass": "numeric"
@@ -137,7 +242,22 @@
       "valueClass": "id"
     },
     "data[7].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[7].region.region_number": {
       "valueClass": "numeric"
@@ -155,7 +275,22 @@
       "valueClass": "id"
     },
     "data[8].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[8].region.region_number": {
       "valueClass": "numeric"
@@ -173,7 +308,22 @@
       "valueClass": "id"
     },
     "data[9].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[9].region.region_number": {
       "valueClass": "numeric"
@@ -191,7 +341,22 @@
       "valueClass": "id"
     },
     "data[10].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[10].region.region_number": {
       "valueClass": "numeric"
@@ -209,7 +374,22 @@
       "valueClass": "id"
     },
     "data[11].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[11].region.region_number": {
       "valueClass": "numeric"
@@ -227,7 +407,22 @@
       "valueClass": "id"
     },
     "data[12].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[12].region.region_number": {
       "valueClass": "numeric"
@@ -245,7 +440,22 @@
       "valueClass": "id"
     },
     "data[13].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[13].region.region_number": {
       "valueClass": "numeric"
@@ -263,7 +473,22 @@
       "valueClass": "id"
     },
     "data[14].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[14].region.region_number": {
       "valueClass": "numeric"
@@ -281,7 +506,22 @@
       "valueClass": "id"
     },
     "data[15].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[15].region.region_number": {
       "valueClass": "numeric"
@@ -299,7 +539,22 @@
       "valueClass": "id"
     },
     "data[16].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[16].region.region_number": {
       "valueClass": "numeric"
@@ -317,7 +572,22 @@
       "valueClass": "id"
     },
     "data[17].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[17].region.region_number": {
       "valueClass": "numeric"
@@ -335,7 +605,22 @@
       "valueClass": "id"
     },
     "data[18].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[18].region.region_number": {
       "valueClass": "numeric"
@@ -353,7 +638,22 @@
       "valueClass": "id"
     },
     "data[19].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[19].region.region_number": {
       "valueClass": "numeric"
@@ -371,7 +671,22 @@
       "valueClass": "id"
     },
     "data[20].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[20].region.region_number": {
       "valueClass": "numeric"
@@ -389,7 +704,22 @@
       "valueClass": "id"
     },
     "data[21].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[21].region.region_number": {
       "valueClass": "numeric"
@@ -407,7 +737,22 @@
       "valueClass": "id"
     },
     "data[22].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[22].region.region_number": {
       "valueClass": "numeric"
@@ -425,7 +770,22 @@
       "valueClass": "id"
     },
     "data[23].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[23].region.region_number": {
       "valueClass": "numeric"
@@ -443,7 +803,22 @@
       "valueClass": "id"
     },
     "data[24].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[24].region.region_number": {
       "valueClass": "numeric"
@@ -461,7 +836,22 @@
       "valueClass": "id"
     },
     "data[25].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[25].region.region_number": {
       "valueClass": "numeric"
@@ -479,7 +869,22 @@
       "valueClass": "id"
     },
     "data[26].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[26].region.region_number": {
       "valueClass": "numeric"
@@ -497,7 +902,22 @@
       "valueClass": "id"
     },
     "data[27].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[27].region.region_number": {
       "valueClass": "numeric"
@@ -515,7 +935,22 @@
       "valueClass": "id"
     },
     "data[28].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[28].region.region_number": {
       "valueClass": "numeric"
@@ -533,7 +968,22 @@
       "valueClass": "id"
     },
     "data[29].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[29].region.region_number": {
       "valueClass": "numeric"
@@ -551,7 +1001,22 @@
       "valueClass": "id"
     },
     "data[30].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[30].region.region_number": {
       "valueClass": "numeric"
@@ -569,7 +1034,22 @@
       "valueClass": "id"
     },
     "data[31].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[31].region.region_number": {
       "valueClass": "numeric"
@@ -587,7 +1067,22 @@
       "valueClass": "id"
     },
     "data[32].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[32].region.region_number": {
       "valueClass": "numeric"
@@ -605,7 +1100,22 @@
       "valueClass": "id"
     },
     "data[33].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[33].region.region_number": {
       "valueClass": "numeric"
@@ -623,7 +1133,22 @@
       "valueClass": "id"
     },
     "data[34].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[34].region.region_number": {
       "valueClass": "numeric"
@@ -641,7 +1166,22 @@
       "valueClass": "id"
     },
     "data[35].region.name": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Asten",
+        "Bakerdire",
+        "Dorthan Dell",
+        "Gillith",
+        "Hamford",
+        "Lumleigh",
+        "Osburg",
+        "Pembrook",
+        "Quegmoor",
+        "Thece",
+        "Uprine",
+        "Val de Lun",
+        "Viritas"
+      ]
     },
     "data[35].region.region_number": {
       "valueClass": "numeric"

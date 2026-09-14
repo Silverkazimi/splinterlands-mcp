@@ -1,10 +1,9 @@
 {
   "provenance": {
     "source": "live-observation",
-    "sourceUrl": "https://api.splinterlands.com/players/inventory",
-    "observedAt": "2026-09-12T13:39:31.561474+00:00",
-    "captureScope": "Common identity, type and quantity fields from one observed Land row and one observed Token row; original values retained.",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
   },
   "valueClasses": {
     "body[0].uid": {
@@ -13,23 +12,121 @@
     "body[0].item_detail_id": {
       "valueClass": "id"
     },
-    "body[0].name": {
+    "body[0].player": {
       "valueClass": "name"
     },
-    "body[0].player": {
+    "body[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[0].in_use": {
+      "valueClass": "enum"
+    },
+    "body[0].lock_days": {
+      "valueClass": "numeric"
+    },
+    "body[0].unlock_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[0].listed": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].stake_end_date": {
+      "valueClass": "opaque"
+    },
+    "body[0].boost": {
+      "valueClass": "numeric"
+    },
+    "body[0].stake_plot": {
+      "valueClass": "numeric"
+    },
+    "body[0].stake_region": {
+      "valueClass": "numeric"
+    },
+    "body[0].id": {
+      "valueClass": "id"
+    },
+    "body[0].name": {
       "valueClass": "name"
     },
     "body[0].type": {
       "valueClass": "enum"
     },
     "body[0].sub_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[0].data": {
+      "valueClass": "opaque"
+    },
+    "body[0].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[0].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[0].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[0].rarity": {
+      "valueClass": "opaque"
     },
     "body[0].quantity": {
       "valueClass": "numeric"
     },
-    "body[0].in_use": {
-      "valueClass": "enum"
+    "body[0].is_soulbound": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].can_transfer": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     },
     "body[1].uid": {
       "valueClass": "id"
@@ -37,45 +134,5983 @@
     "body[1].item_detail_id": {
       "valueClass": "id"
     },
-    "body[1].name": {
+    "body[1].player": {
       "valueClass": "name"
     },
-    "body[1].player": {
+    "body[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[1].in_use": {
+      "valueClass": "enum"
+    },
+    "body[1].lock_days": {
+      "valueClass": "numeric"
+    },
+    "body[1].unlock_date": {
+      "valueClass": "opaque"
+    },
+    "body[1].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[1].listed": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[1].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].stake_end_date": {
+      "valueClass": "opaque"
+    },
+    "body[1].boost": {
+      "valueClass": "numeric"
+    },
+    "body[1].stake_plot": {
+      "valueClass": "numeric"
+    },
+    "body[1].stake_region": {
+      "valueClass": "numeric"
+    },
+    "body[1].id": {
+      "valueClass": "id"
+    },
+    "body[1].name": {
       "valueClass": "name"
     },
     "body[1].type": {
       "valueClass": "enum"
     },
     "body[1].sub_type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[1].data": {
+      "valueClass": "opaque"
+    },
+    "body[1].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[1].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[1].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[1].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[1].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[1].rarity": {
+      "valueClass": "opaque"
     },
     "body[1].quantity": {
       "valueClass": "numeric"
     },
-    "body[1].in_use": {
+    "body[1].is_soulbound": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[1].can_transfer": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[2].uid": {
+      "valueClass": "id"
+    },
+    "body[2].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[2].player": {
+      "valueClass": "name"
+    },
+    "body[2].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[2].in_use": {
       "valueClass": "enum"
+    },
+    "body[2].lock_days": {
+      "valueClass": "numeric"
+    },
+    "body[2].unlock_date": {
+      "valueClass": "opaque"
+    },
+    "body[2].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[2].listed": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[2].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].stake_end_date": {
+      "valueClass": "opaque"
+    },
+    "body[2].boost": {
+      "valueClass": "numeric"
+    },
+    "body[2].stake_plot": {
+      "valueClass": "numeric"
+    },
+    "body[2].stake_region": {
+      "valueClass": "numeric"
+    },
+    "body[2].id": {
+      "valueClass": "id"
+    },
+    "body[2].name": {
+      "valueClass": "name"
+    },
+    "body[2].type": {
+      "valueClass": "enum"
+    },
+    "body[2].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[2].data": {
+      "valueClass": "opaque"
+    },
+    "body[2].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[2].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[2].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[2].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[2].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[2].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[2].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[2].is_soulbound": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[2].can_transfer": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].uid": {
+      "valueClass": "id"
+    },
+    "body[3].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[3].player": {
+      "valueClass": "name"
+    },
+    "body[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[3].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[3].in_use": {
+      "valueClass": "enum"
+    },
+    "body[3].lock_days": {
+      "valueClass": "numeric"
+    },
+    "body[3].unlock_date": {
+      "valueClass": "opaque"
+    },
+    "body[3].unlock_tx": {
+      "valueClass": "opaque"
+    },
+    "body[3].listed": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].stake_end_date": {
+      "valueClass": "opaque"
+    },
+    "body[3].boost": {
+      "valueClass": "numeric"
+    },
+    "body[3].stake_plot": {
+      "valueClass": "numeric"
+    },
+    "body[3].stake_region": {
+      "valueClass": "numeric"
+    },
+    "body[3].id": {
+      "valueClass": "id"
+    },
+    "body[3].name": {
+      "valueClass": "name"
+    },
+    "body[3].type": {
+      "valueClass": "enum"
+    },
+    "body[3].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[3].data": {
+      "valueClass": "opaque"
+    },
+    "body[3].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[3].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[3].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[3].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[3].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[3].is_soulbound": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].can_transfer": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].uid": {
+      "valueClass": "id"
+    },
+    "body[4].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[4].player": {
+      "valueClass": "name"
+    },
+    "body[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[4].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[4].in_use": {
+      "valueClass": "enum"
+    },
+    "body[4].id": {
+      "valueClass": "id"
+    },
+    "body[4].name": {
+      "valueClass": "name"
+    },
+    "body[4].type": {
+      "valueClass": "enum"
+    },
+    "body[4].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[4].data": {
+      "valueClass": "opaque"
+    },
+    "body[4].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[4].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[4].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[4].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[4].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[5].uid": {
+      "valueClass": "id"
+    },
+    "body[5].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[5].player": {
+      "valueClass": "name"
+    },
+    "body[5].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[5].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[5].in_use": {
+      "valueClass": "enum"
+    },
+    "body[5].id": {
+      "valueClass": "id"
+    },
+    "body[5].name": {
+      "valueClass": "name"
+    },
+    "body[5].type": {
+      "valueClass": "enum"
+    },
+    "body[5].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[5].data": {
+      "valueClass": "opaque"
+    },
+    "body[5].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[5].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[5].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[5].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[5].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[5].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[5].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[6].uid": {
+      "valueClass": "id"
+    },
+    "body[6].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[6].player": {
+      "valueClass": "name"
+    },
+    "body[6].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[6].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[6].in_use": {
+      "valueClass": "enum"
+    },
+    "body[6].id": {
+      "valueClass": "id"
+    },
+    "body[6].name": {
+      "valueClass": "name"
+    },
+    "body[6].type": {
+      "valueClass": "enum"
+    },
+    "body[6].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[6].data": {
+      "valueClass": "opaque"
+    },
+    "body[6].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[6].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[6].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[6].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[6].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[6].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[6].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[7].uid": {
+      "valueClass": "id"
+    },
+    "body[7].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[7].player": {
+      "valueClass": "name"
+    },
+    "body[7].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[7].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[7].in_use": {
+      "valueClass": "enum"
+    },
+    "body[7].id": {
+      "valueClass": "id"
+    },
+    "body[7].name": {
+      "valueClass": "name"
+    },
+    "body[7].type": {
+      "valueClass": "enum"
+    },
+    "body[7].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[7].data": {
+      "valueClass": "opaque"
+    },
+    "body[7].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[7].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[7].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[7].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[7].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[7].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[7].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[8].uid": {
+      "valueClass": "id"
+    },
+    "body[8].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[8].player": {
+      "valueClass": "name"
+    },
+    "body[8].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[8].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[8].in_use": {
+      "valueClass": "enum"
+    },
+    "body[8].id": {
+      "valueClass": "id"
+    },
+    "body[8].name": {
+      "valueClass": "name"
+    },
+    "body[8].type": {
+      "valueClass": "enum"
+    },
+    "body[8].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[8].data": {
+      "valueClass": "opaque"
+    },
+    "body[8].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[8].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[8].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[8].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[8].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[8].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[8].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[9].uid": {
+      "valueClass": "id"
+    },
+    "body[9].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[9].player": {
+      "valueClass": "name"
+    },
+    "body[9].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[9].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[9].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[9].in_use": {
+      "valueClass": "enum"
+    },
+    "body[9].id": {
+      "valueClass": "id"
+    },
+    "body[9].name": {
+      "valueClass": "name"
+    },
+    "body[9].type": {
+      "valueClass": "enum"
+    },
+    "body[9].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[9].data": {
+      "valueClass": "opaque"
+    },
+    "body[9].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[9].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[9].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[9].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[9].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[9].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[9].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[10].uid": {
+      "valueClass": "id"
+    },
+    "body[10].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[10].player": {
+      "valueClass": "name"
+    },
+    "body[10].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[10].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[10].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[10].in_use": {
+      "valueClass": "enum"
+    },
+    "body[10].id": {
+      "valueClass": "id"
+    },
+    "body[10].name": {
+      "valueClass": "name"
+    },
+    "body[10].type": {
+      "valueClass": "enum"
+    },
+    "body[10].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[10].data": {
+      "valueClass": "opaque"
+    },
+    "body[10].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[10].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[10].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[10].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[10].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[10].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[10].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[11].uid": {
+      "valueClass": "id"
+    },
+    "body[11].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[11].player": {
+      "valueClass": "name"
+    },
+    "body[11].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[11].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[11].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[11].in_use": {
+      "valueClass": "enum"
+    },
+    "body[11].id": {
+      "valueClass": "id"
+    },
+    "body[11].name": {
+      "valueClass": "name"
+    },
+    "body[11].type": {
+      "valueClass": "enum"
+    },
+    "body[11].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[11].data": {
+      "valueClass": "opaque"
+    },
+    "body[11].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[11].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[11].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[11].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[11].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[11].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[11].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[12].uid": {
+      "valueClass": "id"
+    },
+    "body[12].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[12].player": {
+      "valueClass": "name"
+    },
+    "body[12].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[12].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[12].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[12].in_use": {
+      "valueClass": "enum"
+    },
+    "body[12].id": {
+      "valueClass": "id"
+    },
+    "body[12].name": {
+      "valueClass": "name"
+    },
+    "body[12].type": {
+      "valueClass": "enum"
+    },
+    "body[12].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[12].data": {
+      "valueClass": "opaque"
+    },
+    "body[12].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[12].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[12].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[12].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[12].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[12].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[12].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[13].uid": {
+      "valueClass": "id"
+    },
+    "body[13].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[13].player": {
+      "valueClass": "name"
+    },
+    "body[13].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[13].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[13].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[13].in_use": {
+      "valueClass": "enum"
+    },
+    "body[13].id": {
+      "valueClass": "id"
+    },
+    "body[13].name": {
+      "valueClass": "name"
+    },
+    "body[13].type": {
+      "valueClass": "enum"
+    },
+    "body[13].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[13].data": {
+      "valueClass": "opaque"
+    },
+    "body[13].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[13].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[13].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[13].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[13].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[13].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[13].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[14].uid": {
+      "valueClass": "id"
+    },
+    "body[14].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[14].player": {
+      "valueClass": "name"
+    },
+    "body[14].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[14].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[14].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[14].in_use": {
+      "valueClass": "enum"
+    },
+    "body[14].id": {
+      "valueClass": "id"
+    },
+    "body[14].name": {
+      "valueClass": "name"
+    },
+    "body[14].type": {
+      "valueClass": "enum"
+    },
+    "body[14].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[14].data": {
+      "valueClass": "opaque"
+    },
+    "body[14].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[14].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[14].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[14].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[14].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[14].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[14].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[15].uid": {
+      "valueClass": "id"
+    },
+    "body[15].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[15].player": {
+      "valueClass": "name"
+    },
+    "body[15].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[15].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[15].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[15].in_use": {
+      "valueClass": "enum"
+    },
+    "body[15].id": {
+      "valueClass": "id"
+    },
+    "body[15].name": {
+      "valueClass": "name"
+    },
+    "body[15].type": {
+      "valueClass": "enum"
+    },
+    "body[15].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[15].data": {
+      "valueClass": "opaque"
+    },
+    "body[15].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[15].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[15].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[15].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[15].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[15].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[15].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[16].uid": {
+      "valueClass": "id"
+    },
+    "body[16].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[16].player": {
+      "valueClass": "name"
+    },
+    "body[16].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[16].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[16].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[16].in_use": {
+      "valueClass": "enum"
+    },
+    "body[16].id": {
+      "valueClass": "id"
+    },
+    "body[16].name": {
+      "valueClass": "name"
+    },
+    "body[16].type": {
+      "valueClass": "enum"
+    },
+    "body[16].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[16].data": {
+      "valueClass": "opaque"
+    },
+    "body[16].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[16].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[16].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[16].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[16].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[16].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[16].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[17].uid": {
+      "valueClass": "id"
+    },
+    "body[17].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[17].player": {
+      "valueClass": "name"
+    },
+    "body[17].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[17].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[17].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[17].in_use": {
+      "valueClass": "enum"
+    },
+    "body[17].id": {
+      "valueClass": "id"
+    },
+    "body[17].name": {
+      "valueClass": "name"
+    },
+    "body[17].type": {
+      "valueClass": "enum"
+    },
+    "body[17].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[17].data": {
+      "valueClass": "opaque"
+    },
+    "body[17].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[17].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[17].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[17].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[17].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[17].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[17].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[18].uid": {
+      "valueClass": "id"
+    },
+    "body[18].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[18].player": {
+      "valueClass": "name"
+    },
+    "body[18].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[18].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[18].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[18].in_use": {
+      "valueClass": "enum"
+    },
+    "body[18].id": {
+      "valueClass": "id"
+    },
+    "body[18].name": {
+      "valueClass": "name"
+    },
+    "body[18].type": {
+      "valueClass": "enum"
+    },
+    "body[18].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[18].data": {
+      "valueClass": "opaque"
+    },
+    "body[18].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[18].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[18].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[18].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[18].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[18].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[18].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[19].uid": {
+      "valueClass": "id"
+    },
+    "body[19].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[19].player": {
+      "valueClass": "name"
+    },
+    "body[19].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[19].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[19].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[19].in_use": {
+      "valueClass": "enum"
+    },
+    "body[19].id": {
+      "valueClass": "id"
+    },
+    "body[19].name": {
+      "valueClass": "name"
+    },
+    "body[19].type": {
+      "valueClass": "enum"
+    },
+    "body[19].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[19].data": {
+      "valueClass": "opaque"
+    },
+    "body[19].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[19].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[19].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[19].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[19].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[19].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[19].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[20].uid": {
+      "valueClass": "id"
+    },
+    "body[20].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[20].player": {
+      "valueClass": "name"
+    },
+    "body[20].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[20].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[20].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[20].in_use": {
+      "valueClass": "enum"
+    },
+    "body[20].id": {
+      "valueClass": "id"
+    },
+    "body[20].name": {
+      "valueClass": "name"
+    },
+    "body[20].type": {
+      "valueClass": "enum"
+    },
+    "body[20].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[20].data": {
+      "valueClass": "opaque"
+    },
+    "body[20].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[20].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[20].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[20].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[20].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[20].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[20].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[21].uid": {
+      "valueClass": "id"
+    },
+    "body[21].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[21].player": {
+      "valueClass": "name"
+    },
+    "body[21].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[21].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[21].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[21].in_use": {
+      "valueClass": "enum"
+    },
+    "body[21].id": {
+      "valueClass": "id"
+    },
+    "body[21].name": {
+      "valueClass": "name"
+    },
+    "body[21].type": {
+      "valueClass": "enum"
+    },
+    "body[21].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[21].data": {
+      "valueClass": "opaque"
+    },
+    "body[21].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[21].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[21].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[21].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[21].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[21].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[21].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[22].uid": {
+      "valueClass": "id"
+    },
+    "body[22].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[22].player": {
+      "valueClass": "name"
+    },
+    "body[22].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[22].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[22].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[22].in_use": {
+      "valueClass": "enum"
+    },
+    "body[22].id": {
+      "valueClass": "id"
+    },
+    "body[22].name": {
+      "valueClass": "name"
+    },
+    "body[22].type": {
+      "valueClass": "enum"
+    },
+    "body[22].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[22].data": {
+      "valueClass": "opaque"
+    },
+    "body[22].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[22].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[22].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[22].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[22].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[22].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[22].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[23].uid": {
+      "valueClass": "id"
+    },
+    "body[23].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[23].player": {
+      "valueClass": "name"
+    },
+    "body[23].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[23].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[23].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[23].in_use": {
+      "valueClass": "enum"
+    },
+    "body[23].id": {
+      "valueClass": "id"
+    },
+    "body[23].name": {
+      "valueClass": "name"
+    },
+    "body[23].type": {
+      "valueClass": "enum"
+    },
+    "body[23].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[23].data": {
+      "valueClass": "opaque"
+    },
+    "body[23].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[23].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[23].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[23].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[23].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[23].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[23].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[24].uid": {
+      "valueClass": "id"
+    },
+    "body[24].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[24].player": {
+      "valueClass": "name"
+    },
+    "body[24].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[24].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[24].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[24].in_use": {
+      "valueClass": "enum"
+    },
+    "body[24].id": {
+      "valueClass": "id"
+    },
+    "body[24].name": {
+      "valueClass": "name"
+    },
+    "body[24].type": {
+      "valueClass": "enum"
+    },
+    "body[24].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[24].data": {
+      "valueClass": "opaque"
+    },
+    "body[24].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[24].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[24].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[24].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[24].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[24].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[24].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[25].uid": {
+      "valueClass": "id"
+    },
+    "body[25].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[25].player": {
+      "valueClass": "name"
+    },
+    "body[25].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[25].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[25].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[25].in_use": {
+      "valueClass": "enum"
+    },
+    "body[25].id": {
+      "valueClass": "id"
+    },
+    "body[25].name": {
+      "valueClass": "name"
+    },
+    "body[25].type": {
+      "valueClass": "enum"
+    },
+    "body[25].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[25].data": {
+      "valueClass": "opaque"
+    },
+    "body[25].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[25].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[25].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[25].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[25].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[25].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[25].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[26].uid": {
+      "valueClass": "id"
+    },
+    "body[26].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[26].player": {
+      "valueClass": "name"
+    },
+    "body[26].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[26].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[26].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[26].in_use": {
+      "valueClass": "enum"
+    },
+    "body[26].id": {
+      "valueClass": "id"
+    },
+    "body[26].name": {
+      "valueClass": "name"
+    },
+    "body[26].type": {
+      "valueClass": "enum"
+    },
+    "body[26].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[26].data": {
+      "valueClass": "opaque"
+    },
+    "body[26].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[26].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[26].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[26].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[26].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[26].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[26].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[27].uid": {
+      "valueClass": "id"
+    },
+    "body[27].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[27].player": {
+      "valueClass": "name"
+    },
+    "body[27].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[27].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[27].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[27].in_use": {
+      "valueClass": "enum"
+    },
+    "body[27].id": {
+      "valueClass": "id"
+    },
+    "body[27].name": {
+      "valueClass": "name"
+    },
+    "body[27].type": {
+      "valueClass": "enum"
+    },
+    "body[27].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[27].data": {
+      "valueClass": "opaque"
+    },
+    "body[27].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[27].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[27].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[27].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[27].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[27].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[27].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[28].uid": {
+      "valueClass": "id"
+    },
+    "body[28].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[28].player": {
+      "valueClass": "name"
+    },
+    "body[28].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[28].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[28].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[28].in_use": {
+      "valueClass": "enum"
+    },
+    "body[28].id": {
+      "valueClass": "id"
+    },
+    "body[28].name": {
+      "valueClass": "name"
+    },
+    "body[28].type": {
+      "valueClass": "enum"
+    },
+    "body[28].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[28].data": {
+      "valueClass": "opaque"
+    },
+    "body[28].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[28].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[28].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[28].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[28].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[28].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[28].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[29].uid": {
+      "valueClass": "id"
+    },
+    "body[29].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[29].player": {
+      "valueClass": "name"
+    },
+    "body[29].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[29].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[29].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[29].in_use": {
+      "valueClass": "enum"
+    },
+    "body[29].id": {
+      "valueClass": "id"
+    },
+    "body[29].name": {
+      "valueClass": "name"
+    },
+    "body[29].type": {
+      "valueClass": "enum"
+    },
+    "body[29].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[29].data": {
+      "valueClass": "opaque"
+    },
+    "body[29].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[29].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[29].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[29].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[29].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[29].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[29].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[30].uid": {
+      "valueClass": "id"
+    },
+    "body[30].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[30].player": {
+      "valueClass": "name"
+    },
+    "body[30].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[30].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[30].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[30].in_use": {
+      "valueClass": "enum"
+    },
+    "body[30].id": {
+      "valueClass": "id"
+    },
+    "body[30].name": {
+      "valueClass": "name"
+    },
+    "body[30].type": {
+      "valueClass": "enum"
+    },
+    "body[30].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[30].data": {
+      "valueClass": "opaque"
+    },
+    "body[30].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[30].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[30].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[30].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[30].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[30].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[30].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[31].uid": {
+      "valueClass": "id"
+    },
+    "body[31].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[31].player": {
+      "valueClass": "name"
+    },
+    "body[31].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[31].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[31].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[31].in_use": {
+      "valueClass": "enum"
+    },
+    "body[31].id": {
+      "valueClass": "id"
+    },
+    "body[31].name": {
+      "valueClass": "name"
+    },
+    "body[31].type": {
+      "valueClass": "enum"
+    },
+    "body[31].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[31].data": {
+      "valueClass": "opaque"
+    },
+    "body[31].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[31].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[31].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[31].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[31].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[31].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[31].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[32].uid": {
+      "valueClass": "id"
+    },
+    "body[32].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[32].player": {
+      "valueClass": "name"
+    },
+    "body[32].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[32].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[32].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[32].in_use": {
+      "valueClass": "enum"
+    },
+    "body[32].id": {
+      "valueClass": "id"
+    },
+    "body[32].name": {
+      "valueClass": "name"
+    },
+    "body[32].type": {
+      "valueClass": "enum"
+    },
+    "body[32].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[32].data": {
+      "valueClass": "opaque"
+    },
+    "body[32].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[32].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[32].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[32].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[32].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[32].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[32].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[33].uid": {
+      "valueClass": "id"
+    },
+    "body[33].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[33].player": {
+      "valueClass": "name"
+    },
+    "body[33].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[33].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[33].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[33].in_use": {
+      "valueClass": "enum"
+    },
+    "body[33].id": {
+      "valueClass": "id"
+    },
+    "body[33].name": {
+      "valueClass": "name"
+    },
+    "body[33].type": {
+      "valueClass": "enum"
+    },
+    "body[33].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[33].data": {
+      "valueClass": "opaque"
+    },
+    "body[33].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[33].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[33].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[33].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[33].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[33].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[33].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[34].uid": {
+      "valueClass": "id"
+    },
+    "body[34].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[34].player": {
+      "valueClass": "name"
+    },
+    "body[34].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[34].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[34].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[34].in_use": {
+      "valueClass": "enum"
+    },
+    "body[34].id": {
+      "valueClass": "id"
+    },
+    "body[34].name": {
+      "valueClass": "name"
+    },
+    "body[34].type": {
+      "valueClass": "enum"
+    },
+    "body[34].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[34].data": {
+      "valueClass": "opaque"
+    },
+    "body[34].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[34].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[34].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[34].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[34].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[34].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[34].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[35].uid": {
+      "valueClass": "id"
+    },
+    "body[35].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[35].player": {
+      "valueClass": "name"
+    },
+    "body[35].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[35].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[35].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[35].in_use": {
+      "valueClass": "enum"
+    },
+    "body[35].id": {
+      "valueClass": "id"
+    },
+    "body[35].name": {
+      "valueClass": "name"
+    },
+    "body[35].type": {
+      "valueClass": "enum"
+    },
+    "body[35].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[35].data": {
+      "valueClass": "opaque"
+    },
+    "body[35].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[35].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[35].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[35].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[35].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[35].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[35].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[36].uid": {
+      "valueClass": "id"
+    },
+    "body[36].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[36].player": {
+      "valueClass": "name"
+    },
+    "body[36].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[36].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[36].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[36].in_use": {
+      "valueClass": "enum"
+    },
+    "body[36].id": {
+      "valueClass": "id"
+    },
+    "body[36].name": {
+      "valueClass": "name"
+    },
+    "body[36].type": {
+      "valueClass": "enum"
+    },
+    "body[36].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[36].data": {
+      "valueClass": "opaque"
+    },
+    "body[36].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[36].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[36].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[36].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[36].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[36].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[36].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[37].uid": {
+      "valueClass": "id"
+    },
+    "body[37].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[37].player": {
+      "valueClass": "name"
+    },
+    "body[37].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[37].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[37].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[37].in_use": {
+      "valueClass": "enum"
+    },
+    "body[37].id": {
+      "valueClass": "id"
+    },
+    "body[37].name": {
+      "valueClass": "name"
+    },
+    "body[37].type": {
+      "valueClass": "enum"
+    },
+    "body[37].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[37].data": {
+      "valueClass": "opaque"
+    },
+    "body[37].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[37].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[37].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[37].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[37].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[37].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[37].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[38].uid": {
+      "valueClass": "id"
+    },
+    "body[38].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[38].player": {
+      "valueClass": "name"
+    },
+    "body[38].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[38].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[38].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[38].in_use": {
+      "valueClass": "enum"
+    },
+    "body[38].id": {
+      "valueClass": "id"
+    },
+    "body[38].name": {
+      "valueClass": "name"
+    },
+    "body[38].type": {
+      "valueClass": "enum"
+    },
+    "body[38].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[38].data": {
+      "valueClass": "opaque"
+    },
+    "body[38].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[38].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[38].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[38].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[38].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[38].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[38].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[39].uid": {
+      "valueClass": "id"
+    },
+    "body[39].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[39].player": {
+      "valueClass": "name"
+    },
+    "body[39].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[39].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[39].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[39].in_use": {
+      "valueClass": "enum"
+    },
+    "body[39].id": {
+      "valueClass": "id"
+    },
+    "body[39].name": {
+      "valueClass": "name"
+    },
+    "body[39].type": {
+      "valueClass": "enum"
+    },
+    "body[39].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[39].data": {
+      "valueClass": "opaque"
+    },
+    "body[39].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[39].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[39].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[39].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[39].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[39].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[39].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[40].uid": {
+      "valueClass": "id"
+    },
+    "body[40].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[40].player": {
+      "valueClass": "name"
+    },
+    "body[40].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[40].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[40].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[40].in_use": {
+      "valueClass": "enum"
+    },
+    "body[40].id": {
+      "valueClass": "id"
+    },
+    "body[40].name": {
+      "valueClass": "name"
+    },
+    "body[40].type": {
+      "valueClass": "enum"
+    },
+    "body[40].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[40].data": {
+      "valueClass": "opaque"
+    },
+    "body[40].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[40].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[40].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[40].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[40].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[40].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[40].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[41].uid": {
+      "valueClass": "id"
+    },
+    "body[41].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[41].player": {
+      "valueClass": "name"
+    },
+    "body[41].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[41].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[41].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[41].in_use": {
+      "valueClass": "enum"
+    },
+    "body[41].id": {
+      "valueClass": "id"
+    },
+    "body[41].name": {
+      "valueClass": "name"
+    },
+    "body[41].type": {
+      "valueClass": "enum"
+    },
+    "body[41].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[41].data": {
+      "valueClass": "opaque"
+    },
+    "body[41].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[41].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[41].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[41].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[41].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[41].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[41].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[42].uid": {
+      "valueClass": "id"
+    },
+    "body[42].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[42].player": {
+      "valueClass": "name"
+    },
+    "body[42].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[42].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[42].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[42].in_use": {
+      "valueClass": "enum"
+    },
+    "body[42].id": {
+      "valueClass": "id"
+    },
+    "body[42].name": {
+      "valueClass": "name"
+    },
+    "body[42].type": {
+      "valueClass": "enum"
+    },
+    "body[42].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[42].data": {
+      "valueClass": "opaque"
+    },
+    "body[42].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[42].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[42].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[42].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[42].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[42].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[42].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[43].uid": {
+      "valueClass": "id"
+    },
+    "body[43].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[43].player": {
+      "valueClass": "name"
+    },
+    "body[43].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[43].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[43].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[43].in_use": {
+      "valueClass": "enum"
+    },
+    "body[43].id": {
+      "valueClass": "id"
+    },
+    "body[43].name": {
+      "valueClass": "name"
+    },
+    "body[43].type": {
+      "valueClass": "enum"
+    },
+    "body[43].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[43].data": {
+      "valueClass": "opaque"
+    },
+    "body[43].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[43].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[43].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[43].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[43].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[43].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[43].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[44].uid": {
+      "valueClass": "id"
+    },
+    "body[44].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[44].player": {
+      "valueClass": "name"
+    },
+    "body[44].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[44].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[44].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[44].in_use": {
+      "valueClass": "enum"
+    },
+    "body[44].id": {
+      "valueClass": "id"
+    },
+    "body[44].name": {
+      "valueClass": "name"
+    },
+    "body[44].type": {
+      "valueClass": "enum"
+    },
+    "body[44].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[44].data": {
+      "valueClass": "opaque"
+    },
+    "body[44].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[44].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[44].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[44].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[44].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[44].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[44].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[45].uid": {
+      "valueClass": "id"
+    },
+    "body[45].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[45].player": {
+      "valueClass": "name"
+    },
+    "body[45].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[45].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[45].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[45].in_use": {
+      "valueClass": "enum"
+    },
+    "body[45].id": {
+      "valueClass": "id"
+    },
+    "body[45].name": {
+      "valueClass": "name"
+    },
+    "body[45].type": {
+      "valueClass": "enum"
+    },
+    "body[45].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[45].data": {
+      "valueClass": "opaque"
+    },
+    "body[45].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[45].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[45].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[45].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[45].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[45].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[45].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[46].uid": {
+      "valueClass": "id"
+    },
+    "body[46].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[46].player": {
+      "valueClass": "name"
+    },
+    "body[46].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[46].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[46].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[46].in_use": {
+      "valueClass": "enum"
+    },
+    "body[46].id": {
+      "valueClass": "id"
+    },
+    "body[46].name": {
+      "valueClass": "name"
+    },
+    "body[46].type": {
+      "valueClass": "enum"
+    },
+    "body[46].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[46].data": {
+      "valueClass": "opaque"
+    },
+    "body[46].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[46].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[46].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[46].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[46].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[46].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[46].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[47].uid": {
+      "valueClass": "id"
+    },
+    "body[47].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[47].player": {
+      "valueClass": "name"
+    },
+    "body[47].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[47].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[47].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[47].in_use": {
+      "valueClass": "enum"
+    },
+    "body[47].id": {
+      "valueClass": "id"
+    },
+    "body[47].name": {
+      "valueClass": "name"
+    },
+    "body[47].type": {
+      "valueClass": "enum"
+    },
+    "body[47].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[47].data": {
+      "valueClass": "opaque"
+    },
+    "body[47].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[47].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[47].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[47].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[47].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[47].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[47].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[48].uid": {
+      "valueClass": "id"
+    },
+    "body[48].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[48].player": {
+      "valueClass": "name"
+    },
+    "body[48].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[48].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[48].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[48].in_use": {
+      "valueClass": "enum"
+    },
+    "body[48].id": {
+      "valueClass": "id"
+    },
+    "body[48].name": {
+      "valueClass": "name"
+    },
+    "body[48].type": {
+      "valueClass": "enum"
+    },
+    "body[48].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[48].data": {
+      "valueClass": "opaque"
+    },
+    "body[48].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[48].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[48].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[48].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[48].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[48].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[48].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[49].uid": {
+      "valueClass": "id"
+    },
+    "body[49].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[49].player": {
+      "valueClass": "name"
+    },
+    "body[49].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[49].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[49].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[49].in_use": {
+      "valueClass": "enum"
+    },
+    "body[49].id": {
+      "valueClass": "id"
+    },
+    "body[49].name": {
+      "valueClass": "name"
+    },
+    "body[49].type": {
+      "valueClass": "enum"
+    },
+    "body[49].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[49].data": {
+      "valueClass": "opaque"
+    },
+    "body[49].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[49].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[49].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[49].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[49].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[49].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[49].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[50].uid": {
+      "valueClass": "id"
+    },
+    "body[50].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[50].player": {
+      "valueClass": "name"
+    },
+    "body[50].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[50].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[50].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[50].in_use": {
+      "valueClass": "enum"
+    },
+    "body[50].id": {
+      "valueClass": "id"
+    },
+    "body[50].name": {
+      "valueClass": "name"
+    },
+    "body[50].type": {
+      "valueClass": "enum"
+    },
+    "body[50].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[50].data": {
+      "valueClass": "opaque"
+    },
+    "body[50].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[50].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[50].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[50].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[50].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[50].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[50].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[51].uid": {
+      "valueClass": "id"
+    },
+    "body[51].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[51].player": {
+      "valueClass": "name"
+    },
+    "body[51].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[51].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[51].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[51].in_use": {
+      "valueClass": "enum"
+    },
+    "body[51].id": {
+      "valueClass": "id"
+    },
+    "body[51].name": {
+      "valueClass": "name"
+    },
+    "body[51].type": {
+      "valueClass": "enum"
+    },
+    "body[51].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[51].data": {
+      "valueClass": "opaque"
+    },
+    "body[51].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[51].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[51].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[51].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[51].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[51].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[51].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[52].uid": {
+      "valueClass": "id"
+    },
+    "body[52].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[52].player": {
+      "valueClass": "name"
+    },
+    "body[52].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[52].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[52].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[52].in_use": {
+      "valueClass": "enum"
+    },
+    "body[52].id": {
+      "valueClass": "id"
+    },
+    "body[52].name": {
+      "valueClass": "name"
+    },
+    "body[52].type": {
+      "valueClass": "enum"
+    },
+    "body[52].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[52].data": {
+      "valueClass": "opaque"
+    },
+    "body[52].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[52].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[52].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[52].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[52].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[52].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[52].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[53].uid": {
+      "valueClass": "id"
+    },
+    "body[53].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[53].player": {
+      "valueClass": "name"
+    },
+    "body[53].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[53].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[53].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[53].in_use": {
+      "valueClass": "enum"
+    },
+    "body[53].id": {
+      "valueClass": "id"
+    },
+    "body[53].name": {
+      "valueClass": "name"
+    },
+    "body[53].type": {
+      "valueClass": "enum"
+    },
+    "body[53].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[53].data": {
+      "valueClass": "opaque"
+    },
+    "body[53].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[53].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[53].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[53].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[53].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[53].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[53].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[54].uid": {
+      "valueClass": "id"
+    },
+    "body[54].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[54].player": {
+      "valueClass": "name"
+    },
+    "body[54].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[54].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[54].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[54].in_use": {
+      "valueClass": "enum"
+    },
+    "body[54].id": {
+      "valueClass": "id"
+    },
+    "body[54].name": {
+      "valueClass": "name"
+    },
+    "body[54].type": {
+      "valueClass": "enum"
+    },
+    "body[54].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[54].data": {
+      "valueClass": "opaque"
+    },
+    "body[54].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[54].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[54].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[54].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[54].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[54].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[54].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[55].uid": {
+      "valueClass": "id"
+    },
+    "body[55].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[55].player": {
+      "valueClass": "name"
+    },
+    "body[55].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[55].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[55].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[55].in_use": {
+      "valueClass": "enum"
+    },
+    "body[55].id": {
+      "valueClass": "id"
+    },
+    "body[55].name": {
+      "valueClass": "name"
+    },
+    "body[55].type": {
+      "valueClass": "enum"
+    },
+    "body[55].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[55].data": {
+      "valueClass": "opaque"
+    },
+    "body[55].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[55].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[55].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[55].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[55].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[55].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[55].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[56].uid": {
+      "valueClass": "id"
+    },
+    "body[56].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[56].player": {
+      "valueClass": "name"
+    },
+    "body[56].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[56].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[56].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[56].in_use": {
+      "valueClass": "enum"
+    },
+    "body[56].id": {
+      "valueClass": "id"
+    },
+    "body[56].name": {
+      "valueClass": "name"
+    },
+    "body[56].type": {
+      "valueClass": "enum"
+    },
+    "body[56].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[56].data": {
+      "valueClass": "opaque"
+    },
+    "body[56].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[56].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[56].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[56].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[56].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[56].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[56].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[57].uid": {
+      "valueClass": "id"
+    },
+    "body[57].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[57].player": {
+      "valueClass": "name"
+    },
+    "body[57].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[57].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[57].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[57].in_use": {
+      "valueClass": "enum"
+    },
+    "body[57].id": {
+      "valueClass": "id"
+    },
+    "body[57].name": {
+      "valueClass": "name"
+    },
+    "body[57].type": {
+      "valueClass": "enum"
+    },
+    "body[57].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[57].data": {
+      "valueClass": "opaque"
+    },
+    "body[57].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[57].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[57].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[57].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[57].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[57].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[57].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[58].uid": {
+      "valueClass": "id"
+    },
+    "body[58].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[58].player": {
+      "valueClass": "name"
+    },
+    "body[58].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[58].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[58].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[58].in_use": {
+      "valueClass": "enum"
+    },
+    "body[58].id": {
+      "valueClass": "id"
+    },
+    "body[58].name": {
+      "valueClass": "name"
+    },
+    "body[58].type": {
+      "valueClass": "enum"
+    },
+    "body[58].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[58].data": {
+      "valueClass": "opaque"
+    },
+    "body[58].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[58].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[58].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[58].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[58].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[58].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[58].quantity": {
+      "valueClass": "numeric"
+    },
+    "body[59].uid": {
+      "valueClass": "id"
+    },
+    "body[59].item_detail_id": {
+      "valueClass": "id"
+    },
+    "body[59].player": {
+      "valueClass": "name"
+    },
+    "body[59].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[59].created_tx": {
+      "valueClass": "opaque"
+    },
+    "body[59].created_block_num": {
+      "valueClass": "numeric"
+    },
+    "body[59].in_use": {
+      "valueClass": "enum"
+    },
+    "body[59].id": {
+      "valueClass": "id"
+    },
+    "body[59].name": {
+      "valueClass": "name"
+    },
+    "body[59].type": {
+      "valueClass": "enum"
+    },
+    "body[59].sub_type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "Conflicts",
+        "Currency",
+        "Gift Box",
+        "Land",
+        "License",
+        "Pack",
+        "Potion",
+        "Totem",
+        "Unbinding",
+        "Voucher"
+      ]
+    },
+    "body[59].data": {
+      "valueClass": "opaque"
+    },
+    "body[59].transferable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[59].consumable": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[59].print_limit": {
+      "valueClass": "numeric"
+    },
+    "body[59].total_printed": {
+      "valueClass": "numeric"
+    },
+    "body[59].image_filename": {
+      "valueClass": "opaque"
+    },
+    "body[59].rarity": {
+      "valueClass": "opaque"
+    },
+    "body[59].quantity": {
+      "valueClass": "numeric"
     }
   },
   "body": [
     {
-      "uid": "I-318-UIKMQZRRE8",
+      "uid": "I-318-W862DWTLB4",
       "item_detail_id": 318,
-      "name": "Common Totem",
-      "player": "sample-account-b",
+      "player": "sample-account-1",
+      "created_date": "2024-01-03T13:47:33.000Z",
+      "created_tx": "[redacted]",
+      "created_block_num": 81594351,
+      "in_use": false,
+      "lock_days": 3,
+      "unlock_date": null,
+      "unlock_tx": null,
+      "listed": false,
+      "stake_start_date": "2024-01-03T13:48:00.000Z",
+      "stake_end_date": null,
+      "boost": "0.100",
+      "stake_plot": 98013,
+      "stake_region": 81,
+      "id": 318,
+      "name": "sample-account-2",
       "type": "Land",
       "sub_type": "Totem",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": false,
+      "print_limit": null,
+      "total_printed": 21727,
+      "image_filename": "[redacted]",
+      "rarity": null,
       "quantity": 1,
-      "in_use": false
+      "is_soulbound": false,
+      "can_transfer": true
+    },
+    {
+      "uid": "I-318-APATJ4F1A8",
+      "item_detail_id": 318,
+      "player": "sample-account-1",
+      "created_date": "2023-11-28T21:08:18.000Z",
+      "created_tx": "[redacted]",
+      "created_block_num": 80567193,
+      "in_use": false,
+      "lock_days": 3,
+      "unlock_date": null,
+      "unlock_tx": null,
+      "listed": false,
+      "stake_start_date": "2023-11-28T22:56:36.000Z",
+      "stake_end_date": null,
+      "boost": "0.100",
+      "stake_plot": 98030,
+      "stake_region": 81,
+      "id": 318,
+      "name": "sample-account-2",
+      "type": "Land",
+      "sub_type": "Totem",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": false,
+      "print_limit": null,
+      "total_printed": 21727,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 1,
+      "is_soulbound": false,
+      "can_transfer": true
+    },
+    {
+      "uid": "I-318-GKBB8N4ZU8",
+      "item_detail_id": 318,
+      "player": "sample-account-1",
+      "created_date": "2023-11-29T00:21:00.000Z",
+      "created_tx": "[redacted]",
+      "created_block_num": 80571043,
+      "in_use": false,
+      "lock_days": 3,
+      "unlock_date": null,
+      "unlock_tx": null,
+      "listed": false,
+      "stake_start_date": "2023-11-29T16:56:42.000Z",
+      "stake_end_date": null,
+      "boost": "0.100",
+      "stake_plot": 98009,
+      "stake_region": 81,
+      "id": 318,
+      "name": "sample-account-2",
+      "type": "Land",
+      "sub_type": "Totem",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": false,
+      "print_limit": null,
+      "total_printed": 21727,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 1,
+      "is_soulbound": false,
+      "can_transfer": true
+    },
+    {
+      "uid": "I-318-PR0ELH9OM8",
+      "item_detail_id": 318,
+      "player": "sample-account-1",
+      "created_date": "2023-11-30T04:27:33.000Z",
+      "created_tx": "[redacted]",
+      "created_block_num": 80604739,
+      "in_use": false,
+      "lock_days": 3,
+      "unlock_date": null,
+      "unlock_tx": null,
+      "listed": false,
+      "stake_start_date": "2023-11-30T04:28:36.000Z",
+      "stake_end_date": null,
+      "boost": "0.100",
+      "stake_plot": 68092,
+      "stake_region": 81,
+      "id": 318,
+      "name": "sample-account-2",
+      "type": "Land",
+      "sub_type": "Totem",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": false,
+      "print_limit": null,
+      "total_printed": 21727,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 1,
+      "is_soulbound": false,
+      "can_transfer": true
     },
     {
       "uid": "DEC",
       "item_detail_id": 3,
-      "name": "Dark Energy Crystals",
-      "player": "sample-account-b",
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 3,
+      "name": "sample-account-3",
       "type": "Token",
       "sub_type": "Currency",
-      "quantity": 0,
-      "in_use": false
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "ALPHA",
+      "item_detail_id": 5,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 5,
+      "name": "sample-account-4",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 300000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "BETA",
+      "item_detail_id": 6,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 6,
+      "name": "sample-account-5",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 900000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "UNTAMED",
+      "item_detail_id": 7,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 7,
+      "name": "sample-account-6",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 1500000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "ORB",
+      "item_detail_id": 8,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 8,
+      "name": "sample-account-7",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 200000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "DICE",
+      "item_detail_id": 9,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 9,
+      "name": "sample-account-8",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 300000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "PLOT",
+      "item_detail_id": 14,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 14,
+      "name": "sample-account-9",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TRACT",
+      "item_detail_id": 15,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 15,
+      "name": "sample-account-10",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "REGION",
+      "item_detail_id": 16,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 16,
+      "name": "sample-account-11",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TOTEML",
+      "item_detail_id": 20,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 20,
+      "name": "sample-account-12",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TOTEME",
+      "item_detail_id": 21,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 21,
+      "name": "sample-account-13",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TOTEMR",
+      "item_detail_id": 22,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 22,
+      "name": "sample-account-14",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TOTEMC",
+      "item_detail_id": 23,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 23,
+      "name": "sample-account-15",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "CHAOS",
+      "item_detail_id": 57,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 57,
+      "name": "sample-account-16",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 15000000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "VOUCHER",
+      "item_detail_id": 58,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 58,
+      "name": "sample-account-17",
+      "type": "Token",
+      "sub_type": "Voucher",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "NIGHTMARE",
+      "item_detail_id": 101,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 101,
+      "name": "sample-account-18",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 2000000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "LICENSE",
+      "item_detail_id": 123,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 123,
+      "name": "sample-account-19",
+      "type": "Token",
+      "sub_type": "License",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": false,
+      "print_limit": 60000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "RIFT",
+      "item_detail_id": 156,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 156,
+      "name": "sample-account-20",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 3000000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TC",
+      "item_detail_id": 307,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 307,
+      "name": "sample-account-21",
+      "type": "Token",
+      "sub_type": "Currency",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GRAIN",
+      "item_detail_id": 308,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 308,
+      "name": "sample-account-22",
+      "type": "Token",
+      "sub_type": "Currency",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "REBELLION",
+      "item_detail_id": 313,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 313,
+      "name": "sample-account-23",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 10000000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TOTEMFC",
+      "item_detail_id": 314,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 314,
+      "name": "sample-account-24",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TOTEMFR",
+      "item_detail_id": 315,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 315,
+      "name": "sample-account-25",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TOTEMFE",
+      "item_detail_id": 316,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 316,
+      "name": "sample-account-26",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "TOTEMFL",
+      "item_detail_id": 317,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 317,
+      "name": "sample-account-27",
+      "type": "Token",
+      "sub_type": "Land",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "SPS",
+      "item_detail_id": 338,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 338,
+      "name": "sample-account-28",
+      "type": "Token",
+      "sub_type": "Currency",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 300000000,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "ARCANA",
+      "item_detail_id": 339,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 339,
+      "name": "sample-account-29",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 5000000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "ARCANAL",
+      "item_detail_id": 340,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 340,
+      "name": "sample-account-30",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 500000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "ARCANAA",
+      "item_detail_id": 341,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 341,
+      "name": "sample-account-31",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 100000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "ARCANAS",
+      "item_detail_id": 342,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 342,
+      "name": "sample-account-32",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "MIDNIGHTPOT",
+      "item_detail_id": 344,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 344,
+      "name": "sample-account-33",
+      "type": "Token",
+      "sub_type": "Potion",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "FT",
+      "item_detail_id": 348,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 348,
+      "name": "sample-account-34",
+      "type": "Token",
+      "sub_type": "Voucher",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "AM",
+      "item_detail_id": 349,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 349,
+      "name": "sample-account-35",
+      "type": "Token",
+      "sub_type": "Voucher",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "WAGONKIT",
+      "item_detail_id": 350,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 350,
+      "name": "sample-account-36",
+      "type": "Token",
+      "sub_type": "Conflicts",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "FOUNDATIONS",
+      "item_detail_id": 351,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 351,
+      "name": "sample-account-37",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "UNBIND_CA_C",
+      "item_detail_id": 426,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 426,
+      "name": "sample-account-38",
+      "type": "Token",
+      "sub_type": "Unbinding",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "UNBIND_CA_R",
+      "item_detail_id": 427,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 427,
+      "name": "sample-account-39",
+      "type": "Token",
+      "sub_type": "Unbinding",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "UNBIND_CA_E",
+      "item_detail_id": 428,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 428,
+      "name": "sample-account-40",
+      "type": "Token",
+      "sub_type": "Unbinding",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "UNBIND_CA_L",
+      "item_detail_id": 429,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 429,
+      "name": "sample-account-41",
+      "type": "Token",
+      "sub_type": "Unbinding",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "PROMO_TOKEN_26",
+      "item_detail_id": 435,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 435,
+      "name": "sample-account-42",
+      "type": "Token",
+      "sub_type": "Voucher",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_25_FINE",
+      "item_detail_id": 436,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 436,
+      "name": "sample-account-43",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_25_AMPLE",
+      "item_detail_id": 437,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 437,
+      "name": "sample-account-44",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_25_GENEROUS",
+      "item_detail_id": 438,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 438,
+      "name": "sample-account-45",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_25_LAVISH",
+      "item_detail_id": 439,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 439,
+      "name": "sample-account-46",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_25_MAGNIFICENT",
+      "item_detail_id": 440,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 440,
+      "name": "sample-account-47",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "POLYMORPH",
+      "item_detail_id": 447,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 447,
+      "name": "sample-account-48",
+      "type": "Token",
+      "sub_type": "Potion",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "FLUX",
+      "item_detail_id": 448,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 448,
+      "name": "sample-account-49",
+      "type": "Token",
+      "sub_type": "Potion",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "PASH",
+      "item_detail_id": 523,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 523,
+      "name": "sample-account-50",
+      "type": "Token",
+      "sub_type": "Potion",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "ESCALATION",
+      "item_detail_id": 524,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 524,
+      "name": "sample-account-51",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 550000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "LUSTROUS",
+      "item_detail_id": 535,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 535,
+      "name": "sample-account-52",
+      "type": "Token",
+      "sub_type": "Potion",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_26_FINE",
+      "item_detail_id": 544,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 544,
+      "name": "sample-account-53",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_26_AMPLE",
+      "item_detail_id": 545,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 545,
+      "name": "sample-account-54",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_26_GENEROUS",
+      "item_detail_id": 546,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 546,
+      "name": "sample-account-55",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_26_LAVISH",
+      "item_detail_id": 547,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 547,
+      "name": "sample-account-56",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "GB_26_MAGNIFICENT",
+      "item_detail_id": 548,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 548,
+      "name": "sample-account-57",
+      "type": "Token",
+      "sub_type": "Gift Box",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": null,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
+    },
+    {
+      "uid": "VERICO",
+      "item_detail_id": 551,
+      "player": "sample-account-1",
+      "created_date": null,
+      "created_tx": null,
+      "created_block_num": null,
+      "in_use": false,
+      "id": 551,
+      "name": "sample-account-58",
+      "type": "Token",
+      "sub_type": "Pack",
+      "data": "[redacted]",
+      "transferable": true,
+      "consumable": true,
+      "print_limit": 250000,
+      "total_printed": 0,
+      "image_filename": "[redacted]",
+      "rarity": null,
+      "quantity": 0
     }
   ]
 }

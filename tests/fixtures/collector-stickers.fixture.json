@@ -7,7 +7,7 @@
   },
   "valueClasses": {
     "body.status": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data[0].stickerUid": {
       "valueClass": "id"

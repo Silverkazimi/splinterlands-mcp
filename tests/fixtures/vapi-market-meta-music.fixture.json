@@ -7,7 +7,7 @@
   },
   "valueClasses": {
     "body.status": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.assetName": {
       "valueClass": "opaque"
@@ -100,10 +100,10 @@
         },
         {
           "id": "423",
-          "name": "Splintervibes: Yaba\u2019s Pickle",
+          "name": "Splintervibes: Yaba’s Pickle",
           "circulation": 100,
           "rarity": null,
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/Yaba\u2019s Pickle.png",
+          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/Yaba’s Pickle.png",
           "icon": null,
           "filterIcon": null
         },

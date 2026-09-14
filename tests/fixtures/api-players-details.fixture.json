@@ -1,7 +1,15 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T20:56:00Z"
+    "observedAt": "2026-09-08T20:56:00Z",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "schemaReview": " Added explicitly synthetic examples of reviewed September 14 fields: max_level, contributions_gp. Previous values retained.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "b9fd7a9f91948ba48166c469f90d6baaa6a6fc584a5f4c75675960d07071e14d",
+        "alternateShape": "7dfbb85e48955cd08851a0c3e9929c4bdd9ec14ab71369fa6a332bd4fc4a254b"
+      }
+    ]
   },
   "valueClasses": {
     "body.name": {
@@ -56,7 +64,11 @@
       "valueClass": "enum"
     },
     "body.guild.language": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "English",
+        "German"
+      ]
     },
     "body.guild.motto": {
       "valueClass": "freetext"
@@ -65,10 +77,18 @@
       "valueClass": "freetext"
     },
     "body.guild.data.crest.banner": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "blue",
+        "yellow"
+      ]
     },
     "body.guild.data.crest.decal": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "shield",
+        "tree"
+      ]
     },
     "body.guild.level": {
       "valueClass": "numeric"
@@ -242,7 +262,11 @@
       "valueClass": "numeric"
     },
     "body.league": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        15,
+        8
+      ]
     },
     "body.adv_msg_sent": {
       "valueClass": "enum"
@@ -272,7 +296,11 @@
       "valueClass": "numeric"
     },
     "body.modern_league": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        11,
+        5
+      ]
     },
     "body.modern_adv_msg_sent": {
       "valueClass": "enum"
@@ -299,7 +327,11 @@
       "valueClass": "numeric"
     },
     "body.survival_league": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        15,
+        2
+      ]
     },
     "body.survival_adv_msg_sent": {
       "valueClass": "enum"
@@ -354,10 +386,16 @@
     },
     "body.season_details": {
       "valueClass": "opaque"
+    },
+    "body.guild.buildings.guild_hall.max_level": {
+      "valueClass": "numeric"
+    },
+    "body.guild.buildings.guild_hall.contributions_gp": {
+      "valueClass": "numeric"
     }
   },
   "body": {
-    "name": "vugtis",
+    "name": "sample-acct-100",
     "join_date": "2021-07-02T14:09:44.595Z",
     "rating": 6020,
     "battles": 90363,
@@ -372,7 +410,7 @@
     "guild": {
       "id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
       "name": " [KoG] Shield of Glory",
-      "owner": "zagorlord",
+      "owner": "sample-acct-103",
       "created_date": "2019-07-30T08:11:00.000Z",
       "membership_type": "request",
       "language": "English",
@@ -417,7 +455,9 @@
         },
         "guild_hall": {
           "level": 10,
-          "contributions": 2710000
+          "contributions": 2710000,
+          "max_level": 0,
+          "contributions_gp": 0
         },
         "guild_shop": {
           "level": 8,

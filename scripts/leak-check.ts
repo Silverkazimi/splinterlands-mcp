@@ -272,6 +272,31 @@ const playerParameterMarkers = new Set(["isPlayerName"]);
 const defaultPropertyNames = new Set(["default", "defaultValue"]);
 const suppliedValuePropertyNames = new Set(["value", "example", "literal"]);
 const valueClasses = new Set(["name", "enum", "id", "numeric", "timestamp", "freetext", "opaque"]);
+
+const syntheticAccount = (value: string) =>
+  /^(?:sample(?:[-_][a-z0-9]+)*|fixture(?:[-_][a-z0-9]+)*|synthetic(?:[-_][a-z0-9]+)*|__synthetic_[a-z0-9_]+__)$/.test(value);
+const accountFields = new Set(["player", "player_1", "player_2", "owner", "seller", "buyer", "purchaser",
+  "username", "renter", "delegator", "delegatee", "winner", "loser", "created_by", "sponsor", "opponent_player", "voter", "market_account", "last_used_player"]);
+const accountSentinel = (key: string, value: string) =>
+  value === "" || (key === "winner" && ["draw", "tie", "none", "null"].includes(value.toLowerCase()));
+
+const accountContainers = new Set(["authorities", "event_creation_whitelist", "ghost_creation_whitelist",
+  "no_entryfee_list", "proposal_accounts"]);
+
+function embeddedAccount(value: unknown, key = "", depth = 0, accountContext = false): boolean {
+  if (depth > 64) return true;
+  const accountValue = accountContext || accountContainers.has(key);
+  if (Array.isArray(value)) return value.some(item => embeddedAccount(item, key, depth + 1, accountValue));
+  if (isRecord(value)) return Object.entries(value).some(([field, item]) => embeddedAccount(item, field, depth + 1, accountValue));
+  if (typeof value !== "string") return false;
+  if ((accountValue || accountFields.has(key)) && !accountSentinel(key, value) && !syntheticAccount(value)) return true;
+  const suffix = /^[CG][A-Z0-9]*-[0-9]+-[A-Za-z0-9]+-(.+)$/.exec(value)?.[1];
+  if (suffix && !syntheticAccount(suffix)) return true;
+  if (!value.startsWith("{") && !value.startsWith("[")) return false;
+  try { return embeddedAccount(JSON.parse(value), "", depth + 1); }
+  catch { return false; }
+}
+
 const sourceCodeExtensions = new Set([".cjs", ".cts", ".js", ".jsx", ".mjs", ".mts", ".ts", ".tsx"]);
 const fixtureJsonPath = /^tests\/fixtures\/.+\.json$/;
 const publicGameRegionPattern = /\bPraetoria\b/gi;
@@ -576,6 +601,10 @@ function checkFixtures(files: string[], root: string, report: Reporter): number 
     }
 
     const data = Object.fromEntries(Object.entries(fixture).filter(([key]) => key !== "provenance" && key !== "valueClasses"));
+    if (embeddedAccount(data)) {
+      report(sourcePath + ": [fixture-account] account reference requires a synthetic placeholder");
+      hits += 1;
+    }
     const leaves = new Map<string, unknown>();
     fixtureLeaves(data, "", leaves);
     for (const path of leaves.keys()) {
@@ -589,10 +618,12 @@ function checkFixtures(files: string[], root: string, report: Reporter): number 
         report(`${sourcePath}: [fixture-value-class] key path '${path}' has unknown valueClass '${valueClass}'`);
         hits += 1;
       }
-      // A name-classed fixture field is NOT required to be a synthetic placeholder. That check was
-      // removed on 2026-09-07 by the project owner's ruling: names may appear in tests and fixtures,
-      // because an API keyed on people cannot be exercised without them and the values are public.
-      // What remains forbidden is a name in CODE, which checkSourceStructure covers. See CONTRIBUTING.md.
+      const value = leaves.get(path);
+      if (valueClass === "name" && typeof value === "string" && value.length > 0 && !syntheticAccount(value)) {
+        report(`${sourcePath}: [fixture-account] name-classed field requires a synthetic placeholder`);
+        hits += 1;
+      }
+
     }
   }
   return hits;

@@ -3,7 +3,15 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T07:48:32.893248+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/card_airdrop",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "additionalSchemaReview": "Synthetic zero counters for reviewed card-ID map entries and synthetic probability/boolean examples added from September 14 capture. Unreviewed map keys still require review.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "1a2137eef6efedcc8804db25700f303b3fbbde7b9df369a4cfee7e7a2ca86cdd",
+        "alternateShape": "cf35ddbb1dcc3302cda5cf131fa22e8a2c2e7c13a64763cf0e453799a08562dd"
+      }
+    ]
   },
   "valueClasses": {
     "body[0].player": {
@@ -113,18 +121,212 @@
     },
     "body[2].result.by_card.352.num_gold": {
       "valueClass": "numeric"
+    },
+    "body[0].result.by_card.224.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.224.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.235.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.235.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.236.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.236.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.239.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.239.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.254.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.254.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.278.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.278.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.279.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.279.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.292.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.292.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.293.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.293.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.294.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.294.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.295.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.295.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.443.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.443.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.444.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.444.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.447.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.447.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.446.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.446.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.445.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.445.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.448.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.448.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.450.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.450.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.463.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.463.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.464.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.464.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.507.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.507.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.509.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.509.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.553.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.553.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.554.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.554.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.558.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.558.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.559.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.559.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.633.num_regular": {
+      "valueClass": "numeric"
+    },
+    "body[0].result.by_card.633.num_gold": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].gold_chance": {
+      "valueClass": "numeric"
+    },
+    "body[0].cards[0].fixed_chance": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[1].cards[0].gold_chance": {
+      "valueClass": "numeric"
+    },
+    "body[1].cards[0].fixed_chance": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[2].cards[0].gold_chance": {
+      "valueClass": "numeric"
+    },
+    "body[2].cards[0].fixed_chance": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
     }
   },
   "body": [
     {
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "name": "4th Dice Airdrop",
       "chances": 110,
       "cards": [
         {
           "id": 297,
           "chance": 0.00444,
-          "edition": 5
+          "edition": 5,
+          "gold_chance": 0,
+          "fixed_chance": false
         }
       ],
       "claim_date": "2021-07-18T21:23:18.000Z",
@@ -132,18 +334,129 @@
       "result": {
         "num_regular": 0,
         "num_gold": 0,
-        "by_card": {}
+        "by_card": {
+          "224": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "235": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "236": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "239": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "254": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "278": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "279": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "292": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "293": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "294": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "295": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "443": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "444": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "445": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "446": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "447": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "448": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "450": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "463": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "464": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "507": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "509": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "553": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "554": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "558": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "559": {
+            "num_regular": 0,
+            "num_gold": 0
+          },
+          "633": {
+            "num_regular": 0,
+            "num_gold": 0
+          }
+        }
       }
     },
     {
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "name": "5th Dice Airdrop",
       "chances": 264,
       "cards": [
         {
           "id": 298,
           "chance": 0.004,
-          "edition": 5
+          "edition": 5,
+          "gold_chance": 0,
+          "fixed_chance": false
         }
       ],
       "claim_date": "2021-08-05T15:17:09.000Z",
@@ -160,7 +473,7 @@
       }
     },
     {
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "name": "1st Chaos Legion Airdrop",
       "chances": 4002,
       "cards": [
@@ -169,7 +482,9 @@
           "chance": 0.02,
           "edition": 7,
           "gold_guarantee": 1000,
-          "claim_date": "2021-12-08T05:00:00Z"
+          "claim_date": "2021-12-08T05:00:00Z",
+          "gold_chance": 0,
+          "fixed_chance": false
         }
       ],
       "claim_date": "2021-12-08T05:55:42.000Z",

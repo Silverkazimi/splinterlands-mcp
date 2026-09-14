@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T07:48:05.098346+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/reward_delegations",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body[0].player": {
@@ -72,8 +73,8 @@
   },
   "body": [
     {
-      "player": "vugtis",
-      "delegate_to_player": "shbank",
+      "player": "sample-acct-100",
+      "delegate_to_player": "sample-acct-088",
       "type": "survival_bracket",
       "token": "SPS",
       "percent": "15.00",
@@ -81,8 +82,8 @@
       "delegation_date": "2026-02-16T04:39:15.000Z"
     },
     {
-      "player": "vugtis",
-      "delegate_to_player": "shbank",
+      "player": "sample-acct-100",
+      "delegate_to_player": "sample-acct-088",
       "type": "wild",
       "token": "SPS",
       "percent": "15.00",
@@ -90,8 +91,8 @@
       "delegation_date": "2026-02-16T04:39:12.000Z"
     },
     {
-      "player": "vugtis",
-      "delegate_to_player": "splinterbank",
+      "player": "sample-acct-100",
+      "delegate_to_player": "sample-acct-089",
       "type": "survival",
       "token": "SPS",
       "percent": "15.00",

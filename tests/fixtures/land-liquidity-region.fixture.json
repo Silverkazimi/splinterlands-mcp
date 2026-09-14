@@ -2,7 +2,7 @@
   "provenance": {
     "source": "live-observation",
     "observedAt": "2026-09-08T00:00:00Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained. Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "status": {
@@ -43,7 +43,7 @@
   "data": [
     {
       "player": "sample-account-a",
-      "name": "065 - Mandar Camden",
+      "name": "sample-acct-007",
       "uid": "PR-CEF-65",
       "plots_owned": 102,
       "grain": 20722901.171,

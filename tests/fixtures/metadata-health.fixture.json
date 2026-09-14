@@ -7,7 +7,7 @@
   },
   "valueClasses": {
     "body.status": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.app": {
       "valueClass": "opaque"

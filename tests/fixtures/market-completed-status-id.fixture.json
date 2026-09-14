@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:33:57.822253+00:00",
     "sourceUrl": "https://api2.splinterlands.com/market/completed_status",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "captureScope": "First three root rows; nested records retained unchanged.",
+    "redaction": "Name-classified fields use synthetic account placeholders. Account references in reviewed fields and encoded records use consistent synthetic placeholders."
   },
   "valueClasses": {
     "body.id": {
@@ -13,7 +14,7 @@
       "valueClass": "id"
     },
     "body.seller": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.created_date": {
       "valueClass": "timestamp"
@@ -43,7 +44,7 @@
       "valueClass": "numeric"
     },
     "body.purchaser": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body.completed_date": {
       "valueClass": "timestamp"
@@ -130,7 +131,7 @@
   "body": {
     "id": 190223839,
     "sell_trx_id": "a309d0e018189bb84b319a3a2423bd5321797c17-0",
-    "seller": "vugtis",
+    "seller": "sample-acct-100",
     "created_date": "2026-09-06T09:59:54.000Z",
     "type": "SELL",
     "num_cards": 1,
@@ -140,7 +141,7 @@
     "fee_percent": 600,
     "expiration_date": "2026-10-06T09:59:54.000Z",
     "status": 1,
-    "purchaser": "stromschlag",
+    "purchaser": "sample-acct-093",
     "completed_date": "2026-09-07T17:06:54.000Z",
     "payment": "5464.735 DEC",
     "transaction_id": "4f73ac91fe4336b7b6aaf3cdd17c3a868151cff2",
@@ -165,7 +166,7 @@
       {
         "uid": "C19-866-HMPZYWRINK",
         "card_detail_id": 866,
-        "player": "tcgorgeous",
+        "player": "sample-acct-095",
         "xp": 1,
         "gold": false,
         "foil": 0,

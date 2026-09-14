@@ -3,7 +3,8 @@
     "source": "live-observation",
     "observedAt": "2026-09-13T11:08:59.651134+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/offers/player/{player}",
-    "captureScope": "Complete bounded public response; account selected from anonymous market results."
+    "captureScope": "Complete bounded public response; account selected from anonymous market results.",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body.status": {
@@ -149,7 +150,7 @@
         "txId": "a436617ecb22e0026dc67e03a31213a6363051b7",
         "createdDate": "2026-09-11T19:15:30.000Z",
         "lastUpdatedDate": "2026-09-11T19:15:30.000Z",
-        "player": "vugtis",
+        "player": "sample-acct-100",
         "token": "SPSP",
         "qtyTotal": "3000.000",
         "qtyAvailable": "3000.000",
@@ -162,7 +163,7 @@
         "txId": "f9db4996cafdf9a6f1a5a3cdc55bba835e5bacb3",
         "createdDate": "2026-09-11T19:15:27.000Z",
         "lastUpdatedDate": "2026-09-11T19:15:27.000Z",
-        "player": "vugtis",
+        "player": "sample-acct-100",
         "token": "SPSP",
         "qtyTotal": "2000.000",
         "qtyAvailable": "2000.000",
@@ -175,7 +176,7 @@
         "txId": "a7ecb6d639d27c5d7039379ddd9d1e604db347f4",
         "createdDate": "2026-09-11T19:15:15.000Z",
         "lastUpdatedDate": "2026-09-11T19:15:15.000Z",
-        "player": "vugtis",
+        "player": "sample-acct-100",
         "token": "SPSP",
         "qtyTotal": "500.000",
         "qtyAvailable": "500.000",
@@ -188,7 +189,7 @@
         "txId": "1412ddfc9c92bbfd3d4905e08e16d5e2c30c9794",
         "createdDate": "2026-09-11T19:15:12.000Z",
         "lastUpdatedDate": "2026-09-11T19:15:12.000Z",
-        "player": "vugtis",
+        "player": "sample-acct-100",
         "token": "SPSP",
         "qtyTotal": "500.000",
         "qtyAvailable": "500.000",

@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T20:56:00Z"
+    "observedAt": "2026-09-08T20:56:00Z",
+    "redaction": "Name-classified fields use synthetic account placeholders."
   },
   "valueClasses": {
     "body[0].reward_action": {
@@ -17,7 +18,11 @@
       "valueClass": "enum"
     },
     "body[0].type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
     },
     "body[0].amount": {
       "valueClass": "numeric"
@@ -62,7 +67,11 @@
       "valueClass": "enum"
     },
     "body[1].type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
     },
     "body[1].amount": {
       "valueClass": "numeric"
@@ -107,7 +116,11 @@
       "valueClass": "enum"
     },
     "body[2].type": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
     },
     "body[2].amount": {
       "valueClass": "numeric"
@@ -144,14 +157,14 @@
     {
       "reward_action": "claimed",
       "id": "1495375501",
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "token": "SPS",
       "type": "wild",
       "amount": "-494.683",
       "block_num": 0,
       "trx_id": "d7c8b4d505952a9c46d18e528dde8624c5a36bb3",
       "created_date": "2026-09-08T20:34:28.124Z",
-      "to_player": "shbank",
+      "to_player": "sample-acct-088",
       "status": "completed",
       "last_block_action_date": "2026-09-08T20:34:33.000Z",
       "action": "",
@@ -161,14 +174,14 @@
     {
       "reward_action": "claimed",
       "id": "1495375500",
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "token": "SPS",
       "type": "wild",
       "amount": "-2803.207",
       "block_num": 0,
       "trx_id": "b23db736f3052a2b563a0cd6f85311d7eee8971d",
       "created_date": "2026-09-08T20:34:28.096Z",
-      "to_player": "vugtis",
+      "to_player": "sample-acct-100",
       "status": "completed",
       "last_block_action_date": "2026-09-08T20:34:33.000Z",
       "action": "",
@@ -178,14 +191,14 @@
     {
       "reward_action": "earned",
       "id": "1495367065",
-      "player": "vugtis",
+      "player": "sample-acct-100",
       "token": "SPS",
       "type": "wild",
       "amount": "45.995",
       "block_num": 109742585,
       "trx_id": "sl_c253399af951d72c31dd09101fb10156",
       "created_date": "2026-09-08T19:08:25.765Z",
-      "to_player": "vugtis",
+      "to_player": "sample-acct-100",
       "status": null,
       "last_block_action_date": null,
       "action": "",

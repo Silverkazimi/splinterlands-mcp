@@ -1,7 +1,13 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T00:00:00Z"
+    "observedAt": "2026-09-08T00:00:00Z",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "77b4e7f3e694b2070d03cc81a492a7da05b063c47bccc099625146290b8de9e1",
+        "alternateShape": "c67b6b6e252edeed56b908321db7fc7e5dc65a6e51f8247bfa03df8458667797"
+      }
+    ]
   },
   "valueClasses": {
     "status": {

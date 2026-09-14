@@ -7,7 +7,7 @@
   },
   "valueClasses": {
     "body[0].voter": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[0].proposal_id": {
       "valueClass": "numeric"
@@ -40,7 +40,7 @@
       "valueClass": "opaque"
     },
     "body[1].voter": {
-      "valueClass": "opaque"
+      "valueClass": "name"
     },
     "body[1].proposal_id": {
       "valueClass": "numeric"
@@ -75,7 +75,7 @@
   },
   "body": [
     {
-      "voter": "bravetofu",
+      "voter": "sample-acct-052",
       "proposal_id": 7525,
       "approve": true,
       "votes": "90073390.803",
@@ -88,7 +88,7 @@
       "player_avatar": "{\"race\":\"orc\",\"background\":8,\"color\":\"Gold\",\"level\":110,\"frame\":10,\"gender\":1,\"body\":1,\"face\":5,\"nose\":1,\"ears\":0,\"skin_color\":2,\"hair\":2,\"eyebrows\":6,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":6,\"eyes_color\":2,\"mouth\":7,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":4,\"cloth_color\":1,\"tattoo\":20,\"accessory\":7,\"accessory_color\":4,\"hat\":0,\"hat_color\":0,\"earrings\":5,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"shard_holder\",\"modern_league\",\"year_joined\",\"runi_holder_1918\"],\"avatar_resets\":1,\"player_card_resets\":2}"
     },
     {
-      "voter": "jeffopenscards",
+      "voter": "sample-acct-139",
       "proposal_id": 7525,
       "approve": true,
       "votes": "20698827.941",

@@ -63,7 +63,11 @@ export function planDriftIssues(baseline: DriftBaseline, run: RunRecord): DriftP
     if (entry === undefined) continue;
     const authChanged = observation.statusObserved === 401 && observation.authBaseline === "public";
     const blocked = observation.statusObserved === 403;
-    const deltas = entry.shape !== null && observation.shape !== null && observation.shapeCompared
+    const reviewed = observation.validatedShapeId !== undefined && entry.reviewedShapes?.some(
+      review => review.variantKey === (observation.variantKey ?? "default")
+        && review.shapeIds.includes(observation.validatedShapeId!),
+    );
+    const deltas = !reviewed && entry.shape !== null && observation.shape !== null && observation.shapeCompared
       ? diffShapes(entry.shape, observation.shape)
       : [];
     const issue = endpointIssue(observation, entry, deltas, authChanged ? ["drift:auth"] : blocked ? ["drift:blocked"] : !entry.statusesObserved.includes(observation.statusObserved) ? ["drift:status"] : observation.reason === "non_success" ? ["drift:response"] : []);

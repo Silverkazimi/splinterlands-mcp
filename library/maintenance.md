@@ -88,3 +88,26 @@ The region-count and tract-count empty fixtures use the documented request with 
 A null at an already reviewed object or array path carries no sensitive content and can be sanitized. This does not admit new paths or unknown nested fields; renewal still applies its independent shape comparison and batch hold rules.
 
 Reviewed enums consisting only of booleans accept both true and false. String, numeric and mixed enums still require reviewed values, and opaque values keep their existing restrictions. This prevents a one-sided boolean sample from holding an otherwise valid capture.
+
+
+An enum declaration may include an `allowedValues` list after its additional game values have been reviewed. Each list is limited to 128 strings of at most 128 characters, finite numbers, or boolean values; mixed primitive types are rejected. An empty string is permitted only when explicitly reviewed. Renewal preserves this declaration, rejects configured account identifiers in it, and continues holding values outside the existing sample and reviewed list. These lists are review metadata, not additional captured observations; fixture bodies and capture provenance remain unchanged. Do not populate them automatically from an unreviewed response.
+
+Fixture loading, recapture planning and writing share a 2 MiB UTF-8 limit. Classification metadata counts toward this limit. Oversized expansions remain held for a bounded sampling review; they cannot replace an existing fixture or create a pending file.
+
+
+Reviewed fixture provenance can specify `fixtureSample` for established bounded scenarios. The grouped sale market supports `{"kind":"first","limit":3}`; card and item catalogues support `{"kind":"ids","ids":[10001]}`. Limits are 1-100 rows or unique positive numeric IDs. The complete response is validated first; missing or duplicate requested IDs hold the capture. Sampling metadata survives renewal. This bounds fixture output and does not reduce the HTTP response, authorize new account reads, or establish complete catalogue coverage from the selected rows.
+
+
+### Reviewed alternate response states
+
+A fixture may retain a richer regression example when a reviewed response represents a valid alternate state. The optional provenance.reviewedAlternateShapes array records pairs of baselineShape and alternateShape SHA-256 identifiers produced by fixtureShapeId. Each review applies only to that exact baseline and alternate field/type shape; changing the baseline invalidates it. Renewal retains the existing fixture for a matching alternate instead of replacing its body.
+
+Review the captured response and its runtime contract before adding an entry. Preserve the review rationale and capture evidence privately. New fields, new types, or additional removals remain held unless separately reviewed. This mechanism does not bypass response validation, redaction, account sample coverage checks, response-size limits, or the batch hold threshold. Review identifiers describe shape, not response values or account identity.
+
+### Nightly reviewed response shapes
+
+The generated baseline retains exact shape identifiers for validated fixture responses, separated by catalogue variant. It also includes explicitly reviewed alternate shapes only while their recorded baseline still matches the fixture. Nightly may recognize one of these shapes after the response passes the endpoint's runtime contract. It otherwise compares against the combined baseline and reports the differences.
+
+This does not suppress authentication or HTTP failures, invalid responses, or sample-coverage gaps. Unreviewed field additions, removals and type changes remain reportable. Regenerate the baseline after reviewing fixture changes; do not add shape identifiers solely to silence an alert.
+
+For sampled fixtures, reviewedResponseShapes records an independently reviewed full-response shape, bound to the current fixture shape and invalidated when it changes. Nightly still compares the full upstream response.

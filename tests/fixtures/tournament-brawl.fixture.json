@@ -1,9 +1,9 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:56:11.126751+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/tournaments/find_brawl",
-    "captureScope": "First three root rows or players; other nested fields retain their captured values."
+    "observedAt": "2026-09-14",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
   },
   "valueClasses": {
     "body.id": {
@@ -64,6 +64,9 @@
       "valueClass": "opaque"
     },
     "body.data.guilds[7]": {
+      "valueClass": "opaque"
+    },
+    "body.data.guilds[8]": {
       "valueClass": "opaque"
     },
     "body.data.crown_pot": {
@@ -322,6 +325,1098 @@
       "valueClass": "timestamp"
     },
     "body.players[2].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[3].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].player": {
+      "valueClass": "name"
+    },
+    "body.players[3].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[3].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[3].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[3].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[3].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[3].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[3].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[3].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[3].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[3].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[3].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[3].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[4].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].player": {
+      "valueClass": "name"
+    },
+    "body.players[4].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[4].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[4].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[4].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[4].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[4].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[4].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[4].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[4].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[4].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[4].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[4].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[5].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].player": {
+      "valueClass": "name"
+    },
+    "body.players[5].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[5].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[5].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[5].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[5].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[5].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[5].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[5].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[5].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[5].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[5].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[5].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[6].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].player": {
+      "valueClass": "name"
+    },
+    "body.players[6].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[6].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[6].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[6].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[6].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[6].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[6].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[6].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[6].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[6].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[6].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[6].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[7].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].player": {
+      "valueClass": "name"
+    },
+    "body.players[7].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[7].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[7].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[7].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[7].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[7].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[7].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[7].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[7].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[7].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[7].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[7].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[8].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].player": {
+      "valueClass": "name"
+    },
+    "body.players[8].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[8].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[8].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[8].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[8].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[8].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[8].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[8].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[8].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[8].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[8].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[8].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[9].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].player": {
+      "valueClass": "name"
+    },
+    "body.players[9].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[9].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[9].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[9].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[9].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[9].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[9].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[9].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[9].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[9].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[9].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[9].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[10].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].player": {
+      "valueClass": "name"
+    },
+    "body.players[10].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[10].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[10].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[10].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[10].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[10].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[10].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[10].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[10].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[10].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[10].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[10].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[11].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].player": {
+      "valueClass": "name"
+    },
+    "body.players[11].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[11].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[11].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[11].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[11].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[11].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[11].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[11].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[11].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[11].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[11].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[11].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[12].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].player": {
+      "valueClass": "name"
+    },
+    "body.players[12].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[12].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[12].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[12].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[12].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[12].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[12].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[12].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[12].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[12].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[12].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[12].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[13].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].player": {
+      "valueClass": "name"
+    },
+    "body.players[13].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[13].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[13].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[13].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[13].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[13].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[13].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[13].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[13].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[13].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[13].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[13].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[14].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].player": {
+      "valueClass": "name"
+    },
+    "body.players[14].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[14].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[14].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[14].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[14].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[14].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[14].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[14].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[14].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[14].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[14].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[14].player_data.guild_status": {
+      "valueClass": "opaque"
+    },
+    "body.players[15].total_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].entered_battles": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].player": {
+      "valueClass": "name"
+    },
+    "body.players[15].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[15].wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].auto_wins": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].losses": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].draws": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].meta_pts": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].meta_pts_float": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].defeated": {
+      "valueClass": "opaque"
+    },
+    "body.players[15].fray_index": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].player_data.player": {
+      "valueClass": "name"
+    },
+    "body.players[15].player_data.player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.players[15].player_data.rating": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].player_data.avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].player_data.title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.players[15].player_data.title_post": {
+      "valueClass": "opaque"
+    },
+    "body.players[15].player_data.display_name": {
+      "valueClass": "opaque"
+    },
+    "body.players[15].player_data.league": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].player_data.modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].player_data.collection_power": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].player_data.starter_pack_purchase": {
+      "valueClass": "opaque"
+    },
+    "body.players[15].player_data.guild_id": {
+      "valueClass": "id"
+    },
+    "body.players[15].player_data.guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.players[15].player_data.guild_join_date": {
+      "valueClass": "timestamp"
+    },
+    "body.players[15].player_data.guild_status": {
       "valueClass": "opaque"
     },
     "body.guilds[0].id": {
@@ -755,13 +1850,67 @@
     },
     "body.guilds[7].auto_wins": {
       "valueClass": "numeric"
+    },
+    "body.guilds[8].id": {
+      "valueClass": "opaque"
+    },
+    "body.guilds[8].name": {
+      "valueClass": "name"
+    },
+    "body.guilds[8].data": {
+      "valueClass": "opaque"
+    },
+    "body.guilds[8].total_payout": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].cycle": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].wins": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].losses": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].draws": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].pts": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].top_payout": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].other_payout": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].brawl_level": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].guild_rank": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].total_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].member_merits_payout": {
+      "valueClass": "numeric"
+    },
+    "body.guilds[8].total_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.guilds[8].member_sps_payout": {
+      "valueClass": "opaque"
+    },
+    "body.guilds[8].auto_wins": {
+      "valueClass": "numeric"
     }
   },
   "body": {
-    "id": "GUILD-BC383-BL910-BRAWL1",
-    "format": "swiss",
-    "sub_format": "brawl",
-    "start_date": "2026-09-09T13:16:00.000Z",
+    "id": "[redacted]",
+    "format": "[redacted]",
+    "sub_format": "[redacted]",
+    "start_date": "2026-05-21T16:04:00.000Z",
     "status": 2,
     "data": {
       "duration_blocks": 57600,
@@ -770,278 +1919,715 @@
       "spsp_min": 0,
       "group_size": 10,
       "create_team_seconds": 258,
-      "challenge_level": 4,
+      "challenge_level": 2,
       "guilds": [
-        "cb84ca426dcb7c8ba072c759b39cf459d4cf7669",
-        "9955504d237b7013295692b3207ed35ad71017de",
-        "391cc53158d4b06e7e5d8f0dfba614267905b8cf",
-        "504d6bb3bd478422e3a68e98e6c8eea257636709",
-        "e44cee2650de14f2cf00fa540ab6cdec32882271",
-        "9e90a6ae5ea3f798434028d947dcfc7dcee6a8d3",
-        "8046de93f2168b672dc9aaee388289ceb55dc551",
-        "fed429d93e7f4cfe82c4322750290dffa6a56786"
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]"
       ],
-      "crown_pot": 1261,
-      "sps_pot": 21000
+      "crown_pot": 444,
+      "sps_pot": 3818.182
     },
     "players": [
       {
-        "total_battles": 7,
-        "entered_battles": 7,
-        "player": "nizzyz",
-        "join_date": "2026-09-08T20:28:24.000Z",
-        "wins": 7,
-        "auto_wins": 0,
-        "losses": 0,
+        "total_battles": 6,
+        "entered_battles": 6,
+        "player": "sample-account-1",
+        "join_date": "2026-05-20T17:03:30.000Z",
+        "wins": 3,
+        "auto_wins": 2,
+        "losses": 3,
         "draws": 0,
-        "meta_pts": 126,
-        "meta_pts_float": 3800,
-        "defeated": "the-wizardman12,zuleh,mastertonberry,facelessrabbit,setec-astronomy,kiss-me-axe,palasatenea",
-        "fray_index": 9,
-        "brawl_level": 9,
+        "meta_pts": 12,
+        "meta_pts_float": 1580,
+        "defeated": "[redacted]",
+        "fray_index": 13,
+        "brawl_level": 5,
         "player_data": {
-          "player": "nizzyz",
-          "player_avatar": "{\"race\":\"human\",\"background\":0,\"color\":\"Red\",\"level\":2,\"frame\":0,\"gender\":1,\"body\":1,\"face\":1,\"nose\":2,\"ears\":0,\"skin_color\":1,\"hair\":7,\"eyebrows\":1,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":1,\"eyes_color\":1,\"mouth\":1,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":6,\"cloth_color\":1,\"tattoo\":0,\"accessory\":2,\"accessory_color\":1,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"\",\"\",\"\",\"\"],\"avatar_resets\":0,\"player_card_resets\":0}",
-          "rating": 3920,
-          "avatar_id": 2140,
-          "title_pre": "Warden",
-          "title_post": "The Watcher",
+          "player": "sample-account-1",
+          "player_avatar": "[redacted]",
+          "rating": 2500,
+          "avatar_id": 10,
+          "title_pre": null,
+          "title_post": null,
           "display_name": null,
-          "league": 13,
-          "modern_league": 9,
-          "collection_power": 5302442,
+          "league": 9,
+          "modern_league": 0,
+          "collection_power": 814785,
           "starter_pack_purchase": true,
-          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 4,
+          "guild_join_date": "2023-05-18T13:11:48.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 3,
+        "entered_battles": 3,
+        "player": "sample-account-2",
+        "join_date": "2026-05-20T17:05:51.000Z",
+        "wins": 0,
+        "auto_wins": 5,
+        "losses": 3,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 260,
+        "defeated": null,
+        "fray_index": 17,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-2",
+          "player_avatar": null,
+          "rating": 260,
+          "avatar_id": 0,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 1,
+          "modern_league": 0,
+          "collection_power": 145,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 1,
+          "guild_join_date": "2025-08-01T14:51:18.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 4,
+        "entered_battles": 4,
+        "player": "sample-account-3",
+        "join_date": "2026-05-20T17:05:12.000Z",
+        "wins": 0,
+        "auto_wins": 4,
+        "losses": 4,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 2300,
+        "defeated": null,
+        "fray_index": 10,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-3",
+          "player_avatar": "[redacted]",
+          "rating": 2300,
+          "avatar_id": 6,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 8,
+          "modern_league": 2,
+          "collection_power": 230175,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
           "guild_rank": 2,
-          "guild_join_date": "2022-10-02T14:28:15.000Z",
-          "guild_status": "active"
+          "guild_join_date": "2023-04-24T05:45:51.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 4,
+        "entered_battles": 4,
+        "player": "sample-account-4",
+        "join_date": "2026-05-20T17:04:57.000Z",
+        "wins": 0,
+        "auto_wins": 4,
+        "losses": 4,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 260,
+        "defeated": null,
+        "fray_index": 9,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-4",
+          "player_avatar": null,
+          "rating": 260,
+          "avatar_id": 5,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 1,
+          "modern_league": 1,
+          "collection_power": 30070,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 1,
+          "guild_join_date": "2025-09-10T22:31:33.000Z",
+          "guild_status": "[redacted]"
         }
       },
       {
         "total_battles": 7,
         "entered_battles": 7,
-        "player": "ducecrypto",
-        "join_date": "2026-09-07T13:35:24.000Z",
-        "wins": 7,
-        "auto_wins": 0,
-        "losses": 0,
+        "player": "sample-account-5",
+        "join_date": "2026-05-19T21:18:57.000Z",
+        "wins": 2,
+        "auto_wins": 1,
+        "losses": 5,
         "draws": 0,
-        "meta_pts": 120,
-        "meta_pts_float": 3800,
-        "defeated": "aussieninja,gremlin0393,kurznudel,the-wizardman13,photohunt,h-monsters,metafuric",
-        "fray_index": 21,
-        "brawl_level": 9,
+        "meta_pts": 18,
+        "meta_pts_float": 260,
+        "defeated": "[redacted]",
+        "fray_index": 4,
+        "brawl_level": 5,
         "player_data": {
-          "player": "ducecrypto",
-          "player_avatar": "{\"race\":\"human\",\"background\":2,\"color\":\"Black\",\"level\":69,\"frame\":5,\"gender\":2,\"body\":1,\"face\":1,\"nose\":9,\"ears\":0,\"skin_color\":2,\"hair\":8,\"eyebrows\":6,\"mustache\":0,\"beard\":0,\"hair_color\":7,\"eyes\":6,\"eyes_color\":4,\"mouth\":8,\"complexion\":5,\"scars\":8,\"outfit\":0,\"outfit_color\":0,\"cloth\":3,\"cloth_color\":4,\"tattoo\":7,\"accessory\":6,\"accessory_color\":1,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"year_joined\",\"champion_points\",\"card_collection\",\"shard_holder\"],\"avatar_resets\":0,\"player_card_resets\":0}",
-          "rating": 3800,
-          "avatar_id": 0,
-          "title_pre": "Runeguard",
-          "title_post": "The Gambler",
+          "player": "sample-account-5",
+          "player_avatar": "[redacted]",
+          "rating": 260,
+          "avatar_id": 14,
+          "title_pre": null,
+          "title_post": null,
           "display_name": null,
-          "league": 13,
-          "modern_league": 15,
-          "collection_power": 29530517,
+          "league": 1,
+          "modern_league": 1,
+          "collection_power": 135245,
           "starter_pack_purchase": true,
-          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-          "guild_rank": 3,
-          "guild_join_date": "2022-03-12T06:34:24.000Z",
-          "guild_status": "active"
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 2,
+          "guild_join_date": "2023-05-15T20:24:09.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 5,
+        "entered_battles": 5,
+        "player": "sample-account-6",
+        "join_date": "2026-05-20T17:01:48.000Z",
+        "wins": 0,
+        "auto_wins": 3,
+        "losses": 5,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 3860,
+        "defeated": null,
+        "fray_index": 11,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-6",
+          "player_avatar": "[redacted]",
+          "rating": 4440,
+          "avatar_id": 4149,
+          "title_pre": "[redacted]",
+          "title_post": "[redacted]",
+          "display_name": null,
+          "league": 15,
+          "modern_league": 6,
+          "collection_power": 11327480,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 4,
+          "guild_join_date": "2023-09-28T15:34:36.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 5,
+        "entered_battles": 5,
+        "player": "sample-account-7",
+        "join_date": "2026-05-20T17:01:33.000Z",
+        "wins": 0,
+        "auto_wins": 3,
+        "losses": 5,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 2900,
+        "defeated": null,
+        "fray_index": 8,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-7",
+          "player_avatar": "[redacted]",
+          "rating": 2900,
+          "avatar_id": 3,
+          "title_pre": "[redacted]",
+          "title_post": null,
+          "display_name": null,
+          "league": 10,
+          "modern_league": 2,
+          "collection_power": 1767960,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 4,
+          "guild_join_date": "2022-06-01T08:02:24.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 5,
+        "entered_battles": 5,
+        "player": "sample-account-8",
+        "join_date": "2026-05-20T22:16:30.000Z",
+        "wins": 0,
+        "auto_wins": 3,
+        "losses": 5,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 2300,
+        "defeated": null,
+        "fray_index": 2,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-8",
+          "player_avatar": "[redacted]",
+          "rating": 2300,
+          "avatar_id": 20,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 8,
+          "modern_league": 5,
+          "collection_power": 698630,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 2,
+          "guild_join_date": "2022-06-29T18:17:21.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 5,
+        "entered_battles": 5,
+        "player": "sample-account-9",
+        "join_date": "2026-05-20T17:05:39.000Z",
+        "wins": 0,
+        "auto_wins": 3,
+        "losses": 5,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 1700,
+        "defeated": null,
+        "fray_index": 14,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-9",
+          "player_avatar": "[redacted]",
+          "rating": 1700,
+          "avatar_id": 17,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 6,
+          "modern_league": 1,
+          "collection_power": 147250,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 4,
+          "guild_join_date": "2022-06-01T11:30:30.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 5,
+        "entered_battles": 5,
+        "player": "sample-account-10",
+        "join_date": "2026-05-20T17:03:15.000Z",
+        "wins": 0,
+        "auto_wins": 3,
+        "losses": 5,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 800,
+        "defeated": null,
+        "fray_index": 0,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-10",
+          "player_avatar": "[redacted]",
+          "rating": 800,
+          "avatar_id": 0,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 3,
+          "modern_league": 4,
+          "collection_power": 64020,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 1,
+          "guild_join_date": "2025-01-08T12:01:24.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 5,
+        "entered_battles": 5,
+        "player": "sample-account-11",
+        "join_date": "2026-05-20T17:05:24.000Z",
+        "wins": 0,
+        "auto_wins": 3,
+        "losses": 5,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 300,
+        "defeated": null,
+        "fray_index": 12,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-11",
+          "player_avatar": "[redacted]",
+          "rating": 300,
+          "avatar_id": 0,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 1,
+          "modern_league": 0,
+          "collection_power": 166835,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 1,
+          "guild_join_date": "2023-07-05T11:13:48.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 5,
+        "entered_battles": 5,
+        "player": "sample-account-12",
+        "join_date": "2026-05-20T17:04:42.000Z",
+        "wins": 0,
+        "auto_wins": 3,
+        "losses": 5,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 0,
+        "defeated": null,
+        "fray_index": 6,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-12",
+          "player_avatar": "[redacted]",
+          "rating": 0,
+          "avatar_id": 0,
+          "title_pre": "[redacted]",
+          "title_post": null,
+          "display_name": null,
+          "league": 0,
+          "modern_league": 0,
+          "collection_power": 650157,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 1,
+          "guild_join_date": "2025-09-18T08:00:36.000Z",
+          "guild_status": "[redacted]"
         }
       },
       {
         "total_battles": 6,
         "entered_battles": 6,
-        "player": "bravetofu",
-        "join_date": "2026-09-08T20:31:33.000Z",
-        "wins": 6,
-        "auto_wins": 1,
-        "losses": 0,
+        "player": "sample-account-13",
+        "join_date": "2026-05-20T17:01:21.000Z",
+        "wins": 0,
+        "auto_wins": 2,
+        "losses": 6,
         "draws": 0,
-        "meta_pts": 90,
-        "meta_pts_float": 4940,
-        "defeated": "arnebug,aheha,cmon777,jesterago,splinterstorm,housewifeftw",
-        "fray_index": 24,
-        "brawl_level": 9,
+        "meta_pts": 0,
+        "meta_pts_float": 2900,
+        "defeated": null,
+        "fray_index": 7,
+        "brawl_level": 5,
         "player_data": {
-          "player": "bravetofu",
-          "player_avatar": "{\"race\":\"orc\",\"background\":8,\"color\":\"Gold\",\"level\":110,\"frame\":10,\"gender\":1,\"body\":1,\"face\":5,\"nose\":1,\"ears\":0,\"skin_color\":2,\"hair\":2,\"eyebrows\":6,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":6,\"eyes_color\":2,\"mouth\":7,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":4,\"cloth_color\":1,\"tattoo\":20,\"accessory\":7,\"accessory_color\":4,\"hat\":0,\"hat_color\":0,\"earrings\":5,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"shard_holder\",\"modern_league\",\"year_joined\",\"runi_holder_1918\"],\"avatar_resets\":1,\"player_card_resets\":2}",
-          "rating": 5140,
-          "avatar_id": 0,
-          "title_pre": "Magister",
-          "title_post": "The Arcane",
+          "player": "sample-account-13",
+          "player_avatar": "[redacted]",
+          "rating": 2900,
+          "avatar_id": 6,
+          "title_pre": "[redacted]",
+          "title_post": null,
           "display_name": null,
-          "league": 15,
-          "modern_league": 15,
-          "collection_power": 50250000,
+          "league": 10,
+          "modern_league": 5,
+          "collection_power": 2013957,
           "starter_pack_purchase": true,
-          "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 5,
+          "guild_join_date": "2022-06-01T07:57:21.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 7,
+        "entered_battles": 7,
+        "player": "sample-account-14",
+        "join_date": "2026-05-20T17:02:42.000Z",
+        "wins": 0,
+        "auto_wins": 1,
+        "losses": 7,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 2600,
+        "defeated": null,
+        "fray_index": 3,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-14",
+          "player_avatar": "[redacted]",
+          "rating": 2600,
+          "avatar_id": 6,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 9,
+          "modern_league": 3,
+          "collection_power": 474800,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 4,
+          "guild_join_date": "2024-11-29T11:26:09.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 7,
+        "entered_battles": 7,
+        "player": "sample-account-15",
+        "join_date": "2026-05-20T17:04:27.000Z",
+        "wins": 0,
+        "auto_wins": 1,
+        "losses": 7,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 1400,
+        "defeated": null,
+        "fray_index": 5,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-15",
+          "player_avatar": null,
+          "rating": 1400,
+          "avatar_id": 9,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 5,
+          "modern_league": 0,
+          "collection_power": 301661,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+          "guild_rank": 2,
+          "guild_join_date": "2023-01-17T21:46:48.000Z",
+          "guild_status": "[redacted]"
+        }
+      },
+      {
+        "total_battles": 8,
+        "entered_battles": 8,
+        "player": "sample-account-16",
+        "join_date": "2026-05-20T17:03:00.000Z",
+        "wins": 0,
+        "auto_wins": 0,
+        "losses": 8,
+        "draws": 0,
+        "meta_pts": 0,
+        "meta_pts_float": 100,
+        "defeated": null,
+        "fray_index": 1,
+        "brawl_level": 5,
+        "player_data": {
+          "player": "sample-account-16",
+          "player_avatar": null,
+          "rating": 100,
+          "avatar_id": 9,
+          "title_pre": null,
+          "title_post": null,
+          "display_name": null,
+          "league": 0,
+          "modern_league": 0,
+          "collection_power": 496410,
+          "starter_pack_purchase": true,
+          "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
           "guild_rank": 1,
-          "guild_join_date": "2024-01-14T00:41:42.000Z",
-          "guild_status": "active"
+          "guild_join_date": "2023-01-09T18:58:54.000Z",
+          "guild_status": "[redacted]"
         }
       }
     ],
     "guilds": [
       {
-        "id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-        "name": " [KoG] Shield of Glory",
-        "data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"shield\"}}",
-        "total_payout": 212,
-        "cycle": 383,
-        "wins": 116,
-        "losses": 58,
-        "draws": 0,
-        "pts": 351,
-        "top_payout": 0,
-        "other_payout": 212,
-        "brawl_level": 9,
-        "guild_rank": 1,
-        "total_merits_payout": 226779,
-        "member_merits_payout": 10176,
-        "total_sps_payout": "3151.423",
-        "member_sps_payout": "141.410",
-        "auto_wins": 1
-      },
-      {
-        "id": "cb84ca426dcb7c8ba072c759b39cf459d4cf7669",
-        "name": "[KoG] Guardians of Glory",
-        "data": "{\"crest\":{\"banner\":\"teal\",\"decal\":\"shield\"}}",
-        "total_payout": 205,
-        "cycle": 383,
-        "wins": 112,
-        "losses": 62,
-        "draws": 0,
-        "pts": 339,
-        "top_payout": 0,
-        "other_payout": 205,
-        "brawl_level": 9,
-        "guild_rank": 7,
-        "total_merits_payout": 236160,
-        "member_merits_payout": 9840,
-        "total_sps_payout": "3277.824",
-        "member_sps_payout": "136.576",
-        "auto_wins": 1
-      },
-      {
-        "id": "391cc53158d4b06e7e5d8f0dfba614267905b8cf",
-        "name": "Immortal Gods",
-        "data": "{\"crest\":{\"banner\":\"black\",\"decal\":\"sword\"}}",
-        "total_payout": 196,
-        "cycle": 383,
-        "wins": 107,
-        "losses": 67,
+        "id": "[redacted]",
+        "name": "sample-account-17",
+        "data": "[redacted]",
+        "total_payout": 86,
+        "cycle": 362,
+        "wins": 58,
+        "losses": 36,
         "draws": 0,
         "pts": 324,
         "top_payout": 0,
-        "other_payout": 196,
-        "brawl_level": 10,
-        "guild_rank": 9,
-        "total_merits_payout": 270480,
-        "member_merits_payout": 11760,
-        "total_sps_payout": "3002.236",
-        "member_sps_payout": "130.532",
-        "auto_wins": 1
+        "other_payout": 86,
+        "brawl_level": 5,
+        "guild_rank": 242,
+        "total_merits_payout": 66892,
+        "member_merits_payout": 4778,
+        "total_sps_payout": "[redacted]",
+        "member_sps_payout": "[redacted]",
+        "auto_wins": 50
       },
       {
-        "id": "504d6bb3bd478422e3a68e98e6c8eea257636709",
-        "name": "Knights United",
-        "data": "{\"crest\":{\"banner\":\"red\",\"decal\":\"sword\"}}",
-        "total_payout": 180,
-        "cycle": 383,
-        "wins": 98,
-        "losses": 76,
+        "id": "[redacted]",
+        "name": "sample-account-18",
+        "data": "[redacted]",
+        "total_payout": 84,
+        "cycle": 362,
+        "wins": 56,
+        "losses": 38,
         "draws": 0,
-        "pts": 297,
+        "pts": 318,
         "top_payout": 0,
-        "other_payout": 180,
-        "brawl_level": 10,
-        "guild_rank": 2,
-        "total_merits_payout": 216000,
-        "member_merits_payout": 10800,
-        "total_sps_payout": "2393.100",
-        "member_sps_payout": "119.655",
-        "auto_wins": 1
+        "other_payout": 84,
+        "brawl_level": 5,
+        "guild_rank": 271,
+        "total_merits_payout": 67200,
+        "member_merits_payout": 4200,
+        "total_sps_payout": "[redacted]",
+        "member_sps_payout": "[redacted]",
+        "auto_wins": 50
       },
       {
-        "id": "9e90a6ae5ea3f798434028d947dcfc7dcee6a8d3",
-        "name": "PeakMonsters [PREMIERE]",
-        "data": "{\"crest\":{\"banner\":\"purple\",\"decal\":\"skull\"}}",
-        "total_payout": 154,
-        "cycle": 383,
-        "wins": 84,
-        "losses": 90,
+        "id": "[redacted]",
+        "name": "sample-account-19",
+        "data": "[redacted]",
+        "total_payout": 68,
+        "cycle": 362,
+        "wins": 47,
+        "losses": 42,
         "draws": 0,
-        "pts": 255,
+        "pts": 258,
         "top_payout": 0,
-        "other_payout": 154,
-        "brawl_level": 9,
-        "guild_rank": 14,
-        "total_merits_payout": 184800,
-        "member_merits_payout": 7392,
-        "total_sps_payout": "2568.350",
-        "member_sps_payout": "102.734",
-        "auto_wins": 1
+        "other_payout": 68,
+        "brawl_level": 5,
+        "guild_rank": 292,
+        "total_merits_payout": 58929,
+        "member_merits_payout": 4533,
+        "total_sps_payout": "[redacted]",
+        "member_sps_payout": "[redacted]",
+        "auto_wins": 39
       },
       {
-        "id": "8046de93f2168b672dc9aaee388289ceb55dc551",
-        "name": "The Wizards",
-        "data": "{\"crest\":{\"banner\":\"blue\",\"decal\":\"book\"}}",
-        "total_payout": 138,
-        "cycle": 383,
-        "wins": 76,
-        "losses": 92,
+        "id": "[redacted]",
+        "name": "sample-account-20",
+        "data": "[redacted]",
+        "total_payout": 59,
+        "cycle": 362,
+        "wins": 49,
+        "losses": 22,
         "draws": 0,
-        "pts": 228,
+        "pts": 222,
         "top_payout": 0,
-        "other_payout": 138,
-        "brawl_level": 9,
-        "guild_rank": 22,
-        "total_merits_payout": 158976,
-        "member_merits_payout": 6624,
-        "total_sps_payout": "2204.544",
-        "member_sps_payout": "91.856",
-        "auto_wins": 0
+        "other_payout": 59,
+        "brawl_level": 5,
+        "guild_rank": 220,
+        "total_merits_payout": 35400,
+        "member_merits_payout": 2950,
+        "total_sps_payout": "[redacted]",
+        "member_sps_payout": "[redacted]",
+        "auto_wins": 25
       },
       {
-        "id": "9955504d237b7013295692b3207ed35ad71017de",
-        "name": "Legendary Wyverns",
-        "data": "{\"crest\":{\"banner\":\"yellow\",\"decal\":\"sword\"}}",
-        "total_payout": 127,
-        "cycle": 383,
-        "wins": 69,
-        "losses": 105,
+        "id": "[redacted]",
+        "name": "sample-account-21",
+        "data": "[redacted]",
+        "total_payout": 53,
+        "cycle": 362,
+        "wins": 17,
+        "losses": 77,
         "draws": 0,
-        "pts": 210,
+        "pts": 201,
         "top_payout": 0,
-        "other_payout": 127,
-        "brawl_level": 9,
-        "guild_rank": 29,
-        "total_merits_payout": 134112,
-        "member_merits_payout": 5588,
-        "total_sps_payout": "2030.496",
-        "member_sps_payout": "84.604",
-        "auto_wins": 1
+        "other_payout": 53,
+        "brawl_level": 5,
+        "guild_rank": 245,
+        "total_merits_payout": 10602,
+        "member_merits_payout": 2356,
+        "total_sps_payout": "[redacted]",
+        "member_sps_payout": "[redacted]",
+        "auto_wins": 50
       },
       {
-        "id": "fed429d93e7f4cfe82c4322750290dffa6a56786",
-        "name": "Landstreicher",
-        "data": "{\"crest\":{\"banner\":\"green\",\"decal\":\"tree\"}}",
-        "total_payout": 49,
-        "cycle": 383,
-        "wins": 26,
-        "losses": 148,
+        "id": "[redacted]",
+        "name": "sample-account-22",
+        "data": "[redacted]",
+        "total_payout": 36,
+        "cycle": 362,
+        "wins": 5,
+        "losses": 82,
+        "draws": 0,
+        "pts": 138,
+        "top_payout": 0,
+        "other_payout": 36,
+        "brawl_level": 5,
+        "guild_rank": 365,
+        "total_merits_payout": 3600,
+        "member_merits_payout": 1800,
+        "total_sps_payout": "[redacted]",
+        "member_sps_payout": "[redacted]",
+        "auto_wins": 41
+      },
+      {
+        "id": "[redacted]",
+        "name": "sample-account-23",
+        "data": "[redacted]",
+        "total_payout": 21,
+        "cycle": 362,
+        "wins": 19,
+        "losses": 21,
         "draws": 0,
         "pts": 81,
         "top_payout": 0,
-        "other_payout": 49,
-        "brawl_level": 9,
-        "guild_rank": 42,
-        "total_merits_payout": 32340,
-        "member_merits_payout": 1960,
-        "total_sps_payout": "554.761",
-        "member_sps_payout": "32.633",
-        "auto_wins": 1
+        "other_payout": 21,
+        "brawl_level": 5,
+        "guild_rank": 234,
+        "total_merits_payout": 5250,
+        "member_merits_payout": 1050,
+        "total_sps_payout": "[redacted]",
+        "member_sps_payout": "[redacted]",
+        "auto_wins": 8
+      },
+      {
+        "id": "[redacted]",
+        "name": "sample-account-24",
+        "data": "[redacted]",
+        "total_payout": 19,
+        "cycle": 362,
+        "wins": 19,
+        "losses": 8,
+        "draws": 0,
+        "pts": 72,
+        "top_payout": 0,
+        "other_payout": 19,
+        "brawl_level": 5,
+        "guild_rank": 239,
+        "total_merits_payout": 3800,
+        "member_merits_payout": 950,
+        "total_sps_payout": "[redacted]",
+        "member_sps_payout": "[redacted]",
+        "auto_wins": 5
+      },
+      {
+        "id": "[redacted]",
+        "name": "sample-account-25",
+        "data": "[redacted]",
+        "total_payout": 17,
+        "cycle": 362,
+        "wins": 16,
+        "losses": 10,
+        "draws": 0,
+        "pts": 66,
+        "top_payout": 0,
+        "other_payout": 17,
+        "brawl_level": 5,
+        "guild_rank": 210,
+        "total_merits_payout": 2550,
+        "member_merits_payout": 850,
+        "total_sps_payout": "[redacted]",
+        "member_sps_payout": "[redacted]",
+        "auto_wins": 6
       }
     ]
   }

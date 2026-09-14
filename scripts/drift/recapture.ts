@@ -1,7 +1,9 @@
-import { classifyResponse, isEmptyResult } from "../../src/http/errors.js";
+import { classifyResponse } from "../../src/http/errors.js";
+import { sampleFixtureBody } from "./fixture-sample.js";
+import { MAX_FIXTURE_BYTES } from "./fixture-limits.js";
 import { avatarFixtureBody } from "./avatar-fixture.js";
 import { accountParameterNames } from "./configuration.js";
-import { fixtureIsEmpty, verifiedSample } from "./sample-state.js";
+import { fixtureIsEmpty, sampleIsEmpty, verifiedSample } from "./sample-state.js";
 import { bindSweepInputs, createSweepRequester } from "./request.js";
 import { sanitizeFixture } from "./sanitize-fixture.js";
 import { planFixtureRenewal, type FixtureRenewalPair, RENEWAL_HOLD_FLOOR } from "./renewal.js";
@@ -50,8 +52,12 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
       if (blocked.size >= 2) break;
       continue;
     }
-    const empty = isEmptyResult(outcome.body);
-    if (accountParameterNames(input.entryId).size > 0 && empty !== fixtureIsEmpty(input.existing)
+    if (!verifiedSample(input.entryId, outcome.body, input.variantKey)) {
+      failed.push({ fixturePath: input.fixturePath, reason: "review" });
+      continue;
+    }
+    const empty = sampleIsEmpty(input.entryId, outcome.body, input.variantKey);
+    if (accountParameterNames(input.entryId).size > 0 && empty !== fixtureIsEmpty(input.existing, input.entryId, input.variantKey)
       && verifiedSample(input.entryId, outcome.body, input.variantKey)) {
       coverageGaps.push({ fixturePath: input.fixturePath, entryId: input.entryId,
         reason: empty ? "empty_sample" : "populated_sample" });
@@ -61,12 +67,26 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
       const dataKeys = Object.keys(input.existing).filter(key => key !== "provenance" && key !== "valueClasses");
       const wrapped = dataKeys.length === 1 && dataKeys[0] === "body";
       const avatar = input.entryId === "api.players.avatar";
-      const body = avatar ? avatarFixtureBody(input.existing, outcome.body, binding) : outcome.body;
+      const sampled = sampleFixtureBody(input.existing, outcome.body, input.entryId);
+      const body = avatar ? avatarFixtureBody(input.existing, sampled.body, binding) : sampled.body;
       const captured = wrapped ? { body } : body;
       const accountKeys = new Set(["name", "username", "player", "players", "owner", "renter", "account", "target"]);
       const forbidden = Object.entries(input.params).filter(([key, value]) => accountKeys.has(key) && typeof value === "string").map(([, value]) => String(value));
-      const recaptured = sanitizeFixture(input.existing, captured, observedAt, forbidden);
+      const sanitized = sanitizeFixture(input.existing, captured, observedAt, forbidden);
+      const recaptured = { ...sanitized, provenance: { ...sanitized.provenance,
+        ...((input.existing.provenance as Record<string, unknown> | undefined)?.reviewedResponseShapes
+          ? { reviewedResponseShapes: (input.existing.provenance as Record<string, unknown>).reviewedResponseShapes } : {}),
+        ...(sampled.sample ? { fixtureSample: sampled.sample } : {}),
+        ...((input.existing.provenance as Record<string, unknown> | undefined)?.reviewedAlternateShapes
+          ? { reviewedAlternateShapes: (input.existing.provenance as Record<string, unknown>).reviewedAlternateShapes } : {}) } };
       if (avatar) recaptured.provenance.redaction += " Avatar URLs retain reviewed synthetic fixture values.";
+      const fixtureData = Object.fromEntries(Object.entries(recaptured).filter(([key]) => !["provenance", "valueClasses"].includes(key)));
+      if (!verifiedSample(input.entryId, wrapped ? fixtureData.body : fixtureData, input.variantKey)) {
+        throw new Error("Sanitized fixture violates response contract.");
+      }
+      if (Buffer.byteLength(JSON.stringify(recaptured, null, 2) + "\n", "utf8") > MAX_FIXTURE_BYTES) {
+        throw new Error("Fixture exceeds size limit.");
+      }
       pairs.push({
         fixturePath: input.fixturePath, entryId: input.entryId, existing: input.existing,
         recaptured, host: binding.host, pathTemplate: binding.endpointTemplate,

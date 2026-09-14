@@ -1,6 +1,6 @@
 import {Client} from "@modelcontextprotocol/sdk/client/index.js";
 import {InMemoryTransport} from "@modelcontextprotocol/sdk/inMemory.js";
-import {expect,it} from "vitest";
+import {afterEach,beforeEach,expect,it,vi} from "vitest";
 import {createServer} from "../src/server.js";
 import {getCatalogueEntry} from "../src/catalogue/index.js";
 import {withCallScope,registerLogicalRequest} from "../src/http/callscope.js";
@@ -12,6 +12,10 @@ import regionFixture from "./fixtures/land-stake-dec-region-resolved.fixture.jso
 import searchFixture from "./fixtures/land-deeds-search-limited.fixture.json" with {type:"json"};
 import definitionsFixture from "./fixtures/api-cards-get-details.fixture.json" with {type:"json"};
 import collectionFixture from "./fixtures/api-cards-collection.raw.json" with {type:"json"};
+// Scenario tests control process occupancy; collection memory tests exercise real memory use.
+const normalMemory = {rss:64*1024*1024,heapTotal:32*1024*1024,heapUsed:16*1024*1024,external:0,arrayBuffers:0};
+beforeEach(() => { vi.spyOn(process, "memoryUsage").mockReturnValue(normalMemory); });
+afterEach(() => { vi.restoreAllMocks(); });
 function fixtures(){
  const deed=structuredClone(deedFixture.body);Object.assign(deed.data,{deed_type:"Plains",resource_symbol:"GRAIN"});
  const uid=deed.data.deed_uid,region=deed.data.region_uid;
@@ -56,7 +60,7 @@ it("gathers an agreeing baseline, candidates and provenance within ten logical r
  const r=await rig();
  try{
   const result=await r.c.callTool({name:"land_lineup_snapshot",arguments:{player:"sampleacct",plot_id:101,candidate_uids:["candidate"]}});
-  expect(result.isError).not.toBe(true);
+  expect(result.isError, JSON.stringify(result.structuredContent ?? result.content)).not.toBe(true);
   expect(result.structuredContent).toMatchObject({baseline_check:{agrees:true},baseline:{workers:[{uid:"current"}]},
    candidates:[{card:{uid:"candidate"},readiness:expect.stringContaining("Unstaked")}],request_budget:{maximum:10,used:10}});
   expect(r.requests).toHaveLength(10);expect(new Set(r.requests).size).toBe(10);
@@ -74,7 +78,7 @@ it.each(["mismatch","missing-worker","wrong-account","wrong-project","too-many",
  try{
   const result=await r.c.callTool({name:"land_lineup_snapshot",arguments:{player:"sampleacct",plot_id:101,candidate_card_detail_ids:[1]}});
   if(mode==="cooldown"){
-   expect(result.isError).not.toBe(true);expect(result.structuredContent).toMatchObject({candidates:expect.arrayContaining([expect.objectContaining({readiness:"Cooling down; not ready to stake."})])});
+   expect(result.isError, JSON.stringify(result.structuredContent ?? result.content)).not.toBe(true);expect(result.structuredContent).toMatchObject({candidates:expect.arrayContaining([expect.objectContaining({readiness:"Cooling down; not ready to stake."})])});
   }else expect(result.isError).toBe(true);
   expect(r.requests.length).toBeLessThanOrEqual(10);
  }finally{await r.close();}
@@ -83,7 +87,7 @@ it("retains an agreeing baseline when an auxiliary availability read fails",asyn
  const r=await rig(undefined,"vapi.land.stake.items-available");
  try{
   const result=await r.c.callTool({name:"land_lineup_snapshot",arguments:{player:"sampleacct",plot_id:101}});
-  expect(result.isError).not.toBe(true);expect(result.structuredContent).toMatchObject({baseline_check:{agrees:true},limitations:expect.arrayContaining([expect.objectContaining({component:"power_core_available"})])});
+  expect(result.isError, JSON.stringify(result.structuredContent ?? result.content)).not.toBe(true);expect(result.structuredContent).toMatchObject({baseline_check:{agrees:true},limitations:expect.arrayContaining([expect.objectContaining({component:"power_core_available"})])});
  }finally{await r.close();}
 });
 it("rejects missing/ambiguous selectors before reads and leaves ordinary budgets unchanged",async()=>{
@@ -95,4 +99,18 @@ it("rejects missing/ambiguous selectors before reads and leaves ordinary budgets
   await expect(withCallScope("ordinary",async()=>{registerLogicalRequest("first");registerLogicalRequest("second");})).rejects.toMatchObject({kind:"refusal_would_fan_out"});
   await expect(withCallScope("snapshot",async()=>{for(let i=0;i<11;i++)registerLogicalRequest(String(i));},10)).rejects.toMatchObject({kind:"refusal_would_fan_out"});
  }finally{await r.close();}
+});
+
+it("preserves the collection memory refusal before auxiliary reads", async () => {
+ const r=await rig(undefined,"vapi.land.stake.items-available");
+ vi.mocked(process.memoryUsage).mockReturnValue({...normalMemory,heapUsed:129*1024*1024});
+ try {
+  const result=await r.c.callTool({name:"land_lineup_snapshot",arguments:{player:"sampleacct",plot_id:101}});
+  expect(result.isError).toBe(true);
+  expect(result.structuredContent).toMatchObject({
+   kind:"upstream_malformed",message:expect.stringContaining("heap occupancy guard"),
+   request_budget:{maximum:10,used:7},
+  });
+  expect(r.requests).not.toContain("vapi.land.stake.items-available");
+ } finally { await r.close(); }
 });
