@@ -35,3 +35,25 @@ it("reports excluded fixtures separately from incomplete callable coverage", () 
   expect(result.unconfigured).toEqual([]);
   expect(result.excluded).toEqual([{ fixture: "excluded.fixture.json", entryId: "vapi.land.deeds.details-by-id" }]);
 });
+
+it("loads and renews existing underscore fixture names without admitting unsafe paths", () => {
+  const root = mkdtempSync(join(tmpdir(), "fixture-filenames-"));
+  try {
+    mkdirSync(join(root, "tests/fixtures"), { recursive: true });
+    mkdirSync(join(root, "scripts/drift"), { recursive: true });
+    const name = "api-players-archived_balances.fixture.json";
+    const path = "tests/fixtures/" + name;
+    writeFileSync(join(root, "scripts/drift/baseline-input.json"), JSON.stringify({ [name]: { entryId: "api.players.archived-balances" } }));
+    writeFileSync(join(root, path), "{}");
+    const row = { fixturePath: path, entryId: "api.players.archived-balances", params: {} };
+    expect(loadRecaptureInputs(root, [row])).toHaveLength(1);
+    writeRenewedFixture(root, path, '{"body":[]}');
+    expect(readFileSync(join(root, path), "utf8")).toBe('{"body":[]}');
+    writeRenewedFixture(root, "tests/fixtures/pending/" + name, '{"body":[]}');
+    expect(readFileSync(join(root, "tests/fixtures/pending/" + name), "utf8")).toBe('{"body":[]}');
+    for (const unsafe of ["tests/fixtures/../outside.fixture.json", "tests/fixtures/nested/file.fixture.json", "tests/fixtures/.hidden.fixture.json", "tests/fixtures/a b.fixture.json"]) {
+      expect(() => loadRecaptureInputs(root, [{ ...row, fixturePath: unsafe }])).toThrow();
+      expect(() => writeRenewedFixture(root, unsafe, "{}")).toThrow();
+    }
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
