@@ -6,6 +6,7 @@ import lastSeasonFixture from "./fixtures/api-players-last-season-rewards.fixtur
 import unclaimedBalanceHistoryFixture from "./fixtures/api-players-unclaimed-balance-history.fixture.json" with { type: "json" };
 import unclaimedBalancesFixture from "./fixtures/api-players-unclaimed-balances.fixture.json" with { type: "json" };
 import { catalogue, getCatalogueEntry } from "../src/catalogue/index.js";
+import { predicateFor } from "../src/catalogue/predicates.js";
 import { matchesResultContract } from "../src/catalogue/fingerprint.js";
 import { TOOL_ENTRY_IDS } from "../src/server.js";
 
@@ -118,4 +119,21 @@ describe("player family contracts", () => {
     expect(contract.fingerprint["[].amount"]?.nullable).toBeUndefined();
     expect(matchesResultContract(amountChanged, contract)).toBe(false);
   });
+});
+
+it("accepts observed null profile fields and absent guild tournament data", () => {
+  const body = structuredClone(detailsFixture.body) as Record<string, unknown>;
+  const guild = body.guild as Record<string, unknown>;
+  guild.tournament_id = null;
+  delete guild.tournament_status;
+  delete guild.tournament_data;
+  body.title_pre = null;
+  body.survival_bracket = null;
+  const accepts = predicateFor(getCatalogueEntry("api.players.details").resultContract);
+  expect(accepts(body)).toBe(true);
+  expect(accepts({ ...body, rating: "invalid" })).toBe(false);
+  expect(accepts({ ...body, guild: { ...guild, tournament_status: "invalid" } })).toBe(false);
+  expect(accepts({ ...body, guild: { ...guild, tournament_data: 42 } })).toBe(false);
+  expect(accepts({ ...body, guild: { ...guild, tournament_data: {} } })).toBe(false);
+  expect(accepts({ ...body, survival_bracket: "invalid" })).toBe(false);
 });
