@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { expect, it } from "vitest";
 import { recaptureFixtures, type RecaptureInput } from "../scripts/drift/recapture.js";
 import { TOOL_ENTRY_IDS } from "../src/server.js";
@@ -57,4 +58,27 @@ it("supports a batch larger than the old 200-fixture ceiling while keeping a har
   expect(result.plan.blockedByHoldFloor).toBe(true);
   await expect(recaptureFixtures(Array.from({ length: 513 }, (_, index) => input(String(index))),
     async () => { throw new Error("Must not request"); })).rejects.toThrow("count");
+});
+
+it("keeps avatar fixture URLs synthetic while validating the captured redirect", async () => {
+  const existing = JSON.parse(readFileSync(new URL("./fixtures/player-avatar.fixture.json", import.meta.url), "utf8"));
+  const input = { fixturePath: "tests/fixtures/player-avatar.fixture.json", entryId: "api.players.avatar", params: { name: "private-owner" }, existing };
+  const body = { avatar_url: "https://api.splinterlands.com/players/avatar/private-owner", image_url: "https://runi.splinterlands.com/avatars/1234.png?account=private-owner", redirect_status: 302 };
+  const result = await recaptureFixtures([input], async () => ({ status: 200, isJson: true, body }));
+  expect(result.failed).toEqual([]);
+  expect(result.plan.writes).toHaveLength(1);
+  const fixture = JSON.parse(result.plan.writes[0]!.contents);
+  expect(fixture.body).toEqual(existing.body);
+  expect(fixture.provenance.redaction).toContain("Avatar URLs");
+  expect(result.plan.writes[0]!.contents).not.toContain("private-owner");
+  expect(body.avatar_url).toContain("private-owner");
+  for (const changed of [
+    { ...body, avatar_url: "https://api.splinterlands.com/players/avatar/someone-else" },
+    { ...body, image_url: "https://untrusted.example/avatar.png" },
+    { ...body, private_extra: "secret" },
+  ]) {
+    const held = await recaptureFixtures([input], async () => ({ status: 200, isJson: true, body: changed }));
+    expect(held.failed).toHaveLength(1);
+    expect(held.plan.writes).toEqual([]);
+  }
 });

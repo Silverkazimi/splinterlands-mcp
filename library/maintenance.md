@@ -78,3 +78,5 @@ The public V3 bids and offers lists may omit the optional player filter when an 
 When array entries classify null differently from a reviewed non-null value at the same field, renewal uses the non-null classification for redaction and validation. Null-only fields keep their existing rules; their null observations do not establish a new numeric or text contract. Conflicting non-null classifications still stop renewal, as do unreviewed fields, containers and enum values.
 
 Opaque booleans and finite numbers are retained only when that exact value was already present at the reviewed field. New opaque scalar values remain held, and opaque strings remain redacted. This supports existing boolean and numeric fixture values without treating an unknown field as a public numeric contract.
+
+Avatar fixture renewal validates the captured redirect against the bound player route and trusted HTTPS image hosts, then retains the reviewed synthetic fixture URLs. Account-bearing URLs stay out of published fixtures; unexpected fields still require review.
