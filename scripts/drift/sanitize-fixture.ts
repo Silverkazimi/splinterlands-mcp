@@ -12,6 +12,7 @@ export function sanitizeFixture(existing: unknown, captured: unknown, observedAt
     || !Number.isFinite(Date.parse(observedAt))) throw new Error("Invalid fixture envelope.");
   const declarations = existing.valueClasses;
   const rules = new Map<string, Rule>();
+  const nullRules = new Map<string, Rule>();
   const containers = new Set<string>();
   function review(value: unknown, path: string): void {
     const generic = generalize(path);
@@ -25,13 +26,16 @@ export function sanitizeFixture(existing: unknown, captured: unknown, observedAt
       const declaration = declarations[path];
       const valueClass = (record(declaration) ? declaration.valueClass : declaration) as ValueClass;
       if (!classes.has(valueClass)) throw new Error("Missing reviewed field classification.");
-      const rule = rules.get(generic);
+      const selectedRules = value === null ? nullRules : rules;
+      const rule = selectedRules.get(generic);
       if (rule && rule.valueClass !== valueClass) throw new Error("Conflicting array field classifications.");
       if (rule) rule.values.add(value);
-      else rules.set(generic, { valueClass, values: new Set([value]) });
+      else selectedRules.set(generic, { valueClass, values: new Set([value]) });
     }
   }
   review(dataOnly(existing), "");
+  // Null carries no value to classify; a reviewed non-null observation determines redaction.
+  for (const [path, rule] of nullRules) if (!rules.has(path)) rules.set(path, rule);
   const valueClasses: Record<string, { valueClass: ValueClass }> = {};
   const names = new Map<string, string>();
   function walk(value: unknown, path: string): unknown {

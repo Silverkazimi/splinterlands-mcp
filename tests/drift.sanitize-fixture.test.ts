@@ -43,3 +43,36 @@ it("rejects account strings misclassified as public identifiers", () => {
   const fixture = { valueClasses: { id: { valueClass: "id" } }, id: "public-id" };
   expect(() => sanitizeFixture(fixture, { id: "private-name" }, observedAt, ["private-name"])).toThrow("outside");
 });
+
+it.each([false, true])("uses the reviewed non-null class regardless of null row order: %s", reverse => {
+  const rows = [
+    { owner: null, amount: null },
+    { owner: "sample-account-a", amount: 1 },
+  ];
+  if (reverse) rows.reverse();
+  const valueClasses = Object.fromEntries(rows.flatMap((row, index) => [
+    ["data[" + index + "].owner", { valueClass: row.owner === null ? "opaque" : "name" }],
+    ["data[" + index + "].amount", { valueClass: row.amount === null ? "id" : "numeric" }],
+  ]));
+  const result = sanitizeFixture({ data: rows, valueClasses }, {
+    data: [{ owner: "private-owner", amount: 2 }, { owner: null, amount: null }],
+  }, observedAt);
+  expect(result).toMatchObject({
+    data: [{ owner: "sample-account-1", amount: 2 }, { owner: null, amount: null }],
+    valueClasses: { "data[0].owner": { valueClass: "name" }, "data[1].amount": { valueClass: "numeric" } },
+  });
+  expect(JSON.stringify(result)).not.toContain("private-owner");
+});
+it("does not infer a numeric class from a null-only opaque field", () => {
+  const fixture = { data: [null], valueClasses: { "data[0]": { valueClass: "opaque" } } };
+  expect(() => sanitizeFixture(fixture, { data: [42] }, observedAt)).toThrow("Invalid text type");
+});
+it("keeps rejecting non-null class conflicts even when a null occurs first", () => {
+  const fixture = {
+    data: [null, "sample-account-a", "public-id"],
+    valueClasses: {
+      "data[0]": { valueClass: "opaque" }, "data[1]": { valueClass: "name" }, "data[2]": { valueClass: "id" },
+    },
+  };
+  expect(() => sanitizeFixture(fixture, { data: [] }, observedAt)).toThrow("Conflicting");
+});
