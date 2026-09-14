@@ -157,6 +157,7 @@ export const TOOL_ENTRY_IDS = {
   cards_skins: CARDS_SKINS_ENTRY_ID,
   cards_trx_lookup: CARDS_TRX_LOOKUP_ENTRY_ID,
   players_item_details: PLAYERS_ITEM_DETAILS_ENTRY_ID,
+  player_avatar: "api.players.avatar",
   player_profile: PLAYER_PROFILE_ENTRY_ID,
   player_current_rewards: PLAYER_CURRENT_REWARDS_ENTRY_ID,
   player_last_season_rewards: PLAYER_LAST_SEASON_REWARDS_ENTRY_ID,
@@ -1620,6 +1621,20 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
     },
   );
 
+  server.registerTool(
+    "player_avatar",
+    {
+      description: "Resolve one player's public avatar image link. Reads the official avatar endpoint once logically, inspects its HTTP 302 Location without following it, and returns avatar_url, image_url and redirect_status. Only HTTPS Splinterlands-domain image destinations are accepted. No image bytes are downloaded; the current image URL may change. A returned avatar does not prove the account exists. No credentials or game writes.",
+      inputSchema: inputSchemaFor("api.players.avatar"),
+    },
+    async (params) => {
+      const bound = bindRequest("api.players.avatar", params);
+      const result = await bound.execute(client);
+      if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
+      const structuredContent = result.data as Record<string, unknown>;
+      return { content: [{ type: "text" as const, text: JSON.stringify(structuredContent) }], structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+    },
+  );
   server.registerTool(
     "player_profile",
     { description: PLAYER_PROFILE_DESCRIPTION, inputSchema: playerProfileInputSchema },

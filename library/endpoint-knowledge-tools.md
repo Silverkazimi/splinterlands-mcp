@@ -34,8 +34,8 @@ while the five dimensions are evidence. An `inertUpstream` value of `false` is
 the declaration default and is not a measurement, so it can appear beside an
 `observed-negative` value of `null`.
 
-The list summary reports 189 catalogued endpoints and 154 endpoint-calling
-tools. 154 catalogue entries are callable, leaving 35 catalogue entries
+The list summary reports 189 catalogued endpoints and 155 endpoint-calling
+tools. 155 catalogue entries are callable, leaving 34 catalogue entries
 uncovered. These include gated, non-functional, redundant, misleading,
 insufficiently observed, and oversized responses. The README's unsupported
 route tables record each route's dated classification and evidence. The two

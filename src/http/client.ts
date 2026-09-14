@@ -1,3 +1,4 @@
+import { avatarRedirectData, isAvatarRequest } from "./avatar-redirect.js";
 import packageInfo from "../../package.json" with { type: "json" };
 import {
   BlockTracker,
@@ -348,7 +349,7 @@ export class SplinterlandsHttpClient {
     try {
       response = await this.fetchImpl(url.toString(), {
         method: "GET",
-        redirect: "error",
+        redirect: isAvatarRequest(host, url.pathname) ? "manual" : "error",
         headers: { Accept: "application/json", "User-Agent": this.userAgent },
         signal: controller.signal,
       });
@@ -389,8 +390,18 @@ export class SplinterlandsHttpClient {
     } else if (response.status >= 500 || response.status === 408 || response.status === 429) {
       this.breaker.recordFailure(host);
     }
+    const avatar = isAvatarRequest(host, url.pathname);
+    const redirectData = avatar ? avatarRedirectData(response, url) : undefined;
+    if (redirectData) {
+      body = redirectData;
+      json = true;
+      malformed = false;
+      this.breaker.recordSuccess(host);
+    } else if (avatar && (response.status === 302 || (response.status >= 200 && response.status < 300))) {
+      malformed = true;
+    }
     const classificationOptions = {
-      status: response.status,
+      status: redirectData ? 200 : response.status,
       host,
       endpoint,
       requestEndpoint,
