@@ -76,3 +76,15 @@ it("keeps rejecting non-null class conflicts even when a null occurs first", () 
   };
   expect(() => sanitizeFixture(fixture, { data: [] }, observedAt)).toThrow("Conflicting");
 });
+
+it.each([true, false, 42])("preserves only an already-reviewed opaque scalar: %s", value => {
+  const fixture = { data: { value }, valueClasses: { "data.value": { valueClass: "opaque" } } };
+  expect(sanitizeFixture(fixture, { data: { value } }, observedAt)).toMatchObject({ data: { value } });
+  const changed = typeof value === "boolean" ? !value : 43;
+  expect(() => sanitizeFixture(fixture, { data: { value: changed } }, observedAt)).toThrow();
+  expect(() => sanitizeFixture(fixture, { data: { value: {} } }, observedAt)).toThrow();
+});
+it("continues redacting opaque strings even when their original value was reviewed", () => {
+  const fixture = { data: { value: "private text" }, valueClasses: { "data.value": { valueClass: "opaque" } } };
+  expect(sanitizeFixture(fixture, { data: { value: "private text" } }, observedAt)).toMatchObject({ data: { value: "[redacted]" } });
+});
