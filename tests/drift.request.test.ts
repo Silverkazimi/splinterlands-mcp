@@ -91,3 +91,17 @@ it("validates collection cards beyond the retained sample", async () => {
   const request=createSweepRequester(async()=>Response.json({player:"fixture-account",cards:[card,card,card,{...card,bcx:"wrong"}]}));
   expect(await request(bound)).toEqual({status:200,body:null,isJson:false});
 });
+
+it("accepts bounded global rental pages without forcing a player filter", () => {
+  for (const entryId of ["vapi.delegation-rental.v3.bids", "vapi.delegation-rental.v3.offers"]) {
+    for (const limit of [1, 4, 100]) {
+      const bound = bindSweepInputs([{ entryId, params: { limit, minPrice: 1 } }])[0]!;
+      expect(bound.queryParams.limit).toBe(limit);
+      expect(bound.queryParams).not.toHaveProperty("player");
+    }
+    for (const params of [{}, { limit: 0 }, { limit: 101 }, { limit: 1.5 }, { limit: "2" }]) {
+      expect(() => bindSweepInputs([{ entryId, params }])).toThrow();
+    }
+  }
+  expect(() => bindSweepInputs([{ entryId: TOOL_ENTRY_IDS.player_profile, params: { limit: 2 } }])).toThrow();
+});
