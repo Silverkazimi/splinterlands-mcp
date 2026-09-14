@@ -2,6 +2,12 @@
 
 Use a branch and pull request for changes. CI builds and tests the server, checks types and lint, and runs the full source/fixture privacy guard. Dependency and GitHub Action updates are proposed weekly; review them and wait for CI before merging. No workflow automatically merges or releases code.
 
+## Dependency compatibility
+
+Weekly npm minor and patch updates are grouped into one review PR. Major updates remain separate. Node type definitions stay on the oldest supported runtime, Node 22; update that limit deliberately when the runtime policy changes. TypeScript versions at or above 6.1 are excluded while the installed typescript-eslint declares support below 6.1. Revisit that exclusion when upgrading the lint toolchain. These constraints are reviewed compatibility limits, not a reason to skip security review.
+
+The Zod 4 implementation requires the tested MCP SDK line starting at 1.30.0. The former 1.12.0 lower bound depended on Zod 3 and did not describe the supported combination. The lockfile records the exact verified versions; the package manifest must not advertise an older unverified SDK combination.
+
 ## Specification review
 
 The weekly specification job reads both official Swagger initialization files: VAPI and the main API declaration hosted at api2.splinterlands.com/doc with a 20-second deadline and a 4 MiB body limit. It extracts JSON without executing the JavaScript and follows no redirects. The two retained baselines contain path, shared-schema and global security/transport hashes, not API examples or account data.
