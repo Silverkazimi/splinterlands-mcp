@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T12:34:12.109Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -41,13 +41,13 @@
       "burned_cards": -1304659448.143,
       "burn_event": 380759257.877,
       "inflation": -2662118369.014,
-      "market_burn_fee": 433471665.472,
-      "market_list_fee": 58000344,
+      "market_burn_fee": 433473270.9,
+      "market_list_fee": 58000947,
       "modern_inflation": -31659016.055,
-      "rental_burn_fee": 20833200.198,
+      "rental_burn_fee": 20833490.851,
       "shop": 3255417554.134,
-      "token_rental_burn_fee": 5348864.429,
-      "token_rental_fee": 886820
+      "token_rental_burn_fee": 5349141.069,
+      "token_rental_fee": 887161
     }
   }
 }

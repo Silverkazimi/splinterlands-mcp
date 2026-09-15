@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T12:34:12.109Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -50,13 +50,13 @@
     "id": 1,
     "token_symbol": "GRAIN",
     "is_external_resource": false,
-    "resource_quantity": "5021053435.228",
-    "resource_volume": 20801603470.781,
-    "resource_price": 0.00816,
-    "dec_quantity": "40986746.662",
-    "dec_volume": 223755909.34,
-    "dec_price": 122.50431,
-    "total_shares": "313151867.649",
+    "resource_quantity": "5019737689.658",
+    "resource_volume": 20802592883.09,
+    "resource_price": 0.008,
+    "dec_quantity": "40999388.908",
+    "dec_volume": 223776627.687,
+    "dec_price": 122.434,
+    "total_shares": "313153739.183",
     "created_date": "2024-05-14T15:39:09.395Z",
     "last_updated_date": "2024-05-14T15:39:09.395Z"
   }

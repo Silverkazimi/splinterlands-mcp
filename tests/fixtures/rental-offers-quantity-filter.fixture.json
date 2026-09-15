@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T12:34:12.109Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -79,26 +79,26 @@
     "status": "success",
     "data": [
       {
-        "txId": "eaa83d1f36cb635d4897a8c377d34bce2981cea9",
-        "createdDate": "2026-09-11T06:40:39.000Z",
-        "lastUpdatedDate": "2026-09-11T06:40:39.000Z",
+        "txId": "4c7c2721245e240988772b5325c7d76a55e99db4",
+        "createdDate": "2026-09-11T08:33:06.000Z",
+        "lastUpdatedDate": "2026-09-11T08:33:06.000Z",
         "player": "sample-account-1",
         "token": "SPSP",
-        "qtyTotal": "18000.000",
-        "qtyAvailable": "18000.000",
+        "qtyTotal": "10500.000",
+        "qtyAvailable": "10500.000",
         "pricePerToken": "0.002",
         "status": 1,
         "cancelTx": null,
         "expirationBlocks": 201600
       },
       {
-        "txId": "4c7c2721245e240988772b5325c7d76a55e99db4",
-        "createdDate": "2026-09-11T08:33:06.000Z",
-        "lastUpdatedDate": "2026-09-11T08:33:06.000Z",
+        "txId": "ec1a5166facdb5d8f5d581fa7d8ff33426cf1ce9",
+        "createdDate": "2026-09-11T08:39:03.000Z",
+        "lastUpdatedDate": "2026-09-11T08:39:03.000Z",
         "player": "sample-account-2",
         "token": "SPSP",
-        "qtyTotal": "10500.000",
-        "qtyAvailable": "10500.000",
+        "qtyTotal": "25000.000",
+        "qtyAvailable": "25000.000",
         "pricePerToken": "0.002",
         "status": 1,
         "cancelTx": null,
