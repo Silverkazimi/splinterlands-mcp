@@ -129,3 +129,5 @@ Fixtures with an explicit first-row sample retain their recorded row bound durin
 Leading-row fixture samples also have a 128 KiB body budget, below the MCP output limit. Sampling retains complete rows in order and holds the capture if its first complete row cannot fit; it never trims the contents of a market bundle.
 
 Maintenance reports classify request failures as timeout or network and fixture review failures by a fixed processing stage. Raw exception messages, request URLs and response values are withheld. These diagnostics do not relax the existing time, size, schema or publication gates.
+
+The rich-list ranking route has a 60-second maintenance timeout after repeated hosted 20-second timeout observations. It still makes one attempt and uses the 2 MiB response cap. Other ordinary maintenance routes keep their 20-second timeout; collection streaming retains its separate existing budget. This maintenance policy does not change the MCP client's timeout or retry policy.

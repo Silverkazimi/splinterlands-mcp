@@ -15,6 +15,7 @@ const inputSchema = z.array(z.object({
 }).strict()).min(1).max(200);
 const callable = new Set<string>(Object.values(TOOL_ENTRY_IDS));
 export const SWEEP_RESPONSE_CAP = 2 * 1024 * 1024;
+export const RICHLIST_SWEEP_TIMEOUT_MS = 60_000;
 
 function hasResourceScope(entryId: string, params: Record<string, unknown>): boolean {
   if ((entryId === "vapi.land.regions.counts" || entryId === "vapi.land.tracts.counts")
@@ -55,8 +56,10 @@ export function createSweepRequester(fetcher: typeof fetch = fetch, limiter = ne
     await limiter.acquire(bound.hostname);
     const url = new URL(bound.path.value, "https://" + bound.hostname);
     for (const [key, value] of Object.entries(bound.queryParams)) url.searchParams.set(key, String(value));
+    const timeoutMs = bound.entryId === "api.cards.collection" ? COLLECTION_TIMEOUT_MS
+      : bound.entryId === "api.players.richlist-ranking" ? RICHLIST_SWEEP_TIMEOUT_MS : 20_000;
     try {
-      const response = await fetcher(url, { method: "GET", redirect: isAvatarRequest(bound.hostname, url.pathname) ? "manual" : "error", signal: AbortSignal.timeout(bound.entryId === "api.cards.collection" ? COLLECTION_TIMEOUT_MS : 20_000) });
+      const response = await fetcher(url, { method: "GET", redirect: isAvatarRequest(bound.hostname, url.pathname) ? "manual" : "error", signal: AbortSignal.timeout(timeoutMs) });
       if (bound.entryId === "api.cards.collection" && response.ok) {
         try {
           const sample = await parseCardsCollection(response, { limit: 3 });

@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
-import { expect, it } from "vitest";
-import { bindSweepInputs, createSweepRequester, SWEEP_RESPONSE_CAP } from "../scripts/drift/request.js";
+import { expect, it, vi } from "vitest";
+import { bindSweepInputs, createSweepRequester, SWEEP_RESPONSE_CAP, RICHLIST_SWEEP_TIMEOUT_MS } from "../scripts/drift/request.js";
 import { TOOL_ENTRY_IDS } from "../src/server.js";
 import { HostRateLimiter } from "../src/http/ratelimit.js";
 
@@ -126,4 +126,18 @@ it("reports fixed timeout categories without error messages or retrying", async 
   expect(result).toEqual({ status: 0, body: null, isJson: false, transportFailure: "timeout" });
   expect(JSON.stringify(result)).not.toContain("PRIVATE_TIMEOUT_SENTINEL");
   expect(calls).toBe(1);
+});
+
+it("extends only the measured slow maintenance route without adding attempts", async () => {
+  const timeout = vi.spyOn(AbortSignal, "timeout");
+  let calls = 0;
+  const requester = createSweepRequester(async () => { calls++; return Response.json({}); });
+  try {
+    const richlist = bindSweepInputs([{ entryId: "api.players.richlist-ranking", params: { player: "fixture-account", token_type: "DEC" } }])[0]!;
+    await requester(richlist);
+    expect(timeout).toHaveBeenLastCalledWith(RICHLIST_SWEEP_TIMEOUT_MS);
+    await requester(inputs()[0]!);
+    expect(timeout).toHaveBeenLastCalledWith(20_000);
+    expect(calls).toBe(2);
+  } finally { timeout.mockRestore(); }
 });
