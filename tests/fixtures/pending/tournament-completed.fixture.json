@@ -1,0 +1,1752 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-15T11:48:07.546Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 5
+    },
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "6f38bf2108f6e51bfcb6e0a8b8c339e6b3289e82267ea96eeaef0f587c56b22f",
+        "alternateShape": "eaa69194378354d147171114bdf26e1ceb2be4bb84a3b439008816a5e4886e32"
+      }
+    ]
+  },
+  "valueClasses": {
+    "body[0].id": {
+      "valueClass": "opaque"
+    },
+    "body[0].format": {
+      "valueClass": "opaque"
+    },
+    "body[0].sub_format": {
+      "valueClass": "opaque"
+    },
+    "body[0].created_by": {
+      "valueClass": "name"
+    },
+    "body[0].name": {
+      "valueClass": "name"
+    },
+    "body[0].description": {
+      "valueClass": "opaque"
+    },
+    "body[0].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].status": {
+      "valueClass": "numeric"
+    },
+    "body[0].allow_lite": {
+      "valueClass": "opaque"
+    },
+    "body[0].current_round": {
+      "valueClass": "numeric"
+    },
+    "body[0].sponsor_name": {
+      "valueClass": "opaque"
+    },
+    "body[0].sponsor_logo_url": {
+      "valueClass": "opaque"
+    },
+    "body[0].sponsor_logo_url_med": {
+      "valueClass": "opaque"
+    },
+    "body[0].sponsor_logo_url_lg": {
+      "valueClass": "opaque"
+    },
+    "body[0].min_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[0].max_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[0].entry_fee": {
+      "valueClass": "opaque"
+    },
+    "body[0].total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.allowed_cards.type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.allowed_cards.foil": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.allowed_cards.epoch": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.allowed_cards.ghost": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].data.allowed_cards.gladiator": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].data.prizes.payouts[0].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[0].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[0].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[0].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[0].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[0].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[0].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[0].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[0].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[1].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[1].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[1].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[1].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[1].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[1].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[1].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[1].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[1].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[2].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[2].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[2].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[2].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[2].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[3].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[3].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[3].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.prizes.payouts[3].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.prizes.payouts[3].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.duration_blocks": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.multiple_rounds": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.spsp_min": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.cp_min": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.alternate_fee.value": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.rating_level": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.allow_player_card": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].data.best_of": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.rounds[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.rounds[0].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.rounds[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.rounds[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[0].data.rounds[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.rounds[1].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.group_size": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.create_team_seconds": {
+      "valueClass": "numeric"
+    },
+    "body[0].data.winners_bracket": {
+      "valueClass": "numeric"
+    },
+    "body[0].password_pub_key": {
+      "valueClass": "opaque"
+    },
+    "body[0].entrants": {
+      "valueClass": "opaque"
+    },
+    "body[0].cur_player_entered": {
+      "valueClass": "opaque"
+    },
+    "body[1].id": {
+      "valueClass": "opaque"
+    },
+    "body[1].format": {
+      "valueClass": "opaque"
+    },
+    "body[1].sub_format": {
+      "valueClass": "opaque"
+    },
+    "body[1].created_by": {
+      "valueClass": "name"
+    },
+    "body[1].name": {
+      "valueClass": "name"
+    },
+    "body[1].description": {
+      "valueClass": "opaque"
+    },
+    "body[1].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].status": {
+      "valueClass": "numeric"
+    },
+    "body[1].allow_lite": {
+      "valueClass": "opaque"
+    },
+    "body[1].current_round": {
+      "valueClass": "numeric"
+    },
+    "body[1].sponsor_name": {
+      "valueClass": "opaque"
+    },
+    "body[1].sponsor_logo_url": {
+      "valueClass": "opaque"
+    },
+    "body[1].sponsor_logo_url_med": {
+      "valueClass": "opaque"
+    },
+    "body[1].sponsor_logo_url_lg": {
+      "valueClass": "opaque"
+    },
+    "body[1].min_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[1].max_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[1].entry_fee": {
+      "valueClass": "opaque"
+    },
+    "body[1].total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.allowed_cards.type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.allowed_cards.foil": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.allowed_cards.epoch": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.allowed_cards.ghost": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[1].data.allowed_cards.gladiator": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[1].data.prizes.payouts[0].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[0].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[0].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[0].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[0].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[1].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[1].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[1].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[1].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[1].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[2].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[2].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[2].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[2].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[2].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[3].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[3].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[3].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[3].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[3].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[4].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[4].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[4].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[4].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[4].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[5].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[5].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[5].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.prizes.payouts[5].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.prizes.payouts[5].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.duration_blocks": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.multiple_rounds": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.spsp_min": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.cp_min": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.alternate_fee.value": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.rating_level": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.best_of": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.rounds[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.rounds[0].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.rounds[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.rounds[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[1].data.rounds[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.rounds[1].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.group_size": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.create_team_seconds": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.winners_bracket": {
+      "valueClass": "numeric"
+    },
+    "body[1].data.allow_player_card": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[1].password_pub_key": {
+      "valueClass": "opaque"
+    },
+    "body[1].entrants": {
+      "valueClass": "opaque"
+    },
+    "body[1].cur_player_entered": {
+      "valueClass": "opaque"
+    },
+    "body[2].id": {
+      "valueClass": "opaque"
+    },
+    "body[2].format": {
+      "valueClass": "opaque"
+    },
+    "body[2].sub_format": {
+      "valueClass": "opaque"
+    },
+    "body[2].created_by": {
+      "valueClass": "name"
+    },
+    "body[2].name": {
+      "valueClass": "name"
+    },
+    "body[2].description": {
+      "valueClass": "opaque"
+    },
+    "body[2].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[2].status": {
+      "valueClass": "numeric"
+    },
+    "body[2].allow_lite": {
+      "valueClass": "opaque"
+    },
+    "body[2].current_round": {
+      "valueClass": "numeric"
+    },
+    "body[2].sponsor_name": {
+      "valueClass": "opaque"
+    },
+    "body[2].sponsor_logo_url": {
+      "valueClass": "opaque"
+    },
+    "body[2].sponsor_logo_url_med": {
+      "valueClass": "opaque"
+    },
+    "body[2].sponsor_logo_url_lg": {
+      "valueClass": "opaque"
+    },
+    "body[2].min_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[2].max_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[2].entry_fee": {
+      "valueClass": "opaque"
+    },
+    "body[2].total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.allowed_cards.type": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.allowed_cards.foil": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.allowed_cards.epoch": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.allowed_cards.ghost": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[2].data.allowed_cards.gladiator": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[2].data.prizes.payouts[0].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[0].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[0].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[0].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[0].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[0].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[0].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[0].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[0].items[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[0].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[1].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[1].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[1].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[1].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[1].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[1].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[2].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[2].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[2].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[2].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[2].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[3].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[3].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[3].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.prizes.payouts[3].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.prizes.payouts[3].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.multiple_rounds": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.spsp_min": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.cp_min": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.alternate_fee.value": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.alternate_fee.min_league": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.alternate_fee.max_league": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.rating_level": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.allow_player_card": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[2].data.best_of": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.rounds[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.rounds[0].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.rounds[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.rounds[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[2].data.rounds[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[2].data.rounds[1].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[2].password_pub_key": {
+      "valueClass": "opaque"
+    },
+    "body[2].entrants": {
+      "valueClass": "opaque"
+    },
+    "body[2].cur_player_entered": {
+      "valueClass": "opaque"
+    },
+    "body[3].id": {
+      "valueClass": "opaque"
+    },
+    "body[3].format": {
+      "valueClass": "opaque"
+    },
+    "body[3].sub_format": {
+      "valueClass": "opaque"
+    },
+    "body[3].created_by": {
+      "valueClass": "name"
+    },
+    "body[3].name": {
+      "valueClass": "name"
+    },
+    "body[3].description": {
+      "valueClass": "opaque"
+    },
+    "body[3].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].status": {
+      "valueClass": "numeric"
+    },
+    "body[3].allow_lite": {
+      "valueClass": "opaque"
+    },
+    "body[3].current_round": {
+      "valueClass": "numeric"
+    },
+    "body[3].sponsor_name": {
+      "valueClass": "opaque"
+    },
+    "body[3].sponsor_logo_url": {
+      "valueClass": "opaque"
+    },
+    "body[3].sponsor_logo_url_med": {
+      "valueClass": "opaque"
+    },
+    "body[3].sponsor_logo_url_lg": {
+      "valueClass": "opaque"
+    },
+    "body[3].min_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[3].max_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[3].entry_fee": {
+      "valueClass": "opaque"
+    },
+    "body[3].total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.allowed_cards.type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.allowed_cards.foil": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.allowed_cards.epoch": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.allowed_cards.ghost": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].data.allowed_cards.gladiator": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].data.prizes.payouts[0].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[0].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[0].items[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].items[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[0].items[1].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[0].items[1].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[1].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[1].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[1].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[1].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[1].items[0].usd_value": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[1].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[2].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[2].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[2].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[2].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[2].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[3].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[3].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[3].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.prizes.payouts[3].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.prizes.payouts[3].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.multiple_rounds": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.spsp_min": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.cp_min": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.alternate_fee.value": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.alternate_fee.min_league": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.alternate_fee.max_league": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.rating_level": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.allow_player_card": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].data.best_of": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.rounds[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.rounds[0].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.rounds[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.rounds[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].data.rounds[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[3].data.rounds[1].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[3].password_pub_key": {
+      "valueClass": "opaque"
+    },
+    "body[3].entrants": {
+      "valueClass": "opaque"
+    },
+    "body[3].cur_player_entered": {
+      "valueClass": "opaque"
+    },
+    "body[4].id": {
+      "valueClass": "opaque"
+    },
+    "body[4].format": {
+      "valueClass": "opaque"
+    },
+    "body[4].sub_format": {
+      "valueClass": "opaque"
+    },
+    "body[4].created_by": {
+      "valueClass": "name"
+    },
+    "body[4].name": {
+      "valueClass": "name"
+    },
+    "body[4].description": {
+      "valueClass": "opaque"
+    },
+    "body[4].start_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].status": {
+      "valueClass": "numeric"
+    },
+    "body[4].allow_lite": {
+      "valueClass": "opaque"
+    },
+    "body[4].current_round": {
+      "valueClass": "numeric"
+    },
+    "body[4].sponsor_name": {
+      "valueClass": "opaque"
+    },
+    "body[4].sponsor_logo_url": {
+      "valueClass": "opaque"
+    },
+    "body[4].sponsor_logo_url_med": {
+      "valueClass": "opaque"
+    },
+    "body[4].sponsor_logo_url_lg": {
+      "valueClass": "opaque"
+    },
+    "body[4].min_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[4].max_entrants": {
+      "valueClass": "numeric"
+    },
+    "body[4].entry_fee": {
+      "valueClass": "opaque"
+    },
+    "body[4].total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.allowed_cards.type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.allowed_cards.foil": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.allowed_cards.epoch": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.allowed_cards.ghost": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].data.allowed_cards.gladiator": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].data.prizes.payouts[0].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[0].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[0].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[0].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[0].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[1].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[1].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[1].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[1].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[1].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[2].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[2].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[2].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[2].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[2].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[3].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[3].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[3].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[3].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[3].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[4].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[4].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[4].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[4].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[4].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[5].start_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[5].end_place": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[5].items[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.prizes.payouts[5].items[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.prizes.payouts[5].items[0].text": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.total_prizes_usd": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.duration_blocks": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.multiple_rounds": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.spsp_min": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.cp_min": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.alternate_fee.value": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.rating_level": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.best_of": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.rounds[0].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.rounds[0].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.rounds[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.rounds[1].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].data.rounds[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.rounds[1].best_of": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.group_size": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.create_team_seconds": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.winners_bracket": {
+      "valueClass": "numeric"
+    },
+    "body[4].data.allow_player_card": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].password_pub_key": {
+      "valueClass": "opaque"
+    },
+    "body[4].entrants": {
+      "valueClass": "opaque"
+    },
+    "body[4].cur_player_entered": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": [
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-1",
+      "name": "sample-account-2",
+      "description": "[redacted]",
+      "start_date": "2026-09-14T19:30:00.000Z",
+      "status": 2,
+      "allow_lite": false,
+      "current_round": 1,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 2,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [],
+          "epoch": "[redacted]",
+          "ghost": true,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 1,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 2,
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 962,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 2,
+              "end_place": 2,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 0.04,
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 481,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 3,
+              "end_place": 3,
+              "items": [
+                {
+                  "qty": 288,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 4,
+              "end_place": 4,
+              "items": [
+                {
+                  "qty": 192,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 2.6690133,
+        "duration_blocks": 1200,
+        "multiple_rounds": false,
+        "spsp_min": 0,
+        "cp_min": 0,
+        "alternate_fee": {
+          "value": "[redacted]"
+        },
+        "rating_level": 2,
+        "allow_player_card": false,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 1,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ],
+        "group_size": 8,
+        "create_team_seconds": 228,
+        "winners_bracket": 30
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-3",
+      "name": "sample-account-4",
+      "description": "[redacted]",
+      "start_date": "2026-09-13T11:30:00.000Z",
+      "status": 2,
+      "allow_lite": false,
+      "current_round": 2,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 29,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [],
+          "epoch": "[redacted]",
+          "ghost": false,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 4,
+              "items": [
+                {
+                  "qty": 318.9,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 5,
+              "end_place": 8,
+              "items": [
+                {
+                  "qty": 212.6,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 9,
+              "end_place": 16,
+              "items": [
+                {
+                  "qty": 159.5,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 17,
+              "end_place": 32,
+              "items": [
+                {
+                  "qty": 106.3,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 33,
+              "end_place": 64,
+              "items": [
+                {
+                  "qty": 53.2,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 65,
+              "end_place": 128,
+              "items": [
+                {
+                  "qty": 26.6,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 29.4490574,
+        "duration_blocks": 28800,
+        "multiple_rounds": true,
+        "spsp_min": 6000,
+        "cp_min": 44174,
+        "alternate_fee": {
+          "value": "[redacted]"
+        },
+        "rating_level": 1,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 1,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ],
+        "group_size": 12,
+        "create_team_seconds": 288,
+        "winners_bracket": 30,
+        "allow_player_card": false
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-5",
+      "name": "sample-account-6",
+      "description": "[redacted]",
+      "start_date": "2026-09-12T20:00:00.000Z",
+      "status": 2,
+      "allow_lite": false,
+      "current_round": 5,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 5,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [],
+          "epoch": "[redacted]",
+          "ghost": true,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 1,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 1,
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 2,
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 2,
+              "end_place": 2,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 2,
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 3,
+              "end_place": 4,
+              "items": [
+                {
+                  "qty": 25,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 5,
+              "end_place": 10,
+              "items": [
+                {
+                  "qty": 5,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 5.030384,
+        "multiple_rounds": false,
+        "spsp_min": 0,
+        "cp_min": 0,
+        "alternate_fee": {
+          "value": "[redacted]",
+          "min_league": 0,
+          "max_league": 3
+        },
+        "rating_level": 2,
+        "allow_player_card": false,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 3,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ]
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-5",
+      "name": "sample-account-6",
+      "description": "[redacted]",
+      "start_date": "2026-09-12T19:00:00.000Z",
+      "status": 2,
+      "allow_lite": false,
+      "current_round": 4,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 5,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [],
+          "epoch": "[redacted]",
+          "ghost": true,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 1,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 1,
+                  "text": "[redacted]"
+                },
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 2,
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 2,
+              "end_place": 2,
+              "items": [
+                {
+                  "qty": 1,
+                  "type": "[redacted]",
+                  "usd_value": 2,
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 3,
+              "end_place": 4,
+              "items": [
+                {
+                  "qty": 25,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 5,
+              "end_place": 10,
+              "items": [
+                {
+                  "qty": 5,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 5.030384,
+        "multiple_rounds": false,
+        "spsp_min": 0,
+        "cp_min": 0,
+        "alternate_fee": {
+          "value": "[redacted]",
+          "min_league": 0,
+          "max_league": 3
+        },
+        "rating_level": 2,
+        "allow_player_card": true,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 3,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ]
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    },
+    {
+      "id": "[redacted]",
+      "format": "[redacted]",
+      "sub_format": null,
+      "created_by": "sample-account-3",
+      "name": "sample-account-7",
+      "description": "[redacted]",
+      "start_date": "2026-09-12T12:30:00.000Z",
+      "status": 2,
+      "allow_lite": false,
+      "current_round": 2,
+      "sponsor_name": "[redacted]",
+      "sponsor_logo_url": "[redacted]",
+      "sponsor_logo_url_med": "[redacted]",
+      "sponsor_logo_url_lg": "[redacted]",
+      "min_entrants": 4,
+      "max_entrants": null,
+      "entry_fee": "[redacted]",
+      "total_prizes_usd": 117,
+      "data": {
+        "allowed_cards": {
+          "type": "[redacted]",
+          "foil": "[redacted]",
+          "sets": [],
+          "epoch": "[redacted]",
+          "ghost": false,
+          "gladiator": false
+        },
+        "prizes": {
+          "payouts": [
+            {
+              "start_place": 1,
+              "end_place": 4,
+              "items": [
+                {
+                  "qty": 1275.8,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 5,
+              "end_place": 8,
+              "items": [
+                {
+                  "qty": 850.5,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 9,
+              "end_place": 16,
+              "items": [
+                {
+                  "qty": 637.9,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 17,
+              "end_place": 32,
+              "items": [
+                {
+                  "qty": 425.3,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 33,
+              "end_place": 64,
+              "items": [
+                {
+                  "qty": 212.6,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            },
+            {
+              "start_place": 65,
+              "end_place": 128,
+              "items": [
+                {
+                  "qty": 106.3,
+                  "type": "[redacted]",
+                  "text": "[redacted]"
+                }
+              ]
+            }
+          ]
+        },
+        "total_prizes_usd": 117.75884540000001,
+        "duration_blocks": 28800,
+        "multiple_rounds": true,
+        "spsp_min": 12000,
+        "cp_min": 67575,
+        "alternate_fee": {
+          "value": "[redacted]"
+        },
+        "rating_level": 3,
+        "best_of": 3,
+        "rounds": [
+          {
+            "type": "[redacted]",
+            "best_of": 1,
+            "qty": 1
+          },
+          {
+            "type": "[redacted]",
+            "qty": 1,
+            "best_of": 5
+          }
+        ],
+        "group_size": 12,
+        "create_team_seconds": 288,
+        "winners_bracket": 30,
+        "allow_player_card": false
+      },
+      "password_pub_key": null,
+      "entrants": "[redacted]",
+      "cur_player_entered": "[redacted]"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T11:48:07.546Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -4395,7 +4395,7 @@
       "status": "[redacted]",
       "data": "[redacted]",
       "rating": 0,
-      "modern_rating": 1670,
+      "modern_rating": 1650,
       "avatar_id": 0,
       "title_pre": null,
       "title_post": null,
@@ -4415,7 +4415,7 @@
       "status": "[redacted]",
       "data": "[redacted]",
       "rating": 0,
-      "modern_rating": 2860,
+      "modern_rating": 2820,
       "avatar_id": 0,
       "title_pre": null,
       "title_post": null,
@@ -4425,7 +4425,7 @@
       "collection_power": 135465,
       "starter_pack_purchase": false,
       "player_avatar": null,
-      "is_online": true
+      "is_online": false
     },
     {
       "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
@@ -4555,7 +4555,7 @@
       "status": "[redacted]",
       "data": "[redacted]",
       "rating": 0,
-      "modern_rating": 1290,
+      "modern_rating": 1270,
       "avatar_id": 0,
       "title_pre": null,
       "title_post": null,
@@ -4955,7 +4955,7 @@
       "status": "[redacted]",
       "data": "[redacted]",
       "rating": 0,
-      "modern_rating": 4710,
+      "modern_rating": 4690,
       "avatar_id": 0,
       "title_pre": null,
       "title_post": null,
@@ -4965,7 +4965,7 @@
       "collection_power": 52500,
       "starter_pack_purchase": false,
       "player_avatar": null,
-      "is_online": true
+      "is_online": false
     },
     {
       "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
@@ -5194,7 +5194,7 @@
       "join_date": "2025-07-14T12:45:12.000Z",
       "status": "[redacted]",
       "data": "[redacted]",
-      "rating": 1440,
+      "rating": 1420,
       "modern_rating": 1450,
       "avatar_id": 0,
       "title_pre": null,
@@ -5215,7 +5215,7 @@
       "status": "[redacted]",
       "data": "[redacted]",
       "rating": 0,
-      "modern_rating": 950,
+      "modern_rating": 930,
       "avatar_id": 0,
       "title_pre": null,
       "title_post": null,

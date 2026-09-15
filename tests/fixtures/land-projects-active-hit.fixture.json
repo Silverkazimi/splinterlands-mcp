@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T11:48:07.546Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -201,9 +201,9 @@
     "token_symbol": "WOOD",
     "pp_required": 0,
     "hours_to_completion": null,
-    "elapsed_hours": 12482.734,
+    "elapsed_hours": 12483.329,
     "pp_spent": 0,
-    "grain_required": 145.96,
+    "grain_required": 181.803,
     "wood_required": 0,
     "stone_required": 0,
     "iron_required": 0,
@@ -214,7 +214,7 @@
     "hours_till_next_op": 0,
     "next_op_allowed_date": "2026-09-15T09:47:33.000Z",
     "pp_staked": 6820,
-    "projected_amount_received": 74.485,
+    "projected_amount_received": 92.765,
     "work_per_hour_per_one_pp": 0.005,
     "project_id": 231753,
     "is_harvesting": true,
@@ -224,20 +224,20 @@
     "latest_sps_reward_block": 0,
     "sps_tokens_per_block": 0,
     "accumulated_sps_rewards_per_share_of_pool": 0,
-    "land_work_type_total_work_type_pp": 199529492.337,
+    "land_work_type_total_work_type_pp": 199529128.702,
     "captured_tax_rate": 0,
     "time_crystal_value": 1000,
     "project_created_date": "2025-04-13T08:29:09.000Z",
     "worksite_type": "Logging Camp",
     "max_tax_rate": 0,
     "region_uid": "PR-PNW-1",
-    "hours_since_last_op": 2.427,
+    "hours_since_last_op": 3.023,
     "site_efficiency": 1,
     "is_runi_staked": false,
     "rewards_per_hour": 34.1,
     "grain_req_per_hour": 60.14,
     "segments": null,
-    "estimated_totem_chance": 0.00011,
+    "estimated_totem_chance": 0.00013,
     "resource_recipe": [],
     "resource_mint_rate": 0.005
   }

@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T11:48:07.546Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -274,7 +274,7 @@
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 24,
-      "projected_end": "2026-09-16T11:13:15.731Z",
+      "projected_end": "2026-09-16T11:48:59.985Z",
       "work_per_hour": "6820.0000"
     },
     {
@@ -288,7 +288,7 @@
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 24,
-      "projected_end": "2026-09-16T11:13:15.731Z",
+      "projected_end": "2026-09-16T11:48:59.985Z",
       "work_per_hour": "6820.0000"
     },
     {
@@ -302,7 +302,7 @@
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 24,
-      "projected_end": "2026-09-16T11:13:15.731Z",
+      "projected_end": "2026-09-16T11:48:59.985Z",
       "work_per_hour": "6820.0000"
     },
     {
@@ -316,7 +316,7 @@
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 24,
-      "projected_end": "2026-09-16T11:13:15.731Z",
+      "projected_end": "2026-09-16T11:48:59.985Z",
       "work_per_hour": "6820.0000"
     },
     {
@@ -330,7 +330,7 @@
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 24,
-      "projected_end": "2026-09-16T11:13:15.731Z",
+      "projected_end": "2026-09-16T11:48:59.985Z",
       "work_per_hour": "6820.0000"
     },
     {
@@ -344,7 +344,7 @@
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 24,
-      "projected_end": "2026-09-16T11:13:15.731Z",
+      "projected_end": "2026-09-16T11:48:59.985Z",
       "work_per_hour": "6820.0000"
     },
     {
@@ -358,7 +358,7 @@
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 24,
-      "projected_end": "2026-09-16T11:13:15.731Z",
+      "projected_end": "2026-09-16T11:48:59.985Z",
       "work_per_hour": "6820.0000"
     }
   ]

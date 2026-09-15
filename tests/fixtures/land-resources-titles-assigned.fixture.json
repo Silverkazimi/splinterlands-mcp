@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T11:48:07.546Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted.",
     "fixtureSample": {
       "kind": "first",
@@ -37,9 +37,9 @@
       "title": "Warden",
       "player": "sample-account-1",
       "created_date": "2024-05-28T15:34:23.831Z",
-      "avatar_id": 19,
-      "league": 10,
-      "modern_league": 4
+      "avatar_id": 14,
+      "league": 12,
+      "modern_league": 1
     }
   ]
 }

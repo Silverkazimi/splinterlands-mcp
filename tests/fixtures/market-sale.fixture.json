@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T11:48:07.546Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted.",
     "reviewedResponseShapes": [
       {
@@ -132,44 +132,44 @@
   },
   "body": [
     {
-      "card_detail_id": 643,
-      "gold": true,
-      "foil": 1,
-      "edition": 12,
-      "qty": 8,
-      "level": 2,
-      "low_price_bcx": 5.875,
-      "low_price": 6,
-      "high_price": 187,
-      "mana": 5,
-      "season_qty": 0,
-      "daily_qty": 0
-    },
-    {
-      "card_detail_id": 643,
+      "card_detail_id": 897,
       "gold": false,
       "foil": 0,
-      "edition": 12,
-      "qty": 19,
+      "edition": 18,
+      "qty": 20,
       "level": 1,
-      "low_price_bcx": 0.156,
-      "low_price": 0.687,
-      "high_price": 86.089,
-      "mana": 5,
+      "low_price_bcx": 2.199,
+      "low_price": 2.199,
+      "high_price": 3.72,
+      "mana": 4,
       "season_qty": 0,
       "daily_qty": 0
     },
     {
-      "card_detail_id": 642,
+      "card_detail_id": 896,
+      "gold": false,
+      "foil": 3,
+      "edition": 18,
+      "qty": 1,
+      "level": 6,
+      "low_price_bcx": 10,
+      "low_price": 100,
+      "high_price": 100,
+      "mana": 8,
+      "season_qty": 0,
+      "daily_qty": 0
+    },
+    {
+      "card_detail_id": 896,
       "gold": true,
       "foil": 1,
-      "edition": 12,
-      "qty": 12,
+      "edition": 18,
+      "qty": 29,
       "level": 2,
-      "low_price_bcx": 4.022,
-      "low_price": 4.08,
-      "high_price": 120.059,
-      "mana": 5,
+      "low_price_bcx": 3.35,
+      "low_price": 3.35,
+      "high_price": 34.9,
+      "mana": 8,
       "season_qty": 0,
       "daily_qty": 0
     }

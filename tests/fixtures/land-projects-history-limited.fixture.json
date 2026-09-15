@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T11:48:07.546Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -551,12 +551,12 @@
       "token_symbol": "RESEARCH",
       "pp_required": 0,
       "hours_to_completion": null,
-      "elapsed_hours": 24257.289,
+      "elapsed_hours": 24257.884,
       "pp_spent": 0,
-      "grain_required": 146.02,
-      "wood_required": 75.268,
-      "stone_required": 30.107,
-      "iron_required": 7.527,
+      "grain_required": 181.863,
+      "wood_required": 93.744,
+      "stone_required": 37.498,
+      "iron_required": 9.374,
       "is_active": false,
       "destroyed_date": "2025-03-17T01:11:39.000Z",
       "is_construction": false,
@@ -564,7 +564,7 @@
       "hours_till_next_op": 0,
       "next_op_allowed_date": "2026-09-15T09:47:33.000Z",
       "pp_staked": 6820,
-      "projected_amount_received": 1.49,
+      "projected_amount_received": 1.856,
       "work_per_hour_per_one_pp": 0.0001,
       "project_id": null,
       "is_harvesting": false,
@@ -581,13 +581,13 @@
       "worksite_type": "Research Hut",
       "max_tax_rate": 0,
       "region_uid": "PR-PNW-1",
-      "hours_since_last_op": 2.428,
+      "hours_since_last_op": 3.024,
       "site_efficiency": 1,
       "is_runi_staked": false,
       "rewards_per_hour": 0.682,
       "grain_req_per_hour": 60.14,
       "segments": [],
-      "estimated_totem_chance": 0.00011,
+      "estimated_totem_chance": 0.00013,
       "resource_recipe": [
         {
           "qty": 0.005,
