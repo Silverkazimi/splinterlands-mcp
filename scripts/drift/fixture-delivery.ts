@@ -5,6 +5,13 @@ import { join } from "node:path";
 import { executeFixtureRenewal, type RenewalPlan } from "./renewal.js";
 import { writeRenewedFixture } from "./fixture-files.js";
 
+export class DeliveryValidationError extends Error {
+  constructor(readonly stage: "privacy" | "typecheck" | "lint" | "tests") {
+    super("Maintenance validation failed at " + stage + ".");
+    this.name = "DeliveryValidationError";
+  }
+}
+
 export type DeliveryCommand = (command: string, args: string[]) => string;
 export const deliveryCommand: DeliveryCommand = (command, args) => execFileSync(command, args, {
   encoding: "utf8", timeout: command === "npm" ? 600_000 : 30_000,
@@ -47,10 +54,15 @@ export async function deliverReview(repository: string, runId: string, prefix: "
   const allowed = new Set(allowedPaths);
   if (allowed.size === 0) return "unchanged";
   await prepare();
-  run("npm", ["run", "leak-check:full"]);
-  run("npm", ["run", "typecheck"]);
-  run("npm", ["run", "lint"]);
-  run("npm", ["test"]);
+  for (const [stage, args] of [
+    ["privacy", ["run", "leak-check:full"]],
+    ["typecheck", ["run", "typecheck"]],
+    ["lint", ["run", "lint"]],
+    ["tests", ["test"]],
+  ] as const) {
+    try { run("npm", [...args]); }
+    catch { throw new DeliveryValidationError(stage); }
+  }
   const changed = run("git", ["diff", "--name-only", "-z"]).split("\0").filter(Boolean);
   const untracked = run("git", ["ls-files", "--others", "--exclude-standard", "-z"]).split("\0").filter(Boolean);
   const paths = [...new Set([...changed, ...untracked])];
