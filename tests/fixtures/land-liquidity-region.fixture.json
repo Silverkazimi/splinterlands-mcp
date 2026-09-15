@@ -1,8 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T00:00:00Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained. Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "status": {
@@ -42,16 +42,16 @@
   "status": "success",
   "data": [
     {
-      "player": "sample-account-a",
-      "name": "sample-acct-007",
-      "uid": "PR-CEF-65",
-      "plots_owned": 102,
-      "grain": 20722901.171,
-      "wood": 1549213.681,
-      "stone": 602692.197,
-      "iron": 78428.928,
-      "research": 934816.288,
-      "aura": 575947.595
+      "player": "sample-account-1",
+      "name": "sample-account-2",
+      "uid": "PR-CEF-81",
+      "plots_owned": 6,
+      "grain": 131928.94,
+      "wood": 93486.182,
+      "stone": 48659.005,
+      "iron": 5.342,
+      "research": 79551.406,
+      "aura": 6243.253
     }
   ]
 }

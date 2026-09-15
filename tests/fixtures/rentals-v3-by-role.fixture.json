@@ -4,7 +4,20 @@
     "observedAt": "2026-09-13T11:08:59.651134+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/rentals/player/{player}/{role}",
     "captureScope": "Complete bounded public response; account selected from anonymous market results.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "additionalSchemaReview": "Official live observation 2026-09-15 also verifies numeric rental status 1; no status meaning is inferred.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "22d49f97a92e6b49ea949526c1032543877d6b60e990be3e9d3fe5174ecb4e84",
+        "alternateShape": "549e281d06e6d53a8a0e37ab7cecec9a20de36e14904acf8b080a993b9e65915"
+      }
+    ],
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "22d49f97a92e6b49ea949526c1032543877d6b60e990be3e9d3fe5174ecb4e84",
+        "responseShape": "549e281d06e6d53a8a0e37ab7cecec9a20de36e14904acf8b080a993b9e65915"
+      }
+    ]
   },
   "valueClasses": {
     "body.status": {
@@ -50,7 +63,11 @@
       "valueClass": "numeric"
     },
     "body.data[0].status": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        0,
+        1
+      ]
     },
     "body.data[0].fillTx": {
       "valueClass": "id"
@@ -95,7 +112,11 @@
       "valueClass": "numeric"
     },
     "body.data[1].status": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        0,
+        1
+      ]
     },
     "body.data[1].fillTx": {
       "valueClass": "id"
@@ -140,7 +161,11 @@
       "valueClass": "numeric"
     },
     "body.data[2].status": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        0,
+        1
+      ]
     },
     "body.data[2].fillTx": {
       "valueClass": "id"
@@ -185,7 +210,11 @@
       "valueClass": "numeric"
     },
     "body.data[3].status": {
-      "valueClass": "enum"
+      "valueClass": "enum",
+      "allowedValues": [
+        0,
+        1
+      ]
     },
     "body.data[3].fillTx": {
       "valueClass": "id"

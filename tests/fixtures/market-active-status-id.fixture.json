@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:33:56.351571+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/market/active_status",
-    "captureScope": "First three root rows; nested records retained unchanged.",
-    "redaction": "Name-classified fields use synthetic account placeholders. Account references in reviewed fields and encoded records use consistent synthetic placeholders."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.id": {
@@ -129,17 +127,17 @@
     }
   },
   "body": {
-    "id": 190153145,
-    "sell_trx_id": "d51870cc626020edd2f481c19131a34ad0025f84-0",
-    "seller": "sample-acct-061",
-    "created_date": "2026-08-31T10:47:06.000Z",
-    "type": "SELL",
+    "id": 190301643,
+    "sell_trx_id": "2277f861406ea66b1b824fbabbf920392c8650d8-49",
+    "seller": "sample-account-1",
+    "created_date": "2026-09-13T02:53:36.000Z",
+    "type": "[redacted]",
     "num_cards": 1,
-    "currency": "USD",
+    "currency": "[redacted]",
     "starting_price": null,
-    "buy_price": "0.330",
+    "buy_price": "[redacted]",
     "fee_percent": 600,
-    "expiration_date": "2026-09-30T10:47:06.000Z",
+    "expiration_date": "2026-10-13T02:53:36.000Z",
     "status": 0,
     "purchaser": null,
     "completed_date": null,
@@ -148,29 +146,29 @@
     "lock_block": null,
     "locked_by": null,
     "desc": null,
-    "created_block_num": 109502777,
+    "created_block_num": 109866777,
     "updated_price": null,
     "rental_type": null,
-    "card_id": "C-C7DTOU4G68",
-    "card_detail_id": 1,
-    "xp": 0,
+    "card_id": "C3-244-E34CHT1GXS",
+    "card_detail_id": 244,
+    "xp": 1,
     "gold": false,
-    "edition": 0,
+    "edition": 3,
     "alpha_xp": null,
-    "bcx": "1.000",
-    "price_bcx": "0.330",
-    "power": 30,
+    "bcx": "[redacted]",
+    "price_bcx": "[redacted]",
+    "power": 1000,
     "rental_season_id": null,
     "foil": 0,
     "cards": [
       {
-        "uid": "C-C7DTOU4G68",
-        "card_detail_id": 1,
-        "player": "sample-acct-061",
-        "xp": 0,
+        "uid": "[redacted]",
+        "card_detail_id": 244,
+        "player": "sample-account-1",
+        "xp": 1,
         "gold": false,
         "foil": 0,
-        "edition": 0
+        "edition": 3
       }
     ]
   }

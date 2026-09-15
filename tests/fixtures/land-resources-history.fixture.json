@@ -1,8 +1,12 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-07T00:00:00Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 2
+    }
   },
   "valueClasses": {
     "status": {
@@ -34,9 +38,6 @@
     },
     "data[0].created_date": {
       "valueClass": "timestamp"
-    },
-    "data[0].balance_history": {
-      "valueClass": "opaque"
     },
     "data[0].counterparty": {
       "valueClass": "enum",
@@ -79,9 +80,6 @@
     "data[1].created_date": {
       "valueClass": "timestamp"
     },
-    "data[1].balance_history": {
-      "valueClass": "opaque"
-    },
     "data[1].counterparty": {
       "valueClass": "enum",
       "allowedValues": [
@@ -100,28 +98,28 @@
   "status": "success",
   "data": [
     {
-      "id": 38696850,
-      "region_number": 1,
-      "player": "sample-account-b",
-      "amount": -6278.29,
-      "end_balance": 44447644.152,
+      "id": 38908933,
+      "region_number": 65,
+      "player": "sample-account-1",
+      "amount": -2.817,
+      "end_balance": 21562306.007,
       "operation_id": 1,
       "resource_id": 1,
-      "trx_id": "a5cc07d54c3f5b6e30bf120be7f672606cecb0a6",
-      "created_date": "2026-09-05T16:38:33.000Z",
+      "trx_id": "8e9efa8d5e756f9c5261bf04e7f41dc31f5148cf-1",
+      "created_date": "2026-09-11T20:14:36.000Z",
       "balance_history": [],
       "counterparty": "$LAND_GRAIN_CONSUMED"
     },
     {
-      "id": 38696851,
-      "region_number": 1,
-      "player": "sample-account-b",
-      "amount": 15256.246,
-      "end_balance": 44462900.398,
+      "id": 38908934,
+      "region_number": 65,
+      "player": "sample-account-1",
+      "amount": 5.75,
+      "end_balance": 21562311.757,
       "operation_id": 3,
       "resource_id": 1,
-      "trx_id": "a5cc07d54c3f5b6e30bf120be7f672606cecb0a6",
-      "created_date": "2026-09-05T16:38:33.000Z",
+      "trx_id": "8e9efa8d5e756f9c5261bf04e7f41dc31f5148cf-1",
+      "created_date": "2026-09-11T20:14:36.000Z",
       "balance_history": [],
       "counterparty": "$LAND_GRAIN_MINT"
     }

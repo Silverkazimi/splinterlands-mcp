@@ -3,7 +3,14 @@
     "source": "live-observation",
     "observedAt": "2026-09-14",
     "redaction": "Names are synthetic; free text and opaque strings are redacted.",
-    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
+    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "519a57c4dcabe49949c893e489c1261063113b322d252182977ab34b1f70b675",
+        "alternateShape": "1c7622e69451a3fdfb3ab3a5f4dec6175998cb6b4f52e16e7261690a548dfaa4"
+      }
+    ],
+    "additionalSchemaReview": " Reviewed 2026-09-15: the default leaderboard returned an empty array in hosted maintenance and an independent native read. This exact empty state retains the populated fixture; it does not prove a populated ranking or account holdings."
   },
   "valueClasses": {
     "body[0].rank": {

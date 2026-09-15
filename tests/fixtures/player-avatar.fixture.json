@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-14T07:13:36.769436+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/avatar/{name}",
-    "captureScope": "JSON projection of HTTP 302 Location; both URLs replaced with synthetic fixture values. No image downloaded.",
-    "upstreamStatus": 302
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted. Avatar URLs retain reviewed synthetic fixture values."
   },
   "valueClasses": {
     "body.avatar_url": {

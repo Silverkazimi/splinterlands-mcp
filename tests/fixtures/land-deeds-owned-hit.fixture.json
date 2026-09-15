@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-07T09:57:47Z"
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "status": {
@@ -30,105 +31,25 @@
     },
     "data[3].uid": {
       "valueClass": "id"
-    },
-    "data[4].count": {
-      "valueClass": "numeric"
-    },
-    "data[4].uid": {
-      "valueClass": "id"
-    },
-    "data[5].count": {
-      "valueClass": "numeric"
-    },
-    "data[5].uid": {
-      "valueClass": "id"
-    },
-    "data[6].count": {
-      "valueClass": "numeric"
-    },
-    "data[6].uid": {
-      "valueClass": "id"
-    },
-    "data[7].count": {
-      "valueClass": "numeric"
-    },
-    "data[7].uid": {
-      "valueClass": "id"
-    },
-    "data[8].count": {
-      "valueClass": "numeric"
-    },
-    "data[8].uid": {
-      "valueClass": "id"
-    },
-    "data[9].count": {
-      "valueClass": "numeric"
-    },
-    "data[9].uid": {
-      "valueClass": "id"
-    },
-    "data[10].count": {
-      "valueClass": "numeric"
-    },
-    "data[10].uid": {
-      "valueClass": "id"
-    },
-    "data[11].count": {
-      "valueClass": "numeric"
-    },
-    "data[11].uid": {
-      "valueClass": "id"
     }
   },
   "status": "success",
   "data": [
     {
-      "count": 1,
-      "uid": "PR-CEF-69"
+      "count": 15,
+      "uid": "PR-LOP-47"
     },
     {
-      "count": 3,
-      "uid": "PR-GLL-115"
+      "count": 1000,
+      "uid": "PR-PNW-10"
     },
     {
-      "count": 12,
-      "uid": "PR-GLL-121"
-    },
-    {
-      "count": 6,
-      "uid": "PR-GLL-123"
-    },
-    {
-      "count": 17,
-      "uid": "PR-LOP-62"
-    },
-    {
-      "count": 182,
-      "uid": "PR-PNW-1"
-    },
-    {
-      "count": 4,
-      "uid": "PR-PNW-12"
-    },
-    {
-      "count": 3,
-      "uid": "PR-PNW-13"
-    },
-    {
-      "count": 9,
-      "uid": "PR-PNW-18"
-    },
-    {
-      "count": 4,
-      "uid": "PR-PNW-20"
-    },
-    {
-      "count": 17,
-      "uid": "PR-PNW-7"
-    },
-    {
-      "count": 39,
+      "count": 112,
       "uid": "PR-PNW-9"
+    },
+    {
+      "count": 1,
+      "uid": "PR-SHC-143"
     }
   ]
 }

@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T10:02:46.898887+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/offers/lowest-price",
-    "captureScope": "Complete bounded public response. No player selector supplied."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {

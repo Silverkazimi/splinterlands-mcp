@@ -1,12 +1,14 @@
 # Changelog
 
-## Unreleased
+## 1.0.0 - Release candidate
 
 The initial release is being prepared. No release has been published from this working tree.
 
 ### Added
 
-- Read-only MCP stdio server with 161 tools, six resources and a 189-entry endpoint catalogue. The catalogue distinguishes 154 callable Splinterlands endpoints from 35 dated exclusions.
+- Saved custom avatar settings and opt-in PNG artwork composition, with level metadata separate from image art. Legacy RUNI profile portraits and other observed artwork variants are documented separately.
+
+- Read-only MCP stdio server with 163 tools, six resources and a 190-entry endpoint catalogue. The catalogue distinguishes callable endpoints from dated exclusions.
 - Public Land deed, plot, staking, resource, production, liquidity, project and inventory reads, with verified plot references and bounded account scope.
 - Card collection streaming and projected pages with memory limits, metadata joins, staking-state filters, cooldown states, Land abilities and production figures.
 - Offline Land lineup estimation and comparisons covering production caps, terrain and element modifiers, abilities, Runi, Power Cores, food and optional regional DEC recomputation. A bounded lineup snapshot supplies dated inputs and explicit unknown states.

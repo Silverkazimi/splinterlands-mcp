@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-13T09:33:51.885844+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/collector/{player}/{binderRef}",
-    "captureScope": "Complete captured response without transformed values.",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -435,237 +433,177 @@
     },
     "body.data.stickerPlacements[1].cosmetic.isPremium": {
       "valueClass": "enum"
-    },
-    "body.data.stickerPlacements[2].id": {
-      "valueClass": "id"
-    },
-    "body.data.stickerPlacements[2].itemUid": {
-      "valueClass": "id"
-    },
-    "body.data.stickerPlacements[2].stickerUid": {
-      "valueClass": "id"
-    },
-    "body.data.stickerPlacements[2].surface": {
-      "valueClass": "opaque"
-    },
-    "body.data.stickerPlacements[2].pageId": {
-      "valueClass": "id"
-    },
-    "body.data.stickerPlacements[2].slotId": {
-      "valueClass": "id"
-    },
-    "body.data.stickerPlacements[2].x": {
-      "valueClass": "numeric"
-    },
-    "body.data.stickerPlacements[2].y": {
-      "valueClass": "numeric"
-    },
-    "body.data.stickerPlacements[2].rotation": {
-      "valueClass": "numeric"
-    },
-    "body.data.stickerPlacements[2].scale": {
-      "valueClass": "numeric"
-    },
-    "body.data.stickerPlacements[2].zIndex": {
-      "valueClass": "numeric"
-    },
-    "body.data.stickerPlacements[2].isSoulbound": {
-      "valueClass": "enum"
-    },
-    "body.data.stickerPlacements[2].isTradeable": {
-      "valueClass": "enum"
-    },
-    "body.data.stickerPlacements[2].isListed": {
-      "valueClass": "enum"
-    },
-    "body.data.stickerPlacements[2].cosmetic.id": {
-      "valueClass": "id"
-    },
-    "body.data.stickerPlacements[2].cosmetic.key": {
-      "valueClass": "id"
-    },
-    "body.data.stickerPlacements[2].cosmetic.type": {
-      "valueClass": "opaque"
-    },
-    "body.data.stickerPlacements[2].cosmetic.name": {
-      "valueClass": "freetext"
-    },
-    "body.data.stickerPlacements[2].cosmetic.assetUrl": {
-      "valueClass": "opaque"
-    },
-    "body.data.stickerPlacements[2].cosmetic.isPremium": {
-      "valueClass": "enum"
     }
   },
   "body": {
     "status": "success",
     "data": {
-      "id": "123",
-      "player": "sample-account-b",
-      "name": "Power Cards",
-      "slug": "power-cards",
+      "id": "3174",
+      "player": "sample-account-1",
+      "name": "[redacted]",
+      "slug": "forever-on-land",
       "displayIndex": 0,
       "pageCount": 3,
       "cardCount": 27,
-      "lastSavedDate": "2026-07-07T19:22:02.715Z",
-      "coverCosmeticId": "22",
-      "ringStyle": "black",
-      "version": 43,
+      "lastSavedDate": "2026-08-02T10:49:14.722Z",
+      "coverCosmeticId": "15",
+      "ringStyle": "[redacted]",
+      "version": 68,
       "unseenGiftCount": 0,
       "pages": [
         {
-          "id": "423",
+          "id": "3748",
           "pageIndex": 0,
-          "pageType": "card_sleeve",
+          "pageType": "[redacted]",
           "slots": [
             {
-              "id": "3799",
+              "id": "28972",
               "slotIndex": 0,
-              "cardUid": "C2-635-70ELBFPKG0"
+              "cardUid": "G2-78-F5K4TUAMHC"
             },
             {
-              "id": "3800",
+              "id": "28973",
               "slotIndex": 1,
-              "cardUid": "C2-633-W8WCVKBVPC"
+              "cardUid": "G-MSW6DRMEKW"
             },
             {
-              "id": "3801",
+              "id": "28974",
               "slotIndex": 2,
-              "cardUid": "C7-352-6SNKQ327WW"
+              "cardUid": "G-BVKITPSUCG"
             },
             {
-              "id": "3802",
+              "id": "28975",
               "slotIndex": 3,
-              "cardUid": "C2-506-23WOZGGGM8"
+              "cardUid": "G-3N15RQTMXS"
             },
             {
-              "id": "3803",
+              "id": "28976",
               "slotIndex": 4,
-              "cardUid": "G12-650-2Q1V330WV4"
+              "cardUid": "G-2XBICU7WTS"
             },
             {
-              "id": "3804",
+              "id": "28977",
               "slotIndex": 5,
-              "cardUid": "C2-505-0000000083"
+              "cardUid": "G1-33-STZWZZ7BI8"
             },
             {
-              "id": "3805",
+              "id": "28978",
               "slotIndex": 6,
-              "cardUid": "C8-497-NL7LYWAK8G"
+              "cardUid": "G1-69-FYZDF67OK0"
             },
             {
-              "id": "3806",
+              "id": "28979",
               "slotIndex": 7,
-              "cardUid": "C10-516-0R7UTG4TZK"
+              "cardUid": "G3-82-7X97S70FE8"
             },
             {
-              "id": "3807",
+              "id": "28980",
               "slotIndex": 8,
-              "cardUid": "C8-474-0Z95TVLBA8"
+              "cardUid": "G3-133-FKXTXE4A1C"
             }
           ]
         },
         {
-          "id": "424",
+          "id": "3749",
           "pageIndex": 1,
-          "pageType": "card_sleeve",
+          "pageType": "[redacted]",
           "slots": [
             {
-              "id": "3808",
+              "id": "28981",
               "slotIndex": 0,
-              "cardUid": "C7-509-0JGL1UXLY8"
+              "cardUid": "G3-107-6O4PI91RCW"
             },
             {
-              "id": "3809",
+              "id": "28982",
               "slotIndex": 1,
-              "cardUid": "C8-469-PONVP4EVU8"
+              "cardUid": "G3-131-2TL4WU3QVK"
             },
             {
-              "id": "3810",
+              "id": "28983",
               "slotIndex": 2,
-              "cardUid": "C8-560-1SA9WUZSIO"
+              "cardUid": "G1-65-2O83Z1ILNK"
             },
             {
-              "id": "3811",
+              "id": "28984",
               "slotIndex": 3,
-              "cardUid": "C10-529-DXC7W804E8"
+              "cardUid": "G3-216-0DXLDVPVV4"
             },
             {
-              "id": "3812",
+              "id": "28985",
               "slotIndex": 4,
-              "cardUid": "C8-504-2D1RLO7IS0"
+              "cardUid": "G3-88-79Z8EP1YA8"
             },
             {
-              "id": "3813",
+              "id": "28986",
               "slotIndex": 5,
-              "cardUid": "C8-479-1241R7J4LC"
+              "cardUid": "G2-114-9LMD1JL9O0"
             },
             {
-              "id": "3814",
+              "id": "28987",
               "slotIndex": 6,
-              "cardUid": "C2-449-BTDXWBQ51S"
+              "cardUid": "G3-218-TISJ4MXMLC"
             },
             {
-              "id": "3815",
+              "id": "28988",
               "slotIndex": 7,
-              "cardUid": "C8-492-01HWU4PG9C"
+              "cardUid": "G1-38-FB00IOBHQ8"
             },
             {
-              "id": "3816",
+              "id": "28989",
               "slotIndex": 8,
-              "cardUid": "C7-450-1ORKZ9HL28"
+              "cardUid": "G-71QJ7SB91C"
             }
           ]
         },
         {
-          "id": "425",
+          "id": "3750",
           "pageIndex": 2,
-          "pageType": "card_sleeve",
+          "pageType": "[redacted]",
           "slots": [
             {
-              "id": "3817",
+              "id": "28990",
               "slotIndex": 0,
-              "cardUid": "C7-554-46MV01ZHQO"
+              "cardUid": "BA18-894-000001"
             },
             {
-              "id": "3818",
+              "id": "28991",
               "slotIndex": 1,
-              "cardUid": "C2-493-03GAQT1KU8"
+              "cardUid": "B2-858-E27U3RGC9C"
             },
             {
-              "id": "3819",
+              "id": "28992",
               "slotIndex": 2,
-              "cardUid": "C7-442-2UC4ZXC4PS"
+              "cardUid": "B14-765-R2WLILVBZ4"
             },
             {
-              "id": "3820",
+              "id": "28993",
               "slotIndex": 3,
-              "cardUid": "G10-540-GVEDQ67KPS"
+              "cardUid": "B18-899-12EFC9DF69"
             },
             {
-              "id": "3821",
+              "id": "28994",
               "slotIndex": 4,
-              "cardUid": "G13-700-12NQ5WWAKG"
+              "cardUid": "B14-716-8MNVJLQ5HC"
             },
             {
-              "id": "3822",
+              "id": "28995",
               "slotIndex": 5,
-              "cardUid": "G13-684-3RFUAURZKW"
+              "cardUid": "B18-871-9A84AA965C"
             },
             {
-              "id": "3823",
+              "id": "28996",
               "slotIndex": 6,
-              "cardUid": "G13-668-5HUNNG6WM8"
+              "cardUid": "B14-718-67P6QAJKIO"
             },
             {
-              "id": "3824",
+              "id": "28997",
               "slotIndex": 7,
-              "cardUid": "C4-291-3JNYCH0S1S"
+              "cardUid": "B14-742-D8DNMDYICG"
             },
             {
-              "id": "3825",
+              "id": "28998",
               "slotIndex": 8,
-              "cardUid": "C5-259-0WCHBF7SLS"
+              "cardUid": "B14-783-5J43B16FUO"
             }
           ]
         }
@@ -673,40 +611,16 @@
       "notes": [],
       "stickerPlacements": [
         {
-          "id": "93",
-          "itemUid": "I-583-e6e0af629c84",
-          "stickerUid": "I-583-e6e0af629c84",
-          "surface": "page",
-          "pageId": "423",
+          "id": "6801",
+          "itemUid": "I-584-b50067f4a371",
+          "stickerUid": "I-584-b50067f4a371",
+          "surface": "[redacted]",
+          "pageId": "3748",
           "slotId": null,
-          "x": 20.4064,
-          "y": 25.9764,
-          "rotation": -6,
-          "scale": 0.86,
-          "zIndex": 10,
-          "isSoulbound": true,
-          "isTradeable": false,
-          "isListed": false,
-          "cosmetic": {
-            "id": "50",
-            "key": "sticker_support_you_rock",
-            "type": "sticker",
-            "name": "You Rock",
-            "assetUrl": "collector/stickers/support/sticker-support-you-rock.webp",
-            "isPremium": false
-          }
-        },
-        {
-          "id": "94",
-          "itemUid": "I-584-1b04ec7f8124",
-          "stickerUid": "I-584-1b04ec7f8124",
-          "surface": "page",
-          "pageId": "425",
-          "slotId": null,
-          "x": 92,
-          "y": 57.0486,
+          "x": 8,
+          "y": 10,
           "rotation": 6,
-          "scale": 0.82,
+          "scale": 0.86,
           "zIndex": 10,
           "isSoulbound": true,
           "isTradeable": false,
@@ -714,21 +628,21 @@
           "cosmetic": {
             "id": "70",
             "key": "anniversary_8_balloon",
-            "type": "sticker",
-            "name": "8th Anniversary Balloon",
-            "assetUrl": "collector/stickers/events/anniversary-8/sticker-anniversary-8-balloon.webp",
+            "type": "[redacted]",
+            "name": "[redacted]",
+            "assetUrl": "[redacted]",
             "isPremium": false
           }
         },
         {
-          "id": "96",
-          "itemUid": "I-577-61263e33bef7",
-          "stickerUid": "I-577-61263e33bef7",
-          "surface": "binder_cover",
+          "id": "6799",
+          "itemUid": "I-573-0c2c7ed88f01",
+          "stickerUid": "I-573-0c2c7ed88f01",
+          "surface": "[redacted]",
           "pageId": null,
           "slotId": null,
-          "x": 59.9472,
-          "y": 81.0582,
+          "x": 17.172,
+          "y": 10,
           "rotation": -6,
           "scale": 1,
           "zIndex": 20,
@@ -736,11 +650,11 @@
           "isTradeable": false,
           "isListed": false,
           "cosmetic": {
-            "id": "55",
-            "key": "collector_year_joined_2022",
-            "type": "sticker",
-            "name": "Year Joined 2022",
-            "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-22_192.webp",
+            "id": "51",
+            "key": "collector_year_joined_2018",
+            "type": "[redacted]",
+            "name": "[redacted]",
+            "assetUrl": "[redacted]",
             "isPremium": false
           }
         }

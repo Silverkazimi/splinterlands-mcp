@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:34:00.681486+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/purchases/check_uniswap_reward",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].address": {
@@ -75,30 +74,30 @@
   },
   "body": [
     {
-      "address": "0x0000000000000000000000000000000000000000",
+      "address": "[redacted]",
       "created_date": "2022-07-26T14:04:51.759Z",
       "updated_date": "2022-07-27T12:04:51.760Z",
       "last_withdrawal_date": null,
-      "lp_tokens": "0.000000000000001000",
-      "reward_boost": "0.00000",
-      "unclaimed_rewards": "0.000",
+      "lp_tokens": "[redacted]",
+      "reward_boost": "[redacted]",
+      "unclaimed_rewards": "[redacted]",
       "last_claim_date": null,
       "last_claim_tx": null,
-      "pool": "BSC:DEC-BUSD",
-      "reward_token": "DEC"
+      "pool": "[redacted]",
+      "reward_token": "[redacted]"
     },
     {
-      "address": "0x0000000000000000000000000000000000000000",
+      "address": "[redacted]",
       "created_date": "2022-07-26T14:04:51.759Z",
       "updated_date": "2025-05-01T16:41:15.842Z",
       "last_withdrawal_date": null,
-      "lp_tokens": "0.000000000248003718",
-      "reward_boost": "0.00000",
-      "unclaimed_rewards": "0.000",
+      "lp_tokens": "[redacted]",
+      "reward_boost": "[redacted]",
+      "unclaimed_rewards": "[redacted]",
       "last_claim_date": null,
       "last_claim_tx": null,
-      "pool": "BSC:SPS-BNB",
-      "reward_token": "SPS"
+      "pool": "[redacted]",
+      "reward_token": "[redacted]"
     }
   ]
 }

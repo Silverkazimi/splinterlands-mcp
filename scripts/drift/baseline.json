@@ -3038,6 +3038,7 @@
         {
           "variantKey": "default",
           "shapeIds": [
+            "4c2e7ae6a25ac1c0da28e238b5e59b857885700c0c884da62a789c9fb41cd1c8",
             "cadcf214bd2fe7317b1860ba684b4b22797bd3c49ab693781197bd10fc55a8cb"
           ]
         }
@@ -5477,6 +5478,7 @@
         {
           "variantKey": "default",
           "shapeIds": [
+            "242eb7b8213ec0dcd394c3b37f0e937db6e58fff16b761eb93d2d6b98659c1f4",
             "83cf171c5d36299c0311071fbeb73589492b39bc5f845738d54dc4985d80c833"
           ]
         }
@@ -5846,6 +5848,7 @@
         {
           "variantKey": "default",
           "shapeIds": [
+            "22f1702e5fac24c15fe0228b812d587d6f2a3deca894feb365c9d680c4b692bd",
             "fe6b13b5c4dd21326b15ebecf618fb8a692e39b87bd3db6f2238567faa5c4a8a"
           ]
         }
@@ -7043,6 +7046,7 @@
         {
           "variantKey": "default",
           "shapeIds": [
+            "34628ccb29dc156ac47c7695accc35f4aa80d5ab645fee37701246a8c30f895c",
             "97ec27c486cf7ae152eb7ff5640d0251da5798307137ffdd0ff31bb056e225f9"
           ]
         }
@@ -9458,6 +9462,7 @@
         {
           "variantKey": "default",
           "shapeIds": [
+            "1c7622e69451a3fdfb3ab3a5f4dec6175998cb6b4f52e16e7261690a548dfaa4",
             "519a57c4dcabe49949c893e489c1261063113b322d252182977ab34b1f70b675"
           ]
         }
@@ -9719,7 +9724,8 @@
           "variantKey": "default",
           "shapeIds": [
             "b2f2c25982745992b53e6886aaf9e00c5b41bac6e9e8ebac8fc75bc9c6238ab2",
-            "ccef4228bf2a4ced3892162e8eacc874c1480041b72b42879f002825e554abf4"
+            "ccef4228bf2a4ced3892162e8eacc874c1480041b72b42879f002825e554abf4",
+            "f172039a3031ee08bb26575e944cda4278cabca9de6500adf8a4273ecfb37169"
           ]
         }
       ],
@@ -11965,7 +11971,8 @@
         {
           "variantKey": "default",
           "shapeIds": [
-            "5abb2571b1ccd644ee2f62fc966910a3e7340ff17d31aaba4b8e217554b0499e"
+            "5abb2571b1ccd644ee2f62fc966910a3e7340ff17d31aaba4b8e217554b0499e",
+            "ae5452970a332a4d5cdfa19d8a0b03f5f8269aff8eb23e69339d499e4eed7ea8"
           ]
         }
       ],
@@ -12153,6 +12160,11 @@
           "beta_xp[]": {
             "types": [
               "number"
+            ]
+          },
+          "blocks_are_behind": {
+            "types": [
+              "boolean"
             ]
           },
           "booster_pack_price": {
@@ -14992,7 +15004,7 @@
         {
           "variantKey": "default",
           "shapeIds": [
-            "ba0b7d486675e8af22738d80b246a079c5d86ff742d4296a260ab72894061d43"
+            "6478bfa491032a62cb548bd5e73d14fa1e2a9debb89739912b7ec0e27e663042"
           ]
         }
       ],
@@ -16168,6 +16180,7 @@
         {
           "variantKey": "default",
           "shapeIds": [
+            "d60f1a8aa10eb77214498e38fa81008a21a2d2c0919a36e7f3333a64ac874422",
             "f392895d0ee5ed9df2d5e164c7351b30ee7cb918e7b899e5a37812b6aee803bc"
           ]
         }
@@ -16524,7 +16537,9 @@
         {
           "variantKey": "default",
           "shapeIds": [
-            "6f38bf2108f6e51bfcb6e0a8b8c339e6b3289e82267ea96eeaef0f587c56b22f"
+            "30430aee0ef67578b25c837d98bc6c14e748b74b28ae8e5c2eda801e4cbdea23",
+            "6f38bf2108f6e51bfcb6e0a8b8c339e6b3289e82267ea96eeaef0f587c56b22f",
+            "eaa69194378354d147171114bdf26e1ceb2be4bb84a3b439008816a5e4886e32"
           ]
         }
       ],
@@ -18808,6 +18823,7 @@
         {
           "variantKey": "default",
           "shapeIds": [
+            "370b6bb0f5228a4ac91cb5ea6b48629ad8e08a5353478071748377c9574a6417",
             "38c572c2137e977aff48a825a7d0f518a0ed9d87c3b84cb26b585a4bf99c764e"
           ]
         }
@@ -19146,7 +19162,8 @@
         {
           "variantKey": "default",
           "shapeIds": [
-            "1550d72a3fca192ad8f6b8ca1172ba86225f7dd33e41b969fc0edd3bd1af5f9c"
+            "1550d72a3fca192ad8f6b8ca1172ba86225f7dd33e41b969fc0edd3bd1af5f9c",
+            "1a05af5de5780920d55c94390c87cbb8a4fed6d63488a733a819be1524f96a7a"
           ]
         }
       ],
@@ -20996,7 +21013,8 @@
         {
           "variantKey": "default",
           "shapeIds": [
-            "22d49f97a92e6b49ea949526c1032543877d6b60e990be3e9d3fe5174ecb4e84"
+            "22d49f97a92e6b49ea949526c1032543877d6b60e990be3e9d3fe5174ecb4e84",
+            "549e281d06e6d53a8a0e37ab7cecec9a20de36e14904acf8b080a993b9e65915"
           ]
         }
       ],
@@ -21113,7 +21131,8 @@
         {
           "variantKey": "default",
           "shapeIds": [
-            "22d49f97a92e6b49ea949526c1032543877d6b60e990be3e9d3fe5174ecb4e84"
+            "22d49f97a92e6b49ea949526c1032543877d6b60e990be3e9d3fe5174ecb4e84",
+            "549e281d06e6d53a8a0e37ab7cecec9a20de36e14904acf8b080a993b9e65915"
           ]
         }
       ],
@@ -21352,7 +21371,8 @@
         {
           "variantKey": "default",
           "shapeIds": [
-            "2cb8b5be556c753aefede78d30f0f62adf70591367476c351918a53394180305"
+            "2cb8b5be556c753aefede78d30f0f62adf70591367476c351918a53394180305",
+            "c11a3de9ed3cbd854f5710a44eb9ee68de537c67a842c858eeb83afd01c40aca"
           ]
         }
       ],
@@ -27301,18 +27321,21 @@
         {
           "variantKey": "default",
           "shapeIds": [
+            "1e60b8ddc8ebd512d8a55798fe55c1e5fae7fc4260fd5f9aab23267102e5a374",
             "464b3b5575ce1aa1fb8bfbe5bd11b15ec0cf2a8865c8bdd58932576faf05e632"
           ]
         },
         {
           "variantKey": "default",
           "shapeIds": [
+            "1e60b8ddc8ebd512d8a55798fe55c1e5fae7fc4260fd5f9aab23267102e5a374",
             "464b3b5575ce1aa1fb8bfbe5bd11b15ec0cf2a8865c8bdd58932576faf05e632"
           ]
         },
         {
           "variantKey": "default",
           "shapeIds": [
+            "1e60b8ddc8ebd512d8a55798fe55c1e5fae7fc4260fd5f9aab23267102e5a374",
             "464b3b5575ce1aa1fb8bfbe5bd11b15ec0cf2a8865c8bdd58932576faf05e632"
           ]
         }

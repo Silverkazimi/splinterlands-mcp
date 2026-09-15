@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-14",
-    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
-    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].id": {
@@ -370,7 +369,7 @@
       "proposal_type": 1,
       "player_approve": null,
       "player_votes": null,
-      "creator_modern_league": 15,
+      "creator_modern_league": 13,
       "creator_league": 1,
       "creator_avatar_id": 3824,
       "creator_title_pre": "[redacted]",

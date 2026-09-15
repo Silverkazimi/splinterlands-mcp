@@ -3,7 +3,18 @@
     "source": "live-observation",
     "observedAt": "2026-09-14",
     "redaction": "Names are synthetic; free text and opaque strings are redacted.",
-    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response."
+    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 6
+    },
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "f392895d0ee5ed9df2d5e164c7351b30ee7cb918e7b899e5a37812b6aee803bc",
+        "alternateShape": "d60f1a8aa10eb77214498e38fa81008a21a2d2c0919a36e7f3333a64ac874422"
+      }
+    ],
+    "additionalSchemaReview": " Reviewed 2026-09-15: the bounded hosted sample narrows existing nullable or optional fields without adding fields or types. The exact alternate shape is accepted while retaining this richer fixture."
   },
   "valueClasses": {
     "body[0].id": {

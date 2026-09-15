@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { loadRecaptureInputs, fixtureCoverage } from "./drift/fixture-files.js";
 import { recaptureFixtures } from "./drift/recapture.js";
-import { deliverFixtures, fixtureDeliveryPreflight } from "./drift/fixture-delivery.js";
+import { deliverFixtures, fixtureDeliveryPreflight, DeliveryValidationError } from "./drift/fixture-delivery.js";
 import { resolveMaintenanceInputs, configuredAccountRoles, missingAccountRoles } from "./drift/configuration.js";
 import { publishMaintenanceIssue } from "./drift/github.js";
 
@@ -44,9 +44,10 @@ async function main() {
   const coverage = fixtureCoverage(bindings, configured);
   const unconfigured = coverage.unconfigured;
   const report = {
+    reviewDiagnostics: result.reviewDiagnostics,
     reads: result.reads, configured: result.total, ...coverage,
     aborted: result.aborted, holdFraction: result.plan.holdFraction,
-    held: result.plan.blockedByHoldFloor, failed: result.failed, sampleCoverage: result.coverageGaps,
+    held: result.plan.blockedByHoldFloor, failed: result.failed, sampleCoverage: result.coverageGaps, transientSamples: result.transientSamples,
     refreshes: result.plan.writes.length, pending: result.plan.pendingWrites.length,
   };
   console.log(JSON.stringify(report));
@@ -62,7 +63,8 @@ async function main() {
   }
   if (result.failed.length > 0 || result.plan.blockedByHoldFloor || result.coverageGaps.length > 0 || unconfigured.length > 0) process.exitCode = 1;
 }
-main().catch(() => {
+main().catch(error => {
+  if (error instanceof DeliveryValidationError) console.error(JSON.stringify({ status: "validation-failed", stage: error.stage }));
   console.error("Fixture renewal failed; configuration and response details are withheld.");
   process.exitCode = 1;
 });

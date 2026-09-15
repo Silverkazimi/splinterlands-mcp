@@ -1,9 +1,14 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:32:05.733735+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/market/for_sale_grouped",
-    "captureScope": "First three root rows; nested records retained unchanged.",
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "242eb7b8213ec0dcd394c3b37f0e937db6e58fff16b761eb93d2d6b98659c1f4",
+        "responseShape": "83cf171c5d36299c0311071fbeb73589492b39bc5f845738d54dc4985d80c833"
+      }
+    ],
     "fixtureSample": {
       "kind": "first",
       "limit": 3
@@ -12,12 +17,6 @@
       {
         "baselineShape": "242eb7b8213ec0dcd394c3b37f0e937db6e58fff16b761eb93d2d6b98659c1f4",
         "alternateShape": "fec2c290e330a2fdbe6babd4b13b62eb0c6ffa9bd03f122c41c983b6f9ef19c2"
-      }
-    ],
-    "reviewedResponseShapes": [
-      {
-        "baselineShape": "242eb7b8213ec0dcd394c3b37f0e937db6e58fff16b761eb93d2d6b98659c1f4",
-        "responseShape": "83cf171c5d36299c0311071fbeb73589492b39bc5f845738d54dc4985d80c833"
       }
     ]
   },
@@ -133,44 +132,44 @@
   },
   "body": [
     {
-      "card_detail_id": 581,
-      "gold": false,
-      "foil": 0,
+      "card_detail_id": 643,
+      "gold": true,
+      "foil": 1,
       "edition": 12,
-      "qty": 13,
-      "level": 1,
-      "low_price_bcx": 0.473,
-      "low_price": 1.39,
-      "high_price": 27.61,
+      "qty": 8,
+      "level": 2,
+      "low_price_bcx": 5.875,
+      "low_price": 6,
+      "high_price": 187,
       "mana": 5,
       "season_qty": 0,
       "daily_qty": 0
     },
     {
-      "card_detail_id": 580,
-      "gold": true,
-      "foil": 1,
+      "card_detail_id": 643,
+      "gold": false,
+      "foil": 0,
       "edition": 12,
-      "qty": 6,
-      "level": 2,
-      "low_price_bcx": 0.644,
-      "low_price": 0.682,
-      "high_price": 15,
-      "mana": 3,
+      "qty": 19,
+      "level": 1,
+      "low_price_bcx": 0.156,
+      "low_price": 0.687,
+      "high_price": 86.089,
+      "mana": 5,
       "season_qty": 0,
       "daily_qty": 0
     },
     {
-      "card_detail_id": 580,
-      "gold": false,
-      "foil": 0,
+      "card_detail_id": 642,
+      "gold": true,
+      "foil": 1,
       "edition": 12,
-      "qty": 137,
-      "level": 1,
-      "low_price_bcx": 0.041,
-      "low_price": 0.185,
-      "high_price": 7.125,
-      "mana": 3,
+      "qty": 12,
+      "level": 2,
+      "low_price_bcx": 4.022,
+      "low_price": 4.08,
+      "high_price": 120.059,
+      "mana": 5,
       "season_qty": 0,
       "daily_qty": 0
     }

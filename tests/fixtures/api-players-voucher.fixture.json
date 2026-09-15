@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T07:48:33.915009+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/voucher",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.balance": {
@@ -14,7 +13,7 @@
     }
   },
   "body": {
-    "balance": 1194088.329,
+    "balance": 2406.586,
     "available": -4590040.516
   }
 }

@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { sampleFixtureBody } from "../scripts/drift/fixture-sample.js";
+import { sampleFixtureBody, MAX_SAMPLED_BODY_BYTES } from "../scripts/drift/fixture-sample.js";
 import { readFileSync } from "node:fs";
 const fixture = (name: string) => JSON.parse(readFileSync(new URL("./fixtures/" + name + ".fixture.json", import.meta.url), "utf8"));
 
@@ -35,4 +35,31 @@ it("bounds presale leaderboard rows while retaining totals and the current playe
   expect(body.players).toHaveLength(6);
   expect(() => sampleFixtureBody(prior, { ...body, players: [...body.players, { player: 12 }] },
     "api.players.rebellion-presale-leaders")).toThrow("Invalid fixture response.");
+});
+
+it("bounds renewed nested leaderboard samples only after validating all rows", () => {
+  const prior = fixture("ranking-burn-event");
+  const body = { ...prior.body, leaderboard: [...prior.body.leaderboard, ...prior.body.leaderboard] };
+  const result = sampleFixtureBody(prior, body, "api.players.burn-event-leaderboard");
+  expect(result.body).toEqual(prior.body);
+  expect(body.leaderboard.length).toBe(prior.body.leaderboard.length * 2);
+  expect(() => sampleFixtureBody(prior, { ...body, leaderboard: [...body.leaderboard, { player: 123 }] },
+    "api.players.burn-event-leaderboard")).toThrow("Invalid fixture response.");
+});
+it("preserves metadata selectors and wrapper fields while bounding details", () => {
+  const prior = fixture("vapi-market-meta-skins");
+  const body = { ...prior.body, data: { ...prior.body.data, details: [...prior.body.data.details, ...prior.body.data.details] } };
+  expect(sampleFixtureBody(prior, body, "vapi.market.meta.asset").body).toEqual(prior.body);
+  expect(() => sampleFixtureBody(prior, { ...body, data: { ...body.data, details: {} } },
+    "vapi.market.meta.asset")).toThrow();
+});
+
+it("bounds sampled bytes with complete rows and refuses an oversized first record", () => {
+  const prior = fixture("market-sale");
+  const row = { ...prior.body[0], diagnostic_padding: "x".repeat(70_000) };
+  const result = sampleFixtureBody(prior, [row, row, row], "api.market.for-sale-grouped");
+  expect(result.body).toEqual([row]);
+  expect(Buffer.byteLength(JSON.stringify(result.body))).toBeLessThanOrEqual(MAX_SAMPLED_BODY_BYTES);
+  expect(() => sampleFixtureBody(prior, [{ ...row, diagnostic_padding: "x".repeat(MAX_SAMPLED_BODY_BYTES) }],
+    "api.market.for-sale-grouped")).toThrow("byte budget");
 });

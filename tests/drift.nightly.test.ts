@@ -34,3 +34,11 @@ it("reports missing baselines instead of treating unchecked shape as passing", a
   expect(result.coverage.unbaselined).toEqual([entryId]);
   expect(result.complete).toBe(false);
 });
+
+it("reports fixed transport categories without failed response contents", async () => {
+  const result = await runNightly([{ entryId, params: {} }], baseline,
+    async () => ({ status: 0, isJson: false, body: "PRIVATE_TRANSPORT_SENTINEL", transportFailure: "timeout" }));
+  const summary = summarizeNightly(result);
+  expect(summary.coverage.transportFailures).toEqual([{ entryId, reason: "timeout" }]);
+  expect(JSON.stringify(summary)).not.toContain("PRIVATE_TRANSPORT_SENTINEL");
+});

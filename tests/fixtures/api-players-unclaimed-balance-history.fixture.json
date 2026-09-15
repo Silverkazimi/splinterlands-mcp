@@ -1,8 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T20:56:00Z",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].reward_action": {
@@ -151,56 +151,6458 @@
     },
     "body[2].block_result": {
       "valueClass": "enum"
+    },
+    "body[3].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[3].id": {
+      "valueClass": "id"
+    },
+    "body[3].player": {
+      "valueClass": "name"
+    },
+    "body[3].token": {
+      "valueClass": "enum"
+    },
+    "body[3].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[3].amount": {
+      "valueClass": "numeric"
+    },
+    "body[3].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[3].trx_id": {
+      "valueClass": "id"
+    },
+    "body[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].to_player": {
+      "valueClass": "name"
+    },
+    "body[3].status": {
+      "valueClass": "enum"
+    },
+    "body[3].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].action": {
+      "valueClass": "enum"
+    },
+    "body[3].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[3].block_result": {
+      "valueClass": "enum"
+    },
+    "body[4].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[4].id": {
+      "valueClass": "id"
+    },
+    "body[4].player": {
+      "valueClass": "name"
+    },
+    "body[4].token": {
+      "valueClass": "enum"
+    },
+    "body[4].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[4].amount": {
+      "valueClass": "numeric"
+    },
+    "body[4].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[4].trx_id": {
+      "valueClass": "id"
+    },
+    "body[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].to_player": {
+      "valueClass": "name"
+    },
+    "body[4].status": {
+      "valueClass": "enum"
+    },
+    "body[4].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].action": {
+      "valueClass": "enum"
+    },
+    "body[4].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[4].block_result": {
+      "valueClass": "enum"
+    },
+    "body[5].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[5].id": {
+      "valueClass": "id"
+    },
+    "body[5].player": {
+      "valueClass": "name"
+    },
+    "body[5].token": {
+      "valueClass": "enum"
+    },
+    "body[5].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[5].amount": {
+      "valueClass": "numeric"
+    },
+    "body[5].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[5].trx_id": {
+      "valueClass": "id"
+    },
+    "body[5].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].to_player": {
+      "valueClass": "name"
+    },
+    "body[5].status": {
+      "valueClass": "enum"
+    },
+    "body[5].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].action": {
+      "valueClass": "enum"
+    },
+    "body[5].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[5].block_result": {
+      "valueClass": "enum"
+    },
+    "body[6].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[6].id": {
+      "valueClass": "id"
+    },
+    "body[6].player": {
+      "valueClass": "name"
+    },
+    "body[6].token": {
+      "valueClass": "enum"
+    },
+    "body[6].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[6].amount": {
+      "valueClass": "numeric"
+    },
+    "body[6].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[6].trx_id": {
+      "valueClass": "id"
+    },
+    "body[6].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].to_player": {
+      "valueClass": "name"
+    },
+    "body[6].status": {
+      "valueClass": "enum"
+    },
+    "body[6].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].action": {
+      "valueClass": "enum"
+    },
+    "body[6].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[6].block_result": {
+      "valueClass": "enum"
+    },
+    "body[7].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[7].id": {
+      "valueClass": "id"
+    },
+    "body[7].player": {
+      "valueClass": "name"
+    },
+    "body[7].token": {
+      "valueClass": "enum"
+    },
+    "body[7].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[7].amount": {
+      "valueClass": "numeric"
+    },
+    "body[7].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[7].trx_id": {
+      "valueClass": "id"
+    },
+    "body[7].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].to_player": {
+      "valueClass": "name"
+    },
+    "body[7].status": {
+      "valueClass": "enum"
+    },
+    "body[7].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].action": {
+      "valueClass": "enum"
+    },
+    "body[7].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[7].block_result": {
+      "valueClass": "enum"
+    },
+    "body[8].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[8].id": {
+      "valueClass": "id"
+    },
+    "body[8].player": {
+      "valueClass": "name"
+    },
+    "body[8].token": {
+      "valueClass": "enum"
+    },
+    "body[8].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[8].amount": {
+      "valueClass": "numeric"
+    },
+    "body[8].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[8].trx_id": {
+      "valueClass": "id"
+    },
+    "body[8].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].to_player": {
+      "valueClass": "name"
+    },
+    "body[8].status": {
+      "valueClass": "enum"
+    },
+    "body[8].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].action": {
+      "valueClass": "enum"
+    },
+    "body[8].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[8].block_result": {
+      "valueClass": "enum"
+    },
+    "body[9].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[9].id": {
+      "valueClass": "id"
+    },
+    "body[9].player": {
+      "valueClass": "name"
+    },
+    "body[9].token": {
+      "valueClass": "enum"
+    },
+    "body[9].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[9].amount": {
+      "valueClass": "numeric"
+    },
+    "body[9].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[9].trx_id": {
+      "valueClass": "id"
+    },
+    "body[9].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[9].to_player": {
+      "valueClass": "name"
+    },
+    "body[9].status": {
+      "valueClass": "enum"
+    },
+    "body[9].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[9].action": {
+      "valueClass": "enum"
+    },
+    "body[9].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[9].block_result": {
+      "valueClass": "enum"
+    },
+    "body[10].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[10].id": {
+      "valueClass": "id"
+    },
+    "body[10].player": {
+      "valueClass": "name"
+    },
+    "body[10].token": {
+      "valueClass": "enum"
+    },
+    "body[10].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[10].amount": {
+      "valueClass": "numeric"
+    },
+    "body[10].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[10].trx_id": {
+      "valueClass": "id"
+    },
+    "body[10].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[10].to_player": {
+      "valueClass": "name"
+    },
+    "body[10].status": {
+      "valueClass": "enum"
+    },
+    "body[10].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[10].action": {
+      "valueClass": "enum"
+    },
+    "body[10].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[10].block_result": {
+      "valueClass": "enum"
+    },
+    "body[11].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[11].id": {
+      "valueClass": "id"
+    },
+    "body[11].player": {
+      "valueClass": "name"
+    },
+    "body[11].token": {
+      "valueClass": "enum"
+    },
+    "body[11].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[11].amount": {
+      "valueClass": "numeric"
+    },
+    "body[11].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[11].trx_id": {
+      "valueClass": "id"
+    },
+    "body[11].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[11].to_player": {
+      "valueClass": "name"
+    },
+    "body[11].status": {
+      "valueClass": "enum"
+    },
+    "body[11].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[11].action": {
+      "valueClass": "enum"
+    },
+    "body[11].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[11].block_result": {
+      "valueClass": "enum"
+    },
+    "body[12].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[12].id": {
+      "valueClass": "id"
+    },
+    "body[12].player": {
+      "valueClass": "name"
+    },
+    "body[12].token": {
+      "valueClass": "enum"
+    },
+    "body[12].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[12].amount": {
+      "valueClass": "numeric"
+    },
+    "body[12].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[12].trx_id": {
+      "valueClass": "id"
+    },
+    "body[12].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[12].to_player": {
+      "valueClass": "name"
+    },
+    "body[12].status": {
+      "valueClass": "enum"
+    },
+    "body[12].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[12].action": {
+      "valueClass": "enum"
+    },
+    "body[12].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[12].block_result": {
+      "valueClass": "enum"
+    },
+    "body[13].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[13].id": {
+      "valueClass": "id"
+    },
+    "body[13].player": {
+      "valueClass": "name"
+    },
+    "body[13].token": {
+      "valueClass": "enum"
+    },
+    "body[13].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[13].amount": {
+      "valueClass": "numeric"
+    },
+    "body[13].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[13].trx_id": {
+      "valueClass": "id"
+    },
+    "body[13].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[13].to_player": {
+      "valueClass": "name"
+    },
+    "body[13].status": {
+      "valueClass": "enum"
+    },
+    "body[13].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[13].action": {
+      "valueClass": "enum"
+    },
+    "body[13].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[13].block_result": {
+      "valueClass": "enum"
+    },
+    "body[14].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[14].id": {
+      "valueClass": "id"
+    },
+    "body[14].player": {
+      "valueClass": "name"
+    },
+    "body[14].token": {
+      "valueClass": "enum"
+    },
+    "body[14].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[14].amount": {
+      "valueClass": "numeric"
+    },
+    "body[14].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[14].trx_id": {
+      "valueClass": "id"
+    },
+    "body[14].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[14].to_player": {
+      "valueClass": "name"
+    },
+    "body[14].status": {
+      "valueClass": "enum"
+    },
+    "body[14].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[14].action": {
+      "valueClass": "enum"
+    },
+    "body[14].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[14].block_result": {
+      "valueClass": "enum"
+    },
+    "body[15].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[15].id": {
+      "valueClass": "id"
+    },
+    "body[15].player": {
+      "valueClass": "name"
+    },
+    "body[15].token": {
+      "valueClass": "enum"
+    },
+    "body[15].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[15].amount": {
+      "valueClass": "numeric"
+    },
+    "body[15].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[15].trx_id": {
+      "valueClass": "id"
+    },
+    "body[15].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[15].to_player": {
+      "valueClass": "name"
+    },
+    "body[15].status": {
+      "valueClass": "enum"
+    },
+    "body[15].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[15].action": {
+      "valueClass": "enum"
+    },
+    "body[15].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[15].block_result": {
+      "valueClass": "enum"
+    },
+    "body[16].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[16].id": {
+      "valueClass": "id"
+    },
+    "body[16].player": {
+      "valueClass": "name"
+    },
+    "body[16].token": {
+      "valueClass": "enum"
+    },
+    "body[16].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[16].amount": {
+      "valueClass": "numeric"
+    },
+    "body[16].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[16].trx_id": {
+      "valueClass": "id"
+    },
+    "body[16].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[16].to_player": {
+      "valueClass": "name"
+    },
+    "body[16].status": {
+      "valueClass": "enum"
+    },
+    "body[16].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[16].action": {
+      "valueClass": "enum"
+    },
+    "body[16].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[16].block_result": {
+      "valueClass": "enum"
+    },
+    "body[17].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[17].id": {
+      "valueClass": "id"
+    },
+    "body[17].player": {
+      "valueClass": "name"
+    },
+    "body[17].token": {
+      "valueClass": "enum"
+    },
+    "body[17].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[17].amount": {
+      "valueClass": "numeric"
+    },
+    "body[17].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[17].trx_id": {
+      "valueClass": "id"
+    },
+    "body[17].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[17].to_player": {
+      "valueClass": "name"
+    },
+    "body[17].status": {
+      "valueClass": "enum"
+    },
+    "body[17].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[17].action": {
+      "valueClass": "enum"
+    },
+    "body[17].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[17].block_result": {
+      "valueClass": "enum"
+    },
+    "body[18].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[18].id": {
+      "valueClass": "id"
+    },
+    "body[18].player": {
+      "valueClass": "name"
+    },
+    "body[18].token": {
+      "valueClass": "enum"
+    },
+    "body[18].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[18].amount": {
+      "valueClass": "numeric"
+    },
+    "body[18].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[18].trx_id": {
+      "valueClass": "id"
+    },
+    "body[18].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[18].to_player": {
+      "valueClass": "name"
+    },
+    "body[18].status": {
+      "valueClass": "enum"
+    },
+    "body[18].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[18].action": {
+      "valueClass": "enum"
+    },
+    "body[18].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[18].block_result": {
+      "valueClass": "enum"
+    },
+    "body[19].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[19].id": {
+      "valueClass": "id"
+    },
+    "body[19].player": {
+      "valueClass": "name"
+    },
+    "body[19].token": {
+      "valueClass": "enum"
+    },
+    "body[19].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[19].amount": {
+      "valueClass": "numeric"
+    },
+    "body[19].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[19].trx_id": {
+      "valueClass": "id"
+    },
+    "body[19].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[19].to_player": {
+      "valueClass": "name"
+    },
+    "body[19].status": {
+      "valueClass": "enum"
+    },
+    "body[19].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[19].action": {
+      "valueClass": "enum"
+    },
+    "body[19].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[19].block_result": {
+      "valueClass": "enum"
+    },
+    "body[20].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[20].id": {
+      "valueClass": "id"
+    },
+    "body[20].player": {
+      "valueClass": "name"
+    },
+    "body[20].token": {
+      "valueClass": "enum"
+    },
+    "body[20].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[20].amount": {
+      "valueClass": "numeric"
+    },
+    "body[20].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[20].trx_id": {
+      "valueClass": "id"
+    },
+    "body[20].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[20].to_player": {
+      "valueClass": "name"
+    },
+    "body[20].status": {
+      "valueClass": "enum"
+    },
+    "body[20].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[20].action": {
+      "valueClass": "enum"
+    },
+    "body[20].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[20].block_result": {
+      "valueClass": "enum"
+    },
+    "body[21].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[21].id": {
+      "valueClass": "id"
+    },
+    "body[21].player": {
+      "valueClass": "name"
+    },
+    "body[21].token": {
+      "valueClass": "enum"
+    },
+    "body[21].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[21].amount": {
+      "valueClass": "numeric"
+    },
+    "body[21].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[21].trx_id": {
+      "valueClass": "id"
+    },
+    "body[21].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[21].to_player": {
+      "valueClass": "name"
+    },
+    "body[21].status": {
+      "valueClass": "enum"
+    },
+    "body[21].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[21].action": {
+      "valueClass": "enum"
+    },
+    "body[21].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[21].block_result": {
+      "valueClass": "enum"
+    },
+    "body[22].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[22].id": {
+      "valueClass": "id"
+    },
+    "body[22].player": {
+      "valueClass": "name"
+    },
+    "body[22].token": {
+      "valueClass": "enum"
+    },
+    "body[22].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[22].amount": {
+      "valueClass": "numeric"
+    },
+    "body[22].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[22].trx_id": {
+      "valueClass": "id"
+    },
+    "body[22].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[22].to_player": {
+      "valueClass": "name"
+    },
+    "body[22].status": {
+      "valueClass": "enum"
+    },
+    "body[22].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[22].action": {
+      "valueClass": "enum"
+    },
+    "body[22].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[22].block_result": {
+      "valueClass": "enum"
+    },
+    "body[23].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[23].id": {
+      "valueClass": "id"
+    },
+    "body[23].player": {
+      "valueClass": "name"
+    },
+    "body[23].token": {
+      "valueClass": "enum"
+    },
+    "body[23].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[23].amount": {
+      "valueClass": "numeric"
+    },
+    "body[23].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[23].trx_id": {
+      "valueClass": "id"
+    },
+    "body[23].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[23].to_player": {
+      "valueClass": "name"
+    },
+    "body[23].status": {
+      "valueClass": "enum"
+    },
+    "body[23].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[23].action": {
+      "valueClass": "enum"
+    },
+    "body[23].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[23].block_result": {
+      "valueClass": "enum"
+    },
+    "body[24].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[24].id": {
+      "valueClass": "id"
+    },
+    "body[24].player": {
+      "valueClass": "name"
+    },
+    "body[24].token": {
+      "valueClass": "enum"
+    },
+    "body[24].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[24].amount": {
+      "valueClass": "numeric"
+    },
+    "body[24].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[24].trx_id": {
+      "valueClass": "id"
+    },
+    "body[24].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[24].to_player": {
+      "valueClass": "name"
+    },
+    "body[24].status": {
+      "valueClass": "enum"
+    },
+    "body[24].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[24].action": {
+      "valueClass": "enum"
+    },
+    "body[24].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[24].block_result": {
+      "valueClass": "enum"
+    },
+    "body[25].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[25].id": {
+      "valueClass": "id"
+    },
+    "body[25].player": {
+      "valueClass": "name"
+    },
+    "body[25].token": {
+      "valueClass": "enum"
+    },
+    "body[25].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[25].amount": {
+      "valueClass": "numeric"
+    },
+    "body[25].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[25].trx_id": {
+      "valueClass": "id"
+    },
+    "body[25].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[25].to_player": {
+      "valueClass": "name"
+    },
+    "body[25].status": {
+      "valueClass": "enum"
+    },
+    "body[25].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[25].action": {
+      "valueClass": "enum"
+    },
+    "body[25].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[25].block_result": {
+      "valueClass": "enum"
+    },
+    "body[26].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[26].id": {
+      "valueClass": "id"
+    },
+    "body[26].player": {
+      "valueClass": "name"
+    },
+    "body[26].token": {
+      "valueClass": "enum"
+    },
+    "body[26].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[26].amount": {
+      "valueClass": "numeric"
+    },
+    "body[26].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[26].trx_id": {
+      "valueClass": "id"
+    },
+    "body[26].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[26].to_player": {
+      "valueClass": "name"
+    },
+    "body[26].status": {
+      "valueClass": "enum"
+    },
+    "body[26].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[26].action": {
+      "valueClass": "enum"
+    },
+    "body[26].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[26].block_result": {
+      "valueClass": "enum"
+    },
+    "body[27].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[27].id": {
+      "valueClass": "id"
+    },
+    "body[27].player": {
+      "valueClass": "name"
+    },
+    "body[27].token": {
+      "valueClass": "enum"
+    },
+    "body[27].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[27].amount": {
+      "valueClass": "numeric"
+    },
+    "body[27].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[27].trx_id": {
+      "valueClass": "id"
+    },
+    "body[27].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[27].to_player": {
+      "valueClass": "name"
+    },
+    "body[27].status": {
+      "valueClass": "enum"
+    },
+    "body[27].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[27].action": {
+      "valueClass": "enum"
+    },
+    "body[27].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[27].block_result": {
+      "valueClass": "enum"
+    },
+    "body[28].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[28].id": {
+      "valueClass": "id"
+    },
+    "body[28].player": {
+      "valueClass": "name"
+    },
+    "body[28].token": {
+      "valueClass": "enum"
+    },
+    "body[28].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[28].amount": {
+      "valueClass": "numeric"
+    },
+    "body[28].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[28].trx_id": {
+      "valueClass": "id"
+    },
+    "body[28].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[28].to_player": {
+      "valueClass": "name"
+    },
+    "body[28].status": {
+      "valueClass": "enum"
+    },
+    "body[28].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[28].action": {
+      "valueClass": "enum"
+    },
+    "body[28].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[28].block_result": {
+      "valueClass": "enum"
+    },
+    "body[29].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[29].id": {
+      "valueClass": "id"
+    },
+    "body[29].player": {
+      "valueClass": "name"
+    },
+    "body[29].token": {
+      "valueClass": "enum"
+    },
+    "body[29].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[29].amount": {
+      "valueClass": "numeric"
+    },
+    "body[29].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[29].trx_id": {
+      "valueClass": "id"
+    },
+    "body[29].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[29].to_player": {
+      "valueClass": "name"
+    },
+    "body[29].status": {
+      "valueClass": "enum"
+    },
+    "body[29].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[29].action": {
+      "valueClass": "enum"
+    },
+    "body[29].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[29].block_result": {
+      "valueClass": "enum"
+    },
+    "body[30].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[30].id": {
+      "valueClass": "id"
+    },
+    "body[30].player": {
+      "valueClass": "name"
+    },
+    "body[30].token": {
+      "valueClass": "enum"
+    },
+    "body[30].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[30].amount": {
+      "valueClass": "numeric"
+    },
+    "body[30].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[30].trx_id": {
+      "valueClass": "id"
+    },
+    "body[30].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[30].to_player": {
+      "valueClass": "name"
+    },
+    "body[30].status": {
+      "valueClass": "enum"
+    },
+    "body[30].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[30].action": {
+      "valueClass": "enum"
+    },
+    "body[30].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[30].block_result": {
+      "valueClass": "enum"
+    },
+    "body[31].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[31].id": {
+      "valueClass": "id"
+    },
+    "body[31].player": {
+      "valueClass": "name"
+    },
+    "body[31].token": {
+      "valueClass": "enum"
+    },
+    "body[31].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[31].amount": {
+      "valueClass": "numeric"
+    },
+    "body[31].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[31].trx_id": {
+      "valueClass": "id"
+    },
+    "body[31].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[31].to_player": {
+      "valueClass": "name"
+    },
+    "body[31].status": {
+      "valueClass": "enum"
+    },
+    "body[31].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[31].action": {
+      "valueClass": "enum"
+    },
+    "body[31].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[31].block_result": {
+      "valueClass": "enum"
+    },
+    "body[32].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[32].id": {
+      "valueClass": "id"
+    },
+    "body[32].player": {
+      "valueClass": "name"
+    },
+    "body[32].token": {
+      "valueClass": "enum"
+    },
+    "body[32].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[32].amount": {
+      "valueClass": "numeric"
+    },
+    "body[32].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[32].trx_id": {
+      "valueClass": "id"
+    },
+    "body[32].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[32].to_player": {
+      "valueClass": "name"
+    },
+    "body[32].status": {
+      "valueClass": "enum"
+    },
+    "body[32].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[32].action": {
+      "valueClass": "enum"
+    },
+    "body[32].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[32].block_result": {
+      "valueClass": "enum"
+    },
+    "body[33].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[33].id": {
+      "valueClass": "id"
+    },
+    "body[33].player": {
+      "valueClass": "name"
+    },
+    "body[33].token": {
+      "valueClass": "enum"
+    },
+    "body[33].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[33].amount": {
+      "valueClass": "numeric"
+    },
+    "body[33].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[33].trx_id": {
+      "valueClass": "id"
+    },
+    "body[33].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[33].to_player": {
+      "valueClass": "name"
+    },
+    "body[33].status": {
+      "valueClass": "enum"
+    },
+    "body[33].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[33].action": {
+      "valueClass": "enum"
+    },
+    "body[33].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[33].block_result": {
+      "valueClass": "enum"
+    },
+    "body[34].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[34].id": {
+      "valueClass": "id"
+    },
+    "body[34].player": {
+      "valueClass": "name"
+    },
+    "body[34].token": {
+      "valueClass": "enum"
+    },
+    "body[34].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[34].amount": {
+      "valueClass": "numeric"
+    },
+    "body[34].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[34].trx_id": {
+      "valueClass": "id"
+    },
+    "body[34].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[34].to_player": {
+      "valueClass": "name"
+    },
+    "body[34].status": {
+      "valueClass": "enum"
+    },
+    "body[34].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[34].action": {
+      "valueClass": "enum"
+    },
+    "body[34].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[34].block_result": {
+      "valueClass": "enum"
+    },
+    "body[35].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[35].id": {
+      "valueClass": "id"
+    },
+    "body[35].player": {
+      "valueClass": "name"
+    },
+    "body[35].token": {
+      "valueClass": "enum"
+    },
+    "body[35].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[35].amount": {
+      "valueClass": "numeric"
+    },
+    "body[35].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[35].trx_id": {
+      "valueClass": "id"
+    },
+    "body[35].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[35].to_player": {
+      "valueClass": "name"
+    },
+    "body[35].status": {
+      "valueClass": "enum"
+    },
+    "body[35].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[35].action": {
+      "valueClass": "enum"
+    },
+    "body[35].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[35].block_result": {
+      "valueClass": "enum"
+    },
+    "body[36].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[36].id": {
+      "valueClass": "id"
+    },
+    "body[36].player": {
+      "valueClass": "name"
+    },
+    "body[36].token": {
+      "valueClass": "enum"
+    },
+    "body[36].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[36].amount": {
+      "valueClass": "numeric"
+    },
+    "body[36].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[36].trx_id": {
+      "valueClass": "id"
+    },
+    "body[36].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[36].to_player": {
+      "valueClass": "name"
+    },
+    "body[36].status": {
+      "valueClass": "enum"
+    },
+    "body[36].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[36].action": {
+      "valueClass": "enum"
+    },
+    "body[36].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[36].block_result": {
+      "valueClass": "enum"
+    },
+    "body[37].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[37].id": {
+      "valueClass": "id"
+    },
+    "body[37].player": {
+      "valueClass": "name"
+    },
+    "body[37].token": {
+      "valueClass": "enum"
+    },
+    "body[37].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[37].amount": {
+      "valueClass": "numeric"
+    },
+    "body[37].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[37].trx_id": {
+      "valueClass": "id"
+    },
+    "body[37].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[37].to_player": {
+      "valueClass": "name"
+    },
+    "body[37].status": {
+      "valueClass": "enum"
+    },
+    "body[37].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[37].action": {
+      "valueClass": "enum"
+    },
+    "body[37].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[37].block_result": {
+      "valueClass": "enum"
+    },
+    "body[38].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[38].id": {
+      "valueClass": "id"
+    },
+    "body[38].player": {
+      "valueClass": "name"
+    },
+    "body[38].token": {
+      "valueClass": "enum"
+    },
+    "body[38].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[38].amount": {
+      "valueClass": "numeric"
+    },
+    "body[38].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[38].trx_id": {
+      "valueClass": "id"
+    },
+    "body[38].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[38].to_player": {
+      "valueClass": "name"
+    },
+    "body[38].status": {
+      "valueClass": "enum"
+    },
+    "body[38].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[38].action": {
+      "valueClass": "enum"
+    },
+    "body[38].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[38].block_result": {
+      "valueClass": "enum"
+    },
+    "body[39].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[39].id": {
+      "valueClass": "id"
+    },
+    "body[39].player": {
+      "valueClass": "name"
+    },
+    "body[39].token": {
+      "valueClass": "enum"
+    },
+    "body[39].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[39].amount": {
+      "valueClass": "numeric"
+    },
+    "body[39].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[39].trx_id": {
+      "valueClass": "id"
+    },
+    "body[39].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[39].to_player": {
+      "valueClass": "name"
+    },
+    "body[39].status": {
+      "valueClass": "enum"
+    },
+    "body[39].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[39].action": {
+      "valueClass": "enum"
+    },
+    "body[39].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[39].block_result": {
+      "valueClass": "enum"
+    },
+    "body[40].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[40].id": {
+      "valueClass": "id"
+    },
+    "body[40].player": {
+      "valueClass": "name"
+    },
+    "body[40].token": {
+      "valueClass": "enum"
+    },
+    "body[40].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[40].amount": {
+      "valueClass": "numeric"
+    },
+    "body[40].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[40].trx_id": {
+      "valueClass": "id"
+    },
+    "body[40].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[40].to_player": {
+      "valueClass": "name"
+    },
+    "body[40].status": {
+      "valueClass": "enum"
+    },
+    "body[40].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[40].action": {
+      "valueClass": "enum"
+    },
+    "body[40].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[40].block_result": {
+      "valueClass": "enum"
+    },
+    "body[41].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[41].id": {
+      "valueClass": "id"
+    },
+    "body[41].player": {
+      "valueClass": "name"
+    },
+    "body[41].token": {
+      "valueClass": "enum"
+    },
+    "body[41].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[41].amount": {
+      "valueClass": "numeric"
+    },
+    "body[41].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[41].trx_id": {
+      "valueClass": "id"
+    },
+    "body[41].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[41].to_player": {
+      "valueClass": "name"
+    },
+    "body[41].status": {
+      "valueClass": "enum"
+    },
+    "body[41].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[41].action": {
+      "valueClass": "enum"
+    },
+    "body[41].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[41].block_result": {
+      "valueClass": "enum"
+    },
+    "body[42].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[42].id": {
+      "valueClass": "id"
+    },
+    "body[42].player": {
+      "valueClass": "name"
+    },
+    "body[42].token": {
+      "valueClass": "enum"
+    },
+    "body[42].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[42].amount": {
+      "valueClass": "numeric"
+    },
+    "body[42].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[42].trx_id": {
+      "valueClass": "id"
+    },
+    "body[42].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[42].to_player": {
+      "valueClass": "name"
+    },
+    "body[42].status": {
+      "valueClass": "enum"
+    },
+    "body[42].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[42].action": {
+      "valueClass": "enum"
+    },
+    "body[42].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[42].block_result": {
+      "valueClass": "enum"
+    },
+    "body[43].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[43].id": {
+      "valueClass": "id"
+    },
+    "body[43].player": {
+      "valueClass": "name"
+    },
+    "body[43].token": {
+      "valueClass": "enum"
+    },
+    "body[43].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[43].amount": {
+      "valueClass": "numeric"
+    },
+    "body[43].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[43].trx_id": {
+      "valueClass": "id"
+    },
+    "body[43].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[43].to_player": {
+      "valueClass": "name"
+    },
+    "body[43].status": {
+      "valueClass": "enum"
+    },
+    "body[43].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[43].action": {
+      "valueClass": "enum"
+    },
+    "body[43].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[43].block_result": {
+      "valueClass": "enum"
+    },
+    "body[44].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[44].id": {
+      "valueClass": "id"
+    },
+    "body[44].player": {
+      "valueClass": "name"
+    },
+    "body[44].token": {
+      "valueClass": "enum"
+    },
+    "body[44].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[44].amount": {
+      "valueClass": "numeric"
+    },
+    "body[44].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[44].trx_id": {
+      "valueClass": "id"
+    },
+    "body[44].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[44].to_player": {
+      "valueClass": "name"
+    },
+    "body[44].status": {
+      "valueClass": "enum"
+    },
+    "body[44].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[44].action": {
+      "valueClass": "enum"
+    },
+    "body[44].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[44].block_result": {
+      "valueClass": "enum"
+    },
+    "body[45].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[45].id": {
+      "valueClass": "id"
+    },
+    "body[45].player": {
+      "valueClass": "name"
+    },
+    "body[45].token": {
+      "valueClass": "enum"
+    },
+    "body[45].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[45].amount": {
+      "valueClass": "numeric"
+    },
+    "body[45].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[45].trx_id": {
+      "valueClass": "id"
+    },
+    "body[45].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[45].to_player": {
+      "valueClass": "name"
+    },
+    "body[45].status": {
+      "valueClass": "enum"
+    },
+    "body[45].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[45].action": {
+      "valueClass": "enum"
+    },
+    "body[45].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[45].block_result": {
+      "valueClass": "enum"
+    },
+    "body[46].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[46].id": {
+      "valueClass": "id"
+    },
+    "body[46].player": {
+      "valueClass": "name"
+    },
+    "body[46].token": {
+      "valueClass": "enum"
+    },
+    "body[46].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[46].amount": {
+      "valueClass": "numeric"
+    },
+    "body[46].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[46].trx_id": {
+      "valueClass": "id"
+    },
+    "body[46].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[46].to_player": {
+      "valueClass": "name"
+    },
+    "body[46].status": {
+      "valueClass": "enum"
+    },
+    "body[46].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[46].action": {
+      "valueClass": "enum"
+    },
+    "body[46].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[46].block_result": {
+      "valueClass": "enum"
+    },
+    "body[47].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[47].id": {
+      "valueClass": "id"
+    },
+    "body[47].player": {
+      "valueClass": "name"
+    },
+    "body[47].token": {
+      "valueClass": "enum"
+    },
+    "body[47].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[47].amount": {
+      "valueClass": "numeric"
+    },
+    "body[47].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[47].trx_id": {
+      "valueClass": "id"
+    },
+    "body[47].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[47].to_player": {
+      "valueClass": "name"
+    },
+    "body[47].status": {
+      "valueClass": "enum"
+    },
+    "body[47].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[47].action": {
+      "valueClass": "enum"
+    },
+    "body[47].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[47].block_result": {
+      "valueClass": "enum"
+    },
+    "body[48].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[48].id": {
+      "valueClass": "id"
+    },
+    "body[48].player": {
+      "valueClass": "name"
+    },
+    "body[48].token": {
+      "valueClass": "enum"
+    },
+    "body[48].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[48].amount": {
+      "valueClass": "numeric"
+    },
+    "body[48].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[48].trx_id": {
+      "valueClass": "id"
+    },
+    "body[48].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[48].to_player": {
+      "valueClass": "name"
+    },
+    "body[48].status": {
+      "valueClass": "enum"
+    },
+    "body[48].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[48].action": {
+      "valueClass": "enum"
+    },
+    "body[48].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[48].block_result": {
+      "valueClass": "enum"
+    },
+    "body[49].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[49].id": {
+      "valueClass": "id"
+    },
+    "body[49].player": {
+      "valueClass": "name"
+    },
+    "body[49].token": {
+      "valueClass": "enum"
+    },
+    "body[49].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[49].amount": {
+      "valueClass": "numeric"
+    },
+    "body[49].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[49].trx_id": {
+      "valueClass": "id"
+    },
+    "body[49].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[49].to_player": {
+      "valueClass": "name"
+    },
+    "body[49].status": {
+      "valueClass": "enum"
+    },
+    "body[49].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[49].action": {
+      "valueClass": "enum"
+    },
+    "body[49].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[49].block_result": {
+      "valueClass": "enum"
+    },
+    "body[50].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[50].id": {
+      "valueClass": "id"
+    },
+    "body[50].player": {
+      "valueClass": "name"
+    },
+    "body[50].token": {
+      "valueClass": "enum"
+    },
+    "body[50].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[50].amount": {
+      "valueClass": "numeric"
+    },
+    "body[50].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[50].trx_id": {
+      "valueClass": "id"
+    },
+    "body[50].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[50].to_player": {
+      "valueClass": "name"
+    },
+    "body[50].status": {
+      "valueClass": "enum"
+    },
+    "body[50].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[50].action": {
+      "valueClass": "enum"
+    },
+    "body[50].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[50].block_result": {
+      "valueClass": "enum"
+    },
+    "body[51].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[51].id": {
+      "valueClass": "id"
+    },
+    "body[51].player": {
+      "valueClass": "name"
+    },
+    "body[51].token": {
+      "valueClass": "enum"
+    },
+    "body[51].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[51].amount": {
+      "valueClass": "numeric"
+    },
+    "body[51].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[51].trx_id": {
+      "valueClass": "id"
+    },
+    "body[51].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[51].to_player": {
+      "valueClass": "name"
+    },
+    "body[51].status": {
+      "valueClass": "enum"
+    },
+    "body[51].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[51].action": {
+      "valueClass": "enum"
+    },
+    "body[51].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[51].block_result": {
+      "valueClass": "enum"
+    },
+    "body[52].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[52].id": {
+      "valueClass": "id"
+    },
+    "body[52].player": {
+      "valueClass": "name"
+    },
+    "body[52].token": {
+      "valueClass": "enum"
+    },
+    "body[52].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[52].amount": {
+      "valueClass": "numeric"
+    },
+    "body[52].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[52].trx_id": {
+      "valueClass": "id"
+    },
+    "body[52].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[52].to_player": {
+      "valueClass": "name"
+    },
+    "body[52].status": {
+      "valueClass": "enum"
+    },
+    "body[52].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[52].action": {
+      "valueClass": "enum"
+    },
+    "body[52].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[52].block_result": {
+      "valueClass": "enum"
+    },
+    "body[53].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[53].id": {
+      "valueClass": "id"
+    },
+    "body[53].player": {
+      "valueClass": "name"
+    },
+    "body[53].token": {
+      "valueClass": "enum"
+    },
+    "body[53].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[53].amount": {
+      "valueClass": "numeric"
+    },
+    "body[53].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[53].trx_id": {
+      "valueClass": "id"
+    },
+    "body[53].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[53].to_player": {
+      "valueClass": "name"
+    },
+    "body[53].status": {
+      "valueClass": "enum"
+    },
+    "body[53].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[53].action": {
+      "valueClass": "enum"
+    },
+    "body[53].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[53].block_result": {
+      "valueClass": "enum"
+    },
+    "body[54].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[54].id": {
+      "valueClass": "id"
+    },
+    "body[54].player": {
+      "valueClass": "name"
+    },
+    "body[54].token": {
+      "valueClass": "enum"
+    },
+    "body[54].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[54].amount": {
+      "valueClass": "numeric"
+    },
+    "body[54].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[54].trx_id": {
+      "valueClass": "id"
+    },
+    "body[54].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[54].to_player": {
+      "valueClass": "name"
+    },
+    "body[54].status": {
+      "valueClass": "enum"
+    },
+    "body[54].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[54].action": {
+      "valueClass": "enum"
+    },
+    "body[54].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[54].block_result": {
+      "valueClass": "enum"
+    },
+    "body[55].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[55].id": {
+      "valueClass": "id"
+    },
+    "body[55].player": {
+      "valueClass": "name"
+    },
+    "body[55].token": {
+      "valueClass": "enum"
+    },
+    "body[55].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[55].amount": {
+      "valueClass": "numeric"
+    },
+    "body[55].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[55].trx_id": {
+      "valueClass": "id"
+    },
+    "body[55].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[55].to_player": {
+      "valueClass": "name"
+    },
+    "body[55].status": {
+      "valueClass": "enum"
+    },
+    "body[55].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[55].action": {
+      "valueClass": "enum"
+    },
+    "body[55].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[55].block_result": {
+      "valueClass": "enum"
+    },
+    "body[56].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[56].id": {
+      "valueClass": "id"
+    },
+    "body[56].player": {
+      "valueClass": "name"
+    },
+    "body[56].token": {
+      "valueClass": "enum"
+    },
+    "body[56].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[56].amount": {
+      "valueClass": "numeric"
+    },
+    "body[56].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[56].trx_id": {
+      "valueClass": "id"
+    },
+    "body[56].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[56].to_player": {
+      "valueClass": "name"
+    },
+    "body[56].status": {
+      "valueClass": "enum"
+    },
+    "body[56].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[56].action": {
+      "valueClass": "enum"
+    },
+    "body[56].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[56].block_result": {
+      "valueClass": "enum"
+    },
+    "body[57].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[57].id": {
+      "valueClass": "id"
+    },
+    "body[57].player": {
+      "valueClass": "name"
+    },
+    "body[57].token": {
+      "valueClass": "enum"
+    },
+    "body[57].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[57].amount": {
+      "valueClass": "numeric"
+    },
+    "body[57].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[57].trx_id": {
+      "valueClass": "id"
+    },
+    "body[57].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[57].to_player": {
+      "valueClass": "name"
+    },
+    "body[57].status": {
+      "valueClass": "enum"
+    },
+    "body[57].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[57].action": {
+      "valueClass": "enum"
+    },
+    "body[57].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[57].block_result": {
+      "valueClass": "enum"
+    },
+    "body[58].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[58].id": {
+      "valueClass": "id"
+    },
+    "body[58].player": {
+      "valueClass": "name"
+    },
+    "body[58].token": {
+      "valueClass": "enum"
+    },
+    "body[58].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[58].amount": {
+      "valueClass": "numeric"
+    },
+    "body[58].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[58].trx_id": {
+      "valueClass": "id"
+    },
+    "body[58].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[58].to_player": {
+      "valueClass": "name"
+    },
+    "body[58].status": {
+      "valueClass": "enum"
+    },
+    "body[58].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[58].action": {
+      "valueClass": "enum"
+    },
+    "body[58].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[58].block_result": {
+      "valueClass": "enum"
+    },
+    "body[59].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[59].id": {
+      "valueClass": "id"
+    },
+    "body[59].player": {
+      "valueClass": "name"
+    },
+    "body[59].token": {
+      "valueClass": "enum"
+    },
+    "body[59].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[59].amount": {
+      "valueClass": "numeric"
+    },
+    "body[59].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[59].trx_id": {
+      "valueClass": "id"
+    },
+    "body[59].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[59].to_player": {
+      "valueClass": "name"
+    },
+    "body[59].status": {
+      "valueClass": "enum"
+    },
+    "body[59].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[59].action": {
+      "valueClass": "enum"
+    },
+    "body[59].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[59].block_result": {
+      "valueClass": "enum"
+    },
+    "body[60].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[60].id": {
+      "valueClass": "id"
+    },
+    "body[60].player": {
+      "valueClass": "name"
+    },
+    "body[60].token": {
+      "valueClass": "enum"
+    },
+    "body[60].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[60].amount": {
+      "valueClass": "numeric"
+    },
+    "body[60].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[60].trx_id": {
+      "valueClass": "id"
+    },
+    "body[60].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[60].to_player": {
+      "valueClass": "name"
+    },
+    "body[60].status": {
+      "valueClass": "enum"
+    },
+    "body[60].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[60].action": {
+      "valueClass": "enum"
+    },
+    "body[60].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[60].block_result": {
+      "valueClass": "enum"
+    },
+    "body[61].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[61].id": {
+      "valueClass": "id"
+    },
+    "body[61].player": {
+      "valueClass": "name"
+    },
+    "body[61].token": {
+      "valueClass": "enum"
+    },
+    "body[61].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[61].amount": {
+      "valueClass": "numeric"
+    },
+    "body[61].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[61].trx_id": {
+      "valueClass": "id"
+    },
+    "body[61].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[61].to_player": {
+      "valueClass": "name"
+    },
+    "body[61].status": {
+      "valueClass": "enum"
+    },
+    "body[61].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[61].action": {
+      "valueClass": "enum"
+    },
+    "body[61].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[61].block_result": {
+      "valueClass": "enum"
+    },
+    "body[62].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[62].id": {
+      "valueClass": "id"
+    },
+    "body[62].player": {
+      "valueClass": "name"
+    },
+    "body[62].token": {
+      "valueClass": "enum"
+    },
+    "body[62].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[62].amount": {
+      "valueClass": "numeric"
+    },
+    "body[62].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[62].trx_id": {
+      "valueClass": "id"
+    },
+    "body[62].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[62].to_player": {
+      "valueClass": "name"
+    },
+    "body[62].status": {
+      "valueClass": "enum"
+    },
+    "body[62].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[62].action": {
+      "valueClass": "enum"
+    },
+    "body[62].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[62].block_result": {
+      "valueClass": "enum"
+    },
+    "body[63].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[63].id": {
+      "valueClass": "id"
+    },
+    "body[63].player": {
+      "valueClass": "name"
+    },
+    "body[63].token": {
+      "valueClass": "enum"
+    },
+    "body[63].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[63].amount": {
+      "valueClass": "numeric"
+    },
+    "body[63].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[63].trx_id": {
+      "valueClass": "id"
+    },
+    "body[63].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[63].to_player": {
+      "valueClass": "name"
+    },
+    "body[63].status": {
+      "valueClass": "enum"
+    },
+    "body[63].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[63].action": {
+      "valueClass": "enum"
+    },
+    "body[63].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[63].block_result": {
+      "valueClass": "enum"
+    },
+    "body[64].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[64].id": {
+      "valueClass": "id"
+    },
+    "body[64].player": {
+      "valueClass": "name"
+    },
+    "body[64].token": {
+      "valueClass": "enum"
+    },
+    "body[64].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[64].amount": {
+      "valueClass": "numeric"
+    },
+    "body[64].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[64].trx_id": {
+      "valueClass": "id"
+    },
+    "body[64].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[64].to_player": {
+      "valueClass": "name"
+    },
+    "body[64].status": {
+      "valueClass": "enum"
+    },
+    "body[64].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[64].action": {
+      "valueClass": "enum"
+    },
+    "body[64].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[64].block_result": {
+      "valueClass": "enum"
+    },
+    "body[65].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[65].id": {
+      "valueClass": "id"
+    },
+    "body[65].player": {
+      "valueClass": "name"
+    },
+    "body[65].token": {
+      "valueClass": "enum"
+    },
+    "body[65].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[65].amount": {
+      "valueClass": "numeric"
+    },
+    "body[65].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[65].trx_id": {
+      "valueClass": "id"
+    },
+    "body[65].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[65].to_player": {
+      "valueClass": "name"
+    },
+    "body[65].status": {
+      "valueClass": "enum"
+    },
+    "body[65].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[65].action": {
+      "valueClass": "enum"
+    },
+    "body[65].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[65].block_result": {
+      "valueClass": "enum"
+    },
+    "body[66].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[66].id": {
+      "valueClass": "id"
+    },
+    "body[66].player": {
+      "valueClass": "name"
+    },
+    "body[66].token": {
+      "valueClass": "enum"
+    },
+    "body[66].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[66].amount": {
+      "valueClass": "numeric"
+    },
+    "body[66].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[66].trx_id": {
+      "valueClass": "id"
+    },
+    "body[66].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[66].to_player": {
+      "valueClass": "name"
+    },
+    "body[66].status": {
+      "valueClass": "enum"
+    },
+    "body[66].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[66].action": {
+      "valueClass": "enum"
+    },
+    "body[66].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[66].block_result": {
+      "valueClass": "enum"
+    },
+    "body[67].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[67].id": {
+      "valueClass": "id"
+    },
+    "body[67].player": {
+      "valueClass": "name"
+    },
+    "body[67].token": {
+      "valueClass": "enum"
+    },
+    "body[67].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[67].amount": {
+      "valueClass": "numeric"
+    },
+    "body[67].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[67].trx_id": {
+      "valueClass": "id"
+    },
+    "body[67].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[67].to_player": {
+      "valueClass": "name"
+    },
+    "body[67].status": {
+      "valueClass": "enum"
+    },
+    "body[67].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[67].action": {
+      "valueClass": "enum"
+    },
+    "body[67].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[67].block_result": {
+      "valueClass": "enum"
+    },
+    "body[68].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[68].id": {
+      "valueClass": "id"
+    },
+    "body[68].player": {
+      "valueClass": "name"
+    },
+    "body[68].token": {
+      "valueClass": "enum"
+    },
+    "body[68].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[68].amount": {
+      "valueClass": "numeric"
+    },
+    "body[68].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[68].trx_id": {
+      "valueClass": "id"
+    },
+    "body[68].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[68].to_player": {
+      "valueClass": "name"
+    },
+    "body[68].status": {
+      "valueClass": "enum"
+    },
+    "body[68].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[68].action": {
+      "valueClass": "enum"
+    },
+    "body[68].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[68].block_result": {
+      "valueClass": "enum"
+    },
+    "body[69].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[69].id": {
+      "valueClass": "id"
+    },
+    "body[69].player": {
+      "valueClass": "name"
+    },
+    "body[69].token": {
+      "valueClass": "enum"
+    },
+    "body[69].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[69].amount": {
+      "valueClass": "numeric"
+    },
+    "body[69].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[69].trx_id": {
+      "valueClass": "id"
+    },
+    "body[69].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[69].to_player": {
+      "valueClass": "name"
+    },
+    "body[69].status": {
+      "valueClass": "enum"
+    },
+    "body[69].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[69].action": {
+      "valueClass": "enum"
+    },
+    "body[69].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[69].block_result": {
+      "valueClass": "enum"
+    },
+    "body[70].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[70].id": {
+      "valueClass": "id"
+    },
+    "body[70].player": {
+      "valueClass": "name"
+    },
+    "body[70].token": {
+      "valueClass": "enum"
+    },
+    "body[70].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[70].amount": {
+      "valueClass": "numeric"
+    },
+    "body[70].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[70].trx_id": {
+      "valueClass": "id"
+    },
+    "body[70].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[70].to_player": {
+      "valueClass": "name"
+    },
+    "body[70].status": {
+      "valueClass": "enum"
+    },
+    "body[70].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[70].action": {
+      "valueClass": "enum"
+    },
+    "body[70].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[70].block_result": {
+      "valueClass": "enum"
+    },
+    "body[71].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[71].id": {
+      "valueClass": "id"
+    },
+    "body[71].player": {
+      "valueClass": "name"
+    },
+    "body[71].token": {
+      "valueClass": "enum"
+    },
+    "body[71].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[71].amount": {
+      "valueClass": "numeric"
+    },
+    "body[71].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[71].trx_id": {
+      "valueClass": "id"
+    },
+    "body[71].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[71].to_player": {
+      "valueClass": "name"
+    },
+    "body[71].status": {
+      "valueClass": "enum"
+    },
+    "body[71].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[71].action": {
+      "valueClass": "enum"
+    },
+    "body[71].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[71].block_result": {
+      "valueClass": "enum"
+    },
+    "body[72].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[72].id": {
+      "valueClass": "id"
+    },
+    "body[72].player": {
+      "valueClass": "name"
+    },
+    "body[72].token": {
+      "valueClass": "enum"
+    },
+    "body[72].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[72].amount": {
+      "valueClass": "numeric"
+    },
+    "body[72].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[72].trx_id": {
+      "valueClass": "id"
+    },
+    "body[72].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[72].to_player": {
+      "valueClass": "name"
+    },
+    "body[72].status": {
+      "valueClass": "enum"
+    },
+    "body[72].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[72].action": {
+      "valueClass": "enum"
+    },
+    "body[72].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[72].block_result": {
+      "valueClass": "enum"
+    },
+    "body[73].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[73].id": {
+      "valueClass": "id"
+    },
+    "body[73].player": {
+      "valueClass": "name"
+    },
+    "body[73].token": {
+      "valueClass": "enum"
+    },
+    "body[73].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[73].amount": {
+      "valueClass": "numeric"
+    },
+    "body[73].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[73].trx_id": {
+      "valueClass": "id"
+    },
+    "body[73].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[73].to_player": {
+      "valueClass": "name"
+    },
+    "body[73].status": {
+      "valueClass": "enum"
+    },
+    "body[73].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[73].action": {
+      "valueClass": "enum"
+    },
+    "body[73].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[73].block_result": {
+      "valueClass": "enum"
+    },
+    "body[74].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[74].id": {
+      "valueClass": "id"
+    },
+    "body[74].player": {
+      "valueClass": "name"
+    },
+    "body[74].token": {
+      "valueClass": "enum"
+    },
+    "body[74].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[74].amount": {
+      "valueClass": "numeric"
+    },
+    "body[74].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[74].trx_id": {
+      "valueClass": "id"
+    },
+    "body[74].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[74].to_player": {
+      "valueClass": "name"
+    },
+    "body[74].status": {
+      "valueClass": "enum"
+    },
+    "body[74].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[74].action": {
+      "valueClass": "enum"
+    },
+    "body[74].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[74].block_result": {
+      "valueClass": "enum"
+    },
+    "body[75].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[75].id": {
+      "valueClass": "id"
+    },
+    "body[75].player": {
+      "valueClass": "name"
+    },
+    "body[75].token": {
+      "valueClass": "enum"
+    },
+    "body[75].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[75].amount": {
+      "valueClass": "numeric"
+    },
+    "body[75].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[75].trx_id": {
+      "valueClass": "id"
+    },
+    "body[75].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[75].to_player": {
+      "valueClass": "name"
+    },
+    "body[75].status": {
+      "valueClass": "enum"
+    },
+    "body[75].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[75].action": {
+      "valueClass": "enum"
+    },
+    "body[75].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[75].block_result": {
+      "valueClass": "enum"
+    },
+    "body[76].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[76].id": {
+      "valueClass": "id"
+    },
+    "body[76].player": {
+      "valueClass": "name"
+    },
+    "body[76].token": {
+      "valueClass": "enum"
+    },
+    "body[76].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[76].amount": {
+      "valueClass": "numeric"
+    },
+    "body[76].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[76].trx_id": {
+      "valueClass": "id"
+    },
+    "body[76].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[76].to_player": {
+      "valueClass": "name"
+    },
+    "body[76].status": {
+      "valueClass": "enum"
+    },
+    "body[76].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[76].action": {
+      "valueClass": "enum"
+    },
+    "body[76].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[76].block_result": {
+      "valueClass": "enum"
+    },
+    "body[77].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[77].id": {
+      "valueClass": "id"
+    },
+    "body[77].player": {
+      "valueClass": "name"
+    },
+    "body[77].token": {
+      "valueClass": "enum"
+    },
+    "body[77].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[77].amount": {
+      "valueClass": "numeric"
+    },
+    "body[77].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[77].trx_id": {
+      "valueClass": "id"
+    },
+    "body[77].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[77].to_player": {
+      "valueClass": "name"
+    },
+    "body[77].status": {
+      "valueClass": "enum"
+    },
+    "body[77].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[77].action": {
+      "valueClass": "enum"
+    },
+    "body[77].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[77].block_result": {
+      "valueClass": "enum"
+    },
+    "body[78].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[78].id": {
+      "valueClass": "id"
+    },
+    "body[78].player": {
+      "valueClass": "name"
+    },
+    "body[78].token": {
+      "valueClass": "enum"
+    },
+    "body[78].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[78].amount": {
+      "valueClass": "numeric"
+    },
+    "body[78].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[78].trx_id": {
+      "valueClass": "id"
+    },
+    "body[78].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[78].to_player": {
+      "valueClass": "name"
+    },
+    "body[78].status": {
+      "valueClass": "enum"
+    },
+    "body[78].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[78].action": {
+      "valueClass": "enum"
+    },
+    "body[78].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[78].block_result": {
+      "valueClass": "enum"
+    },
+    "body[79].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[79].id": {
+      "valueClass": "id"
+    },
+    "body[79].player": {
+      "valueClass": "name"
+    },
+    "body[79].token": {
+      "valueClass": "enum"
+    },
+    "body[79].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[79].amount": {
+      "valueClass": "numeric"
+    },
+    "body[79].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[79].trx_id": {
+      "valueClass": "id"
+    },
+    "body[79].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[79].to_player": {
+      "valueClass": "name"
+    },
+    "body[79].status": {
+      "valueClass": "enum"
+    },
+    "body[79].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[79].action": {
+      "valueClass": "enum"
+    },
+    "body[79].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[79].block_result": {
+      "valueClass": "enum"
+    },
+    "body[80].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[80].id": {
+      "valueClass": "id"
+    },
+    "body[80].player": {
+      "valueClass": "name"
+    },
+    "body[80].token": {
+      "valueClass": "enum"
+    },
+    "body[80].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[80].amount": {
+      "valueClass": "numeric"
+    },
+    "body[80].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[80].trx_id": {
+      "valueClass": "id"
+    },
+    "body[80].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[80].to_player": {
+      "valueClass": "name"
+    },
+    "body[80].status": {
+      "valueClass": "enum"
+    },
+    "body[80].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[80].action": {
+      "valueClass": "enum"
+    },
+    "body[80].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[80].block_result": {
+      "valueClass": "enum"
+    },
+    "body[81].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[81].id": {
+      "valueClass": "id"
+    },
+    "body[81].player": {
+      "valueClass": "name"
+    },
+    "body[81].token": {
+      "valueClass": "enum"
+    },
+    "body[81].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[81].amount": {
+      "valueClass": "numeric"
+    },
+    "body[81].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[81].trx_id": {
+      "valueClass": "id"
+    },
+    "body[81].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[81].to_player": {
+      "valueClass": "name"
+    },
+    "body[81].status": {
+      "valueClass": "enum"
+    },
+    "body[81].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[81].action": {
+      "valueClass": "enum"
+    },
+    "body[81].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[81].block_result": {
+      "valueClass": "enum"
+    },
+    "body[82].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[82].id": {
+      "valueClass": "id"
+    },
+    "body[82].player": {
+      "valueClass": "name"
+    },
+    "body[82].token": {
+      "valueClass": "enum"
+    },
+    "body[82].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[82].amount": {
+      "valueClass": "numeric"
+    },
+    "body[82].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[82].trx_id": {
+      "valueClass": "id"
+    },
+    "body[82].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[82].to_player": {
+      "valueClass": "name"
+    },
+    "body[82].status": {
+      "valueClass": "enum"
+    },
+    "body[82].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[82].action": {
+      "valueClass": "enum"
+    },
+    "body[82].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[82].block_result": {
+      "valueClass": "enum"
+    },
+    "body[83].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[83].id": {
+      "valueClass": "id"
+    },
+    "body[83].player": {
+      "valueClass": "name"
+    },
+    "body[83].token": {
+      "valueClass": "enum"
+    },
+    "body[83].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[83].amount": {
+      "valueClass": "numeric"
+    },
+    "body[83].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[83].trx_id": {
+      "valueClass": "id"
+    },
+    "body[83].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[83].to_player": {
+      "valueClass": "name"
+    },
+    "body[83].status": {
+      "valueClass": "enum"
+    },
+    "body[83].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[83].action": {
+      "valueClass": "enum"
+    },
+    "body[83].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[83].block_result": {
+      "valueClass": "enum"
+    },
+    "body[84].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[84].id": {
+      "valueClass": "id"
+    },
+    "body[84].player": {
+      "valueClass": "name"
+    },
+    "body[84].token": {
+      "valueClass": "enum"
+    },
+    "body[84].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[84].amount": {
+      "valueClass": "numeric"
+    },
+    "body[84].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[84].trx_id": {
+      "valueClass": "id"
+    },
+    "body[84].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[84].to_player": {
+      "valueClass": "name"
+    },
+    "body[84].status": {
+      "valueClass": "enum"
+    },
+    "body[84].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[84].action": {
+      "valueClass": "enum"
+    },
+    "body[84].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[84].block_result": {
+      "valueClass": "enum"
+    },
+    "body[85].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[85].id": {
+      "valueClass": "id"
+    },
+    "body[85].player": {
+      "valueClass": "name"
+    },
+    "body[85].token": {
+      "valueClass": "enum"
+    },
+    "body[85].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[85].amount": {
+      "valueClass": "numeric"
+    },
+    "body[85].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[85].trx_id": {
+      "valueClass": "id"
+    },
+    "body[85].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[85].to_player": {
+      "valueClass": "name"
+    },
+    "body[85].status": {
+      "valueClass": "enum"
+    },
+    "body[85].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[85].action": {
+      "valueClass": "enum"
+    },
+    "body[85].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[85].block_result": {
+      "valueClass": "enum"
+    },
+    "body[86].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[86].id": {
+      "valueClass": "id"
+    },
+    "body[86].player": {
+      "valueClass": "name"
+    },
+    "body[86].token": {
+      "valueClass": "enum"
+    },
+    "body[86].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[86].amount": {
+      "valueClass": "numeric"
+    },
+    "body[86].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[86].trx_id": {
+      "valueClass": "id"
+    },
+    "body[86].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[86].to_player": {
+      "valueClass": "name"
+    },
+    "body[86].status": {
+      "valueClass": "enum"
+    },
+    "body[86].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[86].action": {
+      "valueClass": "enum"
+    },
+    "body[86].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[86].block_result": {
+      "valueClass": "enum"
+    },
+    "body[87].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[87].id": {
+      "valueClass": "id"
+    },
+    "body[87].player": {
+      "valueClass": "name"
+    },
+    "body[87].token": {
+      "valueClass": "enum"
+    },
+    "body[87].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[87].amount": {
+      "valueClass": "numeric"
+    },
+    "body[87].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[87].trx_id": {
+      "valueClass": "id"
+    },
+    "body[87].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[87].to_player": {
+      "valueClass": "name"
+    },
+    "body[87].status": {
+      "valueClass": "enum"
+    },
+    "body[87].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[87].action": {
+      "valueClass": "enum"
+    },
+    "body[87].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[87].block_result": {
+      "valueClass": "enum"
+    },
+    "body[88].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[88].id": {
+      "valueClass": "id"
+    },
+    "body[88].player": {
+      "valueClass": "name"
+    },
+    "body[88].token": {
+      "valueClass": "enum"
+    },
+    "body[88].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[88].amount": {
+      "valueClass": "numeric"
+    },
+    "body[88].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[88].trx_id": {
+      "valueClass": "id"
+    },
+    "body[88].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[88].to_player": {
+      "valueClass": "name"
+    },
+    "body[88].status": {
+      "valueClass": "enum"
+    },
+    "body[88].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[88].action": {
+      "valueClass": "enum"
+    },
+    "body[88].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[88].block_result": {
+      "valueClass": "enum"
+    },
+    "body[89].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[89].id": {
+      "valueClass": "id"
+    },
+    "body[89].player": {
+      "valueClass": "name"
+    },
+    "body[89].token": {
+      "valueClass": "enum"
+    },
+    "body[89].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[89].amount": {
+      "valueClass": "numeric"
+    },
+    "body[89].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[89].trx_id": {
+      "valueClass": "id"
+    },
+    "body[89].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[89].to_player": {
+      "valueClass": "name"
+    },
+    "body[89].status": {
+      "valueClass": "enum"
+    },
+    "body[89].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[89].action": {
+      "valueClass": "enum"
+    },
+    "body[89].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[89].block_result": {
+      "valueClass": "enum"
+    },
+    "body[90].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[90].id": {
+      "valueClass": "id"
+    },
+    "body[90].player": {
+      "valueClass": "name"
+    },
+    "body[90].token": {
+      "valueClass": "enum"
+    },
+    "body[90].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[90].amount": {
+      "valueClass": "numeric"
+    },
+    "body[90].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[90].trx_id": {
+      "valueClass": "id"
+    },
+    "body[90].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[90].to_player": {
+      "valueClass": "name"
+    },
+    "body[90].status": {
+      "valueClass": "enum"
+    },
+    "body[90].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[90].action": {
+      "valueClass": "enum"
+    },
+    "body[90].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[90].block_result": {
+      "valueClass": "enum"
+    },
+    "body[91].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[91].id": {
+      "valueClass": "id"
+    },
+    "body[91].player": {
+      "valueClass": "name"
+    },
+    "body[91].token": {
+      "valueClass": "enum"
+    },
+    "body[91].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[91].amount": {
+      "valueClass": "numeric"
+    },
+    "body[91].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[91].trx_id": {
+      "valueClass": "id"
+    },
+    "body[91].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[91].to_player": {
+      "valueClass": "name"
+    },
+    "body[91].status": {
+      "valueClass": "enum"
+    },
+    "body[91].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[91].action": {
+      "valueClass": "enum"
+    },
+    "body[91].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[91].block_result": {
+      "valueClass": "enum"
+    },
+    "body[92].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[92].id": {
+      "valueClass": "id"
+    },
+    "body[92].player": {
+      "valueClass": "name"
+    },
+    "body[92].token": {
+      "valueClass": "enum"
+    },
+    "body[92].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[92].amount": {
+      "valueClass": "numeric"
+    },
+    "body[92].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[92].trx_id": {
+      "valueClass": "id"
+    },
+    "body[92].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[92].to_player": {
+      "valueClass": "name"
+    },
+    "body[92].status": {
+      "valueClass": "enum"
+    },
+    "body[92].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[92].action": {
+      "valueClass": "enum"
+    },
+    "body[92].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[92].block_result": {
+      "valueClass": "enum"
+    },
+    "body[93].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[93].id": {
+      "valueClass": "id"
+    },
+    "body[93].player": {
+      "valueClass": "name"
+    },
+    "body[93].token": {
+      "valueClass": "enum"
+    },
+    "body[93].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[93].amount": {
+      "valueClass": "numeric"
+    },
+    "body[93].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[93].trx_id": {
+      "valueClass": "id"
+    },
+    "body[93].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[93].to_player": {
+      "valueClass": "name"
+    },
+    "body[93].status": {
+      "valueClass": "enum"
+    },
+    "body[93].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[93].action": {
+      "valueClass": "enum"
+    },
+    "body[93].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[93].block_result": {
+      "valueClass": "enum"
+    },
+    "body[94].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[94].id": {
+      "valueClass": "id"
+    },
+    "body[94].player": {
+      "valueClass": "name"
+    },
+    "body[94].token": {
+      "valueClass": "enum"
+    },
+    "body[94].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[94].amount": {
+      "valueClass": "numeric"
+    },
+    "body[94].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[94].trx_id": {
+      "valueClass": "id"
+    },
+    "body[94].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[94].to_player": {
+      "valueClass": "name"
+    },
+    "body[94].status": {
+      "valueClass": "enum"
+    },
+    "body[94].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[94].action": {
+      "valueClass": "enum"
+    },
+    "body[94].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[94].block_result": {
+      "valueClass": "enum"
+    },
+    "body[95].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[95].id": {
+      "valueClass": "id"
+    },
+    "body[95].player": {
+      "valueClass": "name"
+    },
+    "body[95].token": {
+      "valueClass": "enum"
+    },
+    "body[95].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[95].amount": {
+      "valueClass": "numeric"
+    },
+    "body[95].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[95].trx_id": {
+      "valueClass": "id"
+    },
+    "body[95].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[95].to_player": {
+      "valueClass": "name"
+    },
+    "body[95].status": {
+      "valueClass": "enum"
+    },
+    "body[95].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[95].action": {
+      "valueClass": "enum"
+    },
+    "body[95].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[95].block_result": {
+      "valueClass": "enum"
+    },
+    "body[96].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[96].id": {
+      "valueClass": "id"
+    },
+    "body[96].player": {
+      "valueClass": "name"
+    },
+    "body[96].token": {
+      "valueClass": "enum"
+    },
+    "body[96].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[96].amount": {
+      "valueClass": "numeric"
+    },
+    "body[96].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[96].trx_id": {
+      "valueClass": "id"
+    },
+    "body[96].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[96].to_player": {
+      "valueClass": "name"
+    },
+    "body[96].status": {
+      "valueClass": "enum"
+    },
+    "body[96].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[96].action": {
+      "valueClass": "enum"
+    },
+    "body[96].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[96].block_result": {
+      "valueClass": "enum"
+    },
+    "body[97].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[97].id": {
+      "valueClass": "id"
+    },
+    "body[97].player": {
+      "valueClass": "name"
+    },
+    "body[97].token": {
+      "valueClass": "enum"
+    },
+    "body[97].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[97].amount": {
+      "valueClass": "numeric"
+    },
+    "body[97].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[97].trx_id": {
+      "valueClass": "id"
+    },
+    "body[97].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[97].to_player": {
+      "valueClass": "name"
+    },
+    "body[97].status": {
+      "valueClass": "enum"
+    },
+    "body[97].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[97].action": {
+      "valueClass": "enum"
+    },
+    "body[97].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[97].block_result": {
+      "valueClass": "enum"
+    },
+    "body[98].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[98].id": {
+      "valueClass": "id"
+    },
+    "body[98].player": {
+      "valueClass": "name"
+    },
+    "body[98].token": {
+      "valueClass": "enum"
+    },
+    "body[98].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[98].amount": {
+      "valueClass": "numeric"
+    },
+    "body[98].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[98].trx_id": {
+      "valueClass": "id"
+    },
+    "body[98].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[98].to_player": {
+      "valueClass": "name"
+    },
+    "body[98].status": {
+      "valueClass": "enum"
+    },
+    "body[98].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[98].action": {
+      "valueClass": "enum"
+    },
+    "body[98].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[98].block_result": {
+      "valueClass": "enum"
+    },
+    "body[99].reward_action": {
+      "valueClass": "enum"
+    },
+    "body[99].id": {
+      "valueClass": "id"
+    },
+    "body[99].player": {
+      "valueClass": "name"
+    },
+    "body[99].token": {
+      "valueClass": "enum"
+    },
+    "body[99].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "wild"
+      ]
+    },
+    "body[99].amount": {
+      "valueClass": "numeric"
+    },
+    "body[99].block_num": {
+      "valueClass": "numeric"
+    },
+    "body[99].trx_id": {
+      "valueClass": "id"
+    },
+    "body[99].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[99].to_player": {
+      "valueClass": "name"
+    },
+    "body[99].status": {
+      "valueClass": "enum"
+    },
+    "body[99].last_block_action_date": {
+      "valueClass": "timestamp"
+    },
+    "body[99].action": {
+      "valueClass": "enum"
+    },
+    "body[99].block_successful": {
+      "valueClass": "enum"
+    },
+    "body[99].block_result": {
+      "valueClass": "enum"
     }
   },
   "body": [
     {
-      "reward_action": "claimed",
-      "id": "1495375501",
-      "player": "sample-acct-100",
+      "reward_action": "earned",
+      "id": "1496305972",
+      "player": "sample-account-1",
       "token": "SPS",
       "type": "wild",
-      "amount": "-494.683",
-      "block_num": 0,
-      "trx_id": "d7c8b4d505952a9c46d18e528dde8624c5a36bb3",
-      "created_date": "2026-09-08T20:34:28.124Z",
-      "to_player": "sample-acct-088",
-      "status": "completed",
-      "last_block_action_date": "2026-09-08T20:34:33.000Z",
-      "action": "",
-      "block_successful": false,
-      "block_result": ""
-    },
-    {
-      "reward_action": "claimed",
-      "id": "1495375500",
-      "player": "sample-acct-100",
-      "token": "SPS",
-      "type": "wild",
-      "amount": "-2803.207",
-      "block_num": 0,
-      "trx_id": "b23db736f3052a2b563a0cd6f85311d7eee8971d",
-      "created_date": "2026-09-08T20:34:28.096Z",
-      "to_player": "sample-acct-100",
-      "status": "completed",
-      "last_block_action_date": "2026-09-08T20:34:33.000Z",
+      "amount": "6.280",
+      "block_num": 109931135,
+      "trx_id": "sl_797ca84a673fcd3f35f59a8476faba5b",
+      "created_date": "2026-09-15T08:40:15.828Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
       "action": "",
       "block_successful": false,
       "block_result": ""
     },
     {
       "reward_action": "earned",
-      "id": "1495367065",
-      "player": "sample-acct-100",
+      "id": "1496305767",
+      "player": "sample-account-1",
       "token": "SPS",
       "type": "wild",
-      "amount": "45.995",
-      "block_num": 109742585,
-      "trx_id": "sl_c253399af951d72c31dd09101fb10156",
-      "created_date": "2026-09-08T19:08:25.765Z",
-      "to_player": "sample-acct-100",
+      "amount": "5.944",
+      "block_num": 109931090,
+      "trx_id": "sl_8fa1093f36d7f3df56235d01e442784b",
+      "created_date": "2026-09-15T08:38:03.291Z",
+      "to_player": "sample-account-1",
       "status": null,
       "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496305564",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.018",
+      "block_num": 109931056,
+      "trx_id": "sl_9f1171b35bfe19461ce4300bddf6af48",
+      "created_date": "2026-09-15T08:35:54.940Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496305387",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.543",
+      "block_num": 109931010,
+      "trx_id": "sl_338b78968497bf00006c93c20cdee7a8",
+      "created_date": "2026-09-15T08:33:54.430Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496305000",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.192",
+      "block_num": 109930918,
+      "trx_id": "sl_75843ca2ead24876680164cdd02c6da3",
+      "created_date": "2026-09-15T08:29:27.708Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496304730",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.382",
+      "block_num": 109930857,
+      "trx_id": "sl_a613fd5e65cec76dea06b9df16ae4300",
+      "created_date": "2026-09-15T08:26:22.837Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496304669",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.931",
+      "block_num": 109930858,
+      "trx_id": "sl_a8fe2c33a6680695e2b127bbb118fee1",
+      "created_date": "2026-09-15T08:25:43.138Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496304163",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.554",
+      "block_num": 109930736,
+      "trx_id": "sl_73281e739c386a2c7b4b078768d57d45",
+      "created_date": "2026-09-15T08:19:57.828Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496303854",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.930",
+      "block_num": 109930671,
+      "trx_id": "sl_0f39f991a2d16ff69d81ff570bbdbc1d",
+      "created_date": "2026-09-15T08:16:30.522Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496303631",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.405",
+      "block_num": 109930618,
+      "trx_id": "sl_e81bf51c9094b351b93956e2102111ec",
+      "created_date": "2026-09-15T08:14:01.697Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496303569",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.090",
+      "block_num": 109930596,
+      "trx_id": "sl_d2b35d43786334d7146be5b354afc50d",
+      "created_date": "2026-09-15T08:13:19.350Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1496303537",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-1.694",
+      "block_num": 0,
+      "trx_id": "67ec3d63f5f953e4cc0d52fd5d587786066fae9e",
+      "created_date": "2026-09-15T08:12:57.959Z",
+      "to_player": "sample-account-2",
+      "status": "completed",
+      "last_block_action_date": "2026-09-15T08:13:00.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1496303536",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-3.148",
+      "block_num": 0,
+      "trx_id": "7992dfd4758b2b3fe1975c9e4e634be1f9414365",
+      "created_date": "2026-09-15T08:12:57.953Z",
+      "to_player": "sample-account-1",
+      "status": "completed",
+      "last_block_action_date": "2026-09-15T08:13:00.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496303479",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.842",
+      "block_num": 109930578,
+      "trx_id": "sl_0cef1c8a97f77ae903c152d110fcc205",
+      "created_date": "2026-09-15T08:12:27.758Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1496129399",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-31.727",
+      "block_num": 0,
+      "trx_id": "0d3ee21665b58cdfddf5c213d09b97dc2e3d22b4",
+      "created_date": "2026-09-14T02:41:24.899Z",
+      "to_player": "sample-account-2",
+      "status": "completed",
+      "last_block_action_date": "2026-09-14T02:41:27.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1496129398",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-58.922",
+      "block_num": 0,
+      "trx_id": "6b9b411cfd562a6908073a94da3c99d0f1a3aaec",
+      "created_date": "2026-09-14T02:41:24.894Z",
+      "to_player": "sample-account-1",
+      "status": "completed",
+      "last_block_action_date": "2026-09-14T02:41:27.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496129371",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.888",
+      "block_num": 109895244,
+      "trx_id": "sl_1644c895417224837ab866b4e0434299",
+      "created_date": "2026-09-14T02:41:11.697Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496128537",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.280",
+      "block_num": 109895104,
+      "trx_id": "sl_0e3a1fad7d4ff94fa9d59f2a532681d4",
+      "created_date": "2026-09-14T02:33:24.706Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496127834",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.771",
+      "block_num": 109894984,
+      "trx_id": "sl_653c07fe0faafc6fa96bf0424ddb5313",
+      "created_date": "2026-09-14T02:27:34.485Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496127633",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.942",
+      "block_num": 109894944,
+      "trx_id": "sl_9925c40cef181e77c89c10a65c535421",
+      "created_date": "2026-09-14T02:25:44.584Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496127353",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.760",
+      "block_num": 109894897,
+      "trx_id": "sl_eaf15c30c6e887deca3d90666c3d8ecc",
+      "created_date": "2026-09-14T02:23:15.223Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496127094",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.038",
+      "block_num": 109894844,
+      "trx_id": "sl_995c0a4a44c044ae723fde7e7eba62a0",
+      "created_date": "2026-09-14T02:20:50.860Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496126932",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.707",
+      "block_num": 109894817,
+      "trx_id": "sl_b7207a2f2b9d12cb3ba3d537d9510653",
+      "created_date": "2026-09-14T02:19:29.624Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496126664",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.486",
+      "block_num": 109894764,
+      "trx_id": "sl_ba81fbf77120e58ffba81ab800ae653b",
+      "created_date": "2026-09-14T02:17:06.005Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496126395",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.308",
+      "block_num": 109894717,
+      "trx_id": "sl_6a58358f32682c4bdd6297bd0de86c4d",
+      "created_date": "2026-09-14T02:14:39.512Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496041318",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.562",
+      "block_num": 109877527,
+      "trx_id": "sl_8a464e50debc51d8333a343ca7e1cc38",
+      "created_date": "2026-09-13T11:52:40.121Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496040844",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.829",
+      "block_num": 109877447,
+      "trx_id": "sl_c21edeb33b6e6df8f642976d263a9873",
+      "created_date": "2026-09-13T11:48:23.124Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496040329",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.579",
+      "block_num": 109877328,
+      "trx_id": "sl_ae560de19c8854fd87fb4ff85f4644d6",
+      "created_date": "2026-09-13T11:43:07.653Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496040064",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.886",
+      "block_num": 109877285,
+      "trx_id": "sl_47eb0b4e63d55464c6b7a67bb20cd5a7",
+      "created_date": "2026-09-13T11:41:00.398Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496003117",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.738",
+      "block_num": 109869861,
+      "trx_id": "sl_2c973c8bac5e7d1fd64b867ae5a62ece",
+      "created_date": "2026-09-13T05:29:13.017Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496002858",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.368",
+      "block_num": 109869822,
+      "trx_id": "sl_7edfaeafdefd4a60dd0707dc7d747a1d",
+      "created_date": "2026-09-13T05:26:47.438Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496002374",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.861",
+      "block_num": 109869722,
+      "trx_id": "sl_f3712c5573e7a97112fcf6abdfebd9ee",
+      "created_date": "2026-09-13T05:21:54.721Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496001784",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.404",
+      "block_num": 109869602,
+      "trx_id": "sl_2de73f083385061e69e8ffe7b784a9cd",
+      "created_date": "2026-09-13T05:15:41.220Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1496001458",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.242",
+      "block_num": 109869543,
+      "trx_id": "sl_501e0c07e59d63df7411378a232a39de",
+      "created_date": "2026-09-13T05:12:24.256Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495961512",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-28.593",
+      "block_num": 0,
+      "trx_id": "838fe0f5233d262a3937177b49d1942ead03dcc8",
+      "created_date": "2026-09-12T22:28:46.071Z",
+      "to_player": "sample-account-2",
+      "status": "completed",
+      "last_block_action_date": "2026-09-12T22:28:51.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495961511",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-53.103",
+      "block_num": 0,
+      "trx_id": "60394646db338f5504a7cdfdb10d1592e2a6cae3",
+      "created_date": "2026-09-12T22:28:46.063Z",
+      "to_player": "sample-account-1",
+      "status": "completed",
+      "last_block_action_date": "2026-09-12T22:28:51.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495961390",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.392",
+      "block_num": 109861465,
+      "trx_id": "sl_c24226165b63bd0edec7b60dbcfdb90a",
+      "created_date": "2026-09-12T22:27:28.228Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495924707",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.779",
+      "block_num": 109854026,
+      "trx_id": "sl_458ff2d6d8c3fb925afdec27fa86ede6",
+      "created_date": "2026-09-12T16:14:56.680Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495924442",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.299",
+      "block_num": 109853978,
+      "trx_id": "sl_89fac7b70535d884ee198f92d81a8617",
+      "created_date": "2026-09-12T16:12:29.556Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495924217",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.938",
+      "block_num": 109853938,
+      "trx_id": "sl_cbd0d71b3813bb5e4da6e42ba054c3cd",
+      "created_date": "2026-09-12T16:10:20.672Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495924029",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.704",
+      "block_num": 109853898,
+      "trx_id": "sl_1b3084d3e54fe7d7ec95b2464e668d83",
+      "created_date": "2026-09-12T16:08:49.477Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495841604",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.656",
+      "block_num": 109837562,
+      "trx_id": "sl_47591c33a84da218c4c588c5b8d5ec64",
+      "created_date": "2026-09-12T02:29:47.122Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495841306",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.623",
+      "block_num": 109837508,
+      "trx_id": "sl_bbc2451e24e0b932e78ea601ebadf05d",
+      "created_date": "2026-09-12T02:27:11.579Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495841045",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.772",
+      "block_num": 109837469,
+      "trx_id": "sl_a44cf8ad6e5168ef23b59c9e118bad00",
+      "created_date": "2026-09-12T02:24:48.713Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495840797",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.834",
+      "block_num": 109837428,
+      "trx_id": "sl_16068400fef279a44fb6d42a61031c4c",
+      "created_date": "2026-09-12T02:22:26.077Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495840554",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.158",
+      "block_num": 109837368,
+      "trx_id": "sl_3d1a84473dd163b8c038c36fb3750b61",
+      "created_date": "2026-09-12T02:20:01.231Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495840293",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.409",
+      "block_num": 109837328,
+      "trx_id": "sl_f1b3a0c8b9893df7ad27a8e5b81e76ae",
+      "created_date": "2026-09-12T02:17:32.967Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495798597",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.295",
+      "block_num": 109829106,
+      "trx_id": "sl_6eb32e6bc0974502d099d59ade78a2f8",
+      "created_date": "2026-09-11T19:25:12.344Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495798338",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.062",
+      "block_num": 109829048,
+      "trx_id": "sl_5d570f1135350d8f8031fbc0752d29da",
+      "created_date": "2026-09-11T19:22:38.248Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495797903",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "6.087",
+      "block_num": 109828969,
+      "trx_id": "sl_ce5b2c5173c36b2884afb595d22cbc9a",
+      "created_date": "2026-09-11T19:18:39.789Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495797470",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.688",
+      "block_num": 109828888,
+      "trx_id": "sl_0aec84d5799d467ec5baa060f036d287",
+      "created_date": "2026-09-11T19:14:27.276Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495796370",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-21.935",
+      "block_num": 0,
+      "trx_id": "02af7f05972313c7159a85085db10651eed2c3fa",
+      "created_date": "2026-09-11T19:03:21.382Z",
+      "to_player": "sample-account-2",
+      "status": "completed",
+      "last_block_action_date": "2026-09-11T19:03:24.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495796369",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-40.737",
+      "block_num": 0,
+      "trx_id": "dcb75304aca5a6955a7f0e895b6ad33251bb2263",
+      "created_date": "2026-09-11T19:03:21.324Z",
+      "to_player": "sample-account-1",
+      "status": "completed",
+      "last_block_action_date": "2026-09-11T19:03:24.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495796368",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "brawl",
+      "amount": "-109.134",
+      "block_num": 0,
+      "trx_id": "dcb75304aca5a6955a7f0e895b6ad33251bb2263",
+      "created_date": "2026-09-11T19:03:21.324Z",
+      "to_player": "sample-account-1",
+      "status": "completed",
+      "last_block_action_date": "2026-09-11T19:03:24.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495761342",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "brawl",
+      "amount": "109.134",
+      "block_num": 109821827,
+      "trx_id": "brawl_rewards-72-GUILD-BC383-BL910-BRAWL3",
+      "created_date": "2026-09-11T13:20:15.000Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495754054",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.535",
+      "block_num": 109820848,
+      "trx_id": "sl_cd6e5330673e3b1a25ed31e0e355ad62",
+      "created_date": "2026-09-11T12:31:39.931Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495753919",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.088",
+      "block_num": 109820824,
+      "trx_id": "sl_2a999326dd70048cf499771dd44acf2e",
+      "created_date": "2026-09-11T12:30:24.907Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495753211",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.921",
+      "block_num": 109820730,
+      "trx_id": "sl_84075fcb726d775466ef8563eda38331",
+      "created_date": "2026-09-11T12:26:14.145Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495709876",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.530",
+      "block_num": 109812063,
+      "trx_id": "sl_8b5ee3ec6bb116c6e841d7b57f58036e",
+      "created_date": "2026-09-11T05:11:02.869Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495709652",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.511",
+      "block_num": 109812008,
+      "trx_id": "sl_a2033cbc23921d6685f90c9172ffd7e5",
+      "created_date": "2026-09-11T05:08:55.367Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495708952",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.730",
+      "block_num": 109811871,
+      "trx_id": "sl_cc02f5f235b614609a40960364927173",
+      "created_date": "2026-09-11T05:02:06.796Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495667824",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.858",
+      "block_num": 109803671,
+      "trx_id": "sl_6bfe869130e4db0fbb440a0954b94957",
+      "created_date": "2026-09-10T22:10:27.666Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495667587",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.849",
+      "block_num": 109803604,
+      "trx_id": "sl_2bc3e13a46cf8d239566179baa2266d5",
+      "created_date": "2026-09-10T22:07:51.137Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495667188",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.645",
+      "block_num": 109803531,
+      "trx_id": "sl_08783be5e479140e8c2cc0eb4bcbd5d3",
+      "created_date": "2026-09-10T22:03:59.512Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495667022",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.831",
+      "block_num": 109803511,
+      "trx_id": "sl_4120c43436ec7a403958bfb103e815b4",
+      "created_date": "2026-09-10T22:02:37.063Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495666516",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.414",
+      "block_num": 109803411,
+      "trx_id": "sl_307c7952e6c8dc2af3fd07499f375318",
+      "created_date": "2026-09-10T21:57:45.884Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495666305",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.760",
+      "block_num": 109803371,
+      "trx_id": "sl_73997ef82349ca264f4089bb18aa44c6",
+      "created_date": "2026-09-10T21:55:29.305Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495648459",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-21.315",
+      "block_num": 0,
+      "trx_id": "1fd91c691526fb89b9098cb9579a0e8c7b323481",
+      "created_date": "2026-09-10T18:56:40.167Z",
+      "to_player": "sample-account-2",
+      "status": "completed",
+      "last_block_action_date": "2026-09-10T18:56:42.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495648458",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-39.587",
+      "block_num": 0,
+      "trx_id": "a7b7f3ce4bb3536815c52e12f80d940debc819f0",
+      "created_date": "2026-09-10T18:56:40.160Z",
+      "to_player": "sample-account-1",
+      "status": "completed",
+      "last_block_action_date": "2026-09-10T18:56:42.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495627412",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.246",
+      "block_num": 109795506,
+      "trx_id": "sl_d133c66e30cd0745fab8966e43316ffa",
+      "created_date": "2026-09-10T15:21:01.480Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495627077",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.247",
+      "block_num": 109795433,
+      "trx_id": "sl_879cc66befe33dd5f34cdf35504cf3a3",
+      "created_date": "2026-09-10T15:18:04.790Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495626617",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.084",
+      "block_num": 109795354,
+      "trx_id": "sl_43cd9f100d88ea973428ed4fa1c1c791",
+      "created_date": "2026-09-10T15:13:33.521Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495585662",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "6.472",
+      "block_num": 109787269,
+      "trx_id": "sl_523d2773678114fd6fb332f2bf7a35be",
+      "created_date": "2026-09-10T08:29:15.827Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495585419",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.555",
+      "block_num": 109787229,
+      "trx_id": "sl_1ecb8adca52877909bf5c0a49a58a8b8",
+      "created_date": "2026-09-10T08:27:02.399Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495585037",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "6.761",
+      "block_num": 109787169,
+      "trx_id": "sl_2ab0fec07436669247bb401a73bb2162",
+      "created_date": "2026-09-10T08:23:35.549Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495549124",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "6.340",
+      "block_num": 109779729,
+      "trx_id": "sl_8d65d0eb2c33607b989297507a6d406a",
+      "created_date": "2026-09-10T02:10:55.350Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495548806",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "6.360",
+      "block_num": 109779671,
+      "trx_id": "sl_6b7ed2a3ab9d944db077206bc8cb33c7",
+      "created_date": "2026-09-10T02:07:49.917Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495548624",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "6.793",
+      "block_num": 109779631,
+      "trx_id": "sl_08624b887deaa3353a9c65e2ddfb7c52",
+      "created_date": "2026-09-10T02:05:54.932Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495548113",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "7.044",
+      "block_num": 109779525,
+      "trx_id": "sl_bbf70c008ac8c9b5e93cdf365b51662e",
+      "created_date": "2026-09-10T02:00:44.087Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495512423",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-33.657",
+      "block_num": 0,
+      "trx_id": "35181860341699030978237cc98c53c211dff272",
+      "created_date": "2026-09-09T19:49:17.022Z",
+      "to_player": "sample-account-2",
+      "status": "completed",
+      "last_block_action_date": "2026-09-09T19:49:21.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495512422",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-62.507",
+      "block_num": 0,
+      "trx_id": "27702feca707b7e1381cfef29977c413977feb52",
+      "created_date": "2026-09-09T19:49:17.016Z",
+      "to_player": "sample-account-1",
+      "status": "completed",
+      "last_block_action_date": "2026-09-09T19:49:21.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495512216",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "6.037",
+      "block_num": 109772073,
+      "trx_id": "sl_a19df8e90130500c017d39e5cfb7813b",
+      "created_date": "2026-09-09T19:47:15.979Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495511806",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.579",
+      "block_num": 109772006,
+      "trx_id": "sl_9ee9c3856fdbee82b64e81141a6e115a",
+      "created_date": "2026-09-09T19:42:57.757Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495474178",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.514",
+      "block_num": 109764192,
+      "trx_id": "sl_bf5e47f5258a0652b129dd9ff145b072",
+      "created_date": "2026-09-09T13:12:09.620Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495473893",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "6.350",
+      "block_num": 109764152,
+      "trx_id": "sl_a5749e0bcba4600e7b5645e5b06ffb57",
+      "created_date": "2026-09-09T13:09:19.727Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495473668",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.684",
+      "block_num": 109764093,
+      "trx_id": "sl_ff3d09a95547bbf39a7fc80dc0473455",
+      "created_date": "2026-09-09T13:07:13.369Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495473400",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.049",
+      "block_num": 109764046,
+      "trx_id": "sl_75d0ff2e13f05b27586f9283c0fc2143",
+      "created_date": "2026-09-09T13:04:31.245Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495433525",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.503",
+      "block_num": 109755887,
+      "trx_id": "sl_efada57b79ad774fe6e9588f0215a6e9",
+      "created_date": "2026-09-09T06:15:51.203Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495433110",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.934",
+      "block_num": 109755809,
+      "trx_id": "sl_a12a973b0d4775867644fb6a05e7f219",
+      "created_date": "2026-09-09T06:11:48.297Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495432738",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.744",
+      "block_num": 109755729,
+      "trx_id": "sl_bc4e3fa7926a69a119533d1e1559431d",
+      "created_date": "2026-09-09T06:08:06.906Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495432244",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.411",
+      "block_num": 109755629,
+      "trx_id": "sl_3fc3f7410f8729fe9667dae4539c3d86",
+      "created_date": "2026-09-09T06:03:12.611Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495432012",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.570",
+      "block_num": 109755590,
+      "trx_id": "sl_9c1c39a4bdcda6ca4942b476ee66b1af",
+      "created_date": "2026-09-09T06:00:49.577Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495431792",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "4.946",
+      "block_num": 109755550,
+      "trx_id": "sl_b9bf57e39d24c2d53d659a6af0f97cb4",
+      "created_date": "2026-09-09T05:58:40.765Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495431322",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.745",
+      "block_num": 109755451,
+      "trx_id": "sl_3c3fa41b0a5a3d11dad4958ab19be212",
+      "created_date": "2026-09-09T05:53:52.804Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495431142",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "6.284",
+      "block_num": 109755410,
+      "trx_id": "sl_320c255658aa29ab5aa5451a7ff95f4c",
+      "created_date": "2026-09-09T05:52:05.216Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495431011",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.269",
+      "block_num": 109755390,
+      "trx_id": "sl_0f16db2f4c96405b608522efebdf0585",
+      "created_date": "2026-09-09T05:50:51.466Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495369981",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "7.054",
+      "block_num": 109743163,
+      "trx_id": "sl_c33db4394068d8e4ea415c3dd15f5fc6",
+      "created_date": "2026-09-08T19:38:07.870Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "earned",
+      "id": "1495369733",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "5.491",
+      "block_num": 109743123,
+      "trx_id": "sl_206726cad6838564b1c9fd3ab49b6930",
+      "created_date": "2026-09-08T19:35:39.930Z",
+      "to_player": "sample-account-1",
+      "status": null,
+      "last_block_action_date": null,
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495361164",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-16.245",
+      "block_num": 0,
+      "trx_id": "0cdebff5e0bb0e7afff1f2fe9464762a42c95dc5",
+      "created_date": "2026-09-08T18:09:10.919Z",
+      "to_player": "sample-account-2",
+      "status": "completed",
+      "last_block_action_date": "2026-09-08T18:09:15.000Z",
+      "action": "",
+      "block_successful": false,
+      "block_result": ""
+    },
+    {
+      "reward_action": "claimed",
+      "id": "1495361163",
+      "player": "sample-account-1",
+      "token": "SPS",
+      "type": "wild",
+      "amount": "-30.171",
+      "block_num": 0,
+      "trx_id": "86926c45cbaf69e25af84d8ba2c41b7b35c5aafe",
+      "created_date": "2026-09-08T18:09:10.907Z",
+      "to_player": "sample-account-1",
+      "status": "completed",
+      "last_block_action_date": "2026-09-08T18:09:15.000Z",
       "action": "",
       "block_successful": false,
       "block_result": ""
