@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T13:01:24.695Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -145,9 +145,9 @@
     "status": "success",
     "data": [
       {
-        "txId": "474b2efb612a7940dff0d6e997add018c9b461d3",
-        "createdDate": "2026-09-11T06:27:00.000Z",
-        "lastUpdatedDate": "2026-09-11T06:27:00.000Z",
+        "txId": "b8e94205620da93ebbe73301b24c8a50ac12c5ac",
+        "createdDate": "2026-09-11T06:43:18.000Z",
+        "lastUpdatedDate": "2026-09-11T06:43:18.000Z",
         "player": "sample-account-1",
         "token": "SPSP",
         "qtyTotal": "2000.000",
@@ -158,39 +158,39 @@
         "expirationBlocks": 201600
       },
       {
-        "txId": "81b9cbc3b8497fb9808401533d29b9221cefedeb",
-        "createdDate": "2026-09-11T06:27:03.000Z",
-        "lastUpdatedDate": "2026-09-11T06:27:03.000Z",
+        "txId": "2cfda3e12641c917b0421bc9e7d136e44d609837",
+        "createdDate": "2026-09-11T06:43:21.000Z",
+        "lastUpdatedDate": "2026-09-11T06:43:21.000Z",
         "player": "sample-account-1",
         "token": "SPSP",
-        "qtyTotal": "2000.000",
-        "qtyAvailable": "2000.000",
+        "qtyTotal": "1000.000",
+        "qtyAvailable": "1000.000",
         "pricePerToken": "0.002",
         "status": 1,
         "cancelTx": null,
         "expirationBlocks": 201600
       },
       {
-        "txId": "85b9b790c72f5d27f6f0038f9be324dac141a421",
-        "createdDate": "2026-09-11T06:27:03.000Z",
-        "lastUpdatedDate": "2026-09-11T06:27:03.000Z",
+        "txId": "2d7c39ab57a8c575d1c5470a60df47e1c222add2",
+        "createdDate": "2026-09-11T06:43:21.000Z",
+        "lastUpdatedDate": "2026-09-11T06:43:21.000Z",
         "player": "sample-account-1",
         "token": "SPSP",
-        "qtyTotal": "1500.000",
-        "qtyAvailable": "1500.000",
+        "qtyTotal": "500.000",
+        "qtyAvailable": "500.000",
         "pricePerToken": "0.002",
         "status": 1,
         "cancelTx": null,
         "expirationBlocks": 201600
       },
       {
-        "txId": "9e205e6a9f2ebddfc078fef4a7d4647059567755",
-        "createdDate": "2026-09-11T06:27:03.000Z",
-        "lastUpdatedDate": "2026-09-11T06:27:03.000Z",
+        "txId": "4a1781c654e7f613a9372abb83ca9ef45e128f55",
+        "createdDate": "2026-09-11T06:43:21.000Z",
+        "lastUpdatedDate": "2026-09-11T06:43:21.000Z",
         "player": "sample-account-1",
         "token": "SPSP",
-        "qtyTotal": "1500.000",
-        "qtyAvailable": "1500.000",
+        "qtyTotal": "1000.000",
+        "qtyAvailable": "1000.000",
         "pricePerToken": "0.002",
         "status": 1,
         "cancelTx": null,

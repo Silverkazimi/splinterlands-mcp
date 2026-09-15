@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T13:01:24.695Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -199,7 +199,7 @@
       "token_symbol": "TAX",
       "pp_required": 0,
       "hours_to_completion": null,
-      "elapsed_hours": 24521.423,
+      "elapsed_hours": 24523.238,
       "pp_spent": 0,
       "grain_required": 1000,
       "wood_required": 0,
@@ -229,13 +229,13 @@
       "worksite_type": "KEEP",
       "max_tax_rate": 0.5,
       "region_uid": "PR-PNW-1",
-      "hours_since_last_op": 157.495,
+      "hours_since_last_op": 159.309,
       "site_efficiency": 1,
       "is_runi_staked": false,
       "rewards_per_hour": 0,
       "grain_req_per_hour": 0,
       "segments": [],
-      "estimated_totem_chance": 0.07442,
+      "estimated_totem_chance": 0.07527,
       "resource_recipe": [],
       "resource_mint_rate": 0
     }

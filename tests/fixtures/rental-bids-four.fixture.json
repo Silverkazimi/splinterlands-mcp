@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T13:01:24.695Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -145,22 +145,22 @@
     "status": "success",
     "data": [
       {
-        "txId": "06bf6d4658909b98c77fe5a5933c23fee47dd274-3",
-        "createdDate": "2026-09-07T08:13:57.000Z",
-        "lastUpdatedDate": "2026-09-07T08:13:57.000Z",
+        "txId": "1693a25556e56860bc4efcdd037fb67d28e19497-1",
+        "createdDate": "2026-09-07T08:45:30.000Z",
+        "lastUpdatedDate": "2026-09-15T13:02:24.000Z",
         "player": "sample-account-1",
         "token": "SPSP",
-        "qtyTotal": "1000.000",
-        "qtyAvailable": "1000.000",
+        "qtyTotal": "1500.000",
+        "qtyAvailable": "500.000",
         "pricePerToken": "0.001",
-        "escrow": "7.000",
+        "escrow": "3.500",
         "currency": "DEC",
         "cancelTx": null
       },
       {
-        "txId": "06bf6d4658909b98c77fe5a5933c23fee47dd274-4",
-        "createdDate": "2026-09-07T08:13:57.000Z",
-        "lastUpdatedDate": "2026-09-07T08:13:57.000Z",
+        "txId": "1693a25556e56860bc4efcdd037fb67d28e19497-2",
+        "createdDate": "2026-09-07T08:45:30.000Z",
+        "lastUpdatedDate": "2026-09-07T08:45:30.000Z",
         "player": "sample-account-2",
         "token": "SPSP",
         "qtyTotal": "500.000",
@@ -171,28 +171,28 @@
         "cancelTx": null
       },
       {
-        "txId": "06bf6d4658909b98c77fe5a5933c23fee47dd274-5",
-        "createdDate": "2026-09-07T08:13:57.000Z",
-        "lastUpdatedDate": "2026-09-07T08:13:57.000Z",
+        "txId": "1693a25556e56860bc4efcdd037fb67d28e19497-3",
+        "createdDate": "2026-09-07T08:45:30.000Z",
+        "lastUpdatedDate": "2026-09-07T08:45:30.000Z",
         "player": "sample-account-1",
-        "token": "SPSP",
-        "qtyTotal": "500.000",
-        "qtyAvailable": "500.000",
-        "pricePerToken": "0.001",
-        "escrow": "3.500",
-        "currency": "DEC",
-        "cancelTx": null
-      },
-      {
-        "txId": "669e3992653a24cb1e0b9488dfb68150ab3d1f2b-1",
-        "createdDate": "2026-09-07T08:14:03.000Z",
-        "lastUpdatedDate": "2026-09-07T08:14:03.000Z",
-        "player": "sample-account-2",
         "token": "SPSP",
         "qtyTotal": "1000.000",
         "qtyAvailable": "1000.000",
         "pricePerToken": "0.001",
         "escrow": "7.000",
+        "currency": "DEC",
+        "cancelTx": null
+      },
+      {
+        "txId": "06250c84fd23791eef4877a54eeceaa748291a1f-1",
+        "createdDate": "2026-09-07T08:45:39.000Z",
+        "lastUpdatedDate": "2026-09-07T08:45:39.000Z",
+        "player": "sample-account-3",
+        "token": "SPSP",
+        "qtyTotal": "500.000",
+        "qtyAvailable": "500.000",
+        "pricePerToken": "0.001",
+        "escrow": "3.500",
         "currency": "DEC",
         "cancelTx": null
       }

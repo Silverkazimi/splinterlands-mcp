@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T13:01:24.695Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
@@ -120,7 +120,7 @@
   "status": "success",
   "data": [
     {
-      "reward_total": 9458951.132,
+      "reward_total": 9459975.987,
       "liquidity_pool_id": 1,
       "token": "DEC"
     },
@@ -130,52 +130,52 @@
       "token": "DEC"
     },
     {
-      "reward_total": 6104922.364,
+      "reward_total": 6104922.489,
       "liquidity_pool_id": 67,
       "token": "DEC"
     },
     {
-      "reward_total": 4945676.391,
+      "reward_total": 4945735.639,
       "liquidity_pool_id": 68,
       "token": "DEC"
     },
     {
-      "reward_total": 4544942.569,
+      "reward_total": 4545071.28,
       "liquidity_pool_id": 69,
       "token": "DEC"
     },
     {
-      "reward_total": 932393.667,
+      "reward_total": 932500.48,
       "liquidity_pool_id": 100,
       "token": "DEC"
     },
     {
-      "reward_total": 960553229.001,
+      "reward_total": 960601011.602,
       "liquidity_pool_id": 1,
       "token": "GRAIN"
     },
     {
-      "reward_total": 14681222.203,
+      "reward_total": 14681275.806,
       "liquidity_pool_id": 69,
       "token": "IRON"
     },
     {
-      "reward_total": 119070.655,
+      "reward_total": 119071.806,
       "liquidity_pool_id": 100,
       "token": "SPS"
     },
     {
-      "reward_total": 50427692.101,
+      "reward_total": 50427701.86,
       "liquidity_pool_id": 68,
       "token": "STONE"
     },
     {
-      "reward_total": 608828.967,
+      "reward_total": 608848.837,
       "liquidity_pool_id": 34,
       "token": "VOUCHER"
     },
     {
-      "reward_total": 142595203.479,
+      "reward_total": 142597703.479,
       "liquidity_pool_id": 67,
       "token": "WOOD"
     }

@@ -1,7 +1,7 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-15T11:12:28.558Z",
+    "observedAt": "2026-09-15T13:01:24.695Z",
     "redaction": "Names are synthetic; free text and opaque strings are redacted.",
     "reviewedResponseShapes": [
       {
@@ -6107,11 +6107,11 @@
         "73": 0.58,
         "74": 0
       },
-      "accumulated_rewards_per_share_of_pool": 0.7223997148751158,
+      "accumulated_rewards_per_share_of_pool": 0.7224417314520092,
       "rewards_start": "[redacted]",
       "pool_stop": "[redacted]",
       "pool_decline": 0.99,
-      "latest_reward_block": 109933553
+      "latest_reward_block": 109934878
     },
     "proposal_accounts": [
       "sample-account-19",
@@ -6201,8 +6201,8 @@
         "start_date": "2025-10-20T15:30:00Z"
       }
     },
-    "dec_price": 0.0003747,
-    "sps_price": 0.0037088,
+    "dec_price": 0.0003754,
+    "sps_price": 0.0037213,
     "maintenance_mode": false,
     "season": {
       "id": 191,
@@ -6261,14 +6261,14 @@
       "reset_block_num": null,
       "end": "[redacted]"
     },
-    "last_block": 109934204,
+    "last_block": 109936377,
     "validator_transitioned": true,
-    "timestamp": 1789470794861,
+    "timestamp": 1789477330051,
     "chain_props": {
       "time": "[redacted]",
-      "ref_block_num": 109934204,
-      "ref_block_id": "068d767c8c7b7e47048c6d7d69f280833663ed16",
-      "ref_block_prefix": 1199471500
+      "ref_block_num": 109936377,
+      "ref_block_id": "068d7ef967fdc146a62fb0c22b0b0f835b6f3bf2",
+      "ref_block_prefix": 1187118439
     },
     "transak_payments_enabled": 1,
     "dec_max_buy_amount": 20000000,
