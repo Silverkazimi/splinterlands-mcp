@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:48:16.254561+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/CONSUMABLES",
-    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -80,41 +79,311 @@
     },
     "body.data.details[2].circulation": {
       "valueClass": "numeric"
+    },
+    "body.data.details[3].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[4].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[5].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[6].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[7].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[8].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[9].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[10].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[11].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].circulation": {
+      "valueClass": "numeric"
     }
   },
   "body": {
     "status": "success",
     "data": {
       "assetName": "CONSUMABLES",
-      "description": "Consumable",
-      "type": "FUNGIBLE",
+      "description": "[redacted]",
+      "type": "[redacted]",
       "details": [
         {
-          "id": "AM",
-          "name": "Auction Mark",
-          "description": "Auction Marks can be used to bid on certain special Black Foil Arcane cards when they are up for auction. The highest bidder wins!",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/img_auction-marks_400.webp",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
           "icon": null,
-          "filterIcon": "img_auction-marks.svg",
-          "circulation": 17662
+          "filterIcon": "[redacted]",
+          "circulation": 18297
         },
         {
-          "id": "FT",
-          "name": "Fortune Ticket",
-          "description": "Fortune Tickets provide entry to Fortune Draw events, in which you can obtain very rare Gold Foil Arcane cards. Multiple entries are allowed. Your chances of receiving one of these cards depend on the total number of Fortune Tickets used by all players for a particular event.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/img_fortune-ticket_400.webp",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
           "icon": null,
-          "filterIcon": "img_fortune-ticket.svg",
-          "circulation": 140503
+          "filterIcon": "[redacted]",
+          "circulation": 140697
         },
         {
-          "id": "MIDNIGHTPOT",
-          "name": "Midnight Potion",
-          "description": "Doubles the chance of getting a Black Foil card when generating cards from Conclave Arcana packs. Each potion applies to a single card, so you may use up to 5 potions for each Conclave Arcana pack opened. These potions cannot be used with Starter Packs.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/img_midnight-potion_400.png",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
           "icon": null,
-          "filterIcon": "img_midnight-potion_simple.svg",
-          "circulation": 6362659
+          "filterIcon": "[redacted]",
+          "circulation": 6386820
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 73589
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 1166848
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 1986
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 2130
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 35388
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 11179
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 3524
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 1190
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 695
         }
       ]
     }

@@ -44,6 +44,7 @@ async function main() {
   const coverage = fixtureCoverage(bindings, configured);
   const unconfigured = coverage.unconfigured;
   const report = {
+    reviewDiagnostics: result.reviewDiagnostics,
     reads: result.reads, configured: result.total, ...coverage,
     aborted: result.aborted, holdFraction: result.plan.holdFraction,
     held: result.plan.blockedByHoldFloor, failed: result.failed, sampleCoverage: result.coverageGaps, transientSamples: result.transientSamples,

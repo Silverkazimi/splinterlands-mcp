@@ -1,45 +1,81 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-07T10:50:33Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data.cards[0].uid": {
+      "valueClass": "id"
+    },
+    "data.cards[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "data.cards[0].player": {
+      "valueClass": "name"
+    },
+    "data.cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "data.cards[0].gold": {
+      "valueClass": "enum"
+    },
+    "data.cards[0].foil": {
+      "valueClass": "numeric"
+    },
+    "data.cards[0].edition": {
+      "valueClass": "numeric"
+    },
+    "data.cards[0].card_set": {
+      "valueClass": "enum"
+    },
+    "data.cards[0].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "data.cards[0].rental_type": {
+      "valueClass": "opaque"
+    },
+    "data.cards[0].collection_power": {
+      "valueClass": "numeric"
+    },
+    "data.cards[0].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[0].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.cards[0].name": {
+      "valueClass": "enum"
+    },
+    "data.cards[0].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "data.cards[0].slot": {
+      "valueClass": "numeric"
+    },
+    "data.cards[0].stake_type_uid": {
+      "valueClass": "id"
+    },
+    "data.cards[0].stake_ref_uid": {
+      "valueClass": "id"
+    },
     "data.cards[0].base_pp_after_cap": {
       "valueClass": "opaque"
     },
     "data.cards[0].base_pp_after_cap_percentage": {
       "valueClass": "opaque"
     },
-    "data.cards[0].bcx": {
-      "valueClass": "numeric"
-    },
-    "data.cards[0].boost": {
+    "data.cards[0].total_construction_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[0].boost_pp": {
+    "data.cards[0].terrain_boost": {
       "valueClass": "opaque"
     },
-    "data.cards[0].card_abilities_boost": {
+    "data.cards[0].terrain_boost_pp": {
       "valueClass": "opaque"
-    },
-    "data.cards[0].card_abilities_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[0].card_bloodlines_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[0].card_bloodlines_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[0].card_detail_id": {
-      "valueClass": "numeric"
-    },
-    "data.cards[0].card_set": {
-      "valueClass": "enum"
-    },
-    "data.cards[0].collection_power": {
-      "valueClass": "numeric"
     },
     "data.cards[0].dec_stake_needed": {
       "valueClass": "numeric"
@@ -56,58 +92,10 @@
     "data.cards[0].deed_status_token_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[0].delegated_to": {
-      "valueClass": "opaque"
-    },
-    "data.cards[0].edition": {
-      "valueClass": "numeric"
-    },
-    "data.cards[0].foil": {
-      "valueClass": "numeric"
-    },
-    "data.cards[0].gold": {
-      "valueClass": "enum"
-    },
-    "data.cards[0].is_powered": {
-      "valueClass": "enum"
-    },
-    "data.cards[0].land_base_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[0].land_dec_stake_needed": {
-      "valueClass": "numeric"
-    },
-    "data.cards[0].name": {
-      "valueClass": "enum"
-    },
-    "data.cards[0].player": {
-      "valueClass": "name"
-    },
-    "data.cards[0].rental_type": {
-      "valueClass": "opaque"
-    },
     "data.cards[0].runi_boost": {
       "valueClass": "opaque"
     },
     "data.cards[0].runi_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[0].slot": {
-      "valueClass": "numeric"
-    },
-    "data.cards[0].stake_ref_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[0].stake_start_date": {
-      "valueClass": "timestamp"
-    },
-    "data.cards[0].stake_type_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[0].terrain_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[0].terrain_boost_pp": {
       "valueClass": "opaque"
     },
     "data.cards[0].title_boost": {
@@ -116,23 +104,92 @@
     "data.cards[0].title_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[0].total_construction_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[0].total_harvest_pp": {
-      "valueClass": "opaque"
-    },
     "data.cards[0].totem_boost": {
       "valueClass": "opaque"
     },
     "data.cards[0].totem_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[0].uid": {
-      "valueClass": "id"
+    "data.cards[0].boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[0].boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[0].total_harvest_pp": {
+      "valueClass": "opaque"
     },
     "data.cards[0].work_per_hour": {
       "valueClass": "opaque"
+    },
+    "data.cards[0].is_powered": {
+      "valueClass": "enum"
+    },
+    "data.cards[0].card_abilities_boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[0].card_abilities_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[0].card_bloodlines_boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[0].card_bloodlines_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[1].uid": {
+      "valueClass": "id"
+    },
+    "data.cards[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "data.cards[1].player": {
+      "valueClass": "name"
+    },
+    "data.cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "data.cards[1].gold": {
+      "valueClass": "enum"
+    },
+    "data.cards[1].foil": {
+      "valueClass": "numeric"
+    },
+    "data.cards[1].edition": {
+      "valueClass": "numeric"
+    },
+    "data.cards[1].card_set": {
+      "valueClass": "enum"
+    },
+    "data.cards[1].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "data.cards[1].rental_type": {
+      "valueClass": "opaque"
+    },
+    "data.cards[1].collection_power": {
+      "valueClass": "numeric"
+    },
+    "data.cards[1].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[1].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.cards[1].name": {
+      "valueClass": "enum"
+    },
+    "data.cards[1].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "data.cards[1].slot": {
+      "valueClass": "numeric"
+    },
+    "data.cards[1].stake_type_uid": {
+      "valueClass": "id"
+    },
+    "data.cards[1].stake_ref_uid": {
+      "valueClass": "id"
     },
     "data.cards[1].base_pp_after_cap": {
       "valueClass": "opaque"
@@ -140,35 +197,14 @@
     "data.cards[1].base_pp_after_cap_percentage": {
       "valueClass": "opaque"
     },
-    "data.cards[1].bcx": {
-      "valueClass": "numeric"
-    },
-    "data.cards[1].boost": {
+    "data.cards[1].total_construction_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[1].boost_pp": {
+    "data.cards[1].terrain_boost": {
       "valueClass": "opaque"
     },
-    "data.cards[1].card_abilities_boost": {
+    "data.cards[1].terrain_boost_pp": {
       "valueClass": "opaque"
-    },
-    "data.cards[1].card_abilities_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[1].card_bloodlines_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[1].card_bloodlines_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[1].card_detail_id": {
-      "valueClass": "numeric"
-    },
-    "data.cards[1].card_set": {
-      "valueClass": "enum"
-    },
-    "data.cards[1].collection_power": {
-      "valueClass": "numeric"
     },
     "data.cards[1].dec_stake_needed": {
       "valueClass": "numeric"
@@ -185,58 +221,10 @@
     "data.cards[1].deed_status_token_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[1].delegated_to": {
-      "valueClass": "opaque"
-    },
-    "data.cards[1].edition": {
-      "valueClass": "numeric"
-    },
-    "data.cards[1].foil": {
-      "valueClass": "numeric"
-    },
-    "data.cards[1].gold": {
-      "valueClass": "enum"
-    },
-    "data.cards[1].is_powered": {
-      "valueClass": "enum"
-    },
-    "data.cards[1].land_base_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[1].land_dec_stake_needed": {
-      "valueClass": "numeric"
-    },
-    "data.cards[1].name": {
-      "valueClass": "enum"
-    },
-    "data.cards[1].player": {
-      "valueClass": "name"
-    },
-    "data.cards[1].rental_type": {
-      "valueClass": "opaque"
-    },
     "data.cards[1].runi_boost": {
       "valueClass": "opaque"
     },
     "data.cards[1].runi_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[1].slot": {
-      "valueClass": "numeric"
-    },
-    "data.cards[1].stake_ref_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[1].stake_start_date": {
-      "valueClass": "timestamp"
-    },
-    "data.cards[1].stake_type_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[1].terrain_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[1].terrain_boost_pp": {
       "valueClass": "opaque"
     },
     "data.cards[1].title_boost": {
@@ -245,23 +233,92 @@
     "data.cards[1].title_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[1].total_construction_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[1].total_harvest_pp": {
-      "valueClass": "opaque"
-    },
     "data.cards[1].totem_boost": {
       "valueClass": "opaque"
     },
     "data.cards[1].totem_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[1].uid": {
-      "valueClass": "id"
+    "data.cards[1].boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[1].boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[1].total_harvest_pp": {
+      "valueClass": "opaque"
     },
     "data.cards[1].work_per_hour": {
       "valueClass": "opaque"
+    },
+    "data.cards[1].is_powered": {
+      "valueClass": "enum"
+    },
+    "data.cards[1].card_abilities_boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[1].card_abilities_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[1].card_bloodlines_boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[1].card_bloodlines_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[2].uid": {
+      "valueClass": "id"
+    },
+    "data.cards[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "data.cards[2].player": {
+      "valueClass": "name"
+    },
+    "data.cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "data.cards[2].gold": {
+      "valueClass": "enum"
+    },
+    "data.cards[2].foil": {
+      "valueClass": "numeric"
+    },
+    "data.cards[2].edition": {
+      "valueClass": "numeric"
+    },
+    "data.cards[2].card_set": {
+      "valueClass": "enum"
+    },
+    "data.cards[2].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "data.cards[2].rental_type": {
+      "valueClass": "opaque"
+    },
+    "data.cards[2].collection_power": {
+      "valueClass": "numeric"
+    },
+    "data.cards[2].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[2].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.cards[2].name": {
+      "valueClass": "enum"
+    },
+    "data.cards[2].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "data.cards[2].slot": {
+      "valueClass": "numeric"
+    },
+    "data.cards[2].stake_type_uid": {
+      "valueClass": "id"
+    },
+    "data.cards[2].stake_ref_uid": {
+      "valueClass": "id"
     },
     "data.cards[2].base_pp_after_cap": {
       "valueClass": "opaque"
@@ -269,35 +326,14 @@
     "data.cards[2].base_pp_after_cap_percentage": {
       "valueClass": "opaque"
     },
-    "data.cards[2].bcx": {
-      "valueClass": "numeric"
-    },
-    "data.cards[2].boost": {
+    "data.cards[2].total_construction_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[2].boost_pp": {
+    "data.cards[2].terrain_boost": {
       "valueClass": "opaque"
     },
-    "data.cards[2].card_abilities_boost": {
+    "data.cards[2].terrain_boost_pp": {
       "valueClass": "opaque"
-    },
-    "data.cards[2].card_abilities_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[2].card_bloodlines_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[2].card_bloodlines_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[2].card_detail_id": {
-      "valueClass": "numeric"
-    },
-    "data.cards[2].card_set": {
-      "valueClass": "enum"
-    },
-    "data.cards[2].collection_power": {
-      "valueClass": "numeric"
     },
     "data.cards[2].dec_stake_needed": {
       "valueClass": "numeric"
@@ -314,58 +350,10 @@
     "data.cards[2].deed_status_token_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[2].delegated_to": {
-      "valueClass": "opaque"
-    },
-    "data.cards[2].edition": {
-      "valueClass": "numeric"
-    },
-    "data.cards[2].foil": {
-      "valueClass": "numeric"
-    },
-    "data.cards[2].gold": {
-      "valueClass": "enum"
-    },
-    "data.cards[2].is_powered": {
-      "valueClass": "enum"
-    },
-    "data.cards[2].land_base_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[2].land_dec_stake_needed": {
-      "valueClass": "numeric"
-    },
-    "data.cards[2].name": {
-      "valueClass": "enum"
-    },
-    "data.cards[2].player": {
-      "valueClass": "name"
-    },
-    "data.cards[2].rental_type": {
-      "valueClass": "opaque"
-    },
     "data.cards[2].runi_boost": {
       "valueClass": "opaque"
     },
     "data.cards[2].runi_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[2].slot": {
-      "valueClass": "numeric"
-    },
-    "data.cards[2].stake_ref_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[2].stake_start_date": {
-      "valueClass": "timestamp"
-    },
-    "data.cards[2].stake_type_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[2].terrain_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[2].terrain_boost_pp": {
       "valueClass": "opaque"
     },
     "data.cards[2].title_boost": {
@@ -374,23 +362,92 @@
     "data.cards[2].title_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[2].total_construction_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[2].total_harvest_pp": {
-      "valueClass": "opaque"
-    },
     "data.cards[2].totem_boost": {
       "valueClass": "opaque"
     },
     "data.cards[2].totem_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[2].uid": {
-      "valueClass": "id"
+    "data.cards[2].boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[2].boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[2].total_harvest_pp": {
+      "valueClass": "opaque"
     },
     "data.cards[2].work_per_hour": {
       "valueClass": "opaque"
+    },
+    "data.cards[2].is_powered": {
+      "valueClass": "enum"
+    },
+    "data.cards[2].card_abilities_boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[2].card_abilities_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[2].card_bloodlines_boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[2].card_bloodlines_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[3].uid": {
+      "valueClass": "id"
+    },
+    "data.cards[3].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "data.cards[3].player": {
+      "valueClass": "name"
+    },
+    "data.cards[3].bcx": {
+      "valueClass": "numeric"
+    },
+    "data.cards[3].gold": {
+      "valueClass": "enum"
+    },
+    "data.cards[3].foil": {
+      "valueClass": "numeric"
+    },
+    "data.cards[3].edition": {
+      "valueClass": "numeric"
+    },
+    "data.cards[3].card_set": {
+      "valueClass": "enum"
+    },
+    "data.cards[3].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "data.cards[3].rental_type": {
+      "valueClass": "opaque"
+    },
+    "data.cards[3].collection_power": {
+      "valueClass": "numeric"
+    },
+    "data.cards[3].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[3].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.cards[3].name": {
+      "valueClass": "enum"
+    },
+    "data.cards[3].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "data.cards[3].slot": {
+      "valueClass": "numeric"
+    },
+    "data.cards[3].stake_type_uid": {
+      "valueClass": "id"
+    },
+    "data.cards[3].stake_ref_uid": {
+      "valueClass": "id"
     },
     "data.cards[3].base_pp_after_cap": {
       "valueClass": "opaque"
@@ -398,35 +455,14 @@
     "data.cards[3].base_pp_after_cap_percentage": {
       "valueClass": "opaque"
     },
-    "data.cards[3].bcx": {
-      "valueClass": "numeric"
-    },
-    "data.cards[3].boost": {
+    "data.cards[3].total_construction_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[3].boost_pp": {
+    "data.cards[3].terrain_boost": {
       "valueClass": "opaque"
     },
-    "data.cards[3].card_abilities_boost": {
+    "data.cards[3].terrain_boost_pp": {
       "valueClass": "opaque"
-    },
-    "data.cards[3].card_abilities_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[3].card_bloodlines_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[3].card_bloodlines_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[3].card_detail_id": {
-      "valueClass": "numeric"
-    },
-    "data.cards[3].card_set": {
-      "valueClass": "enum"
-    },
-    "data.cards[3].collection_power": {
-      "valueClass": "numeric"
     },
     "data.cards[3].dec_stake_needed": {
       "valueClass": "numeric"
@@ -443,58 +479,10 @@
     "data.cards[3].deed_status_token_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[3].delegated_to": {
-      "valueClass": "opaque"
-    },
-    "data.cards[3].edition": {
-      "valueClass": "numeric"
-    },
-    "data.cards[3].foil": {
-      "valueClass": "numeric"
-    },
-    "data.cards[3].gold": {
-      "valueClass": "enum"
-    },
-    "data.cards[3].is_powered": {
-      "valueClass": "enum"
-    },
-    "data.cards[3].land_base_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[3].land_dec_stake_needed": {
-      "valueClass": "numeric"
-    },
-    "data.cards[3].name": {
-      "valueClass": "enum"
-    },
-    "data.cards[3].player": {
-      "valueClass": "name"
-    },
-    "data.cards[3].rental_type": {
-      "valueClass": "opaque"
-    },
     "data.cards[3].runi_boost": {
       "valueClass": "opaque"
     },
     "data.cards[3].runi_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[3].slot": {
-      "valueClass": "numeric"
-    },
-    "data.cards[3].stake_ref_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[3].stake_start_date": {
-      "valueClass": "timestamp"
-    },
-    "data.cards[3].stake_type_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[3].terrain_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[3].terrain_boost_pp": {
       "valueClass": "opaque"
     },
     "data.cards[3].title_boost": {
@@ -503,23 +491,92 @@
     "data.cards[3].title_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[3].total_construction_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[3].total_harvest_pp": {
-      "valueClass": "opaque"
-    },
     "data.cards[3].totem_boost": {
       "valueClass": "opaque"
     },
     "data.cards[3].totem_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[3].uid": {
-      "valueClass": "id"
+    "data.cards[3].boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[3].boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[3].total_harvest_pp": {
+      "valueClass": "opaque"
     },
     "data.cards[3].work_per_hour": {
       "valueClass": "opaque"
+    },
+    "data.cards[3].is_powered": {
+      "valueClass": "enum"
+    },
+    "data.cards[3].card_abilities_boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[3].card_abilities_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[3].card_bloodlines_boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[3].card_bloodlines_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[4].uid": {
+      "valueClass": "id"
+    },
+    "data.cards[4].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "data.cards[4].player": {
+      "valueClass": "name"
+    },
+    "data.cards[4].bcx": {
+      "valueClass": "numeric"
+    },
+    "data.cards[4].gold": {
+      "valueClass": "enum"
+    },
+    "data.cards[4].foil": {
+      "valueClass": "numeric"
+    },
+    "data.cards[4].edition": {
+      "valueClass": "numeric"
+    },
+    "data.cards[4].card_set": {
+      "valueClass": "enum"
+    },
+    "data.cards[4].delegated_to": {
+      "valueClass": "opaque"
+    },
+    "data.cards[4].rental_type": {
+      "valueClass": "opaque"
+    },
+    "data.cards[4].collection_power": {
+      "valueClass": "numeric"
+    },
+    "data.cards[4].land_base_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[4].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "data.cards[4].name": {
+      "valueClass": "enum"
+    },
+    "data.cards[4].stake_start_date": {
+      "valueClass": "timestamp"
+    },
+    "data.cards[4].slot": {
+      "valueClass": "numeric"
+    },
+    "data.cards[4].stake_type_uid": {
+      "valueClass": "id"
+    },
+    "data.cards[4].stake_ref_uid": {
+      "valueClass": "id"
     },
     "data.cards[4].base_pp_after_cap": {
       "valueClass": "opaque"
@@ -527,35 +584,14 @@
     "data.cards[4].base_pp_after_cap_percentage": {
       "valueClass": "opaque"
     },
-    "data.cards[4].bcx": {
-      "valueClass": "numeric"
-    },
-    "data.cards[4].boost": {
+    "data.cards[4].total_construction_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[4].boost_pp": {
+    "data.cards[4].terrain_boost": {
       "valueClass": "opaque"
     },
-    "data.cards[4].card_abilities_boost": {
+    "data.cards[4].terrain_boost_pp": {
       "valueClass": "opaque"
-    },
-    "data.cards[4].card_abilities_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[4].card_bloodlines_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[4].card_bloodlines_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[4].card_detail_id": {
-      "valueClass": "numeric"
-    },
-    "data.cards[4].card_set": {
-      "valueClass": "enum"
-    },
-    "data.cards[4].collection_power": {
-      "valueClass": "numeric"
     },
     "data.cards[4].dec_stake_needed": {
       "valueClass": "numeric"
@@ -572,58 +608,10 @@
     "data.cards[4].deed_status_token_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[4].delegated_to": {
-      "valueClass": "opaque"
-    },
-    "data.cards[4].edition": {
-      "valueClass": "numeric"
-    },
-    "data.cards[4].foil": {
-      "valueClass": "numeric"
-    },
-    "data.cards[4].gold": {
-      "valueClass": "enum"
-    },
-    "data.cards[4].is_powered": {
-      "valueClass": "enum"
-    },
-    "data.cards[4].land_base_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[4].land_dec_stake_needed": {
-      "valueClass": "numeric"
-    },
-    "data.cards[4].name": {
-      "valueClass": "enum"
-    },
-    "data.cards[4].player": {
-      "valueClass": "name"
-    },
-    "data.cards[4].rental_type": {
-      "valueClass": "opaque"
-    },
     "data.cards[4].runi_boost": {
       "valueClass": "opaque"
     },
     "data.cards[4].runi_boost_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[4].slot": {
-      "valueClass": "numeric"
-    },
-    "data.cards[4].stake_ref_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[4].stake_start_date": {
-      "valueClass": "timestamp"
-    },
-    "data.cards[4].stake_type_uid": {
-      "valueClass": "id"
-    },
-    "data.cards[4].terrain_boost": {
-      "valueClass": "opaque"
-    },
-    "data.cards[4].terrain_boost_pp": {
       "valueClass": "opaque"
     },
     "data.cards[4].title_boost": {
@@ -632,41 +620,47 @@
     "data.cards[4].title_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[4].total_construction_pp": {
-      "valueClass": "opaque"
-    },
-    "data.cards[4].total_harvest_pp": {
-      "valueClass": "opaque"
-    },
     "data.cards[4].totem_boost": {
       "valueClass": "opaque"
     },
     "data.cards[4].totem_boost_pp": {
       "valueClass": "opaque"
     },
-    "data.cards[4].uid": {
-      "valueClass": "id"
+    "data.cards[4].boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[4].boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[4].total_harvest_pp": {
+      "valueClass": "opaque"
     },
     "data.cards[4].work_per_hour": {
       "valueClass": "opaque"
     },
-    "data.items[0].boost": {
+    "data.cards[4].is_powered": {
+      "valueClass": "enum"
+    },
+    "data.cards[4].card_abilities_boost": {
       "valueClass": "opaque"
+    },
+    "data.cards[4].card_abilities_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.cards[4].card_bloodlines_boost": {
+      "valueClass": "opaque"
+    },
+    "data.cards[4].card_bloodlines_boost_pp": {
+      "valueClass": "opaque"
+    },
+    "data.items[0].uid": {
+      "valueClass": "id"
     },
     "data.items[0].item_detail_id": {
       "valueClass": "numeric"
     },
-    "data.items[0].name": {
-      "valueClass": "enum"
-    },
     "data.items[0].player": {
       "valueClass": "name"
-    },
-    "data.items[0].stake_ref_id": {
-      "valueClass": "opaque"
-    },
-    "data.items[0].stake_ref_uid": {
-      "valueClass": "id"
     },
     "data.items[0].stake_start_date": {
       "valueClass": "timestamp"
@@ -674,11 +668,17 @@
     "data.items[0].stake_type_uid": {
       "valueClass": "id"
     },
-    "data.items[0].uid": {
+    "data.items[0].stake_ref_uid": {
       "valueClass": "id"
     },
-    "status": {
+    "data.items[0].stake_ref_id": {
+      "valueClass": "opaque"
+    },
+    "data.items[0].name": {
       "valueClass": "enum"
+    },
+    "data.items[0].boost": {
+      "valueClass": "opaque"
     }
   },
   "status": "success",
@@ -687,7 +687,7 @@
       {
         "uid": "C21-1031-JKN7P0VYMO",
         "card_detail_id": 1031,
-        "player": "sample-account-b",
+        "player": "sample-account-1",
         "bcx": 40,
         "gold": false,
         "foil": 0,
@@ -696,43 +696,43 @@
         "delegated_to": null,
         "rental_type": null,
         "collection_power": 200,
-        "land_base_pp": "200.000",
+        "land_base_pp": "[redacted]",
         "land_dec_stake_needed": 1000,
         "name": "Frostbark Elder",
         "stake_start_date": "2026-07-22T20:09:36.000Z",
         "slot": 1,
         "stake_type_uid": "STK-LND-WKR",
         "stake_ref_uid": "I-291-aafc48f64a8856",
-        "base_pp_after_cap": "200.000",
-        "base_pp_after_cap_percentage": "1.000",
-        "total_construction_pp": "220.000",
-        "terrain_boost": "0.100",
-        "terrain_boost_pp": "20.000",
+        "base_pp_after_cap": "[redacted]",
+        "base_pp_after_cap_percentage": "[redacted]",
+        "total_construction_pp": "[redacted]",
+        "terrain_boost": "[redacted]",
+        "terrain_boost_pp": "[redacted]",
         "dec_stake_needed": 1000,
-        "deed_rarity_boost": "0.000",
-        "deed_rarity_boost_pp": "0.000",
-        "deed_status_token_boost": "0.000",
-        "deed_status_token_boost_pp": "0.000",
-        "runi_boost": "0.000",
-        "runi_boost_pp": "0.000",
-        "title_boost": "0.000",
-        "title_boost_pp": "0.000",
-        "totem_boost": "0.000",
-        "totem_boost_pp": "0.000",
-        "boost": "0.000",
-        "boost_pp": "0.000",
-        "total_harvest_pp": "220.000",
-        "work_per_hour": "1.1000000000",
+        "deed_rarity_boost": "[redacted]",
+        "deed_rarity_boost_pp": "[redacted]",
+        "deed_status_token_boost": "[redacted]",
+        "deed_status_token_boost_pp": "[redacted]",
+        "runi_boost": "[redacted]",
+        "runi_boost_pp": "[redacted]",
+        "title_boost": "[redacted]",
+        "title_boost_pp": "[redacted]",
+        "totem_boost": "[redacted]",
+        "totem_boost_pp": "[redacted]",
+        "boost": "[redacted]",
+        "boost_pp": "[redacted]",
+        "total_harvest_pp": "[redacted]",
+        "work_per_hour": "[redacted]",
         "is_powered": true,
-        "card_abilities_boost": "0.000",
-        "card_abilities_boost_pp": "0.000",
-        "card_bloodlines_boost": "0.000",
-        "card_bloodlines_boost_pp": "0.000"
+        "card_abilities_boost": "[redacted]",
+        "card_abilities_boost_pp": "[redacted]",
+        "card_bloodlines_boost": "[redacted]",
+        "card_bloodlines_boost_pp": "[redacted]"
       },
       {
         "uid": "C3-342-1ZLQAME8Y8",
         "card_detail_id": 342,
-        "player": "sample-account-b",
+        "player": "sample-account-1",
         "bcx": 11,
         "gold": false,
         "foil": 0,
@@ -741,43 +741,43 @@
         "delegated_to": null,
         "rental_type": null,
         "collection_power": 5775,
-        "land_base_pp": "1500.000",
+        "land_base_pp": "[redacted]",
         "land_dec_stake_needed": 10000,
         "name": "Harklaw",
         "stake_start_date": "2025-09-05T22:21:09.000Z",
         "slot": 2,
         "stake_type_uid": "STK-LND-WKR",
         "stake_ref_uid": "I-291-aafc48f64a8856",
-        "base_pp_after_cap": "1500.000",
-        "base_pp_after_cap_percentage": "1.000",
-        "total_construction_pp": "1650.000",
-        "terrain_boost": "0.100",
-        "terrain_boost_pp": "150.000",
+        "base_pp_after_cap": "[redacted]",
+        "base_pp_after_cap_percentage": "[redacted]",
+        "total_construction_pp": "[redacted]",
+        "terrain_boost": "[redacted]",
+        "terrain_boost_pp": "[redacted]",
         "dec_stake_needed": 10000,
-        "deed_rarity_boost": "0.000",
-        "deed_rarity_boost_pp": "0.000",
-        "deed_status_token_boost": "0.000",
-        "deed_status_token_boost_pp": "0.000",
-        "runi_boost": "0.000",
-        "runi_boost_pp": "0.000",
-        "title_boost": "0.000",
-        "title_boost_pp": "0.000",
-        "totem_boost": "0.000",
-        "totem_boost_pp": "0.000",
-        "boost": "0.000",
-        "boost_pp": "0.000",
-        "total_harvest_pp": "1650.000",
-        "work_per_hour": "8.2500000000",
+        "deed_rarity_boost": "[redacted]",
+        "deed_rarity_boost_pp": "[redacted]",
+        "deed_status_token_boost": "[redacted]",
+        "deed_status_token_boost_pp": "[redacted]",
+        "runi_boost": "[redacted]",
+        "runi_boost_pp": "[redacted]",
+        "title_boost": "[redacted]",
+        "title_boost_pp": "[redacted]",
+        "totem_boost": "[redacted]",
+        "totem_boost_pp": "[redacted]",
+        "boost": "[redacted]",
+        "boost_pp": "[redacted]",
+        "total_harvest_pp": "[redacted]",
+        "work_per_hour": "[redacted]",
         "is_powered": true,
-        "card_abilities_boost": "0.000",
-        "card_abilities_boost_pp": "0.000",
-        "card_bloodlines_boost": "0.000",
-        "card_bloodlines_boost_pp": "0.000"
+        "card_abilities_boost": "[redacted]",
+        "card_abilities_boost_pp": "[redacted]",
+        "card_bloodlines_boost": "[redacted]",
+        "card_bloodlines_boost_pp": "[redacted]"
       },
       {
         "uid": "C3-342-2GWQ5U8XCW",
         "card_detail_id": 342,
-        "player": "sample-account-b",
+        "player": "sample-account-1",
         "bcx": 11,
         "gold": false,
         "foil": 0,
@@ -786,43 +786,43 @@
         "delegated_to": null,
         "rental_type": null,
         "collection_power": 5775,
-        "land_base_pp": "1500.000",
+        "land_base_pp": "[redacted]",
         "land_dec_stake_needed": 10000,
         "name": "Harklaw",
         "stake_start_date": "2025-09-05T22:21:09.000Z",
         "slot": 3,
         "stake_type_uid": "STK-LND-WKR",
         "stake_ref_uid": "I-291-aafc48f64a8856",
-        "base_pp_after_cap": "1500.000",
-        "base_pp_after_cap_percentage": "1.000",
-        "total_construction_pp": "1650.000",
-        "terrain_boost": "0.100",
-        "terrain_boost_pp": "150.000",
+        "base_pp_after_cap": "[redacted]",
+        "base_pp_after_cap_percentage": "[redacted]",
+        "total_construction_pp": "[redacted]",
+        "terrain_boost": "[redacted]",
+        "terrain_boost_pp": "[redacted]",
         "dec_stake_needed": 10000,
-        "deed_rarity_boost": "0.000",
-        "deed_rarity_boost_pp": "0.000",
-        "deed_status_token_boost": "0.000",
-        "deed_status_token_boost_pp": "0.000",
-        "runi_boost": "0.000",
-        "runi_boost_pp": "0.000",
-        "title_boost": "0.000",
-        "title_boost_pp": "0.000",
-        "totem_boost": "0.000",
-        "totem_boost_pp": "0.000",
-        "boost": "0.000",
-        "boost_pp": "0.000",
-        "total_harvest_pp": "1650.000",
-        "work_per_hour": "8.2500000000",
+        "deed_rarity_boost": "[redacted]",
+        "deed_rarity_boost_pp": "[redacted]",
+        "deed_status_token_boost": "[redacted]",
+        "deed_status_token_boost_pp": "[redacted]",
+        "runi_boost": "[redacted]",
+        "runi_boost_pp": "[redacted]",
+        "title_boost": "[redacted]",
+        "title_boost_pp": "[redacted]",
+        "totem_boost": "[redacted]",
+        "totem_boost_pp": "[redacted]",
+        "boost": "[redacted]",
+        "boost_pp": "[redacted]",
+        "total_harvest_pp": "[redacted]",
+        "work_per_hour": "[redacted]",
         "is_powered": true,
-        "card_abilities_boost": "0.000",
-        "card_abilities_boost_pp": "0.000",
-        "card_bloodlines_boost": "0.000",
-        "card_bloodlines_boost_pp": "0.000"
+        "card_abilities_boost": "[redacted]",
+        "card_abilities_boost_pp": "[redacted]",
+        "card_bloodlines_boost": "[redacted]",
+        "card_bloodlines_boost_pp": "[redacted]"
       },
       {
         "uid": "C3-342-2RYAINO3V4",
         "card_detail_id": 342,
-        "player": "sample-account-b",
+        "player": "sample-account-1",
         "bcx": 11,
         "gold": false,
         "foil": 0,
@@ -831,43 +831,43 @@
         "delegated_to": null,
         "rental_type": null,
         "collection_power": 5775,
-        "land_base_pp": "1500.000",
+        "land_base_pp": "[redacted]",
         "land_dec_stake_needed": 10000,
         "name": "Harklaw",
         "stake_start_date": "2025-09-05T22:21:09.000Z",
         "slot": 4,
         "stake_type_uid": "STK-LND-WKR",
         "stake_ref_uid": "I-291-aafc48f64a8856",
-        "base_pp_after_cap": "1500.000",
-        "base_pp_after_cap_percentage": "1.000",
-        "total_construction_pp": "1650.000",
-        "terrain_boost": "0.100",
-        "terrain_boost_pp": "150.000",
+        "base_pp_after_cap": "[redacted]",
+        "base_pp_after_cap_percentage": "[redacted]",
+        "total_construction_pp": "[redacted]",
+        "terrain_boost": "[redacted]",
+        "terrain_boost_pp": "[redacted]",
         "dec_stake_needed": 10000,
-        "deed_rarity_boost": "0.000",
-        "deed_rarity_boost_pp": "0.000",
-        "deed_status_token_boost": "0.000",
-        "deed_status_token_boost_pp": "0.000",
-        "runi_boost": "0.000",
-        "runi_boost_pp": "0.000",
-        "title_boost": "0.000",
-        "title_boost_pp": "0.000",
-        "totem_boost": "0.000",
-        "totem_boost_pp": "0.000",
-        "boost": "0.000",
-        "boost_pp": "0.000",
-        "total_harvest_pp": "1650.000",
-        "work_per_hour": "8.2500000000",
+        "deed_rarity_boost": "[redacted]",
+        "deed_rarity_boost_pp": "[redacted]",
+        "deed_status_token_boost": "[redacted]",
+        "deed_status_token_boost_pp": "[redacted]",
+        "runi_boost": "[redacted]",
+        "runi_boost_pp": "[redacted]",
+        "title_boost": "[redacted]",
+        "title_boost_pp": "[redacted]",
+        "totem_boost": "[redacted]",
+        "totem_boost_pp": "[redacted]",
+        "boost": "[redacted]",
+        "boost_pp": "[redacted]",
+        "total_harvest_pp": "[redacted]",
+        "work_per_hour": "[redacted]",
         "is_powered": true,
-        "card_abilities_boost": "0.000",
-        "card_abilities_boost_pp": "0.000",
-        "card_bloodlines_boost": "0.000",
-        "card_bloodlines_boost_pp": "0.000"
+        "card_abilities_boost": "[redacted]",
+        "card_abilities_boost_pp": "[redacted]",
+        "card_bloodlines_boost": "[redacted]",
+        "card_bloodlines_boost_pp": "[redacted]"
       },
       {
         "uid": "C3-342-2XPLMXEUBK",
         "card_detail_id": 342,
-        "player": "sample-account-b",
+        "player": "sample-account-1",
         "bcx": 11,
         "gold": false,
         "foil": 0,
@@ -876,51 +876,51 @@
         "delegated_to": null,
         "rental_type": null,
         "collection_power": 5775,
-        "land_base_pp": "1500.000",
+        "land_base_pp": "[redacted]",
         "land_dec_stake_needed": 10000,
         "name": "Harklaw",
         "stake_start_date": "2025-09-05T22:21:09.000Z",
         "slot": 5,
         "stake_type_uid": "STK-LND-WKR",
         "stake_ref_uid": "I-291-aafc48f64a8856",
-        "base_pp_after_cap": "1500.000",
-        "base_pp_after_cap_percentage": "1.000",
-        "total_construction_pp": "1650.000",
-        "terrain_boost": "0.100",
-        "terrain_boost_pp": "150.000",
+        "base_pp_after_cap": "[redacted]",
+        "base_pp_after_cap_percentage": "[redacted]",
+        "total_construction_pp": "[redacted]",
+        "terrain_boost": "[redacted]",
+        "terrain_boost_pp": "[redacted]",
         "dec_stake_needed": 10000,
-        "deed_rarity_boost": "0.000",
-        "deed_rarity_boost_pp": "0.000",
-        "deed_status_token_boost": "0.000",
-        "deed_status_token_boost_pp": "0.000",
-        "runi_boost": "0.000",
-        "runi_boost_pp": "0.000",
-        "title_boost": "0.000",
-        "title_boost_pp": "0.000",
-        "totem_boost": "0.000",
-        "totem_boost_pp": "0.000",
-        "boost": "0.000",
-        "boost_pp": "0.000",
-        "total_harvest_pp": "1650.000",
-        "work_per_hour": "8.2500000000",
+        "deed_rarity_boost": "[redacted]",
+        "deed_rarity_boost_pp": "[redacted]",
+        "deed_status_token_boost": "[redacted]",
+        "deed_status_token_boost_pp": "[redacted]",
+        "runi_boost": "[redacted]",
+        "runi_boost_pp": "[redacted]",
+        "title_boost": "[redacted]",
+        "title_boost_pp": "[redacted]",
+        "totem_boost": "[redacted]",
+        "totem_boost_pp": "[redacted]",
+        "boost": "[redacted]",
+        "boost_pp": "[redacted]",
+        "total_harvest_pp": "[redacted]",
+        "work_per_hour": "[redacted]",
         "is_powered": true,
-        "card_abilities_boost": "0.000",
-        "card_abilities_boost_pp": "0.000",
-        "card_bloodlines_boost": "0.000",
-        "card_bloodlines_boost_pp": "0.000"
+        "card_abilities_boost": "[redacted]",
+        "card_abilities_boost_pp": "[redacted]",
+        "card_bloodlines_boost": "[redacted]",
+        "card_bloodlines_boost_pp": "[redacted]"
       }
     ],
     "items": [
       {
         "uid": "I-322-ef73784fc3994d",
         "item_detail_id": 322,
-        "player": "sample-account-b",
+        "player": "sample-account-1",
         "stake_start_date": "2025-09-05T22:21:09.000Z",
         "stake_type_uid": "STK-LND-PCR",
         "stake_ref_uid": "I-291-aafc48f64a8856",
         "stake_ref_id": null,
         "name": "Power Core",
-        "boost": "0.000"
+        "boost": "[redacted]"
       }
     ]
   }

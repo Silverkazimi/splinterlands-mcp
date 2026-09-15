@@ -8,7 +8,7 @@ import { bindSweepInputs, createSweepRequester } from "./request.js";
 import { sanitizeFixture } from "./sanitize-fixture.js";
 import { planFixtureRenewal, type FixtureRenewalPair, RENEWAL_HOLD_FLOOR } from "./renewal.js";
 import type { BoundCatalogueRequest } from "../../src/catalogue/index.js";
-import type { RawOutcome } from "./types.js";
+import type { RawOutcome, TransportFailure } from "./types.js";
 
 export type RecaptureInput = {
   fixturePath: string;
@@ -35,8 +35,9 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
     return bindSweepInputs([{ entryId: item.entryId, params: item.params,
       ...(item.variantKey === undefined ? {} : { variantKey: item.variantKey }) }])[0]!;
   });
-  const failed: Array<{ fixturePath: string; reason: "response" | "review" }> = [];
+  const failed: Array<{ fixturePath: string; reason: "response" | "review"; transportFailure?: TransportFailure }> = [];
   const pairs: FixtureRenewalPair[] = [];
+  const reviewDiagnostics: Array<{ fixturePath: string; stage: "upstream_contract" | "sampling" | "sanitization" | "sanitized_contract" | "fixture_size" }> = [];
   const coverageGaps: Array<{ fixturePath: string; entryId: string; reason: "empty_sample" | "populated_sample" }> = [];
   const transientSamples: Array<{ fixturePath: string; entryId: string; reason: "idle_queue" }> = [];
   const blocked = new Set<string>();
@@ -49,11 +50,14 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
     const classified = classifyResponse({ host: binding.hostname, endpoint: binding.endpointTemplate,
       status: outcome.status, body: outcome.body, isJson: outcome.isJson });
     if (!classified.ok || !outcome.isJson) {
-      failed.push({ fixturePath: input.fixturePath, reason: "response" });
+      failed.push({ fixturePath: input.fixturePath, reason: "response",
+        ...(outcome.transportFailure === "timeout" || outcome.transportFailure === "network"
+          ? { transportFailure: outcome.transportFailure } : {}) });
       if (blocked.size >= 2) break;
       continue;
     }
     if (!verifiedSample(input.entryId, outcome.body, input.variantKey)) {
+      reviewDiagnostics.push({ fixturePath: input.fixturePath, stage: "upstream_contract" });
       failed.push({ fixturePath: input.fixturePath, reason: "review" });
       continue;
     }
@@ -68,6 +72,7 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
         reason: empty ? "empty_sample" : "populated_sample" });
       continue;
     }
+    let reviewStage: (typeof reviewDiagnostics)[number]["stage"] = "sampling";
     try {
       const dataKeys = Object.keys(input.existing).filter(key => key !== "provenance" && key !== "valueClasses");
       const wrapped = dataKeys.length === 1 && dataKeys[0] === "body";
@@ -77,6 +82,7 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
       const captured = wrapped ? { body } : body;
       const accountKeys = new Set(["name", "username", "player", "players", "owner", "renter", "account", "target"]);
       const forbidden = Object.entries(input.params).filter(([key, value]) => accountKeys.has(key) && typeof value === "string").map(([, value]) => String(value));
+      reviewStage = "sanitization";
       const sanitized = sanitizeFixture(input.existing, captured, observedAt, forbidden);
       const recaptured = { ...sanitized, provenance: { ...sanitized.provenance,
         ...((input.existing.provenance as Record<string, unknown> | undefined)?.reviewedResponseShapes
@@ -86,9 +92,11 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
           ? { reviewedAlternateShapes: (input.existing.provenance as Record<string, unknown>).reviewedAlternateShapes } : {}) } };
       if (avatar) recaptured.provenance.redaction += " Avatar URLs retain reviewed synthetic fixture values.";
       const fixtureData = Object.fromEntries(Object.entries(recaptured).filter(([key]) => !["provenance", "valueClasses"].includes(key)));
+      reviewStage = "sanitized_contract";
       if (!verifiedSample(input.entryId, wrapped ? fixtureData.body : fixtureData, input.variantKey)) {
         throw new Error("Sanitized fixture violates response contract.");
       }
+      reviewStage = "fixture_size";
       if (Buffer.byteLength(JSON.stringify(recaptured, null, 2) + "\n", "utf8") > MAX_FIXTURE_BYTES) {
         throw new Error("Fixture exceeds size limit.");
       }
@@ -97,6 +105,7 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
         recaptured, host: binding.host, pathTemplate: binding.endpointTemplate,
       });
     } catch {
+      reviewDiagnostics.push({ fixturePath: input.fixturePath, stage: reviewStage });
       failed.push({ fixturePath: input.fixturePath, reason: "review" });
     }
   }
@@ -107,6 +116,7 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
   const aborted = blocked.size >= 2;
   const blockedByHoldFloor = aborted || holdFraction > RENEWAL_HOLD_FLOOR;
   return {
+    reviewDiagnostics,
     transientSamples,
     plan: { ...plan, holdFraction, blockedByHoldFloor,
       writes: blockedByHoldFloor ? [] : plan.decisions.filter(decision => decision.outcome === "refresh")

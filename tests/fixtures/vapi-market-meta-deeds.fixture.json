@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:48:17.286809+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/DEEDS",
-    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -80,39 +79,399 @@
     },
     "body.data.details[2].filterIcon": {
       "valueClass": "opaque"
+    },
+    "body.data.details[3].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[3].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[4].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[5].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[6].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[7].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[8].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[9].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[10].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[11].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[12].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[13].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[14].rarity": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].filterIcon": {
+      "valueClass": "opaque"
     }
   },
   "body": {
     "status": "success",
     "data": {
       "assetName": "DEEDS",
-      "description": "DEED",
-      "type": "NON_FUNGIBLE",
+      "description": "[redacted]",
+      "type": "[redacted]",
       "details": [
         {
-          "id": "301",
-          "name": "Badlands",
+          "id": "[redacted]",
+          "name": "[redacted]",
           "circulation": 0,
           "rarity": null,
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/",
+          "image": "[redacted]",
           "icon": null,
           "filterIcon": null
         },
         {
-          "id": "297",
-          "name": "Bog",
+          "id": "[redacted]",
+          "name": "[redacted]",
           "circulation": 0,
           "rarity": null,
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/",
+          "image": "[redacted]",
           "icon": null,
           "filterIcon": null
         },
         {
-          "id": "303",
-          "name": "Caldera",
+          "id": "[redacted]",
+          "name": "[redacted]",
           "circulation": 0,
           "rarity": null,
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": null
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "circulation": 0,
+          "rarity": null,
+          "image": "[redacted]",
           "icon": null,
           "filterIcon": null
         }

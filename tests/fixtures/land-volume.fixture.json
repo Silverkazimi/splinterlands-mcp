@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-07T08:29:17Z"
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "status": {
@@ -16,7 +17,7 @@
   },
   "status": "success",
   "data": {
-    "sum": "321.230",
-    "count": "14"
+    "sum": "768.80",
+    "count": "56"
   }
 }

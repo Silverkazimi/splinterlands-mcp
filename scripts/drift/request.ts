@@ -91,8 +91,9 @@ export function createSweepRequester(fetcher: typeof fetch = fetch, limiter = ne
       } catch {
         return { status: response.status, body: null, isJson: false };
       }
-    } catch {
-      return { status: 0, body: null, isJson: false };
+    } catch (error) {
+      const transportFailure = error instanceof Error && ["TimeoutError", "AbortError"].includes(error.name) ? "timeout" : "network";
+      return { status: 0, body: null, isJson: false, transportFailure };
     }
   };
 }

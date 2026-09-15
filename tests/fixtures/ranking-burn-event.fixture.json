@@ -7,7 +7,14 @@
     "fixtureSample": {
       "kind": "first",
       "limit": 2
-    }
+    },
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "97ec27c486cf7ae152eb7ff5640d0251da5798307137ffdd0ff31bb056e225f9",
+        "alternateShape": "34628ccb29dc156ac47c7695accc35f4aa80d5ab645fee37701246a8c30f895c"
+      }
+    ],
+    "additionalSchemaReview": " Reviewed 2026-09-15: the bounded hosted sample narrows existing nullable or optional fields without adding fields or types. The exact alternate shape is accepted while retaining this richer fixture."
   },
   "valueClasses": {
     "body.leaderboard[0].player": {

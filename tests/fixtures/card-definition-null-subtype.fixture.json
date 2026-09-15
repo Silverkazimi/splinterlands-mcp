@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T11:19:04.427222+00:00",
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
     "fixtureSample": {
       "kind": "ids",
       "ids": [
@@ -128,7 +129,7 @@
   "body": [
     {
       "id": 10001,
-      "name": "Gloom Owl",
+      "name": "[redacted]",
       "color": "Gray",
       "type": "Tower",
       "sub_type": null,
@@ -141,7 +142,7 @@
       "editions": "9",
       "created_block_num": null,
       "last_update_tx": null,
-      "total_printed": 40908,
+      "total_printed": 40910,
       "is_promo": false,
       "tier": 9,
       "secondary_color": null,
@@ -155,11 +156,11 @@
           "gold": false,
           "foil": 0,
           "edition": 9,
-          "num_cards": "10653",
+          "num_cards": "10651",
           "unbound_cards": "0",
-          "total_xp": "26759",
-          "num_burned": "4184",
-          "total_burned_xp": "12690"
+          "total_xp": "26757",
+          "num_burned": "4188",
+          "total_burned_xp": "12694"
         },
         {
           "card_detail_id": 10001,

@@ -34,7 +34,7 @@ it("cancels oversized responses and suppresses malformed/network response conten
   expect(await oversized(inputs()[0]!)).toEqual({ status: 200, body: null, isJson: false });
   expect(cancelled).toBe(true);
   const failure = createSweepRequester(async () => { throw new Error("private network detail"); });
-  expect(await failure(inputs()[0]!)).toEqual({ status: 0, body: null, isJson: false });
+  expect(await failure(inputs()[0]!)).toEqual({ status: 0, body: null, isJson: false, transportFailure: "network" });
 });
 
 it("accepts explicit resource scope without adding an unrelated account", () => {
@@ -114,4 +114,16 @@ it("preserves the documented unscoped count scenarios without weakening account 
   }
   expect(() => bindSweepInputs([{ entryId: "vapi.land.resources.production-region-harvestable", params: { region_uid: "fixture-region" } }])).toThrow();
   expect(() => bindSweepInputs([{ entryId: TOOL_ENTRY_IDS.player_profile, params: {} }])).toThrow();
+});
+
+it("reports fixed timeout categories without error messages or retrying", async () => {
+  let calls = 0;
+  const request = createSweepRequester(async () => {
+    calls++;
+    throw new DOMException("PRIVATE_TIMEOUT_SENTINEL", "TimeoutError");
+  });
+  const result = await request(inputs()[0]!);
+  expect(result).toEqual({ status: 0, body: null, isJson: false, transportFailure: "timeout" });
+  expect(JSON.stringify(result)).not.toContain("PRIVATE_TIMEOUT_SENTINEL");
+  expect(calls).toBe(1);
 });

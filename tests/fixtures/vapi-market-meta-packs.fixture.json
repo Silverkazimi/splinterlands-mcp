@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:47:35.118764+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/PACKS",
-    "captureScope": "First three complete records plus the observed null-circulation record; independent summaries preserved."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -114,7 +113,280 @@
     "body.data.details[3].group": {
       "valueClass": "opaque"
     },
-    "body.data.details[3].subGroup": {
+    "body.data.details[4].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[4].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[4].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[5].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[5].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[6].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[6].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[7].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[7].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[8].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[8].subGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[9].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[9].subGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[10].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[10].subGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[11].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[11].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[12].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[12].subGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[13].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[13].group": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[14].circulation": {
+      "valueClass": "numeric"
+    },
+    "body.data.details[14].group": {
       "valueClass": "opaque"
     }
   },
@@ -122,49 +394,162 @@
     "status": "success",
     "data": {
       "assetName": "PACKS",
-      "description": "Card Pack",
-      "type": "FUNGIBLE",
+      "description": "[redacted]",
+      "type": "[redacted]",
       "details": [
         {
-          "id": "ALPHA",
-          "name": "Alpha Pack",
-          "description": "Alpha packs were the first packs ever sold, beginning with Splinterlands' launch in May 2018. Each pack contains 5 random cards, each of which earn a 10% bonus to reward shares in battle.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_alpha.png",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
           "icon": null,
-          "filterIcon": "icon_edition_alpha.svg",
+          "filterIcon": "[redacted]",
           "circulation": 5692,
-          "group": "core"
+          "group": "[redacted]"
         },
         {
-          "id": "BETA",
-          "name": "Beta Pack",
-          "description": "Each Beta pack contains 5 random Beta versions of the same cards from the Alpha edition, plus the addition of Neutral cards and new Epic and Legendary archons. Cards from the Beta edition earn a 5% bonus to reward shares in battle.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_beta.png",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
           "icon": null,
-          "filterIcon": "icon_edition_beta.svg",
-          "circulation": 20207,
-          "group": "core"
+          "filterIcon": "[redacted]",
+          "circulation": 20167,
+          "group": "[redacted]"
         },
         {
-          "id": "ORB",
-          "name": "Essence Orb",
-          "description": "The Essence Orb mini-set consists of 12 promo cards that earn a 10% bonus to reward shares in battle. Each pack contains 5 random cards.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_pack_orb.png",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
           "icon": null,
-          "filterIcon": "icon_edition_essenceorbs.svg",
-          "circulation": 5946,
-          "group": "expansions"
+          "filterIcon": "[redacted]",
+          "circulation": 5744,
+          "group": "[redacted]"
         },
         {
-          "id": "FOUNDATIONS",
-          "name": "Foundations Pack",
-          "description": "The Foundations set consists of 53 cards, and each pack contains 5 random cards. Does NOT contain any Gold Arcane or Black Foils.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/img_pack_foundations_250.png",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
           "icon": null,
-          "filterIcon": "icon-edition-foundations.svg",
+          "filterIcon": "[redacted]",
+          "circulation": 40985,
+          "group": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 5249,
+          "group": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 4103317,
+          "group": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": -777841,
+          "group": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 9040330,
+          "group": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 4694493,
+          "group": "[redacted]",
+          "subGroup": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": -81095,
+          "group": "[redacted]",
+          "subGroup": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 475394,
+          "group": "[redacted]",
+          "subGroup": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": -1554128,
+          "group": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
           "circulation": null,
-          "group": "core",
-          "subGroup": "Foundations Packs"
+          "group": "[redacted]",
+          "subGroup": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 137931,
+          "group": "[redacted]"
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": null,
+          "filterIcon": "[redacted]",
+          "circulation": 188229,
+          "group": "[redacted]"
         }
       ]
     }
