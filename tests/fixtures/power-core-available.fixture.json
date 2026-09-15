@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-13T11:47:19.037707+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/land/stake/items/{stakeTypeUid}/available",
-    "captureScope": "Observed response shape; item identity replaced with a synthetic value where present. Selector identity is not included."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -18,7 +17,7 @@
     "data": {
       "ids": [
         {
-          "uid": "synthetic-power-core-1"
+          "uid": "I-322-1746e2ebc84c4d"
         }
       ]
     }

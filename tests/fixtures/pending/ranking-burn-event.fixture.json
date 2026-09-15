@@ -1,0 +1,143 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 2
+    }
+  },
+  "valueClasses": {
+    "body.leaderboard[0].player": {
+      "valueClass": "name"
+    },
+    "body.leaderboard[0].points": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].dec_burned": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].dec_b_burned": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.leaderboard[0].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body.leaderboard[0].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].title": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[0].guild_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard[0].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[0].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].player": {
+      "valueClass": "name"
+    },
+    "body.leaderboard[1].points": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].dec_burned": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].dec_b_burned": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body.leaderboard[1].last_update_date": {
+      "valueClass": "timestamp"
+    },
+    "body.leaderboard[1].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].title": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.leaderboard[1].guild_id": {
+      "valueClass": "id"
+    },
+    "body.leaderboard[1].guild_name": {
+      "valueClass": "opaque"
+    },
+    "body.leaderboard[1].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.totals.total_dec_burned": {
+      "valueClass": "opaque"
+    },
+    "body.totals.total_dec_b_burned": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "leaderboard": [
+      {
+        "player": "sample-account-1",
+        "points": "72192933.584",
+        "dec_burned": "17605544.000",
+        "dec_b_burned": "7487500.000",
+        "created_date": "2023-05-30T22:19:23.945Z",
+        "last_update_date": "2023-06-29T19:59:03.112Z",
+        "avatar_id": 3395,
+        "title": "[redacted]",
+        "title_pre": "[redacted]",
+        "league": 11,
+        "modern_league": 15,
+        "guild_id": "504d6bb3bd478422e3a68e98e6c8eea257636709",
+        "guild_name": "[redacted]",
+        "guild_data": "[redacted]"
+      },
+      {
+        "player": "sample-account-2",
+        "points": "64332355.172",
+        "dec_burned": "21579980.000",
+        "dec_b_burned": "0.000",
+        "created_date": "2023-05-31T15:14:21.179Z",
+        "last_update_date": "2023-06-14T21:11:27.086Z",
+        "avatar_id": 0,
+        "title": null,
+        "title_pre": null,
+        "league": 0,
+        "modern_league": 0,
+        "guild_id": "e80e77615ee2393a672c636a9bd28394d9497466",
+        "guild_name": "[redacted]",
+        "guild_data": "[redacted]"
+      }
+    ],
+    "totals": {
+      "total_dec_burned": "[redacted]",
+      "total_dec_b_burned": "[redacted]"
+    }
+  }
+}

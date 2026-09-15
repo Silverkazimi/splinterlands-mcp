@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:55:26.368600+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/tournaments/prizes",
-    "captureScope": "First three root rows or players; other nested fields retain their captured values."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.awarded": {
@@ -14,7 +13,7 @@
     }
   },
   "body": {
-    "awarded": 7716620,
-    "upcoming": 3406
+    "awarded": 7717130,
+    "upcoming": 3070
   }
 }

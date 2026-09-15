@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:20:11.548842+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/conflicts/wagon_eligible_cards",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged.",
-    "additionalSchemaReview": "Reviewed boolean gold variants and public asset categories against the bounded 2026-09-14 positive-sample captures; existing body values retained."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.total_cards": {
@@ -28,9 +26,6 @@
     "body.groups[0].uids[0]": {
       "valueClass": "opaque"
     },
-    "body.groups[0].uids[1]": {
-      "valueClass": "opaque"
-    },
     "body.groups[0].qty": {
       "valueClass": "numeric"
     },
@@ -50,9 +45,6 @@
       "valueClass": "numeric"
     },
     "body.groups[1].uids[0]": {
-      "valueClass": "opaque"
-    },
-    "body.groups[1].uids[1]": {
       "valueClass": "opaque"
     },
     "body.groups[1].qty": {
@@ -76,27 +68,1683 @@
     "body.groups[2].uids[0]": {
       "valueClass": "opaque"
     },
-    "body.groups[2].uids[1]": {
+    "body.groups[2].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[3].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[3].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[3].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[3].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[3].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[3].uids[0]": {
       "valueClass": "opaque"
     },
-    "body.groups[2].qty": {
+    "body.groups[3].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[4].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[4].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[4].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[4].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[4].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[4].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[4].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[5].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[5].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[5].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[5].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[5].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[5].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[5].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[6].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[6].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[6].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[6].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[6].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[6].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[6].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[7].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[7].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[7].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[7].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[7].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[7].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[7].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[8].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[8].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[8].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[8].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[8].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[8].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[8].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[9].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[9].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[9].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[9].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[9].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[9].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[9].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[10].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[10].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[10].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[10].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[10].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[10].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[10].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[11].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[11].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[11].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[11].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[11].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[11].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[11].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[12].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[12].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[12].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[12].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[12].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[12].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[12].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[13].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[13].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[13].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[13].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[13].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[13].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[13].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[14].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[14].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[14].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[14].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[14].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[14].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[14].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[15].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[15].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[15].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[15].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[15].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[15].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[15].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[16].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[16].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[16].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[16].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[16].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[16].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[16].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[17].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[17].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[17].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[17].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[17].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[17].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[17].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[18].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[18].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[18].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[18].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[18].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[18].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[18].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[19].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[19].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[19].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[19].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[19].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[19].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[19].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[20].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[20].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[20].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[20].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[20].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[20].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[20].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[21].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[21].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[21].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[21].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[21].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[21].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[21].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[22].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[22].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[22].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[22].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[22].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[22].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[22].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[23].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[23].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[23].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[23].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[23].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[23].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[23].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[24].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[24].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[24].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[24].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[24].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[24].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[24].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[25].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[25].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[25].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[25].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[25].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[25].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[25].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[26].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[26].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[26].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[26].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[26].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[26].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[26].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[27].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[27].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[27].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[27].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[27].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[27].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[27].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[28].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[28].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[28].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[28].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[28].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[28].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[28].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[29].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[29].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[29].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[29].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[29].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[29].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[29].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[30].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[30].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[30].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[30].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[30].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[30].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[30].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[31].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[31].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[31].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[31].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[31].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[31].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[31].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[32].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[32].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[32].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[32].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[32].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[32].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[32].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[33].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[33].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[33].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[33].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[33].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[33].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[33].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[34].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[34].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[34].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[34].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[34].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[34].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[34].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[35].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[35].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[35].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[35].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[35].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[35].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[35].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[36].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[36].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[36].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[36].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[36].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[36].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[36].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[37].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[37].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[37].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[37].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[37].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[37].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[37].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[38].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[38].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[38].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[38].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[38].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[38].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[38].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[39].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[39].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[39].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[39].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[39].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[39].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[39].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[40].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[40].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[40].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[40].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[40].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[40].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[40].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[41].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[41].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[41].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[41].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[41].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[41].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[41].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[42].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[42].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[42].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[42].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[42].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[42].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[42].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[43].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[43].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[43].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[43].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[43].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[43].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[43].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[44].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[44].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[44].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[44].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[44].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[44].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[44].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[45].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[45].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[45].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[45].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[45].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[45].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[45].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[46].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[46].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[46].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[46].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[46].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[46].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[46].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[47].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[47].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[47].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[47].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[47].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[47].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[47].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[48].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[48].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[48].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[48].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[48].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[48].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[48].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[49].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[49].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[49].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[49].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[49].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[49].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[49].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[50].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[50].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[50].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[50].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[50].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[50].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[50].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[51].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[51].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[51].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[51].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[51].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[51].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[51].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[52].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[52].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[52].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[52].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[52].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[52].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[52].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[53].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[53].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[53].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[53].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[53].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[53].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[53].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[54].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[54].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[54].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[54].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[54].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[54].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[54].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[55].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[55].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[55].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[55].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[55].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[55].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[55].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[56].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[56].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[56].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[56].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[56].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[56].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[56].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[57].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[57].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[57].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[57].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[57].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[57].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[57].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[58].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[58].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[58].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[58].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[58].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[58].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[58].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[59].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[59].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[59].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[59].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[59].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[59].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[59].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[60].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[60].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[60].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[60].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[60].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[60].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[60].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[61].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[61].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[61].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[61].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[61].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[61].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[61].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[62].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[62].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[62].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[62].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[62].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[62].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[62].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[63].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[63].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[63].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[63].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[63].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[63].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[63].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[64].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[64].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[64].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[64].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[64].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[64].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[64].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[65].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[65].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[65].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[65].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[65].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[65].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[65].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[66].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[66].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[66].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[66].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[66].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[66].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[66].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[67].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[67].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[67].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[67].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[67].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[67].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[67].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[68].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[68].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[68].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[68].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[68].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[68].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[68].qty": {
+      "valueClass": "numeric"
+    },
+    "body.groups[69].cp": {
+      "valueClass": "numeric"
+    },
+    "body.groups[69].detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.groups[69].gold": {
+      "valueClass": "enum"
+    },
+    "body.groups[69].foil": {
+      "valueClass": "numeric"
+    },
+    "body.groups[69].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.groups[69].uids[0]": {
+      "valueClass": "opaque"
+    },
+    "body.groups[69].qty": {
       "valueClass": "numeric"
     }
   },
   "body": {
-    "total_cards": 248,
+    "total_cards": 3569,
     "groups": [
       {
+        "cp": 2415,
+        "detail_id": 942,
+        "gold": false,
+        "foil": 0,
+        "bcx": 115,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 1
+      },
+      {
+        "cp": 2415,
+        "detail_id": 943,
+        "gold": false,
+        "foil": 0,
+        "bcx": 115,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 2
+      },
+      {
+        "cp": 2415,
+        "detail_id": 950,
+        "gold": false,
+        "foil": 0,
+        "bcx": 115,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 1
+      },
+      {
         "cp": 500,
-        "detail_id": 970,
+        "detail_id": 928,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 16
+      },
+      {
+        "cp": 500,
+        "detail_id": 929,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 7
+      },
+      {
+        "cp": 500,
+        "detail_id": 931,
         "gold": false,
         "foil": 0,
         "bcx": 1,
         "uids": [
-          "C2-970-Y1F7AUJUUO",
-          "C2-970-Y5W49DI0ZK"
+          "[redacted]"
+        ],
+        "qty": 11
+      },
+      {
+        "cp": 500,
+        "detail_id": 932,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 4
+      },
+      {
+        "cp": 500,
+        "detail_id": 935,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 10
+      },
+      {
+        "cp": 500,
+        "detail_id": 936,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
         ],
         "qty": 3
+      },
+      {
+        "cp": 500,
+        "detail_id": 939,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 8
+      },
+      {
+        "cp": 500,
+        "detail_id": 942,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 7
+      },
+      {
+        "cp": 500,
+        "detail_id": 943,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 3
+      },
+      {
+        "cp": 500,
+        "detail_id": 946,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 5
+      },
+      {
+        "cp": 500,
+        "detail_id": 949,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 18
+      },
+      {
+        "cp": 500,
+        "detail_id": 950,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 6
+      },
+      {
+        "cp": 500,
+        "detail_id": 952,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 1
+      },
+      {
+        "cp": 500,
+        "detail_id": 953,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 4
+      },
+      {
+        "cp": 500,
+        "detail_id": 956,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 7
+      },
+      {
+        "cp": 500,
+        "detail_id": 957,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 4
+      },
+      {
+        "cp": 500,
+        "detail_id": 959,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 6
+      },
+      {
+        "cp": 500,
+        "detail_id": 961,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 16
+      },
+      {
+        "cp": 500,
+        "detail_id": 963,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 1
+      },
+      {
+        "cp": 500,
+        "detail_id": 966,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 16
+      },
+      {
+        "cp": 500,
+        "detail_id": 969,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 14
       },
       {
         "cp": 500,
@@ -105,10 +1753,9 @@
         "foil": 0,
         "bcx": 1,
         "uids": [
-          "C20-979-4M6EKS2SF4",
-          "C20-979-5XW2YO12HC"
+          "[redacted]"
         ],
-        "qty": 45
+        "qty": 8
       },
       {
         "cp": 500,
@@ -117,10 +1764,493 @@
         "foil": 0,
         "bcx": 1,
         "uids": [
-          "C20-981-34FYK4LJLC",
-          "C20-981-54KE36BYPS"
+          "[redacted]"
         ],
-        "qty": 94
+        "qty": 4
+      },
+      {
+        "cp": 500,
+        "detail_id": 1039,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 6
+      },
+      {
+        "cp": 125,
+        "detail_id": 926,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 2
+      },
+      {
+        "cp": 125,
+        "detail_id": 927,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 17
+      },
+      {
+        "cp": 125,
+        "detail_id": 933,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 24
+      },
+      {
+        "cp": 125,
+        "detail_id": 934,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 12
+      },
+      {
+        "cp": 125,
+        "detail_id": 940,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 17
+      },
+      {
+        "cp": 125,
+        "detail_id": 947,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 14
+      },
+      {
+        "cp": 125,
+        "detail_id": 948,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 33
+      },
+      {
+        "cp": 125,
+        "detail_id": 954,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 8
+      },
+      {
+        "cp": 125,
+        "detail_id": 955,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 34
+      },
+      {
+        "cp": 125,
+        "detail_id": 964,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 4
+      },
+      {
+        "cp": 125,
+        "detail_id": 965,
+        "gold": true,
+        "foil": 1,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 16
+      },
+      {
+        "cp": 100,
+        "detail_id": 930,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 81
+      },
+      {
+        "cp": 100,
+        "detail_id": 937,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 95
+      },
+      {
+        "cp": 100,
+        "detail_id": 944,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 73
+      },
+      {
+        "cp": 100,
+        "detail_id": 951,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 78
+      },
+      {
+        "cp": 100,
+        "detail_id": 958,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 43
+      },
+      {
+        "cp": 100,
+        "detail_id": 962,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 72
+      },
+      {
+        "cp": 100,
+        "detail_id": 967,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 56
+      },
+      {
+        "cp": 20,
+        "detail_id": 928,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 95
+      },
+      {
+        "cp": 20,
+        "detail_id": 929,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 108
+      },
+      {
+        "cp": 20,
+        "detail_id": 935,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 41
+      },
+      {
+        "cp": 20,
+        "detail_id": 936,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 52
+      },
+      {
+        "cp": 20,
+        "detail_id": 942,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 34
+      },
+      {
+        "cp": 20,
+        "detail_id": 943,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 21
+      },
+      {
+        "cp": 20,
+        "detail_id": 949,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 29
+      },
+      {
+        "cp": 20,
+        "detail_id": 950,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 55
+      },
+      {
+        "cp": 20,
+        "detail_id": 956,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 18
+      },
+      {
+        "cp": 20,
+        "detail_id": 957,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 46
+      },
+      {
+        "cp": 20,
+        "detail_id": 961,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 70
+      },
+      {
+        "cp": 20,
+        "detail_id": 966,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 134
+      },
+      {
+        "cp": 20,
+        "detail_id": 969,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 62
+      },
+      {
+        "cp": 5,
+        "detail_id": 926,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 117
+      },
+      {
+        "cp": 5,
+        "detail_id": 927,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 170
+      },
+      {
+        "cp": 5,
+        "detail_id": 933,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 133
+      },
+      {
+        "cp": 5,
+        "detail_id": 934,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 95
+      },
+      {
+        "cp": 5,
+        "detail_id": 940,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 483
+      },
+      {
+        "cp": 5,
+        "detail_id": 941,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 162
+      },
+      {
+        "cp": 5,
+        "detail_id": 947,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 36
+      },
+      {
+        "cp": 5,
+        "detail_id": 948,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 175
+      },
+      {
+        "cp": 5,
+        "detail_id": 954,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 206
+      },
+      {
+        "cp": 5,
+        "detail_id": 955,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 98
+      },
+      {
+        "cp": 5,
+        "detail_id": 964,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 146
+      },
+      {
+        "cp": 5,
+        "detail_id": 965,
+        "gold": false,
+        "foil": 0,
+        "bcx": 1,
+        "uids": [
+          "[redacted]"
+        ],
+        "qty": 115
       }
     ]
   }

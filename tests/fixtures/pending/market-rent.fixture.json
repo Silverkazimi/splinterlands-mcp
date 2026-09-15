@@ -1,0 +1,123 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 2
+    }
+  },
+  "valueClasses": {
+    "body[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].level": {
+      "valueClass": "numeric"
+    },
+    "body[0].low_price_bcx": {
+      "valueClass": "numeric"
+    },
+    "body[0].low_price": {
+      "valueClass": "numeric"
+    },
+    "body[0].high_price": {
+      "valueClass": "numeric"
+    },
+    "body[0].mana": {
+      "valueClass": "numeric"
+    },
+    "body[0].season_qty": {
+      "valueClass": "numeric"
+    },
+    "body[0].daily_qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].level": {
+      "valueClass": "numeric"
+    },
+    "body[1].low_price_bcx": {
+      "valueClass": "numeric"
+    },
+    "body[1].low_price": {
+      "valueClass": "numeric"
+    },
+    "body[1].high_price": {
+      "valueClass": "numeric"
+    },
+    "body[1].mana": {
+      "valueClass": "numeric"
+    },
+    "body[1].season_qty": {
+      "valueClass": "numeric"
+    },
+    "body[1].daily_qty": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": [
+    {
+      "card_detail_id": 31,
+      "gold": false,
+      "foil": 0,
+      "edition": 0,
+      "qty": 2,
+      "level": 1,
+      "low_price_bcx": 0.5,
+      "low_price": 1,
+      "high_price": 1,
+      "mana": 4,
+      "season_qty": 2,
+      "daily_qty": 0
+    },
+    {
+      "card_detail_id": 891,
+      "gold": true,
+      "foil": 1,
+      "edition": 18,
+      "qty": 3,
+      "level": 2,
+      "low_price_bcx": 19,
+      "low_price": 19,
+      "high_price": 50,
+      "mana": 6,
+      "season_qty": 3,
+      "daily_qty": 0
+    }
+  ]
+}

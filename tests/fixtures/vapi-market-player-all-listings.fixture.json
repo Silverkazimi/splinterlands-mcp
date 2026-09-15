@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "sourceUrl": "https://vapi.splinterlands.com/market/player/all_listings",
-    "observedAt": "2026-09-12T13:53:29.885711+00:00",
-    "captureScope": "Up to three original list rows; activity additionally retains one observed sale row. Complete object response. No field values transformed.",
-    "additionalSchemaReview": "Reviewed boolean gold variants and public asset categories against the bounded 2026-09-14 positive-sample captures; existing body values retained."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -44,6 +42,9 @@
       "valueClass": "timestamp"
     },
     "body.data[0].updatedDate": {
+      "valueClass": "timestamp"
+    },
+    "body.data[0].closedDate": {
       "valueClass": "timestamp"
     },
     "body.data[0].assetName": {
@@ -91,6 +92,9 @@
     "body.data[1].updatedDate": {
       "valueClass": "timestamp"
     },
+    "body.data[1].closedDate": {
+      "valueClass": "timestamp"
+    },
     "body.data[1].assetName": {
       "valueClass": "enum",
       "allowedValues": [
@@ -136,6 +140,9 @@
     "body.data[2].updatedDate": {
       "valueClass": "timestamp"
     },
+    "body.data[2].closedDate": {
+      "valueClass": "timestamp"
+    },
     "body.data[2].assetName": {
       "valueClass": "enum",
       "allowedValues": [
@@ -144,65 +151,56 @@
         "PACKS",
         "SKINS"
       ]
-    },
-    "body.data[0].closedDate": {
-      "valueClass": "timestamp"
-    },
-    "body.data[1].closedDate": {
-      "valueClass": "timestamp"
-    },
-    "body.data[2].closedDate": {
-      "valueClass": "timestamp"
     }
   },
   "body": {
     "status": "success",
     "data": [
       {
-        "id": 1918272,
-        "listingId": 647013,
-        "assetId": 1,
+        "id": 2281498,
+        "listingId": 909826,
+        "assetId": 5,
         "status": 1,
-        "detailId": "RIFT",
-        "itemId": "RIFT",
+        "detailId": "294",
+        "itemId": "I-294-425c5672ffcf3c",
         "currency": "USD",
-        "listingPrice": 1.4,
-        "quantity": 2,
-        "quantityRemaining": 2,
-        "createdDate": "2025-06-28T12:04:33.000Z",
-        "updatedDate": "2025-06-28T12:04:33.000Z",
-        "closedDate": null,
-        "assetName": "PACKS"
-      },
-      {
-        "id": 2274449,
-        "listingId": 902860,
-        "assetId": 10,
-        "status": 1,
-        "detailId": "POLYMORPH",
-        "itemId": "POLYMORPH",
-        "currency": "USD",
-        "listingPrice": 0.16,
-        "quantity": 5,
-        "quantityRemaining": 5,
-        "createdDate": "2025-12-30T01:00:18.000Z",
-        "updatedDate": "2025-12-30T01:00:18.000Z",
-        "closedDate": null,
-        "assetName": "CONSUMABLES"
-      },
-      {
-        "id": 2274452,
-        "listingId": 902863,
-        "assetId": 12,
-        "status": 1,
-        "detailId": "1",
-        "itemId": "1",
-        "currency": "USD",
-        "listingPrice": 14,
+        "listingPrice": 150,
         "quantity": 1,
         "quantityRemaining": 1,
-        "createdDate": "2025-12-30T01:01:57.000Z",
-        "updatedDate": "2025-12-30T01:01:57.000Z",
+        "createdDate": "2026-01-02T17:30:03.000Z",
+        "updatedDate": "2026-01-02T17:30:03.000Z",
+        "closedDate": null,
+        "assetName": "DEEDS"
+      },
+      {
+        "id": 2684221,
+        "listingId": 1289839,
+        "assetId": 12,
+        "status": 1,
+        "detailId": "403",
+        "itemId": "403",
+        "currency": "USD",
+        "listingPrice": 49,
+        "quantity": 1,
+        "quantityRemaining": 1,
+        "createdDate": "2026-08-19T15:12:30.000Z",
+        "updatedDate": "2026-08-19T15:12:30.000Z",
+        "closedDate": null,
+        "assetName": "SKINS"
+      },
+      {
+        "id": 2684222,
+        "listingId": 1289840,
+        "assetId": 12,
+        "status": 1,
+        "detailId": "438",
+        "itemId": "438",
+        "currency": "USD",
+        "listingPrice": 49,
+        "quantity": 1,
+        "quantityRemaining": 1,
+        "createdDate": "2026-08-19T15:14:15.000Z",
+        "updatedDate": "2026-08-19T15:14:15.000Z",
         "closedDate": null,
         "assetName": "SKINS"
       }

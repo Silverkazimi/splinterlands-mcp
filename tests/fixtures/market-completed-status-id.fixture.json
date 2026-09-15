@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:33:57.822253+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/market/completed_status",
-    "captureScope": "First three root rows; nested records retained unchanged.",
-    "redaction": "Name-classified fields use synthetic account placeholders. Account references in reviewed fields and encoded records use consistent synthetic placeholders."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.id": {
@@ -129,48 +127,48 @@
     }
   },
   "body": {
-    "id": 190223839,
-    "sell_trx_id": "a309d0e018189bb84b319a3a2423bd5321797c17-0",
-    "seller": "sample-acct-100",
-    "created_date": "2026-09-06T09:59:54.000Z",
-    "type": "SELL",
+    "id": 190084010,
+    "sell_trx_id": "6787d15833a85b943cd2ec5c98866f522538c16d-3",
+    "seller": "sample-account-1",
+    "created_date": "2026-08-25T07:35:09.000Z",
+    "type": "[redacted]",
     "num_cards": 1,
-    "currency": "USD",
+    "currency": "[redacted]",
     "starting_price": null,
-    "buy_price": "1.999",
+    "buy_price": "[redacted]",
     "fee_percent": 600,
-    "expiration_date": "2026-10-06T09:59:54.000Z",
+    "expiration_date": "2026-09-24T07:35:09.000Z",
     "status": 1,
-    "purchaser": "sample-acct-093",
-    "completed_date": "2026-09-07T17:06:54.000Z",
-    "payment": "5464.735 DEC",
-    "transaction_id": "4f73ac91fe4336b7b6aaf3cdd17c3a868151cff2",
+    "purchaser": "sample-account-2",
+    "completed_date": "2026-08-26T19:11:45.000Z",
+    "payment": "[redacted]",
+    "transaction_id": "8036aed3e8cf3bf13c0551a34418d3372e0458ee",
     "lock_block": null,
     "locked_by": null,
     "desc": null,
-    "created_block_num": 109674183,
+    "created_block_num": 109326661,
     "updated_price": null,
     "rental_type": null,
-    "card_id": "C19-866-HMPZYWRINK",
-    "card_detail_id": 866,
+    "card_id": "C18-880-A5LJPTHHM8",
+    "card_detail_id": 880,
     "xp": 1,
     "gold": false,
-    "edition": 19,
+    "edition": 18,
     "alpha_xp": null,
-    "bcx": "1.000",
-    "price_bcx": "1.999",
-    "power": 5,
+    "bcx": "[redacted]",
+    "price_bcx": "[redacted]",
+    "power": 20,
     "rental_season_id": null,
     "foil": 0,
     "cards": [
       {
-        "uid": "C19-866-HMPZYWRINK",
-        "card_detail_id": 866,
-        "player": "sample-acct-095",
+        "uid": "[redacted]",
+        "card_detail_id": 880,
+        "player": "sample-account-2",
         "xp": 1,
         "gold": false,
         "foil": 0,
-        "edition": 19
+        "edition": 18
       }
     ]
   }

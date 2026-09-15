@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-14",
-    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
-    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].card_id": {
@@ -1102,7 +1101,7 @@
   "body": [
     {
       "card_id": "G3-244-C3GK9ODI8W",
-      "transfer_date": "2026-09-14T10:15:03.913Z",
+      "transfer_date": "2026-09-15T11:12:34.448Z",
       "transfer_type": "current",
       "transfer_tx": "",
       "from_player": "sample-account-1",

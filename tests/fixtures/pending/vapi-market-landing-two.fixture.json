@@ -1,0 +1,465 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 7
+    }
+  },
+  "valueClasses": {
+    "body.status": {
+      "valueClass": "enum"
+    },
+    "body.data.assets[0].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[0].numOwned": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[0].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[0].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[0].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[1].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[1].numOwned": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[1].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[1].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[1].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[2].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[2].numOwned": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[2].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[2].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[2].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[3].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[3].numOwned": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[3].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[3].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[3].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[4].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[4].numOwned": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[4].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[4].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[4].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[5].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[5].numOwned": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[5].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[5].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[5].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[6].assetName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].assetDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].detailId": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].detailName": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].detailImage": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].detailIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].detailFilterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].detailDescription": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].detailGroup": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].numCirculation": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[6].numOwned": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[6].numListed": {
+      "valueClass": "numeric"
+    },
+    "body.data.assets[6].prices[0].currency": {
+      "valueClass": "opaque"
+    },
+    "body.data.assets[6].prices[0].minPrice": {
+      "valueClass": "numeric"
+    },
+    "body.data.total": {
+      "valueClass": "numeric"
+    },
+    "body.data.usdVolume24hr": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "status": "success",
+    "data": {
+      "assets": [
+        {
+          "assetName": "[redacted]",
+          "assetDescription": "[redacted]",
+          "detailId": "[redacted]",
+          "detailName": "[redacted]",
+          "detailImage": "[redacted]",
+          "detailIcon": null,
+          "detailFilterIcon": "[redacted]",
+          "detailDescription": "[redacted]",
+          "detailGroup": "[redacted]",
+          "numCirculation": 5692,
+          "numOwned": 0,
+          "numListed": 55,
+          "prices": [
+            {
+              "currency": "[redacted]",
+              "minPrice": 13.99
+            }
+          ]
+        },
+        {
+          "assetName": "[redacted]",
+          "assetDescription": "[redacted]",
+          "detailId": "[redacted]",
+          "detailName": "[redacted]",
+          "detailImage": "[redacted]",
+          "detailIcon": null,
+          "detailFilterIcon": "[redacted]",
+          "detailDescription": "[redacted]",
+          "detailGroup": "[redacted]",
+          "numCirculation": 20167,
+          "numOwned": 0,
+          "numListed": 1010,
+          "prices": [
+            {
+              "currency": "[redacted]",
+              "minPrice": 6.88
+            }
+          ]
+        },
+        {
+          "assetName": "[redacted]",
+          "assetDescription": "[redacted]",
+          "detailId": "[redacted]",
+          "detailName": "[redacted]",
+          "detailImage": "[redacted]",
+          "detailIcon": null,
+          "detailFilterIcon": "[redacted]",
+          "detailDescription": "[redacted]",
+          "detailGroup": "[redacted]",
+          "numCirculation": 5744,
+          "numOwned": 0,
+          "numListed": 464,
+          "prices": [
+            {
+              "currency": "[redacted]",
+              "minPrice": 4.689
+            }
+          ]
+        },
+        {
+          "assetName": "[redacted]",
+          "assetDescription": "[redacted]",
+          "detailId": "[redacted]",
+          "detailName": "[redacted]",
+          "detailImage": "[redacted]",
+          "detailIcon": null,
+          "detailFilterIcon": "[redacted]",
+          "detailDescription": "[redacted]",
+          "detailGroup": "[redacted]",
+          "numCirculation": 40985,
+          "numOwned": 0,
+          "numListed": 1196,
+          "prices": [
+            {
+              "currency": "[redacted]",
+              "minPrice": 2.88
+            }
+          ]
+        },
+        {
+          "assetName": "[redacted]",
+          "assetDescription": "[redacted]",
+          "detailId": "[redacted]",
+          "detailName": "[redacted]",
+          "detailImage": "[redacted]",
+          "detailIcon": null,
+          "detailFilterIcon": "[redacted]",
+          "detailDescription": "[redacted]",
+          "detailGroup": "[redacted]",
+          "numCirculation": 5249,
+          "numOwned": 0,
+          "numListed": 758,
+          "prices": [
+            {
+              "currency": "[redacted]",
+              "minPrice": 2.97
+            }
+          ]
+        },
+        {
+          "assetName": "[redacted]",
+          "assetDescription": "[redacted]",
+          "detailId": "[redacted]",
+          "detailName": "[redacted]",
+          "detailImage": "[redacted]",
+          "detailIcon": null,
+          "detailFilterIcon": "[redacted]",
+          "detailDescription": "[redacted]",
+          "detailGroup": "[redacted]",
+          "numCirculation": 4103317,
+          "numOwned": 0,
+          "numListed": 23557,
+          "prices": [
+            {
+              "currency": "[redacted]",
+              "minPrice": 0.395
+            }
+          ]
+        },
+        {
+          "assetName": "[redacted]",
+          "assetDescription": "[redacted]",
+          "detailId": "[redacted]",
+          "detailName": "[redacted]",
+          "detailImage": "[redacted]",
+          "detailIcon": null,
+          "detailFilterIcon": "[redacted]",
+          "detailDescription": "[redacted]",
+          "detailGroup": "[redacted]",
+          "numCirculation": -777841,
+          "numOwned": 0,
+          "numListed": 2315,
+          "prices": [
+            {
+              "currency": "[redacted]",
+              "minPrice": 0.599
+            }
+          ]
+        }
+      ],
+      "total": 428452,
+      "usdVolume24hr": 2223.271
+    }
+  }
+}
