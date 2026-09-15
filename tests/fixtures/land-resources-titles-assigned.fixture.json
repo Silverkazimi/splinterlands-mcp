@@ -2,7 +2,11 @@
   "provenance": {
     "source": "live-observation",
     "observedAt": "2026-09-08T00:00:00Z",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 1
+    }
   },
   "valueClasses": {
     "status": {

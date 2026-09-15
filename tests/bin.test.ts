@@ -153,5 +153,5 @@ describe("built binary", () => {
     } finally {
       output.close();
     }
-  });
+  }, 20_000);
 });

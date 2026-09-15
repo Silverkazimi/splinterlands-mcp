@@ -4,7 +4,11 @@
     "observedAt": "2026-09-12T08:10:19.146646+00:00",
     "sourceUrl": "https://api.splinterlands.com/players/burn_event_full_leaderboard",
     "captureScope": "First three list rows; other object fields retained without transformation.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    }
   },
   "valueClasses": {
     "body.leaderboard[0].rank": {

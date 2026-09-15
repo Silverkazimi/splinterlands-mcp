@@ -3,7 +3,7 @@ import { sampleFixtureBody } from "./fixture-sample.js";
 import { MAX_FIXTURE_BYTES } from "./fixture-limits.js";
 import { avatarFixtureBody } from "./avatar-fixture.js";
 import { accountParameterNames } from "./configuration.js";
-import { fixtureIsEmpty, sampleIsEmpty, verifiedSample } from "./sample-state.js";
+import { fixtureIsEmpty, sampleIsEmpty, verifiedSample, isTransientQueue } from "./sample-state.js";
 import { bindSweepInputs, createSweepRequester } from "./request.js";
 import { sanitizeFixture } from "./sanitize-fixture.js";
 import { planFixtureRenewal, type FixtureRenewalPair, RENEWAL_HOLD_FLOOR } from "./renewal.js";
@@ -38,6 +38,7 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
   const failed: Array<{ fixturePath: string; reason: "response" | "review" }> = [];
   const pairs: FixtureRenewalPair[] = [];
   const coverageGaps: Array<{ fixturePath: string; entryId: string; reason: "empty_sample" | "populated_sample" }> = [];
+  const transientSamples: Array<{ fixturePath: string; entryId: string; reason: "idle_queue" }> = [];
   const blocked = new Set<string>();
   let reads = 0;
   for (const [index, input] of inputs.entries()) {
@@ -57,6 +58,10 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
       continue;
     }
     const empty = sampleIsEmpty(input.entryId, outcome.body, input.variantKey);
+    if (empty && isTransientQueue(input.entryId)) {
+      transientSamples.push({ fixturePath: input.fixturePath, entryId: input.entryId, reason: "idle_queue" });
+      continue;
+    }
     if (accountParameterNames(input.entryId).size > 0 && empty !== fixtureIsEmpty(input.existing, input.entryId, input.variantKey)
       && verifiedSample(input.entryId, outcome.body, input.variantKey)) {
       coverageGaps.push({ fixturePath: input.fixturePath, entryId: input.entryId,
@@ -102,6 +107,7 @@ export async function recaptureFixtures(inputs: RecaptureInput[],
   const aborted = blocked.size >= 2;
   const blockedByHoldFloor = aborted || holdFraction > RENEWAL_HOLD_FLOOR;
   return {
+    transientSamples,
     plan: { ...plan, holdFraction, blockedByHoldFloor,
       writes: blockedByHoldFloor ? [] : plan.decisions.filter(decision => decision.outcome === "refresh")
         .map(decision => ({ path: decision.fixturePath, contents: JSON.stringify(decision.recaptured, null, 2) + "\n" })),

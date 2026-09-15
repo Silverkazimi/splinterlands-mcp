@@ -2,7 +2,11 @@
   "provenance": {
     "source": "live-observation",
     "observedAt": "2026-09-07T00:00:00Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 2
+    }
   },
   "valueClasses": {
     "status": {

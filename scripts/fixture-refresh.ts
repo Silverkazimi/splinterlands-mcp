@@ -46,7 +46,7 @@ async function main() {
   const report = {
     reads: result.reads, configured: result.total, ...coverage,
     aborted: result.aborted, holdFraction: result.plan.holdFraction,
-    held: result.plan.blockedByHoldFloor, failed: result.failed, sampleCoverage: result.coverageGaps,
+    held: result.plan.blockedByHoldFloor, failed: result.failed, sampleCoverage: result.coverageGaps, transientSamples: result.transientSamples,
     refreshes: result.plan.writes.length, pending: result.plan.pendingWrites.length,
   };
   console.log(JSON.stringify(report));

@@ -3,7 +3,11 @@
     "source": "live-observation",
     "observedAt": "2026-09-14",
     "redaction": "Names are synthetic; free text and opaque strings are redacted.",
-    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response."
+    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 7
+    }
   },
   "valueClasses": {
     "body.status": {

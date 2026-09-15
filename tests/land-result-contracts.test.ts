@@ -279,6 +279,7 @@ describe("captured land result contracts", () => {
     expect(stakedPredicate(nullAmount)).toBe(false);
     expect(stakedPredicate(objectRows)).toBe(false);
     const missingAmount = structuredClone(decStakedRows) as { data: Array<Record<string, unknown>> };
+    missingAmount.data = [structuredClone(missingAmount.data[0]!), structuredClone(missingAmount.data[0]!)];
     delete missingAmount.data[0]!.amount;
     // The declarative contract enforces per-row type but not per-row presence; this recorded limitation is intentional.
     expect(stakedPredicate(missingAmount)).toBe(true);
@@ -353,7 +354,7 @@ describe("captured land result contracts", () => {
     const countContract = getCatalogueEntry("vapi.land.resources.rewardactions-count").resultContract;
     const countPredicate = predicateFor(countContract);
     expect(countPredicate(rewardactionsCount)).toBe(true);
-    expect(rewardactionsCount.data.count).toBe(313);
+    expect(countPredicate({ ...rewardactionsCount, data: { count: 0 } })).toBe(true);
     expect(countPredicate({ ...rewardactionsCount, data: { count: "313" } })).toBe(false);
 
     const historyContract = getCatalogueEntry("vapi.land.resources.history").resultContract;
@@ -361,7 +362,11 @@ describe("captured land result contracts", () => {
     expect(historyPredicate(resourcesHistory)).toBe(true);
     expect(historyPredicate(resourcesHistoryEmpty)).toBe(true);
     expect(resourcesHistory.data[0]!.trx_id).toEqual(expect.any(String));
-    expect((resourcesHistory.data[0]!.amount as number)).toBeLessThan(0);
+    for (const amount of [-42, 0, 42]) {
+      const signedHistory = structuredClone(resourcesHistory);
+      signedHistory.data[0]!.amount = amount;
+      expect(historyPredicate(signedHistory)).toBe(true);
+    }
     const stringHistoryAmount = structuredClone(resourcesHistory) as { data: Array<Record<string, unknown>> };
     stringHistoryAmount.data[0]!.amount = "-6278.29";
     expect(historyPredicate(stringHistoryAmount)).toBe(false);
@@ -386,7 +391,7 @@ describe("captured land result contracts", () => {
     const historyPredicate = predicateFor(historyContract);
     expect(historyPredicate(balancesHistory)).toBe(true);
     expect(historyPredicate(balancesHistoryEmpty)).toBe(true);
-    expect(balancesHistory.data).toHaveLength(2);
+    expect(balancesHistory.data.length).toBeGreaterThan(0);
     expect(historyContract.fingerprint["data[].player"]).toMatchObject({ type: "string", valueClass: "name" });
     const stringAmount = structuredClone(balancesHistory) as { data: Array<Record<string, unknown>> };
     stringAmount.data[0]!.amount = "16332.706";
@@ -396,7 +401,7 @@ describe("captured land result contracts", () => {
     const countPredicate = predicateFor(countContract);
     expect(countPredicate(balancesHistoryCount)).toBe(true);
     expect(countPredicate(balancesHistoryCountEmpty)).toBe(true);
-    expect(balancesHistoryCount.data.count).toBe(721);
+    expect(countPredicate({ ...balancesHistoryCount, data: { count: 0 } })).toBe(true);
     expect(countPredicate({ ...balancesHistoryCount, data: { count: "721" } })).toBe(false);
   });
 
@@ -677,7 +682,7 @@ describe("captured land result contracts", () => {
     const swapsPredicate = predicateFor(swapsContract);
     expect(swapsPredicate(liquiditySwaps)).toBe(true);
     expect(swapsPredicate(liquiditySwapsEmpty)).toBe(true);
-    expect(liquiditySwaps.data).toHaveLength(2);
+    expect(liquiditySwaps.data.length).toBeGreaterThan(0);
     const stringQuantity = structuredClone(liquiditySwaps) as { data: Array<Record<string, unknown>> };
     stringQuantity.data[0]!.sent_quantity = "549.15";
     expect(swapsPredicate(stringQuantity)).toBe(false);

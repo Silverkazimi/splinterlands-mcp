@@ -30,3 +30,7 @@ export function fixtureIsEmpty(fixture: Record<string, unknown>, entryId?: strin
   const body = Object.keys(data).length === 1 && Object.hasOwn(data, "body") ? data.body : data;
   return entryId === undefined ? isEmptyResult(body) : sampleIsEmpty(entryId, body, variantKey);
 }
+
+export function isTransientQueue(entryId: string): boolean {
+  return entryId === "api.battle.battle-queue";
+}

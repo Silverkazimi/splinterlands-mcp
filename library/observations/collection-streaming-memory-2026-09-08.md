@@ -56,6 +56,4 @@ the global 2 MB (2 MiB) response cap remains unchanged for other routes. The
 fixture is a deliberately trimmed two-card contract sample, not a
 representation of the 155 MiB response. The 90.71 MiB production-path heap
 figure multiplied by 1.25 is 113.3875 MiB; the 128 MiB guard is intentionally
-wider to allow operational slack for GC timing. The server remains version
-0.0.0 with no remote delivery path, and no account name is embedded in the
-server source.
+wider to allow operational slack for GC timing. At the time of this observation, the server was version 0.0.0 with no remote delivery path. No account name was embedded in the server source.

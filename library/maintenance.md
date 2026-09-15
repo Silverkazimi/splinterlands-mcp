@@ -117,3 +117,13 @@ The generated baseline retains exact shape identifiers for validated fixture res
 This does not suppress authentication or HTTP failures, invalid responses, or sample-coverage gaps. Unreviewed field additions, removals and type changes remain reportable. Regenerate the baseline after reviewing fixture changes; do not add shape identifiers solely to silence an alert.
 
 For sampled fixtures, reviewedResponseShapes records an independently reviewed full-response shape, bound to the current fixture shape and invalidated when it changes. Nightly still compares the full upstream response.
+
+### Transient battle queues
+
+A successfully validated empty battle queue is a normal idle state. Nightly and monthly reports list it under transientSamples with reason idle_queue. Monthly maintenance preserves the previously reviewed populated fixture and does not replace it with an empty array. This run proves the empty-state contract only; populated-state acceptance needs a separately captured active battle, such as the verified 2026-09-15 observation. Malformed responses, changed populated shapes, request failures and other account-sample gaps remain actionable. This exception is limited to the battle queue; it does not apply to holdings, rentals or Land.
+
+### Bounded renewal samples
+
+Fixtures with an explicit first-row sample retain their recorded row bound during renewal. The complete incoming response is validated before selecting rows, and envelope totals and selectors are preserved. Asset-category selectors retain their reviewed enum values rather than being redacted as prose. Separate live rental pages are not an atomic snapshot: tests verify selector forwarding and preservation of each response, not permanent cross-page identities. Numeric counts and signed balance changes are validated by contract, not fixed to a historical account balance.
+
+Leading-row fixture samples also have a 128 KiB body budget, below the MCP output limit. Sampling retains complete rows in order and holds the capture if its first complete row cannot fit; it never trims the contents of a market bundle.

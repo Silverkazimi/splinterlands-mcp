@@ -1,4 +1,4 @@
-import { sampleIsEmpty, verifiedSample } from "./sample-state.js";
+import { sampleIsEmpty, verifiedSample, isTransientQueue } from "./sample-state.js";
 import { accountParameterNames } from "./configuration.js";
 import { getCatalogueEntry } from "../../src/catalogue/index.js";
 import { TOOL_ENTRY_IDS } from "../../src/server.js";
@@ -30,8 +30,10 @@ export async function runNightly(
   const plan = planDriftIssues(baseline, run);
   const observed = new Set(run.observations.map(item => item.entryId));
   const coverage = {
+    transientSamples: run.observations.filter(item => isTransientQueue(item.entryId) && item.reason === "empty_result")
+      .map(item => ({ entryId: item.entryId, reason: "idle_queue" as const })),
     sampleCoverage: run.observations.filter(item => accountParameterNames(item.entryId).size > 0
-      && ((item.reason === "empty_result" && !expectedEmpty.has(item.entryId))
+      && ((item.reason === "empty_result" && !expectedEmpty.has(item.entryId) && !isTransientQueue(item.entryId))
         || (item.shapeCompared && expectedEmpty.has(item.entryId))))
       .map(item => ({ entryId: item.entryId, reason: item.reason === "empty_result" ? "empty_sample" : "populated_sample" })),
     callable: expected.length,

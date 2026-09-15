@@ -4,7 +4,19 @@
     "observedAt": "2026-09-13T11:16:54.595892+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/delegation/outgoing/{player}",
     "captureScope": "Complete bounded public response; participants discovered from public rental/delegation data.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "redaction": "Name-classified fields use synthetic account placeholders.",
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "2cb8b5be556c753aefede78d30f0f62adf70591367476c351918a53394180305",
+        "responseShape": "c11a3de9ed3cbd854f5710a44eb9ee68de537c67a842c858eeb83afd01c40aca"
+      }
+    ],
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "2cb8b5be556c753aefede78d30f0f62adf70591367476c351918a53394180305",
+        "alternateShape": "c11a3de9ed3cbd854f5710a44eb9ee68de537c67a842c858eeb83afd01c40aca"
+      }
+    ]
   },
   "valueClasses": {
     "body.status": {

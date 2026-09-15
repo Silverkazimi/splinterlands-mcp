@@ -10,7 +10,7 @@
       "valueClass": "enum"
     },
     "body.data.assetName": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.description": {
       "valueClass": "opaque"

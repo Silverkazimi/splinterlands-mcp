@@ -4,14 +4,18 @@
     "observedAt": "2026-09-12T09:48:20.873295+00:00",
     "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/SKINS",
     "captureScope": "First three list records; all fields within retained records and independent summary fields preserved.",
-    "additionalSchemaReview": "Added one redacted SKINS detail from the bounded 2026-09-14 official capture to cover a null card tier; prior example rows retained."
+    "additionalSchemaReview": "Added one redacted SKINS detail from the bounded 2026-09-14 official capture to cover a null card tier; prior example rows retained.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 4
+    }
   },
   "valueClasses": {
     "body.status": {
       "valueClass": "enum"
     },
     "body.data.assetName": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.description": {
       "valueClass": "opaque"
