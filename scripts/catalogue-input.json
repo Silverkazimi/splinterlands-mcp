@@ -11666,7 +11666,8 @@
         },
         "[].opponent_team_hash": {
           "type": "string",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "[].player": {
           "type": "string",
@@ -11674,11 +11675,13 @@
         },
         "[].reveal_block_id": {
           "type": "string",
-          "valueClass": "id"
+          "valueClass": "id",
+          "nullable": true
         },
         "[].reveal_tx": {
           "type": "string",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "[].settings": {
           "type": "string",
@@ -11690,7 +11693,8 @@
         },
         "[].submit_date": {
           "type": "string",
-          "valueClass": "timestamp"
+          "valueClass": "timestamp",
+          "nullable": true
         },
         "[].submit_expiration_block_num": {
           "type": "number",
@@ -11702,7 +11706,8 @@
         },
         "[].team_hash": {
           "type": "string",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         }
       },
       "requiredKeyPaths": [
@@ -11712,7 +11717,7 @@
       ],
       "predicateId": "array.empty-or-captured"
     },
-    "notes": "Read the existing battle queue records for an explicit username. This does not join a queue or submit a team. Captured queue fields such as mana_cap and team may be null even when status returns fuller data. Settings and team values retain their JSON-encoded string wire types. Captured unauthenticated 2026-09-12; see library/observations/battles-2026-09-12.md.",
+    "notes": "Read the existing battle queue records for an explicit username. This does not join a queue or submit a team. Captured queue fields such as mana_cap and team may be null even when status returns fuller data. Settings and team values retain their JSON-encoded string wire types. Captured unauthenticated 2026-09-12; see library/observations/battles-2026-09-12.md. Captured active queue state on 2026-09-15 also permits null opponent_team_hash, reveal_block_id, reveal_tx, submit_date and team_hash before submission or reveal.",
     "provenance": {
       "source": "live-observation",
       "sourceUrl": "https://api2.splinterlands.com/battle/battle_queue",
