@@ -3,7 +3,7 @@
     "source": "live-observation",
     "observedAt": "2026-09-08T00:00:00Z",
     "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained. Name-classified fields use synthetic account placeholders.",
-    "additionalSchemaReview": "Reviewed AURA token in the bounded 2026-09-14 resource-history capture. Counterparty strings are synthetic names rather than a closed enum.",
+    "additionalSchemaReview": "Reviewed AURA and IRON tokens in bounded resource-history captures. Counterparty strings are synthetic names rather than a closed enum.",
     "reviewedAlternateShapes": [
       {
         "baselineShape": "d09f62e042216173883a532d66828b78f249d389ca93d72154643adec00adbcb",
@@ -58,6 +58,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -95,6 +96,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -132,6 +134,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -169,6 +172,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -206,6 +210,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -243,6 +248,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -280,6 +286,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -317,6 +324,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -387,6 +395,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -424,6 +433,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -461,6 +471,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -498,6 +509,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -535,6 +547,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -572,6 +585,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -609,6 +623,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
@@ -646,6 +661,7 @@
       "valueClass": "enum",
       "allowedValues": [
         "AURA",
+        "IRON",
         "WOOD"
       ]
     },
