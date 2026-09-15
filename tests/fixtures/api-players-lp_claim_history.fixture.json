@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T07:47:55.995773+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/lp_claim_history",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].claim_tx": {
@@ -46,20 +44,20 @@
   },
   "body": [
     {
-      "claim_tx": "216a3be37df20e5f4058e91f78db9ffafe5edd0e",
-      "address": "sample-acct-100",
-      "player": "sample-acct-100",
-      "claim_date": "2025-04-13T11:45:47.792Z",
+      "claim_tx": "0d3af34ae4ae99ecc71bac74e3bb33f4eb717a5d",
+      "address": "sample-account-1",
+      "player": "sample-account-1",
+      "claim_date": "2023-12-22T17:24:48.387Z",
       "token": "SPS",
-      "qty": "7208.779"
+      "qty": "[redacted]"
     },
     {
-      "claim_tx": "b2de6c399738868b6a06f8f886b6d00e781d6311",
-      "address": "sample-acct-100",
-      "player": "sample-acct-100",
-      "claim_date": "2025-04-13T11:45:47.028Z",
+      "claim_tx": "95f251b0bbcc7dd6fd8bc164d0eaac614653a203",
+      "address": "sample-account-1",
+      "player": "sample-account-1",
+      "claim_date": "2023-02-22T15:21:28.918Z",
       "token": "SPS",
-      "qty": "720.877"
+      "qty": "[redacted]"
     }
   ]
 }

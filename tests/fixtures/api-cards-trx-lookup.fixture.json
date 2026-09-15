@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T00:00:00Z"
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "trx_info.id": {
@@ -49,17 +50,17 @@
     }
   },
   "trx_info": {
-    "id": "fixture-trx",
-    "block_id": "fixture-block",
-    "prev_block_id": "fixture-prev",
-    "type": "market_purchase",
-    "player": "fixture_account",
-    "data": "{}",
+    "id": "958fd82d65a0af6a71db0f61981cfb82847160bc",
+    "block_id": "068c923416de7110381448789aee025fcada3b41",
+    "prev_block_id": "068c92339a852c06cf0a3de50b2e1290df62ab47",
+    "type": "gift_cards",
+    "player": "sample-account-1",
+    "data": "[redacted]",
     "success": true,
     "error": null,
-    "block_num": 1,
-    "created_date": "2026-09-08T00:00:00.000Z",
-    "result": "{}",
+    "block_num": 109875764,
+    "created_date": "2026-09-13T10:23:57.000Z",
+    "result": "[redacted]",
     "steem_price": null,
     "sbd_price": null
   }

@@ -1,10 +1,23 @@
 {
-  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
+  },
   "valueClasses": {
-    "status": { "valueClass": "enum" },
-    "data.resource_amount": { "valueClass": "numeric" },
-    "data.dec_amount": { "valueClass": "numeric" }
+    "status": {
+      "valueClass": "enum"
+    },
+    "data.resource_amount": {
+      "valueClass": "numeric"
+    },
+    "data.dec_amount": {
+      "valueClass": "numeric"
+    }
   },
   "status": "success",
-  "data": { "resource_amount": 12144.988, "dec_amount": 100 }
+  "data": {
+    "resource_amount": 12243.354,
+    "dec_amount": 100
+  }
 }

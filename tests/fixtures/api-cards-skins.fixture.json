@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T00:00:00Z"
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].card_detail_id": {
@@ -23,9 +24,6 @@
     "body[0].cost": {
       "valueClass": "numeric"
     },
-    "body[0].set_cost": {
-      "valueClass": "numeric"
-    },
     "body[0].set": {
       "valueClass": "enum",
       "allowedValues": [
@@ -35,17 +33,3013 @@
         "All Legendaries",
         "All Rares"
       ]
+    },
+    "body[0].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[1].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[1].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[1].total": {
+      "valueClass": "numeric"
+    },
+    "body[1].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[1].cost": {
+      "valueClass": "numeric"
+    },
+    "body[1].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[1].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[2].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[2].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[2].total": {
+      "valueClass": "numeric"
+    },
+    "body[2].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[2].cost": {
+      "valueClass": "numeric"
+    },
+    "body[2].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[2].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[3].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[3].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[3].total": {
+      "valueClass": "numeric"
+    },
+    "body[3].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[3].cost": {
+      "valueClass": "numeric"
+    },
+    "body[3].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[3].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[4].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[4].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[4].total": {
+      "valueClass": "numeric"
+    },
+    "body[4].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[4].cost": {
+      "valueClass": "numeric"
+    },
+    "body[4].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[4].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[5].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[5].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[5].total": {
+      "valueClass": "numeric"
+    },
+    "body[5].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[5].cost": {
+      "valueClass": "numeric"
+    },
+    "body[5].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[5].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[6].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[6].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[6].total": {
+      "valueClass": "numeric"
+    },
+    "body[6].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[6].cost": {
+      "valueClass": "numeric"
+    },
+    "body[6].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[6].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[7].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[7].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[7].total": {
+      "valueClass": "numeric"
+    },
+    "body[7].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[7].cost": {
+      "valueClass": "numeric"
+    },
+    "body[7].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[7].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[8].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[8].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[8].total": {
+      "valueClass": "numeric"
+    },
+    "body[8].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[8].cost": {
+      "valueClass": "numeric"
+    },
+    "body[8].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[8].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[9].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[9].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[9].total": {
+      "valueClass": "numeric"
+    },
+    "body[9].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[9].cost": {
+      "valueClass": "numeric"
+    },
+    "body[9].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[9].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[10].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[10].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[10].total": {
+      "valueClass": "numeric"
+    },
+    "body[10].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[10].cost": {
+      "valueClass": "numeric"
+    },
+    "body[10].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[10].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[11].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[11].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[11].total": {
+      "valueClass": "numeric"
+    },
+    "body[11].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[11].cost": {
+      "valueClass": "numeric"
+    },
+    "body[11].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[11].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[12].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[12].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[12].total": {
+      "valueClass": "numeric"
+    },
+    "body[12].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[12].cost": {
+      "valueClass": "numeric"
+    },
+    "body[12].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[12].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[13].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[13].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[13].total": {
+      "valueClass": "numeric"
+    },
+    "body[13].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[13].cost": {
+      "valueClass": "numeric"
+    },
+    "body[13].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[13].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[14].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[14].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[14].total": {
+      "valueClass": "numeric"
+    },
+    "body[14].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[14].cost": {
+      "valueClass": "numeric"
+    },
+    "body[14].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[14].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[15].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[15].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[15].total": {
+      "valueClass": "numeric"
+    },
+    "body[15].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[15].cost": {
+      "valueClass": "numeric"
+    },
+    "body[15].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[15].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[16].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[16].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[16].total": {
+      "valueClass": "numeric"
+    },
+    "body[16].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[16].cost": {
+      "valueClass": "numeric"
+    },
+    "body[16].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[16].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[17].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[17].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[17].total": {
+      "valueClass": "numeric"
+    },
+    "body[17].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[17].cost": {
+      "valueClass": "numeric"
+    },
+    "body[17].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[17].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[18].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[18].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[18].total": {
+      "valueClass": "numeric"
+    },
+    "body[18].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[18].cost": {
+      "valueClass": "numeric"
+    },
+    "body[18].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[18].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[19].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[19].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[19].total": {
+      "valueClass": "numeric"
+    },
+    "body[19].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[19].cost": {
+      "valueClass": "numeric"
+    },
+    "body[19].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[19].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[20].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[20].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[20].total": {
+      "valueClass": "numeric"
+    },
+    "body[20].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[20].cost": {
+      "valueClass": "numeric"
+    },
+    "body[20].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[20].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[21].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[21].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[21].total": {
+      "valueClass": "numeric"
+    },
+    "body[21].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[21].cost": {
+      "valueClass": "numeric"
+    },
+    "body[21].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[21].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[22].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[22].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[22].total": {
+      "valueClass": "numeric"
+    },
+    "body[22].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[22].cost": {
+      "valueClass": "numeric"
+    },
+    "body[22].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[22].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[23].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[23].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[23].total": {
+      "valueClass": "numeric"
+    },
+    "body[23].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[23].cost": {
+      "valueClass": "numeric"
+    },
+    "body[23].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[23].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[24].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[24].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[24].total": {
+      "valueClass": "numeric"
+    },
+    "body[24].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[24].cost": {
+      "valueClass": "numeric"
+    },
+    "body[24].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[24].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[25].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[25].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[25].total": {
+      "valueClass": "numeric"
+    },
+    "body[25].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[25].cost": {
+      "valueClass": "numeric"
+    },
+    "body[25].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[25].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[26].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[26].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[26].total": {
+      "valueClass": "numeric"
+    },
+    "body[26].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[26].cost": {
+      "valueClass": "numeric"
+    },
+    "body[26].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[26].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[27].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[27].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[27].total": {
+      "valueClass": "numeric"
+    },
+    "body[27].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[27].cost": {
+      "valueClass": "numeric"
+    },
+    "body[27].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[27].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[28].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[28].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[28].total": {
+      "valueClass": "numeric"
+    },
+    "body[28].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[28].cost": {
+      "valueClass": "numeric"
+    },
+    "body[28].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[28].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[29].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[29].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[29].total": {
+      "valueClass": "numeric"
+    },
+    "body[29].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[29].cost": {
+      "valueClass": "numeric"
+    },
+    "body[29].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[29].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[30].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[30].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[30].total": {
+      "valueClass": "numeric"
+    },
+    "body[30].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[30].cost": {
+      "valueClass": "numeric"
+    },
+    "body[30].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[30].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[31].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[31].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[31].total": {
+      "valueClass": "numeric"
+    },
+    "body[31].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[31].cost": {
+      "valueClass": "numeric"
+    },
+    "body[31].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[31].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[32].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[32].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[32].total": {
+      "valueClass": "numeric"
+    },
+    "body[32].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[32].cost": {
+      "valueClass": "numeric"
+    },
+    "body[32].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[32].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[33].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[33].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[33].total": {
+      "valueClass": "numeric"
+    },
+    "body[33].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[33].cost": {
+      "valueClass": "numeric"
+    },
+    "body[33].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[33].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[34].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[34].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[34].total": {
+      "valueClass": "numeric"
+    },
+    "body[34].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[34].cost": {
+      "valueClass": "numeric"
+    },
+    "body[34].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[34].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[35].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[35].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[35].total": {
+      "valueClass": "numeric"
+    },
+    "body[35].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[35].cost": {
+      "valueClass": "numeric"
+    },
+    "body[35].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[35].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[36].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[36].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[36].total": {
+      "valueClass": "numeric"
+    },
+    "body[36].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[36].cost": {
+      "valueClass": "numeric"
+    },
+    "body[36].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[36].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[37].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[37].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[37].total": {
+      "valueClass": "numeric"
+    },
+    "body[37].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[37].cost": {
+      "valueClass": "numeric"
+    },
+    "body[37].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[37].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[38].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[38].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[38].total": {
+      "valueClass": "numeric"
+    },
+    "body[38].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[38].cost": {
+      "valueClass": "numeric"
+    },
+    "body[38].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[38].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[39].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[39].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[39].total": {
+      "valueClass": "numeric"
+    },
+    "body[39].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[39].cost": {
+      "valueClass": "numeric"
+    },
+    "body[39].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[39].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[40].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[40].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[40].total": {
+      "valueClass": "numeric"
+    },
+    "body[40].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[40].cost": {
+      "valueClass": "numeric"
+    },
+    "body[40].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[40].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[41].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[41].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[41].total": {
+      "valueClass": "numeric"
+    },
+    "body[41].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[41].cost": {
+      "valueClass": "numeric"
+    },
+    "body[41].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[41].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[42].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[42].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[42].total": {
+      "valueClass": "numeric"
+    },
+    "body[42].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[42].cost": {
+      "valueClass": "numeric"
+    },
+    "body[42].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[42].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[43].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[43].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[43].total": {
+      "valueClass": "numeric"
+    },
+    "body[43].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[43].cost": {
+      "valueClass": "numeric"
+    },
+    "body[43].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[43].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[44].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[44].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[44].total": {
+      "valueClass": "numeric"
+    },
+    "body[44].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[44].cost": {
+      "valueClass": "numeric"
+    },
+    "body[44].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[44].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[45].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[45].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[45].total": {
+      "valueClass": "numeric"
+    },
+    "body[45].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[45].cost": {
+      "valueClass": "numeric"
+    },
+    "body[45].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[45].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[46].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[46].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[46].total": {
+      "valueClass": "numeric"
+    },
+    "body[46].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[46].cost": {
+      "valueClass": "numeric"
+    },
+    "body[46].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[46].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[47].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[47].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[47].total": {
+      "valueClass": "numeric"
+    },
+    "body[47].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[47].cost": {
+      "valueClass": "numeric"
+    },
+    "body[47].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[47].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[48].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[48].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[48].total": {
+      "valueClass": "numeric"
+    },
+    "body[48].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[48].cost": {
+      "valueClass": "numeric"
+    },
+    "body[48].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[48].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[49].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[49].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[49].total": {
+      "valueClass": "numeric"
+    },
+    "body[49].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[49].cost": {
+      "valueClass": "numeric"
+    },
+    "body[49].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[49].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[50].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[50].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[50].total": {
+      "valueClass": "numeric"
+    },
+    "body[50].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[50].cost": {
+      "valueClass": "numeric"
+    },
+    "body[50].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[50].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[51].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[51].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[51].total": {
+      "valueClass": "numeric"
+    },
+    "body[51].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[51].cost": {
+      "valueClass": "numeric"
+    },
+    "body[51].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[51].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[52].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[52].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[52].total": {
+      "valueClass": "numeric"
+    },
+    "body[52].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[52].cost": {
+      "valueClass": "numeric"
+    },
+    "body[52].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[52].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[53].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[53].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[53].total": {
+      "valueClass": "numeric"
+    },
+    "body[53].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[53].cost": {
+      "valueClass": "numeric"
+    },
+    "body[53].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[53].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[54].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[54].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[54].total": {
+      "valueClass": "numeric"
+    },
+    "body[54].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[54].cost": {
+      "valueClass": "numeric"
+    },
+    "body[54].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[54].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[55].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[55].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[55].total": {
+      "valueClass": "numeric"
+    },
+    "body[55].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[55].cost": {
+      "valueClass": "numeric"
+    },
+    "body[55].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[55].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[56].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[56].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[56].total": {
+      "valueClass": "numeric"
+    },
+    "body[56].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[56].cost": {
+      "valueClass": "numeric"
+    },
+    "body[56].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[56].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[57].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[57].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[57].total": {
+      "valueClass": "numeric"
+    },
+    "body[57].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[57].cost": {
+      "valueClass": "numeric"
+    },
+    "body[57].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[57].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[58].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[58].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[58].total": {
+      "valueClass": "numeric"
+    },
+    "body[58].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[58].cost": {
+      "valueClass": "numeric"
+    },
+    "body[58].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[58].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[59].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[59].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[59].total": {
+      "valueClass": "numeric"
+    },
+    "body[59].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[59].cost": {
+      "valueClass": "numeric"
+    },
+    "body[59].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[59].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[60].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[60].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[60].total": {
+      "valueClass": "numeric"
+    },
+    "body[60].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[60].cost": {
+      "valueClass": "numeric"
+    },
+    "body[60].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[60].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[61].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[61].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[61].total": {
+      "valueClass": "numeric"
+    },
+    "body[61].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[61].cost": {
+      "valueClass": "numeric"
+    },
+    "body[61].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[61].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[62].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[62].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[62].total": {
+      "valueClass": "numeric"
+    },
+    "body[62].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[62].cost": {
+      "valueClass": "numeric"
+    },
+    "body[62].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[62].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[63].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[63].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[63].total": {
+      "valueClass": "numeric"
+    },
+    "body[63].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[63].cost": {
+      "valueClass": "numeric"
+    },
+    "body[63].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[63].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[64].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[64].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[64].total": {
+      "valueClass": "numeric"
+    },
+    "body[64].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[64].cost": {
+      "valueClass": "numeric"
+    },
+    "body[64].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[64].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[65].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[65].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[65].total": {
+      "valueClass": "numeric"
+    },
+    "body[65].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[65].cost": {
+      "valueClass": "numeric"
+    },
+    "body[65].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[65].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[66].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[66].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[66].total": {
+      "valueClass": "numeric"
+    },
+    "body[66].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[66].cost": {
+      "valueClass": "numeric"
+    },
+    "body[66].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[66].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[67].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[67].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[67].total": {
+      "valueClass": "numeric"
+    },
+    "body[67].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[67].cost": {
+      "valueClass": "numeric"
+    },
+    "body[67].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[67].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[68].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[68].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[68].total": {
+      "valueClass": "numeric"
+    },
+    "body[68].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[68].cost": {
+      "valueClass": "numeric"
+    },
+    "body[68].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[68].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[69].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[69].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[69].total": {
+      "valueClass": "numeric"
+    },
+    "body[69].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[69].cost": {
+      "valueClass": "numeric"
+    },
+    "body[69].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[69].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[70].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[70].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[70].total": {
+      "valueClass": "numeric"
+    },
+    "body[70].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[70].cost": {
+      "valueClass": "numeric"
+    },
+    "body[70].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[70].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[71].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[71].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[71].total": {
+      "valueClass": "numeric"
+    },
+    "body[71].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[71].cost": {
+      "valueClass": "numeric"
+    },
+    "body[71].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[71].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[72].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[72].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[72].total": {
+      "valueClass": "numeric"
+    },
+    "body[72].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[72].cost": {
+      "valueClass": "numeric"
+    },
+    "body[72].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[72].set_cost": {
+      "valueClass": "numeric"
+    },
+    "body[73].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body[73].skin": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "fixture_skin",
+        "splinterstorm"
+      ]
+    },
+    "body[73].total": {
+      "valueClass": "numeric"
+    },
+    "body[73].remaining": {
+      "valueClass": "numeric"
+    },
+    "body[73].cost": {
+      "valueClass": "numeric"
+    },
+    "body[73].set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "All Commons",
+        "All Epics",
+        "All Legendaries",
+        "All Rares"
+      ]
+    },
+    "body[73].set_cost": {
+      "valueClass": "numeric"
     }
   },
   "body": [
     {
+      "card_detail_id": 70,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 53,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 21,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 69,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 67,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 22,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 9,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 20,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 33,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 42,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 44,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 43,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 59,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 32,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 73,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 57,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 58,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 68,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 56,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 31,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 71,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 54,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 74,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 72,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 11,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 10,
+      "skin": "splinterstorm",
+      "total": 200,
+      "remaining": 0,
+      "cost": 10000,
+      "set": "All Epics",
+      "set_cost": 85000
+    },
+    {
+      "card_detail_id": 55,
+      "skin": "splinterstorm",
+      "total": 100,
+      "remaining": 0,
+      "cost": 20000,
+      "set": "All Legendaries",
+      "set_cost": 100000
+    },
+    {
+      "card_detail_id": 27,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 28,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 40,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 52,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 8,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 49,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 6,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 16,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 19,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 50,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 51,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 18,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 17,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 41,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 64,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 29,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 65,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 7,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 30,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 66,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 5,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 39,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 38,
+      "skin": "splinterstorm",
+      "total": 500,
+      "remaining": 0,
+      "cost": 5000,
+      "set": "All Rares",
+      "set_cost": 57000
+    },
+    {
+      "card_detail_id": 3,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 24,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 13,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 2,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 35,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 25,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
       "card_detail_id": 1,
-      "skin": "fixture_skin",
-      "total": 10,
-      "remaining": 9,
-      "cost": 100,
-      "set_cost": 500,
-      "set": "ALPHA"
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 23,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 47,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 12,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 63,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 37,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 26,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 60,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 61,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 45,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 48,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 15,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 4,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 46,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 14,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 34,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 62,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
+    },
+    {
+      "card_detail_id": 36,
+      "skin": "splinterstorm",
+      "total": 1000,
+      "remaining": 0,
+      "cost": 2000,
+      "set": "All Commons",
+      "set_cost": 24000
     }
   ]
 }

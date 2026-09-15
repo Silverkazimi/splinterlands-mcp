@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T10:06:02.897055+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/bids",
-    "captureScope": "Complete bounded public response. No player selector supplied.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -81,23 +79,23 @@
     "status": "success",
     "data": [
       {
-        "txId": "1cae628c2b13beb49de39973c1574574ad31a3d9-1",
-        "createdDate": "2026-09-04T15:54:54.000Z",
-        "lastUpdatedDate": "2026-09-04T15:54:54.000Z",
-        "player": "sample-acct-047",
+        "txId": "1693a25556e56860bc4efcdd037fb67d28e19497-1",
+        "createdDate": "2026-09-07T08:45:30.000Z",
+        "lastUpdatedDate": "2026-09-15T13:02:24.000Z",
+        "player": "sample-account-1",
         "token": "SPSP",
-        "qtyTotal": "1000.000",
-        "qtyAvailable": "1000.000",
+        "qtyTotal": "1500.000",
+        "qtyAvailable": "500.000",
         "pricePerToken": "0.001",
-        "escrow": "7.000",
+        "escrow": "3.500",
         "currency": "DEC",
         "cancelTx": null
       },
       {
-        "txId": "1cae628c2b13beb49de39973c1574574ad31a3d9-2",
-        "createdDate": "2026-09-04T15:54:54.000Z",
-        "lastUpdatedDate": "2026-09-04T15:54:54.000Z",
-        "player": "sample-acct-047",
+        "txId": "1693a25556e56860bc4efcdd037fb67d28e19497-2",
+        "createdDate": "2026-09-07T08:45:30.000Z",
+        "lastUpdatedDate": "2026-09-07T08:45:30.000Z",
+        "player": "sample-account-2",
         "token": "SPSP",
         "qtyTotal": "500.000",
         "qtyAvailable": "500.000",

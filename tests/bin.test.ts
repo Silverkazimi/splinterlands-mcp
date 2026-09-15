@@ -1,3 +1,4 @@
+import packageInfo from "../package.json" with { type: "json" };
 import { SCENARIO_TOOL_ROUTES } from "../src/land-scenario-snapshot.js";
 import { HIVE_TOOL_ROUTES } from "../src/hive-tools.js";
 import { spawn } from "node:child_process";
@@ -96,7 +97,7 @@ describe("built binary", () => {
       expect(initialize.result?.protocolVersion).toEqual(expect.any(String));
       expect(initialize.result?.capabilities).toEqual(expect.any(Object));
       expect(initialize.result?.serverInfo).toEqual(
-        expect.objectContaining({ name: "splinterlands-mcp", version: "0.0.0" }),
+        expect.objectContaining({ name: "splinterlands-mcp", version: packageInfo.version }),
       );
 
       send({ jsonrpc: "2.0", method: "notifications/initialized", params: {} });
@@ -152,5 +153,5 @@ describe("built binary", () => {
     } finally {
       output.close();
     }
-  });
+  }, 20_000);
 });

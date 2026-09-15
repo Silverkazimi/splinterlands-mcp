@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T10:13:45.973932+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/collector/config",
-    "captureScope": "Complete anonymous configuration response; no account identifier sent.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -1748,132 +1746,132 @@
       "visibleBookshelfSlots": 5,
       "claim": {
         "enabled": true,
-        "availability": "indefinite",
+        "availability": "[redacted]",
         "expiresAt": null
       },
       "placeholderCosmetics": {
         "tabletopBackgrounds": [
           {
             "key": "tabletop_standard1",
-            "name": "Wood",
-            "assetUrl": "collector/tabletops/wood.webp"
+            "name": "[redacted]",
+            "assetUrl": "[redacted]"
           },
           {
             "key": "tabletop_standard2",
-            "name": "Canvas",
-            "assetUrl": "collector/tabletops/canvas.webp"
+            "name": "[redacted]",
+            "assetUrl": "[redacted]"
           },
           {
             "key": "tabletop_standard3",
-            "name": "Splinterlands OG",
-            "assetUrl": "collector/tabletops/spl-og.webp"
+            "name": "[redacted]",
+            "assetUrl": "[redacted]"
           },
           {
             "key": "tabletop_background_premium_01",
-            "name": "Air",
-            "assetUrl": "collector/tabletops/air.webp"
+            "name": "[redacted]",
+            "assetUrl": "[redacted]"
           },
           {
             "key": "tabletop_background_premium_02",
-            "name": "Death",
-            "assetUrl": "collector/tabletops/death.webp"
+            "name": "[redacted]",
+            "assetUrl": "[redacted]"
           },
           {
             "key": "tabletop_background_premium_03",
-            "name": "Earth",
-            "assetUrl": "collector/tabletops/earth.webp"
+            "name": "[redacted]",
+            "assetUrl": "[redacted]"
           },
           {
             "key": "tabletop_background_premium_04",
-            "name": "Space",
-            "assetUrl": "collector/tabletops/space.webp"
+            "name": "[redacted]",
+            "assetUrl": "[redacted]"
           },
           {
             "key": "tabletop_background_premium_05",
-            "name": "Fire",
-            "assetUrl": "collector/tabletops/fire.webp"
+            "name": "[redacted]",
+            "assetUrl": "[redacted]"
           }
         ],
         "coverCosmetics": [
           {
             "key": "binder_cover_sunlit_gold",
-            "name": "Fire"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_classic_ember_red",
-            "name": "Ember Red"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_moonlit_silver",
-            "name": "Dragon"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_collector_orange",
-            "name": "Collector Orange"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_classic_sunlit_gold",
-            "name": "Sunlit Gold"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_legendary_yellow",
-            "name": "Legendary Yellow"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_aged_leather",
-            "name": "Life"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_royal_indigo",
-            "name": "Aged Leather"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_classic_aged_leather",
-            "name": "Classic Aged Leather"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_relic_green",
-            "name": "Earth"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_classic_relic_green",
-            "name": "Relic Green"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_ember_red",
-            "name": "Water"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_classic_teal",
-            "name": "Teal"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_arcane_violet",
-            "name": "Neutral"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_classic_moonlit_silver",
-            "name": "Moonlit Silver"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_teal",
-            "name": "Death"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_classic_arcane_violet",
-            "name": "Arcane Violet"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_classic_royal_indigo",
-            "name": "Royal Indigo"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_obsidian",
-            "name": "Obsidian"
+            "name": "[redacted]"
           },
           {
             "key": "binder_cover_classic_obsidian",
-            "name": "Classic Obsidian"
+            "name": "[redacted]"
           }
         ]
       },
@@ -1883,8 +1881,8 @@
           "qty": 1,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 5000,
           "operation": "sm_shop_purchase"
@@ -1895,8 +1893,8 @@
           "maxQty": 30,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 200,
           "operation": "sm_shop_purchase"
@@ -1906,8 +1904,8 @@
           "qty": 1,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 3000,
           "operation": "sm_shop_purchase",
@@ -1918,8 +1916,8 @@
           "qty": 1,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 3000,
           "operation": "sm_shop_purchase",
@@ -1930,8 +1928,8 @@
           "qty": 1,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 3000,
           "operation": "sm_shop_purchase",
@@ -1942,8 +1940,8 @@
           "qty": 1,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 3000,
           "operation": "sm_shop_purchase",
@@ -1954,8 +1952,8 @@
           "qty": 1,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 3000,
           "operation": "sm_shop_purchase",
@@ -1967,8 +1965,8 @@
           "maxQty": 30,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 750,
           "operation": "sm_shop_purchase"
@@ -1979,8 +1977,8 @@
           "maxQty": 30,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 500,
           "operation": "sm_shop_purchase"
@@ -1991,8 +1989,8 @@
           "maxQty": 30,
           "currency": "DEC",
           "currencies": [
-            "DEC",
-            "CREDITS"
+            "[redacted]",
+            "[redacted]"
           ],
           "priceDec": 750,
           "operation": "sm_shop_purchase"
@@ -2000,22 +1998,22 @@
       ],
       "featuredAccounts": [
         {
-          "username": "sample-acct-073"
+          "username": "sample-account-1"
         },
         {
-          "username": "sample-acct-087"
+          "username": "sample-account-2"
         },
         {
-          "username": "sample-acct-097"
+          "username": "sample-account-3"
         },
         {
-          "username": "sample-acct-050"
+          "username": "sample-account-4"
         },
         {
-          "username": "sample-acct-058"
+          "username": "sample-account-5"
         },
         {
-          "username": "sample-acct-076"
+          "username": "sample-account-6"
         }
       ],
       "cosmetics": [
@@ -2023,7 +2021,7 @@
           "id": "12",
           "key": "binder_cover_royal_indigo",
           "type": "binder_cover",
-          "name": "Aged Leather",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2031,7 +2029,7 @@
           "id": "26",
           "key": "binder_cover_classic_arcane_violet",
           "type": "binder_cover",
-          "name": "Arcane Violet",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2039,7 +2037,7 @@
           "id": "22",
           "key": "binder_cover_classic_aged_leather",
           "type": "binder_cover",
-          "name": "Classic Aged Leather",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2047,7 +2045,7 @@
           "id": "23",
           "key": "binder_cover_classic_obsidian",
           "type": "binder_cover",
-          "name": "Classic Obsidian",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2055,7 +2053,7 @@
           "id": "27",
           "key": "binder_cover_collector_orange",
           "type": "binder_cover",
-          "name": "Collector Orange",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2063,7 +2061,7 @@
           "id": "15",
           "key": "binder_cover_teal",
           "type": "binder_cover",
-          "name": "Death",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2071,7 +2069,7 @@
           "id": "16",
           "key": "binder_cover_moonlit_silver",
           "type": "binder_cover",
-          "name": "Dragon",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2079,7 +2077,7 @@
           "id": "11",
           "key": "binder_cover_relic_green",
           "type": "binder_cover",
-          "name": "Earth",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2087,7 +2085,7 @@
           "id": "19",
           "key": "binder_cover_classic_ember_red",
           "type": "binder_cover",
-          "name": "Ember Red",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2095,7 +2093,7 @@
           "id": "9",
           "key": "binder_cover_sunlit_gold",
           "type": "binder_cover",
-          "name": "Fire",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2103,7 +2101,7 @@
           "id": "28",
           "key": "binder_cover_legendary_yellow",
           "type": "binder_cover",
-          "name": "Legendary Yellow",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2111,7 +2109,7 @@
           "id": "13",
           "key": "binder_cover_aged_leather",
           "type": "binder_cover",
-          "name": "Life",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2119,7 +2117,7 @@
           "id": "25",
           "key": "binder_cover_classic_moonlit_silver",
           "type": "binder_cover",
-          "name": "Moonlit Silver",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2127,7 +2125,7 @@
           "id": "17",
           "key": "binder_cover_arcane_violet",
           "type": "binder_cover",
-          "name": "Neutral",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2135,7 +2133,7 @@
           "id": "14",
           "key": "binder_cover_obsidian",
           "type": "binder_cover",
-          "name": "Obsidian",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2143,7 +2141,7 @@
           "id": "20",
           "key": "binder_cover_classic_relic_green",
           "type": "binder_cover",
-          "name": "Relic Green",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2151,7 +2149,7 @@
           "id": "21",
           "key": "binder_cover_classic_royal_indigo",
           "type": "binder_cover",
-          "name": "Royal Indigo",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2159,7 +2157,7 @@
           "id": "18",
           "key": "binder_cover_classic_sunlit_gold",
           "type": "binder_cover",
-          "name": "Sunlit Gold",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2167,7 +2165,7 @@
           "id": "24",
           "key": "binder_cover_classic_teal",
           "type": "binder_cover",
-          "name": "Teal",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2175,7 +2173,7 @@
           "id": "10",
           "key": "binder_cover_ember_red",
           "type": "binder_cover",
-          "name": "Water",
+          "name": "[redacted]",
           "assetUrl": null,
           "isPremium": false
         },
@@ -2183,400 +2181,400 @@
           "id": "70",
           "key": "anniversary_8_balloon",
           "type": "sticker",
-          "name": "8th Anniversary Balloon",
-          "assetUrl": "collector/stickers/events/anniversary-8/sticker-anniversary-8-balloon.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "29",
           "key": "sticker_banger",
           "type": "sticker",
-          "name": "Banger",
-          "assetUrl": "collector/stickers/packs/toxic/sticker-banger.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "38",
           "key": "sticker_animal_beaver",
           "type": "sticker",
-          "name": "Beaver",
-          "assetUrl": "collector/stickers/animals/sticker-animal-beaver.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "44",
           "key": "sticker_support_bug_hunter",
           "type": "sticker",
-          "name": "Bug Hunter",
-          "assetUrl": "collector/stickers/support/sticker-support-bug-hunter.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "30",
           "key": "sticker_cool",
           "type": "sticker",
-          "name": "Cool",
-          "assetUrl": "collector/stickers/packs/toxic/sticker-cool.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "31",
           "key": "sticker_favorite",
           "type": "sticker",
-          "name": "Favorite",
-          "assetUrl": "collector/stickers/packs/favorites/sticker-favorite.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "39",
           "key": "sticker_animal_giraffe",
           "type": "sticker",
-          "name": "Giraffe",
-          "assetUrl": "collector/stickers/animals/sticker-animal-giraffe.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "43",
           "key": "sticker_animal_llama",
           "type": "sticker",
-          "name": "Llama",
-          "assetUrl": "collector/stickers/animals/sticker-animal-llama.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "45",
           "key": "sticker_support_maintenance_how_long",
           "type": "sticker",
-          "name": "Maintenance: How Long?",
-          "assetUrl": "collector/stickers/support/sticker-support-maintenance-how-long.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "46",
           "key": "sticker_support_maintenance_wen",
           "type": "sticker",
-          "name": "Maintenance: Wen?",
-          "assetUrl": "collector/stickers/support/sticker-support-maintenance-wen.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "47",
           "key": "sticker_support_maintenance_why",
           "type": "sticker",
-          "name": "Maintenance: Why?",
-          "assetUrl": "collector/stickers/support/sticker-support-maintenance-why.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "32",
           "key": "sticker_og",
           "type": "sticker",
-          "name": "OG",
-          "assetUrl": "collector/stickers/packs/favorites/sticker-og.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "48",
           "key": "sticker_support_patience",
           "type": "sticker",
-          "name": "Patience",
-          "assetUrl": "collector/stickers/support/sticker-support-patience.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "40",
           "key": "sticker_animal_pink_critter",
           "type": "sticker",
-          "name": "Pink Critter",
-          "assetUrl": "collector/stickers/animals/sticker-animal-pink-critter.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "33",
           "key": "sticker_rad",
           "type": "sticker",
-          "name": "Rad",
-          "assetUrl": "collector/stickers/packs/toxic/sticker-rad.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "34",
           "key": "sticker_sick",
           "type": "sticker",
-          "name": "Sick",
-          "assetUrl": "collector/stickers/packs/toxic/sticker-sick.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "67",
           "key": "splinterfest_2022",
           "type": "sticker",
-          "name": "Splinterfest 2022",
-          "assetUrl": "collector/stickers/events/splinterfest-2022/sticker-splinterfest-2022.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "68",
           "key": "splinterfest_2022_ga",
           "type": "sticker",
-          "name": "Splinterfest 2022 GA",
-          "assetUrl": "collector/stickers/events/splinterfest-2022/sticker-splinterfest-2022-ga.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "69",
           "key": "splinterfest_2022_vip",
           "type": "sticker",
-          "name": "Splinterfest 2022 VIP",
-          "assetUrl": "collector/stickers/events/splinterfest-2022/sticker-splinterfest-2022-vip.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "49",
           "key": "sticker_support_thank_you",
           "type": "sticker",
-          "name": "Thank You",
-          "assetUrl": "collector/stickers/support/sticker-support-thank-you.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "35",
           "key": "sticker_top_10",
           "type": "sticker",
-          "name": "Top 10",
-          "assetUrl": "collector/stickers/packs/favorites/sticker-top-10.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "36",
           "key": "sticker_top_20",
           "type": "sticker",
-          "name": "Top 20",
-          "assetUrl": "collector/stickers/packs/favorites/sticker-top-20.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "37",
           "key": "sticker_toxic",
           "type": "sticker",
-          "name": "Toxic",
-          "assetUrl": "collector/stickers/packs/toxic/sticker-toxic.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "41",
           "key": "sticker_animal_trex",
           "type": "sticker",
-          "name": "T-Rex",
-          "assetUrl": "collector/stickers/animals/sticker-animal-trex.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "42",
           "key": "sticker_animal_turtle",
           "type": "sticker",
-          "name": "Turtle",
-          "assetUrl": "collector/stickers/animals/sticker-animal-turtle.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "61",
           "key": "winterfest_2025_mags",
           "type": "sticker",
-          "name": "Winterfest 2025 Mags",
-          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-mags.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "62",
           "key": "winterfest_2025_vin_common",
           "type": "sticker",
-          "name": "Winterfest 2025 Vin Common",
-          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-common.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "64",
           "key": "winterfest_2025_vin_epic",
           "type": "sticker",
-          "name": "Winterfest 2025 Vin Epic",
-          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-epic.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "65",
           "key": "winterfest_2025_vin_legendary_1",
           "type": "sticker",
-          "name": "Winterfest 2025 Vin Legendary I",
-          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-legendary-1.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "66",
           "key": "winterfest_2025_vin_legendary_2",
           "type": "sticker",
-          "name": "Winterfest 2025 Vin Legendary II",
-          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-legendary-2.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "63",
           "key": "winterfest_2025_vin_rare",
           "type": "sticker",
-          "name": "Winterfest 2025 Vin Rare",
-          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-rare.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "51",
           "key": "collector_year_joined_2018",
           "type": "sticker",
-          "name": "Year Joined 2018",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-18_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "52",
           "key": "collector_year_joined_2019",
           "type": "sticker",
-          "name": "Year Joined 2019",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-19_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "53",
           "key": "collector_year_joined_2020",
           "type": "sticker",
-          "name": "Year Joined 2020",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-20_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "54",
           "key": "collector_year_joined_2021",
           "type": "sticker",
-          "name": "Year Joined 2021",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-21_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "55",
           "key": "collector_year_joined_2022",
           "type": "sticker",
-          "name": "Year Joined 2022",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-22_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "56",
           "key": "collector_year_joined_2023",
           "type": "sticker",
-          "name": "Year Joined 2023",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-23_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "57",
           "key": "collector_year_joined_2024",
           "type": "sticker",
-          "name": "Year Joined 2024",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-24_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "58",
           "key": "collector_year_joined_2025",
           "type": "sticker",
-          "name": "Year Joined 2025",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-25_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "59",
           "key": "collector_year_joined_2026",
           "type": "sticker",
-          "name": "Year Joined 2026",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-26_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "60",
           "key": "collector_year_joined_2027",
           "type": "sticker",
-          "name": "Year Joined 2027",
-          "assetUrl": "collector/stickers/year-joined/img_chv_year-joined-27_192.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "50",
           "key": "sticker_support_you_rock",
           "type": "sticker",
-          "name": "You Rock",
-          "assetUrl": "collector/stickers/support/sticker-support-you-rock.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "4",
           "key": "tabletop_background_premium_01",
           "type": "tabletop_background",
-          "name": "Air",
-          "assetUrl": "collector/tabletops/air.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": true
         },
         {
           "id": "2",
           "key": "tabletop_standard2",
           "type": "tabletop_background",
-          "name": "Canvas",
-          "assetUrl": "collector/tabletops/canvas.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "5",
           "key": "tabletop_background_premium_02",
           "type": "tabletop_background",
-          "name": "Death",
-          "assetUrl": "collector/tabletops/death.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": true
         },
         {
           "id": "6",
           "key": "tabletop_background_premium_03",
           "type": "tabletop_background",
-          "name": "Earth",
-          "assetUrl": "collector/tabletops/earth.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": true
         },
         {
           "id": "8",
           "key": "tabletop_background_premium_05",
           "type": "tabletop_background",
-          "name": "Fire",
-          "assetUrl": "collector/tabletops/fire.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": true
         },
         {
           "id": "7",
           "key": "tabletop_background_premium_04",
           "type": "tabletop_background",
-          "name": "Space",
-          "assetUrl": "collector/tabletops/space.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": true
         },
         {
           "id": "3",
           "key": "tabletop_standard3",
           "type": "tabletop_background",
-          "name": "Splinterlands OG",
-          "assetUrl": "collector/tabletops/spl-og.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         },
         {
           "id": "1",
           "key": "tabletop_standard1",
           "type": "tabletop_background",
-          "name": "Wood",
-          "assetUrl": "collector/tabletops/wood.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       ]

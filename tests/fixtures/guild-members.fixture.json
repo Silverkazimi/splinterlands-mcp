@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:07:26.717847+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/guilds/members",
-    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].guild_id": {
@@ -180,67 +178,5293 @@
     },
     "body[2].is_online": {
       "valueClass": "opaque"
+    },
+    "body[3].guild_id": {
+      "valueClass": "id"
+    },
+    "body[3].player": {
+      "valueClass": "name"
+    },
+    "body[3].rank": {
+      "valueClass": "numeric"
+    },
+    "body[3].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].status": {
+      "valueClass": "opaque"
+    },
+    "body[3].data": {
+      "valueClass": "opaque"
+    },
+    "body[3].rating": {
+      "valueClass": "numeric"
+    },
+    "body[3].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[3].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[3].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[3].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[3].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[3].league": {
+      "valueClass": "numeric"
+    },
+    "body[3].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[3].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[3].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[3].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[4].guild_id": {
+      "valueClass": "id"
+    },
+    "body[4].player": {
+      "valueClass": "name"
+    },
+    "body[4].rank": {
+      "valueClass": "numeric"
+    },
+    "body[4].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].status": {
+      "valueClass": "opaque"
+    },
+    "body[4].data": {
+      "valueClass": "opaque"
+    },
+    "body[4].rating": {
+      "valueClass": "numeric"
+    },
+    "body[4].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[4].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[4].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[4].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[4].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[4].league": {
+      "valueClass": "numeric"
+    },
+    "body[4].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[4].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[4].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[4].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[5].guild_id": {
+      "valueClass": "id"
+    },
+    "body[5].player": {
+      "valueClass": "name"
+    },
+    "body[5].rank": {
+      "valueClass": "numeric"
+    },
+    "body[5].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].status": {
+      "valueClass": "opaque"
+    },
+    "body[5].data": {
+      "valueClass": "opaque"
+    },
+    "body[5].rating": {
+      "valueClass": "numeric"
+    },
+    "body[5].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[5].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[5].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[5].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[5].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[5].league": {
+      "valueClass": "numeric"
+    },
+    "body[5].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[5].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[5].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[5].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[5].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[6].guild_id": {
+      "valueClass": "id"
+    },
+    "body[6].player": {
+      "valueClass": "name"
+    },
+    "body[6].rank": {
+      "valueClass": "numeric"
+    },
+    "body[6].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].status": {
+      "valueClass": "opaque"
+    },
+    "body[6].data": {
+      "valueClass": "opaque"
+    },
+    "body[6].rating": {
+      "valueClass": "numeric"
+    },
+    "body[6].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[6].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[6].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[6].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[6].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[6].league": {
+      "valueClass": "numeric"
+    },
+    "body[6].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[6].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[6].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[6].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[6].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[7].guild_id": {
+      "valueClass": "id"
+    },
+    "body[7].player": {
+      "valueClass": "name"
+    },
+    "body[7].rank": {
+      "valueClass": "numeric"
+    },
+    "body[7].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].status": {
+      "valueClass": "opaque"
+    },
+    "body[7].data": {
+      "valueClass": "opaque"
+    },
+    "body[7].rating": {
+      "valueClass": "numeric"
+    },
+    "body[7].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[7].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[7].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[7].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[7].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[7].league": {
+      "valueClass": "numeric"
+    },
+    "body[7].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[7].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[7].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[7].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[7].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[8].guild_id": {
+      "valueClass": "id"
+    },
+    "body[8].player": {
+      "valueClass": "name"
+    },
+    "body[8].rank": {
+      "valueClass": "numeric"
+    },
+    "body[8].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].status": {
+      "valueClass": "opaque"
+    },
+    "body[8].data": {
+      "valueClass": "opaque"
+    },
+    "body[8].rating": {
+      "valueClass": "numeric"
+    },
+    "body[8].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[8].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[8].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[8].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[8].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[8].league": {
+      "valueClass": "numeric"
+    },
+    "body[8].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[8].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[8].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[8].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[8].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[9].guild_id": {
+      "valueClass": "id"
+    },
+    "body[9].player": {
+      "valueClass": "name"
+    },
+    "body[9].rank": {
+      "valueClass": "numeric"
+    },
+    "body[9].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[9].status": {
+      "valueClass": "opaque"
+    },
+    "body[9].data": {
+      "valueClass": "opaque"
+    },
+    "body[9].rating": {
+      "valueClass": "numeric"
+    },
+    "body[9].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[9].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[9].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[9].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[9].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[9].league": {
+      "valueClass": "numeric"
+    },
+    "body[9].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[9].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[9].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[9].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[9].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[10].guild_id": {
+      "valueClass": "id"
+    },
+    "body[10].player": {
+      "valueClass": "name"
+    },
+    "body[10].rank": {
+      "valueClass": "numeric"
+    },
+    "body[10].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[10].status": {
+      "valueClass": "opaque"
+    },
+    "body[10].data": {
+      "valueClass": "opaque"
+    },
+    "body[10].rating": {
+      "valueClass": "numeric"
+    },
+    "body[10].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[10].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[10].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[10].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[10].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[10].league": {
+      "valueClass": "numeric"
+    },
+    "body[10].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[10].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[10].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[10].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[10].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[11].guild_id": {
+      "valueClass": "id"
+    },
+    "body[11].player": {
+      "valueClass": "name"
+    },
+    "body[11].rank": {
+      "valueClass": "numeric"
+    },
+    "body[11].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[11].status": {
+      "valueClass": "opaque"
+    },
+    "body[11].data": {
+      "valueClass": "opaque"
+    },
+    "body[11].rating": {
+      "valueClass": "numeric"
+    },
+    "body[11].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[11].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[11].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[11].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[11].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[11].league": {
+      "valueClass": "numeric"
+    },
+    "body[11].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[11].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[11].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[11].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[11].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[12].guild_id": {
+      "valueClass": "id"
+    },
+    "body[12].player": {
+      "valueClass": "name"
+    },
+    "body[12].rank": {
+      "valueClass": "numeric"
+    },
+    "body[12].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[12].status": {
+      "valueClass": "opaque"
+    },
+    "body[12].data": {
+      "valueClass": "opaque"
+    },
+    "body[12].rating": {
+      "valueClass": "numeric"
+    },
+    "body[12].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[12].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[12].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[12].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[12].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[12].league": {
+      "valueClass": "numeric"
+    },
+    "body[12].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[12].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[12].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[12].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[12].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[13].guild_id": {
+      "valueClass": "id"
+    },
+    "body[13].player": {
+      "valueClass": "name"
+    },
+    "body[13].rank": {
+      "valueClass": "numeric"
+    },
+    "body[13].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[13].status": {
+      "valueClass": "opaque"
+    },
+    "body[13].data": {
+      "valueClass": "opaque"
+    },
+    "body[13].rating": {
+      "valueClass": "numeric"
+    },
+    "body[13].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[13].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[13].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[13].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[13].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[13].league": {
+      "valueClass": "numeric"
+    },
+    "body[13].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[13].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[13].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[13].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[13].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[14].guild_id": {
+      "valueClass": "id"
+    },
+    "body[14].player": {
+      "valueClass": "name"
+    },
+    "body[14].rank": {
+      "valueClass": "numeric"
+    },
+    "body[14].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[14].status": {
+      "valueClass": "opaque"
+    },
+    "body[14].data": {
+      "valueClass": "opaque"
+    },
+    "body[14].rating": {
+      "valueClass": "numeric"
+    },
+    "body[14].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[14].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[14].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[14].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[14].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[14].league": {
+      "valueClass": "numeric"
+    },
+    "body[14].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[14].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[14].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[14].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[14].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[15].guild_id": {
+      "valueClass": "id"
+    },
+    "body[15].player": {
+      "valueClass": "name"
+    },
+    "body[15].rank": {
+      "valueClass": "numeric"
+    },
+    "body[15].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[15].status": {
+      "valueClass": "opaque"
+    },
+    "body[15].data": {
+      "valueClass": "opaque"
+    },
+    "body[15].rating": {
+      "valueClass": "numeric"
+    },
+    "body[15].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[15].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[15].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[15].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[15].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[15].league": {
+      "valueClass": "numeric"
+    },
+    "body[15].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[15].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[15].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[15].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[15].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[16].guild_id": {
+      "valueClass": "id"
+    },
+    "body[16].player": {
+      "valueClass": "name"
+    },
+    "body[16].rank": {
+      "valueClass": "numeric"
+    },
+    "body[16].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[16].status": {
+      "valueClass": "opaque"
+    },
+    "body[16].data": {
+      "valueClass": "opaque"
+    },
+    "body[16].rating": {
+      "valueClass": "numeric"
+    },
+    "body[16].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[16].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[16].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[16].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[16].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[16].league": {
+      "valueClass": "numeric"
+    },
+    "body[16].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[16].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[16].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[16].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[16].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[17].guild_id": {
+      "valueClass": "id"
+    },
+    "body[17].player": {
+      "valueClass": "name"
+    },
+    "body[17].rank": {
+      "valueClass": "numeric"
+    },
+    "body[17].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[17].status": {
+      "valueClass": "opaque"
+    },
+    "body[17].data": {
+      "valueClass": "opaque"
+    },
+    "body[17].rating": {
+      "valueClass": "numeric"
+    },
+    "body[17].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[17].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[17].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[17].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[17].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[17].league": {
+      "valueClass": "numeric"
+    },
+    "body[17].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[17].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[17].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[17].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[17].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[18].guild_id": {
+      "valueClass": "id"
+    },
+    "body[18].player": {
+      "valueClass": "name"
+    },
+    "body[18].rank": {
+      "valueClass": "numeric"
+    },
+    "body[18].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[18].status": {
+      "valueClass": "opaque"
+    },
+    "body[18].data": {
+      "valueClass": "opaque"
+    },
+    "body[18].rating": {
+      "valueClass": "numeric"
+    },
+    "body[18].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[18].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[18].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[18].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[18].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[18].league": {
+      "valueClass": "numeric"
+    },
+    "body[18].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[18].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[18].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[18].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[18].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[19].guild_id": {
+      "valueClass": "id"
+    },
+    "body[19].player": {
+      "valueClass": "name"
+    },
+    "body[19].rank": {
+      "valueClass": "numeric"
+    },
+    "body[19].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[19].status": {
+      "valueClass": "opaque"
+    },
+    "body[19].data": {
+      "valueClass": "opaque"
+    },
+    "body[19].rating": {
+      "valueClass": "numeric"
+    },
+    "body[19].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[19].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[19].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[19].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[19].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[19].league": {
+      "valueClass": "numeric"
+    },
+    "body[19].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[19].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[19].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[19].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[19].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[20].guild_id": {
+      "valueClass": "id"
+    },
+    "body[20].player": {
+      "valueClass": "name"
+    },
+    "body[20].rank": {
+      "valueClass": "numeric"
+    },
+    "body[20].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[20].status": {
+      "valueClass": "opaque"
+    },
+    "body[20].data": {
+      "valueClass": "opaque"
+    },
+    "body[20].rating": {
+      "valueClass": "numeric"
+    },
+    "body[20].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[20].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[20].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[20].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[20].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[20].league": {
+      "valueClass": "numeric"
+    },
+    "body[20].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[20].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[20].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[20].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[20].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[21].guild_id": {
+      "valueClass": "id"
+    },
+    "body[21].player": {
+      "valueClass": "name"
+    },
+    "body[21].rank": {
+      "valueClass": "numeric"
+    },
+    "body[21].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[21].status": {
+      "valueClass": "opaque"
+    },
+    "body[21].data": {
+      "valueClass": "opaque"
+    },
+    "body[21].rating": {
+      "valueClass": "numeric"
+    },
+    "body[21].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[21].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[21].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[21].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[21].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[21].league": {
+      "valueClass": "numeric"
+    },
+    "body[21].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[21].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[21].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[21].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[21].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[22].guild_id": {
+      "valueClass": "id"
+    },
+    "body[22].player": {
+      "valueClass": "name"
+    },
+    "body[22].rank": {
+      "valueClass": "numeric"
+    },
+    "body[22].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[22].status": {
+      "valueClass": "opaque"
+    },
+    "body[22].data": {
+      "valueClass": "opaque"
+    },
+    "body[22].rating": {
+      "valueClass": "numeric"
+    },
+    "body[22].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[22].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[22].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[22].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[22].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[22].league": {
+      "valueClass": "numeric"
+    },
+    "body[22].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[22].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[22].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[22].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[22].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[23].guild_id": {
+      "valueClass": "id"
+    },
+    "body[23].player": {
+      "valueClass": "name"
+    },
+    "body[23].rank": {
+      "valueClass": "numeric"
+    },
+    "body[23].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[23].status": {
+      "valueClass": "opaque"
+    },
+    "body[23].data": {
+      "valueClass": "opaque"
+    },
+    "body[23].rating": {
+      "valueClass": "numeric"
+    },
+    "body[23].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[23].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[23].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[23].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[23].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[23].league": {
+      "valueClass": "numeric"
+    },
+    "body[23].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[23].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[23].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[23].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[23].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[24].guild_id": {
+      "valueClass": "id"
+    },
+    "body[24].player": {
+      "valueClass": "name"
+    },
+    "body[24].rank": {
+      "valueClass": "numeric"
+    },
+    "body[24].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[24].status": {
+      "valueClass": "opaque"
+    },
+    "body[24].data": {
+      "valueClass": "opaque"
+    },
+    "body[24].rating": {
+      "valueClass": "numeric"
+    },
+    "body[24].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[24].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[24].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[24].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[24].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[24].league": {
+      "valueClass": "numeric"
+    },
+    "body[24].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[24].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[24].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[24].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[24].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[25].guild_id": {
+      "valueClass": "id"
+    },
+    "body[25].player": {
+      "valueClass": "name"
+    },
+    "body[25].rank": {
+      "valueClass": "numeric"
+    },
+    "body[25].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[25].status": {
+      "valueClass": "opaque"
+    },
+    "body[25].data": {
+      "valueClass": "opaque"
+    },
+    "body[25].rating": {
+      "valueClass": "numeric"
+    },
+    "body[25].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[25].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[25].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[25].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[25].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[25].league": {
+      "valueClass": "numeric"
+    },
+    "body[25].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[25].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[25].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[25].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[25].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[26].guild_id": {
+      "valueClass": "id"
+    },
+    "body[26].player": {
+      "valueClass": "name"
+    },
+    "body[26].rank": {
+      "valueClass": "numeric"
+    },
+    "body[26].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[26].status": {
+      "valueClass": "opaque"
+    },
+    "body[26].data": {
+      "valueClass": "opaque"
+    },
+    "body[26].rating": {
+      "valueClass": "numeric"
+    },
+    "body[26].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[26].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[26].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[26].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[26].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[26].league": {
+      "valueClass": "numeric"
+    },
+    "body[26].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[26].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[26].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[26].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[26].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[27].guild_id": {
+      "valueClass": "id"
+    },
+    "body[27].player": {
+      "valueClass": "name"
+    },
+    "body[27].rank": {
+      "valueClass": "numeric"
+    },
+    "body[27].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[27].status": {
+      "valueClass": "opaque"
+    },
+    "body[27].data": {
+      "valueClass": "opaque"
+    },
+    "body[27].rating": {
+      "valueClass": "numeric"
+    },
+    "body[27].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[27].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[27].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[27].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[27].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[27].league": {
+      "valueClass": "numeric"
+    },
+    "body[27].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[27].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[27].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[27].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[27].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[28].guild_id": {
+      "valueClass": "id"
+    },
+    "body[28].player": {
+      "valueClass": "name"
+    },
+    "body[28].rank": {
+      "valueClass": "numeric"
+    },
+    "body[28].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[28].status": {
+      "valueClass": "opaque"
+    },
+    "body[28].data": {
+      "valueClass": "opaque"
+    },
+    "body[28].rating": {
+      "valueClass": "numeric"
+    },
+    "body[28].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[28].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[28].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[28].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[28].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[28].league": {
+      "valueClass": "numeric"
+    },
+    "body[28].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[28].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[28].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[28].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[28].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[29].guild_id": {
+      "valueClass": "id"
+    },
+    "body[29].player": {
+      "valueClass": "name"
+    },
+    "body[29].rank": {
+      "valueClass": "numeric"
+    },
+    "body[29].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[29].status": {
+      "valueClass": "opaque"
+    },
+    "body[29].data": {
+      "valueClass": "opaque"
+    },
+    "body[29].rating": {
+      "valueClass": "numeric"
+    },
+    "body[29].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[29].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[29].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[29].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[29].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[29].league": {
+      "valueClass": "numeric"
+    },
+    "body[29].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[29].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[29].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[29].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[29].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[30].guild_id": {
+      "valueClass": "id"
+    },
+    "body[30].player": {
+      "valueClass": "name"
+    },
+    "body[30].rank": {
+      "valueClass": "numeric"
+    },
+    "body[30].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[30].status": {
+      "valueClass": "opaque"
+    },
+    "body[30].data": {
+      "valueClass": "opaque"
+    },
+    "body[30].rating": {
+      "valueClass": "numeric"
+    },
+    "body[30].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[30].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[30].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[30].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[30].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[30].league": {
+      "valueClass": "numeric"
+    },
+    "body[30].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[30].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[30].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[30].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[30].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[31].guild_id": {
+      "valueClass": "id"
+    },
+    "body[31].player": {
+      "valueClass": "name"
+    },
+    "body[31].rank": {
+      "valueClass": "numeric"
+    },
+    "body[31].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[31].status": {
+      "valueClass": "opaque"
+    },
+    "body[31].data": {
+      "valueClass": "opaque"
+    },
+    "body[31].rating": {
+      "valueClass": "numeric"
+    },
+    "body[31].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[31].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[31].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[31].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[31].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[31].league": {
+      "valueClass": "numeric"
+    },
+    "body[31].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[31].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[31].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[31].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[31].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[32].guild_id": {
+      "valueClass": "id"
+    },
+    "body[32].player": {
+      "valueClass": "name"
+    },
+    "body[32].rank": {
+      "valueClass": "numeric"
+    },
+    "body[32].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[32].status": {
+      "valueClass": "opaque"
+    },
+    "body[32].data": {
+      "valueClass": "opaque"
+    },
+    "body[32].rating": {
+      "valueClass": "numeric"
+    },
+    "body[32].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[32].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[32].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[32].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[32].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[32].league": {
+      "valueClass": "numeric"
+    },
+    "body[32].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[32].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[32].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[32].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[32].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[33].guild_id": {
+      "valueClass": "id"
+    },
+    "body[33].player": {
+      "valueClass": "name"
+    },
+    "body[33].rank": {
+      "valueClass": "numeric"
+    },
+    "body[33].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[33].status": {
+      "valueClass": "opaque"
+    },
+    "body[33].data": {
+      "valueClass": "opaque"
+    },
+    "body[33].rating": {
+      "valueClass": "numeric"
+    },
+    "body[33].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[33].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[33].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[33].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[33].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[33].league": {
+      "valueClass": "numeric"
+    },
+    "body[33].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[33].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[33].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[33].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[33].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[34].guild_id": {
+      "valueClass": "id"
+    },
+    "body[34].player": {
+      "valueClass": "name"
+    },
+    "body[34].rank": {
+      "valueClass": "numeric"
+    },
+    "body[34].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[34].status": {
+      "valueClass": "opaque"
+    },
+    "body[34].data": {
+      "valueClass": "opaque"
+    },
+    "body[34].rating": {
+      "valueClass": "numeric"
+    },
+    "body[34].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[34].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[34].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[34].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[34].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[34].league": {
+      "valueClass": "numeric"
+    },
+    "body[34].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[34].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[34].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[34].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[34].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[35].guild_id": {
+      "valueClass": "id"
+    },
+    "body[35].player": {
+      "valueClass": "name"
+    },
+    "body[35].rank": {
+      "valueClass": "numeric"
+    },
+    "body[35].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[35].status": {
+      "valueClass": "opaque"
+    },
+    "body[35].data": {
+      "valueClass": "opaque"
+    },
+    "body[35].rating": {
+      "valueClass": "numeric"
+    },
+    "body[35].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[35].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[35].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[35].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[35].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[35].league": {
+      "valueClass": "numeric"
+    },
+    "body[35].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[35].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[35].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[35].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[35].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[36].guild_id": {
+      "valueClass": "id"
+    },
+    "body[36].player": {
+      "valueClass": "name"
+    },
+    "body[36].rank": {
+      "valueClass": "numeric"
+    },
+    "body[36].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[36].status": {
+      "valueClass": "opaque"
+    },
+    "body[36].data": {
+      "valueClass": "opaque"
+    },
+    "body[36].rating": {
+      "valueClass": "numeric"
+    },
+    "body[36].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[36].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[36].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[36].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[36].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[36].league": {
+      "valueClass": "numeric"
+    },
+    "body[36].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[36].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[36].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[36].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[36].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[37].guild_id": {
+      "valueClass": "id"
+    },
+    "body[37].player": {
+      "valueClass": "name"
+    },
+    "body[37].rank": {
+      "valueClass": "numeric"
+    },
+    "body[37].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[37].status": {
+      "valueClass": "opaque"
+    },
+    "body[37].data": {
+      "valueClass": "opaque"
+    },
+    "body[37].rating": {
+      "valueClass": "numeric"
+    },
+    "body[37].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[37].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[37].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[37].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[37].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[37].league": {
+      "valueClass": "numeric"
+    },
+    "body[37].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[37].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[37].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[37].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[37].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[38].guild_id": {
+      "valueClass": "id"
+    },
+    "body[38].player": {
+      "valueClass": "name"
+    },
+    "body[38].rank": {
+      "valueClass": "numeric"
+    },
+    "body[38].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[38].status": {
+      "valueClass": "opaque"
+    },
+    "body[38].data": {
+      "valueClass": "opaque"
+    },
+    "body[38].rating": {
+      "valueClass": "numeric"
+    },
+    "body[38].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[38].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[38].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[38].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[38].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[38].league": {
+      "valueClass": "numeric"
+    },
+    "body[38].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[38].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[38].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[38].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[38].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[39].guild_id": {
+      "valueClass": "id"
+    },
+    "body[39].player": {
+      "valueClass": "name"
+    },
+    "body[39].rank": {
+      "valueClass": "numeric"
+    },
+    "body[39].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[39].status": {
+      "valueClass": "opaque"
+    },
+    "body[39].data": {
+      "valueClass": "opaque"
+    },
+    "body[39].rating": {
+      "valueClass": "numeric"
+    },
+    "body[39].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[39].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[39].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[39].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[39].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[39].league": {
+      "valueClass": "numeric"
+    },
+    "body[39].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[39].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[39].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[39].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[39].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[40].guild_id": {
+      "valueClass": "id"
+    },
+    "body[40].player": {
+      "valueClass": "name"
+    },
+    "body[40].rank": {
+      "valueClass": "numeric"
+    },
+    "body[40].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[40].status": {
+      "valueClass": "opaque"
+    },
+    "body[40].data": {
+      "valueClass": "opaque"
+    },
+    "body[40].rating": {
+      "valueClass": "numeric"
+    },
+    "body[40].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[40].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[40].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[40].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[40].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[40].league": {
+      "valueClass": "numeric"
+    },
+    "body[40].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[40].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[40].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[40].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[40].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[41].guild_id": {
+      "valueClass": "id"
+    },
+    "body[41].player": {
+      "valueClass": "name"
+    },
+    "body[41].rank": {
+      "valueClass": "numeric"
+    },
+    "body[41].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[41].status": {
+      "valueClass": "opaque"
+    },
+    "body[41].data": {
+      "valueClass": "opaque"
+    },
+    "body[41].rating": {
+      "valueClass": "numeric"
+    },
+    "body[41].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[41].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[41].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[41].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[41].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[41].league": {
+      "valueClass": "numeric"
+    },
+    "body[41].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[41].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[41].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[41].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[41].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[42].guild_id": {
+      "valueClass": "id"
+    },
+    "body[42].player": {
+      "valueClass": "name"
+    },
+    "body[42].rank": {
+      "valueClass": "numeric"
+    },
+    "body[42].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[42].status": {
+      "valueClass": "opaque"
+    },
+    "body[42].data": {
+      "valueClass": "opaque"
+    },
+    "body[42].rating": {
+      "valueClass": "numeric"
+    },
+    "body[42].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[42].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[42].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[42].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[42].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[42].league": {
+      "valueClass": "numeric"
+    },
+    "body[42].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[42].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[42].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[42].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[42].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[43].guild_id": {
+      "valueClass": "id"
+    },
+    "body[43].player": {
+      "valueClass": "name"
+    },
+    "body[43].rank": {
+      "valueClass": "numeric"
+    },
+    "body[43].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[43].status": {
+      "valueClass": "opaque"
+    },
+    "body[43].data": {
+      "valueClass": "opaque"
+    },
+    "body[43].rating": {
+      "valueClass": "numeric"
+    },
+    "body[43].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[43].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[43].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[43].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[43].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[43].league": {
+      "valueClass": "numeric"
+    },
+    "body[43].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[43].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[43].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[43].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[43].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[44].guild_id": {
+      "valueClass": "id"
+    },
+    "body[44].player": {
+      "valueClass": "name"
+    },
+    "body[44].rank": {
+      "valueClass": "numeric"
+    },
+    "body[44].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[44].status": {
+      "valueClass": "opaque"
+    },
+    "body[44].data": {
+      "valueClass": "opaque"
+    },
+    "body[44].rating": {
+      "valueClass": "numeric"
+    },
+    "body[44].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[44].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[44].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[44].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[44].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[44].league": {
+      "valueClass": "numeric"
+    },
+    "body[44].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[44].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[44].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[44].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[44].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[45].guild_id": {
+      "valueClass": "id"
+    },
+    "body[45].player": {
+      "valueClass": "name"
+    },
+    "body[45].rank": {
+      "valueClass": "numeric"
+    },
+    "body[45].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[45].status": {
+      "valueClass": "opaque"
+    },
+    "body[45].data": {
+      "valueClass": "opaque"
+    },
+    "body[45].rating": {
+      "valueClass": "numeric"
+    },
+    "body[45].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[45].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[45].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[45].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[45].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[45].league": {
+      "valueClass": "numeric"
+    },
+    "body[45].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[45].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[45].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[45].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[45].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[46].guild_id": {
+      "valueClass": "id"
+    },
+    "body[46].player": {
+      "valueClass": "name"
+    },
+    "body[46].rank": {
+      "valueClass": "numeric"
+    },
+    "body[46].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[46].status": {
+      "valueClass": "opaque"
+    },
+    "body[46].data": {
+      "valueClass": "opaque"
+    },
+    "body[46].rating": {
+      "valueClass": "numeric"
+    },
+    "body[46].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[46].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[46].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[46].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[46].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[46].league": {
+      "valueClass": "numeric"
+    },
+    "body[46].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[46].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[46].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[46].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[46].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[47].guild_id": {
+      "valueClass": "id"
+    },
+    "body[47].player": {
+      "valueClass": "name"
+    },
+    "body[47].rank": {
+      "valueClass": "numeric"
+    },
+    "body[47].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[47].status": {
+      "valueClass": "opaque"
+    },
+    "body[47].data": {
+      "valueClass": "opaque"
+    },
+    "body[47].rating": {
+      "valueClass": "numeric"
+    },
+    "body[47].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[47].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[47].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[47].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[47].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[47].league": {
+      "valueClass": "numeric"
+    },
+    "body[47].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[47].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[47].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[47].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[47].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[48].guild_id": {
+      "valueClass": "id"
+    },
+    "body[48].player": {
+      "valueClass": "name"
+    },
+    "body[48].rank": {
+      "valueClass": "numeric"
+    },
+    "body[48].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[48].status": {
+      "valueClass": "opaque"
+    },
+    "body[48].data": {
+      "valueClass": "opaque"
+    },
+    "body[48].rating": {
+      "valueClass": "numeric"
+    },
+    "body[48].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[48].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[48].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[48].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[48].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[48].league": {
+      "valueClass": "numeric"
+    },
+    "body[48].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[48].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[48].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[48].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[48].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[49].guild_id": {
+      "valueClass": "id"
+    },
+    "body[49].player": {
+      "valueClass": "name"
+    },
+    "body[49].rank": {
+      "valueClass": "numeric"
+    },
+    "body[49].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[49].status": {
+      "valueClass": "opaque"
+    },
+    "body[49].data": {
+      "valueClass": "opaque"
+    },
+    "body[49].rating": {
+      "valueClass": "numeric"
+    },
+    "body[49].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[49].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[49].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[49].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[49].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[49].league": {
+      "valueClass": "numeric"
+    },
+    "body[49].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[49].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[49].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[49].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[49].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[50].guild_id": {
+      "valueClass": "id"
+    },
+    "body[50].player": {
+      "valueClass": "name"
+    },
+    "body[50].rank": {
+      "valueClass": "numeric"
+    },
+    "body[50].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[50].status": {
+      "valueClass": "opaque"
+    },
+    "body[50].data": {
+      "valueClass": "opaque"
+    },
+    "body[50].rating": {
+      "valueClass": "numeric"
+    },
+    "body[50].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[50].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[50].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[50].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[50].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[50].league": {
+      "valueClass": "numeric"
+    },
+    "body[50].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[50].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[50].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[50].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[50].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[51].guild_id": {
+      "valueClass": "id"
+    },
+    "body[51].player": {
+      "valueClass": "name"
+    },
+    "body[51].rank": {
+      "valueClass": "numeric"
+    },
+    "body[51].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[51].status": {
+      "valueClass": "opaque"
+    },
+    "body[51].data": {
+      "valueClass": "opaque"
+    },
+    "body[51].rating": {
+      "valueClass": "numeric"
+    },
+    "body[51].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[51].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[51].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[51].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[51].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[51].league": {
+      "valueClass": "numeric"
+    },
+    "body[51].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[51].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[51].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[51].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[51].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[52].guild_id": {
+      "valueClass": "id"
+    },
+    "body[52].player": {
+      "valueClass": "name"
+    },
+    "body[52].rank": {
+      "valueClass": "numeric"
+    },
+    "body[52].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[52].status": {
+      "valueClass": "opaque"
+    },
+    "body[52].data": {
+      "valueClass": "opaque"
+    },
+    "body[52].rating": {
+      "valueClass": "numeric"
+    },
+    "body[52].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[52].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[52].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[52].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[52].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[52].league": {
+      "valueClass": "numeric"
+    },
+    "body[52].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[52].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[52].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[52].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[52].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[53].guild_id": {
+      "valueClass": "id"
+    },
+    "body[53].player": {
+      "valueClass": "name"
+    },
+    "body[53].rank": {
+      "valueClass": "numeric"
+    },
+    "body[53].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[53].status": {
+      "valueClass": "opaque"
+    },
+    "body[53].data": {
+      "valueClass": "opaque"
+    },
+    "body[53].rating": {
+      "valueClass": "numeric"
+    },
+    "body[53].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[53].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[53].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[53].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[53].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[53].league": {
+      "valueClass": "numeric"
+    },
+    "body[53].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[53].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[53].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[53].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[53].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[54].guild_id": {
+      "valueClass": "id"
+    },
+    "body[54].player": {
+      "valueClass": "name"
+    },
+    "body[54].rank": {
+      "valueClass": "numeric"
+    },
+    "body[54].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[54].status": {
+      "valueClass": "opaque"
+    },
+    "body[54].data": {
+      "valueClass": "opaque"
+    },
+    "body[54].rating": {
+      "valueClass": "numeric"
+    },
+    "body[54].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[54].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[54].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[54].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[54].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[54].league": {
+      "valueClass": "numeric"
+    },
+    "body[54].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[54].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[54].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[54].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[54].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[55].guild_id": {
+      "valueClass": "id"
+    },
+    "body[55].player": {
+      "valueClass": "name"
+    },
+    "body[55].rank": {
+      "valueClass": "numeric"
+    },
+    "body[55].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[55].status": {
+      "valueClass": "opaque"
+    },
+    "body[55].data": {
+      "valueClass": "opaque"
+    },
+    "body[55].rating": {
+      "valueClass": "numeric"
+    },
+    "body[55].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[55].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[55].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[55].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[55].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[55].league": {
+      "valueClass": "numeric"
+    },
+    "body[55].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[55].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[55].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[55].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[55].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[56].guild_id": {
+      "valueClass": "id"
+    },
+    "body[56].player": {
+      "valueClass": "name"
+    },
+    "body[56].rank": {
+      "valueClass": "numeric"
+    },
+    "body[56].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[56].status": {
+      "valueClass": "opaque"
+    },
+    "body[56].data": {
+      "valueClass": "opaque"
+    },
+    "body[56].rating": {
+      "valueClass": "numeric"
+    },
+    "body[56].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[56].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[56].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[56].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[56].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[56].league": {
+      "valueClass": "numeric"
+    },
+    "body[56].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[56].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[56].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[56].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[56].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[57].guild_id": {
+      "valueClass": "id"
+    },
+    "body[57].player": {
+      "valueClass": "name"
+    },
+    "body[57].rank": {
+      "valueClass": "numeric"
+    },
+    "body[57].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[57].status": {
+      "valueClass": "opaque"
+    },
+    "body[57].data": {
+      "valueClass": "opaque"
+    },
+    "body[57].rating": {
+      "valueClass": "numeric"
+    },
+    "body[57].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[57].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[57].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[57].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[57].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[57].league": {
+      "valueClass": "numeric"
+    },
+    "body[57].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[57].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[57].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[57].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[57].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[58].guild_id": {
+      "valueClass": "id"
+    },
+    "body[58].player": {
+      "valueClass": "name"
+    },
+    "body[58].rank": {
+      "valueClass": "numeric"
+    },
+    "body[58].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[58].status": {
+      "valueClass": "opaque"
+    },
+    "body[58].data": {
+      "valueClass": "opaque"
+    },
+    "body[58].rating": {
+      "valueClass": "numeric"
+    },
+    "body[58].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[58].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[58].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[58].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[58].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[58].league": {
+      "valueClass": "numeric"
+    },
+    "body[58].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[58].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[58].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[58].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[58].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[59].guild_id": {
+      "valueClass": "id"
+    },
+    "body[59].player": {
+      "valueClass": "name"
+    },
+    "body[59].rank": {
+      "valueClass": "numeric"
+    },
+    "body[59].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[59].status": {
+      "valueClass": "opaque"
+    },
+    "body[59].data": {
+      "valueClass": "opaque"
+    },
+    "body[59].rating": {
+      "valueClass": "numeric"
+    },
+    "body[59].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[59].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[59].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[59].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[59].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[59].league": {
+      "valueClass": "numeric"
+    },
+    "body[59].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[59].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[59].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[59].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[59].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[60].guild_id": {
+      "valueClass": "id"
+    },
+    "body[60].player": {
+      "valueClass": "name"
+    },
+    "body[60].rank": {
+      "valueClass": "numeric"
+    },
+    "body[60].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[60].status": {
+      "valueClass": "opaque"
+    },
+    "body[60].data": {
+      "valueClass": "opaque"
+    },
+    "body[60].rating": {
+      "valueClass": "numeric"
+    },
+    "body[60].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[60].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[60].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[60].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[60].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[60].league": {
+      "valueClass": "numeric"
+    },
+    "body[60].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[60].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[60].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[60].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[60].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[61].guild_id": {
+      "valueClass": "id"
+    },
+    "body[61].player": {
+      "valueClass": "name"
+    },
+    "body[61].rank": {
+      "valueClass": "numeric"
+    },
+    "body[61].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[61].status": {
+      "valueClass": "opaque"
+    },
+    "body[61].data": {
+      "valueClass": "opaque"
+    },
+    "body[61].rating": {
+      "valueClass": "numeric"
+    },
+    "body[61].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[61].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[61].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[61].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[61].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[61].league": {
+      "valueClass": "numeric"
+    },
+    "body[61].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[61].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[61].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[61].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[61].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[62].guild_id": {
+      "valueClass": "id"
+    },
+    "body[62].player": {
+      "valueClass": "name"
+    },
+    "body[62].rank": {
+      "valueClass": "numeric"
+    },
+    "body[62].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[62].status": {
+      "valueClass": "opaque"
+    },
+    "body[62].data": {
+      "valueClass": "opaque"
+    },
+    "body[62].rating": {
+      "valueClass": "numeric"
+    },
+    "body[62].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[62].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[62].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[62].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[62].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[62].league": {
+      "valueClass": "numeric"
+    },
+    "body[62].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[62].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[62].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[62].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[62].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[63].guild_id": {
+      "valueClass": "id"
+    },
+    "body[63].player": {
+      "valueClass": "name"
+    },
+    "body[63].rank": {
+      "valueClass": "numeric"
+    },
+    "body[63].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[63].status": {
+      "valueClass": "opaque"
+    },
+    "body[63].data": {
+      "valueClass": "opaque"
+    },
+    "body[63].rating": {
+      "valueClass": "numeric"
+    },
+    "body[63].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[63].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[63].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[63].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[63].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[63].league": {
+      "valueClass": "numeric"
+    },
+    "body[63].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[63].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[63].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[63].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[63].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[64].guild_id": {
+      "valueClass": "id"
+    },
+    "body[64].player": {
+      "valueClass": "name"
+    },
+    "body[64].rank": {
+      "valueClass": "numeric"
+    },
+    "body[64].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[64].status": {
+      "valueClass": "opaque"
+    },
+    "body[64].data": {
+      "valueClass": "opaque"
+    },
+    "body[64].rating": {
+      "valueClass": "numeric"
+    },
+    "body[64].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[64].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[64].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[64].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[64].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[64].league": {
+      "valueClass": "numeric"
+    },
+    "body[64].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[64].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[64].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[64].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[64].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[65].guild_id": {
+      "valueClass": "id"
+    },
+    "body[65].player": {
+      "valueClass": "name"
+    },
+    "body[65].rank": {
+      "valueClass": "numeric"
+    },
+    "body[65].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[65].status": {
+      "valueClass": "opaque"
+    },
+    "body[65].data": {
+      "valueClass": "opaque"
+    },
+    "body[65].rating": {
+      "valueClass": "numeric"
+    },
+    "body[65].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[65].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[65].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[65].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[65].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[65].league": {
+      "valueClass": "numeric"
+    },
+    "body[65].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[65].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[65].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[65].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[65].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[66].guild_id": {
+      "valueClass": "id"
+    },
+    "body[66].player": {
+      "valueClass": "name"
+    },
+    "body[66].rank": {
+      "valueClass": "numeric"
+    },
+    "body[66].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[66].status": {
+      "valueClass": "opaque"
+    },
+    "body[66].data": {
+      "valueClass": "opaque"
+    },
+    "body[66].rating": {
+      "valueClass": "numeric"
+    },
+    "body[66].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[66].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[66].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[66].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[66].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[66].league": {
+      "valueClass": "numeric"
+    },
+    "body[66].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[66].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[66].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[66].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[66].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[67].guild_id": {
+      "valueClass": "id"
+    },
+    "body[67].player": {
+      "valueClass": "name"
+    },
+    "body[67].rank": {
+      "valueClass": "numeric"
+    },
+    "body[67].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[67].status": {
+      "valueClass": "opaque"
+    },
+    "body[67].data": {
+      "valueClass": "opaque"
+    },
+    "body[67].rating": {
+      "valueClass": "numeric"
+    },
+    "body[67].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[67].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[67].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[67].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[67].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[67].league": {
+      "valueClass": "numeric"
+    },
+    "body[67].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[67].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[67].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[67].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[67].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[68].guild_id": {
+      "valueClass": "id"
+    },
+    "body[68].player": {
+      "valueClass": "name"
+    },
+    "body[68].rank": {
+      "valueClass": "numeric"
+    },
+    "body[68].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[68].status": {
+      "valueClass": "opaque"
+    },
+    "body[68].data": {
+      "valueClass": "opaque"
+    },
+    "body[68].rating": {
+      "valueClass": "numeric"
+    },
+    "body[68].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[68].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[68].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[68].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[68].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[68].league": {
+      "valueClass": "numeric"
+    },
+    "body[68].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[68].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[68].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[68].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[68].is_online": {
+      "valueClass": "opaque"
+    },
+    "body[69].guild_id": {
+      "valueClass": "id"
+    },
+    "body[69].player": {
+      "valueClass": "name"
+    },
+    "body[69].rank": {
+      "valueClass": "numeric"
+    },
+    "body[69].join_date": {
+      "valueClass": "timestamp"
+    },
+    "body[69].status": {
+      "valueClass": "opaque"
+    },
+    "body[69].data": {
+      "valueClass": "opaque"
+    },
+    "body[69].rating": {
+      "valueClass": "numeric"
+    },
+    "body[69].modern_rating": {
+      "valueClass": "numeric"
+    },
+    "body[69].avatar_id": {
+      "valueClass": "numeric"
+    },
+    "body[69].title_pre": {
+      "valueClass": "opaque"
+    },
+    "body[69].title_post": {
+      "valueClass": "opaque"
+    },
+    "body[69].display_name": {
+      "valueClass": "opaque"
+    },
+    "body[69].league": {
+      "valueClass": "numeric"
+    },
+    "body[69].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body[69].collection_power": {
+      "valueClass": "numeric"
+    },
+    "body[69].starter_pack_purchase": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[69].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body[69].is_online": {
+      "valueClass": "opaque"
     }
   },
   "body": [
     {
-      "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-      "player": "sample-acct-065",
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-1",
       "rank": 1,
-      "join_date": "2026-06-01T14:44:06.000Z",
-      "status": "active",
-      "data": "{\"contributions\":{\"quest_lodge\":68,\"quest_lodge_gp\":0}}",
-      "rating": 4140,
-      "modern_rating": 2340,
+      "join_date": "2025-09-18T08:00:36.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 0,
       "avatar_id": 0,
-      "title_pre": null,
+      "title_pre": "[redacted]",
       "title_post": null,
       "display_name": null,
-      "league": 14,
-      "modern_league": 8,
-      "collection_power": 3435117,
+      "league": 0,
+      "modern_league": 0,
+      "collection_power": 650157,
       "starter_pack_purchase": true,
-      "player_avatar": "{\"race\":\"human\",\"background\":3,\"color\":\"Green\",\"level\":15,\"frame\":5,\"gender\":1,\"body\":1,\"face\":2,\"nose\":10,\"ears\":0,\"skin_color\":5,\"hair\":2,\"eyebrows\":4,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":7,\"eyes_color\":7,\"mouth\":20,\"complexion\":4,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":8,\"cloth_color\":3,\"tattoo\":8,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":2,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"wild_league\",\"champion_points\",\"shard_holder\",\"year_joined\"],\"is_saved\":false,\"avatar_resets\":0,\"player_card_resets\":0}",
+      "player_avatar": "[redacted]",
       "is_online": false
     },
     {
-      "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-      "player": "sample-acct-051",
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-2",
       "rank": 1,
-      "join_date": "2026-05-13T14:57:15.000Z",
-      "status": "active",
-      "data": "{\"contributions\":{\"quest_lodge\":69,\"quest_lodge_gp\":0}}",
-      "rating": 4420,
+      "join_date": "2025-09-10T22:31:33.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 260,
+      "modern_rating": 260,
+      "avatar_id": 5,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 1,
+      "modern_league": 1,
+      "collection_power": 30070,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-3",
+      "rank": 1,
+      "join_date": "2025-08-01T14:51:18.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 260,
       "modern_rating": 0,
       "avatar_id": 0,
       "title_pre": null,
       "title_post": null,
       "display_name": null,
-      "league": 15,
+      "league": 1,
       "modern_league": 0,
-      "collection_power": 4329081,
+      "collection_power": 145,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-4",
+      "rank": 1,
+      "join_date": "2025-01-08T12:01:24.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 800,
+      "modern_rating": 1100,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 3,
+      "modern_league": 4,
+      "collection_power": 64020,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-5",
+      "rank": 4,
+      "join_date": "2024-11-29T11:26:09.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2600,
+      "modern_rating": 800,
+      "avatar_id": 6,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 9,
+      "modern_league": 3,
+      "collection_power": 474800,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-6",
+      "rank": 4,
+      "join_date": "2023-09-28T15:34:36.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 3720,
+      "modern_rating": 1700,
+      "avatar_id": 4149,
+      "title_pre": "[redacted]",
+      "title_post": "[redacted]",
+      "display_name": null,
+      "league": 13,
+      "modern_league": 6,
+      "collection_power": 11333045,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-7",
+      "rank": 1,
+      "join_date": "2023-07-05T11:13:48.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 300,
+      "modern_rating": 100,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 1,
+      "modern_league": 0,
+      "collection_power": 166835,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-8",
+      "rank": 4,
+      "join_date": "2023-05-18T13:11:48.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 1700,
+      "modern_rating": 100,
+      "avatar_id": 10,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 6,
+      "modern_league": 0,
+      "collection_power": 814785,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-9",
+      "rank": 2,
+      "join_date": "2023-05-15T20:24:09.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 260,
+      "modern_rating": 260,
+      "avatar_id": 14,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 1,
+      "modern_league": 1,
+      "collection_power": 135245,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-10",
+      "rank": 2,
+      "join_date": "2023-04-24T05:45:51.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 600,
+      "avatar_id": 6,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 8,
+      "modern_league": 2,
+      "collection_power": 230175,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-11",
+      "rank": 2,
+      "join_date": "2023-01-17T21:46:48.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 1400,
+      "modern_rating": 10,
+      "avatar_id": 9,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 5,
+      "modern_league": 0,
+      "collection_power": 301661,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-12",
+      "rank": 1,
+      "join_date": "2023-01-09T18:58:54.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 100,
+      "modern_rating": 40,
+      "avatar_id": 9,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 0,
+      "collection_power": 496410,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-13",
+      "rank": 2,
+      "join_date": "2022-06-29T18:17:21.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 1450,
+      "avatar_id": 20,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 8,
+      "modern_league": 5,
+      "collection_power": 698630,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-14",
+      "rank": 4,
+      "join_date": "2022-06-01T11:30:30.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 1700,
+      "modern_rating": 260,
+      "avatar_id": 17,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 6,
+      "modern_league": 1,
+      "collection_power": 147250,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-15",
+      "rank": 4,
+      "join_date": "2022-06-01T08:02:24.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2900,
+      "modern_rating": 600,
+      "avatar_id": 3,
+      "title_pre": "[redacted]",
+      "title_post": null,
+      "display_name": null,
+      "league": 10,
+      "modern_league": 2,
+      "collection_power": 1767960,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-16",
+      "rank": 5,
+      "join_date": "2022-06-01T07:57:21.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2900,
+      "modern_rating": 1400,
+      "avatar_id": 6,
+      "title_pre": "[redacted]",
+      "title_post": null,
+      "display_name": null,
+      "league": 10,
+      "modern_league": 5,
+      "collection_power": 2013957,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-17",
+      "rank": 1,
+      "join_date": "2026-03-05T17:29:12.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 1670,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 6,
+      "collection_power": 145450,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-18",
+      "rank": 1,
+      "join_date": "2026-02-25T16:19:09.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 3020,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 10,
+      "collection_power": 135465,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-19",
+      "rank": 1,
+      "join_date": "2026-02-25T16:07:30.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 550,
+      "avatar_id": 0,
+      "title_pre": "[redacted]",
+      "title_post": "[redacted]",
+      "display_name": null,
+      "league": 8,
+      "modern_league": 2,
+      "collection_power": 2122074,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-20",
+      "rank": 1,
+      "join_date": "2026-02-22T11:37:18.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2600,
+      "modern_rating": 2350,
+      "avatar_id": 9,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 9,
+      "modern_league": 8,
+      "collection_power": 1908836,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-21",
+      "rank": 1,
+      "join_date": "2026-02-21T11:23:24.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 1730,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 6,
+      "collection_power": 43075,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-22",
+      "rank": 1,
+      "join_date": "2026-02-16T18:13:42.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 810,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 3,
+      "collection_power": 705,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-23",
+      "rank": 1,
+      "join_date": "2026-02-16T18:12:45.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 1110,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 4,
+      "collection_power": 705,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-24",
+      "rank": 1,
+      "join_date": "2026-02-16T18:12:03.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 1700,
+      "avatar_id": 19,
+      "title_pre": "[redacted]",
+      "title_post": null,
+      "display_name": null,
+      "league": 8,
+      "modern_league": 6,
+      "collection_power": 78705,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-25",
+      "rank": 1,
+      "join_date": "2026-02-16T18:11:30.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 1430,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 5,
+      "collection_power": 705,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-26",
+      "rank": 1,
+      "join_date": "2026-02-16T18:11:03.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 3000,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 10,
+      "collection_power": 5405,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-27",
+      "rank": 1,
+      "join_date": "2026-02-16T18:10:39.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 3000,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 10,
+      "collection_power": 705,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-28",
+      "rank": 1,
+      "join_date": "2026-02-15T19:06:21.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 260,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 1,
+      "collection_power": 385,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-29",
+      "rank": 1,
+      "join_date": "2026-02-15T19:06:03.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 300,
+      "modern_rating": 0,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 1,
+      "modern_league": 0,
+      "collection_power": 47555,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-30",
+      "rank": 1,
+      "join_date": "2026-02-15T19:05:48.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 750,
+      "modern_rating": 0,
+      "avatar_id": 1,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 3,
+      "modern_league": 0,
+      "collection_power": 43850,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-31",
+      "rank": 1,
+      "join_date": "2026-02-15T19:05:27.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 0,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 8,
+      "modern_league": 0,
+      "collection_power": 56770,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-32",
+      "rank": 1,
+      "join_date": "2026-02-15T19:04:51.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2600,
+      "modern_rating": 2000,
+      "avatar_id": 19,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 9,
+      "modern_league": 7,
+      "collection_power": 296979,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-33",
+      "rank": 1,
+      "join_date": "2026-02-15T19:04:36.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2900,
+      "modern_rating": 0,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 10,
+      "modern_league": 0,
+      "collection_power": 62290,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-34",
+      "rank": 1,
+      "join_date": "2026-02-15T19:02:21.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 3200,
+      "modern_rating": 1750,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 11,
+      "modern_league": 6,
+      "collection_power": 538665,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-35",
+      "rank": 1,
+      "join_date": "2026-02-15T19:02:06.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 1700,
+      "modern_rating": 2300,
+      "avatar_id": 20,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 6,
+      "modern_league": 8,
+      "collection_power": 723965,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-36",
+      "rank": 1,
+      "join_date": "2026-02-15T19:01:48.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2600,
+      "modern_rating": 300,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 9,
+      "modern_league": 1,
+      "collection_power": 21965,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-37",
+      "rank": 1,
+      "join_date": "2026-02-15T19:01:33.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2600,
+      "modern_rating": 0,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 9,
+      "modern_league": 0,
+      "collection_power": 29215,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-38",
+      "rank": 1,
+      "join_date": "2026-02-15T19:01:18.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2600,
+      "modern_rating": 0,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 9,
+      "modern_league": 0,
+      "collection_power": 23605,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-39",
+      "rank": 1,
+      "join_date": "2026-02-15T19:01:00.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 0,
+      "avatar_id": 13,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 8,
+      "modern_league": 0,
+      "collection_power": 637325,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-40",
+      "rank": 1,
+      "join_date": "2026-01-09T12:04:36.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2600,
+      "modern_rating": 1150,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 9,
+      "modern_league": 4,
+      "collection_power": 0,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-41",
+      "rank": 1,
+      "join_date": "2026-01-09T12:04:12.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 2800,
+      "avatar_id": 12,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 8,
+      "modern_league": 10,
+      "collection_power": 1105,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-42",
+      "rank": 1,
+      "join_date": "2025-08-25T11:46:54.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 300,
+      "modern_rating": 300,
+      "avatar_id": 0,
+      "title_pre": "[redacted]",
+      "title_post": null,
+      "display_name": null,
+      "league": 1,
+      "modern_league": 1,
+      "collection_power": 768703,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-43",
+      "rank": 1,
+      "join_date": "2025-08-20T19:19:15.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2900,
+      "modern_rating": 240,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 10,
+      "modern_league": 0,
+      "collection_power": 845397,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-44",
+      "rank": 1,
+      "join_date": "2025-08-18T12:13:21.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 4750,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 15,
+      "collection_power": 111870,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-45",
+      "rank": 1,
+      "join_date": "2025-08-18T12:12:54.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 4750,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 15,
+      "collection_power": 52500,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-46",
+      "rank": 1,
+      "join_date": "2025-08-18T12:07:21.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 1400,
+      "modern_rating": 600,
+      "avatar_id": 2088,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 5,
+      "modern_league": 2,
+      "collection_power": 28970,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-47",
+      "rank": 1,
+      "join_date": "2025-08-17T13:54:36.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2000,
+      "modern_rating": 1440,
+      "avatar_id": 0,
+      "title_pre": "[redacted]",
+      "title_post": "[redacted]",
+      "display_name": null,
+      "league": 7,
+      "modern_league": 5,
+      "collection_power": 718904,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-48",
+      "rank": 1,
+      "join_date": "2025-08-01T16:07:51.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 4750,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 15,
+      "collection_power": 18025,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-49",
+      "rank": 1,
+      "join_date": "2025-08-01T16:05:18.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 3400,
+      "modern_rating": 2650,
+      "avatar_id": 18,
+      "title_pre": "[redacted]",
+      "title_post": null,
+      "display_name": null,
+      "league": 12,
+      "modern_league": 9,
+      "collection_power": 2720742,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-50",
+      "rank": 1,
+      "join_date": "2025-07-28T14:17:54.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2600,
+      "modern_rating": 1150,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 9,
+      "modern_league": 4,
+      "collection_power": 494220,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-51",
+      "rank": 1,
+      "join_date": "2025-07-24T15:34:30.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 2620,
+      "avatar_id": 0,
+      "title_pre": "[redacted]",
+      "title_post": null,
+      "display_name": null,
+      "league": 8,
+      "modern_league": 9,
+      "collection_power": 10861951,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-52",
+      "rank": 1,
+      "join_date": "2025-07-24T15:33:48.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 500,
+      "modern_rating": 1100,
+      "avatar_id": 8,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 2,
+      "modern_league": 4,
+      "collection_power": 43265,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-53",
+      "rank": 1,
+      "join_date": "2025-07-24T15:33:06.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2000,
+      "modern_rating": 800,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 7,
+      "modern_league": 3,
+      "collection_power": 176815,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-54",
+      "rank": 1,
+      "join_date": "2025-07-16T12:40:36.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2900,
+      "modern_rating": 600,
+      "avatar_id": 12,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 10,
+      "modern_league": 2,
+      "collection_power": 192275,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-55",
+      "rank": 1,
+      "join_date": "2025-07-14T12:48:12.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 1400,
+      "modern_rating": 20,
+      "avatar_id": 15,
+      "title_pre": "[redacted]",
+      "title_post": null,
+      "display_name": null,
+      "league": 5,
+      "modern_league": 0,
+      "collection_power": 1274066,
       "starter_pack_purchase": true,
       "player_avatar": null,
       "is_online": true
     },
     {
-      "guild_id": "e44cee2650de14f2cf00fa540ab6cdec32882271",
-      "player": "sample-acct-053",
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-56",
       "rank": 1,
-      "join_date": "2025-12-01T13:03:33.000Z",
-      "status": "active",
-      "data": "{\"contributions\":{\"quest_lodge\":108,\"quest_lodge_gp\":0}}",
-      "rating": 2300,
-      "modern_rating": 3800,
+      "join_date": "2025-07-14T12:47:39.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 1700,
+      "modern_rating": 550,
+      "avatar_id": 8,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 6,
+      "modern_league": 2,
+      "collection_power": 357870,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-57",
+      "rank": 1,
+      "join_date": "2025-07-14T12:45:12.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 1440,
+      "modern_rating": 1450,
       "avatar_id": 0,
-      "title_pre": "Warden",
-      "title_post": "The Emergent",
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 5,
+      "modern_league": 5,
+      "collection_power": 519162,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-58",
+      "rank": 1,
+      "join_date": "2025-07-09T18:53:54.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 1130,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 4,
+      "collection_power": 14125,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-59",
+      "rank": 1,
+      "join_date": "2025-07-09T18:53:09.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 0,
+      "modern_rating": 5000,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 0,
+      "modern_league": 15,
+      "collection_power": 17625,
+      "starter_pack_purchase": false,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-60",
+      "rank": 1,
+      "join_date": "2025-07-09T15:45:12.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2900,
+      "modern_rating": 2600,
+      "avatar_id": 0,
+      "title_pre": "[redacted]",
+      "title_post": null,
+      "display_name": null,
+      "league": 10,
+      "modern_league": 9,
+      "collection_power": 1261249,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": true
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-61",
+      "rank": 1,
+      "join_date": "2025-06-29T21:28:03.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2600,
+      "modern_rating": 1150,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 9,
+      "modern_league": 4,
+      "collection_power": 497340,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-62",
+      "rank": 1,
+      "join_date": "2025-06-29T21:22:42.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 1100,
+      "modern_rating": 500,
+      "avatar_id": 16,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 4,
+      "modern_league": 2,
+      "collection_power": 278845,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-63",
+      "rank": 1,
+      "join_date": "2025-04-01T15:30:15.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 2400,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
       "display_name": null,
       "league": 8,
-      "modern_league": 13,
-      "collection_power": 4299676,
+      "modern_league": 8,
+      "collection_power": 628850,
       "starter_pack_purchase": true,
-      "player_avatar": "{\"race\":\"human\",\"background\":13,\"color\":\"White\",\"level\":39,\"frame\":22,\"gender\":1,\"body\":1,\"face\":1,\"nose\":10,\"ears\":0,\"skin_color\":3,\"hair\":4,\"eyebrows\":5,\"mustache\":0,\"beard\":0,\"hair_color\":1,\"eyes\":4,\"eyes_color\":3,\"mouth\":2,\"complexion\":0,\"scars\":0,\"outfit\":0,\"outfit_color\":0,\"cloth\":7,\"cloth_color\":3,\"tattoo\":20,\"accessory\":0,\"accessory_color\":0,\"hat\":0,\"hat_color\":0,\"earrings\":0,\"earrings_color\":0,\"racial1\":0,\"racial1_color\":0,\"racial2\":0,\"racial2_color\":0,\"racial3\":0,\"racial3_color\":0,\"racial4\":0,\"racial4_color\":0,\"racial5\":0,\"racial5_color\":0,\"badges\":[\"modern_league\",\"\",\"\",\"\"],\"is_saved\":false,\"avatar_resets\":0,\"player_card_resets\":3}",
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-64",
+      "rank": 1,
+      "join_date": "2025-01-07T16:00:54.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2300,
+      "modern_rating": 2300,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 8,
+      "modern_league": 8,
+      "collection_power": 1210,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-65",
+      "rank": 1,
+      "join_date": "2023-08-20T22:19:18.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 3200,
+      "modern_rating": 3200,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 11,
+      "modern_league": 11,
+      "collection_power": 521345,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-66",
+      "rank": 1,
+      "join_date": "2023-08-20T22:17:33.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 3200,
+      "modern_rating": 3660,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 11,
+      "modern_league": 12,
+      "collection_power": 2728416,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-67",
+      "rank": 1,
+      "join_date": "2023-01-25T15:16:03.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 3200,
+      "modern_rating": 2050,
+      "avatar_id": 20,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 11,
+      "modern_league": 7,
+      "collection_power": 63815,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-68",
+      "rank": 1,
+      "join_date": "2023-01-25T15:02:24.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 800,
+      "modern_rating": 260,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 3,
+      "modern_league": 1,
+      "collection_power": 647580,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-69",
+      "rank": 1,
+      "join_date": "2023-01-22T19:12:36.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2000,
+      "modern_rating": 0,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 7,
+      "modern_league": 0,
+      "collection_power": 205305,
+      "starter_pack_purchase": true,
+      "player_avatar": null,
+      "is_online": false
+    },
+    {
+      "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
+      "player": "sample-account-70",
+      "rank": 1,
+      "join_date": "2022-11-22T11:20:57.000Z",
+      "status": "[redacted]",
+      "data": "[redacted]",
+      "rating": 2820,
+      "modern_rating": 0,
+      "avatar_id": 0,
+      "title_pre": null,
+      "title_post": null,
+      "display_name": null,
+      "league": 10,
+      "modern_league": 0,
+      "collection_power": 1028719,
+      "starter_pack_purchase": true,
+      "player_avatar": "[redacted]",
       "is_online": false
     }
   ]

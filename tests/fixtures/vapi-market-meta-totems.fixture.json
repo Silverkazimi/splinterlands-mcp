@@ -1,16 +1,15 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:48:23.492499+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/TOTEMS",
-    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
       "valueClass": "enum"
     },
     "body.data.assetName": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.description": {
       "valueClass": "opaque"
@@ -80,41 +79,71 @@
     },
     "body.data.details[2].circulation": {
       "valueClass": "numeric"
+    },
+    "body.data.details[3].id": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].name": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].description": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].image": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].icon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].filterIcon": {
+      "valueClass": "opaque"
+    },
+    "body.data.details[3].circulation": {
+      "valueClass": "numeric"
     }
   },
   "body": {
     "status": "success",
     "data": {
       "assetName": "TOTEMS",
-      "description": "Totem Claim",
-      "type": "FUNGIBLE",
+      "description": "[redacted]",
+      "type": "[redacted]",
       "details": [
         {
-          "id": "TOTEMC",
-          "name": "Common Totem Claim",
-          "description": "When placed in the building on a Land Plot, Totems can increase production, reduce maintenance costs, or other benefits.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_totem_1_common_300.png",
-          "icon": "icon_claim_totem_common.svg",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": "[redacted]",
           "filterIcon": null,
           "circulation": 24305
         },
         {
-          "id": "TOTEMR",
-          "name": "Rare Totem Claim",
-          "description": "When placed in the building on a Land Plot, Totems can increase production, reduce maintenance costs, or other benefits. Rare Totems provide greater benefits than Common Totems.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_totem_2_rare_300.png",
-          "icon": "icon_claim_totem_rare.svg",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": "[redacted]",
           "filterIcon": null,
           "circulation": 4869
         },
         {
-          "id": "TOTEME",
-          "name": "Epic Totem Claim",
-          "description": "When placed in the building on a Land Plot, Totems can increase production, reduce maintenance costs, or other benefits. Epic Totems provide greater benefits than Rare Totems.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/website/icons/icon_totem_3_epic_300.png",
-          "icon": "icon_claim_totem_epic.svg",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": "[redacted]",
           "filterIcon": null,
           "circulation": 970
+        },
+        {
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": "[redacted]",
+          "filterIcon": null,
+          "circulation": 219
         }
       ]
     }

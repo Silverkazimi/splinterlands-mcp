@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-14T00:00:00Z",
-    "sourceUrl": "https://api.splinterlands.com/players/player_avatar/{name}",
-    "captureScope": "Observed custom-avatar response shape; appearance selections, level and reset counts replaced with synthetic values. No image or account identifier included."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.race": {
@@ -132,15 +131,6 @@
     "body.racial5_color": {
       "valueClass": "numeric"
     },
-    "body.is_saved": {
-      "valueClass": "enum"
-    },
-    "body.avatar_resets": {
-      "valueClass": "numeric"
-    },
-    "body.player_card_resets": {
-      "valueClass": "numeric"
-    },
     "body.badges[0]": {
       "valueClass": "enum"
     },
@@ -152,51 +142,60 @@
     },
     "body.badges[3]": {
       "valueClass": "enum"
+    },
+    "body.is_saved": {
+      "valueClass": "enum"
+    },
+    "body.avatar_resets": {
+      "valueClass": "numeric"
+    },
+    "body.player_card_resets": {
+      "valueClass": "numeric"
     }
   },
   "body": {
     "race": "orc",
-    "background": 1,
+    "background": 12,
     "color": "White",
-    "level": 1,
-    "frame": 1,
+    "level": 50,
+    "frame": 11,
     "gender": 1,
     "body": 1,
-    "face": 1,
-    "nose": 1,
-    "ears": 1,
+    "face": 3,
+    "nose": 7,
+    "ears": 0,
     "skin_color": 1,
-    "hair": 1,
+    "hair": 8,
     "eyebrows": 1,
-    "mustache": 1,
-    "beard": 1,
-    "hair_color": 1,
-    "eyes": 1,
-    "eyes_color": 1,
-    "mouth": 1,
-    "complexion": 1,
-    "scars": 1,
-    "outfit": 1,
-    "outfit_color": 1,
-    "cloth": 1,
-    "cloth_color": 1,
-    "tattoo": 1,
-    "accessory": 1,
-    "accessory_color": 1,
-    "hat": 1,
-    "hat_color": 1,
-    "earrings": 1,
-    "earrings_color": 1,
-    "racial1": 1,
-    "racial1_color": 1,
-    "racial2": 1,
-    "racial2_color": 1,
-    "racial3": 1,
-    "racial3_color": 1,
-    "racial4": 1,
-    "racial4_color": 1,
-    "racial5": 1,
-    "racial5_color": 1,
+    "mustache": 0,
+    "beard": 0,
+    "hair_color": 7,
+    "eyes": 2,
+    "eyes_color": 3,
+    "mouth": 6,
+    "complexion": 0,
+    "scars": 4,
+    "outfit": 0,
+    "outfit_color": 0,
+    "cloth": 108,
+    "cloth_color": 0,
+    "tattoo": 20,
+    "accessory": 103,
+    "accessory_color": 0,
+    "hat": 0,
+    "hat_color": 0,
+    "earrings": 4,
+    "earrings_color": 0,
+    "racial1": 0,
+    "racial1_color": 0,
+    "racial2": 0,
+    "racial2_color": 0,
+    "racial3": 0,
+    "racial3_color": 0,
+    "racial4": 0,
+    "racial4_color": 0,
+    "racial5": 0,
+    "racial5_color": 0,
     "badges": [
       "year_joined",
       "shard_holder",
@@ -204,7 +203,7 @@
       "land_baron"
     ],
     "is_saved": true,
-    "avatar_resets": 1,
-    "player_card_resets": 1
+    "avatar_resets": 0,
+    "player_card_resets": 2
   }
 }

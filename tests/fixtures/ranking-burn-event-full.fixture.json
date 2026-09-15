@@ -1,10 +1,12 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:10:19.146646+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/burn_event_full_leaderboard",
-    "captureScope": "First three list rows; other object fields retained without transformation.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    }
   },
   "valueClasses": {
     "body.leaderboard[0].rank": {
@@ -39,17 +41,17 @@
     "leaderboard": [
       {
         "rank": "1",
-        "player": "sample-acct-064",
+        "player": "sample-account-1",
         "points": "72192933.584"
       },
       {
         "rank": "2",
-        "player": "sample-acct-081",
+        "player": "sample-account-2",
         "points": "64332355.172"
       },
       {
         "rank": "3",
-        "player": "sample-acct-101",
+        "player": "sample-account-3",
         "points": "57000000.000"
       }
     ]

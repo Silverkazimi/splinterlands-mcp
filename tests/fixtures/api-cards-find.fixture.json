@@ -1,15 +1,15 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T00:00:00Z",
-    "additionalSchemaReview": "Missing market, rental, staking, creation and nested definition fields added as explicitly synthetic examples from reviewed September 14 schema. Existing example values retained."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
-    "body[0].uid": {
-      "valueClass": "id"
-    },
     "body[0].player": {
       "valueClass": "name"
+    },
+    "body[0].uid": {
+      "valueClass": "id"
     },
     "body[0].card_detail_id": {
       "valueClass": "id"
@@ -35,12 +35,6 @@
       ]
     },
     "body[0].collection_power": {
-      "valueClass": "numeric"
-    },
-    "body[0].bcx": {
-      "valueClass": "numeric"
-    },
-    "body[0].bcx_unbound": {
       "valueClass": "numeric"
     },
     "body[0].market_id": {
@@ -154,6 +148,9 @@
     "body[0].last_buy_currency": {
       "valueClass": "opaque"
     },
+    "body[0].bcx": {
+      "valueClass": "numeric"
+    },
     "body[0].land_base_pp": {
       "valueClass": "numeric"
     },
@@ -162,6 +159,9 @@
     },
     "body[0].set_id": {
       "valueClass": "opaque"
+    },
+    "body[0].bcx_unbound": {
+      "valueClass": "numeric"
     },
     "body[0].renewal_tx": {
       "valueClass": "opaque"
@@ -414,16 +414,14 @@
   },
   "body": [
     {
-      "uid": "C3-79-0B847L3PGG",
-      "player": "fixture_account",
-      "card_detail_id": 79,
+      "player": "sample-account-1",
+      "uid": "G3-244-C3GK9ODI8W",
+      "card_detail_id": 244,
       "xp": 1,
-      "gold": false,
+      "gold": true,
       "edition": 3,
-      "card_set": "REBELLION",
-      "collection_power": 10,
-      "bcx": 740,
-      "bcx_unbound": 0,
+      "card_set": "untamed",
+      "collection_power": 50000,
       "market_id": null,
       "buy_price": null,
       "market_listing_type": null,
@@ -439,53 +437,55 @@
       "last_used_block": null,
       "last_used_player": null,
       "last_used_date": null,
-      "last_transferred_block": 0,
-      "last_transferred_date": "2026-01-01T00:00:00.000Z",
+      "last_transferred_block": 80752938,
+      "last_transferred_date": "2023-12-05T08:04:36.000Z",
       "alpha_xp": null,
       "delegated_to": null,
       "delegation_tx": "[redacted]",
       "skin": null,
       "delegated_to_display_name": null,
-      "display_name": "sample-account-1",
-      "lock_days": 0,
+      "display_name": "sample-account-2",
+      "lock_days": 3,
       "unlock_date": null,
       "wagon_uid": null,
       "stake_ref_uid": "[redacted]",
-      "stake_start_date": "2026-01-01T00:00:00.000Z",
+      "stake_start_date": "2023-12-05T08:09:24.000Z",
       "stake_end_date": null,
-      "stake_plot": 0,
-      "stake_region": 0,
-      "created_date": "2026-01-01T00:00:00.000Z",
-      "created_block": 0,
+      "stake_plot": 68092,
+      "stake_region": 81,
+      "created_date": "2021-03-15T08:11:00.000Z",
+      "created_block": 52151551,
       "created_tx": "[redacted]",
       "expiration_date": null,
       "last_buy_price": null,
       "last_buy_currency": null,
-      "land_base_pp": "0",
-      "land_dec_stake_needed": 0,
+      "bcx": 1,
+      "land_base_pp": "5000.000",
+      "land_dec_stake_needed": 2500,
       "set_id": null,
+      "bcx_unbound": 0,
       "renewal_tx": null,
       "renewal_date": null,
       "survival_date": null,
       "survival_mode_disabled": null,
-      "foil": 0,
+      "foil": 1,
       "mint": null,
       "card_deposited_date": null,
       "survival_bracket": null,
       "details": {
-        "id": 0,
+        "id": 244,
         "name": "[redacted]",
         "color": "[redacted]",
         "type": "[redacted]",
         "sub_type": "[redacted]",
-        "rarity": 0,
+        "rarity": 4,
         "drop_rate": 0,
         "stats": {
           "mana": [
-            0,
-            0,
-            0,
-            0
+            8,
+            8,
+            8,
+            8
           ],
           "attack": [
             0,
@@ -500,10 +500,10 @@
             0
           ],
           "magic": [
-            0,
-            0,
-            0,
-            0
+            2,
+            3,
+            3,
+            4
           ],
           "armor": [
             0,
@@ -512,16 +512,16 @@
             0
           ],
           "health": [
-            0,
-            0,
-            0,
-            0
+            5,
+            5,
+            5,
+            5
           ],
           "speed": [
-            0,
-            0,
-            0,
-            0
+            2,
+            2,
+            2,
+            2
           ],
           "abilities": [
             [
@@ -538,38 +538,38 @@
         },
         "is_starter": false,
         "editions": "[redacted]",
-        "created_block_num": 0,
+        "created_block_num": 44719087,
         "last_update_tx": "[redacted]",
-        "total_printed": 0,
+        "total_printed": 10000,
         "is_promo": false,
-        "tier": 0,
+        "tier": 4,
         "secondary_color": null,
-        "stake_type_id": 0,
+        "stake_type_id": 1,
         "print_start_date": null,
         "game_type": "[redacted]",
         "no_pp": false,
         "distribution": [
           {
-            "card_detail_id": 0,
-            "gold": false,
-            "foil": 0,
-            "edition": 0,
-            "num_cards": "0",
+            "card_detail_id": 244,
+            "gold": true,
+            "foil": 1,
+            "edition": 3,
+            "num_cards": "105",
             "unbound_cards": "0",
-            "total_xp": "0",
-            "num_burned": "0",
-            "total_burned_xp": "0"
+            "total_xp": "150",
+            "num_burned": "64",
+            "total_burned_xp": "68"
           },
           {
-            "card_detail_id": 0,
+            "card_detail_id": 244,
             "gold": false,
             "foil": 0,
-            "edition": 0,
-            "num_cards": "0",
+            "edition": 3,
+            "num_cards": "3391",
             "unbound_cards": "0",
-            "total_xp": "0",
-            "num_burned": "0",
-            "total_burned_xp": "0"
+            "total_xp": "9229",
+            "num_burned": "334",
+            "total_burned_xp": "553"
           }
         ]
       }

@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-06T19:28:59Z"
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "status": {
@@ -33,6 +34,9 @@
     },
     "data.region_uid": {
       "valueClass": "id"
+    },
+    "data.region_name": {
+      "valueClass": "enum"
     },
     "data.resource_symbol": {
       "valueClass": "enum"
@@ -72,9 +76,6 @@
     },
     "data.land_stats": {
       "valueClass": "opaque"
-    },
-    "data.region_name": {
-      "valueClass": "enum"
     },
     "data.market_updated_date": {
       "valueClass": "timestamp"
@@ -140,16 +141,16 @@
     "resource_symbol": null,
     "resource_id": null,
     "magic_type": "",
-    "stats": "{\"building_in_box\":true,\"unstable_totem\":true}",
+    "stats": "[redacted]",
     "deed_uid": "I-296-d14043817866fa",
-    "player": "__synthetic_player_a__",
+    "player": "sample-account-1",
     "created_date": "2023-04-04T18:12:08.799Z",
     "listed": true,
     "lock_days": 5,
     "unlock_date": "2023-11-18T23:39:48.000Z",
     "in_use": false,
     "deed_type": "Tundra",
-    "land_stats": "{ \"resources\": [\"wood\"] }",
+    "land_stats": "[redacted]",
     "market_updated_date": "2023-12-30T00:06:06.000Z",
     "market_id": 285587,
     "listing_price": 100000,
@@ -159,7 +160,7 @@
     "keep": null,
     "rarity": "common",
     "plot_status": "natural",
-    "hex_code": "#DACDA1",
+    "hex_code": "[redacted]",
     "tax_rate": 0.1,
     "item_detail_id": 296,
     "created_block_num": 73717759,

@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-14",
-    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
-    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.id": {
@@ -1952,12 +1951,12 @@
         "player_data": {
           "player": "sample-account-1",
           "player_avatar": "[redacted]",
-          "rating": 2500,
+          "rating": 1700,
           "avatar_id": 10,
           "title_pre": null,
           "title_post": null,
           "display_name": null,
-          "league": 9,
+          "league": 6,
           "modern_league": 0,
           "collection_power": 814785,
           "starter_pack_purchase": true,
@@ -2112,14 +2111,14 @@
         "player_data": {
           "player": "sample-account-6",
           "player_avatar": "[redacted]",
-          "rating": 4440,
+          "rating": 3720,
           "avatar_id": 4149,
           "title_pre": "[redacted]",
           "title_post": "[redacted]",
           "display_name": null,
-          "league": 15,
+          "league": 13,
           "modern_league": 6,
-          "collection_power": 11327480,
+          "collection_power": 11333045,
           "starter_pack_purchase": true,
           "guild_id": "be189e69c437a55233454494ad15460a5b5c6007",
           "guild_rank": 4,

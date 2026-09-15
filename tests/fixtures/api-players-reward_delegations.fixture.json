@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T07:48:05.098346+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/reward_delegations",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].player": {
@@ -48,56 +46,26 @@
     },
     "body[1].delegation_date": {
       "valueClass": "timestamp"
-    },
-    "body[2].player": {
-      "valueClass": "name"
-    },
-    "body[2].delegate_to_player": {
-      "valueClass": "name"
-    },
-    "body[2].type": {
-      "valueClass": "enum"
-    },
-    "body[2].token": {
-      "valueClass": "enum"
-    },
-    "body[2].percent": {
-      "valueClass": "opaque"
-    },
-    "body[2].trx_id": {
-      "valueClass": "id"
-    },
-    "body[2].delegation_date": {
-      "valueClass": "timestamp"
     }
   },
   "body": [
     {
-      "player": "sample-acct-100",
-      "delegate_to_player": "sample-acct-088",
-      "type": "survival_bracket",
-      "token": "SPS",
-      "percent": "15.00",
-      "trx_id": "3ccb274a4d68764691ef4f7a0548e99553465008",
-      "delegation_date": "2026-02-16T04:39:15.000Z"
-    },
-    {
-      "player": "sample-acct-100",
-      "delegate_to_player": "sample-acct-088",
-      "type": "wild",
-      "token": "SPS",
-      "percent": "15.00",
-      "trx_id": "738aaa3e94210e932104484465b4a5697228dd17",
-      "delegation_date": "2026-02-16T04:39:12.000Z"
-    },
-    {
-      "player": "sample-acct-100",
-      "delegate_to_player": "sample-acct-089",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-2",
       "type": "survival",
       "token": "SPS",
-      "percent": "15.00",
-      "trx_id": "6e1a91e76a4de8b37d14198075e2a94f5e62ad8c",
-      "delegation_date": "2025-03-12T01:30:15.000Z"
+      "percent": "[redacted]",
+      "trx_id": "5acc85974437b74980e94f7088ea984b9339b46b",
+      "delegation_date": "2025-10-23T07:10:27.000Z"
+    },
+    {
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-2",
+      "type": "wild",
+      "token": "SPS",
+      "percent": "[redacted]",
+      "trx_id": "e648c7d3b39e8197eec0dcf541b651d0262beaf0",
+      "delegation_date": "2026-06-16T22:41:06.000Z"
     }
   ]
 }

@@ -1,9 +1,20 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:19:55.767644+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/settings",
-    "captureScope": "Complete captured response; no fields removed or decoded."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "6478bfa491032a62cb548bd5e73d14fa1e2a9debb89739912b7ec0e27e663042",
+        "responseShape": "6478bfa491032a62cb548bd5e73d14fa1e2a9debb89739912b7ec0e27e663042"
+      }
+    ],
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "6478bfa491032a62cb548bd5e73d14fa1e2a9debb89739912b7ec0e27e663042",
+        "alternateShape": "6478bfa491032a62cb548bd5e73d14fa1e2a9debb89739912b7ec0e27e663042"
+      }
+    ]
   },
   "valueClasses": {
     "body.asset_url": {
@@ -1090,7 +1101,7 @@
       "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.GLINT[0]": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.GLINT[1]": {
       "valueClass": "numeric"
@@ -1138,7 +1149,7 @@
       "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.DEC[0]": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.DEC[1]": {
       "valueClass": "numeric"
@@ -1186,7 +1197,7 @@
       "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.DEC-B[0]": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.DEC-B[1]": {
       "valueClass": "numeric"
@@ -1234,7 +1245,7 @@
       "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.CREDITS[0]": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.CREDITS[1]": {
       "valueClass": "numeric"
@@ -1282,7 +1293,7 @@
       "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.CINDER[0]": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.energy.conversion_rates_by_league.CINDER[1]": {
       "valueClass": "numeric"
@@ -3393,39 +3404,6 @@
     "body.sps.unstaking_periods": {
       "valueClass": "numeric"
     },
-    "body.sps.staking_rewards_voucher_last_reward_block": {
-      "valueClass": "numeric"
-    },
-    "body.sps.staking_rewards_voucher_acc_tokens_per_share": {
-      "valueClass": "numeric"
-    },
-    "body.sps.staking_rewards_acc_tokens_per_share": {
-      "valueClass": "numeric"
-    },
-    "body.sps.staking_rewards_last_reward_block": {
-      "valueClass": "numeric"
-    },
-    "body.sps.unstaking_interval_seconds": {
-      "valueClass": "numeric"
-    },
-    "body.sps.staking_rewards_voucher.tokens_per_block": {
-      "valueClass": "numeric"
-    },
-    "body.sps.staking_rewards_voucher.reduction_pct": {
-      "valueClass": "numeric"
-    },
-    "body.sps.staking_rewards_voucher.pool_decline": {
-      "valueClass": "numeric"
-    },
-    "body.sps.staking_rewards_voucher.start_block": {
-      "valueClass": "numeric"
-    },
-    "body.sps.staking_rewards_voucher.pool_start": {
-      "valueClass": "opaque"
-    },
-    "body.sps.staking_rewards_voucher.pool_stop": {
-      "valueClass": "opaque"
-    },
     "body.sps.staking_rewards.tokens_per_block": {
       "valueClass": "numeric"
     },
@@ -3447,8 +3425,44 @@
     "body.sps.staking_rewards.pool_stop": {
       "valueClass": "opaque"
     },
+    "body.sps.staking_rewards_voucher.tokens_per_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher.reduction_pct": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher.pool_decline": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher.start_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher.pool_start": {
+      "valueClass": "opaque"
+    },
+    "body.sps.staking_rewards_voucher.pool_stop": {
+      "valueClass": "opaque"
+    },
+    "body.sps.staking_rewards_voucher_last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_voucher_acc_tokens_per_share": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_acc_tokens_per_share": {
+      "valueClass": "numeric"
+    },
+    "body.sps.staking_rewards_last_reward_block": {
+      "valueClass": "numeric"
+    },
+    "body.sps.unstaking_interval_seconds": {
+      "valueClass": "numeric"
+    },
     "body.battles_disabled": {
       "valueClass": "numeric"
+    },
+    "body.blocks_are_behind": {
+      "valueClass": "enum"
     },
     "body.market_rental.minimum_rental_days": {
       "valueClass": "numeric"
@@ -3705,26 +3719,14 @@
     "body.delegation_rental_max_splits": {
       "valueClass": "numeric"
     },
-    "body.sps_mining_pool.accumulated_rewards_per_share_of_pool": {
+    "body.sps_mining_pool.initial_tokens_per_block": {
       "valueClass": "numeric"
-    },
-    "body.sps_mining_pool.estimated_current_tokens_per_block": {
-      "valueClass": "numeric"
-    },
-    "body.sps_mining_pool.latest_reward_block": {
-      "valueClass": "numeric"
-    },
-    "body.sps_mining_pool.rewards_start": {
-      "valueClass": "opaque"
     },
     "body.sps_mining_pool.pool_start": {
       "valueClass": "opaque"
     },
-    "body.sps_mining_pool.pool_decline": {
+    "body.sps_mining_pool.estimated_current_tokens_per_block": {
       "valueClass": "numeric"
-    },
-    "body.sps_mining_pool.pool_stop": {
-      "valueClass": "opaque"
     },
     "body.sps_mining_pool.capped_decay_rates.37": {
       "valueClass": "numeric"
@@ -3840,7 +3842,19 @@
     "body.sps_mining_pool.capped_decay_rates.74": {
       "valueClass": "numeric"
     },
-    "body.sps_mining_pool.initial_tokens_per_block": {
+    "body.sps_mining_pool.accumulated_rewards_per_share_of_pool": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.rewards_start": {
+      "valueClass": "opaque"
+    },
+    "body.sps_mining_pool.pool_stop": {
+      "valueClass": "opaque"
+    },
+    "body.sps_mining_pool.pool_decline": {
+      "valueClass": "numeric"
+    },
+    "body.sps_mining_pool.latest_reward_block": {
       "valueClass": "numeric"
     },
     "body.proposal_accounts[0]": {
@@ -4466,8 +4480,8 @@
     }
   },
   "body": {
-    "asset_url": "https://d36mxiodymuqjm.cloudfront.net/",
-    "asset_url_override": "https://splinterlands.com/overrides",
+    "asset_url": "[redacted]",
+    "asset_url_override": "[redacted]",
     "gold_percent": 0.02,
     "starter_pack_price": 10,
     "booster_pack_price": 2,
@@ -4507,71 +4521,71 @@
       19
     ],
     "event_creation_whitelist": [
-      "sample-acct-111",
-      "sample-acct-141",
-      "sample-acct-142",
-      "sample-acct-143",
-      "sample-acct-087",
-      "sample-acct-144",
-      "sample-acct-145",
-      "sample-acct-146",
-      "sample-acct-112",
-      "sample-acct-147",
-      "sample-acct-148",
-      "sample-acct-149",
-      "sample-acct-050",
-      "sample-acct-150",
-      "sample-acct-151",
-      "sample-acct-152",
-      "sample-acct-153",
-      "sample-acct-110"
+      "sample-account-1",
+      "sample-account-2",
+      "sample-account-3",
+      "sample-account-4",
+      "sample-account-5",
+      "sample-account-6",
+      "sample-account-7",
+      "sample-account-8",
+      "sample-account-9",
+      "sample-account-10",
+      "sample-account-11",
+      "sample-account-12",
+      "sample-account-13",
+      "sample-account-14",
+      "sample-account-15",
+      "sample-account-16",
+      "sample-account-17",
+      "sample-account-18"
     ],
     "ghost_creation_whitelist": [
-      "sample-acct-111",
-      "sample-acct-141",
-      "sample-acct-142",
-      "sample-acct-143",
-      "sample-acct-087",
-      "sample-acct-144",
-      "sample-acct-145",
-      "sample-acct-146",
-      "sample-acct-112",
-      "sample-acct-147",
-      "sample-acct-148",
-      "sample-acct-149",
-      "sample-acct-050",
-      "sample-acct-150",
-      "sample-acct-151",
-      "sample-acct-152",
-      "sample-acct-153",
-      "sample-acct-110"
+      "sample-account-1",
+      "sample-account-2",
+      "sample-account-3",
+      "sample-account-4",
+      "sample-account-5",
+      "sample-account-6",
+      "sample-account-7",
+      "sample-account-8",
+      "sample-account-9",
+      "sample-account-10",
+      "sample-account-11",
+      "sample-account-12",
+      "sample-account-13",
+      "sample-account-14",
+      "sample-account-15",
+      "sample-account-16",
+      "sample-account-17",
+      "sample-account-18"
     ],
     "event_entry_fee_required": 1,
     "no_entryfee_list": [
-      "sample-acct-111",
-      "sample-acct-141",
-      "sample-acct-142",
-      "sample-acct-143",
-      "sample-acct-087",
-      "sample-acct-144",
-      "sample-acct-145",
-      "sample-acct-146",
-      "sample-acct-112",
-      "sample-acct-147",
-      "sample-acct-148",
-      "sample-acct-149",
-      "sample-acct-050",
-      "sample-acct-150",
-      "sample-acct-151",
-      "sample-acct-152",
-      "sample-acct-153",
-      "sample-acct-110"
+      "sample-account-1",
+      "sample-account-2",
+      "sample-account-3",
+      "sample-account-4",
+      "sample-account-5",
+      "sample-account-6",
+      "sample-account-7",
+      "sample-account-8",
+      "sample-account-9",
+      "sample-account-10",
+      "sample-account-11",
+      "sample-account-12",
+      "sample-account-13",
+      "sample-account-14",
+      "sample-account-15",
+      "sample-account-16",
+      "sample-account-17",
+      "sample-account-18"
     ],
     "max_event_entrants": 1000,
     "tournaments_creation_fee_dec": 2000,
-    "account": "steemmonsters",
-    "tournament_escrow_account": "sl-tournaments",
-    "prefix": "",
+    "account": "[redacted]",
+    "tournament_escrow_account": "[redacted]",
+    "prefix": "[redacted]",
     "rarity_pcts": [
       0.248,
       0.048,
@@ -4883,7 +4897,7 @@
     },
     "prizes_per_frontier_draw": 76,
     "battles": {
-      "asset_url": "https://d36mxiodymuqjm.cloudfront.net/website/battle/",
+      "asset_url": "[redacted]",
       "default_expiration_seconds": 180,
       "reveal_blocks": 20,
       "win_streak_wins": 3,
@@ -5047,16 +5061,16 @@
     "leagues": {
       "wild": [
         {
-          "name": "Wood",
-          "group": "Wood",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 0,
           "league_limit": 3
         },
         {
-          "name": "Bronze III",
-          "group": "Bronze",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 260,
@@ -5064,8 +5078,8 @@
           "season_rating_reset": 260
         },
         {
-          "name": "Bronze II",
-          "group": "Bronze",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 1000,
           "min_rating": 400,
@@ -5073,8 +5087,8 @@
           "season_rating_reset": 300
         },
         {
-          "name": "Bronze I",
-          "group": "Bronze",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 5000,
           "min_rating": 700,
@@ -5082,8 +5096,8 @@
           "season_rating_reset": 500
         },
         {
-          "name": "Silver III",
-          "group": "Silver",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 15000,
           "min_rating": 1000,
@@ -5091,8 +5105,8 @@
           "season_rating_reset": 600
         },
         {
-          "name": "Silver II",
-          "group": "Silver",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 40000,
           "min_rating": 1300,
@@ -5100,8 +5114,8 @@
           "season_rating_reset": 800
         },
         {
-          "name": "Silver I",
-          "group": "Silver",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 70000,
           "min_rating": 1600,
@@ -5109,8 +5123,8 @@
           "season_rating_reset": 1100
         },
         {
-          "name": "Gold III",
-          "group": "Gold",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 100000,
           "min_rating": 1900,
@@ -5118,8 +5132,8 @@
           "season_rating_reset": 1400
         },
         {
-          "name": "Gold II",
-          "group": "Gold",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 150000,
           "min_rating": 2200,
@@ -5127,8 +5141,8 @@
           "season_rating_reset": 1700
         },
         {
-          "name": "Gold I",
-          "group": "Gold",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 200000,
           "min_rating": 2500,
@@ -5136,8 +5150,8 @@
           "season_rating_reset": 2000
         },
         {
-          "name": "Diamond III",
-          "group": "Diamond",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 250000,
           "min_rating": 2800,
@@ -5145,8 +5159,8 @@
           "season_rating_reset": 2300
         },
         {
-          "name": "Diamond II",
-          "group": "Diamond",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 325000,
           "min_rating": 3100,
@@ -5154,8 +5168,8 @@
           "season_rating_reset": 2600
         },
         {
-          "name": "Diamond I",
-          "group": "Diamond",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 400000,
           "min_rating": 3400,
@@ -5163,8 +5177,8 @@
           "season_rating_reset": 2900
         },
         {
-          "name": "Champion III",
-          "group": "Champion",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 500000,
           "min_rating": 3700,
@@ -5172,8 +5186,8 @@
           "season_rating_reset": 3200
         },
         {
-          "name": "Champion II",
-          "group": "Champion",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 500000,
           "min_rating": 4000,
@@ -5181,8 +5195,8 @@
           "season_rating_reset": 3500
         },
         {
-          "name": "Champion I",
-          "group": "Champion",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 500000,
           "min_rating": 4300,
@@ -5192,16 +5206,16 @@
       ],
       "modern": [
         {
-          "name": "Wood",
-          "group": "Wood",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 0,
           "league_limit": 3
         },
         {
-          "name": "Bronze III",
-          "group": "Bronze",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 260,
@@ -5209,8 +5223,8 @@
           "season_rating_reset": 260
         },
         {
-          "name": "Bronze II",
-          "group": "Bronze",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 500,
           "min_rating": 400,
@@ -5218,8 +5232,8 @@
           "season_rating_reset": 300
         },
         {
-          "name": "Bronze I",
-          "group": "Bronze",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 2500,
           "min_rating": 700,
@@ -5227,8 +5241,8 @@
           "season_rating_reset": 500
         },
         {
-          "name": "Silver III",
-          "group": "Silver",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 7500,
           "min_rating": 1000,
@@ -5236,8 +5250,8 @@
           "season_rating_reset": 600
         },
         {
-          "name": "Silver II",
-          "group": "Silver",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 40000,
           "min_rating": 1300,
@@ -5245,8 +5259,8 @@
           "season_rating_reset": 800
         },
         {
-          "name": "Silver I",
-          "group": "Silver",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 70000,
           "min_rating": 1600,
@@ -5254,8 +5268,8 @@
           "season_rating_reset": 1100
         },
         {
-          "name": "Gold III",
-          "group": "Gold",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 100000,
           "min_rating": 1900,
@@ -5263,8 +5277,8 @@
           "season_rating_reset": 1400
         },
         {
-          "name": "Gold II",
-          "group": "Gold",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 150000,
           "min_rating": 2200,
@@ -5272,8 +5286,8 @@
           "season_rating_reset": 1700
         },
         {
-          "name": "Gold I",
-          "group": "Gold",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 200000,
           "min_rating": 2500,
@@ -5281,8 +5295,8 @@
           "season_rating_reset": 2000
         },
         {
-          "name": "Diamond III",
-          "group": "Diamond",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 250000,
           "min_rating": 2800,
@@ -5290,8 +5304,8 @@
           "season_rating_reset": 2300
         },
         {
-          "name": "Diamond II",
-          "group": "Diamond",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 325000,
           "min_rating": 3100,
@@ -5299,8 +5313,8 @@
           "season_rating_reset": 2600
         },
         {
-          "name": "Diamond I",
-          "group": "Diamond",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 400000,
           "min_rating": 3400,
@@ -5308,8 +5322,8 @@
           "season_rating_reset": 2900
         },
         {
-          "name": "Champion III",
-          "group": "Champion",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 500000,
           "min_rating": 3700,
@@ -5317,8 +5331,8 @@
           "season_rating_reset": 3200
         },
         {
-          "name": "Champion II",
-          "group": "Champion",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 500000,
           "min_rating": 4000,
@@ -5326,8 +5340,8 @@
           "season_rating_reset": 3500
         },
         {
-          "name": "Champion I",
-          "group": "Champion",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 500000,
           "min_rating": 4300,
@@ -5337,72 +5351,72 @@
       ],
       "foundation": [
         {
-          "name": "Bronze III",
-          "group": "Bronze",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 0,
           "league_limit": 2
         },
         {
-          "name": "Bronze II",
-          "group": "Bronze",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 400,
           "league_limit": 2
         },
         {
-          "name": "Bronze I",
-          "group": "Bronze",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 700,
           "league_limit": 2
         },
         {
-          "name": "Silver III",
-          "group": "Silver",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 1000,
           "league_limit": 5
         },
         {
-          "name": "Silver II",
-          "group": "Silver",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 1300,
           "league_limit": 5
         },
         {
-          "name": "Silver I",
-          "group": "Silver",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 1600,
           "league_limit": 5
         },
         {
-          "name": "Gold III",
-          "group": "Gold",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 1900,
           "league_limit": 8
         },
         {
-          "name": "Gold II",
-          "group": "Gold",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 2200,
           "league_limit": 8
         },
         {
-          "name": "Gold I",
-          "group": "Gold",
+          "name": "[redacted]",
+          "group": "[redacted]",
           "level": 4,
           "min_power": 0,
           "min_rating": 2500,
@@ -5444,18 +5458,18 @@
     },
     "guilds": {
       "rank_names": [
-        "Member",
-        "Sr. Member",
-        "Officer",
-        "Co-Leader",
-        "Leader"
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]"
       ],
       "brawl_combat_duration": 172800000,
-      "top3_bonus_enabled": "0",
+      "top3_bonus_enabled": "[redacted]",
       "guild_shop": {
         "cost": [
           {
-            "symbol": "DEC",
+            "symbol": "[redacted]",
             "levels": [
               10000,
               20000,
@@ -5470,7 +5484,7 @@
             ]
           },
           {
-            "symbol": "CROWN",
+            "symbol": "[redacted]",
             "levels": [
               0,
               40,
@@ -5489,7 +5503,7 @@
       "barracks": {
         "cost": [
           {
-            "symbol": "DEC",
+            "symbol": "[redacted]",
             "levels": [
               10000,
               20000,
@@ -5504,7 +5518,7 @@
             ]
           },
           {
-            "symbol": "CROWN",
+            "symbol": "[redacted]",
             "levels": [
               0,
               40,
@@ -5523,7 +5537,7 @@
       "arena": {
         "cost": [
           {
-            "symbol": "DEC",
+            "symbol": "[redacted]",
             "levels": [
               10000,
               20000,
@@ -5538,7 +5552,7 @@
             ]
           },
           {
-            "symbol": "CROWN",
+            "symbol": "[redacted]",
             "levels": [
               0,
               40,
@@ -5573,7 +5587,7 @@
         8
       ],
       "library": {
-        "symbol": "DEC",
+        "symbol": "[redacted]",
         "levels": [
           0,
           5000,
@@ -5663,7 +5677,7 @@
       "brawl_cycle_end_offset": 3600000,
       "brawl_results_duration": 86400000,
       "guild_hall": {
-        "symbol": "DEC",
+        "symbol": "[redacted]",
         "levels": [
           0,
           10000,
@@ -5690,7 +5704,7 @@
         ]
       },
       "quest_lodge": {
-        "symbol": "SCROLLS",
+        "symbol": "[redacted]",
         "levels": [
           15,
           30,
@@ -5753,83 +5767,83 @@
     },
     "supported_currencies": [
       {
-        "name": "Dark Energy Crystals",
-        "currency": "DEC",
-        "type": "internal",
+        "name": "[redacted]",
+        "currency": "[redacted]",
+        "type": "[redacted]",
         "tournament_enabled": true,
         "payment_enabled": false,
         "usd_value": 0.001,
         "precision": 3
       },
       {
-        "name": "Dollars",
-        "currency": "USD",
-        "type": "paypal",
+        "name": "[redacted]",
+        "currency": "[redacted]",
+        "type": "[redacted]",
         "tournament_enabled": false,
         "payment_enabled": true,
         "usd_value": 1,
         "precision": 2
       },
       {
-        "name": "USD Coin",
-        "currency": "USDC",
-        "type": "multi-network",
+        "name": "[redacted]",
+        "currency": "[redacted]",
+        "type": "[redacted]",
         "tournament_enabled": false,
         "payment_enabled": true,
         "precision": 18,
-        "contract_address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "contract_address": "[redacted]",
         "networks": {
-          "eth": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-          "bsc": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
+          "eth": "[redacted]",
+          "bsc": "[redacted]"
         }
       },
       {
-        "name": "Splintershards",
-        "currency": "SPS",
-        "type": "internal",
+        "name": "[redacted]",
+        "currency": "[redacted]",
+        "type": "[redacted]",
         "tournament_enabled": true,
         "payment_enabled": true,
         "precision": 3
       },
       {
-        "name": "Electroneum",
-        "currency": "ETN",
-        "type": "evm-native",
-        "chain": "electroneum",
+        "name": "[redacted]",
+        "currency": "[redacted]",
+        "type": "[redacted]",
+        "chain": "[redacted]",
         "tournament_enabled": false,
         "payment_enabled": true,
         "precision": 8
       },
       {
-        "name": "Hive",
-        "currency": "HIVE",
-        "type": "hive",
+        "name": "[redacted]",
+        "currency": "[redacted]",
+        "type": "[redacted]",
         "tournament_enabled": true,
         "payment_enabled": true,
         "precision": 3,
-        "payment_address": "steemmonsters"
+        "payment_address": "[redacted]"
       },
       {
-        "name": "Hive Dollars",
-        "currency": "HBD",
-        "type": "hive",
+        "name": "[redacted]",
+        "currency": "[redacted]",
+        "type": "[redacted]",
         "tournament_enabled": true,
         "payment_enabled": true,
         "precision": 3,
-        "payment_address": "steemmonsters"
+        "payment_address": "[redacted]"
       },
       {
-        "name": "Vouchers",
-        "currency": "VOUCHER",
-        "type": "internal",
+        "name": "[redacted]",
+        "currency": "[redacted]",
+        "type": "[redacted]",
         "tournament_enabled": true,
         "payment_enabled": false,
         "precision": 3
       },
       {
-        "name": "ASCENSION",
-        "currency": "ASCENSION",
-        "type": "internal",
+        "name": "[redacted]",
+        "currency": "[redacted]",
+        "type": "[redacted]",
         "tournament_enabled": true,
         "payment_enabled": false,
         "precision": 0
@@ -5838,86 +5852,86 @@
     "transfer_cooldown_blocks": 57600,
     "test_acct_creation": false,
     "active_auth_ops": [
-      "create_guild",
-      "guild_contribution",
-      "add_wallet",
-      "market_purchase",
-      "market_rent",
-      "market_renew_rental",
-      "gift_cards",
-      "sell_cards",
-      "cancel_sell",
-      "cancel_all",
-      "update_price",
-      "convert_cards",
-      "gift_packs",
-      "burn_cards",
-      "transfer_skins",
-      "token_transfer",
-      "update_authority",
-      "transfer_items",
-      "trade_title",
-      "lock_assets",
-      "unlock_assets",
-      "cancel_unlock_assets",
-      "token_transfer_multi",
-      "proposal_vote",
-      "delegate_rewards",
-      "undelegate_rewards",
-      "shop_purchase",
-      "marketplace_list",
-      "marketplace_purchase",
-      "marketplace_cancel",
-      "redeem_land",
-      "set_authority",
-      "update_locked_assets",
-      "burn_tokens",
-      "guild_get_gp",
-      "rent_token",
-      "cancel_rent_token",
-      "fill_token_rental",
-      "unstake_tokens",
-      "cancel_unstake_tokens",
-      "reroll_quest",
-      "resource_shipment",
-      "redeem_totem",
-      "cnf_claim_airdrop",
-      "claim_staking_rewards",
-      "credits_to_sk",
-      "guild_leader_promote",
-      "auction_bid",
-      "custom_challenge",
-      "return_delegation",
-      "burn_item",
-      "set_burn_sps_reward",
-      "place_rental_offer",
-      "cancel_rental_offer",
-      "fill_market_rental",
-      "expire_market_rental",
-      "reject_market_rental",
-      "purchase_etn_chest",
-      "claim_land_evp",
-      "apply_sticker",
-      "create_trade_offer",
-      "accept_trade_offer"
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]"
     ],
     "banned_domains": [
-      "yopmail.com",
-      "yopmail.fr",
-      "yopmail.net",
-      "cool.fr.nf",
-      "jetable.fr.nf",
-      "courriel.fr.nf",
-      "moncourrier.fr.nf",
-      "monemail.fr.nf",
-      "monmail.fr.nf",
-      "hide.biz.st",
-      "mymail.infos.st"
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]"
     ],
-    "version": "0.7.60",
+    "version": "[redacted]",
     "config_version": 208,
     "conflicts": {
-      "intro_video_enabled": "1",
+      "intro_video_enabled": "[redacted]",
       "staked_pack_value": 125,
       "reward_point_threshold": 100000,
       "max_packs_per_wagon": 100
@@ -5925,30 +5939,31 @@
     "promotions": [],
     "sps": {
       "unstaking_periods": 4,
-      "staking_rewards_voucher_last_reward_block": 93444046,
-      "staking_rewards_voucher_acc_tokens_per_share": 0.03267180361330031,
-      "staking_rewards_acc_tokens_per_share": 0.9035009763627191,
-      "staking_rewards_last_reward_block": 93444046,
-      "unstaking_interval_seconds": 604800,
-      "staking_rewards_voucher": {
-        "tokens_per_block": 0.69444,
-        "reduction_pct": 0,
-        "pool_decline": 1,
-        "start_block": 56186000,
-        "pool_start": "2021-08-02 16:56:30",
-        "pool_stop": "2099-01-02 16:56:30"
-      },
       "staking_rewards": {
         "tokens_per_block": 8.56164,
         "reduction_blocks": 864000,
         "reduction_pct": 1,
         "pool_decline": 0.99,
         "start_block": 56186000,
-        "pool_start": "2021-08-02 16:56:30",
-        "pool_stop": "2027-01-02 16:56:30"
-      }
+        "pool_start": "[redacted]",
+        "pool_stop": "[redacted]"
+      },
+      "staking_rewards_voucher": {
+        "tokens_per_block": 0.69444,
+        "reduction_pct": 0,
+        "pool_decline": 1,
+        "start_block": 56186000,
+        "pool_start": "[redacted]",
+        "pool_stop": "[redacted]"
+      },
+      "staking_rewards_voucher_last_reward_block": 93444046,
+      "staking_rewards_voucher_acc_tokens_per_share": 0.03267180361330031,
+      "staking_rewards_acc_tokens_per_share": 0.9035009763627191,
+      "staking_rewards_last_reward_block": 93444046,
+      "unstaking_interval_seconds": 604800
     },
     "battles_disabled": 0,
+    "blocks_are_behind": false,
     "market_rental": {
       "minimum_rental_days": 2,
       "maximum_rental_days": 180
@@ -5960,102 +5975,98 @@
       "claim_limit": 1,
       "claim_limit_time": 82800000
     },
-    "recaptcha_site_key": "6LewDugUAAAAAAI4FohgvADVQIUn7X070UJTzQDB",
+    "recaptcha_site_key": "[redacted]",
     "fractional_tokens": [
-      "SPS",
-      "DEC",
-      "VOUCHER",
-      "VOUCHER-G"
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]"
     ],
     "transferrable_tokens": [
-      "SPS",
-      "DEC",
-      "ALPHA",
-      "BETA",
-      "UNTAMED",
-      "ORB",
-      "DICE",
-      "RAFFLE",
-      "PLOT",
-      "TRACT",
-      "REGION",
-      "TOTEMC",
-      "TOTEMR",
-      "TOTEME",
-      "TOTEML",
-      "CHAOS",
-      "VOUCHER",
-      "LICENSE",
-      "RIFT",
-      "NIGHTMARE",
-      "VOUCHER-G",
-      "TC",
-      "REBELLION",
-      "TOTEMFC",
-      "TOTEMFE",
-      "TOTEMFL",
-      "TOTEMFR",
-      "ARCANA",
-      "ARCANAL",
-      "ARCANAA",
-      "MIDNIGHTPOT",
-      "ARCANAS",
-      "FT",
-      "AM",
-      "WAGONKIT",
-      "FOUNDATIONS",
-      "UNBIND_CA_C",
-      "UNBIND_CA_R",
-      "UNBIND_CA_E",
-      "UNBIND_CA_L",
-      "PROMO_TOKEN_26",
-      "GB_25_FINE",
-      "GB_25_AMPLE",
-      "GB_25_GENEROUS",
-      "GB_25_LAVISH",
-      "GB_25_MAGNIFICENT",
-      "FLUX",
-      "POLYMORPH",
-      "PASH",
-      "ESCALATION",
-      "ASCENSION",
-      "LUSTROUS",
-      "ETN",
-      "GB_26_FINE",
-      "GB_26_AMPLE",
-      "GB_26_GENEROUS",
-      "GB_26_LAVISH",
-      "GB_26_MAGNIFICENT",
-      "VERICO"
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]"
     ],
     "delegation_cooldown": 604800000,
     "delegation_market": {
       "delegation_rental_qty_divisor": 500,
       "delegation_rental_min_qty": 500,
       "controllers": [
-        "sl-admin-1",
-        "sl-admin-2",
-        "sl-admin-3",
-        "sl-admin-4",
-        "sl-admin-5",
-        "sl-admin-6",
-        "sl-admin-7",
-        "sl-admin-8",
-        "sl-admin-9",
-        "sl-admin-10",
-        "sl-admin-11"
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]"
       ]
     },
     "delegation_rental_min_qty": 100,
     "delegation_rental_max_splits": 10,
     "sps_mining_pool": {
-      "accumulated_rewards_per_share_of_pool": 0.7195954988141552,
+      "initial_tokens_per_block": 4.6875,
+      "pool_start": "[redacted]",
       "estimated_current_tokens_per_block": 4.6875,
-      "latest_reward_block": 109845288,
-      "rewards_start": "2023-11-29 00:00:00",
-      "pool_start": "2022-10-18 00:00:00",
-      "pool_decline": 0.99,
-      "pool_stop": "2028-10-01 05:00:00",
       "capped_decay_rates": {
         "37": 1,
         "38": 1,
@@ -6096,12 +6107,16 @@
         "73": 0.58,
         "74": 0
       },
-      "initial_tokens_per_block": 4.6875
+      "accumulated_rewards_per_share_of_pool": 0.7224417314520092,
+      "rewards_start": "[redacted]",
+      "pool_stop": "[redacted]",
+      "pool_decline": 0.99,
+      "latest_reward_block": 109934878
     },
     "proposal_accounts": [
-      "sample-acct-154",
-      "sample-acct-101",
-      "sample-acct-087"
+      "sample-account-19",
+      "sample-account-20",
+      "sample-account-5"
     ],
     "glint_start_season": 132,
     "eos_glint_multiplier": 1,
@@ -6156,15 +6171,15 @@
     "wild_pass": {
       "prices": [
         {
-          "currency": "DEC",
+          "currency": "[redacted]",
           "amount": 2000
         },
         {
-          "currency": "DEC-B",
+          "currency": "[redacted]",
           "amount": 2000
         },
         {
-          "currency": "CREDITS",
+          "currency": "[redacted]",
           "amount": 2000
         }
       ]
@@ -6186,189 +6201,189 @@
         "start_date": "2025-10-20T15:30:00Z"
       }
     },
-    "dec_price": 0.0003794,
-    "sps_price": 0.0037362,
+    "dec_price": 0.0003754,
+    "sps_price": 0.0037213,
     "maintenance_mode": false,
     "season": {
-      "id": 190,
-      "name": "Ranked Rewards Season 103",
-      "ends": "2026-09-14T14:00:00.000Z",
+      "id": 191,
+      "name": "[redacted]",
+      "ends": "[redacted]",
       "reward_packs": [
-        "0",
-        "5",
-        "7",
-        "9",
-        "12",
-        "15",
-        "18",
-        "22",
-        "26",
-        "30",
-        "40",
-        "50",
-        "60",
-        "80",
-        "120",
-        "150"
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]"
       ],
       "reset_block_num": null
     },
-    "next_season_end": "2026-09-30T14:00:00.000Z",
+    "next_season_end": "[redacted]",
     "previous_season": {
-      "id": 189,
-      "name": "Ranked Rewards Season 102",
-      "ends": "2026-08-31T14:00:00.000Z",
+      "id": 190,
+      "name": "[redacted]",
+      "ends": "[redacted]",
       "reward_packs": [
-        "0",
-        "5",
-        "7",
-        "9",
-        "12",
-        "15",
-        "18",
-        "22",
-        "26",
-        "30",
-        "40",
-        "50",
-        "60",
-        "80",
-        "120",
-        "150"
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]",
+        "[redacted]"
       ],
-      "reset_block_num": 109506627
+      "reset_block_num": 109909673
     },
     "brawl_cycle": {
-      "id": 383,
-      "name": "Brawl Cycle 383",
-      "start": "2026-09-07T12:00:00.000Z",
+      "id": 384,
+      "name": "[redacted]",
+      "start": "[redacted]",
       "status": 1,
       "reset_block_num": null,
-      "end": "2026-09-12T13:00:00.000Z"
+      "end": "[redacted]"
     },
-    "last_block": 109845760,
+    "last_block": 109936377,
     "validator_transitioned": true,
-    "timestamp": 1789204795852,
+    "timestamp": 1789477330051,
     "chain_props": {
-      "time": "2026-09-12T09:19:54",
-      "ref_block_num": 109845760,
-      "ref_block_id": "068c1d00cea9a68ff4a175c5d2c23789f7553f5c",
-      "ref_block_prefix": 2410064334
+      "time": "[redacted]",
+      "ref_block_num": 109936377,
+      "ref_block_id": "068d7ef967fdc146a62fb0c22b0b0f835b6f3bf2",
+      "ref_block_prefix": 1187118439
     },
     "transak_payments_enabled": 1,
     "dec_max_buy_amount": 20000000,
     "sps_max_buy_amount": 500000,
     "paypal_client_id": "AY8dGLagvS7Svf4Nr3b4Uxu7RSzxJI-6XHe7tIUUrZ8R4pwsaRNdRARaT3xKaXw5wB2XIH214jfeGzTN",
     "ssc": {
-      "rpc_url": "https://api.steem-engine.net/rpc2",
+      "rpc_url": "[redacted]",
       "chain_id": "ssc-mainnet1",
-      "hive_rpc_url": "https://api.hive-engine.com/rpc",
+      "hive_rpc_url": "[redacted]",
       "hive_chain_id": "ssc-mainnet-hive"
     },
     "bridge": {
       "ethereum": {
         "DEC": {
           "enabled": true,
-          "token_address": "0x9393fdc77090f31c7db989390d43f454b1a6e7f3",
+          "token_address": "[redacted]",
           "in": {
-            "contract_type": "dao-bridge",
-            "contract_address": "0xAb0efE36EEaD0FE901F8d3CaB3027fB20D6D91Db",
+            "contract_type": "[redacted]",
+            "contract_address": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 0
           },
           "out": {
-            "bridge_account": "deconeth",
+            "bridge_account": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 25000,
-            "memo_prefix": "bridge:sm-eth-dec:"
+            "memo_prefix": "[redacted]"
           }
         },
         "SPS": {
           "enabled": true,
-          "token_address": "0x00813E3421E1367353BfE7615c7f7f133C89df74",
+          "token_address": "[redacted]",
           "in": {
-            "contract_type": "dao-bridge",
-            "contract_address": "0x0B8A76f88AF5fffDc42c6e8dC521bca8d8edC838",
+            "contract_type": "[redacted]",
+            "contract_address": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 0
           },
           "out": {
-            "bridge_account": "spsoneth",
+            "bridge_account": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 3000,
-            "memo_prefix": "bridge:validator-eth-sps:"
+            "memo_prefix": "[redacted]"
           }
         }
       },
       "base": {
         "SPS": {
           "enabled": true,
-          "token_address": "0x578661e9a09eee6b2cd97d4ded1ccbae7b8516b9",
+          "token_address": "[redacted]",
           "in": {
-            "contract_type": "dao-bridge",
-            "contract_address": "0x30636788a272D377501c8ca95c0F3B0b400aa7a9",
+            "contract_type": "[redacted]",
+            "contract_address": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 0
           },
           "out": {
-            "bridge_account": "spsonbase",
+            "bridge_account": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 100,
-            "memo_prefix": "bridge:validator-base-sps:"
+            "memo_prefix": "[redacted]"
           }
         }
       },
       "voucher": {
-        "bridge_wallet": "validator-bridge"
+        "bridge_wallet": "[redacted]"
       },
       "electroneum": {
         "ETN": {
           "enabled": true,
           "in": {
-            "contract_type": "native-bridge",
-            "contract_address": "0xEc081F8023B5B76233F66B5Dc32F266191778146",
+            "contract_type": "[redacted]",
+            "contract_address": "[redacted]",
             "fee_pct": 0,
             "min_amount": 0
           },
           "out": {
-            "bridge_account": "etnonspl",
+            "bridge_account": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 1000,
-            "memo_prefix": "bridge:sm-etn-etn:"
+            "memo_prefix": "[redacted]"
           }
         }
       },
       "bsc": {
         "DEC": {
           "enabled": true,
-          "token_address": "0xfA83A32035C4a6E21319A1ac04E5eb66Ccb47F1d",
+          "token_address": "[redacted]",
           "in": {
-            "contract_type": "dao-bridge",
-            "contract_address": "0xe9d7023f2132d55cbd4ee1f78273cb7a3e74f10a",
+            "contract_type": "[redacted]",
+            "contract_address": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 0
           },
           "out": {
-            "bridge_account": "deconbsc",
+            "bridge_account": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 1000,
-            "memo_prefix": "bridge:sm-bsc-dec:"
+            "memo_prefix": "[redacted]"
           }
         },
         "SPS": {
           "enabled": true,
-          "token_address": "0x1633b7157e7638c4d6593436111bf125ee74703f",
+          "token_address": "[redacted]",
           "in": {
-            "contract_type": "dao-bridge",
-            "contract_address": "0x30636788a272D377501c8ca95c0F3B0b400aa7a9",
+            "contract_type": "[redacted]",
+            "contract_address": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 0
           },
           "out": {
-            "bridge_account": "spsonbsc",
+            "bridge_account": "[redacted]",
             "fee_pct": 0.002,
             "min_amount": 100,
-            "memo_prefix": "bridge:validator-bsc-sps:"
+            "memo_prefix": "[redacted]"
           }
         }
       }
@@ -6379,55 +6394,55 @@
       "contracts": {
         "cards": {
           "abi": {
-            "status": "1",
-            "message": "OK",
-            "result": "[{\"constant\":true,\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newBaseURI\",\"type\":\"string\"}],\"name\":\"setDynamicBaseURI\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_ethId\",\"type\":\"uint256\"},{\"name\":\"_newHolder\",\"type\":\"address\"}],\"name\":\"unlockCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"holder\",\"type\":\"address\"}],\"name\":\"tokensOfHolder\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenOfOwnerByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_splinterId\",\"type\":\"string\"},{\"name\":\"_holder\",\"type\":\"address\"}],\"name\":\"mintCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"cardIdForTokenId\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"cards\",\"outputs\":[{\"name\":\"splinterlandsId\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"},{\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_splinterId\",\"type\":\"string\"}],\"name\":\"tokenIdForCardId\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_ethId\",\"type\":\"uint256\"}],\"name\":\"burnCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_ethId\",\"type\":\"uint256\"},{\"name\":\"_steemAddr\",\"type\":\"string\"}],\"name\":\"lockCard\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"string\"}],\"name\":\"ethIds\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"proxyRegistryAddress\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"baseTokenURI\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newMinter\",\"type\":\"address\"}],\"name\":\"setMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_proxyAddr\",\"type\":\"address\"},{\"name\":\"_minter\",\"type\":\"address\"},{\"name\":\"_baseTokenURI\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"holder\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"cardId\",\"type\":\"string\"},{\"indexed\":false,\"name\":\"steemAddr\",\"type\":\"string\"},{\"indexed\":true,\"name\":\"ethId\",\"type\":\"uint256\"}],\"name\":\"LockCard\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"holder\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"cardId\",\"type\":\"string\"},{\"indexed\":true,\"name\":\"ethId\",\"type\":\"uint256\"}],\"name\":\"MintCard\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"}]"
+            "status": "[redacted]",
+            "message": "[redacted]",
+            "result": "[redacted]"
           },
-          "address": "0xe3870569f9e1836960bf30b5a45fc743cef0ab0e"
+          "address": "[redacted]"
         },
         "crystals": {
           "abi": {
-            "status": "1",
-            "message": "OK",
-            "result": "[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"sender\",\"type\":\"address\"},{\"name\":\"recipient\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"addedValue\",\"type\":\"uint256\"}],\"name\":\"increaseAllowance\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_holder\",\"type\":\"address\"},{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"unlock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"spender\",\"type\":\"address\"},{\"name\":\"subtractedValue\",\"type\":\"uint256\"}],\"name\":\"decreaseAllowance\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"recipient\",\"type\":\"address\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_steemAddr\",\"type\":\"string\"},{\"name\":\"_quantity\",\"type\":\"uint256\"}],\"name\":\"lock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newMinter\",\"type\":\"address\"}],\"name\":\"setMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"minter\",\"type\":\"address\"}],\"name\":\"SetMinter\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"holder\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"steemAddr\",\"type\":\"string\"}],\"name\":\"LockCrystals\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"}]"
+            "status": "[redacted]",
+            "message": "[redacted]",
+            "result": "[redacted]"
           },
-          "address": "0x9393fdc77090f31c7db989390d43f454b1a6e7f3"
+          "address": "[redacted]"
         },
         "payments": {
           "abi": {
-            "status": "1",
-            "message": "OK",
-            "result": "[{\"constant\":false,\"inputs\":[{\"name\":\"_newWithdrawer\",\"type\":\"address\"}],\"name\":\"setWithdrawer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"tokens\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"},{\"name\":\"_amount\",\"type\":\"uint256\"},{\"name\":\"_orderId\",\"type\":\"string\"}],\"name\":\"payToken\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"}],\"name\":\"delist\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"}],\"name\":\"withdrawToken\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"numTokens\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_newAcceptor\",\"type\":\"address\"}],\"name\":\"setAcceptor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_tokenAddr\",\"type\":\"address\"}],\"name\":\"whitelist\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"withdrawEth\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_orderId\",\"type\":\"string\"}],\"name\":\"payEth\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_acceptor\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"orderId\",\"type\":\"string\"}],\"name\":\"EthPayment\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"token\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"orderId\",\"type\":\"string\"}],\"name\":\"TokenPayment\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}]"
+            "status": "[redacted]",
+            "message": "[redacted]",
+            "result": "[redacted]"
           },
-          "address": "0x19929Aba99e4c8964bBA92915EfF5D888475fF9a"
+          "address": "[redacted]"
         }
       }
     },
     "wax": {
       "login_enabled": true,
       "client_id": "242f65467d00",
-      "auth_url": "https://api-idm.wax.io/v1/authorize",
+      "auth_url": "[redacted]",
       "external": {
         "token": {
-          "account": "splintrlands"
+          "account": "[redacted]"
         },
         "atomicassets": {
-          "account": "atomicassets"
+          "account": "[redacted]"
         }
       }
     },
     "api_ops": [
-      "find_match",
-      "cancel_match",
-      "start_match",
-      "submit_team",
-      "team_reveal",
-      "surrender",
-      "accept_challenge",
-      "decline_challenge",
-      "update_set",
-      "create_set",
-      "delete_set"
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]",
+      "[redacted]"
     ]
   }
 }

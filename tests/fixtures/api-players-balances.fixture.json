@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-14",
-    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
-    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].player": {
@@ -4628,8 +4627,8 @@
     {
       "player": "sample-account-1",
       "token": "COMMON_DRAW",
-      "balance": 3025,
-      "last_update_date": "2026-09-14T08:45:33.741Z"
+      "balance": 3175,
+      "last_update_date": "2026-09-15T08:11:33.776Z"
     },
     {
       "player": "sample-account-1",
@@ -4641,7 +4640,7 @@
       "player": "sample-account-1",
       "token": "DEC",
       "balance": 350.935,
-      "last_update_date": "2026-09-10T16:37:46.037Z"
+      "last_update_date": "2026-09-15T08:09:09.898Z"
     },
     {
       "player": "sample-account-1",
@@ -4682,14 +4681,14 @@
     {
       "player": "sample-account-1",
       "token": "GLINT",
-      "balance": 2179,
-      "last_update_date": "2026-09-14T08:45:33.733Z"
+      "balance": 14645,
+      "last_update_date": "2026-09-15T08:40:15.973Z"
     },
     {
       "player": "sample-account-1",
       "token": "GOLD",
-      "balance": 2822,
-      "last_update_date": "2026-09-10T16:38:28.101Z"
+      "balance": 2821,
+      "last_update_date": "2026-09-15T08:40:22.380Z"
     },
     {
       "player": "sample-account-1",
@@ -4712,8 +4711,8 @@
     {
       "player": "sample-account-1",
       "token": "LEGENDARY",
-      "balance": 12487,
-      "last_update_date": "2026-09-10T16:38:28.093Z"
+      "balance": 12472,
+      "last_update_date": "2026-09-15T08:40:22.378Z"
     },
     {
       "player": "sample-account-1",
@@ -4730,8 +4729,8 @@
     {
       "player": "sample-account-1",
       "token": "MERITS",
-      "balance": 1246170,
-      "last_update_date": "2026-09-11T13:20:27.013Z"
+      "balance": 1251851,
+      "last_update_date": "2026-09-15T08:40:22.355Z"
     },
     {
       "player": "sample-account-1",
@@ -4790,8 +4789,8 @@
     {
       "player": "sample-account-1",
       "token": "REWARD_ENERGY",
-      "balance": 2895,
-      "last_update_date": "2026-09-10T16:38:28.349Z"
+      "balance": 2922,
+      "last_update_date": "2026-09-15T08:40:22.545Z"
     },
     {
       "player": "sample-account-1",
@@ -4838,8 +4837,8 @@
     {
       "player": "sample-account-1",
       "token": "UNBIND_CA_C",
-      "balance": 287,
-      "last_update_date": "2026-09-07T05:26:46.167Z"
+      "balance": 296,
+      "last_update_date": "2026-09-15T08:10:15.573Z"
     },
     {
       "player": "sample-account-1",
@@ -4874,8 +4873,8 @@
     {
       "player": "sample-account-1",
       "token": "VOUCHER",
-      "balance": 2395.131,
-      "last_update_date": "2026-09-14T07:30:48.101Z"
+      "balance": 2406.586,
+      "last_update_date": "2026-09-15T08:13:33.482Z"
     },
     {
       "player": "sample-account-1",
@@ -4895,12 +4894,12 @@
     {
       "player": "sample-account-1",
       "token": "SPS",
-      "balance": 235.855
+      "balance": 279.81
     },
     {
       "player": "sample-account-1",
       "token": "SPSP",
-      "balance": 72196.977
+      "balance": 72200.125
     },
     {
       "player": "sample-account-1",
@@ -4915,9 +4914,9 @@
     {
       "player": "sample-account-1",
       "token": "ECR",
-      "balance": "0.677000",
-      "last_reward_block": 109895244,
-      "last_reward_time": "2026-09-14T02:41:11.697Z"
+      "balance": "33.753173",
+      "last_reward_block": 109931256,
+      "last_reward_time": "2026-09-15T08:45:45.923Z"
     },
     {
       "player": "sample-account-1",

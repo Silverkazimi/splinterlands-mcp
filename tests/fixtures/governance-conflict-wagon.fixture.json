@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:28:36.024435+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/conflicts/wagon",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.player": {
@@ -37,42 +35,6 @@
     "body.cards[1].cp": {
       "valueClass": "numeric"
     },
-    "body.cards[2].uid": {
-      "valueClass": "opaque"
-    },
-    "body.cards[2].detail_id": {
-      "valueClass": "numeric"
-    },
-    "body.cards[2].bcx": {
-      "valueClass": "numeric"
-    },
-    "body.cards[2].cp": {
-      "valueClass": "numeric"
-    },
-    "body.cards[3].uid": {
-      "valueClass": "opaque"
-    },
-    "body.cards[3].detail_id": {
-      "valueClass": "numeric"
-    },
-    "body.cards[3].bcx": {
-      "valueClass": "numeric"
-    },
-    "body.cards[3].cp": {
-      "valueClass": "numeric"
-    },
-    "body.cards[4].uid": {
-      "valueClass": "opaque"
-    },
-    "body.cards[4].detail_id": {
-      "valueClass": "numeric"
-    },
-    "body.cards[4].bcx": {
-      "valueClass": "numeric"
-    },
-    "body.cards[4].cp": {
-      "valueClass": "numeric"
-    },
     "body.updated_date": {
       "valueClass": "timestamp"
     },
@@ -84,42 +46,24 @@
     }
   },
   "body": {
-    "player": "sample-acct-100",
-    "wagon_uid": "I-326-02HE4DQ6F4",
+    "player": "sample-account-1",
+    "wagon_uid": "[redacted]",
     "cards": [
       {
-        "uid": "BA20-938-000001",
-        "detail_id": 938,
-        "bcx": 4,
-        "cp": 157500
+        "uid": "[redacted]",
+        "detail_id": 942,
+        "bcx": 115,
+        "cp": 2415
       },
       {
-        "uid": "B20-939-SVF02ZIFY8",
-        "detail_id": 939,
-        "bcx": 4,
-        "cp": 157500
-      },
-      {
-        "uid": "B20-952-DNNOVK00WG",
-        "detail_id": 952,
-        "bcx": 4,
-        "cp": 157500
-      },
-      {
-        "uid": "B2-970-AHX41YODQO",
-        "detail_id": 970,
-        "bcx": 4,
-        "cp": 157500
-      },
-      {
-        "uid": "C2-970-XXNJP93I0G",
-        "detail_id": 970,
-        "bcx": 1,
-        "cp": 500
+        "uid": "[redacted]",
+        "detail_id": 966,
+        "bcx": 115,
+        "cp": 2415
       }
     ],
-    "updated_date": "2026-09-11T11:17:24.000Z",
-    "total_cp": 630500,
+    "updated_date": "2026-05-13T07:04:39.000Z",
+    "total_cp": 4830,
     "damaged": false
   }
 }

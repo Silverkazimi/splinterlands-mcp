@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-07T14:29:12Z"
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "status": {
@@ -23,8 +24,8 @@
   "status": "success",
   "data": {
     "uid": "PR-PNW-1",
-    "dec_stake_needed": 8004775,
-    "dec_staked": 8005321,
-    "dec_stake_in_use": 8004775
+    "dec_stake_needed": 0,
+    "dec_staked": 0,
+    "dec_stake_in_use": 0
   }
 }

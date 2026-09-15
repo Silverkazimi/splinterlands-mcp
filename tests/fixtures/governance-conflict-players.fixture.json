@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:28:23.414554+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/conflicts/players",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.reward_point_threshold": {
@@ -48,11 +46,11 @@
     "reward_point_threshold": 100000,
     "players": [
       {
-        "player": "sample-acct-100",
-        "reward_points": 22117,
-        "progress_to_next": 69284,
-        "last_rp_update": "2026-09-12T09:00:00.988Z",
-        "rp_per_hour": 5551792,
+        "player": "sample-account-1",
+        "reward_points": 25688,
+        "progress_to_next": 30029,
+        "last_rp_update": "2026-09-15T13:00:00.997Z",
+        "rp_per_hour": 5670703,
         "leaderboard_placement": null,
         "leaderboard_total_prizes": 0,
         "leaderboard_unclaimed_prizes": 0,

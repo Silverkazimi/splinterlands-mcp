@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:32:23.060468+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/purchases/stats",
-    "captureScope": "First three root rows; nested records retained unchanged.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.packs[0].edition": {
@@ -309,7 +307,7 @@
     "packs": [
       {
         "edition": 0,
-        "name": "sample-acct-008",
+        "name": "sample-account-1",
         "qty": 300000,
         "available": 0,
         "opened": 294308,
@@ -317,127 +315,127 @@
       },
       {
         "edition": 1,
-        "name": "sample-acct-010",
+        "name": "sample-account-2",
         "qty": 900000,
         "available": 0,
         "burned": 0,
-        "opened": 879793
+        "opened": 879833
       },
       {
         "edition": 2,
-        "name": "sample-acct-033",
+        "name": "sample-account-3",
         "qty": 200000,
         "available": 0,
         "burned": 0,
-        "opened": 194054
+        "opened": 194256
       },
       {
         "edition": 4,
-        "name": "sample-acct-043",
+        "name": "sample-account-4",
         "qty": 1500000,
         "available": 0,
         "burned": 0,
-        "opened": 1459008
+        "opened": 1459015
       },
       {
         "edition": 5,
-        "name": "sample-acct-017",
+        "name": "sample-account-5",
         "qty": 300000,
         "available": 0,
         "burned": 0,
-        "opened": 294748
+        "opened": 294751
       },
       {
         "edition": 7,
-        "name": "sample-acct-013",
+        "name": "sample-account-6",
         "qty": 15000000,
         "available": 0,
         "total_packs_purchased": 10419919,
         "total_bonus_packs": 902628,
         "burned": 2585132,
-        "opened": 10895748
+        "opened": 10896683
       },
       {
         "edition": 8,
-        "name": "sample-acct-036",
+        "name": "sample-account-7",
         "qty": 3000000,
         "available": 0,
         "burned": 1714500,
-        "opened": 977762
+        "opened": 977841
       },
       {
         "edition": 9,
-        "name": "sample-acct-032",
+        "name": "sample-account-8",
         "qty": 380390,
         "available": 1619610,
         "burned": 0,
-        "opened": 234508
+        "opened": 234518
       },
       {
         "edition": 12,
-        "name": "sample-acct-035",
+        "name": "sample-account-9",
         "qty": 10000000,
         "available": 0,
         "burned": 8095275,
-        "opened": 959608
+        "opened": 959670
       },
       {
         "edition": 14,
-        "name": "sample-acct-014",
+        "name": "sample-account-10",
         "types": [
           {
-            "symbol": "ARCANA",
-            "type": "standard",
+            "symbol": "[redacted]",
+            "type": "[redacted]",
             "qty": 5000000,
             "available": 0,
-            "supply": "limited",
+            "supply": "[redacted]",
             "burned": 4675523,
-            "opened": 305420
+            "opened": 305507
           },
           {
-            "symbol": "ARCANAL",
-            "type": "legendary",
+            "symbol": "[redacted]",
+            "type": "[redacted]",
             "qty": 500000,
             "available": 0,
-            "supply": "limited",
+            "supply": "[redacted]",
             "burned": 471723,
-            "opened": 24600
+            "opened": 24606
           },
           {
-            "symbol": "ARCANAA",
-            "type": "alchemy",
+            "symbol": "[redacted]",
+            "type": "[redacted]",
             "qty": 1000000,
             "available": 0,
-            "supply": "limited",
+            "supply": "[redacted]",
             "burned": 807801,
-            "opened": 181093
+            "opened": 181095
           },
           {
-            "symbol": "ARCANAS",
-            "type": "starter",
-            "qty": 182243,
-            "supply": "unlimited",
+            "symbol": "[redacted]",
+            "type": "[redacted]",
+            "qty": 182398,
+            "supply": "[redacted]",
             "burned": 0,
-            "opened": 180564
+            "opened": 180714
           }
         ],
         "available": 0
       },
       {
         "edition": 20,
-        "name": "sample-acct-019",
+        "name": "sample-account-11",
         "qty": 550000,
         "available": 0,
         "burned": 0,
-        "opened": 411160
+        "opened": 412069
       },
       {
         "edition": 21,
-        "name": "sample-acct-044",
+        "name": "sample-account-12",
         "qty": 250000,
         "available": 0,
         "burned": 0,
-        "opened": 61674
+        "opened": 61771
       }
     ],
     "promo_cards": 10000

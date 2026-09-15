@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-13T09:33:50.239250+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/collector/{player}",
-    "captureScope": "Complete captured response without transformed values.",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -65,26 +63,26 @@
   "body": {
     "status": "success",
     "data": {
-      "player": "sample-account-b",
+      "player": "sample-account-1",
       "hasBinder": true,
       "binders": [
         {
-          "id": "123",
-          "player": "sample-account-b",
-          "name": "Power Cards",
-          "slug": "power-cards",
+          "id": "3174",
+          "player": "sample-account-1",
+          "name": "[redacted]",
+          "slug": "forever-on-land",
           "displayIndex": 0,
           "pageCount": 3,
           "cardCount": 27,
-          "lastSavedDate": "2026-07-07T19:22:02.715Z",
-          "coverCosmeticId": "22",
-          "ringStyle": "black",
-          "version": 43,
+          "lastSavedDate": "2026-08-02T10:49:14.722Z",
+          "coverCosmeticId": "15",
+          "ringStyle": "[redacted]",
+          "version": 68,
           "unseenGiftCount": 0
         }
       ],
-      "selectedBinderId": "123",
-      "tabletopBackgroundId": "3",
+      "selectedBinderId": "3174",
+      "tabletopBackgroundId": "7",
       "blockVisitorStickerPlacement": false
     }
   }

@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:47:30.218252+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/market/estimated-price",
-    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -25,12 +24,12 @@
   "body": {
     "status": "success",
     "data": {
-      "assetName": "PACKS",
-      "detailId": "ALPHA",
+      "assetName": "[redacted]",
+      "detailId": "[redacted]",
       "prices": [
         {
-          "currency": "USD",
-          "minPrice": "13.99"
+          "currency": "[redacted]",
+          "minPrice": "[redacted]"
         }
       ]
     }

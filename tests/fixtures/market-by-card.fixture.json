@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:32:10.471161+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/market/market_query_by_card",
-    "captureScope": "First three root rows; nested records retained unchanged.",
-    "redaction": " Account references in reviewed fields and encoded records use consistent synthetic placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].market_id": {
@@ -93,157 +91,39 @@
     },
     "body[0].uid": {
       "valueClass": "opaque"
-    },
-    "body[1].market_id": {
-      "valueClass": "id"
-    },
-    "body[1].card_id": {
-      "valueClass": "id"
-    },
-    "body[1].stake_start_date": {
-      "valueClass": "timestamp"
-    },
-    "body[1].stake_end_date": {
-      "valueClass": "timestamp"
-    },
-    "body[1].xp": {
-      "valueClass": "numeric"
-    },
-    "body[1].alpha_xp": {
-      "valueClass": "numeric"
-    },
-    "body[1].buy_price": {
-      "valueClass": "numeric"
-    },
-    "body[1].seller": {
-      "valueClass": "name"
-    },
-    "body[1].fee_percent": {
-      "valueClass": "numeric"
-    },
-    "body[1].bcx": {
-      "valueClass": "numeric"
-    },
-    "body[1].price_bcx": {
-      "valueClass": "numeric"
-    },
-    "body[1].type": {
-      "valueClass": "opaque"
-    },
-    "body[1].rental_type": {
-      "valueClass": "opaque"
-    },
-    "body[1].expiration_date": {
-      "valueClass": "timestamp"
-    },
-    "body[1].last_used_block": {
-      "valueClass": "numeric"
-    },
-    "body[1].foil": {
-      "valueClass": "numeric"
-    },
-    "body[1].mint": {
-      "valueClass": "opaque"
-    },
-    "body[1].last_used_date": {
-      "valueClass": "timestamp"
-    },
-    "body[1].last_transferred_block": {
-      "valueClass": "opaque"
-    },
-    "body[1].last_transferred_date": {
-      "valueClass": "timestamp"
-    },
-    "body[1].last_used_player": {
-      "valueClass": "name"
-    },
-    "body[1].land_base_pp": {
-      "valueClass": "opaque"
-    },
-    "body[1].survival_date": {
-      "valueClass": "timestamp"
-    },
-    "body[1].gold": {
-      "valueClass": "opaque"
-    },
-    "body[1].edition": {
-      "valueClass": "numeric"
-    },
-    "body[1].card_detail_id": {
-      "valueClass": "numeric"
-    },
-    "body[1].currency": {
-      "valueClass": "opaque"
-    },
-    "body[1].level": {
-      "valueClass": "numeric"
-    },
-    "body[1].uid": {
-      "valueClass": "opaque"
     }
   },
   "body": [
     {
-      "market_id": "d51870cc626020edd2f481c19131a34ad0025f84-0",
-      "card_id": "C-C7DTOU4G68",
+      "market_id": "2277f861406ea66b1b824fbabbf920392c8650d8-49",
+      "card_id": "C3-244-E34CHT1GXS",
       "stake_start_date": null,
       "stake_end_date": null,
       "xp": 1,
       "alpha_xp": null,
-      "buy_price": 0.33,
-      "seller": "sample-acct-061",
+      "buy_price": 0.779,
+      "seller": "sample-account-1",
       "fee_percent": 600,
       "bcx": 1,
-      "price_bcx": 0.33,
-      "type": "SELL",
+      "price_bcx": 0.779,
+      "type": "[redacted]",
       "rental_type": null,
-      "expiration_date": "2026-09-30T10:47:06.000Z",
-      "last_used_block": 74502832,
+      "expiration_date": "2026-10-13T02:53:36.000Z",
+      "last_used_block": 73452042,
       "foil": 0,
       "mint": null,
-      "last_used_date": "2023-05-02T01:23:12.284Z",
+      "last_used_date": "2023-03-26T12:28:40.326Z",
       "last_transferred_block": null,
       "last_transferred_date": null,
-      "last_used_player": "sample-acct-061",
-      "land_base_pp": "26.385",
+      "last_used_player": "sample-account-2",
+      "land_base_pp": "[redacted]",
       "survival_date": null,
       "gold": false,
-      "edition": 0,
-      "card_detail_id": 1,
-      "currency": "USD",
+      "edition": 3,
+      "card_detail_id": 244,
+      "currency": "[redacted]",
       "level": 1,
-      "uid": "C-C7DTOU4G68"
-    },
-    {
-      "market_id": "e3f79d5d3fc96167e4daea691e039aa5617bec2c-0",
-      "card_id": "C-FWBPYD0CZ4",
-      "stake_start_date": null,
-      "stake_end_date": null,
-      "xp": 360,
-      "alpha_xp": null,
-      "buy_price": 6.57,
-      "seller": "sample-acct-108",
-      "fee_percent": 600,
-      "bcx": 19,
-      "price_bcx": 0.346,
-      "type": "SELL",
-      "rental_type": null,
-      "expiration_date": "2026-09-14T00:54:36.000Z",
-      "last_used_block": 69892937,
-      "foil": 0,
-      "mint": null,
-      "last_used_date": "2022-11-22T19:18:54.267Z",
-      "last_transferred_block": null,
-      "last_transferred_date": null,
-      "last_used_player": "sample-acct-113",
-      "land_base_pp": "501.319",
-      "survival_date": null,
-      "gold": false,
-      "edition": 0,
-      "card_detail_id": 1,
-      "currency": "USD",
-      "level": 5,
-      "uid": "C-FWBPYD0CZ4"
+      "uid": "[redacted]"
     }
   ]
 }

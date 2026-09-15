@@ -1,8 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T00:00:00Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "status": {
@@ -22,7 +22,7 @@
   "data": [
     {
       "title": "Warden",
-      "player": "sample-account-a",
+      "player": "sample-account-1",
       "created_date": "2024-05-28T15:34:23.831Z"
     }
   ]

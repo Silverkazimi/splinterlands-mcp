@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:12:02.261003+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/richlist",
-    "captureScope": "First three list rows; other object fields retained without transformation.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.token_type": {
@@ -28,12 +26,6 @@
     "body.richlist[1].balance": {
       "valueClass": "numeric"
     },
-    "body.richlist[2].player": {
-      "valueClass": "name"
-    },
-    "body.richlist[2].balance": {
-      "valueClass": "numeric"
-    },
     "body.player_rank.rank": {
       "valueClass": "numeric"
     },
@@ -45,27 +37,23 @@
     }
   },
   "body": {
-    "token_type": "DEC",
-    "total_accounts": 413594,
-    "total_quantity": 5754643149.789,
+    "token_type": "[redacted]",
+    "total_accounts": 413588,
+    "total_quantity": 5752164032.6,
     "richlist": [
       {
-        "player": "sample-acct-078",
-        "balance": 1874595149.649
+        "player": "sample-account-1",
+        "balance": 1877288763.187
       },
       {
-        "player": "sample-acct-091",
-        "balance": 877195949.889
-      },
-      {
-        "player": "sample-acct-090",
-        "balance": 559021651.687
+        "player": "sample-account-2",
+        "balance": 968195949.889
       }
     ],
     "player_rank": {
-      "rank": 84,
-      "player": "sample-acct-100",
-      "balance": 3168948.119
+      "rank": 15286,
+      "player": "sample-account-3",
+      "balance": 5646.026
     }
   }
 }

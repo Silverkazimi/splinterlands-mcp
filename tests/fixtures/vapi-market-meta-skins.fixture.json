@@ -1,17 +1,19 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:48:20.873295+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/market/meta/asset/SKINS",
-    "captureScope": "First three list records; all fields within retained records and independent summary fields preserved.",
-    "additionalSchemaReview": "Added one redacted SKINS detail from the bounded 2026-09-14 official capture to cover a null card tier; prior example rows retained."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 4
+    }
   },
   "valueClasses": {
     "body.status": {
       "valueClass": "enum"
     },
     "body.data.assetName": {
-      "valueClass": "opaque"
+      "valueClass": "enum"
     },
     "body.data.description": {
       "valueClass": "opaque"
@@ -41,7 +43,7 @@
       "valueClass": "numeric"
     },
     "body.data.details[0].print_limit": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.data.details[0].group": {
       "valueClass": "opaque"
@@ -110,7 +112,7 @@
       "valueClass": "numeric"
     },
     "body.data.details[1].print_limit": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.data.details[1].group": {
       "valueClass": "opaque"
@@ -294,19 +296,19 @@
     "status": "success",
     "data": {
       "assetName": "SKINS",
-      "description": "Player Skins",
-      "type": "FUNGIBLE",
+      "description": "[redacted]",
+      "type": "[redacted]",
       "details": [
         {
-          "id": "183",
-          "name": "Spinetail Fiend - Pastel",
-          "description": "2026 Eggstravaganza Pastel skin from the Reward Shop.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/cards_v2.2/Pastel/Spinetail%20Fiend.jpg",
-          "icon": "https://d36mxiodymuqjm.cloudfront.net/cards_battle_mobile/Pastel/Spinetail%20Fiend.jpg",
-          "filterIcon": "https://d36mxiodymuqjm.cloudfront.net/cards_battle_mobile/Pastel/Spinetail%20Fiend.jpg",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": "[redacted]",
+          "filterIcon": "[redacted]",
           "circulation": 420,
           "print_limit": null,
-          "group": "pastel",
+          "group": "[redacted]",
           "rarity": 1,
           "card_detail_id": 805,
           "card_edition_ids": [
@@ -314,73 +316,73 @@
             16
           ],
           "image_card_edition_id": 15,
-          "set": "Pastel",
+          "set": "[redacted]",
           "card_detail": {
             "id": 805,
-            "name": "Spinetail Fiend",
-            "type": "Monster",
-            "sub_type": "Fiend",
+            "name": "[redacted]",
+            "type": "[redacted]",
+            "sub_type": "[redacted]",
             "tier": 15,
             "rarity": 1,
-            "editions": "15,16"
+            "editions": "[redacted]"
           },
-          "skin_name": "Spinetail Fiend"
+          "skin_name": "[redacted]"
         },
         {
-          "id": "207",
-          "name": "Buttercup Mauler - Sketched",
-          "description": "Conclave Arcana testing reward Skins.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/cards_v2.2/Sketched/Buttercup%20Mauler.jpg",
-          "icon": "https://d36mxiodymuqjm.cloudfront.net/cards_battle_mobile/Sketched/Buttercup%20Mauler.jpg",
-          "filterIcon": "https://d36mxiodymuqjm.cloudfront.net/cards_battle_mobile/Sketched/Buttercup%20Mauler.jpg",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": "[redacted]",
+          "filterIcon": "[redacted]",
           "circulation": 22,
           "print_limit": null,
-          "group": "sketched",
+          "group": "[redacted]",
           "rarity": 1,
           "card_detail_id": 716,
           "card_edition_ids": [
             14
           ],
           "image_card_edition_id": 14,
-          "set": "Sketched",
+          "set": "[redacted]",
           "card_detail": {
             "id": 716,
-            "name": "Buttercup Mauler",
-            "type": "Monster",
-            "sub_type": "Fey",
+            "name": "[redacted]",
+            "type": "[redacted]",
+            "sub_type": "[redacted]",
             "tier": 14,
             "rarity": 1,
-            "editions": "14"
+            "editions": "[redacted]"
           },
-          "skin_name": "Buttercup Mauler"
+          "skin_name": "[redacted]"
         },
         {
-          "id": "115",
-          "name": "Akane - Bountiful",
-          "description": "2025 Thanksgiving Bountiful skin from the Reward Shop.",
-          "image": "https://d36mxiodymuqjm.cloudfront.net/cards_rebellion/Bountiful/Akane.jpg",
-          "icon": "https://d36mxiodymuqjm.cloudfront.net/cards_rebellion/Bountiful/Akane.jpg",
-          "filterIcon": "https://d36mxiodymuqjm.cloudfront.net/cards_rebellion/Bountiful/Akane.jpg",
+          "id": "[redacted]",
+          "name": "[redacted]",
+          "description": "[redacted]",
+          "image": "[redacted]",
+          "icon": "[redacted]",
+          "filterIcon": "[redacted]",
           "circulation": 100,
           "print_limit": 100,
-          "group": "bountiful",
+          "group": "[redacted]",
           "rarity": 1,
           "card_detail_id": 647,
           "card_edition_ids": [
             12
           ],
           "image_card_edition_id": 12,
-          "set": "Bountiful",
+          "set": "[redacted]",
           "card_detail": {
             "id": 647,
-            "name": "Akane",
-            "type": "Summoner",
-            "sub_type": "Drakoshan",
+            "name": "[redacted]",
+            "type": "[redacted]",
+            "sub_type": "[redacted]",
             "tier": 12,
             "rarity": 4,
-            "editions": "12"
+            "editions": "[redacted]"
           },
-          "skin_name": "Akane"
+          "skin_name": "[redacted]"
         },
         {
           "id": "[redacted]",

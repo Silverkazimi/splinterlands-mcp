@@ -1,8 +1,12 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T00:00:00Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 2
+    }
   },
   "valueClasses": {
     "status": {
@@ -124,36 +128,36 @@
   "status": "success",
   "data": [
     {
-      "id": 169258,
-      "pool_id": 69,
-      "from_player": "sample-account-a",
-      "sent_symbol": "DEC",
-      "sent_quantity": 549.15,
-      "received_symbol": "IRON",
-      "received_quantity": 1600.001,
-      "pool_resource_quantity_start": 25245070.452,
-      "pool_resource_quantity_end": 25243470.451,
-      "pool_dec_quantity_start": 8208011.748,
-      "pool_dec_quantity_end": 8208560.898,
-      "trx_id": "0b591b869ee407a64d4a95a25d1fb38714595272",
-      "created_date": "2025-05-25T09:44:30.000Z",
-      "to_player": "sample-account-a"
+      "id": 104705,
+      "pool_id": 1,
+      "from_player": "sample-account-1",
+      "sent_symbol": "GRAIN",
+      "sent_quantity": 9120.407,
+      "received_symbol": "DEC",
+      "received_quantity": 98.001,
+      "pool_resource_quantity_start": 3516743814.444,
+      "pool_resource_quantity_end": 3516752934.851,
+      "pool_dec_quantity_start": 38782801.491,
+      "pool_dec_quantity_end": 38782703.49,
+      "trx_id": "18598afc182ccc26bc6e0dc0ea418d19db1f4d46",
+      "created_date": "2025-04-06T15:22:12.000Z",
+      "to_player": "sample-account-1"
     },
     {
-      "id": 177912,
-      "pool_id": 34,
-      "from_player": "sample-account-a",
+      "id": 104706,
+      "pool_id": 69,
+      "from_player": "sample-account-1",
       "sent_symbol": "DEC",
-      "sent_quantity": 15419.495,
-      "received_symbol": "VOUCHER",
-      "received_quantity": 800,
-      "pool_resource_quantity_start": 827368.744,
-      "pool_resource_quantity_end": 826568.744,
-      "pool_dec_quantity_start": 15093084.871,
-      "pool_dec_quantity_end": 15108504.366,
-      "trx_id": "6ffb6c78a61828617c5de7bdc4aa22452baefb41",
-      "created_date": "2025-05-31T07:54:27.000Z",
-      "to_player": "sample-account-a"
+      "sent_quantity": 95.551,
+      "received_symbol": "IRON",
+      "received_quantity": 300,
+      "pool_resource_quantity_start": 11136811.682,
+      "pool_resource_quantity_end": 11136511.682,
+      "pool_dec_quantity_start": 3456058.018,
+      "pool_dec_quantity_end": 3456153.569,
+      "trx_id": "18598afc182ccc26bc6e0dc0ea418d19db1f4d46",
+      "created_date": "2025-04-06T15:22:12.000Z",
+      "to_player": "sample-account-1"
     }
   ]
 }

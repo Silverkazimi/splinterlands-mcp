@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T10:04:02.488246+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/bids",
-    "captureScope": "Complete bounded public response. No player selector supplied.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -147,10 +145,36 @@
     "status": "success",
     "data": [
       {
-        "txId": "1cae628c2b13beb49de39973c1574574ad31a3d9-1",
-        "createdDate": "2026-09-04T15:54:54.000Z",
-        "lastUpdatedDate": "2026-09-04T15:54:54.000Z",
-        "player": "sample-acct-047",
+        "txId": "1693a25556e56860bc4efcdd037fb67d28e19497-1",
+        "createdDate": "2026-09-07T08:45:30.000Z",
+        "lastUpdatedDate": "2026-09-15T13:02:24.000Z",
+        "player": "sample-account-1",
+        "token": "SPSP",
+        "qtyTotal": "1500.000",
+        "qtyAvailable": "500.000",
+        "pricePerToken": "0.001",
+        "escrow": "3.500",
+        "currency": "DEC",
+        "cancelTx": null
+      },
+      {
+        "txId": "1693a25556e56860bc4efcdd037fb67d28e19497-2",
+        "createdDate": "2026-09-07T08:45:30.000Z",
+        "lastUpdatedDate": "2026-09-07T08:45:30.000Z",
+        "player": "sample-account-2",
+        "token": "SPSP",
+        "qtyTotal": "500.000",
+        "qtyAvailable": "500.000",
+        "pricePerToken": "0.001",
+        "escrow": "3.500",
+        "currency": "DEC",
+        "cancelTx": null
+      },
+      {
+        "txId": "1693a25556e56860bc4efcdd037fb67d28e19497-3",
+        "createdDate": "2026-09-07T08:45:30.000Z",
+        "lastUpdatedDate": "2026-09-07T08:45:30.000Z",
+        "player": "sample-account-1",
         "token": "SPSP",
         "qtyTotal": "1000.000",
         "qtyAvailable": "1000.000",
@@ -160,41 +184,15 @@
         "cancelTx": null
       },
       {
-        "txId": "1cae628c2b13beb49de39973c1574574ad31a3d9-2",
-        "createdDate": "2026-09-04T15:54:54.000Z",
-        "lastUpdatedDate": "2026-09-04T15:54:54.000Z",
-        "player": "sample-acct-047",
+        "txId": "06250c84fd23791eef4877a54eeceaa748291a1f-1",
+        "createdDate": "2026-09-07T08:45:39.000Z",
+        "lastUpdatedDate": "2026-09-07T08:45:39.000Z",
+        "player": "sample-account-3",
         "token": "SPSP",
         "qtyTotal": "500.000",
         "qtyAvailable": "500.000",
         "pricePerToken": "0.001",
         "escrow": "3.500",
-        "currency": "DEC",
-        "cancelTx": null
-      },
-      {
-        "txId": "1cae628c2b13beb49de39973c1574574ad31a3d9-4",
-        "createdDate": "2026-09-04T15:54:54.000Z",
-        "lastUpdatedDate": "2026-09-04T15:54:54.000Z",
-        "player": "sample-acct-047",
-        "token": "SPSP",
-        "qtyTotal": "500.000",
-        "qtyAvailable": "500.000",
-        "pricePerToken": "0.001",
-        "escrow": "3.500",
-        "currency": "DEC",
-        "cancelTx": null
-      },
-      {
-        "txId": "1cae628c2b13beb49de39973c1574574ad31a3d9-5",
-        "createdDate": "2026-09-04T15:54:54.000Z",
-        "lastUpdatedDate": "2026-09-04T15:54:54.000Z",
-        "player": "sample-acct-047",
-        "token": "SPSP",
-        "qtyTotal": "2000.000",
-        "qtyAvailable": "2000.000",
-        "pricePerToken": "0.001",
-        "escrow": "14.000",
         "currency": "DEC",
         "cancelTx": null
       }

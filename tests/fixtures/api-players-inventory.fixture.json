@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-14",
-    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
-    "captureScope": "Redacted response from the bounded 2026-09-14 capture. Accepted after raw and sanitized contract validation; all prior observed field types remain covered."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].uid": {
@@ -4833,7 +4832,7 @@
       "transferable": true,
       "consumable": false,
       "print_limit": null,
-      "total_printed": 21727,
+      "total_printed": 21728,
       "image_filename": "[redacted]",
       "rarity": null,
       "quantity": 1,
@@ -4865,7 +4864,7 @@
       "transferable": true,
       "consumable": false,
       "print_limit": null,
-      "total_printed": 21727,
+      "total_printed": 21728,
       "image_filename": "[redacted]",
       "rarity": null,
       "quantity": 1,
@@ -4897,7 +4896,7 @@
       "transferable": true,
       "consumable": false,
       "print_limit": null,
-      "total_printed": 21727,
+      "total_printed": 21728,
       "image_filename": "[redacted]",
       "rarity": null,
       "quantity": 1,
@@ -4929,7 +4928,7 @@
       "transferable": true,
       "consumable": false,
       "print_limit": null,
-      "total_printed": 21727,
+      "total_printed": 21728,
       "image_filename": "[redacted]",
       "rarity": null,
       "quantity": 1,

@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "sourceUrl": "https://vapi.splinterlands.com/market/player/asset-detail-stats",
-    "observedAt": "2026-09-12T13:55:14.455280+00:00",
-    "captureScope": "Up to three original list rows; activity additionally retains one observed sale row. Complete object response. No field values transformed."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -20,7 +19,7 @@
     "status": "success",
     "data": {
       "owned": 0,
-      "listed": 2
+      "listed": 0
     }
   }
 }

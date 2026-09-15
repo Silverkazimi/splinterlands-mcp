@@ -1,17 +1,50 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-07T10:50:41Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
-    "data.active_land_project_id": {
+    "status": {
+      "valueClass": "enum"
+    },
+    "data.region_uid": {
       "valueClass": "id"
     },
-    "data.black_biome_modifier": {
+    "data.deed_uid": {
+      "valueClass": "id"
+    },
+    "data.is_powered": {
+      "valueClass": "enum"
+    },
+    "data.is_runi_staked": {
+      "valueClass": "enum"
+    },
+    "data.is_power_core_staked": {
+      "valueClass": "enum"
+    },
+    "data.is_energized": {
+      "valueClass": "enum"
+    },
+    "data.has_labors_luck": {
+      "valueClass": "enum"
+    },
+    "data.max_workers_allowed": {
       "valueClass": "numeric"
     },
-    "data.blue_biome_modifier": {
+    "data.runi_boost": {
+      "valueClass": "numeric"
+    },
+    "data.title_boost": {
+      "valueClass": "numeric"
+    },
+    "data.totem_boost": {
+      "valueClass": "numeric"
+    },
+    "data.deed_status_token_boost": {
+      "valueClass": "numeric"
+    },
+    "data.deed_rarity_boost": {
       "valueClass": "numeric"
     },
     "data.card_abilities_boost": {
@@ -20,70 +53,19 @@
     "data.card_bloodlines_boost": {
       "valueClass": "numeric"
     },
-    "data.dec_stake_needed_discount": {
-      "valueClass": "numeric"
-    },
-    "data.deed_rarity_boost": {
-      "valueClass": "numeric"
-    },
-    "data.deed_status_token_boost": {
-      "valueClass": "numeric"
-    },
-    "data.deed_uid": {
-      "valueClass": "id"
-    },
-    "data.efficiency": {
-      "valueClass": "numeric"
-    },
-    "data.gold_biome_modifier": {
-      "valueClass": "numeric"
-    },
     "data.grain_food_discount": {
       "valueClass": "numeric"
-    },
-    "data.green_biome_modifier": {
-      "valueClass": "numeric"
-    },
-    "data.has_completed_first_project": {
-      "valueClass": "enum"
-    },
-    "data.has_labors_luck": {
-      "valueClass": "enum"
-    },
-    "data.is_energized": {
-      "valueClass": "enum"
-    },
-    "data.is_power_core_staked": {
-      "valueClass": "enum"
-    },
-    "data.is_powered": {
-      "valueClass": "enum"
-    },
-    "data.is_runi_staked": {
-      "valueClass": "enum"
     },
     "data.lite_food_discount": {
       "valueClass": "numeric"
     },
-    "data.manager": {
-      "valueClass": "name"
-    },
-    "data.max_workers_allowed": {
+    "data.dec_stake_needed_discount": {
       "valueClass": "numeric"
     },
-    "data.powered_worker_count": {
+    "data.total_boost": {
       "valueClass": "numeric"
     },
-    "data.red_biome_modifier": {
-      "valueClass": "numeric"
-    },
-    "data.region_uid": {
-      "valueClass": "id"
-    },
-    "data.runi_boost": {
-      "valueClass": "numeric"
-    },
-    "data.title_boost": {
+    "data.total_base_pp_cap": {
       "valueClass": "numeric"
     },
     "data.total_base_pp": {
@@ -95,31 +77,22 @@
     "data.total_base_pp_after_cap_percentage": {
       "valueClass": "numeric"
     },
-    "data.total_base_pp_cap": {
-      "valueClass": "numeric"
-    },
-    "data.total_boost": {
-      "valueClass": "numeric"
-    },
-    "data.total_boost_pp": {
-      "valueClass": "numeric"
-    },
-    "data.total_card_abilities_boost_pp": {
-      "valueClass": "numeric"
-    },
-    "data.total_card_bloodlines_boost_pp": {
-      "valueClass": "numeric"
-    },
     "data.total_construction_pp": {
       "valueClass": "numeric"
     },
-    "data.total_dec_stake_in_use": {
+    "data.total_terrain_boost": {
+      "valueClass": "numeric"
+    },
+    "data.total_terrain_boost_pp": {
       "valueClass": "numeric"
     },
     "data.total_dec_stake_needed": {
       "valueClass": "numeric"
     },
-    "data.total_dec_staked": {
+    "data.total_dec_stake_in_use": {
+      "valueClass": "numeric"
+    },
+    "data.efficiency": {
       "valueClass": "numeric"
     },
     "data.total_deed_rarity_boost": {
@@ -134,19 +107,10 @@
     "data.total_deed_status_token_boost_pp": {
       "valueClass": "numeric"
     },
-    "data.total_harvest_pp": {
-      "valueClass": "numeric"
-    },
     "data.total_runi_boost": {
       "valueClass": "numeric"
     },
     "data.total_runi_boost_pp": {
-      "valueClass": "numeric"
-    },
-    "data.total_terrain_boost": {
-      "valueClass": "numeric"
-    },
-    "data.total_terrain_boost_pp": {
       "valueClass": "numeric"
     },
     "data.total_title_boost": {
@@ -161,20 +125,56 @@
     "data.total_totem_boost_pp": {
       "valueClass": "numeric"
     },
+    "data.total_card_abilities_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_card_bloodlines_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_boost_pp": {
+      "valueClass": "numeric"
+    },
+    "data.total_harvest_pp": {
+      "valueClass": "numeric"
+    },
     "data.total_work_per_hour": {
       "valueClass": "numeric"
     },
-    "data.totem_boost": {
-      "valueClass": "numeric"
-    },
-    "data.white_biome_modifier": {
+    "data.powered_worker_count": {
       "valueClass": "numeric"
     },
     "data.worker_count": {
       "valueClass": "numeric"
     },
-    "status": {
+    "data.manager": {
+      "valueClass": "name"
+    },
+    "data.active_land_project_id": {
+      "valueClass": "id"
+    },
+    "data.has_completed_first_project": {
       "valueClass": "enum"
+    },
+    "data.red_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.blue_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.white_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.black_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.green_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.gold_biome_modifier": {
+      "valueClass": "numeric"
+    },
+    "data.total_dec_staked": {
+      "valueClass": "numeric"
     }
   },
   "status": "success",
@@ -225,7 +225,7 @@
     "total_work_per_hour": 34.1,
     "powered_worker_count": 5,
     "worker_count": 5,
-    "manager": "sample-account-b",
+    "manager": "sample-account-1",
     "active_land_project_id": 231753,
     "has_completed_first_project": true,
     "red_biome_modifier": -0.5,

@@ -3,7 +3,20 @@
     "source": "live-observation",
     "observedAt": "2026-09-14",
     "redaction": "Names are synthetic; free text and opaque strings are redacted.",
-    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response."
+    "captureScope": "Selected rows from the bounded 2026-09-14 capture retain every observed field/type and classified enum value. Other values are redacted; this is not a complete response.",
+    "additionalSchemaReview": "Official live observation 2026-09-15 verifies the numeric state of max_entrants.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "1550d72a3fca192ad8f6b8ca1172ba86225f7dd33e41b969fc0edd3bd1af5f9c",
+        "alternateShape": "1a05af5de5780920d55c94390c87cbb8a4fed6d63488a733a819be1524f96a7a"
+      }
+    ],
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "1550d72a3fca192ad8f6b8ca1172ba86225f7dd33e41b969fc0edd3bd1af5f9c",
+        "responseShape": "1a05af5de5780920d55c94390c87cbb8a4fed6d63488a733a819be1524f96a7a"
+      }
+    ]
   },
   "valueClasses": {
     "body[0].id": {
@@ -52,7 +65,7 @@
       "valueClass": "numeric"
     },
     "body[0].max_entrants": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[0].entry_fee": {
       "valueClass": "opaque"
@@ -285,7 +298,7 @@
       "valueClass": "numeric"
     },
     "body[1].max_entrants": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[1].entry_fee": {
       "valueClass": "opaque"
@@ -509,7 +522,7 @@
       "valueClass": "numeric"
     },
     "body[2].max_entrants": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body[2].entry_fee": {
       "valueClass": "opaque"

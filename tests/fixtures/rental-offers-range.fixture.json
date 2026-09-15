@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T10:05:09.386712+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/v3/offers",
-    "captureScope": "Complete bounded public response. No player selector supplied.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -81,10 +79,10 @@
     "status": "success",
     "data": [
       {
-        "txId": "61df250d872708e1d3bd16902dac38118e7cf9c0",
-        "createdDate": "2026-09-07T12:18:30.000Z",
-        "lastUpdatedDate": "2026-09-07T12:18:30.000Z",
-        "player": "sample-acct-052",
+        "txId": "9a274dd71e2175c1664188d730def13324458079",
+        "createdDate": "2026-09-11T17:37:54.000Z",
+        "lastUpdatedDate": "2026-09-11T17:37:54.000Z",
+        "player": "sample-account-1",
         "token": "SPSP",
         "qtyTotal": "10000.000",
         "qtyAvailable": "10000.000",
@@ -94,10 +92,10 @@
         "expirationBlocks": 201600
       },
       {
-        "txId": "d25b72a569f51ec0ae01dd9d83499df01d12ba1c",
-        "createdDate": "2026-09-07T12:18:36.000Z",
-        "lastUpdatedDate": "2026-09-07T12:18:36.000Z",
-        "player": "sample-acct-052",
+        "txId": "307036985188918b18c23517ad2fadc9421e18d6",
+        "createdDate": "2026-09-11T17:44:18.000Z",
+        "lastUpdatedDate": "2026-09-11T17:44:18.000Z",
+        "player": "sample-account-2",
         "token": "SPSP",
         "qtyTotal": "10000.000",
         "qtyAvailable": "10000.000",

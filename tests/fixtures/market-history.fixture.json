@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:32:12.678667+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/market/history",
-    "captureScope": "First three root rows; nested records retained unchanged.",
-    "redaction": " Account references in reviewed fields and encoded records use consistent synthetic placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].id": {
@@ -243,89 +241,725 @@
     },
     "body[2].foil": {
       "valueClass": "numeric"
+    },
+    "body[3].id": {
+      "valueClass": "numeric"
+    },
+    "body[3].sell_trx_id": {
+      "valueClass": "id"
+    },
+    "body[3].seller": {
+      "valueClass": "name"
+    },
+    "body[3].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].type": {
+      "valueClass": "opaque"
+    },
+    "body[3].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[3].currency": {
+      "valueClass": "opaque"
+    },
+    "body[3].starting_price": {
+      "valueClass": "opaque"
+    },
+    "body[3].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[3].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[3].expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].status": {
+      "valueClass": "numeric"
+    },
+    "body[3].purchaser": {
+      "valueClass": "name"
+    },
+    "body[3].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].payment": {
+      "valueClass": "opaque"
+    },
+    "body[3].transaction_id": {
+      "valueClass": "id"
+    },
+    "body[3].lock_block": {
+      "valueClass": "opaque"
+    },
+    "body[3].locked_by": {
+      "valueClass": "opaque"
+    },
+    "body[3].desc": {
+      "valueClass": "opaque"
+    },
+    "body[3].card_id": {
+      "valueClass": "id"
+    },
+    "body[3].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[3].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[3].xp": {
+      "valueClass": "numeric"
+    },
+    "body[3].edition": {
+      "valueClass": "numeric"
+    },
+    "body[3].foil": {
+      "valueClass": "numeric"
+    },
+    "body[4].id": {
+      "valueClass": "numeric"
+    },
+    "body[4].sell_trx_id": {
+      "valueClass": "id"
+    },
+    "body[4].seller": {
+      "valueClass": "name"
+    },
+    "body[4].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].type": {
+      "valueClass": "opaque"
+    },
+    "body[4].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[4].currency": {
+      "valueClass": "opaque"
+    },
+    "body[4].starting_price": {
+      "valueClass": "opaque"
+    },
+    "body[4].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[4].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[4].expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].status": {
+      "valueClass": "numeric"
+    },
+    "body[4].purchaser": {
+      "valueClass": "name"
+    },
+    "body[4].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].payment": {
+      "valueClass": "opaque"
+    },
+    "body[4].transaction_id": {
+      "valueClass": "id"
+    },
+    "body[4].lock_block": {
+      "valueClass": "opaque"
+    },
+    "body[4].locked_by": {
+      "valueClass": "opaque"
+    },
+    "body[4].desc": {
+      "valueClass": "opaque"
+    },
+    "body[4].card_id": {
+      "valueClass": "id"
+    },
+    "body[4].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[4].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[4].xp": {
+      "valueClass": "numeric"
+    },
+    "body[4].edition": {
+      "valueClass": "numeric"
+    },
+    "body[4].foil": {
+      "valueClass": "numeric"
+    },
+    "body[5].id": {
+      "valueClass": "numeric"
+    },
+    "body[5].sell_trx_id": {
+      "valueClass": "id"
+    },
+    "body[5].seller": {
+      "valueClass": "name"
+    },
+    "body[5].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].type": {
+      "valueClass": "opaque"
+    },
+    "body[5].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[5].currency": {
+      "valueClass": "opaque"
+    },
+    "body[5].starting_price": {
+      "valueClass": "opaque"
+    },
+    "body[5].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[5].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[5].expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].status": {
+      "valueClass": "numeric"
+    },
+    "body[5].purchaser": {
+      "valueClass": "name"
+    },
+    "body[5].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].payment": {
+      "valueClass": "opaque"
+    },
+    "body[5].transaction_id": {
+      "valueClass": "id"
+    },
+    "body[5].lock_block": {
+      "valueClass": "opaque"
+    },
+    "body[5].locked_by": {
+      "valueClass": "opaque"
+    },
+    "body[5].desc": {
+      "valueClass": "opaque"
+    },
+    "body[5].card_id": {
+      "valueClass": "id"
+    },
+    "body[5].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[5].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[5].xp": {
+      "valueClass": "numeric"
+    },
+    "body[5].edition": {
+      "valueClass": "numeric"
+    },
+    "body[5].foil": {
+      "valueClass": "numeric"
+    },
+    "body[6].id": {
+      "valueClass": "numeric"
+    },
+    "body[6].sell_trx_id": {
+      "valueClass": "id"
+    },
+    "body[6].seller": {
+      "valueClass": "name"
+    },
+    "body[6].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].type": {
+      "valueClass": "opaque"
+    },
+    "body[6].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[6].currency": {
+      "valueClass": "opaque"
+    },
+    "body[6].starting_price": {
+      "valueClass": "opaque"
+    },
+    "body[6].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[6].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[6].expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].status": {
+      "valueClass": "numeric"
+    },
+    "body[6].purchaser": {
+      "valueClass": "name"
+    },
+    "body[6].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].payment": {
+      "valueClass": "opaque"
+    },
+    "body[6].transaction_id": {
+      "valueClass": "id"
+    },
+    "body[6].lock_block": {
+      "valueClass": "opaque"
+    },
+    "body[6].locked_by": {
+      "valueClass": "opaque"
+    },
+    "body[6].desc": {
+      "valueClass": "opaque"
+    },
+    "body[6].card_id": {
+      "valueClass": "id"
+    },
+    "body[6].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[6].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[6].xp": {
+      "valueClass": "numeric"
+    },
+    "body[6].edition": {
+      "valueClass": "numeric"
+    },
+    "body[6].foil": {
+      "valueClass": "numeric"
+    },
+    "body[7].id": {
+      "valueClass": "numeric"
+    },
+    "body[7].sell_trx_id": {
+      "valueClass": "id"
+    },
+    "body[7].seller": {
+      "valueClass": "name"
+    },
+    "body[7].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].type": {
+      "valueClass": "opaque"
+    },
+    "body[7].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[7].currency": {
+      "valueClass": "opaque"
+    },
+    "body[7].starting_price": {
+      "valueClass": "opaque"
+    },
+    "body[7].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[7].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[7].expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].status": {
+      "valueClass": "numeric"
+    },
+    "body[7].purchaser": {
+      "valueClass": "name"
+    },
+    "body[7].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].payment": {
+      "valueClass": "opaque"
+    },
+    "body[7].transaction_id": {
+      "valueClass": "id"
+    },
+    "body[7].lock_block": {
+      "valueClass": "opaque"
+    },
+    "body[7].locked_by": {
+      "valueClass": "opaque"
+    },
+    "body[7].desc": {
+      "valueClass": "opaque"
+    },
+    "body[7].card_id": {
+      "valueClass": "id"
+    },
+    "body[7].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[7].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[7].xp": {
+      "valueClass": "numeric"
+    },
+    "body[7].edition": {
+      "valueClass": "numeric"
+    },
+    "body[7].foil": {
+      "valueClass": "numeric"
+    },
+    "body[8].id": {
+      "valueClass": "numeric"
+    },
+    "body[8].sell_trx_id": {
+      "valueClass": "id"
+    },
+    "body[8].seller": {
+      "valueClass": "name"
+    },
+    "body[8].created_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].type": {
+      "valueClass": "opaque"
+    },
+    "body[8].num_cards": {
+      "valueClass": "numeric"
+    },
+    "body[8].currency": {
+      "valueClass": "opaque"
+    },
+    "body[8].starting_price": {
+      "valueClass": "opaque"
+    },
+    "body[8].buy_price": {
+      "valueClass": "opaque"
+    },
+    "body[8].fee_percent": {
+      "valueClass": "numeric"
+    },
+    "body[8].expiration_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].status": {
+      "valueClass": "numeric"
+    },
+    "body[8].purchaser": {
+      "valueClass": "name"
+    },
+    "body[8].completed_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].payment": {
+      "valueClass": "opaque"
+    },
+    "body[8].transaction_id": {
+      "valueClass": "id"
+    },
+    "body[8].lock_block": {
+      "valueClass": "opaque"
+    },
+    "body[8].locked_by": {
+      "valueClass": "opaque"
+    },
+    "body[8].desc": {
+      "valueClass": "opaque"
+    },
+    "body[8].card_id": {
+      "valueClass": "id"
+    },
+    "body[8].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[8].gold": {
+      "valueClass": "enum",
+      "allowedValues": [
+        false,
+        true
+      ]
+    },
+    "body[8].xp": {
+      "valueClass": "numeric"
+    },
+    "body[8].edition": {
+      "valueClass": "numeric"
+    },
+    "body[8].foil": {
+      "valueClass": "numeric"
     }
   },
   "body": [
     {
-      "id": 190223839,
-      "sell_trx_id": "a309d0e018189bb84b319a3a2423bd5321797c17-0",
-      "seller": "sample-acct-100",
-      "created_date": "2026-09-06T09:59:54.000Z",
-      "type": "SELL",
+      "id": 190084010,
+      "sell_trx_id": "6787d15833a85b943cd2ec5c98866f522538c16d-3",
+      "seller": "sample-account-1",
+      "created_date": "2026-08-25T07:35:09.000Z",
+      "type": "[redacted]",
       "num_cards": 1,
-      "currency": "USD",
+      "currency": "[redacted]",
       "starting_price": null,
-      "buy_price": "1.999",
+      "buy_price": "[redacted]",
       "fee_percent": 600,
-      "expiration_date": "2026-10-06T09:59:54.000Z",
+      "expiration_date": "2026-09-24T07:35:09.000Z",
       "status": 1,
-      "purchaser": "sample-acct-093",
-      "completed_date": "2026-09-07T17:06:54.000Z",
-      "payment": "5464.735 DEC",
-      "transaction_id": "4f73ac91fe4336b7b6aaf3cdd17c3a868151cff2",
+      "purchaser": "sample-account-2",
+      "completed_date": "2026-08-26T19:11:45.000Z",
+      "payment": "[redacted]",
+      "transaction_id": "8036aed3e8cf3bf13c0551a34418d3372e0458ee",
       "lock_block": null,
       "locked_by": null,
       "desc": null,
-      "card_id": "C19-866-HMPZYWRINK",
-      "card_detail_id": 866,
+      "card_id": "C18-880-A5LJPTHHM8",
+      "card_detail_id": 880,
       "gold": false,
       "xp": 1,
-      "edition": 19,
+      "edition": 18,
       "foil": 0
     },
     {
-      "id": 190223840,
-      "sell_trx_id": "a309d0e018189bb84b319a3a2423bd5321797c17-1",
-      "seller": "sample-acct-100",
-      "created_date": "2026-09-06T09:59:54.000Z",
-      "type": "SELL",
+      "id": 190084009,
+      "sell_trx_id": "6787d15833a85b943cd2ec5c98866f522538c16d-2",
+      "seller": "sample-account-1",
+      "created_date": "2026-08-25T07:35:09.000Z",
+      "type": "[redacted]",
       "num_cards": 1,
-      "currency": "USD",
+      "currency": "[redacted]",
       "starting_price": null,
-      "buy_price": "1.999",
+      "buy_price": "[redacted]",
       "fee_percent": 600,
-      "expiration_date": "2026-10-06T09:59:54.000Z",
+      "expiration_date": "2026-09-24T07:35:09.000Z",
       "status": 1,
-      "purchaser": "sample-acct-093",
-      "completed_date": "2026-09-07T17:06:54.000Z",
-      "payment": "5464.735 DEC",
-      "transaction_id": "4f73ac91fe4336b7b6aaf3cdd17c3a868151cff2",
+      "purchaser": "sample-account-2",
+      "completed_date": "2026-08-26T19:11:00.000Z",
+      "payment": "[redacted]",
+      "transaction_id": "5f5e1f4c7d2026db1e81f2fd1b30a665bbfee078",
       "lock_block": null,
       "locked_by": null,
       "desc": null,
-      "card_id": "C19-866-HMRAY4ZNTC",
-      "card_detail_id": 866,
+      "card_id": "C18-880-8W2WL3OS00",
+      "card_detail_id": 880,
       "gold": false,
       "xp": 1,
-      "edition": 19,
+      "edition": 18,
       "foil": 0
     },
     {
-      "id": 190223841,
-      "sell_trx_id": "a309d0e018189bb84b319a3a2423bd5321797c17-2",
-      "seller": "sample-acct-100",
-      "created_date": "2026-09-06T09:59:54.000Z",
-      "type": "SELL",
+      "id": 190087463,
+      "sell_trx_id": "0af5e5732f43f2a5a5aea9ca2cba974202b12c42-0",
+      "seller": "sample-account-3",
+      "created_date": "2026-08-25T12:50:39.000Z",
+      "type": "[redacted]",
       "num_cards": 1,
-      "currency": "USD",
+      "currency": "[redacted]",
       "starting_price": null,
-      "buy_price": "1.999",
+      "buy_price": "[redacted]",
       "fee_percent": 600,
-      "expiration_date": "2026-10-06T09:59:54.000Z",
+      "expiration_date": "2026-09-24T12:50:39.000Z",
       "status": 1,
-      "purchaser": "sample-acct-093",
-      "completed_date": "2026-09-07T17:06:54.000Z",
-      "payment": "5464.735 DEC",
-      "transaction_id": "4f73ac91fe4336b7b6aaf3cdd17c3a868151cff2",
+      "purchaser": "sample-account-2",
+      "completed_date": "2026-08-26T19:11:00.000Z",
+      "payment": "[redacted]",
+      "transaction_id": "5f5e1f4c7d2026db1e81f2fd1b30a665bbfee078",
       "lock_block": null,
       "locked_by": null,
       "desc": null,
-      "card_id": "C19-866-HMS51JZE8W",
-      "card_detail_id": 866,
+      "card_id": "C18-880-5WUVGF23W0",
+      "card_detail_id": 880,
       "gold": false,
       "xp": 1,
-      "edition": 19,
+      "edition": 18,
       "foil": 0
+    },
+    {
+      "id": 190087464,
+      "sell_trx_id": "0af5e5732f43f2a5a5aea9ca2cba974202b12c42-1",
+      "seller": "sample-account-3",
+      "created_date": "2026-08-25T12:50:39.000Z",
+      "type": "[redacted]",
+      "num_cards": 1,
+      "currency": "[redacted]",
+      "starting_price": null,
+      "buy_price": "[redacted]",
+      "fee_percent": 600,
+      "expiration_date": "2026-09-24T12:50:39.000Z",
+      "status": 1,
+      "purchaser": "sample-account-2",
+      "completed_date": "2026-08-26T19:11:00.000Z",
+      "payment": "[redacted]",
+      "transaction_id": "5f5e1f4c7d2026db1e81f2fd1b30a665bbfee078",
+      "lock_block": null,
+      "locked_by": null,
+      "desc": null,
+      "card_id": "C18-880-X2OBWJ3JSW",
+      "card_detail_id": 880,
+      "gold": false,
+      "xp": 1,
+      "edition": 18,
+      "foil": 0
+    },
+    {
+      "id": 190087741,
+      "sell_trx_id": "0a0a1ae2616b7514f7dfd9bcc18e88a11be52750-0",
+      "seller": "sample-account-4",
+      "created_date": "2026-08-25T13:15:27.000Z",
+      "type": "[redacted]",
+      "num_cards": 1,
+      "currency": "[redacted]",
+      "starting_price": null,
+      "buy_price": "[redacted]",
+      "fee_percent": 600,
+      "expiration_date": "2026-09-24T13:15:27.000Z",
+      "status": 1,
+      "purchaser": "sample-account-2",
+      "completed_date": "2026-08-26T19:11:00.000Z",
+      "payment": "[redacted]",
+      "transaction_id": "5f5e1f4c7d2026db1e81f2fd1b30a665bbfee078",
+      "lock_block": null,
+      "locked_by": null,
+      "desc": null,
+      "card_id": "C18-880-FQ2K0XBKM8",
+      "card_detail_id": 880,
+      "gold": false,
+      "xp": 1,
+      "edition": 18,
+      "foil": 0
+    },
+    {
+      "id": 190088268,
+      "sell_trx_id": "5055d173d72cf73831e8b8a85aa6ed27827dde55-1",
+      "seller": "sample-account-5",
+      "created_date": "2026-08-25T13:46:42.000Z",
+      "type": "[redacted]",
+      "num_cards": 1,
+      "currency": "[redacted]",
+      "starting_price": null,
+      "buy_price": "[redacted]",
+      "fee_percent": 600,
+      "expiration_date": "2026-09-24T13:46:42.000Z",
+      "status": 1,
+      "purchaser": "sample-account-2",
+      "completed_date": "2026-08-26T19:11:00.000Z",
+      "payment": "[redacted]",
+      "transaction_id": "5f5e1f4c7d2026db1e81f2fd1b30a665bbfee078",
+      "lock_block": null,
+      "locked_by": null,
+      "desc": null,
+      "card_id": "C18-880-OZSPE6T8K0",
+      "card_detail_id": 880,
+      "gold": false,
+      "xp": 1,
+      "edition": 18,
+      "foil": 0
+    },
+    {
+      "id": 189945866,
+      "sell_trx_id": "c175fe5f24acb9f3f1f2f4226aaeba3df2315f2a-0",
+      "seller": "sample-account-6",
+      "created_date": "2026-08-11T11:39:33.000Z",
+      "type": "[redacted]",
+      "num_cards": 1,
+      "currency": "[redacted]",
+      "starting_price": null,
+      "buy_price": "[redacted]",
+      "fee_percent": 600,
+      "expiration_date": "2026-09-10T11:39:33.000Z",
+      "status": 1,
+      "purchaser": "sample-account-2",
+      "completed_date": "2026-08-24T10:00:57.000Z",
+      "payment": "[redacted]",
+      "transaction_id": "6cdf4cae17f3720f0cf6a9e674a6737090d9bacf",
+      "lock_block": null,
+      "locked_by": null,
+      "desc": null,
+      "card_id": "G-IZMUIEO55C",
+      "card_detail_id": 49,
+      "gold": true,
+      "xp": 500,
+      "edition": 0,
+      "foil": 1
+    },
+    {
+      "id": 190065036,
+      "sell_trx_id": "44e09919f1bb8ca48e5da6ae53724d15b37b2319-0",
+      "seller": "sample-account-7",
+      "created_date": "2026-08-23T19:47:15.000Z",
+      "type": "[redacted]",
+      "num_cards": 1,
+      "currency": "[redacted]",
+      "starting_price": null,
+      "buy_price": "[redacted]",
+      "fee_percent": 600,
+      "expiration_date": "2026-09-22T19:47:15.000Z",
+      "status": 1,
+      "purchaser": "sample-account-2",
+      "completed_date": "2026-08-24T10:00:57.000Z",
+      "payment": "[redacted]",
+      "transaction_id": "6cdf4cae17f3720f0cf6a9e674a6737090d9bacf",
+      "lock_block": null,
+      "locked_by": null,
+      "desc": null,
+      "card_id": "G0-27-HB89SOFR8W",
+      "card_detail_id": 27,
+      "gold": true,
+      "xp": 1000,
+      "edition": 0,
+      "foil": 1
+    },
+    {
+      "id": 190065037,
+      "sell_trx_id": "a1d4d69d1983a5037695554deec0245da8ff3c83-0",
+      "seller": "sample-account-7",
+      "created_date": "2026-08-23T19:47:51.000Z",
+      "type": "[redacted]",
+      "num_cards": 1,
+      "currency": "[redacted]",
+      "starting_price": null,
+      "buy_price": "[redacted]",
+      "fee_percent": 600,
+      "expiration_date": "2026-09-22T19:47:51.000Z",
+      "status": 1,
+      "purchaser": "sample-account-2",
+      "completed_date": "2026-08-24T10:00:57.000Z",
+      "payment": "[redacted]",
+      "transaction_id": "6cdf4cae17f3720f0cf6a9e674a6737090d9bacf",
+      "lock_block": null,
+      "locked_by": null,
+      "desc": null,
+      "card_id": "G0-49-BWWE74JDDS",
+      "card_detail_id": 49,
+      "gold": true,
+      "xp": 500,
+      "edition": 0,
+      "foil": 1
     }
   ]
 }

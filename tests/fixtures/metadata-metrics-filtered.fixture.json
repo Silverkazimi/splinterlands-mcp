@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:21:25.474024+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/transactions/metrics",
-    "captureScope": "Complete captured response; no fields removed or decoded."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].metric": {
@@ -20,19 +19,67 @@
     },
     "body[0].values[1].value": {
       "valueClass": "numeric"
+    },
+    "body[0].values[2].date": {
+      "valueClass": "timestamp"
+    },
+    "body[0].values[2].value": {
+      "valueClass": "numeric"
+    },
+    "body[1].metric": {
+      "valueClass": "opaque"
+    },
+    "body[1].values[0].date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].values[0].value": {
+      "valueClass": "numeric"
+    },
+    "body[1].values[1].date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].values[1].value": {
+      "valueClass": "numeric"
+    },
+    "body[1].values[2].date": {
+      "valueClass": "timestamp"
+    },
+    "body[1].values[2].value": {
+      "valueClass": "numeric"
     }
   },
   "body": [
     {
-      "metric": "battles",
+      "metric": "[redacted]",
       "values": [
         {
-          "date": "2026-09-11T00:00:00.000Z",
-          "value": 58318
+          "date": "2026-09-14T00:00:00.000Z",
+          "value": 49788
         },
         {
-          "date": "2026-09-10T00:00:00.000Z",
-          "value": 52594
+          "date": "2026-09-13T00:00:00.000Z",
+          "value": 49018
+        },
+        {
+          "date": "2026-09-12T00:00:00.000Z",
+          "value": 50521
+        }
+      ]
+    },
+    {
+      "metric": "[redacted]",
+      "values": [
+        {
+          "date": "2026-09-14T00:00:00.000Z",
+          "value": 9665
+        },
+        {
+          "date": "2026-09-13T00:00:00.000Z",
+          "value": 9715
+        },
+        {
+          "date": "2026-09-12T00:00:00.000Z",
+          "value": 10531
         }
       ]
     }

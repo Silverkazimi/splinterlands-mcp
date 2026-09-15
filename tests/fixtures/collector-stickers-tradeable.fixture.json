@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-13T11:22:24.834477+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/collector/{player}/stickers/tradeable",
-    "captureScope": "Complete 26-row public response; account discovered in collector configuration featuredAccounts."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -788,6 +787,426 @@
     },
     "body.data[25].cosmetic.isPremium": {
       "valueClass": "enum"
+    },
+    "body.data[26].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[26].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[26].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[26].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[26].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[26].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[26].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[26].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[26].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[26].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[27].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[27].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[27].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[27].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[27].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[27].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[27].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[27].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[27].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[27].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[28].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[28].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[28].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[28].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[28].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[28].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[28].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[28].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[28].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[28].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[29].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[29].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[29].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[29].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[29].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[29].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[29].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[29].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[29].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[29].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[30].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[30].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[30].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[30].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[30].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[30].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[30].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[30].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[30].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[30].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[31].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[31].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[31].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[31].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[31].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[31].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[31].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[31].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[31].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[31].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[32].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[32].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[32].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[32].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[32].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[32].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[32].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[32].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[32].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[32].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[33].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[33].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[33].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[33].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[33].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[33].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[33].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[33].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[33].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[33].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[34].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[34].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[34].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[34].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[34].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[34].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[34].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[34].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[34].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[34].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[35].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[35].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[35].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[35].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[35].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[35].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[35].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[35].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[35].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[35].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[36].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[36].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[36].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[36].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[36].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[36].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[36].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[36].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[36].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[36].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[37].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[37].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[37].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[37].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[37].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[37].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[37].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[37].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[37].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[37].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[38].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[38].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[38].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[38].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[38].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[38].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[38].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[38].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[38].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[38].cosmetic.isPremium": {
+      "valueClass": "enum"
+    },
+    "body.data[39].stickerUid": {
+      "valueClass": "id"
+    },
+    "body.data[39].isSoulbound": {
+      "valueClass": "enum"
+    },
+    "body.data[39].isTradeable": {
+      "valueClass": "enum"
+    },
+    "body.data[39].isListed": {
+      "valueClass": "enum"
+    },
+    "body.data[39].cosmetic.id": {
+      "valueClass": "id"
+    },
+    "body.data[39].cosmetic.key": {
+      "valueClass": "id"
+    },
+    "body.data[39].cosmetic.type": {
+      "valueClass": "enum"
+    },
+    "body.data[39].cosmetic.name": {
+      "valueClass": "freetext"
+    },
+    "body.data[39].cosmetic.assetUrl": {
+      "valueClass": "opaque"
+    },
+    "body.data[39].cosmetic.isPremium": {
+      "valueClass": "enum"
     }
   },
   "body": {
@@ -802,8 +1221,8 @@
           "id": "61",
           "key": "winterfest_2025_mags",
           "type": "sticker",
-          "name": "Winterfest 2025 Mags",
-          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-mags.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -816,8 +1235,8 @@
           "id": "62",
           "key": "winterfest_2025_vin_common",
           "type": "sticker",
-          "name": "Winterfest 2025 Vin Common",
-          "assetUrl": "collector/stickers/events/winterfest-2025/sticker-winterfest-2025-vin-common.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -830,36 +1249,8 @@
           "id": "49",
           "key": "sticker_support_thank_you",
           "type": "sticker",
-          "name": "Thank You",
-          "assetUrl": "collector/stickers/support/sticker-support-thank-you.webp",
-          "isPremium": false
-        }
-      },
-      {
-        "stickerUid": "I-559-c668a5b652fb",
-        "isSoulbound": false,
-        "isTradeable": true,
-        "isListed": false,
-        "cosmetic": {
-          "id": "45",
-          "key": "sticker_support_maintenance_how_long",
-          "type": "sticker",
-          "name": "Maintenance: How Long?",
-          "assetUrl": "collector/stickers/support/sticker-support-maintenance-how-long.webp",
-          "isPremium": false
-        }
-      },
-      {
-        "stickerUid": "I-567-e28557610a9d",
-        "isSoulbound": false,
-        "isTradeable": true,
-        "isListed": false,
-        "cosmetic": {
-          "id": "49",
-          "key": "sticker_support_thank_you",
-          "type": "sticker",
-          "name": "Thank You",
-          "assetUrl": "collector/stickers/support/sticker-support-thank-you.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -872,8 +1263,8 @@
           "id": "47",
           "key": "sticker_support_maintenance_why",
           "type": "sticker",
-          "name": "Maintenance: Why?",
-          "assetUrl": "collector/stickers/support/sticker-support-maintenance-why.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -886,8 +1277,8 @@
           "id": "46",
           "key": "sticker_support_maintenance_wen",
           "type": "sticker",
-          "name": "Maintenance: Wen?",
-          "assetUrl": "collector/stickers/support/sticker-support-maintenance-wen.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -900,36 +1291,36 @@
           "id": "48",
           "key": "sticker_support_patience",
           "type": "sticker",
-          "name": "Patience",
-          "assetUrl": "collector/stickers/support/sticker-support-patience.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
       {
-        "stickerUid": "I-553-7cb02a97d773",
+        "stickerUid": "I-567-e28557610a9d",
         "isSoulbound": false,
         "isTradeable": true,
         "isListed": false,
         "cosmetic": {
-          "id": "38",
-          "key": "sticker_animal_beaver",
+          "id": "49",
+          "key": "sticker_support_thank_you",
           "type": "sticker",
-          "name": "Beaver",
-          "assetUrl": "collector/stickers/animals/sticker-animal-beaver.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
       {
-        "stickerUid": "I-564-db1519e4a24e",
+        "stickerUid": "I-559-c668a5b652fb",
         "isSoulbound": false,
         "isTradeable": true,
         "isListed": false,
         "cosmetic": {
-          "id": "40",
-          "key": "sticker_animal_pink_critter",
+          "id": "45",
+          "key": "sticker_support_maintenance_how_long",
           "type": "sticker",
-          "name": "Pink Critter",
-          "assetUrl": "collector/stickers/animals/sticker-animal-pink-critter.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -942,22 +1333,36 @@
           "id": "42",
           "key": "sticker_animal_turtle",
           "type": "sticker",
-          "name": "Turtle",
-          "assetUrl": "collector/stickers/animals/sticker-animal-turtle.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
       {
-        "stickerUid": "I-570-6ed06888d0e3",
+        "stickerUid": "I-564-db1519e4a24e",
         "isSoulbound": false,
         "isTradeable": true,
         "isListed": false,
         "cosmetic": {
-          "id": "37",
-          "key": "sticker_toxic",
+          "id": "40",
+          "key": "sticker_animal_pink_critter",
           "type": "sticker",
-          "name": "Toxic",
-          "assetUrl": "collector/stickers/packs/toxic/sticker-toxic.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-553-7cb02a97d773",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "38",
+          "key": "sticker_animal_beaver",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -970,36 +1375,22 @@
           "id": "30",
           "key": "sticker_cool",
           "type": "sticker",
-          "name": "Cool",
-          "assetUrl": "collector/stickers/packs/toxic/sticker-cool.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
       {
-        "stickerUid": "I-562-74ce63edeb2c",
+        "stickerUid": "I-570-6ed06888d0e3",
         "isSoulbound": false,
         "isTradeable": true,
         "isListed": false,
         "cosmetic": {
-          "id": "32",
-          "key": "sticker_og",
+          "id": "37",
+          "key": "sticker_toxic",
           "type": "sticker",
-          "name": "OG",
-          "assetUrl": "collector/stickers/packs/favorites/sticker-og.webp",
-          "isPremium": false
-        }
-      },
-      {
-        "stickerUid": "I-556-69cbb7f7e3b1",
-        "isSoulbound": false,
-        "isTradeable": true,
-        "isListed": false,
-        "cosmetic": {
-          "id": "31",
-          "key": "sticker_favorite",
-          "type": "sticker",
-          "name": "Favorite",
-          "assetUrl": "collector/stickers/packs/favorites/sticker-favorite.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -1012,106 +1403,36 @@
           "id": "35",
           "key": "sticker_top_10",
           "type": "sticker",
-          "name": "Top 10",
-          "assetUrl": "collector/stickers/packs/favorites/sticker-top-10.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
       {
-        "stickerUid": "I-557-7fdaffaf5ead",
+        "stickerUid": "I-556-69cbb7f7e3b1",
         "isSoulbound": false,
         "isTradeable": true,
         "isListed": false,
         "cosmetic": {
-          "id": "39",
-          "key": "sticker_animal_giraffe",
+          "id": "31",
+          "key": "sticker_favorite",
           "type": "sticker",
-          "name": "Giraffe",
-          "assetUrl": "collector/stickers/animals/sticker-animal-giraffe.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
       {
-        "stickerUid": "I-564-3d7fd0fc5ce9",
+        "stickerUid": "I-562-74ce63edeb2c",
         "isSoulbound": false,
         "isTradeable": true,
         "isListed": false,
         "cosmetic": {
-          "id": "40",
-          "key": "sticker_animal_pink_critter",
+          "id": "32",
+          "key": "sticker_og",
           "type": "sticker",
-          "name": "Pink Critter",
-          "assetUrl": "collector/stickers/animals/sticker-animal-pink-critter.webp",
-          "isPremium": false
-        }
-      },
-      {
-        "stickerUid": "I-553-3120e5477c2d",
-        "isSoulbound": false,
-        "isTradeable": true,
-        "isListed": false,
-        "cosmetic": {
-          "id": "38",
-          "key": "sticker_animal_beaver",
-          "type": "sticker",
-          "name": "Beaver",
-          "assetUrl": "collector/stickers/animals/sticker-animal-beaver.webp",
-          "isPremium": false
-        }
-      },
-      {
-        "stickerUid": "I-558-6bee76f1c3fd",
-        "isSoulbound": false,
-        "isTradeable": true,
-        "isListed": false,
-        "cosmetic": {
-          "id": "43",
-          "key": "sticker_animal_llama",
-          "type": "sticker",
-          "name": "Llama",
-          "assetUrl": "collector/stickers/animals/sticker-animal-llama.webp",
-          "isPremium": false
-        }
-      },
-      {
-        "stickerUid": "I-557-ee2b0fcea653",
-        "isSoulbound": false,
-        "isTradeable": true,
-        "isListed": false,
-        "cosmetic": {
-          "id": "39",
-          "key": "sticker_animal_giraffe",
-          "type": "sticker",
-          "name": "Giraffe",
-          "assetUrl": "collector/stickers/animals/sticker-animal-giraffe.webp",
-          "isPremium": false
-        }
-      },
-      {
-        "stickerUid": "I-564-b8d5b4bbe9ad",
-        "isSoulbound": false,
-        "isTradeable": true,
-        "isListed": false,
-        "cosmetic": {
-          "id": "40",
-          "key": "sticker_animal_pink_critter",
-          "type": "sticker",
-          "name": "Pink Critter",
-          "assetUrl": "collector/stickers/animals/sticker-animal-pink-critter.webp",
-          "isPremium": false
-        }
-      },
-      {
-        "stickerUid": "I-572-4376c53f255e",
-        "isSoulbound": false,
-        "isTradeable": true,
-        "isListed": false,
-        "cosmetic": {
-          "id": "42",
-          "key": "sticker_animal_turtle",
-          "type": "sticker",
-          "name": "Turtle",
-          "assetUrl": "collector/stickers/animals/sticker-animal-turtle.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -1124,13 +1445,55 @@
           "id": "38",
           "key": "sticker_animal_beaver",
           "type": "sticker",
-          "name": "Beaver",
-          "assetUrl": "collector/stickers/animals/sticker-animal-beaver.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
       {
-        "stickerUid": "I-558-ab82292b36a0",
+        "stickerUid": "I-572-4376c53f255e",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "42",
+          "key": "sticker_animal_turtle",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-564-b8d5b4bbe9ad",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "40",
+          "key": "sticker_animal_pink_critter",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-557-ee2b0fcea653",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "39",
+          "key": "sticker_animal_giraffe",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-558-6bee76f1c3fd",
         "isSoulbound": false,
         "isTradeable": true,
         "isListed": false,
@@ -1138,8 +1501,50 @@
           "id": "43",
           "key": "sticker_animal_llama",
           "type": "sticker",
-          "name": "Llama",
-          "assetUrl": "collector/stickers/animals/sticker-animal-llama.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-553-3120e5477c2d",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "38",
+          "key": "sticker_animal_beaver",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-564-3d7fd0fc5ce9",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "40",
+          "key": "sticker_animal_pink_critter",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-557-7fdaffaf5ead",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "39",
+          "key": "sticker_animal_giraffe",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       },
@@ -1152,8 +1557,218 @@
           "id": "41",
           "key": "sticker_animal_trex",
           "type": "sticker",
-          "name": "T-Rex",
-          "assetUrl": "collector/stickers/animals/sticker-animal-trex.webp",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-558-ab82292b36a0",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "43",
+          "key": "sticker_animal_llama",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-567-d90e3b0ac0be",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "49",
+          "key": "sticker_support_thank_you",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-559-06afe2ffe949",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "45",
+          "key": "sticker_support_maintenance_how_long",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-561-d50bc09fb021",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "47",
+          "key": "sticker_support_maintenance_why",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-560-bd206cf3d8d2",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "46",
+          "key": "sticker_support_maintenance_wen",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-563-78e709d2da34",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "48",
+          "key": "sticker_support_patience",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-554-26752bf31cf1",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "44",
+          "key": "sticker_support_bug_hunter",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-583-6fb781116782",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "50",
+          "key": "sticker_support_you_rock",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-559-d013a2d700d0",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "45",
+          "key": "sticker_support_maintenance_how_long",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-561-fedb88457c41",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "47",
+          "key": "sticker_support_maintenance_why",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-560-9b710b3bd11f",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "46",
+          "key": "sticker_support_maintenance_wen",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-563-435f72422c5d",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "48",
+          "key": "sticker_support_patience",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-554-397bfd51718c",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "44",
+          "key": "sticker_support_bug_hunter",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-583-8ce66d0c5a77",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "50",
+          "key": "sticker_support_you_rock",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
+          "isPremium": false
+        }
+      },
+      {
+        "stickerUid": "I-567-f40a41e2dfab",
+        "isSoulbound": false,
+        "isTradeable": true,
+        "isListed": false,
+        "cosmetic": {
+          "id": "49",
+          "key": "sticker_support_thank_you",
+          "type": "sticker",
+          "name": "[redacted]",
+          "assetUrl": "[redacted]",
           "isPremium": false
         }
       }

@@ -1,12 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-07T00:00:00Z",
-    "captureScope": "Maintenance projection of the retained collection fixture: core MCP card fields only; last_buy_price and market_id are deliberately outside the collection tool projection. Live recapture validates the complete stream and retains at most three cards. The raw fixture remains for parser regression tests.",
-    "schemaReview": {
-      "observedAt": "2026-09-14",
-      "note": "Added synthetic examples for reviewed fields observed in the maintenance response; prior sample values are unchanged."
-    }
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.player": {
@@ -18,6 +14,12 @@
     "body.cards[0].card_detail_id": {
       "valueClass": "id"
     },
+    "body.cards[0].xp": {
+      "valueClass": "numeric"
+    },
+    "body.cards[0].gold": {
+      "valueClass": "enum"
+    },
     "body.cards[0].edition": {
       "valueClass": "enum",
       "allowedValues": [
@@ -25,24 +27,6 @@
         3,
         4
       ]
-    },
-    "body.cards[0].gold": {
-      "valueClass": "enum"
-    },
-    "body.cards[0].foil": {
-      "valueClass": "enum"
-    },
-    "body.cards[0].level": {
-      "valueClass": "numeric"
-    },
-    "body.cards[0].xp": {
-      "valueClass": "numeric"
-    },
-    "body.cards[0].bcx": {
-      "valueClass": "numeric"
-    },
-    "body.cards[0].collection_power": {
-      "valueClass": "numeric"
     },
     "body.cards[0].card_set": {
       "valueClass": "enum",
@@ -53,95 +37,7 @@
         "chaos"
       ]
     },
-    "body.cards[0].land_base_pp": {
-      "valueClass": "numeric"
-    },
-    "body.cards[1].uid": {
-      "valueClass": "id"
-    },
-    "body.cards[1].card_detail_id": {
-      "valueClass": "id"
-    },
-    "body.cards[1].edition": {
-      "valueClass": "enum",
-      "allowedValues": [
-        1,
-        3,
-        4
-      ]
-    },
-    "body.cards[1].gold": {
-      "valueClass": "enum"
-    },
-    "body.cards[1].foil": {
-      "valueClass": "enum"
-    },
-    "body.cards[1].level": {
-      "valueClass": "numeric"
-    },
-    "body.cards[1].xp": {
-      "valueClass": "numeric"
-    },
-    "body.cards[1].bcx": {
-      "valueClass": "numeric"
-    },
-    "body.cards[1].collection_power": {
-      "valueClass": "numeric"
-    },
-    "body.cards[1].card_set": {
-      "valueClass": "enum",
-      "allowedValues": [
-        "CONCLAVE",
-        "REBELLION",
-        "beta",
-        "chaos"
-      ]
-    },
-    "body.cards[1].land_base_pp": {
-      "valueClass": "numeric"
-    },
-    "body.cards[2].uid": {
-      "valueClass": "id"
-    },
-    "body.cards[2].card_detail_id": {
-      "valueClass": "id"
-    },
-    "body.cards[2].edition": {
-      "valueClass": "enum",
-      "allowedValues": [
-        1,
-        3,
-        4
-      ]
-    },
-    "body.cards[2].gold": {
-      "valueClass": "enum"
-    },
-    "body.cards[2].foil": {
-      "valueClass": "enum"
-    },
-    "body.cards[2].level": {
-      "valueClass": "numeric"
-    },
-    "body.cards[2].xp": {
-      "valueClass": "numeric"
-    },
-    "body.cards[2].bcx": {
-      "valueClass": "numeric"
-    },
-    "body.cards[2].collection_power": {
-      "valueClass": "numeric"
-    },
-    "body.cards[2].card_set": {
-      "valueClass": "enum",
-      "allowedValues": [
-        "CONCLAVE",
-        "REBELLION",
-        "beta",
-        "chaos"
-      ]
-    },
-    "body.cards[2].land_base_pp": {
+    "body.cards[0].collection_power": {
       "valueClass": "numeric"
     },
     "body.cards[0].stake_start_date": {
@@ -153,7 +49,51 @@
     "body.cards[0].stake_plot": {
       "valueClass": "numeric"
     },
+    "body.cards[0].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.cards[0].land_base_pp": {
+      "valueClass": "numeric"
+    },
     "body.cards[0].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body.cards[0].foil": {
+      "valueClass": "enum"
+    },
+    "body.cards[0].level": {
+      "valueClass": "numeric"
+    },
+    "body.cards[1].uid": {
+      "valueClass": "id"
+    },
+    "body.cards[1].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.cards[1].xp": {
+      "valueClass": "numeric"
+    },
+    "body.cards[1].gold": {
+      "valueClass": "enum"
+    },
+    "body.cards[1].edition": {
+      "valueClass": "enum",
+      "allowedValues": [
+        1,
+        3,
+        4
+      ]
+    },
+    "body.cards[1].card_set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "CONCLAVE",
+        "REBELLION",
+        "beta",
+        "chaos"
+      ]
+    },
+    "body.cards[1].collection_power": {
       "valueClass": "numeric"
     },
     "body.cards[1].stake_start_date": {
@@ -165,7 +105,51 @@
     "body.cards[1].stake_plot": {
       "valueClass": "numeric"
     },
+    "body.cards[1].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.cards[1].land_base_pp": {
+      "valueClass": "numeric"
+    },
     "body.cards[1].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body.cards[1].foil": {
+      "valueClass": "enum"
+    },
+    "body.cards[1].level": {
+      "valueClass": "numeric"
+    },
+    "body.cards[2].uid": {
+      "valueClass": "id"
+    },
+    "body.cards[2].card_detail_id": {
+      "valueClass": "id"
+    },
+    "body.cards[2].xp": {
+      "valueClass": "numeric"
+    },
+    "body.cards[2].gold": {
+      "valueClass": "enum"
+    },
+    "body.cards[2].edition": {
+      "valueClass": "enum",
+      "allowedValues": [
+        1,
+        3,
+        4
+      ]
+    },
+    "body.cards[2].card_set": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "CONCLAVE",
+        "REBELLION",
+        "beta",
+        "chaos"
+      ]
+    },
+    "body.cards[2].collection_power": {
       "valueClass": "numeric"
     },
     "body.cards[2].stake_start_date": {
@@ -177,63 +161,75 @@
     "body.cards[2].stake_plot": {
       "valueClass": "numeric"
     },
+    "body.cards[2].bcx": {
+      "valueClass": "numeric"
+    },
+    "body.cards[2].land_base_pp": {
+      "valueClass": "numeric"
+    },
     "body.cards[2].land_dec_stake_needed": {
+      "valueClass": "numeric"
+    },
+    "body.cards[2].foil": {
+      "valueClass": "enum"
+    },
+    "body.cards[2].level": {
       "valueClass": "numeric"
     }
   },
   "body": {
-    "player": "fixture_account",
+    "player": "sample-account-1",
     "cards": [
       {
         "uid": "C3-79-0B847L3PGG",
         "card_detail_id": 79,
-        "edition": 3,
+        "xp": 11085,
         "gold": false,
+        "edition": 3,
+        "card_set": "beta",
+        "collection_power": 11655,
+        "stake_start_date": "2025-12-23T09:54:54.000Z",
+        "stake_end_date": "2025-12-27T13:57:03.000Z",
+        "stake_plot": 51412,
+        "bcx": 740,
+        "land_base_pp": "5000.000",
+        "land_dec_stake_needed": 10000,
         "foil": 0,
-        "level": 1,
-        "xp": 1,
-        "bcx": 1,
-        "collection_power": 10,
-        "card_set": "REBELLION",
+        "level": 10
+      },
+      {
+        "uid": "C3-337-01SRQJXN68",
+        "card_detail_id": 337,
+        "xp": 529,
+        "gold": false,
+        "edition": 3,
+        "card_set": "chaos",
+        "collection_power": 2777,
+        "stake_start_date": null,
+        "stake_end_date": null,
+        "stake_plot": null,
+        "bcx": 529,
         "land_base_pp": "1000.000",
-        "stake_start_date": "2026-01-01T00:00:00Z",
-        "stake_end_date": "2026-01-02T00:00:00Z",
-        "stake_plot": 1,
-        "land_dec_stake_needed": 0
-      },
-      {
-        "uid": "C3-1-0B847L3PGH",
-        "card_detail_id": 1,
-        "edition": 3,
-        "gold": true,
-        "foil": 1,
-        "level": 4,
-        "xp": 220,
-        "bcx": 12,
-        "collection_power": 240,
-        "card_set": "REBELLION",
-        "land_base_pp": "0.000",
-        "stake_start_date": null,
-        "stake_end_date": null,
-        "stake_plot": null,
-        "land_dec_stake_needed": 0
-      },
-      {
-        "uid": "C4-42-0B847L3PGJ",
-        "card_detail_id": 42,
-        "edition": 4,
-        "gold": false,
+        "land_dec_stake_needed": 10000,
         "foil": 0,
-        "level": 2,
-        "xp": 40,
-        "bcx": 3,
-        "collection_power": 50,
-        "card_set": "CONCLAVE",
-        "land_base_pp": "250.000",
-        "stake_start_date": null,
-        "stake_end_date": null,
-        "stake_plot": null,
-        "land_dec_stake_needed": 0
+        "level": 10
+      },
+      {
+        "uid": "C1-60-93G16OLU4W",
+        "card_detail_id": 60,
+        "xp": 7710,
+        "gold": false,
+        "edition": 1,
+        "card_set": "beta",
+        "collection_power": 8111,
+        "stake_start_date": "2025-07-13T09:00:30.000Z",
+        "stake_end_date": "2026-01-01T14:25:06.000Z",
+        "stake_plot": 126419,
+        "bcx": 515,
+        "land_base_pp": "5000.000",
+        "land_dec_stake_needed": 10000,
+        "foil": 0,
+        "level": 10
       }
     ]
   }

@@ -1,9 +1,17 @@
 {
-  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
-  "valueClasses": {
-    "card_detail_id": { "valueClass": "id" },
-    "text": { "valueClass": "freetext" }
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
-  "card_detail_id": 1,
-  "text": "Fixture lore text."
+  "valueClasses": {
+    "card_detail_id": {
+      "valueClass": "id"
+    },
+    "text": {
+      "valueClass": "freetext"
+    }
+  },
+  "card_detail_id": 244,
+  "text": "[redacted]"
 }

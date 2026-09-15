@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-13T09:20:19.998578+00:00",
-    "sourceUrl": "https://vapi.splinterlands.com/delegation-rental/rentals/bid/{bid}",
-    "captureScope": "Complete single-row response; values unchanged.",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained. Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.status": {
@@ -45,13 +43,13 @@
     "status": "success",
     "data": [
       {
-        "txId": "1e47eefcebee39e0a819d09df74e01c43f7100f3",
-        "bidTxId": "d6bffc0cebd94c97ad2ea6b31e0fcc5e75ed1dcd-1",
-        "createdDate": "2024-08-26T19:07:27.000Z",
-        "player": "sample-account-b",
-        "qty": "150000.000",
-        "paymentAmount": "2100.000",
-        "bidder": "sample-acct-055",
+        "txId": "dad6773b574cf93c1da6c9200fc93ac600da165c",
+        "bidTxId": "3373cc6309727f73709ef34cc69fafa20e90e5ff-5",
+        "createdDate": "2025-04-25T20:25:36.000Z",
+        "player": "sample-account-1",
+        "qty": "100000.000",
+        "paymentAmount": "1400.000",
+        "bidder": "sample-account-2",
         "token": "SPSP",
         "currency": "DEC",
         "pricePerToken": "0.002"

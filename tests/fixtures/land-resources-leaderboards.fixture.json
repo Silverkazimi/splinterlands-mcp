@@ -1,8 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-07T00:00:00Z",
-    "redaction": "Account identifiers substituted with synthetic placeholders; other captured values retained."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "status": {
@@ -34,20 +34,58 @@
     },
     "data[0].id": {
       "valueClass": "id"
+    },
+    "data[1].rank": {
+      "valueClass": "numeric"
+    },
+    "data[1].player": {
+      "valueClass": "name"
+    },
+    "data[1].amount": {
+      "valueClass": "numeric"
+    },
+    "data[1].amount2": {
+      "valueClass": "numeric"
+    },
+    "data[1].resource_per_hour": {
+      "valueClass": "numeric"
+    },
+    "data[1].guild": {
+      "valueClass": "opaque"
+    },
+    "data[1].title_pre": {
+      "valueClass": "opaque"
+    },
+    "data[1].data": {
+      "valueClass": "opaque"
+    },
+    "data[1].id": {
+      "valueClass": "id"
     }
   },
   "status": "success",
   "data": [
     {
-      "rank": 177,
-      "player": "sample-account-a",
-      "amount": 0,
+      "rank": 7,
+      "player": "sample-account-1",
+      "amount": 93486.182,
       "amount2": 0,
-      "resource_per_hour": 0,
-      "guild": "Creators",
-      "title_pre": "",
-      "data": "{\"crest\":{\"banner\":\"teal\",\"decal\":\"shield\"}}",
-      "id": "captured-leaderboard-row"
+      "resource_per_hour": 135.851,
+      "guild": "[redacted]",
+      "title_pre": "[redacted]",
+      "data": "[redacted]",
+      "id": "c33e99909c5d4c219ee9ba4f62750d3f83a0bac7"
+    },
+    {
+      "rank": -1,
+      "player": "sample-account-2",
+      "amount": 1146469.459,
+      "amount2": 0,
+      "resource_per_hour": 869.55,
+      "guild": "[redacted]",
+      "title_pre": "[redacted]",
+      "data": "[redacted]",
+      "id": "ab64e1c0fb97ed83e879e9e984586388d98e85a6"
     }
   ]
 }

@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:08:28.290318+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/guilds/brawl_sps_rewards",
-    "captureScope": "First three root or named-list rows; surrounding fields retained unchanged."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.total_sps_payout": {
@@ -71,25 +70,25 @@
     "total_sps_payout": 62864011.077,
     "sps_reward_records": [
       {
-        "cycle": 383,
+        "cycle": 362,
         "monthly_pool": 1260000,
         "cycle_t1_pool": 21000,
         "cycle_t2_pool": 31500,
         "cycle_t3_pool": 42000,
         "cycle_t4_pool": 52500,
         "cycle_t5_pool": 63000,
-        "t1_num_brawls": 10,
-        "t2_num_brawls": 13,
-        "t3_num_brawls": 10,
+        "t1_num_brawls": 11,
+        "t2_num_brawls": 14,
+        "t3_num_brawls": 11,
         "t4_num_brawls": 5,
         "t5_num_brawls": 3,
-        "t1_num_guilds": 96,
-        "t2_num_guilds": 125,
-        "t3_num_guilds": 100,
-        "t4_num_guilds": 50,
-        "t5_num_guilds": 23,
-        "total_sps_payout": 153207.923,
-        "months_remaining": 51
+        "t1_num_guilds": 102,
+        "t2_num_guilds": 131,
+        "t3_num_guilds": 102,
+        "t4_num_guilds": 49,
+        "t5_num_guilds": 24,
+        "total_sps_payout": 156815.369,
+        "months_remaining": 54
       }
     ]
   }

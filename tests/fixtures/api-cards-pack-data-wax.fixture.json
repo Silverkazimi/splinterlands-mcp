@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T00:00:00Z"
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].symbol": {
@@ -26,15 +27,165 @@
     },
     "body[0].burned": {
       "valueClass": "numeric"
+    },
+    "body[1].symbol": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "BETA",
+        "CHAOS",
+        "DICE",
+        "ORB",
+        "UNTAMED"
+      ]
+    },
+    "body[1].template_id": {
+      "valueClass": "id"
+    },
+    "body[1].max": {
+      "valueClass": "numeric"
+    },
+    "body[1].minted": {
+      "valueClass": "numeric"
+    },
+    "body[1].burned": {
+      "valueClass": "numeric"
+    },
+    "body[2].symbol": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "BETA",
+        "CHAOS",
+        "DICE",
+        "ORB",
+        "UNTAMED"
+      ]
+    },
+    "body[2].template_id": {
+      "valueClass": "id"
+    },
+    "body[2].max": {
+      "valueClass": "numeric"
+    },
+    "body[2].minted": {
+      "valueClass": "numeric"
+    },
+    "body[2].burned": {
+      "valueClass": "numeric"
+    },
+    "body[3].symbol": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "BETA",
+        "CHAOS",
+        "DICE",
+        "ORB",
+        "UNTAMED"
+      ]
+    },
+    "body[3].template_id": {
+      "valueClass": "id"
+    },
+    "body[3].max": {
+      "valueClass": "numeric"
+    },
+    "body[3].minted": {
+      "valueClass": "numeric"
+    },
+    "body[3].burned": {
+      "valueClass": "numeric"
+    },
+    "body[4].symbol": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "BETA",
+        "CHAOS",
+        "DICE",
+        "ORB",
+        "UNTAMED"
+      ]
+    },
+    "body[4].template_id": {
+      "valueClass": "id"
+    },
+    "body[4].max": {
+      "valueClass": "numeric"
+    },
+    "body[4].minted": {
+      "valueClass": "numeric"
+    },
+    "body[4].burned": {
+      "valueClass": "numeric"
+    },
+    "body[5].symbol": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "ALPHA",
+        "BETA",
+        "CHAOS",
+        "DICE",
+        "ORB",
+        "UNTAMED"
+      ]
+    },
+    "body[5].template_id": {
+      "valueClass": "id"
+    },
+    "body[5].max": {
+      "valueClass": "numeric"
+    },
+    "body[5].minted": {
+      "valueClass": "numeric"
+    },
+    "body[5].burned": {
+      "valueClass": "numeric"
     }
   },
   "body": [
     {
       "symbol": "ALPHA",
-      "template_id": 1,
-      "max": 1000,
-      "minted": 900,
-      "burned": 10
+      "template_id": 56487,
+      "max": 300000,
+      "minted": 300000,
+      "burned": 294308
+    },
+    {
+      "symbol": "BETA",
+      "template_id": 56488,
+      "max": 900000,
+      "minted": 900000,
+      "burned": 879833
+    },
+    {
+      "symbol": "ORB",
+      "template_id": 56489,
+      "max": 200000,
+      "minted": 200000,
+      "burned": 194256
+    },
+    {
+      "symbol": "UNTAMED",
+      "template_id": 56490,
+      "max": 1500000,
+      "minted": 1500000,
+      "burned": 1459015
+    },
+    {
+      "symbol": "DICE",
+      "template_id": 56491,
+      "max": 300000,
+      "minted": 300000,
+      "burned": 294751
+    },
+    {
+      "symbol": "CHAOS",
+      "template_id": 328482,
+      "max": 15000000,
+      "minted": 15000000,
+      "burned": 10896683
     }
   ]
 }

@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T08:32:15.413468+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/market/volume",
-    "captureScope": "First three root rows; nested records retained unchanged."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.transactions": {
@@ -20,9 +19,9 @@
     }
   },
   "body": {
-    "transactions": "2601",
-    "usd_volume": "3018.965",
-    "active_rentals": "49471",
-    "daily_rental_amount": "477126.952"
+    "transactions": "[redacted]",
+    "usd_volume": "[redacted]",
+    "active_rentals": "[redacted]",
+    "daily_rental_amount": "[redacted]"
   }
 }

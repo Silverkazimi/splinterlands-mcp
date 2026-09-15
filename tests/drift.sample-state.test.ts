@@ -91,3 +91,41 @@ it.each([
   expect(malformed.coverageGaps).toEqual([]);
   expect(malformed.failed[0]?.reason).toBe("review");
 });
+
+it("records idle queues without replacing populated evidence or flagging holdings loss", async () => {
+  const queueId = "api.battle.battle-queue";
+  const existing = fixture("battle-queue");
+  const original = JSON.stringify(existing);
+  const queueInput = { entryId: queueId, fixturePath: "tests/fixtures/battle-queue.fixture.json",
+    params: { username: "sample-account" }, existing };
+  const request = async () => ({ status: 200, isJson: true, body: [] });
+  const monthly = await recaptureFixtures([queueInput], request);
+  expect(monthly.coverageGaps).toEqual([]);
+  expect(monthly.failed).toEqual([]);
+  expect(monthly.transientSamples).toEqual([{ entryId: queueId, fixturePath: queueInput.fixturePath, reason: "idle_queue" }]);
+  expect(monthly.plan.writes).toEqual([]);
+  expect(monthly.plan.pendingWrites).toEqual([]);
+  expect(monthly.plan.blockedByHoldFloor).toBe(false);
+  expect(JSON.stringify(existing)).toBe(original);
+  const baseline = JSON.parse(readFileSync("scripts/drift/baseline.json", "utf8")) as DriftBaseline;
+  const nightly = await runNightly([{ entryId: queueId, params: queueInput.params }], baseline, request);
+  expect(nightly.coverage.sampleCoverage).toEqual([]);
+  expect(nightly.coverage.transientSamples).toEqual([{ entryId: queueId, reason: "idle_queue" }]);
+  expect(nightly.plan.issues).toEqual([]);
+});
+
+it("still rejects malformed queues and detects changes in populated queue responses", async () => {
+  const queueId = "api.battle.battle-queue";
+  const existing = fixture("battle-queue");
+  const queueInput = { entryId: queueId, fixturePath: "tests/fixtures/battle-queue.fixture.json",
+    params: { username: "sample-account" }, existing };
+  const invalid = await recaptureFixtures([queueInput], async () => ({ status: 200, isJson: true, body: [{}] }));
+  expect(invalid.transientSamples).toEqual([]);
+  expect(invalid.failed).toHaveLength(1);
+  const baseline = JSON.parse(readFileSync("scripts/drift/baseline.json", "utf8")) as DriftBaseline;
+  const rows = (body(existing) as Array<Record<string, unknown>>).map(row => ({ ...row, status: "invalid" }));
+  const nightly = await runNightly([{ entryId: queueId, params: queueInput.params }], baseline,
+    async () => ({ status: 200, isJson: true, body: rows }));
+  expect(nightly.coverage.transientSamples).toEqual([]);
+  expect(nightly.plan.issues.length).toBeGreaterThan(0);
+});

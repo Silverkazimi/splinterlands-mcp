@@ -1,8 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T20:56:00Z",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T13:01:24.695Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.unclaimed_balances[0].player": {
@@ -83,6 +83,162 @@
     "body.unclaimed_balances[2].last_updated_date": {
       "valueClass": "timestamp"
     },
+    "body.unclaimed_balances[3].player": {
+      "valueClass": "name"
+    },
+    "body.unclaimed_balances[3].token": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[3].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "land",
+        "land_mining",
+        "license",
+        "modern",
+        "season",
+        "surveyed_land",
+        "wild"
+      ]
+    },
+    "body.unclaimed_balances[3].balance": {
+      "valueClass": "numeric"
+    },
+    "body.unclaimed_balances[3].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.unclaimed_balances[4].player": {
+      "valueClass": "name"
+    },
+    "body.unclaimed_balances[4].token": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[4].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "land",
+        "land_mining",
+        "license",
+        "modern",
+        "season",
+        "surveyed_land",
+        "wild"
+      ]
+    },
+    "body.unclaimed_balances[4].balance": {
+      "valueClass": "numeric"
+    },
+    "body.unclaimed_balances[4].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.unclaimed_balances[5].player": {
+      "valueClass": "name"
+    },
+    "body.unclaimed_balances[5].token": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[5].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "land",
+        "land_mining",
+        "license",
+        "modern",
+        "season",
+        "surveyed_land",
+        "wild"
+      ]
+    },
+    "body.unclaimed_balances[5].balance": {
+      "valueClass": "numeric"
+    },
+    "body.unclaimed_balances[5].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.unclaimed_balances[6].player": {
+      "valueClass": "name"
+    },
+    "body.unclaimed_balances[6].token": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[6].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "land",
+        "land_mining",
+        "license",
+        "modern",
+        "season",
+        "surveyed_land",
+        "wild"
+      ]
+    },
+    "body.unclaimed_balances[6].balance": {
+      "valueClass": "numeric"
+    },
+    "body.unclaimed_balances[6].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.unclaimed_balances[7].player": {
+      "valueClass": "name"
+    },
+    "body.unclaimed_balances[7].token": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[7].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "land",
+        "land_mining",
+        "license",
+        "modern",
+        "season",
+        "surveyed_land",
+        "wild"
+      ]
+    },
+    "body.unclaimed_balances[7].balance": {
+      "valueClass": "numeric"
+    },
+    "body.unclaimed_balances[7].last_updated_date": {
+      "valueClass": "timestamp"
+    },
+    "body.unclaimed_balances[8].player": {
+      "valueClass": "name"
+    },
+    "body.unclaimed_balances[8].token": {
+      "valueClass": "enum"
+    },
+    "body.unclaimed_balances[8].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "land",
+        "land_mining",
+        "license",
+        "modern",
+        "season",
+        "surveyed_land",
+        "wild"
+      ]
+    },
+    "body.unclaimed_balances[8].balance": {
+      "valueClass": "numeric"
+    },
+    "body.unclaimed_balances[8].last_updated_date": {
+      "valueClass": "timestamp"
+    },
     "body.last_claim_date": {
       "valueClass": "timestamp"
     }
@@ -90,27 +246,69 @@
   "body": {
     "unclaimed_balances": [
       {
-        "player": "sample-acct-100",
+        "player": "sample-account-1",
         "token": "SPS",
         "type": "brawl",
         "balance": "0.000",
-        "last_updated_date": "2026-07-31T23:13:40.043Z"
+        "last_updated_date": "2026-09-11T19:03:21.324Z"
       },
       {
-        "player": "sample-acct-100",
+        "player": "sample-account-1",
         "token": "SPS",
         "type": "focus",
         "balance": "0.000",
-        "last_updated_date": "2024-04-02T20:07:02.954Z"
+        "last_updated_date": "2024-04-02T18:37:35.892Z"
       },
       {
-        "player": "sample-acct-100",
+        "player": "sample-account-1",
         "token": "SPS",
         "type": "land",
         "balance": "0.000",
-        "last_updated_date": "2023-04-11T08:20:51.000Z"
+        "last_updated_date": "2023-04-11T11:48:06.000Z"
+      },
+      {
+        "player": "sample-account-1",
+        "token": "SPS",
+        "type": "land_mining",
+        "balance": "0.000",
+        "last_updated_date": "2025-12-06T00:16:48.795Z"
+      },
+      {
+        "player": "sample-account-1",
+        "token": "SPS",
+        "type": "license",
+        "balance": "0.000",
+        "last_updated_date": "2025-02-24T16:50:57.845Z"
+      },
+      {
+        "player": "sample-account-1",
+        "token": "SPS",
+        "type": "modern",
+        "balance": "0.000",
+        "last_updated_date": "2026-05-21T00:50:42.605Z"
+      },
+      {
+        "player": "sample-account-1",
+        "token": "SPS",
+        "type": "season",
+        "balance": "0.000",
+        "last_updated_date": "2024-03-15T14:12:24.000Z"
+      },
+      {
+        "player": "sample-account-1",
+        "token": "SPS",
+        "type": "surveyed_land",
+        "balance": "0.000",
+        "last_updated_date": "2023-11-28T21:33:39.000Z"
+      },
+      {
+        "player": "sample-account-1",
+        "token": "SPS",
+        "type": "wild",
+        "balance": "60.269",
+        "last_updated_date": "2026-09-11T19:03:21.324Z"
       }
     ],
-    "last_claim_date": "2026-09-08T20:34:28.124Z"
+    "last_claim_date": "2026-09-15T08:12:57.959Z"
   }
 }
