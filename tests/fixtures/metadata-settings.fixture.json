@@ -3,7 +3,20 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T09:19:55.767644+00:00",
     "sourceUrl": "https://api2.splinterlands.com/settings",
-    "captureScope": "Complete captured response; no fields removed or decoded."
+    "captureScope": "Complete captured response; no fields removed or decoded.",
+    "additionalSchemaReview": "Official live observation 2026-09-15 verifies boolean blocks_are_behind.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "6478bfa491032a62cb548bd5e73d14fa1e2a9debb89739912b7ec0e27e663042",
+        "alternateShape": "6478bfa491032a62cb548bd5e73d14fa1e2a9debb89739912b7ec0e27e663042"
+      }
+    ],
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "6478bfa491032a62cb548bd5e73d14fa1e2a9debb89739912b7ec0e27e663042",
+        "responseShape": "6478bfa491032a62cb548bd5e73d14fa1e2a9debb89739912b7ec0e27e663042"
+      }
+    ]
   },
   "valueClasses": {
     "body.asset_url": {
@@ -4463,6 +4476,9 @@
     },
     "body.api_ops[10]": {
       "valueClass": "opaque"
+    },
+    "body.blocks_are_behind": {
+      "valueClass": "enum"
     }
   },
   "body": {
@@ -6428,6 +6444,7 @@
       "update_set",
       "create_set",
       "delete_set"
-    ]
+    ],
+    "blocks_are_behind": false
   }
 }

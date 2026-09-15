@@ -9,6 +9,17 @@
       {
         "baselineShape": "ccef4228bf2a4ced3892162e8eacc874c1480041b72b42879f002825e554abf4",
         "alternateShape": "b2f2c25982745992b53e6886aaf9e00c5b41bac6e9e8ebac8fc75bc9c6238ab2"
+      },
+      {
+        "baselineShape": "ccef4228bf2a4ced3892162e8eacc874c1480041b72b42879f002825e554abf4",
+        "alternateShape": "f172039a3031ee08bb26575e944cda4278cabca9de6500adf8a4273ecfb37169"
+      }
+    ],
+    "additionalSchemaReview": "Official live observation 2026-09-15 verifies the numeric state of reward_chest_qty.",
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "ccef4228bf2a4ced3892162e8eacc874c1480041b72b42879f002825e554abf4",
+        "responseShape": "f172039a3031ee08bb26575e944cda4278cabca9de6500adf8a4273ecfb37169"
       }
     ]
   },
@@ -74,7 +85,7 @@
       "valueClass": "numeric"
     },
     "body.player.reward_chest_qty": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     },
     "body.player.player_avatar": {
       "valueClass": "opaque"

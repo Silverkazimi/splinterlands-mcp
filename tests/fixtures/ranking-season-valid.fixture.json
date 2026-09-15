@@ -3,7 +3,20 @@
     "source": "live-observation",
     "observedAt": "2026-09-12T08:11:33.493303+00:00",
     "sourceUrl": "https://api.splinterlands.com/season",
-    "captureScope": "First three list rows; other object fields retained without transformation."
+    "captureScope": "First three list rows; other object fields retained without transformation.",
+    "additionalSchemaReview": "Official live observation 2026-09-15 verifies the numeric state of reset_block_num.",
+    "reviewedAlternateShapes": [
+      {
+        "baselineShape": "5abb2571b1ccd644ee2f62fc966910a3e7340ff17d31aaba4b8e217554b0499e",
+        "alternateShape": "ae5452970a332a4d5cdfa19d8a0b03f5f8269aff8eb23e69339d499e4eed7ea8"
+      }
+    ],
+    "reviewedResponseShapes": [
+      {
+        "baselineShape": "5abb2571b1ccd644ee2f62fc966910a3e7340ff17d31aaba4b8e217554b0499e",
+        "responseShape": "ae5452970a332a4d5cdfa19d8a0b03f5f8269aff8eb23e69339d499e4eed7ea8"
+      }
+    ]
   },
   "valueClasses": {
     "body.id": {
@@ -13,7 +26,7 @@
       "valueClass": "timestamp"
     },
     "body.reset_block_num": {
-      "valueClass": "opaque"
+      "valueClass": "numeric"
     }
   },
   "body": {
