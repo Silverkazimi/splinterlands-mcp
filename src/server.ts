@@ -1,3 +1,4 @@
+import packageInfo from "../package.json" with { type: "json" };
 import { createAvatarRenderer, AvatarArtworkError } from "./avatar/artwork.js";
 import { collectionPlotReferences } from "./collection-plot-references.js";
 import { registerScenarioSnapshot, SCENARIO_TOOL_ROUTES } from "./land-scenario-snapshot.js";
@@ -480,7 +481,7 @@ async function executeCachedMetadata(
 export function createServer(clientOptions: ClientOptions = {}): McpServer {
   const server = new ScopedMcpServer({
     name: "splinterlands-mcp",
-    version: "0.0.0",
+    version: packageInfo.version,
   });
   const client = new SplinterlandsHttpClient(clientOptions);
   const renderAvatar = createAvatarRenderer(clientOptions.fetch);
