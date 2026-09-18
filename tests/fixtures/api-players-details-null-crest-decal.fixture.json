@@ -1,0 +1,19 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "Synthetic alternate shape; account-specific values remain in the base profile fixture."
+  },
+  "valueClasses": {
+    "body.guild.data.crest.decal": { "valueClass": "enum" }
+  },
+  "body": {
+    "guild": {
+      "data": {
+        "crest": {
+          "decal": null
+        }
+      }
+    }
+  }
+}

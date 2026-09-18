@@ -990,6 +990,7 @@ describe("land deed MCP protocol", () => {
 
     expect(data).toHaveLength(100);
     expect((result.content as Array<{ text?: string }>)[0]?.text).toBe("This result was truncated to 100 rows; more may exist upstream. The parameters tried for this route are not recorded in this message; this server made one request and did not fetch another response. Narrow the request to retrieve other results.");
+    expect((result.content as Array<{ text?: string }>)[1]?.text).toBe(JSON.stringify(result.structuredContent));
     expect(urls).toHaveLength(1);
     expect(urls[0]).toBe("https://vapi.splinterlands.com/land/deeds/owned/__synthetic_player__");
   });
@@ -1019,6 +1020,7 @@ describe("land deed MCP protocol", () => {
     expect(result.structuredContent).toStrictEqual({ status: "success", data: [body.data[0]] });
     expect(new TextEncoder().encode(JSON.stringify(result.structuredContent)).byteLength).toBeLessThanOrEqual(MAX_RESULT_BYTES);
     expect((result.content as Array<{ text?: string }>)[0]?.text).toBe("This result was truncated to 1 rows; more may exist upstream. The parameters tried for this route are not recorded in this message; this server made one request and did not fetch another response. Narrow the request to retrieve other results.");
+    expect((result.content as Array<{ text?: string }>)[1]?.text).toBe(JSON.stringify(result.structuredContent));
   });
 
   it("explains when a single plot record exceeds the result bound", async () => {
@@ -1104,7 +1106,7 @@ describe("land deed MCP protocol", () => {
     expect(gatedResult).toMatchObject({ isError: true, structuredContent: { kind: "endpoint_requires_auth" } });
     expect(gatedResult._meta).toMatchObject({ provenance: { endpoint: "/land/deeds/owned/{player}", requestScope: { player: { supplied: true } } } });
     expect(JSON.stringify(gatedResult)).not.toContain("__synthetic_player__");
-    expect(malformedResult).toMatchObject({ isError: true, structuredContent: { kind: "upstream_malformed" } });
+    expect(malformedResult).toMatchObject({ isError: true, structuredContent: { kind: "upstream_error" } });
     expect(JSON.stringify(malformedResult)).not.toContain("__synthetic_player__");
     expect(oversizedResult).toMatchObject({ isError: true, structuredContent: { kind: "response_too_large" } });
     expect(JSON.stringify(oversizedResult)).not.toContain("__synthetic_player__");

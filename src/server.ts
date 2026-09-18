@@ -375,6 +375,16 @@ function resultText(result: BoundedResult, limitationText?: string, truncationTe
   return limitationText === undefined ? text : `${text} ${limitationText}`;
 }
 
+function resultContent(result: BoundedResult, limitationText?: string, truncationText = TRUNCATION_TEXT): Array<{ type: "text"; text: string }> {
+  if (!result.truncated) return [{ type: "text", text: resultText(result, limitationText, truncationText) }];
+  const notice = truncationText.replace("{rows}", String(result.rowCount));
+  const text = limitationText === undefined ? notice : `${notice} ${limitationText}`;
+  return [
+    { type: "text", text },
+    { type: "text", text: JSON.stringify(result.structuredContent) },
+  ];
+}
+
 type CachedMetadata = {
   route: string;
   fetchedAt: string;
@@ -444,6 +454,14 @@ function arrayResultText(result: BoundedArrayResult): string {
   return result.truncated
     ? TRUNCATION_TEXT.replace("{rows}", String(result.rowCount))
     : JSON.stringify(result.rows);
+}
+
+function arrayResultContent(result: BoundedArrayResult): Array<{ type: "text"; text: string }> {
+  if (!result.truncated) return [{ type: "text", text: arrayResultText(result) }];
+  return [
+    { type: "text", text: arrayResultText(result) },
+    { type: "text", text: JSON.stringify({ data: result.rows }) },
+  ];
 }
 
 function metadataCacheKey(entryId: string, params: Record<string, unknown>): string {
@@ -579,7 +597,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(structuredContent);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -604,7 +622,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(structuredContent);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -628,7 +646,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -658,7 +676,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded, limitationText) }],
+        content: resultContent(bounded, limitationText),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params, scope),
       };
@@ -682,7 +700,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -706,7 +724,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded, HISTORY_LIMITATION_TEXT, HISTORY_TRUNCATION_TEXT) }],
+        content: resultContent(bounded, HISTORY_LIMITATION_TEXT, HISTORY_TRUNCATION_TEXT),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -727,7 +745,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -751,7 +769,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -775,7 +793,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -799,7 +817,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -823,7 +841,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -856,7 +874,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -877,7 +895,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -910,7 +928,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -943,7 +961,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -967,7 +985,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -991,7 +1009,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1012,7 +1030,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1036,7 +1054,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1060,7 +1078,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1084,7 +1102,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1105,7 +1123,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1129,7 +1147,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1153,7 +1171,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1180,7 +1198,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1207,7 +1225,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1234,7 +1252,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1261,7 +1279,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(result.data as Record<string, unknown>);
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1293,7 +1311,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(withLandWorkerView(result.data as Record<string, unknown>));
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1317,7 +1335,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const bounded = boundedResult(withLandPlotView(result.data as Record<string, unknown>));
       return {
-        content: [{ type: "text" as const, text: resultText(bounded) }],
+        content: resultContent(bounded),
         structuredContent: bounded.structuredContent,
         _meta: provenanceMeta(result, bound.endpointTemplate, params),
       };
@@ -1336,7 +1354,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, {});
       if (isEmptyResult(result.data)) return emptyResult(result.data, "The upstream returned no liquidity-pool rows.", result, bound.endpointTemplate, {});
       const bounded = boundedResult(result.data as Record<string, unknown>);
-      return { content: [{ type: "text" as const, text: resultText(bounded) }], structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, {}) };
+      return { content: resultContent(bounded), structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, {}) };
     },
   );
 
@@ -1352,7 +1370,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       if (isEmptyResult(result.data)) return emptyResult(result.data, "The upstream returned no liquidity pool for this id.", result, bound.endpointTemplate, params);
       const bounded = boundedResult(result.data as Record<string, unknown>);
-      return { content: [{ type: "text" as const, text: resultText(bounded) }], structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: resultContent(bounded), structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1368,7 +1386,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       if (isEmptyResult(result.data)) return emptyResult(result.data, "The upstream returned no liquidity pool for this symbol.", result, bound.endpointTemplate, params);
       const bounded = boundedResult(result.data as Record<string, unknown>);
-      return { content: [{ type: "text" as const, text: resultText(bounded) }], structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: resultContent(bounded), structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1384,7 +1402,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       if (isEmptyResult(result.data)) return emptyResult(result.data, "The upstream returned no liquidity-swap rows for this player.", result, bound.endpointTemplate, params);
       const bounded = boundedResult(result.data as Record<string, unknown>);
-      return { content: [{ type: "text" as const, text: resultText(bounded) }], structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: resultContent(bounded), structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1400,7 +1418,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, {});
       if (isEmptyResult(result.data)) return emptyResult(result.data, "The upstream returned no liquidity reward totals.", result, bound.endpointTemplate, {});
       const bounded = boundedResult(result.data as Record<string, unknown>);
-      return { content: [{ type: "text" as const, text: resultText(bounded) }], structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, {}) };
+      return { content: resultContent(bounded), structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, {}) };
     },
   );
 
@@ -1415,7 +1433,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       const result = await bound.execute(client);
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       const bounded = boundedResult(result.data as Record<string, unknown>);
-      return { content: [{ type: "text" as const, text: resultText(bounded) }], structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: resultContent(bounded), structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1431,7 +1449,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       if (isEmptyResult(result.data)) return emptyResult(result.data, "The upstream returned no liquidity resource rows for this player and token.", result, bound.endpointTemplate, params);
       const bounded = boundedResult(result.data as Record<string, unknown>);
-      return { content: [{ type: "text" as const, text: resultText(bounded) }], structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: resultContent(bounded), structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1447,7 +1465,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       if (isEmptyResult(result.data)) return emptyResult(result.data, "The upstream returned no liquidity region rows for this player.", result, bound.endpointTemplate, params);
       const bounded = boundedResult(result.data as Record<string, unknown>);
-      return { content: [{ type: "text" as const, text: resultText(bounded) }], structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: resultContent(bounded), structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1549,7 +1567,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       const result = await executeCachedMetadata(metadataCache, now, CARDS_GET_DETAILS_ENTRY_ID, params, bound, client);
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       const bounded = boundedArrayResult(result.data as unknown[]);
-      return { content: [{ type: "text" as const, text: arrayResultText(bounded) }], structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: arrayResultContent(bounded), structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1573,7 +1591,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       const result = await executeCachedMetadata(metadataCache, now, CARDS_SKINS_ENTRY_ID, params, bound, client);
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       const bounded = boundedArrayResult(result.data as unknown[]);
-      return { content: [{ type: "text" as const, text: arrayResultText(bounded) }], structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: arrayResultContent(bounded), structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1585,7 +1603,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       const result = await executeCachedMetadata(metadataCache, now, CARDS_PACK_DATA_WAX_ENTRY_ID, params, bound, client);
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       const bounded = boundedArrayResult(result.data as unknown[]);
-      return { content: [{ type: "text" as const, text: arrayResultText(bounded) }], structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: arrayResultContent(bounded), structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1597,7 +1615,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       const result = await bound.execute(client);
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       const bounded = boundedArrayResult(result.data as unknown[]);
-      return { content: [{ type: "text" as const, text: arrayResultText(bounded) }], structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: arrayResultContent(bounded), structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1609,7 +1627,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       const result = await bound.execute(client);
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       const bounded = boundedArrayResult(result.data as unknown[]);
-      return { content: [{ type: "text" as const, text: arrayResultText(bounded) }], structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: arrayResultContent(bounded), structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1621,7 +1639,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       const result = await executeCachedMetadata(metadataCache, now, PLAYERS_ITEM_DETAILS_ENTRY_ID, params, bound, client);
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       const bounded = boundedArrayResult(result.data as unknown[]);
-      return { content: [{ type: "text" as const, text: arrayResultText(bounded) }], structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: arrayResultContent(bounded), structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1728,7 +1746,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       const result = await bound.execute(client);
       if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
       const bounded = boundedArrayResult(result.data as unknown[]);
-      return { content: [{ type: "text" as const, text: arrayResultText(bounded) }], structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
+      return { content: arrayResultContent(bounded), structuredContent: { data: bounded.rows }, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
   server.registerTool(

@@ -95,10 +95,14 @@ export function registerReadTools(server: McpServer, client: SplinterlandsHttpCl
       while (rows.length > 0 && bytes(projected()) > MAX_BYTES) rows.pop();
       if (bytes(projected()) > MAX_BYTES || (rows.length === 0 && sourceRows.length > 0)) return oversized();
       const truncated = rows.length < sourceRows.length;
+      const projectedText = JSON.stringify(array ? rows : projected());
       return {
-        content: [{ type: "text" as const, text: truncated
-          ? `This response was locally truncated to ${rows.length} of ${sourceRows.length} upstream rows. No continuation was fetched; this is not a complete result. Other upstream fields are retained unchanged.`
-          : JSON.stringify(array ? rows : projected()) }],
+        content: truncated
+          ? [
+            { type: "text" as const, text: `This response was locally truncated to ${rows.length} of ${sourceRows.length} upstream rows. No continuation was fetched; this is not a complete result. Other upstream fields are retained unchanged.` },
+            { type: "text" as const, text: projectedText },
+          ]
+          : [{ type: "text" as const, text: projectedText }],
         structuredContent: projected(),
         _meta: { provenance, resultLimit: { truncated, returnedRows: rows.length, upstreamRows: sourceRows.length } },
       };
