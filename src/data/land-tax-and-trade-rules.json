@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-18",
+  "harvestTaxRate": 0.1,
+  "taxClaimShare": {
+    "castleShareOfRegionTax": 0.2,
+    "keepShareOfTractTax": 0.5
+  },
+  "taxClaimGrainCost": {
+    "KEEP": 1000,
+    "CASTLE": 10000
+  },
+  "tradeHubSwapFee": 0.1,
+  "tradeHubSwapFeeSplit": {
+    "toLiquidityProviders": 0.05,
+    "burnt": 0.05
+  },
+  "crossRegionSameResourceSwapFee": 0.1,
+  "sources": {
+    "harvestTaxRate": [
+      "https://support.splinterlands.com/hc/en-us/articles/17636839553684",
+      "https://support.splinterlands.com/hc/en-us/articles/18253968971412"
+    ],
+    "taxClaimShare": "https://support.splinterlands.com/hc/en-us/articles/18253968971412",
+    "taxClaimGrainCost": "https://support.splinterlands.com/hc/en-us/articles/18253968971412",
+    "tradeHubSwapFee": "https://support.splinterlands.com/hc/en-us/articles/26373028318996",
+    "crossRegionSameResourceSwapFee": "https://support.splinterlands.com/hc/en-us/articles/26373028318996"
+  },
+  "scope": "Harvest tax is a flat 10% rate collected by Castles and Keeps. Castle and Keep claim values are shares of the applicable tax pool, not a split of the 10% rate. KEEP and CASTLE grain values are fixed costs per claim of accrued tax, not hourly upkeep. Trade Hub fees cover the documented swaps; no per-hop or multi-hop fee is documented officially and none is claimed here."
+}
