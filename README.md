@@ -4,9 +4,29 @@ A read-only [Model Context Protocol](https://modelcontextprotocol.io) (MCP)
 server for [Splinterlands'](https://splinterlands.com) public API. It lets
 an MCP-capable assistant (Claude Desktop, Claude Code, and other MCP clients)
 answer questions about Land, cards, and players by calling Splinterlands' own public endpoints.
-Version `0.0.0` is an unpublished pre-release. Use a current Node.js 22 or 24 LTS patch release (minimum 22.13).
+Version `1.0.0` is a release candidate awaiting final approval. Use a current Node.js 22 or 24 LTS patch release (minimum 22.13).
 
-**Status: pre-release.** 163 tools are registered (`src/server.ts`).
+## Start here
+
+Connect this server to an MCP-capable assistant, then ask questions such as:
+
+- What workers and production does this Land plot have?
+- Show this player's custom avatar, with its level reported separately.
+- What happened in this Hive transaction?
+- Compare these proposed Land worker lineups using the supported estimate rules.
+
+It reads public information and calculates estimates. It cannot sign transactions,
+move assets, spend funds, or change your game account. It does not need your
+private keys. Results state their limits: a returned page is not necessarily
+your full history, and an estimate does not prove a change is eligible.
+
+Start with [installation](#install) and the [safety boundaries](#what-it-is-and-what-it-will-never-do).
+The detailed tool reference below is for readers who want exact capabilities
+and known API limitations.
+
+## Detailed capabilities
+
+**Status: release candidate.** 163 tools are registered (`src/server.ts`).
 66 call `vapi.splinterlands.com`: 40 Land routes covering deeds, projects,
 counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 90 call
 `api.splinterlands.com`: eight card tools, one item-metadata tool, and 30
@@ -380,11 +400,11 @@ counted by the first call.
 
 ## Install
 
-This `0.0.0` release is not published to npm. From a checkout, use Node.js
-20 or newer, install dependencies, and build the executable:
+This package is not published to npm. From a checkout, use a current Node.js
+22 or 24 LTS patch release (minimum 22.13), install dependencies, and build the executable:
 
 ```bash
-npm install
+npm ci
 npm run build
 ```
 
@@ -436,7 +456,7 @@ about the account.
 
 ## Maintenance posture
 
-Nightly response checks, weekly specification comparisons and monthly fixture renewal are implemented. The four account-role secrets and complete request recipes have offline validation commands in the maintenance runbook. Hosted operation still needs configuration and verification before release; this working tree is unpublished.
+Nightly response checks, weekly specification comparisons and monthly fixture renewal are implemented. The four account-role secrets and complete request recipes have offline validation commands in the maintenance runbook. Hosted CI and bounded maintenance checks passed on the release candidate. Nightly response checks and monthly fixture renewal remain paused pending release approval; weekly specification checks remain enabled. The versioned release has not yet been published.
 
 - Run npm run drift:check with approved MCP_DRIFT_INPUTS to compare bounded endpoint reads. Changes update endpoint-specific issues; two blocked endpoints stop the sweep and produce one runner-blocked issue.
 - Run npm run drift:spec to compare both official API specifications without GitHub writes. The hosted job prepares specification changes in a review PR, preserving verified runtime access rules.

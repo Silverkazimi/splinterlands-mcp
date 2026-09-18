@@ -4,6 +4,10 @@
 
 The initial release is being prepared. No release has been published from this working tree.
 
+### Documentation
+
+- Corrected the README release version and Node.js requirements, added a plain-language starting point, and recorded verified maintenance status.
+
 ### Added
 
 - Saved custom avatar settings and opt-in PNG artwork composition, with level metadata separate from image art. Legacy RUNI profile portraits and other observed artwork variants are documented separately.
