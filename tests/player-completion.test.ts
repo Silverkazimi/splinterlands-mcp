@@ -83,7 +83,10 @@ describe("additional public player tools", () => {
     const result = await client.callTool({ name: "player_balances", arguments: { players: account, token_type: "DEC" } });
     expect(result.structuredContent).toEqual({ data: body.slice(0, 100) });
     expect(result._meta).toMatchObject({ resultLimit: { truncated: true, returnedRows: 100, upstreamRows: 105 } });
-    expect(result.content).toEqual([expect.objectContaining({ text: expect.stringContaining("not a complete result") })]);
+    expect(result.content).toEqual([
+      expect.objectContaining({ text: expect.stringContaining("not a complete result") }),
+      { type: "text", text: JSON.stringify((result.structuredContent as { data: unknown[] }).data) },
+    ]);
     expect(requests).toBe(1);
   });
   it("refuses oversized objects and single rows without returning partial records", async () => {

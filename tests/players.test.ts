@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 import currentRewardsFixture from "./fixtures/api-players-current-rewards.fixture.json" with { type: "json" };
 import detailsFixture from "./fixtures/api-players-details.fixture.json" with { type: "json" };
-import guildlessDetailsFixture from "./fixtures/api-players-details-guildless.fixture.json" with { type: "json" };
-import nullCrestDetailsFixture from "./fixtures/api-players-details-null-crest-decal.fixture.json" with { type: "json" };
+import guildlessDetailsFixture from "./static-fixtures/api-players-details-guildless.fixture.json" with { type: "json" };
+import nullCrestDetailsFixture from "./static-fixtures/api-players-details-null-crest-decal.fixture.json" with { type: "json" };
 import lastFocusFixture from "./fixtures/api-players-last-focus-rewards.fixture.json" with { type: "json" };
 import lastSeasonFixture from "./fixtures/api-players-last-season-rewards.fixture.json" with { type: "json" };
 import unclaimedBalanceHistoryFixture from "./fixtures/api-players-unclaimed-balance-history.fixture.json" with { type: "json" };

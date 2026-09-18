@@ -12,7 +12,7 @@ import {
   SplinterlandsHttpClient,
 } from "../src/http/client.js";
 import listedFixture from "./fixtures/land-deed-listed.fixture.json" with { type: "json" };
-import playerNotFoundFixture from "./fixtures/api-players-details-not-found.fixture.json" with { type: "json" };
+import playerNotFoundFixture from "./static-fixtures/api-players-details-not-found.fixture.json" with { type: "json" };
 import { createTestOnlyCataloguePath, getCatalogueEntry } from "../src/catalogue/index.js";
 import { matchesResultContract } from "../src/catalogue/fingerprint.js";
 import { withCallScope, registerLogicalRequest } from "../src/http/callscope.js";
