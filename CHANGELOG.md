@@ -6,6 +6,7 @@ The initial release is being prepared. No release has been published from this w
 
 ### Documentation
 
+- Rewrote the opening README overview in plain language and moved detailed request behavior to a linked reference, preserving the tool table and later sections.
 - Corrected the README release version and Node.js requirements, added a plain-language starting point with Codex explicitly listed, and recorded verified maintenance status.
 
 ### Added
