@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { deliverFixtures, fixtureDeliveryPreflight, type DeliveryCommand } from "../scripts/drift/fixture-delivery.js";
+import { deliverFixtures, fixtureDeliveryPreflight, DeliveryValidationError, type DeliveryCommand } from "../scripts/drift/fixture-delivery.js";
 import { planFixtureRenewal } from "../scripts/drift/renewal.js";
 
 const path = "tests/fixtures/sample.fixture.json";
@@ -41,4 +41,20 @@ it("does not overwrite an existing review branch or write held captures", async 
   let writes = 0;
   expect(await deliverFixtures(".", "example/server", "123", plan(), run, () => { writes++; })).toBe("held");
   expect(writes).toBe(0);
+});
+
+it("reports a fixed validation stage without propagating captured command output", async () => {
+  const { run, commands } = mock();
+  const failing: DeliveryCommand = (command, args) => {
+    if (command === "npm" && args[0] === "test") {
+      throw Object.assign(new Error("private-response-marker"), { stdout: "private-response-marker", stderr: "private-response-marker" });
+    }
+    return run(command, args);
+  };
+  const error = await deliverFixtures(".", "example/server", "123", plan(), failing, () => {}).catch(error => error);
+  expect(error).toBeInstanceOf(DeliveryValidationError);
+  expect(error.stage).toBe("tests");
+  expect(String(error)).not.toContain("private-response-marker");
+  expect(JSON.stringify(error)).not.toContain("private-response-marker");
+  expect(commands.some(args => args[1] === "push")).toBe(false);
 });

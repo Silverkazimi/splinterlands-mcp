@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T07:48:00.487732+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/reward_delegation_history",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].id": {
@@ -72,28 +70,1189 @@
     },
     "body[1].delegation_date": {
       "valueClass": "timestamp"
+    },
+    "body[2].id": {
+      "valueClass": "id"
+    },
+    "body[2].player": {
+      "valueClass": "name"
+    },
+    "body[2].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[2].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[2].token": {
+      "valueClass": "enum"
+    },
+    "body[2].percent": {
+      "valueClass": "numeric"
+    },
+    "body[2].trx_id": {
+      "valueClass": "id"
+    },
+    "body[2].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[3].id": {
+      "valueClass": "id"
+    },
+    "body[3].player": {
+      "valueClass": "name"
+    },
+    "body[3].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[3].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[3].token": {
+      "valueClass": "enum"
+    },
+    "body[3].percent": {
+      "valueClass": "numeric"
+    },
+    "body[3].trx_id": {
+      "valueClass": "id"
+    },
+    "body[3].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[4].id": {
+      "valueClass": "id"
+    },
+    "body[4].player": {
+      "valueClass": "name"
+    },
+    "body[4].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[4].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[4].token": {
+      "valueClass": "enum"
+    },
+    "body[4].percent": {
+      "valueClass": "numeric"
+    },
+    "body[4].trx_id": {
+      "valueClass": "id"
+    },
+    "body[4].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[5].id": {
+      "valueClass": "id"
+    },
+    "body[5].player": {
+      "valueClass": "name"
+    },
+    "body[5].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[5].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[5].token": {
+      "valueClass": "enum"
+    },
+    "body[5].percent": {
+      "valueClass": "numeric"
+    },
+    "body[5].trx_id": {
+      "valueClass": "id"
+    },
+    "body[5].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[6].id": {
+      "valueClass": "id"
+    },
+    "body[6].player": {
+      "valueClass": "name"
+    },
+    "body[6].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[6].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[6].token": {
+      "valueClass": "enum"
+    },
+    "body[6].percent": {
+      "valueClass": "numeric"
+    },
+    "body[6].trx_id": {
+      "valueClass": "id"
+    },
+    "body[6].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[7].id": {
+      "valueClass": "id"
+    },
+    "body[7].player": {
+      "valueClass": "name"
+    },
+    "body[7].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[7].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[7].token": {
+      "valueClass": "enum"
+    },
+    "body[7].percent": {
+      "valueClass": "numeric"
+    },
+    "body[7].trx_id": {
+      "valueClass": "id"
+    },
+    "body[7].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[8].id": {
+      "valueClass": "id"
+    },
+    "body[8].player": {
+      "valueClass": "name"
+    },
+    "body[8].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[8].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[8].token": {
+      "valueClass": "enum"
+    },
+    "body[8].percent": {
+      "valueClass": "numeric"
+    },
+    "body[8].trx_id": {
+      "valueClass": "id"
+    },
+    "body[8].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[9].id": {
+      "valueClass": "id"
+    },
+    "body[9].player": {
+      "valueClass": "name"
+    },
+    "body[9].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[9].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[9].token": {
+      "valueClass": "enum"
+    },
+    "body[9].percent": {
+      "valueClass": "numeric"
+    },
+    "body[9].trx_id": {
+      "valueClass": "id"
+    },
+    "body[9].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[10].id": {
+      "valueClass": "id"
+    },
+    "body[10].player": {
+      "valueClass": "name"
+    },
+    "body[10].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[10].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[10].token": {
+      "valueClass": "enum"
+    },
+    "body[10].percent": {
+      "valueClass": "numeric"
+    },
+    "body[10].trx_id": {
+      "valueClass": "id"
+    },
+    "body[10].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[11].id": {
+      "valueClass": "id"
+    },
+    "body[11].player": {
+      "valueClass": "name"
+    },
+    "body[11].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[11].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[11].token": {
+      "valueClass": "enum"
+    },
+    "body[11].percent": {
+      "valueClass": "numeric"
+    },
+    "body[11].trx_id": {
+      "valueClass": "id"
+    },
+    "body[11].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[12].id": {
+      "valueClass": "id"
+    },
+    "body[12].player": {
+      "valueClass": "name"
+    },
+    "body[12].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[12].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[12].token": {
+      "valueClass": "enum"
+    },
+    "body[12].percent": {
+      "valueClass": "numeric"
+    },
+    "body[12].trx_id": {
+      "valueClass": "id"
+    },
+    "body[12].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[13].id": {
+      "valueClass": "id"
+    },
+    "body[13].player": {
+      "valueClass": "name"
+    },
+    "body[13].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[13].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[13].token": {
+      "valueClass": "enum"
+    },
+    "body[13].percent": {
+      "valueClass": "numeric"
+    },
+    "body[13].trx_id": {
+      "valueClass": "id"
+    },
+    "body[13].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[14].id": {
+      "valueClass": "id"
+    },
+    "body[14].player": {
+      "valueClass": "name"
+    },
+    "body[14].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[14].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[14].token": {
+      "valueClass": "enum"
+    },
+    "body[14].percent": {
+      "valueClass": "numeric"
+    },
+    "body[14].trx_id": {
+      "valueClass": "id"
+    },
+    "body[14].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[15].id": {
+      "valueClass": "id"
+    },
+    "body[15].player": {
+      "valueClass": "name"
+    },
+    "body[15].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[15].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[15].token": {
+      "valueClass": "enum"
+    },
+    "body[15].percent": {
+      "valueClass": "numeric"
+    },
+    "body[15].trx_id": {
+      "valueClass": "id"
+    },
+    "body[15].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[16].id": {
+      "valueClass": "id"
+    },
+    "body[16].player": {
+      "valueClass": "name"
+    },
+    "body[16].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[16].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[16].token": {
+      "valueClass": "enum"
+    },
+    "body[16].percent": {
+      "valueClass": "numeric"
+    },
+    "body[16].trx_id": {
+      "valueClass": "id"
+    },
+    "body[16].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[17].id": {
+      "valueClass": "id"
+    },
+    "body[17].player": {
+      "valueClass": "name"
+    },
+    "body[17].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[17].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[17].token": {
+      "valueClass": "enum"
+    },
+    "body[17].percent": {
+      "valueClass": "numeric"
+    },
+    "body[17].trx_id": {
+      "valueClass": "id"
+    },
+    "body[17].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[18].id": {
+      "valueClass": "id"
+    },
+    "body[18].player": {
+      "valueClass": "name"
+    },
+    "body[18].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[18].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[18].token": {
+      "valueClass": "enum"
+    },
+    "body[18].percent": {
+      "valueClass": "numeric"
+    },
+    "body[18].trx_id": {
+      "valueClass": "id"
+    },
+    "body[18].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[19].id": {
+      "valueClass": "id"
+    },
+    "body[19].player": {
+      "valueClass": "name"
+    },
+    "body[19].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[19].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[19].token": {
+      "valueClass": "enum"
+    },
+    "body[19].percent": {
+      "valueClass": "numeric"
+    },
+    "body[19].trx_id": {
+      "valueClass": "id"
+    },
+    "body[19].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[20].id": {
+      "valueClass": "id"
+    },
+    "body[20].player": {
+      "valueClass": "name"
+    },
+    "body[20].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[20].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[20].token": {
+      "valueClass": "enum"
+    },
+    "body[20].percent": {
+      "valueClass": "numeric"
+    },
+    "body[20].trx_id": {
+      "valueClass": "id"
+    },
+    "body[20].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[21].id": {
+      "valueClass": "id"
+    },
+    "body[21].player": {
+      "valueClass": "name"
+    },
+    "body[21].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[21].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[21].token": {
+      "valueClass": "enum"
+    },
+    "body[21].percent": {
+      "valueClass": "numeric"
+    },
+    "body[21].trx_id": {
+      "valueClass": "id"
+    },
+    "body[21].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[22].id": {
+      "valueClass": "id"
+    },
+    "body[22].player": {
+      "valueClass": "name"
+    },
+    "body[22].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[22].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[22].token": {
+      "valueClass": "enum"
+    },
+    "body[22].percent": {
+      "valueClass": "numeric"
+    },
+    "body[22].trx_id": {
+      "valueClass": "id"
+    },
+    "body[22].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[23].id": {
+      "valueClass": "id"
+    },
+    "body[23].player": {
+      "valueClass": "name"
+    },
+    "body[23].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[23].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[23].token": {
+      "valueClass": "enum"
+    },
+    "body[23].percent": {
+      "valueClass": "numeric"
+    },
+    "body[23].trx_id": {
+      "valueClass": "id"
+    },
+    "body[23].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[24].id": {
+      "valueClass": "id"
+    },
+    "body[24].player": {
+      "valueClass": "name"
+    },
+    "body[24].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[24].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[24].token": {
+      "valueClass": "enum"
+    },
+    "body[24].percent": {
+      "valueClass": "numeric"
+    },
+    "body[24].trx_id": {
+      "valueClass": "id"
+    },
+    "body[24].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[25].id": {
+      "valueClass": "id"
+    },
+    "body[25].player": {
+      "valueClass": "name"
+    },
+    "body[25].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[25].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[25].token": {
+      "valueClass": "enum"
+    },
+    "body[25].percent": {
+      "valueClass": "numeric"
+    },
+    "body[25].trx_id": {
+      "valueClass": "id"
+    },
+    "body[25].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[26].id": {
+      "valueClass": "id"
+    },
+    "body[26].player": {
+      "valueClass": "name"
+    },
+    "body[26].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[26].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[26].token": {
+      "valueClass": "enum"
+    },
+    "body[26].percent": {
+      "valueClass": "numeric"
+    },
+    "body[26].trx_id": {
+      "valueClass": "id"
+    },
+    "body[26].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[27].id": {
+      "valueClass": "id"
+    },
+    "body[27].player": {
+      "valueClass": "name"
+    },
+    "body[27].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[27].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[27].token": {
+      "valueClass": "enum"
+    },
+    "body[27].percent": {
+      "valueClass": "numeric"
+    },
+    "body[27].trx_id": {
+      "valueClass": "id"
+    },
+    "body[27].delegation_date": {
+      "valueClass": "timestamp"
+    },
+    "body[28].id": {
+      "valueClass": "id"
+    },
+    "body[28].player": {
+      "valueClass": "name"
+    },
+    "body[28].delegate_to_player": {
+      "valueClass": "name"
+    },
+    "body[28].type": {
+      "valueClass": "enum",
+      "allowedValues": [
+        "brawl",
+        "focus",
+        "modern",
+        "season",
+        "survival",
+        "survival_bracket",
+        "wild"
+      ]
+    },
+    "body[28].token": {
+      "valueClass": "enum"
+    },
+    "body[28].percent": {
+      "valueClass": "numeric"
+    },
+    "body[28].trx_id": {
+      "valueClass": "id"
+    },
+    "body[28].delegation_date": {
+      "valueClass": "timestamp"
     }
   },
   "body": [
     {
-      "id": "5555545",
-      "player": "sample-acct-100",
-      "delegate_to_player": "sample-acct-088",
-      "type": "survival_bracket",
+      "id": "5657299",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-2",
+      "type": "brawl",
       "token": "SPS",
-      "percent": 15,
-      "trx_id": "3ccb274a4d68764691ef4f7a0548e99553465008",
-      "delegation_date": "2026-02-16T04:39:15.000Z"
+      "percent": 0,
+      "trx_id": "bcd86da95659803f72e465ed564129f078ccfbac",
+      "delegation_date": "2026-07-07T05:25:15.000Z"
     },
     {
-      "id": "5555544",
-      "player": "sample-acct-100",
-      "delegate_to_player": "sample-acct-088",
+      "id": "5639805",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-3",
       "type": "wild",
       "token": "SPS",
-      "percent": 15,
-      "trx_id": "738aaa3e94210e932104484465b4a5697228dd17",
-      "delegation_date": "2026-02-16T04:39:12.000Z"
+      "percent": 35,
+      "trx_id": "e648c7d3b39e8197eec0dcf541b651d0262beaf0",
+      "delegation_date": "2026-06-16T22:41:06.000Z"
+    },
+    {
+      "id": "5497429",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-3",
+      "type": "survival",
+      "token": "SPS",
+      "percent": 25,
+      "trx_id": "5acc85974437b74980e94f7088ea984b9339b46b",
+      "delegation_date": "2025-10-23T07:10:27.000Z"
+    },
+    {
+      "id": "5497428",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-3",
+      "type": "wild",
+      "token": "SPS",
+      "percent": 25,
+      "trx_id": "485f5e15c3dfae7f41016ee98ac4a16dc4ee3cdb",
+      "delegation_date": "2025-10-23T07:10:27.000Z"
+    },
+    {
+      "id": "5497427",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-3",
+      "type": "survival",
+      "token": "SPS",
+      "percent": 30,
+      "trx_id": "1c4bf75098e9590fcba6e3544d1fa7d42f577614",
+      "delegation_date": "2025-10-23T06:59:09.000Z"
+    },
+    {
+      "id": "5497426",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-3",
+      "type": "wild",
+      "token": "SPS",
+      "percent": 30,
+      "trx_id": "a691018b6514a4517fe7699345374d2913592ca0",
+      "delegation_date": "2025-10-23T06:59:06.000Z"
+    },
+    {
+      "id": "5497425",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-3",
+      "type": "survival",
+      "token": "SPS",
+      "percent": 20,
+      "trx_id": "4a3a2d6261b0568e896047d1a87cc3f401c84791",
+      "delegation_date": "2025-10-23T06:49:27.000Z"
+    },
+    {
+      "id": "5497424",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-3",
+      "type": "wild",
+      "token": "SPS",
+      "percent": 25,
+      "trx_id": "dbada1760d93ab3725e2c7c24a2455ce73da09d8",
+      "delegation_date": "2025-10-23T06:47:21.000Z"
+    },
+    {
+      "id": "5497423",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-3",
+      "type": "wild",
+      "token": "SPS",
+      "percent": 30,
+      "trx_id": "64bf17f1c088b9b6971833be76d6514881eba300",
+      "delegation_date": "2025-10-23T06:46:33.000Z"
+    },
+    {
+      "id": "5495333",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-4",
+      "type": "season",
+      "token": "SPS",
+      "percent": 0,
+      "trx_id": "32d3a9efa294ef0c6b397d0ea6f75dcd7d6120e3",
+      "delegation_date": "2025-10-20T14:11:48.000Z"
+    },
+    {
+      "id": "5495332",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "season",
+      "token": "SPS",
+      "percent": 0,
+      "trx_id": "080013fe0f20a31778646be04c4791bbe91e6858",
+      "delegation_date": "2025-10-20T14:11:39.000Z"
+    },
+    {
+      "id": "5495331",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-4",
+      "type": "focus",
+      "token": "SPS",
+      "percent": 0,
+      "trx_id": "4e277382773315b1e7848f232a9958d9ed299d53",
+      "delegation_date": "2025-10-20T14:11:27.000Z"
+    },
+    {
+      "id": "5495330",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "focus",
+      "token": "SPS",
+      "percent": 0,
+      "trx_id": "79274d2f284983fe48ab1fe080d7c5e377195a56",
+      "delegation_date": "2025-10-20T14:11:15.000Z"
+    },
+    {
+      "id": "5495329",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "wild",
+      "token": "SPS",
+      "percent": 0,
+      "trx_id": "c93caf9109fdc6ff60a76f728974bf6ce34b4353",
+      "delegation_date": "2025-10-20T14:11:00.000Z"
+    },
+    {
+      "id": "5495327",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-4",
+      "type": "modern",
+      "token": "SPS",
+      "percent": 0,
+      "trx_id": "49dfaa54e8cfad9bf4289d5b968d82ac3fb52937",
+      "delegation_date": "2025-10-20T14:10:45.000Z"
+    },
+    {
+      "id": "5495326",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-4",
+      "type": "brawl",
+      "token": "SPS",
+      "percent": 0,
+      "trx_id": "a557603f8700a942e00db400940445009a386256",
+      "delegation_date": "2025-10-20T14:10:30.000Z"
+    },
+    {
+      "id": "4055186",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-4",
+      "type": "modern",
+      "token": "SPS",
+      "percent": 100,
+      "trx_id": "c2fa95cb9f25be4411311dbf04837a8b840947fa",
+      "delegation_date": "2023-10-02T11:27:06.000Z"
+    },
+    {
+      "id": "2873594",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "wild",
+      "token": "SPS",
+      "percent": 25,
+      "trx_id": "75767046",
+      "delegation_date": "2023-06-15T00:19:00.000Z"
+    },
+    {
+      "id": "2800608",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-2",
+      "type": "brawl",
+      "token": "SPS",
+      "percent": 25,
+      "trx_id": "74264189",
+      "delegation_date": "2023-04-23T18:18:21.000Z"
+    },
+    {
+      "id": "2800607",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-4",
+      "type": "brawl",
+      "token": "SPS",
+      "percent": 75,
+      "trx_id": "74264184",
+      "delegation_date": "2023-04-23T18:18:06.000Z"
+    },
+    {
+      "id": "2513687",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-4",
+      "type": "focus",
+      "token": "SPS",
+      "percent": 95,
+      "trx_id": "73433435",
+      "delegation_date": "2023-03-25T20:55:27.000Z"
+    },
+    {
+      "id": "544857",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-4",
+      "type": "season",
+      "token": "SPS",
+      "percent": 95,
+      "trx_id": "71469360",
+      "delegation_date": "2023-01-16T14:19:30.000Z"
+    },
+    {
+      "id": "540520",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-4",
+      "type": "brawl",
+      "token": "SPS",
+      "percent": 100,
+      "trx_id": "71136421",
+      "delegation_date": "2023-01-05T00:37:18.000Z"
+    },
+    {
+      "id": "487997",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "wild",
+      "token": "SPS",
+      "percent": 0,
+      "trx_id": "70557249",
+      "delegation_date": "2022-12-15T21:29:00.000Z"
+    },
+    {
+      "id": "487996",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "wild",
+      "token": "SPS",
+      "percent": 25,
+      "trx_id": "70557249",
+      "delegation_date": "2022-12-15T21:29:00.000Z"
+    },
+    {
+      "id": "423937",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "season",
+      "token": "SPS",
+      "percent": 5,
+      "trx_id": "70268906",
+      "delegation_date": "2022-12-05T20:57:42.000Z"
+    },
+    {
+      "id": "423936",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "focus",
+      "token": "SPS",
+      "percent": 5,
+      "trx_id": "70268899",
+      "delegation_date": "2022-12-05T20:57:21.000Z"
+    },
+    {
+      "id": "423935",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "modern",
+      "token": "SPS",
+      "percent": 0,
+      "trx_id": "70268890",
+      "delegation_date": "2022-12-05T20:56:54.000Z"
+    },
+    {
+      "id": "423934",
+      "player": "sample-account-1",
+      "delegate_to_player": "sample-account-5",
+      "type": "modern",
+      "token": "SPS",
+      "percent": 25,
+      "trx_id": "70268890",
+      "delegation_date": "2022-12-05T20:56:54.000Z"
     }
   ]
 }

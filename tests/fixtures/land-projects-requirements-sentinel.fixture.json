@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-06T21:20:15Z"
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "status": {
@@ -267,13 +268,13 @@
       "land_work_requirement_id": 1,
       "land_work_type_id": 6,
       "land_work_type_parent_id": null,
-      "land_work_type_total_work_type_pp": 738137.472,
+      "land_work_type_total_work_type_pp": 467776.207,
       "land_work_type_name": "worksite_research_construction",
       "land_work_type_is_construction": true,
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 999999999.999,
-      "projected_end": "7026-09-06T21:20:16.401Z",
+      "projected_end": "7026-09-15T11:13:16.229Z",
       "work_per_hour": "0.0000"
     },
     {
@@ -281,13 +282,13 @@
       "land_work_requirement_id": 13,
       "land_work_type_id": 5,
       "land_work_type_parent_id": null,
-      "land_work_type_total_work_type_pp": 1069860.762,
+      "land_work_type_total_work_type_pp": 975062.019,
       "land_work_type_name": "worksite_sps_construction",
       "land_work_type_is_construction": true,
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 999999999.999,
-      "projected_end": "7026-09-06T21:20:16.401Z",
+      "projected_end": "7026-09-15T11:13:16.229Z",
       "work_per_hour": "0.0000"
     },
     {
@@ -295,13 +296,13 @@
       "land_work_requirement_id": 25,
       "land_work_type_id": 7,
       "land_work_type_parent_id": null,
-      "land_work_type_total_work_type_pp": 1170322.404,
+      "land_work_type_total_work_type_pp": 1125550.094,
       "land_work_type_name": "worksite_grain_construction",
       "land_work_type_is_construction": true,
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 999999999.999,
-      "projected_end": "7026-09-06T21:20:16.401Z",
+      "projected_end": "7026-09-15T11:13:16.229Z",
       "work_per_hour": "0.0000"
     },
     {
@@ -309,13 +310,13 @@
       "land_work_requirement_id": 67,
       "land_work_type_id": 34,
       "land_work_type_parent_id": null,
-      "land_work_type_total_work_type_pp": 700242.226,
+      "land_work_type_total_work_type_pp": 373016.372,
       "land_work_type_name": "worksite_wood_construction",
       "land_work_type_is_construction": true,
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 999999999.999,
-      "projected_end": "7026-09-06T21:20:16.401Z",
+      "projected_end": "7026-09-15T11:13:16.229Z",
       "work_per_hour": "0.0000"
     },
     {
@@ -323,13 +324,13 @@
       "land_work_requirement_id": 79,
       "land_work_type_id": 35,
       "land_work_type_parent_id": null,
-      "land_work_type_total_work_type_pp": 572117.69,
+      "land_work_type_total_work_type_pp": 447399.169,
       "land_work_type_name": "worksite_stone_construction",
       "land_work_type_is_construction": true,
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 999999999.999,
-      "projected_end": "7026-09-06T21:20:16.401Z",
+      "projected_end": "7026-09-15T11:13:16.229Z",
       "work_per_hour": "0.0000"
     },
     {
@@ -337,13 +338,13 @@
       "land_work_requirement_id": 91,
       "land_work_type_id": 36,
       "land_work_type_parent_id": null,
-      "land_work_type_total_work_type_pp": 222937.878,
+      "land_work_type_total_work_type_pp": 216670.472,
       "land_work_type_name": "worksite_iron_construction",
       "land_work_type_is_construction": true,
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 999999999.999,
-      "projected_end": "7026-09-06T21:20:16.401Z",
+      "projected_end": "7026-09-15T11:13:16.229Z",
       "work_per_hour": "0.0000"
     },
     {
@@ -351,13 +352,13 @@
       "land_work_requirement_id": 133,
       "land_work_type_id": 67,
       "land_work_type_parent_id": null,
-      "land_work_type_total_work_type_pp": 21756.365,
+      "land_work_type_total_work_type_pp": 16136.365,
       "land_work_type_name": "worksite_aura_construction",
       "land_work_type_is_construction": true,
       "pp_required": 1500000,
       "allow_time_crystals": true,
       "projected_hours": 999999999.999,
-      "projected_end": "7026-09-06T21:20:16.401Z",
+      "projected_end": "7026-09-15T11:13:16.229Z",
       "work_per_hour": "0.0000"
     }
   ]

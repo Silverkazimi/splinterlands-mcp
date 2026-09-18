@@ -1,10 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T07:47:49.674368+00:00",
-    "sourceUrl": "https://api.splinterlands.com/players/quests",
-    "captureScope": "First three rows only for arrays; complete body for objects. No fields were transformed.",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body[0].id": {
@@ -52,18 +50,18 @@
   },
   "body": [
     {
-      "id": "0898f94ef1eda04407a7db982abe63aca08a7448",
-      "player": "sample-acct-100",
-      "created_date": "2026-09-11T17:44:03.000Z",
-      "created_block": 109827089,
-      "name": "wild",
-      "total_items": 15,
-      "completed_items": 5,
-      "claim_trx_id": "0898f94ef1eda04407a7db982abe63aca08a7448",
-      "claim_date": "2026-09-11T17:44:03.000Z",
-      "reward_qty": 1,
+      "id": "64c17c6e4ea67b91f7b4e0f24cd415f8f4dbfe19",
+      "player": "sample-account-1",
+      "created_date": "2026-09-15T08:45:51.000Z",
+      "created_block": 109931264,
+      "name": "[redacted]",
+      "total_items": 12,
+      "completed_items": 10,
+      "claim_trx_id": "64c17c6e4ea67b91f7b4e0f24cd415f8f4dbfe19",
+      "claim_date": "2026-09-15T08:45:51.000Z",
+      "reward_qty": 2,
       "refresh_trx_id": null,
-      "rewards": "{\"result\":{\"success\":true,\"rewards\":[{\"type\":\"ranked_entries\",\"quantity\":30}]},\"cards\":[],\"league\":15}",
+      "rewards": "[redacted]",
       "chest_tier": null,
       "rshares": 0
     }

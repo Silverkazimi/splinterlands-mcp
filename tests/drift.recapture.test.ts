@@ -130,3 +130,11 @@ it("holds fixtures when redaction corrupts a valid response envelope", async () 
   expect(result.plan.writes).toEqual([]);
   expect(result.plan.pendingWrites).toEqual([]);
 });
+
+it("reports fixed review stages without rejected response values", async () => {
+  const result = await recaptureFixtures([input("diagnostic")],
+    async () => ({ status: 200, isJson: true, body: { last_block: "PRIVATE_REVIEW_SENTINEL" } }));
+  expect(result.failed).toEqual([{ fixturePath: input("diagnostic").fixturePath, reason: "review" }]);
+  expect(result.reviewDiagnostics).toEqual([{ fixturePath: input("diagnostic").fixturePath, stage: "upstream_contract" }]);
+  expect(JSON.stringify(result)).not.toContain("PRIVATE_REVIEW_SENTINEL");
+});

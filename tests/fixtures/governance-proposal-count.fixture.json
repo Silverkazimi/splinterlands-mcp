@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:20:08.293306+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/proposals/pending_proposal_count",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.value": {

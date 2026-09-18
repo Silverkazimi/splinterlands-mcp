@@ -1,9 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-12T09:29:56.526654+00:00",
-    "sourceUrl": "https://api2.splinterlands.com/conflicts/status",
-    "captureScope": "First three root or named-list rows; all surrounding and nested fields retained unchanged."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.config.reward_point_threshold": {

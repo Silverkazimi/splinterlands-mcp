@@ -1,8 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-08T20:56:00Z",
-    "redaction": "Name-classified fields use synthetic account placeholders."
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "body.quest_data.id": {
@@ -47,17 +47,17 @@
   },
   "body": {
     "quest_data": {
-      "id": "86ac8789ae6a640cd89024a33800582d168ddccb",
-      "player": "sample-acct-100",
-      "created_date": "2026-09-08T13:16:03.000Z",
-      "created_block": 109735557,
+      "id": "64c17c6e4ea67b91f7b4e0f24cd415f8f4dbfe19",
+      "player": "sample-account-1",
+      "created_date": "2026-09-15T08:45:51.000Z",
+      "created_block": 109931264,
       "name": "wild",
-      "total_items": 15,
-      "completed_items": 5,
-      "reward_qty": 1,
-      "claim_trx_id": "86ac8789ae6a640cd89024a33800582d168ddccb",
-      "claim_date": "2026-09-08T13:16:03.000Z",
-      "rewards": "{\"result\":{\"success\":true,\"rewards\":[{\"type\":\"ranked_entries\",\"quantity\":30}]},\"cards\":[],\"league\":15}"
+      "total_items": 12,
+      "completed_items": 10,
+      "reward_qty": 2,
+      "claim_trx_id": "64c17c6e4ea67b91f7b4e0f24cd415f8f4dbfe19",
+      "claim_date": "2026-09-15T08:45:51.000Z",
+      "rewards": "[redacted]"
     },
     "potions": null,
     "chest_tier": null

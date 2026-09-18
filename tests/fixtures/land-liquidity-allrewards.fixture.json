@@ -1,33 +1,183 @@
 {
-  "provenance": { "source": "live-observation", "observedAt": "2026-09-08T00:00:00Z" },
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
+  },
   "valueClasses": {
-    "status": { "valueClass": "enum" },
-    "data[0].reward_total": { "valueClass": "numeric" }, "data[0].liquidity_pool_id": { "valueClass": "id" }, "data[0].token": { "valueClass": "enum" },
-    "data[1].reward_total": { "valueClass": "numeric" }, "data[1].liquidity_pool_id": { "valueClass": "id" }, "data[1].token": { "valueClass": "enum" },
-    "data[2].reward_total": { "valueClass": "numeric" }, "data[2].liquidity_pool_id": { "valueClass": "id" }, "data[2].token": { "valueClass": "enum" },
-    "data[3].reward_total": { "valueClass": "numeric" }, "data[3].liquidity_pool_id": { "valueClass": "id" }, "data[3].token": { "valueClass": "enum" },
-    "data[4].reward_total": { "valueClass": "numeric" }, "data[4].liquidity_pool_id": { "valueClass": "id" }, "data[4].token": { "valueClass": "enum" },
-    "data[5].reward_total": { "valueClass": "numeric" }, "data[5].liquidity_pool_id": { "valueClass": "id" }, "data[5].token": { "valueClass": "enum" },
-    "data[6].reward_total": { "valueClass": "numeric" }, "data[6].liquidity_pool_id": { "valueClass": "id" }, "data[6].token": { "valueClass": "enum" },
-    "data[7].reward_total": { "valueClass": "numeric" }, "data[7].liquidity_pool_id": { "valueClass": "id" }, "data[7].token": { "valueClass": "enum" },
-    "data[8].reward_total": { "valueClass": "numeric" }, "data[8].liquidity_pool_id": { "valueClass": "id" }, "data[8].token": { "valueClass": "enum" },
-    "data[9].reward_total": { "valueClass": "numeric" }, "data[9].liquidity_pool_id": { "valueClass": "id" }, "data[9].token": { "valueClass": "enum" },
-    "data[10].reward_total": { "valueClass": "numeric" }, "data[10].liquidity_pool_id": { "valueClass": "id" }, "data[10].token": { "valueClass": "enum" },
-    "data[11].reward_total": { "valueClass": "numeric" }, "data[11].liquidity_pool_id": { "valueClass": "id" }, "data[11].token": { "valueClass": "enum" }
+    "status": {
+      "valueClass": "enum"
+    },
+    "data[0].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[0].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[0].token": {
+      "valueClass": "enum"
+    },
+    "data[1].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[1].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[1].token": {
+      "valueClass": "enum"
+    },
+    "data[2].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[2].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[2].token": {
+      "valueClass": "enum"
+    },
+    "data[3].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[3].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[3].token": {
+      "valueClass": "enum"
+    },
+    "data[4].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[4].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[4].token": {
+      "valueClass": "enum"
+    },
+    "data[5].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[5].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[5].token": {
+      "valueClass": "enum"
+    },
+    "data[6].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[6].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[6].token": {
+      "valueClass": "enum"
+    },
+    "data[7].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[7].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[7].token": {
+      "valueClass": "enum"
+    },
+    "data[8].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[8].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[8].token": {
+      "valueClass": "enum"
+    },
+    "data[9].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[9].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[9].token": {
+      "valueClass": "enum"
+    },
+    "data[10].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[10].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[10].token": {
+      "valueClass": "enum"
+    },
+    "data[11].reward_total": {
+      "valueClass": "numeric"
+    },
+    "data[11].liquidity_pool_id": {
+      "valueClass": "id"
+    },
+    "data[11].token": {
+      "valueClass": "enum"
+    }
   },
   "status": "success",
   "data": [
-    { "reward_total": 9420979.427, "liquidity_pool_id": 1, "token": "DEC" },
-    { "reward_total": 12465383.583, "liquidity_pool_id": 34, "token": "DEC" },
-    { "reward_total": 6043567.212, "liquidity_pool_id": 67, "token": "DEC" },
-    { "reward_total": 4885054.487, "liquidity_pool_id": 68, "token": "DEC" },
-    { "reward_total": 4518932.376, "liquidity_pool_id": 69, "token": "DEC" },
-    { "reward_total": 873538.947, "liquidity_pool_id": 100, "token": "DEC" },
-    { "reward_total": 954159604.59, "liquidity_pool_id": 1, "token": "GRAIN" },
-    { "reward_total": 14517383.568, "liquidity_pool_id": 69, "token": "IRON" },
-    { "reward_total": 111551.767, "liquidity_pool_id": 100, "token": "SPS" },
-    { "reward_total": 49819233.048, "liquidity_pool_id": 68, "token": "STONE" },
-    { "reward_total": 605548.389, "liquidity_pool_id": 34, "token": "VOUCHER" },
-    { "reward_total": 140830068.696, "liquidity_pool_id": 67, "token": "WOOD" }
+    {
+      "reward_total": 9458951.132,
+      "liquidity_pool_id": 1,
+      "token": "DEC"
+    },
+    {
+      "reward_total": 12532277.693,
+      "liquidity_pool_id": 34,
+      "token": "DEC"
+    },
+    {
+      "reward_total": 6104922.364,
+      "liquidity_pool_id": 67,
+      "token": "DEC"
+    },
+    {
+      "reward_total": 4945676.391,
+      "liquidity_pool_id": 68,
+      "token": "DEC"
+    },
+    {
+      "reward_total": 4544942.569,
+      "liquidity_pool_id": 69,
+      "token": "DEC"
+    },
+    {
+      "reward_total": 932393.667,
+      "liquidity_pool_id": 100,
+      "token": "DEC"
+    },
+    {
+      "reward_total": 960553229.001,
+      "liquidity_pool_id": 1,
+      "token": "GRAIN"
+    },
+    {
+      "reward_total": 14681222.203,
+      "liquidity_pool_id": 69,
+      "token": "IRON"
+    },
+    {
+      "reward_total": 119070.655,
+      "liquidity_pool_id": 100,
+      "token": "SPS"
+    },
+    {
+      "reward_total": 50427692.101,
+      "liquidity_pool_id": 68,
+      "token": "STONE"
+    },
+    {
+      "reward_total": 608828.967,
+      "liquidity_pool_id": 34,
+      "token": "VOUCHER"
+    },
+    {
+      "reward_total": 142595203.479,
+      "liquidity_pool_id": 67,
+      "token": "WOOD"
+    }
   ]
 }

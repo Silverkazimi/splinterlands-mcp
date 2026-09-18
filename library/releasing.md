@@ -1,6 +1,6 @@
 # Releases and updates
 
-The source repository is Silverkazimi/splinterlands-mcp. The current development version is 0.0.0; the first accepted versioned release is planned as 1.0.0. GitHub publication and npm package publication are separate actions; do not infer registry publication from a GitHub release.
+The source repository is Silverkazimi/splinterlands-mcp. The first versioned release is 1.0.0. Every release requires the acceptance checks below. GitHub publication and npm package publication are separate actions; do not infer registry publication from a GitHub release.
 
 ## Initial publication
 

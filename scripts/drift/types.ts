@@ -76,7 +76,10 @@ export type SweepEntry = {
   validateResponse?: (body: unknown) => boolean;
 };
 
+export type TransportFailure = "timeout" | "network";
+
 export type RawOutcome = {
+  transportFailure?: TransportFailure;
   status: number;
   body: unknown;
   isJson: boolean;

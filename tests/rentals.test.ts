@@ -46,12 +46,25 @@ it("accepts the spec's nullable lowest price but refuses a missing price record"
   for (const data of [null,{},[],{price:1}])expect(predicate({status:"success",data})).toBe(false);
  }
 });
-it("checks retained page identities and quantity-range evidence", () => {
- for (const family of ["offers","bids"]) {
-  const ids=(label:string)=>capture(label).data.map((row:{txId:string})=>row.txId);
-  expect([...ids(family),...ids(family+"-next")]).toEqual(ids(family+"-four"));
-  for (const row of capture(family+"-range").data)expect(Number(row.qtyAvailable)).toBe(10000);
-  for (const row of capture(family+"-max-quantity").data)expect(Number(row.qtyAvailable)).toBeLessThanOrEqual(1000);
+it("forwards page and quantity selectors without assuming separately captured pages are atomic", async () => {
+ let body: unknown;
+ const urls: URL[] = [];
+ await connect(async input => { urls.push(new URL(String(input))); return new Response(JSON.stringify(body)); });
+ for (const family of ["offers", "bids"]) {
+  for (const [suffix, args] of [
+   ["", { limit: 2, offset: 0 }],
+   ["-next", { limit: 2, offset: 2 }],
+   ["-four", { limit: 4, offset: 0 }],
+   ["-range", { limit: 2, minQuantity: 10000, maxQuantity: 10000 }],
+   ["-max-quantity", { limit: 2, maxQuantity: 1000 }],
+  ] as const) {
+   body = capture(family + suffix);
+   const result = await client.callTool({ name: "rental_" + family, arguments: args });
+   expect(result.isError).not.toBe(true);
+   expect(result.structuredContent).toEqual(body);
+   expect(Object.fromEntries(urls.at(-1)!.searchParams)).toEqual(
+    Object.fromEntries(Object.entries(args).map(([key, value]) => [key, String(value)])));
+  }
  }
 });
 it("enforces local request bounds and rejects undeclared credentials before HTTP", async () => {

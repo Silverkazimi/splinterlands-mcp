@@ -1,7 +1,8 @@
 {
   "provenance": {
     "source": "live-observation",
-    "observedAt": "2026-09-06T14:37:45Z"
+    "observedAt": "2026-09-15T11:12:28.558Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
   },
   "valueClasses": {
     "status": {
@@ -145,16 +146,16 @@
     "resource_id": 5,
     "resource_symbol": "WOOD",
     "magic_type": "",
-    "stats": "{\"building_in_box\":true,\"unstable_totem\":true}",
+    "stats": "[redacted]",
     "deed_uid": "I-291-368f15add003ed",
-    "player": "__synthetic_player_a__",
+    "player": "sample-account-1",
     "created_date": "2023-06-06T01:37:42.059Z",
     "listed": false,
     "lock_days": 30,
     "unlock_date": null,
     "in_use": true,
     "deed_type": "Swamp",
-    "land_stats": "{ \"resources\": [\"wood\"] }",
+    "land_stats": "[redacted]",
     "region_name": "Smithen",
     "market_updated_date": null,
     "market_id": null,
@@ -165,7 +166,7 @@
     "keep": null,
     "rarity": "epic",
     "plot_status": "natural",
-    "hex_code": "#9E9820",
+    "hex_code": "[redacted]",
     "tax_rate": "0.10",
     "item_detail_id": 291,
     "created_block_num": 75509711,

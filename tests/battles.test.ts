@@ -60,3 +60,19 @@ it("accepts empty queues and refuses an oversized replay without partial rounds"
   const large=await client.callTool({name:"battle_result",arguments:{id:"fixture"}});
   expect(large.isError).toBe(true);expect(large.structuredContent).toMatchObject({kind:"response_too_large"});
 });
+
+it("accepts observed pending queue nulls but rejects incompatible field types", async () => {
+  const rows = capture("queue") as Array<Record<string, unknown>>;
+  const pending = { ...rows[0] };
+  const nullableFields = ["opponent_team_hash", "reveal_block_id", "reveal_tx", "submit_date", "team_hash"];
+  for (const key of nullableFields) pending[key] = null;
+  let body: unknown = [pending];
+  await connect(async () => new Response(JSON.stringify(body)));
+  const result = await client.callTool({ name: "battle_queue", arguments: { username: "fixture_account" } });
+  expect(result.isError).not.toBe(true);
+  expect(result.structuredContent).toEqual({ data: [pending] });
+  for (const key of nullableFields) {
+    body = [{ ...pending, [key]: 123 }];
+    expect((await client.callTool({ name: "battle_queue", arguments: { username: "fixture_account" } })).isError).toBe(true);
+  }
+});
