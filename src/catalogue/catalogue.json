@@ -2552,6 +2552,554 @@
     }
   },
   {
+    "entryId": "api.frontier-draws.available-prizes",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/frontier_draws/available_prizes",
+    "pathParams": [],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "array",
+      "fingerprint": {
+        "[]": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "[].card_detail_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "[].card_xp": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].card_edition": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].card_tier": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].card_foil": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].card_uid": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "[].card_mint": {
+          "type": "string",
+          "valueClass": "opaque"
+        }
+      },
+      "observedKeyPaths": [
+        "[]",
+        "[].card_detail_id",
+        "[].card_xp",
+        "[].card_edition",
+        "[].card_tier",
+        "[].card_foil",
+        "[].card_uid",
+        "[].card_mint"
+      ],
+      "requiredKeyPaths": [],
+      "predicateId": "array.empty-or-captured"
+    },
+    "owningTool": "frontier_draws_available_prizes",
+    "notes": "Measured unauthenticated 2026-09-18: GET /frontier_draws/available_prizes returned HTTP 200 with a 531,416 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.frontier-draws.complete",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/frontier_draws/complete",
+    "pathParams": [],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "draws": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "draws[].id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "draws[].end_date": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "draws[].total_entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "draws[].player_entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "draws[].verification_data": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "draws[].verification_data.trx_id": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "draws[].verification_data.block_id": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "draws[].verification_data.block_num": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "draws[].verification_data.block_time": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "draws[].verification_data.prev_block_id": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "draws[].draw_number": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "observedKeyPaths": [
+        "draws",
+        "draws[].id",
+        "draws[].end_date",
+        "draws[].total_entries",
+        "draws[].player_entries",
+        "draws[].verification_data",
+        "draws[].verification_data.trx_id",
+        "draws[].verification_data.block_id",
+        "draws[].verification_data.block_num",
+        "draws[].verification_data.block_time",
+        "draws[].verification_data.prev_block_id",
+        "draws[].draw_number"
+      ],
+      "requiredKeyPaths": [
+        "draws",
+        "draws[].id"
+      ],
+      "predicateId": "object-list.draws"
+    },
+    "owningTool": "frontier_draws_complete",
+    "notes": "Measured unauthenticated 2026-09-18: GET /frontier_draws/complete returned HTTP 200 with a 16,861 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.frontier-draws.entries-completed",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/frontier_draws/entries_completed",
+    "pathParams": [],
+    "queryParams": [
+      {
+        "name": "id",
+        "type": "integer",
+        "declaredRequired": true,
+        "measuredRequired": true,
+        "inertUpstream": false,
+        "minimum": 1
+      }
+    ],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "array",
+      "fingerprint": {
+        "[]": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "[].player": {
+          "type": "string",
+          "valueClass": "name"
+        },
+        "[].last_update_date": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "[].entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "observedKeyPaths": [
+        "[]",
+        "[].player",
+        "[].last_update_date",
+        "[].entries"
+      ],
+      "requiredKeyPaths": [
+        "[].player"
+      ],
+      "predicateId": "array.empty-or-captured"
+    },
+    "owningTool": "frontier_draws_entries_completed",
+    "notes": "Measured unauthenticated 2026-09-18: GET /frontier_draws/entries_completed returned HTTP 200 with a 115,047 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.frontier-draws.prize-overview",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/frontier_draws/prize_overview",
+    "pathParams": [],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "array",
+      "fingerprint": {
+        "[]": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "[].card_detail_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "[].total_minted": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].total": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].foils": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "[].foils[].foil": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].foils[].minted": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].foils[].total": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "observedKeyPaths": [
+        "[]",
+        "[].card_detail_id",
+        "[].total_minted",
+        "[].total",
+        "[].foils",
+        "[].foils[].foil",
+        "[].foils[].minted",
+        "[].foils[].total"
+      ],
+      "requiredKeyPaths": [],
+      "predicateId": "array.empty-or-captured"
+    },
+    "owningTool": "frontier_draws_prize_overview",
+    "notes": "Measured unauthenticated 2026-09-18: GET /frontier_draws/prize_overview returned HTTP 200 with a 9,028 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.frontier-draws.recent-prizes",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/frontier_draws/recent_prizes",
+    "pathParams": [],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "mints": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "mints[].uid": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "mints[].card_detail_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "mints[].xp": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].mint": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "mints[].mint_player": {
+          "type": "string",
+          "valueClass": "name"
+        },
+        "mints[].mint_date": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "mints[].mint_block": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].foil": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].mint_tx": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "mints[].edition": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].tier": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].awarded_frontier_draw_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "mints[].guild": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "mints[].title_pre": {
+          "type": "string",
+          "valueClass": "freetext",
+          "nullable": true
+        },
+        "mints[].title_post": {
+          "type": "string",
+          "valueClass": "freetext",
+          "nullable": true
+        },
+        "mints[].league": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].modern_league": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].survival_league": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].guild_name": {
+          "type": "string",
+          "valueClass": "freetext",
+          "nullable": true
+        },
+        "mints[].guild_data": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "mints[].player_avatar": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        }
+      },
+      "observedKeyPaths": [
+        "mints",
+        "mints[].uid",
+        "mints[].card_detail_id",
+        "mints[].xp",
+        "mints[].mint",
+        "mints[].mint_player",
+        "mints[].mint_date",
+        "mints[].mint_block",
+        "mints[].foil",
+        "mints[].mint_tx",
+        "mints[].edition",
+        "mints[].tier",
+        "mints[].awarded_frontier_draw_id",
+        "mints[].guild",
+        "mints[].title_pre",
+        "mints[].title_post",
+        "mints[].league",
+        "mints[].modern_league",
+        "mints[].survival_league",
+        "mints[].guild_name",
+        "mints[].guild_data",
+        "mints[].player_avatar"
+      ],
+      "requiredKeyPaths": [
+        "mints"
+      ],
+      "predicateId": "object-list.mints"
+    },
+    "owningTool": "frontier_draws_recent_prizes",
+    "notes": "Measured unauthenticated 2026-09-18: GET /frontier_draws/recent_prizes returned HTTP 200 with a 111,865 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.frontier-draws.status",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/frontier_draws/status",
+    "pathParams": [],
+    "queryParams": [
+      {
+        "name": "username",
+        "type": "string",
+        "declaredRequired": false,
+        "measuredRequired": false,
+        "inertUpstream": false
+      }
+    ],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "current_frontier_draw": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "current_frontier_draw.id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "current_frontier_draw.end_date": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "current_frontier_draw.total_entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "current_frontier_draw.player_entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "first_unclaimed_frontier_draw": {
+          "type": "object",
+          "valueClass": "opaque",
+          "nullable": true
+        }
+      },
+      "observedKeyPaths": [
+        "current_frontier_draw",
+        "current_frontier_draw.id",
+        "current_frontier_draw.end_date",
+        "current_frontier_draw.total_entries",
+        "current_frontier_draw.player_entries",
+        "first_unclaimed_frontier_draw"
+      ],
+      "requiredKeyPaths": [
+        "current_frontier_draw"
+      ]
+    },
+    "owningTool": "frontier_draws_status",
+    "notes": "Measured unauthenticated 2026-09-18: GET /frontier_draws/status returned HTTP 200 with a 153 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
     "entryId": "api.guilds.brawl-records",
     "host": "api",
     "method": "GET",
@@ -9018,6 +9566,574 @@
       "specHash": null,
       "specFetchedAt": null,
       "observedAt": "2026-09-12T08:35:07.743687+00:00"
+    }
+  },
+  {
+    "entryId": "api.ranked-draws.available-prizes",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/ranked_draws/available_prizes",
+    "pathParams": [],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "array",
+      "fingerprint": {
+        "[]": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "[].card_detail_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "[].card_xp": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].card_edition": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].card_tier": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].card_foil": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].card_uid": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "[].card_mint": {
+          "type": "string",
+          "valueClass": "opaque"
+        }
+      },
+      "observedKeyPaths": [
+        "[]",
+        "[].card_detail_id",
+        "[].card_xp",
+        "[].card_edition",
+        "[].card_tier",
+        "[].card_foil",
+        "[].card_uid",
+        "[].card_mint"
+      ],
+      "requiredKeyPaths": [],
+      "predicateId": "array.empty-or-captured"
+    },
+    "owningTool": "ranked_draws_available_prizes",
+    "notes": "Measured unauthenticated 2026-09-18: GET /ranked_draws/available_prizes returned HTTP 200 with a 51,139 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.ranked-draws.complete",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/ranked_draws/complete",
+    "pathParams": [],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "draws": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "draws[].id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "draws[].end_date": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "draws[].total_entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "draws[].player_entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "draws[].verification_data": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "draws[].verification_data.trx_id": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "draws[].verification_data.block_id": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "draws[].verification_data.block_num": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "draws[].verification_data.block_time": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "draws[].verification_data.prev_block_id": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "draws[].draw_number": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "observedKeyPaths": [
+        "draws",
+        "draws[].id",
+        "draws[].end_date",
+        "draws[].total_entries",
+        "draws[].player_entries",
+        "draws[].verification_data",
+        "draws[].verification_data.trx_id",
+        "draws[].verification_data.block_id",
+        "draws[].verification_data.block_num",
+        "draws[].verification_data.block_time",
+        "draws[].verification_data.prev_block_id",
+        "draws[].draw_number"
+      ],
+      "requiredKeyPaths": [
+        "draws",
+        "draws[].id"
+      ],
+      "predicateId": "object-list.draws"
+    },
+    "owningTool": "ranked_draws_complete",
+    "notes": "Measured unauthenticated 2026-09-18: GET /ranked_draws/complete returned HTTP 200 with a 15,968 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.ranked-draws.entries-completed",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/ranked_draws/entries_completed",
+    "pathParams": [],
+    "queryParams": [
+      {
+        "name": "id",
+        "type": "integer",
+        "declaredRequired": true,
+        "measuredRequired": true,
+        "inertUpstream": false,
+        "minimum": 1
+      }
+    ],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "array",
+      "fingerprint": {
+        "[]": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "[].player": {
+          "type": "string",
+          "valueClass": "name"
+        },
+        "[].last_update_date": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "[].entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "observedKeyPaths": [
+        "[]",
+        "[].player",
+        "[].last_update_date",
+        "[].entries"
+      ],
+      "requiredKeyPaths": [
+        "[].player"
+      ],
+      "predicateId": "array.empty-or-captured"
+    },
+    "owningTool": "ranked_draws_entries_completed",
+    "notes": "Measured unauthenticated 2026-09-18: GET /ranked_draws/entries_completed returned HTTP 200 with a 146,026 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.ranked-draws.prize-overview",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/ranked_draws/prize_overview",
+    "pathParams": [],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "array",
+      "fingerprint": {
+        "[]": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "[].card_detail_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "[].total_minted": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].total": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].foils": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "[].foils[].foil": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].foils[].minted": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].foils[].total": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "observedKeyPaths": [
+        "[]",
+        "[].card_detail_id",
+        "[].total_minted",
+        "[].total",
+        "[].foils",
+        "[].foils[].foil",
+        "[].foils[].minted",
+        "[].foils[].total"
+      ],
+      "requiredKeyPaths": [],
+      "predicateId": "array.empty-or-captured"
+    },
+    "owningTool": "ranked_draws_prize_overview",
+    "notes": "Measured unauthenticated 2026-09-18: GET /ranked_draws/prize_overview returned HTTP 200 with a 7,024 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.ranked-draws.recent-prizes",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/ranked_draws/recent_prizes",
+    "pathParams": [],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "mints": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "mints[].uid": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "mints[].card_detail_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "mints[].xp": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].mint": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "mints[].mint_player": {
+          "type": "string",
+          "valueClass": "name"
+        },
+        "mints[].mint_date": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "mints[].mint_block": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].foil": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].mint_tx": {
+          "type": "string",
+          "valueClass": "opaque"
+        },
+        "mints[].edition": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].tier": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].awarded_ranked_draw_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "mints[].guild": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "mints[].title_pre": {
+          "type": "string",
+          "valueClass": "freetext",
+          "nullable": true
+        },
+        "mints[].title_post": {
+          "type": "string",
+          "valueClass": "freetext",
+          "nullable": true
+        },
+        "mints[].league": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].modern_league": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].survival_league": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].guild_name": {
+          "type": "string",
+          "valueClass": "freetext",
+          "nullable": true
+        },
+        "mints[].guild_data": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "mints[].player_avatar": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        }
+      },
+      "observedKeyPaths": [
+        "mints",
+        "mints[].uid",
+        "mints[].card_detail_id",
+        "mints[].xp",
+        "mints[].mint",
+        "mints[].mint_player",
+        "mints[].mint_date",
+        "mints[].mint_block",
+        "mints[].foil",
+        "mints[].mint_tx",
+        "mints[].edition",
+        "mints[].tier",
+        "mints[].awarded_ranked_draw_id",
+        "mints[].guild",
+        "mints[].title_pre",
+        "mints[].title_post",
+        "mints[].league",
+        "mints[].modern_league",
+        "mints[].survival_league",
+        "mints[].guild_name",
+        "mints[].guild_data",
+        "mints[].player_avatar"
+      ],
+      "requiredKeyPaths": [
+        "mints"
+      ],
+      "predicateId": "object-list.mints"
+    },
+    "owningTool": "ranked_draws_recent_prizes",
+    "notes": "Measured unauthenticated 2026-09-18: GET /ranked_draws/recent_prizes returned HTTP 200 with a 111,353 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.ranked-draws.status",
+    "host": "api",
+    "method": "GET",
+    "pathTemplate": "/ranked_draws/status",
+    "pathParams": [],
+    "queryParams": [
+      {
+        "name": "username",
+        "type": "string",
+        "declaredRequired": false,
+        "measuredRequired": false,
+        "inertUpstream": false
+      }
+    ],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "current_ranked_draw": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "current_ranked_draw.id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "current_ranked_draw.end_date": {
+          "type": "string",
+          "valueClass": "timestamp"
+        },
+        "current_ranked_draw.total_entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "current_ranked_draw.player_entries": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "current_ranked_draw.player_has_pass": {
+          "type": "boolean",
+          "valueClass": "enum"
+        },
+        "first_unclaimed_ranked_draw": {
+          "type": "object",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "remaining_pass_details": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "remaining_pass_details.remaining_draws": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "remaining_pass_details.player_pass_count": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "observedKeyPaths": [
+        "current_ranked_draw",
+        "current_ranked_draw.id",
+        "current_ranked_draw.end_date",
+        "current_ranked_draw.total_entries",
+        "current_ranked_draw.player_entries",
+        "current_ranked_draw.player_has_pass",
+        "first_unclaimed_ranked_draw",
+        "remaining_pass_details",
+        "remaining_pass_details.remaining_draws",
+        "remaining_pass_details.player_pass_count"
+      ],
+      "requiredKeyPaths": [
+        "current_ranked_draw"
+      ]
+    },
+    "owningTool": "ranked_draws_status",
+    "notes": "Measured unauthenticated 2026-09-18: GET /ranked_draws/status returned HTTP 200 with a 240 byte body. The upstream response is unbounded where it contains a list; this server applies its local row and byte limits. The committed fixture is a sanitized bounded sample.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
     }
   },
   {

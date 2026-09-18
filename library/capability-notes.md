@@ -2,14 +2,22 @@
 
 [Return to the README](../README.md). This reference preserves the detailed request limits and observed API behavior behind the introductory overview. Plain file paths below are relative to the repository root.
 
-**Version: 1.0.0.** 164 tools are registered (`src/server.ts`).
+**Version: 1.0.0.** 176 tools are registered (`src/server.ts`).
 66 call `vapi.splinterlands.com`: 40 Land routes covering deeds, projects,
-counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 90 call
+counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 102 call
 `api.splinterlands.com`: eight card tools, one item-metadata tool, and 30
 player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads.
 One tool calls `prices.splinterlands.com`: `prices_current` reads the public token-to-USD feed and uses a five-minute success cache because prices move.
-Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 191 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
+Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 203 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
 `library/endpoint-knowledge-tools.md` for the evidence model.
+
+The ranked-draw and frontier-draw families expose current status, completed
+draws, completed-entry rows, prize overviews, available prizes and recent
+mints. Status accepts an optional explicit username; entries require an
+explicit numeric draw id. Prize overviews and available-prize metadata use the
+24-hour metadata cache. The upstream list responses are unbounded, so the
+server returns at most 100 rows and 256 KiB with an explicit truncation notice;
+the normal 2 MiB upstream response cap still applies.
 
 A sixth offline resource, `splinterlands://hive/transaction-limits`, explains source-dated transaction limits and terminology. Three additional tools provide bounded Hive history, full transactions and combined game evidence; see [Hive transaction evidence](hive-transaction-evidence.md).
 

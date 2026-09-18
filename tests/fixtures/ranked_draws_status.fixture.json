@@ -1,0 +1,47 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
+  },
+  "valueClasses": {
+    "body.current_ranked_draw.id": {
+      "valueClass": "numeric"
+    },
+    "body.current_ranked_draw.end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.current_ranked_draw.total_entries": {
+      "valueClass": "numeric"
+    },
+    "body.current_ranked_draw.player_entries": {
+      "valueClass": "numeric"
+    },
+    "body.current_ranked_draw.player_has_pass": {
+      "valueClass": "enum"
+    },
+    "body.first_unclaimed_ranked_draw": {
+      "valueClass": "opaque"
+    },
+    "body.remaining_pass_details.remaining_draws": {
+      "valueClass": "numeric"
+    },
+    "body.remaining_pass_details.player_pass_count": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "current_ranked_draw": {
+      "id": 49,
+      "end_date": "2026-09-25T13:00:00.000Z",
+      "total_entries": 10875,
+      "player_entries": 0,
+      "player_has_pass": false
+    },
+    "first_unclaimed_ranked_draw": null,
+    "remaining_pass_details": {
+      "remaining_draws": 5,
+      "player_pass_count": 0
+    }
+  }
+}

@@ -4072,6 +4072,483 @@
       "capturedAt": "2026-09-18"
     },
     {
+      "entryId": "api.frontier-draws.available-prizes",
+      "host": "api",
+      "pathTemplate": "/frontier_draws/available_prizes",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].card_edition": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].card_foil": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].card_mint": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].card_tier": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].card_uid": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].card_xp": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9f89fc9878c998720a088e979f4ccf90425b2b030e76fa29ebaeea9aad2342b2"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "frontier_draws_available_prizes.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.frontier-draws.complete",
+      "host": "api",
+      "pathTemplate": "/frontier_draws/complete",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "draws": {
+            "types": [
+              "array"
+            ]
+          },
+          "draws[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "draws[].draw_number": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].end_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "draws[].id": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].player_entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].total_entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].verification_data": {
+            "types": [
+              "object"
+            ]
+          },
+          "draws[].verification_data.block_id": {
+            "types": [
+              "string"
+            ]
+          },
+          "draws[].verification_data.block_num": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].verification_data.block_time": {
+            "types": [
+              "string"
+            ]
+          },
+          "draws[].verification_data.prev_block_id": {
+            "types": [
+              "string"
+            ]
+          },
+          "draws[].verification_data.trx_id": {
+            "types": [
+              "string"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9b334e63695549cc2e5f1f12695d76304d25545a7c3525a506e43251e301d7e4"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "frontier_draws_complete.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.frontier-draws.entries-completed",
+      "host": "api",
+      "pathTemplate": "/frontier_draws/entries_completed",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].last_update_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].player": {
+            "types": [
+              "string"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "e6f3613d9d21cce64d41500c260be201e62df9c86442ad21fd99487adffa23fb"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "frontier_draws_entries_completed_id_1849.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.frontier-draws.prize-overview",
+      "host": "api",
+      "pathTemplate": "/frontier_draws/prize_overview",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].foils": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].foils[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].foils[].foil": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].foils[].minted": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].foils[].total": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].total": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].total_minted": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "89640bbcefa2bed38c9d2489443d36754cafdf59361bf0dfb701482a5df51b9b"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "frontier_draws_prize_overview.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.frontier-draws.recent-prizes",
+      "host": "api",
+      "pathTemplate": "/frontier_draws/recent_prizes",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "mints": {
+            "types": [
+              "array"
+            ]
+          },
+          "mints[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "mints[].awarded_frontier_draw_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].edition": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].foil": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].guild": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].guild_data": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].guild_name": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].league": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].mint": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].mint_block": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].mint_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].mint_player": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].mint_tx": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].modern_league": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].player_avatar": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].survival_league": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].tier": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].title_post": {
+            "types": [
+              "null"
+            ]
+          },
+          "mints[].title_pre": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].uid": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].xp": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d551aa72014b7c7b5988639b31cfc771e73cd31cd9bdb49a779eaeec01a448e7"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "frontier_draws_recent_prizes.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.frontier-draws.status",
+      "host": "api",
+      "pathTemplate": "/frontier_draws/status",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "current_frontier_draw": {
+            "types": [
+              "object"
+            ]
+          },
+          "current_frontier_draw.end_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "current_frontier_draw.id": {
+            "types": [
+              "number"
+            ]
+          },
+          "current_frontier_draw.player_entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "current_frontier_draw.total_entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "first_unclaimed_frontier_draw": {
+            "types": [
+              "null"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "1659662092a14ee4530b42e827a130dcd848fc15565273ef2ee2ebc0904a2624"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "frontier_draws_status.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
       "entryId": "api.guilds.brawl-records",
       "host": "api",
       "pathTemplate": "/guilds/brawl_records",
@@ -11935,6 +12412,506 @@
       ],
       "shapeSources": [
         "market-purchase-stats.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.ranked-draws.available-prizes",
+      "host": "api",
+      "pathTemplate": "/ranked_draws/available_prizes",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].card_edition": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].card_foil": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].card_mint": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].card_tier": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].card_uid": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].card_xp": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9f89fc9878c998720a088e979f4ccf90425b2b030e76fa29ebaeea9aad2342b2"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "ranked_draws_available_prizes.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.ranked-draws.complete",
+      "host": "api",
+      "pathTemplate": "/ranked_draws/complete",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "draws": {
+            "types": [
+              "array"
+            ]
+          },
+          "draws[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "draws[].draw_number": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].end_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "draws[].id": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].player_entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].total_entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].verification_data": {
+            "types": [
+              "object"
+            ]
+          },
+          "draws[].verification_data.block_id": {
+            "types": [
+              "string"
+            ]
+          },
+          "draws[].verification_data.block_num": {
+            "types": [
+              "number"
+            ]
+          },
+          "draws[].verification_data.block_time": {
+            "types": [
+              "string"
+            ]
+          },
+          "draws[].verification_data.prev_block_id": {
+            "types": [
+              "string"
+            ]
+          },
+          "draws[].verification_data.trx_id": {
+            "types": [
+              "string"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "9b334e63695549cc2e5f1f12695d76304d25545a7c3525a506e43251e301d7e4"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "ranked_draws_complete.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.ranked-draws.entries-completed",
+      "host": "api",
+      "pathTemplate": "/ranked_draws/entries_completed",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].last_update_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].player": {
+            "types": [
+              "string"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "e6f3613d9d21cce64d41500c260be201e62df9c86442ad21fd99487adffa23fb"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "ranked_draws_entries_completed_id_48.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.ranked-draws.prize-overview",
+      "host": "api",
+      "pathTemplate": "/ranked_draws/prize_overview",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].foils": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].foils[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].foils[].foil": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].foils[].minted": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].foils[].total": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].total": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].total_minted": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "89640bbcefa2bed38c9d2489443d36754cafdf59361bf0dfb701482a5df51b9b"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "ranked_draws_prize_overview.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.ranked-draws.recent-prizes",
+      "host": "api",
+      "pathTemplate": "/ranked_draws/recent_prizes",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "mints": {
+            "types": [
+              "array"
+            ]
+          },
+          "mints[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "mints[].awarded_ranked_draw_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].edition": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].foil": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].guild": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].guild_data": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].guild_name": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].league": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].mint": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].mint_block": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].mint_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].mint_player": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].mint_tx": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].modern_league": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].player_avatar": {
+            "types": [
+              "null",
+              "string"
+            ]
+          },
+          "mints[].survival_league": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].tier": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].title_post": {
+            "types": [
+              "null",
+              "string"
+            ]
+          },
+          "mints[].title_pre": {
+            "types": [
+              "null",
+              "string"
+            ]
+          },
+          "mints[].uid": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].xp": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "a616bb94ecea6fb31c9a42f9c51c8f237b7389da5c47ed7bac2baa68373de10b"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "ranked_draws_recent_prizes.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.ranked-draws.status",
+      "host": "api",
+      "pathTemplate": "/ranked_draws/status",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "current_ranked_draw": {
+            "types": [
+              "object"
+            ]
+          },
+          "current_ranked_draw.end_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "current_ranked_draw.id": {
+            "types": [
+              "number"
+            ]
+          },
+          "current_ranked_draw.player_entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "current_ranked_draw.player_has_pass": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "current_ranked_draw.total_entries": {
+            "types": [
+              "number"
+            ]
+          },
+          "first_unclaimed_ranked_draw": {
+            "types": [
+              "null"
+            ]
+          },
+          "remaining_pass_details": {
+            "types": [
+              "object"
+            ]
+          },
+          "remaining_pass_details.player_pass_count": {
+            "types": [
+              "number"
+            ]
+          },
+          "remaining_pass_details.remaining_draws": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "a99ac524772966f939133e699941c64b5080ae0d2002b01869ffc82b06b58592"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "ranked_draws_status.fixture.json"
       ],
       "truncatedAt": [],
       "capturedAt": "2026-09-18"

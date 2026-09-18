@@ -89,7 +89,7 @@ results are cached, and their freshness is reported. Related reads can
 also happen at slightly different times, so they should not be treated
 as one perfectly synchronized view of the game.
 
-The reference below lists all 164 tools. For request budgets, exact
+The reference below lists all 176 tools. For request budgets, exact
 parameters, cache behavior, and recorded API quirks, see the
 [technical capability notes](library/capability-notes.md) and
 [safety boundaries](#what-it-is-and-what-it-will-never-do).
@@ -118,6 +118,18 @@ tools are local and make no upstream request.
 | `cards_pack_data_wax` | `GET /cards/pack_data_wax` |
 | `cards_skins` | `GET /cards/skins` |
 | `prices_current` | `GET /prices` |
+| `ranked_draws_status` | `GET /ranked_draws/status` |
+| `ranked_draws_prize_overview` | `GET /ranked_draws/prize_overview` |
+| `ranked_draws_complete` | `GET /ranked_draws/complete` |
+| `ranked_draws_entries_completed` | `GET /ranked_draws/entries_completed` |
+| `ranked_draws_available_prizes` | `GET /ranked_draws/available_prizes` |
+| `ranked_draws_recent_prizes` | `GET /ranked_draws/recent_prizes` |
+| `frontier_draws_status` | `GET /frontier_draws/status` |
+| `frontier_draws_prize_overview` | `GET /frontier_draws/prize_overview` |
+| `frontier_draws_complete` | `GET /frontier_draws/complete` |
+| `frontier_draws_entries_completed` | `GET /frontier_draws/entries_completed` |
+| `frontier_draws_available_prizes` | `GET /frontier_draws/available_prizes` |
+| `frontier_draws_recent_prizes` | `GET /frontier_draws/recent_prizes` |
 | `cards_trx_lookup` | `GET /cards/trx_lookup` |
 | `collector_stickers_tradeable` | `GET /collector/{player}/stickers/tradeable` |
 | `collector_config` | `GET /collector/config` |
@@ -295,7 +307,7 @@ counted by the first call.
   Splinterlands account credential, a Hive posting/active key, or any other
   secret. If you need an endpoint that requires login, this is the wrong
   tool for that endpoint — it will tell you so rather than pretend to work.
-- **Unsupported catalogue routes are excluded.** 34 of the 191 catalogued
+- **Unsupported catalogue routes are excluded.** 34 of the 203 catalogued
   routes are not advertised as tools because their dated probes did not
   produce a usable, distinct, or honestly-selected response. The first group contains three Land routes classified 2026-09-07
   and six market, rental and collector routes classified 2026-09-12:

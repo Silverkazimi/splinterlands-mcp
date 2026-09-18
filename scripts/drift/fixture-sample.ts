@@ -36,7 +36,17 @@ const firstSamplePaths: Readonly<Record<string, readonly string[]>> = {
     "data"
   ],
   "api.tournaments.completed": [],
-  "api.tournaments.cancelled": []
+  "api.tournaments.cancelled": [],
+  "api.ranked-draws.prize-overview": [],
+  "api.ranked-draws.complete": ["draws"],
+  "api.ranked-draws.entries-completed": [],
+  "api.ranked-draws.available-prizes": [],
+  "api.ranked-draws.recent-prizes": ["mints"],
+  "api.frontier-draws.prize-overview": [],
+  "api.frontier-draws.complete": ["draws"],
+  "api.frontier-draws.entries-completed": [],
+  "api.frontier-draws.available-prizes": [],
+  "api.frontier-draws.recent-prizes": ["mints"]
 };
 
 type Sample = { kind: "first"; limit: number } | { kind: "ids"; ids: number[] };

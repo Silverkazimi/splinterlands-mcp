@@ -1,0 +1,189 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    }
+  },
+  "valueClasses": {
+    "body[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].total_minted": {
+      "valueClass": "numeric"
+    },
+    "body[0].total": {
+      "valueClass": "numeric"
+    },
+    "body[0].foils[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].foils[0].minted": {
+      "valueClass": "numeric"
+    },
+    "body[0].foils[0].total": {
+      "valueClass": "numeric"
+    },
+    "body[0].foils[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].foils[1].minted": {
+      "valueClass": "numeric"
+    },
+    "body[0].foils[1].total": {
+      "valueClass": "numeric"
+    },
+    "body[0].foils[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].foils[2].minted": {
+      "valueClass": "numeric"
+    },
+    "body[0].foils[2].total": {
+      "valueClass": "numeric"
+    },
+    "body[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].total_minted": {
+      "valueClass": "numeric"
+    },
+    "body[1].total": {
+      "valueClass": "numeric"
+    },
+    "body[1].foils[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].foils[0].minted": {
+      "valueClass": "numeric"
+    },
+    "body[1].foils[0].total": {
+      "valueClass": "numeric"
+    },
+    "body[1].foils[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].foils[1].minted": {
+      "valueClass": "numeric"
+    },
+    "body[1].foils[1].total": {
+      "valueClass": "numeric"
+    },
+    "body[1].foils[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].foils[2].minted": {
+      "valueClass": "numeric"
+    },
+    "body[1].foils[2].total": {
+      "valueClass": "numeric"
+    },
+    "body[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].total_minted": {
+      "valueClass": "numeric"
+    },
+    "body[2].total": {
+      "valueClass": "numeric"
+    },
+    "body[2].foils[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].foils[0].minted": {
+      "valueClass": "numeric"
+    },
+    "body[2].foils[0].total": {
+      "valueClass": "numeric"
+    },
+    "body[2].foils[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].foils[1].minted": {
+      "valueClass": "numeric"
+    },
+    "body[2].foils[1].total": {
+      "valueClass": "numeric"
+    },
+    "body[2].foils[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].foils[2].minted": {
+      "valueClass": "numeric"
+    },
+    "body[2].foils[2].total": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": [
+    {
+      "card_detail_id": 871,
+      "total_minted": 196,
+      "total": 220,
+      "foils": [
+        {
+          "foil": 2,
+          "minted": 44,
+          "total": 50
+        },
+        {
+          "foil": 3,
+          "minted": 134,
+          "total": 150
+        },
+        {
+          "foil": 4,
+          "minted": 18,
+          "total": 20
+        }
+      ]
+    },
+    {
+      "card_detail_id": 872,
+      "total_minted": 201,
+      "total": 220,
+      "foils": [
+        {
+          "foil": 2,
+          "minted": 47,
+          "total": 50
+        },
+        {
+          "foil": 3,
+          "minted": 135,
+          "total": 150
+        },
+        {
+          "foil": 4,
+          "minted": 19,
+          "total": 20
+        }
+      ]
+    },
+    {
+      "card_detail_id": 873,
+      "total_minted": 78,
+      "total": 85,
+      "foils": [
+        {
+          "foil": 2,
+          "minted": 23,
+          "total": 25
+        },
+        {
+          "foil": 3,
+          "minted": 45,
+          "total": 50
+        },
+        {
+          "foil": 4,
+          "minted": 10,
+          "total": 10
+        }
+      ]
+    }
+  ]
+}

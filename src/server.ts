@@ -26,6 +26,7 @@ import { TOURNAMENT_ENTRY_IDS, registerTournaments } from "./tournaments.js";
 import { BATTLE_ENTRY_IDS, registerBattles } from "./battles.js";
 import { MARKET_ENTRY_IDS, registerMarket } from "./market.js";
 import { RANKING_ENTRY_IDS, registerRankings } from "./rankings.js";
+import { DRAW_ENTRY_IDS, registerDraws } from "./draws.js";
 import { PLAYER_COMPLETION_ENTRY_IDS, registerPlayerCompletion } from "./player-completion.js";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { bindRequest, inputSchemaFor } from "./catalogue/index.js";
@@ -104,6 +105,7 @@ export const TOOL_ENTRY_IDS = {
   ...PLAYER_COMPLETION_ENTRY_IDS,
   ...INVENTORY_ENTRY_IDS,
   ...RANKING_ENTRY_IDS,
+  ...DRAW_ENTRY_IDS,
   ...MARKET_ENTRY_IDS,
   ...BATTLE_ENTRY_IDS,
   ...TOURNAMENT_ENTRY_IDS,
@@ -1805,6 +1807,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   registerPlayerCompletion(server, client);
   registerInventory(server, client);
   registerRankings(server, client);
+  registerDraws(server, client, now);
   registerMarket(server, client);
   registerBattles(server, client);
   registerTournaments(server, client);
