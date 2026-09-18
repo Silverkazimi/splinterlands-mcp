@@ -2,7 +2,7 @@
 
 [Return to the README](../README.md). This reference preserves the detailed request limits and observed API behavior behind the introductory overview. Plain file paths below are relative to the repository root.
 
-**Version: 1.0.0.** 179 tools are registered (`src/server.ts` and its registration modules).
+**Version: 1.0.3.** 179 tools are registered (`src/server.ts` and its registration modules).
 66 call `vapi.splinterlands.com`: 40 Land routes covering deeds, projects,
 counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 105 call
 `api.splinterlands.com`: eleven card tools, one item-metadata tool, and 30
