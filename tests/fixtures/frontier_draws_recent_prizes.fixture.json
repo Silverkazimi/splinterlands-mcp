@@ -1,0 +1,275 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    }
+  },
+  "valueClasses": {
+    "body.mints[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].xp": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].edition": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].tier": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].foil": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].uid": {
+      "valueClass": "opaque"
+    },
+    "body.mints[0].mint": {
+      "valueClass": "opaque"
+    },
+    "body.mints[0].mint_player": {
+      "valueClass": "name"
+    },
+    "body.mints[0].mint_date": {
+      "valueClass": "timestamp"
+    },
+    "body.mints[0].mint_block": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].mint_tx": {
+      "valueClass": "opaque"
+    },
+    "body.mints[0].awarded_frontier_draw_id": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].guild": {
+      "valueClass": "opaque"
+    },
+    "body.mints[0].title_pre": {
+      "valueClass": "freetext"
+    },
+    "body.mints[0].title_post": {
+      "valueClass": "freetext"
+    },
+    "body.mints[0].league": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].survival_league": {
+      "valueClass": "numeric"
+    },
+    "body.mints[0].guild_name": {
+      "valueClass": "freetext"
+    },
+    "body.mints[0].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.mints[0].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.mints[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].xp": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].edition": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].tier": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].foil": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].uid": {
+      "valueClass": "opaque"
+    },
+    "body.mints[1].mint": {
+      "valueClass": "opaque"
+    },
+    "body.mints[1].mint_player": {
+      "valueClass": "name"
+    },
+    "body.mints[1].mint_date": {
+      "valueClass": "timestamp"
+    },
+    "body.mints[1].mint_block": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].mint_tx": {
+      "valueClass": "opaque"
+    },
+    "body.mints[1].awarded_frontier_draw_id": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].guild": {
+      "valueClass": "opaque"
+    },
+    "body.mints[1].title_pre": {
+      "valueClass": "freetext"
+    },
+    "body.mints[1].title_post": {
+      "valueClass": "freetext"
+    },
+    "body.mints[1].league": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].survival_league": {
+      "valueClass": "numeric"
+    },
+    "body.mints[1].guild_name": {
+      "valueClass": "freetext"
+    },
+    "body.mints[1].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.mints[1].player_avatar": {
+      "valueClass": "opaque"
+    },
+    "body.mints[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].xp": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].edition": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].tier": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].foil": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].uid": {
+      "valueClass": "opaque"
+    },
+    "body.mints[2].mint": {
+      "valueClass": "opaque"
+    },
+    "body.mints[2].mint_player": {
+      "valueClass": "name"
+    },
+    "body.mints[2].mint_date": {
+      "valueClass": "timestamp"
+    },
+    "body.mints[2].mint_block": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].mint_tx": {
+      "valueClass": "opaque"
+    },
+    "body.mints[2].awarded_frontier_draw_id": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].guild": {
+      "valueClass": "opaque"
+    },
+    "body.mints[2].title_pre": {
+      "valueClass": "freetext"
+    },
+    "body.mints[2].title_post": {
+      "valueClass": "freetext"
+    },
+    "body.mints[2].league": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].modern_league": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].survival_league": {
+      "valueClass": "numeric"
+    },
+    "body.mints[2].guild_name": {
+      "valueClass": "freetext"
+    },
+    "body.mints[2].guild_data": {
+      "valueClass": "opaque"
+    },
+    "body.mints[2].player_avatar": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": {
+    "mints": [
+      {
+        "card_detail_id": 804,
+        "xp": 5,
+        "edition": 15,
+        "tier": 15,
+        "foil": 3,
+        "uid": "[redacted]",
+        "mint": "[redacted]",
+        "mint_player": "sample-account-10",
+        "mint_date": "2026-09-14T13:00:00.000Z",
+        "mint_block": 109907605,
+        "mint_tx": "[redacted]",
+        "awarded_frontier_draw_id": 1849,
+        "guild": "[redacted]",
+        "title_pre": "[redacted]",
+        "title_post": null,
+        "league": 6,
+        "modern_league": 11,
+        "survival_league": 1,
+        "guild_name": "[redacted]",
+        "guild_data": "[redacted]",
+        "player_avatar": "[redacted]"
+      },
+      {
+        "card_detail_id": 849,
+        "xp": 5,
+        "edition": 15,
+        "tier": 15,
+        "foil": 3,
+        "uid": "[redacted]",
+        "mint": "[redacted]",
+        "mint_player": "sample-account-11",
+        "mint_date": "2026-09-14T13:00:00.000Z",
+        "mint_block": 109907605,
+        "mint_tx": "[redacted]",
+        "awarded_frontier_draw_id": 1849,
+        "guild": "[redacted]",
+        "title_pre": "[redacted]",
+        "title_post": null,
+        "league": 5,
+        "modern_league": 9,
+        "survival_league": 0,
+        "guild_name": "[redacted]",
+        "guild_data": "[redacted]",
+        "player_avatar": "[redacted]"
+      },
+      {
+        "card_detail_id": 836,
+        "xp": 4,
+        "edition": 15,
+        "tier": 15,
+        "foil": 3,
+        "uid": "[redacted]",
+        "mint": "[redacted]",
+        "mint_player": "sample-account-12",
+        "mint_date": "2026-09-14T13:00:00.000Z",
+        "mint_block": 109907605,
+        "mint_tx": "[redacted]",
+        "awarded_frontier_draw_id": 1849,
+        "guild": "[redacted]",
+        "title_pre": "[redacted]",
+        "title_post": null,
+        "league": 7,
+        "modern_league": 8,
+        "survival_league": 0,
+        "guild_name": "[redacted]",
+        "guild_data": "[redacted]",
+        "player_avatar": "[redacted]"
+      }
+    ]
+  }
+}

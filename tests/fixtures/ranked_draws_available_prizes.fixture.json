@@ -1,0 +1,105 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    }
+  },
+  "valueClasses": {
+    "body[0].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[0].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body[0].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body[0].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body[0].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body[0].card_uid": {
+      "valueClass": "opaque"
+    },
+    "body[0].card_mint": {
+      "valueClass": "opaque"
+    },
+    "body[1].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[1].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body[1].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body[1].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body[1].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body[1].card_uid": {
+      "valueClass": "opaque"
+    },
+    "body[1].card_mint": {
+      "valueClass": "opaque"
+    },
+    "body[2].card_detail_id": {
+      "valueClass": "numeric"
+    },
+    "body[2].card_xp": {
+      "valueClass": "numeric"
+    },
+    "body[2].card_edition": {
+      "valueClass": "numeric"
+    },
+    "body[2].card_tier": {
+      "valueClass": "numeric"
+    },
+    "body[2].card_foil": {
+      "valueClass": "numeric"
+    },
+    "body[2].card_uid": {
+      "valueClass": "opaque"
+    },
+    "body[2].card_mint": {
+      "valueClass": "opaque"
+    }
+  },
+  "body": [
+    {
+      "card_detail_id": 871,
+      "card_xp": 38,
+      "card_edition": 18,
+      "card_tier": 14,
+      "card_foil": 2,
+      "card_uid": "[redacted]",
+      "card_mint": "[redacted]"
+    },
+    {
+      "card_detail_id": 871,
+      "card_xp": 38,
+      "card_edition": 18,
+      "card_tier": 14,
+      "card_foil": 2,
+      "card_uid": "[redacted]",
+      "card_mint": "[redacted]"
+    },
+    {
+      "card_detail_id": 871,
+      "card_xp": 38,
+      "card_edition": 18,
+      "card_tier": 14,
+      "card_foil": 2,
+      "card_uid": "[redacted]",
+      "card_mint": "[redacted]"
+    }
+  ]
+}

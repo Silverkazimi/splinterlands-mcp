@@ -1,0 +1,149 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    }
+  },
+  "valueClasses": {
+    "body.draws[0].id": {
+      "valueClass": "numeric"
+    },
+    "body.draws[0].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[0].total_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[0].player_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[0].verification_data.trx_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[0].verification_data.block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[0].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body.draws[0].verification_data.block_time": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[0].verification_data.prev_block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[0].draw_number": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].id": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[1].total_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].player_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].verification_data.trx_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[1].verification_data.block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[1].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].verification_data.block_time": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[1].verification_data.prev_block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[1].draw_number": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].id": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[2].total_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].player_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].verification_data.trx_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[2].verification_data.block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[2].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].verification_data.block_time": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[2].verification_data.prev_block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[2].draw_number": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "draws": [
+      {
+        "id": 48,
+        "end_date": "2026-09-18T13:00:00.000Z",
+        "total_entries": 276072,
+        "player_entries": 0,
+        "verification_data": {
+          "trx_id": "[redacted]",
+          "block_id": "[redacted]",
+          "block_num": 110020708,
+          "block_time": "2026-09-18T13:00:00.000Z",
+          "prev_block_id": "[redacted]"
+        },
+        "draw_number": 48
+      },
+      {
+        "id": 47,
+        "end_date": "2026-09-11T13:00:00.000Z",
+        "total_entries": 254074,
+        "player_entries": 0,
+        "verification_data": {
+          "trx_id": "[redacted]",
+          "block_id": "[redacted]",
+          "block_num": 109821422,
+          "block_time": "2026-09-11T13:00:00.000Z",
+          "prev_block_id": "[redacted]"
+        },
+        "draw_number": 47
+      },
+      {
+        "id": 46,
+        "end_date": "2026-09-04T13:00:00.000Z",
+        "total_entries": 278426,
+        "player_entries": 0,
+        "verification_data": {
+          "trx_id": "[redacted]",
+          "block_id": "[redacted]",
+          "block_num": 109620326,
+          "block_time": "2026-09-04T13:00:00.000Z",
+          "prev_block_id": "[redacted]"
+        },
+        "draw_number": 46
+      }
+    ]
+  }
+}

@@ -687,5 +687,41 @@
   },
   "prices-prices.fixture.json": {
     "entryId": "prices.prices"
+  },
+  "ranked_draws_status.fixture.json": {
+    "entryId": "api.ranked-draws.status"
+  },
+  "ranked_draws_prize_overview.fixture.json": {
+    "entryId": "api.ranked-draws.prize-overview"
+  },
+  "ranked_draws_complete.fixture.json": {
+    "entryId": "api.ranked-draws.complete"
+  },
+  "ranked_draws_entries_completed_id_48.fixture.json": {
+    "entryId": "api.ranked-draws.entries-completed"
+  },
+  "ranked_draws_available_prizes.fixture.json": {
+    "entryId": "api.ranked-draws.available-prizes"
+  },
+  "ranked_draws_recent_prizes.fixture.json": {
+    "entryId": "api.ranked-draws.recent-prizes"
+  },
+  "frontier_draws_status.fixture.json": {
+    "entryId": "api.frontier-draws.status"
+  },
+  "frontier_draws_prize_overview.fixture.json": {
+    "entryId": "api.frontier-draws.prize-overview"
+  },
+  "frontier_draws_complete.fixture.json": {
+    "entryId": "api.frontier-draws.complete"
+  },
+  "frontier_draws_entries_completed_id_1849.fixture.json": {
+    "entryId": "api.frontier-draws.entries-completed"
+  },
+  "frontier_draws_available_prizes.fixture.json": {
+    "entryId": "api.frontier-draws.available-prizes"
+  },
+  "frontier_draws_recent_prizes.fixture.json": {
+    "entryId": "api.frontier-draws.recent-prizes"
   }
 }

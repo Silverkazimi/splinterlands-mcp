@@ -1,0 +1,149 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted.",
+    "fixtureSample": {
+      "kind": "first",
+      "limit": 3
+    }
+  },
+  "valueClasses": {
+    "body.draws[0].id": {
+      "valueClass": "numeric"
+    },
+    "body.draws[0].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[0].total_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[0].player_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[0].verification_data.trx_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[0].verification_data.block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[0].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body.draws[0].verification_data.block_time": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[0].verification_data.prev_block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[0].draw_number": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].id": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[1].total_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].player_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].verification_data.trx_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[1].verification_data.block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[1].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body.draws[1].verification_data.block_time": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[1].verification_data.prev_block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[1].draw_number": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].id": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].end_date": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[2].total_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].player_entries": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].verification_data.trx_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[2].verification_data.block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[2].verification_data.block_num": {
+      "valueClass": "numeric"
+    },
+    "body.draws[2].verification_data.block_time": {
+      "valueClass": "timestamp"
+    },
+    "body.draws[2].verification_data.prev_block_id": {
+      "valueClass": "opaque"
+    },
+    "body.draws[2].draw_number": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "draws": [
+      {
+        "id": 1849,
+        "end_date": "2026-09-14T13:00:00.000Z",
+        "total_entries": 34074,
+        "player_entries": 0,
+        "verification_data": {
+          "trx_id": "[redacted]",
+          "block_id": "[redacted]",
+          "block_num": 109907605,
+          "block_time": "2026-09-14T13:00:00.000Z",
+          "prev_block_id": "[redacted]"
+        },
+        "draw_number": 57
+      },
+      {
+        "id": 1816,
+        "end_date": "2026-09-07T13:00:00.000Z",
+        "total_entries": 36410,
+        "player_entries": 0,
+        "verification_data": {
+          "trx_id": "[redacted]",
+          "block_id": "[redacted]",
+          "block_num": 109706509,
+          "block_time": "2026-09-07T13:00:00.000Z",
+          "prev_block_id": "[redacted]"
+        },
+        "draw_number": 56
+      },
+      {
+        "id": 1783,
+        "end_date": "2026-08-31T13:00:00.000Z",
+        "total_entries": 34696,
+        "player_entries": 0,
+        "verification_data": {
+          "trx_id": "[redacted]",
+          "block_id": "[redacted]",
+          "block_num": 109505429,
+          "block_time": "2026-08-31T13:00:00.000Z",
+          "prev_block_id": "[redacted]"
+        },
+        "draw_number": 55
+      }
+    ]
+  }
+}
