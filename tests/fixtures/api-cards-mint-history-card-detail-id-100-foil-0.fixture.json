@@ -1,0 +1,15 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00.000Z",
+    "redaction": "Names are synthetic; free text and opaque strings are redacted."
+  },
+  "valueClasses": {
+    "body.total": { "valueClass": "numeric" },
+    "body.mints": { "valueClass": "opaque" }
+  },
+  "body": {
+    "total": 0,
+    "mints": []
+  }
+}

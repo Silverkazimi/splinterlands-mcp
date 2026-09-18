@@ -6147,6 +6147,36 @@
     }
   },
   {
+    "entryId": "api.cards.ca-gold-rewards",
+    "host": "api",
+    "pathTemplate": "/cards/ca_gold_rewards",
+    "owningTool": "cards_ca_gold_rewards",
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "array",
+      "fingerprint": {
+        "[]": { "type": "object", "valueClass": "opaque" },
+        "[].count": { "type": "string", "valueClass": "numeric" },
+        "[].card_detail_id": { "type": "number", "valueClass": "id" },
+        "[].rarity": { "type": "number", "valueClass": "numeric" }
+      },
+      "observedKeyPaths": ["[]", "[].count", "[].card_detail_id", "[].rarity"],
+      "requiredKeyPaths": []
+    },
+    "notes": "Measured live 2026-09-18: unauthenticated HTTP 200 from GET /cards/ca_gold_rewards returned a bare array of count, card_detail_id and rarity. count is a JSON string, not a number. The endpoint is cached for 24 hours and locally bounded to 100 rows and 256 KiB.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
     "entryId": "api.cards.find",
     "host": "api",
     "pathTemplate": "/cards/find",
@@ -6540,6 +6570,76 @@
     }
   },
   {
+    "entryId": "api.cards.mint-history",
+    "host": "api",
+    "pathTemplate": "/cards/mint_history",
+    "queryParams": [
+      {
+        "name": "card_detail_id",
+        "type": "integer",
+        "declaredRequired": true,
+        "measuredRequired": true,
+        "inertUpstream": false,
+        "minimum": 1
+      },
+      {
+        "name": "foil",
+        "type": "integer",
+        "declaredRequired": true,
+        "measuredRequired": true,
+        "inertUpstream": false,
+        "minimum": 0
+      }
+    ],
+    "owningTool": "cards_mint_history",
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "total": { "type": "number", "valueClass": "numeric" },
+        "mints": { "type": "array", "valueClass": "opaque" },
+        "mints[].uid": { "type": "string", "valueClass": "id" },
+        "mints[].card_detail_id": { "type": "number", "valueClass": "id" },
+        "mints[].xp": { "type": "number", "valueClass": "numeric" },
+        "mints[].gold": { "type": "boolean", "valueClass": "enum" },
+        "mints[].foil": { "type": "number", "valueClass": "numeric" },
+        "mints[].mint": { "type": "string", "valueClass": "enum" },
+        "mints[].mint_player": { "type": "string", "valueClass": "name", "nullable": true },
+        "mints[].mint_date": { "type": "string", "valueClass": "timestamp", "nullable": true },
+        "mints[].mint_block": { "type": "number", "valueClass": "numeric", "nullable": true },
+        "mints[].mint_tx": { "type": "string", "valueClass": "opaque", "nullable": true },
+        "mints[].edition": { "type": "number", "valueClass": "id" },
+        "mints[].tier": { "type": "number", "valueClass": "numeric" },
+        "mints[].guild_data": { "type": "string", "valueClass": "opaque", "nullable": true },
+        "mints[].guild_name": { "type": "string", "valueClass": "name", "nullable": true },
+        "mints[].guild": { "type": "string", "valueClass": "opaque", "nullable": true },
+        "mints[].modern_league": { "type": "number", "valueClass": "numeric", "nullable": true },
+        "mints[].league": { "type": "number", "valueClass": "numeric", "nullable": true },
+        "mints[].survival_league": { "type": "number", "valueClass": "numeric", "nullable": true },
+        "mints[].title_post": { "type": "string", "valueClass": "opaque", "nullable": true },
+        "mints[].title_pre": { "type": "string", "valueClass": "opaque", "nullable": true },
+        "mints[].player_avatar": { "type": "string", "valueClass": "opaque", "nullable": true }
+      },
+      "observedKeyPaths": [
+        "total", "mints", "mints[].uid", "mints[].card_detail_id", "mints[].xp", "mints[].gold", "mints[].foil", "mints[].mint", "mints[].mint_player", "mints[].mint_date", "mints[].mint_block", "mints[].mint_tx", "mints[].edition", "mints[].tier", "mints[].guild_data", "mints[].guild_name", "mints[].guild", "mints[].modern_league", "mints[].league", "mints[].survival_league", "mints[].title_post", "mints[].title_pre", "mints[].player_avatar", "total_minted"
+      ],
+      "requiredKeyPaths": ["total", "mints"],
+      "predicateId": "cards.mint-history"
+    },
+    "notes": "Measured live 2026-09-18: unauthenticated HTTP 200 from GET /cards/mint_history with card_detail_id and foil returned a bare object containing total and mints; the populated capture also carried total_minted, while the empty capture omitted total_minted. Mint rows included card identity, XP, foil/gold, mint numbering, date/block, optional transaction/guild/league/title/avatar fields and a public mint_player name. The by_date=true plus by_date_edition=18 observation returned {mints:[]} and is documented here but not exposed as a separate tool variant. Mint history is not cached; its mints list is locally bounded to 100 rows and 256 KiB with truncation reported explicitly.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
     "entryId": "api.cards.pack-data-wax",
     "host": "api",
     "pathTemplate": "/cards/pack_data_wax",
@@ -6614,6 +6714,51 @@
       "specHash": null,
       "specFetchedAt": null,
       "observedAt": "2026-09-08T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.cards.pack-jackpot-overview",
+    "host": "api",
+    "pathTemplate": "/cards/pack_jackpot_overview",
+    "queryParams": [
+      {
+        "name": "edition",
+        "type": "integer",
+        "declaredRequired": true,
+        "measuredRequired": true,
+        "inertUpstream": false,
+        "minimum": 0
+      }
+    ],
+    "owningTool": "cards_pack_jackpot_overview",
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "array",
+      "fingerprint": {
+        "[]": { "type": "object", "valueClass": "opaque" },
+        "[].card_detail_id": { "type": "number", "valueClass": "id" },
+        "[].total_minted": { "type": "number", "valueClass": "numeric" },
+        "[].total": { "type": "number", "valueClass": "numeric" },
+        "[].foils": { "type": "array", "valueClass": "opaque" },
+        "[].foils[].foil": { "type": "number", "valueClass": "numeric" },
+        "[].foils[].minted": { "type": "number", "valueClass": "numeric" },
+        "[].foils[].total": { "type": "number", "valueClass": "numeric" }
+      },
+      "observedKeyPaths": ["[]", "[].card_detail_id", "[].total_minted", "[].total", "[].foils", "[].foils[].foil", "[].foils[].minted", "[].foils[].total"],
+      "requiredKeyPaths": [],
+      "predicateId": "array.empty-or-captured"
+    },
+    "notes": "Measured live 2026-09-18: unauthenticated HTTP 200 from GET /cards/pack_jackpot_overview with edition returned a bare array of card_detail_id, total_minted, total and foil-level minted/total rows. Edition 19 was populated; editions 13, 15 and 18 and the no-parameter probe returned valid empty arrays. The edition selector is required by this tool even though the no-parameter probe was observed. Successful responses are cached for 24 hours and locally bounded to 100 rows and 256 KiB.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
     }
   },
   {

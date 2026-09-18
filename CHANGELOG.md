@@ -6,6 +6,7 @@
 
 - Added the public `prices_current` token-to-USD feed through the fixed `prices.splinterlands.com` host, with a five-minute success cache.
 - Added read-only ranked-draw and frontier-draw status, history, entry, prize-overview, available-prize and recent-mint tools with sanitized live-observation fixtures and bounded responses.
+- Added public card mint-history, pack jackpot overview and card gold-reward read tools with measured contracts, sanitised fixtures and bounded responses.
 
 ## 1.0.2 - 2026-09-18
 

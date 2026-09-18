@@ -1077,6 +1077,53 @@
       "capturedAt": "2026-09-18"
     },
     {
+      "entryId": "api.cards.ca-gold-rewards",
+      "host": "api",
+      "pathTemplate": "/cards/ca_gold_rewards",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].count": {
+            "types": [
+              "string"
+            ]
+          },
+          "[].rarity": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d7bccb672a25868a270f1dc6c606d62b2d5973d08eae37e49b9aef24fc3d3be7"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "api-cards-ca-gold-rewards.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
       "entryId": "api.cards.collection",
       "host": "api",
       "pathTemplate": "/cards/collection/{username}",
@@ -2346,6 +2393,168 @@
       "capturedAt": "2026-09-18"
     },
     {
+      "entryId": "api.cards.mint-history",
+      "host": "api",
+      "pathTemplate": "/cards/mint_history",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "mints": {
+            "types": [
+              "array"
+            ]
+          },
+          "mints[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "mints[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].edition": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].foil": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].gold": {
+            "types": [
+              "boolean"
+            ]
+          },
+          "mints[].guild": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].guild_data": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].guild_name": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].league": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].mint": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].mint_block": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].mint_date": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].mint_player": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].mint_tx": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].modern_league": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].player_avatar": {
+            "types": [
+              "null",
+              "string"
+            ]
+          },
+          "mints[].survival_league": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].tier": {
+            "types": [
+              "number"
+            ]
+          },
+          "mints[].title_post": {
+            "types": [
+              "null",
+              "string"
+            ]
+          },
+          "mints[].title_pre": {
+            "types": [
+              "null",
+              "string"
+            ]
+          },
+          "mints[].uid": {
+            "types": [
+              "string"
+            ]
+          },
+          "mints[].xp": {
+            "types": [
+              "number"
+            ]
+          },
+          "total": {
+            "types": [
+              "number"
+            ]
+          },
+          "total_minted": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "d498203e63551627207d6f83141cd2211e8054f397cbd87b74c6c5c16e7191a1"
+          ]
+        },
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "436b16a8d698a9fae8cbd6411c9699b260a890c30fee5a544e23f4a7e448b454"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "api-cards-mint-history-card-detail-id-100-foil-0.fixture.json",
+        "api-cards-mint-history-card-detail-id-871-foil-2.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
       "entryId": "api.cards.pack-data-wax",
       "host": "api",
       "pathTemplate": "/cards/pack_data_wax",
@@ -2398,6 +2607,81 @@
       ],
       "shapeSources": [
         "api-cards-pack-data-wax.fixture.json"
+      ],
+      "truncatedAt": [],
+      "capturedAt": "2026-09-18"
+    },
+    {
+      "entryId": "api.cards.pack-jackpot-overview",
+      "host": "api",
+      "pathTemplate": "/cards/pack_jackpot_overview",
+      "authTier": "public",
+      "statusesObserved": [
+        200
+      ],
+      "shape": {
+        "fields": {
+          "[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].card_detail_id": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].foils": {
+            "types": [
+              "array"
+            ]
+          },
+          "[].foils[]": {
+            "types": [
+              "object"
+            ]
+          },
+          "[].foils[].foil": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].foils[].minted": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].foils[].total": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].total": {
+            "types": [
+              "number"
+            ]
+          },
+          "[].total_minted": {
+            "types": [
+              "number"
+            ]
+          }
+        },
+        "truncatedAt": []
+      },
+      "reviewedShapes": [
+        {
+          "variantKey": "default",
+          "shapeIds": [
+            "89640bbcefa2bed38c9d2489443d36754cafdf59361bf0dfb701482a5df51b9b"
+          ]
+        }
+      ],
+      "shapeSources": [
+        "api-cards-pack-jackpot-overview-edition-19.fixture.json",
+        "empty:api-cards-pack-jackpot-overview-edition-13.fixture.json",
+        "empty:api-cards-pack-jackpot-overview-edition-15.fixture.json",
+        "empty:api-cards-pack-jackpot-overview-edition-18.fixture.json"
       ],
       "truncatedAt": [],
       "capturedAt": "2026-09-18"

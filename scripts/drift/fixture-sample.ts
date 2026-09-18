@@ -46,7 +46,9 @@ const firstSamplePaths: Readonly<Record<string, readonly string[]>> = {
   "api.frontier-draws.complete": ["draws"],
   "api.frontier-draws.entries-completed": [],
   "api.frontier-draws.available-prizes": [],
-  "api.frontier-draws.recent-prizes": ["mints"]
+  "api.frontier-draws.recent-prizes": ["mints"],
+  "api.cards.mint-history": ["mints"],
+  "api.cards.ca-gold-rewards": []
 };
 
 type Sample = { kind: "first"; limit: number } | { kind: "ids"; ids: number[] };

@@ -89,7 +89,7 @@ results are cached, and their freshness is reported. Related reads can
 also happen at slightly different times, so they should not be treated
 as one perfectly synchronized view of the game.
 
-The reference below lists all 176 tools. For request budgets, exact
+The reference below lists all 179 tools. For request budgets, exact
 parameters, cache behavior, and recorded API quirks, see the
 [technical capability notes](library/capability-notes.md) and
 [safety boundaries](#what-it-is-and-what-it-will-never-do).
@@ -115,7 +115,9 @@ tools are local and make no upstream request.
 | `cards_get_details` | `GET /cards/get_details` |
 | `cards_history` | `GET /cards/history` |
 | `cards_lore` | `GET /cards/lore` |
+| `cards_mint_history` | `GET /cards/mint_history` |
 | `cards_pack_data_wax` | `GET /cards/pack_data_wax` |
+| `cards_pack_jackpot_overview` | `GET /cards/pack_jackpot_overview` |
 | `cards_skins` | `GET /cards/skins` |
 | `prices_current` | `GET /prices` |
 | `ranked_draws_status` | `GET /ranked_draws/status` |
@@ -130,6 +132,7 @@ tools are local and make no upstream request.
 | `frontier_draws_entries_completed` | `GET /frontier_draws/entries_completed` |
 | `frontier_draws_available_prizes` | `GET /frontier_draws/available_prizes` |
 | `frontier_draws_recent_prizes` | `GET /frontier_draws/recent_prizes` |
+| `cards_ca_gold_rewards` | `GET /cards/ca_gold_rewards` |
 | `cards_trx_lookup` | `GET /cards/trx_lookup` |
 | `collector_stickers_tradeable` | `GET /collector/{player}/stickers/tradeable` |
 | `collector_config` | `GET /collector/config` |
@@ -307,7 +310,7 @@ counted by the first call.
   Splinterlands account credential, a Hive posting/active key, or any other
   secret. If you need an endpoint that requires login, this is the wrong
   tool for that endpoint — it will tell you so rather than pretend to work.
-- **Unsupported catalogue routes are excluded.** 34 of the 203 catalogued
+- **Unsupported catalogue routes are excluded.** 34 of the 206 catalogued
   routes are not advertised as tools because their dated probes did not
   produce a usable, distinct, or honestly-selected response. The first group contains three Land routes classified 2026-09-07
   and six market, rental and collector routes classified 2026-09-12:
@@ -476,6 +479,16 @@ in this repository must pass.
 ## License
 
 MIT — see `LICENSE`.
+
+## Card mint reads
+
+The three card-mint tools read public circulation data. `cards_mint_history`
+requires a positive card detail id and non-negative foil, preserves the
+upstream's optional `total_minted` field, and bounds the returned `mints` list
+to 100 rows and 256 KiB without fetching a continuation. Jackpot overview
+requires an edition and is cached for 24 hours; gold-reward `count` values
+remain strings as sent by the API. Empty arrays and the empty mint-history
+shape are valid answers, not errors.
 
 ## Market reads
 

@@ -2,13 +2,13 @@
 
 [Return to the README](../README.md). This reference preserves the detailed request limits and observed API behavior behind the introductory overview. Plain file paths below are relative to the repository root.
 
-**Version: 1.0.0.** 176 tools are registered (`src/server.ts`).
+**Version: 1.0.0.** 179 tools are registered (`src/server.ts` and its registration modules).
 66 call `vapi.splinterlands.com`: 40 Land routes covering deeds, projects,
-counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 102 call
-`api.splinterlands.com`: eight card tools, one item-metadata tool, and 30
+counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 105 call
+`api.splinterlands.com`: eleven card tools, one item-metadata tool, and 30
 player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads.
 One tool calls `prices.splinterlands.com`: `prices_current` reads the public token-to-USD feed and uses a five-minute success cache because prices move.
-Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 203 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
+Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 206 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
 `library/endpoint-knowledge-tools.md` for the evidence model.
 
 The ranked-draw and frontier-draw families expose current status, completed
@@ -43,6 +43,13 @@ ceiling instead of a fixed response-byte ceiling. The largest measured live
 response was 155 MiB; the separate synthetic memory measurements and their
 limits are recorded in
 `library/observations/collection-streaming-memory-2026-09-08.md`.
+
+The card mint tools read three public circulation routes. Mint history requires
+card_detail_id and foil, preserves the optional total_minted field, and does
+not use a success cache; jackpot overview and gold rewards use the 24-hour
+metadata cache. Jackpot rows and gold-reward rows are locally bounded to 100
+rows and 256 KiB, while mint-history mints are bounded within their object;
+the by_date mint-history form is documented but not exposed as a variant.
 
 The player tools include profiles, balances, rewards, quests, skins,
 public authority assignments, recent teams, purchase information, airdrop
