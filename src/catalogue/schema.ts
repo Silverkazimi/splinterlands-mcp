@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const CatalogueHostSchema = z.enum(["api", "vapi"]);
+export const CatalogueHostSchema = z.enum(["api", "vapi", "prices"]);
 export const HttpMethodSchema = z.literal("GET");
 export const AuthTierSchema = z.enum(["public", "requires_auth", "blocked"]);
 export const PaginationSchema = z.enum(["none", "limit-offset", "limit-only", "page-size", "client-side"]);

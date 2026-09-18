@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join, basename } from "node:path";
 import { isEmptyResult } from "../../src/http/errors.js";
+import type { CatalogueHost } from "../../src/catalogue/schema.js";
 import { diffShapes, observeShape, type ShapeDelta } from "./shape.js";
 import type { DriftIssue } from "./types.js";
 
@@ -14,7 +15,7 @@ export type FixtureRenewalPair = {
   entryId: string;
   existing: unknown;
   recaptured: unknown;
-  host?: "api" | "vapi";
+  host?: CatalogueHost;
   pathTemplate?: string;
   pseudonymise?: (value: unknown) => unknown;
   regenerateValueClasses?: (value: unknown) => unknown;

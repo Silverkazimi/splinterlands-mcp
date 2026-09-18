@@ -15,7 +15,7 @@ import { registerLogicalRequest } from "./callscope.js";
 import { HostRateLimiter, type RateLimiterOptions } from "./ratelimit.js";
 import { isCataloguePath, type CataloguePath } from "../catalogue/index.js";
 
-export const ALLOWED_HOSTS = ["api.splinterlands.com", "vapi.splinterlands.com"] as const;
+export const ALLOWED_HOSTS = ["api.splinterlands.com", "vapi.splinterlands.com", "prices.splinterlands.com"] as const;
 const RETRY_STATUSES = new Set([408, 429, 500, 502, 503, 504]);
 const DEFAULT_TIMEOUT_MS = 20 * 1000;
 const DEFAULT_RESPONSE_CAP = 2 * 1024 * 1024;

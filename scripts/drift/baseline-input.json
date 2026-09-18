@@ -684,5 +684,8 @@
   },
   "player-custom-avatar.fixture.json": {
     "entryId": "api.players.custom-avatar"
+  },
+  "prices-prices.fixture.json": {
+    "entryId": "prices.prices"
   }
 }

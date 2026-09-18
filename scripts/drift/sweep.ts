@@ -6,6 +6,7 @@ import type { RawOutcome, RunRecord, SweepEntry, SweepObservation } from "./type
 const hostnames = {
   api: "api.splinterlands.com",
   vapi: "vapi.splinterlands.com",
+  prices: "prices.splinterlands.com",
 } as const;
 
 function dateOnly(value: Date): string {

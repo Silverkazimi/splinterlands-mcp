@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Added the public `prices_current` token-to-USD feed through the fixed `prices.splinterlands.com` host, with a five-minute success cache.
+
 ## 1.0.2 - 2026-09-18
 
 ### Added

@@ -8,6 +8,7 @@ Splinterlands API facts use its published specifications, support documentation 
   (Land, market, delegation/rental, collector endpoints).
 - `https://api.splinterlands.com/` — swagger spec for the main game API
   (cards, players, battles, tournaments, guilds, game meta).
+- `https://prices.splinterlands.com/prices` — official public token-to-USD price feed.
 - Splinterlands' support site (`support.splinterlands.com`) — the Land
   APIs article, referenced for endpoints and conventions not fully
   captured by the swagger spec.

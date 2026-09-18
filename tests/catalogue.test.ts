@@ -181,6 +181,7 @@ describe("endpoint catalogue guards", () => {
       "/maintenance_schedule",
       "/transactions/lookup",
       "/transactions/metrics",
+      "/prices",
       "/",
 
       "/guilds/list",

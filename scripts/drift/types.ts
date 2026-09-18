@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { AuthTierSchema, CatalogueHostSchema } from "../../src/catalogue/schema.js";
+import { AuthTierSchema, CatalogueHostSchema, type CatalogueHost } from "../../src/catalogue/schema.js";
 import type { JsonTypeName, ShapeFingerprint } from "./shape.js";
 
 export const DriftLabelSchema = z.enum([
@@ -48,7 +48,7 @@ export type DriftIssue = z.infer<typeof DriftIssueSchema>;
 
 export type BaselineEntry = {
   entryId: string;
-  host: "api" | "vapi";
+  host: CatalogueHost;
   pathTemplate: string;
   authTier: "public" | "requires_auth" | "blocked";
   statusesObserved: number[];
@@ -67,7 +67,7 @@ export type DriftBaseline = {
 
 export type SweepEntry = {
   entryId: string;
-  host: "api" | "vapi";
+  host: CatalogueHost;
   pathTemplate: string;
   authBaseline: "public" | "requires_auth" | "blocked";
   variantKey?: string;
@@ -87,7 +87,7 @@ export type RawOutcome = {
 
 export type SweepObservation = {
   entryId: string;
-  host: "api" | "vapi";
+  host: CatalogueHost;
   pathTemplate: string;
   statusObserved: number;
   authBaseline: "public" | "requires_auth" | "blocked";

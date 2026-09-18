@@ -13,6 +13,7 @@ import { z, type ZodTypeAny } from "zod";
 const HOSTS = {
   api: "api.splinterlands.com",
   vapi: "vapi.splinterlands.com",
+  prices: "prices.splinterlands.com",
 } as const;
 
 const cataloguePathBrand = Symbol("cataloguePath");
