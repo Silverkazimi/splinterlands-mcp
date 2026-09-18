@@ -9,6 +9,8 @@ import { createServer, TOOL_ENTRY_IDS } from "../src/server.js";
 
 it("keeps public tool counts and routes aligned with the MCP interface", async () => {
   const readme = readFileSync(new URL("../README.md", import.meta.url), "utf8");
+  const capabilities = readFileSync(new URL("../library/capability-notes.md", import.meta.url), "utf8");
+  expect(readme).toContain("(library/capability-notes.md)");
   const knowledge = readFileSync(new URL("../library/endpoint-knowledge-tools.md", import.meta.url), "utf8");
   const server = createServer({ fetch: async () => { throw new Error("Documentation checks must stay offline"); } });
   const client = new Client({ name: "documentation-test", version: "0.0.0" });
@@ -47,10 +49,10 @@ it("keeps public tool counts and routes aligned with the MCP interface", async (
     }
     const bound = Object.values(bindings).map(getCatalogueEntry);
     const unbound = catalogue.filter((entry) => !Object.values(bindings).includes(entry.entryId));
-    expect(readme).toContain(`${names.length} tools are registered`);
-    expect(readme).toContain(`catalogue's ${catalogue.length} endpoints`);
-    expect(readme).toContain(`${bound.filter((entry) => entry.entryId.startsWith("vapi.")).length} call \`vapi.splinterlands.com\``);
-    expect(readme).toMatch(new RegExp(`${bound.filter((entry) => entry.entryId.startsWith("api.")).length} call\\s+\`api.splinterlands.com\``));
+    expect(capabilities).toContain(`${names.length} tools are registered`);
+    expect(capabilities).toContain(`catalogue's ${catalogue.length} endpoints`);
+    expect(capabilities).toContain(`${bound.filter((entry) => entry.entryId.startsWith("vapi.")).length} call \`vapi.splinterlands.com\``);
+    expect(capabilities).toMatch(new RegExp(`${bound.filter((entry) => entry.entryId.startsWith("api.")).length} call\\s+\`api.splinterlands.com\``));
     expect(readme).toContain(`${unbound.length} of the ${catalogue.length} catalogued`);
     for (const entry of unbound) {
       expect(readme).toContain(`| \`${entry.method} ${entry.pathTemplate}\` |`);
