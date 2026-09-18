@@ -12,6 +12,7 @@ import {
   SplinterlandsHttpClient,
 } from "../src/http/client.js";
 import listedFixture from "./fixtures/land-deed-listed.fixture.json" with { type: "json" };
+import playerNotFoundFixture from "./static-fixtures/api-players-details-not-found.fixture.json" with { type: "json" };
 import { createTestOnlyCataloguePath, getCatalogueEntry } from "../src/catalogue/index.js";
 import { matchesResultContract } from "../src/catalogue/fingerprint.js";
 import { withCallScope, registerLogicalRequest } from "../src/http/callscope.js";
@@ -176,7 +177,7 @@ describe("distinct upstream outcomes", () => {
     const malformed = outcome(classifyResponse({ status: 200, host: api, endpoint: "/bad", body: { error: "bad" }, validate: () => false }));
     const gated = outcome(classifyResponse({ status: 401, host: api, endpoint: "/gated", body: {}, now: 1000, authCache: cache }));
     expect(empty).toMatchObject({ ok: true, data: [] });
-    expect(malformed.kind).toBe("upstream_malformed");
+    expect(malformed.kind).toBe("upstream_error");
     expect(gated.kind).toBe("endpoint_requires_auth");
     expect(new Set([malformed.message, gated.message]).size).toBe(2);
   });
@@ -193,6 +194,19 @@ describe("distinct upstream outcomes", () => {
     });
 
     expect(result).toMatchObject({ ok: true, data: body });
+  });
+
+  it("preserves a top-level HTTP-200 upstream error as a distinct outcome", () => {
+    const result = outcome(classifyResponse({
+      status: 200,
+      host: api,
+      endpoint: "/players/details",
+      body: playerNotFoundFixture.body,
+      validate: () => false,
+    }));
+
+    expect(result).toMatchObject({ ok: false, kind: "upstream_error", status: 200 });
+    expect(result.message).toContain("Player sample-account-missing not found.");
   });
 
   it("does not treat an upstream body trace id as this request's trace id", () => {
@@ -232,6 +246,12 @@ describe("distinct upstream outcomes", () => {
 });
 
 describe("rate limiting", () => {
+  it("uses the environment rate and preserves the documented cap", () => {
+    expect(new SplinterlandsHttpClient({ env: { SPLINTERLANDS_MCP_RATE: "5" } }).limiter.ratePerSecond).toBe(5);
+    expect(new SplinterlandsHttpClient({ env: { SPLINTERLANDS_MCP_RATE: "50" } }).limiter.ratePerSecond).toBe(5);
+    expect(new SplinterlandsHttpClient({ env: { SPLINTERLANDS_MCP_RATE: "invalid" } }).limiter.ratePerSecond).toBe(2);
+  });
+
   /** Injection: use a fake clock and 100 calls to expose a bucket with the wrong burst or rate. */
   it("takes at least 48 simulated seconds for 100 calls", async () => {
     let clock = 0;

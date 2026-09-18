@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.1 - 2026-09-18
+
+### Fixed
+
+- Accepted guild-less player profiles and profiles with nullable avatar, reward-block and crest-decal fields.
+- Included bounded rows alongside truncation notices for list responses.
+- Reported upstream HTTP-200 error messages as upstream errors, including unknown-player responses.
+- Activated the documented environment-controlled request rate and corrected cache and redirect documentation.
+- Added an outgoing-commit privacy check to the pre-push hook.
+
 ## 1.0.0 - 2026-09-18
 
 Initial GitHub release. npm registry publication is separate.
@@ -37,5 +47,3 @@ Initial GitHub release. npm registry publication is separate.
 - Actual MCP callbacks enforce request budgets while preserving bounded retry behavior and concurrent-call isolation.
 - Maintenance baselines prefer measured access tiers. Specification changes cannot silently promote unverified endpoints or authentication declarations.
 - Package contents include the public evidence library so documentation links remain usable after installation.
-
-Hosted maintenance and final release acceptance remain pending. See the maintenance and release runbooks for required checks.

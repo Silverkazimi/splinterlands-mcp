@@ -4,6 +4,7 @@ export type AllowedHost = "api.splinterlands.com" | "vapi.splinterlands.com";
 
 export type OutcomeKind =
   | "upstream_malformed"
+  | "upstream_error"
   | "endpoint_requires_auth"
   | "upstream_blocked"
   | "upstream_unavailable"
@@ -194,6 +195,14 @@ function hasNestedUpstreamError(body: unknown): boolean {
     || ("status" in data && typeof data.status === "number" && data.status >= 400);
 }
 
+function topLevelUpstreamError(body: unknown): string | undefined {
+  if (typeof body !== "object" || body === null || Array.isArray(body) || "data" in body) {
+    return undefined;
+  }
+  const error = (body as Record<string, unknown>).error;
+  return typeof error === "string" ? error : undefined;
+}
+
 export function classifyResponse(options: ClassificationOptions): HttpResult<unknown> {
   const traceId = options.traceId ?? newTraceId();
   if (options.status === 401) {
@@ -235,6 +244,10 @@ export function classifyResponse(options: ClassificationOptions): HttpResult<unk
   }
   if (options.malformed === true) {
     return base(options, "upstream_malformed", `${options.endpoint} returned malformed JSON.`);
+  }
+  const upstreamError = topLevelUpstreamError(options.body);
+  if (upstreamError !== undefined) {
+    return base(options, "upstream_error", `${options.endpoint} returned an upstream error: ${upstreamError}`);
   }
   if (hasNestedUpstreamError(options.body)) {
     return base(options, "upstream_malformed", `${options.endpoint} returned a nested upstream error inside HTTP ${options.status}.`);

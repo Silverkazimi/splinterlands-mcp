@@ -6068,15 +6068,18 @@
         },
         "capture_rate": {
           "type": "string",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         },
         "last_reward_block": {
           "type": "number",
-          "valueClass": "numeric"
+          "valueClass": "numeric",
+          "nullable": true
         },
         "guild": {
           "type": "object",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "guild.id": {
           "type": "string",
@@ -6124,7 +6127,8 @@
         },
         "guild.data.crest.decal": {
           "type": "string",
-          "valueClass": "enum"
+          "valueClass": "enum",
+          "nullable": true
         },
         "guild.level": {
           "type": "number",
@@ -6495,7 +6499,8 @@
         },
         "player_avatar": {
           "type": "string",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "burn_sps_rewards": {
           "type": "boolean",

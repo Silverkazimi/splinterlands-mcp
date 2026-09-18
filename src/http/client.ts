@@ -30,6 +30,7 @@ type AuthTier = { measuredAt: number };
 
 export type ClientOptions = {
   fetch?: typeof globalThis.fetch;
+  env?: NodeJS.ProcessEnv;
   limiter?: HostRateLimiter;
   limiterOptions?: RateLimiterOptions;
   breaker?: CircuitBreaker;
@@ -160,6 +161,9 @@ export class SplinterlandsHttpClient {
     this.authCache = options.authCache ?? new TtlCache<AuthTier>(this.now);
     this.limiter = options.limiter ?? new HostRateLimiter({
       ...(options.limiterOptions ?? {}),
+      ...(options.limiterOptions?.env !== undefined || options.env !== undefined
+        ? { env: options.limiterOptions?.env ?? options.env }
+        : {}),
       now: options.limiterOptions?.now ?? this.now,
       sleep: options.limiterOptions?.sleep ?? this.sleep,
     });

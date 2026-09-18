@@ -1,0 +1,19 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "Synthetic alternate shape; account-specific values remain in the base profile fixture."
+  },
+  "valueClasses": {
+    "body.guild": { "valueClass": "opaque" },
+    "body.player_avatar": { "valueClass": "opaque" },
+    "body.last_reward_block": { "valueClass": "numeric" },
+    "body.capture_rate": { "valueClass": "numeric" }
+  },
+  "body": {
+    "guild": null,
+    "player_avatar": null,
+    "last_reward_block": null,
+    "capture_rate": null
+  }
+}

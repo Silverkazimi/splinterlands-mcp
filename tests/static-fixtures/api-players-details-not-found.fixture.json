@@ -1,0 +1,13 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "The account label is synthetic."
+  },
+  "valueClasses": {
+    "body.error": { "valueClass": "freetext" }
+  },
+  "body": {
+    "error": "Player sample-account-missing not found."
+  }
+}

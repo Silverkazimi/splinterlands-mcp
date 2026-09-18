@@ -4,4 +4,18 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 echo "pre-push: checking public structural and fixture privacy rules." >&2
 cd "$repo_root"
+while read -r local_ref local_oid remote_ref remote_oid; do
+  [[ -n "${local_oid:-}" && ! "$local_oid" =~ ^0+$ ]] || continue
+  if [[ "$remote_oid" =~ ^0+$ ]]; then
+    if git log "$local_oid" --not --remotes="$1" --format=%B | grep -Eq '\b(S|IR|FR)-[0-9]+\b'; then
+      echo "pre-push: outgoing commit messages contain an internal identifier." >&2
+      exit 1
+    fi
+  else
+    if git log "$remote_oid..$local_oid" --format=%B | grep -Eq '\b(S|IR|FR)-[0-9]+\b'; then
+      echo "pre-push: outgoing commit messages contain an internal identifier." >&2
+      exit 1
+    fi
+  fi
+done
 npm run leak-check:full

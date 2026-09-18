@@ -404,12 +404,12 @@ apply process-wide, separately for each approved API host:
 | Circuit breaker | 5 consecutive failures; open for 60 seconds |
 | Response cap | 2 MB, streamed |
 | Per-call budget | 1 logical upstream request; retries of that request are allowed |
-| Cache | In-memory only; settings/card-details TTLs are wired at the tool layer (later release), and only the auth-tier cache is active in this version |
+| Cache | In-memory only; settings use a one-hour success cache, card details a 24-hour metadata cache, collection pages a 60-second projected-page cache, and the auth tier a 15-minute cache |
 | Access changes | 401 is cached for 15 minutes; 403 stops traffic across both hosts for 60 seconds |
 
-Catalogue requests are HTTPS `GET`s to the two approved game hosts, with redirect following and URL
-credentials rejected. Responses include a trace ID and retrieval freshness.
-Empty, malformed, gated, blocked, and temporarily unavailable responses remain
+Catalogue requests are HTTPS `GET`s to the two approved game hosts, with redirects refused and URL
+credentials rejected. The avatar route reads the `Location` header and never follows it. Responses include a trace ID and retrieval freshness.
+Empty, malformed, upstream-error, gated, blocked, and temporarily unavailable responses remain
 separate outcomes so a tool can explain what happened without making claims
 about the account.
 

@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import currentRewardsFixture from "./fixtures/api-players-current-rewards.fixture.json" with { type: "json" };
 import detailsFixture from "./fixtures/api-players-details.fixture.json" with { type: "json" };
+import guildlessDetailsFixture from "./static-fixtures/api-players-details-guildless.fixture.json" with { type: "json" };
+import nullCrestDetailsFixture from "./static-fixtures/api-players-details-null-crest-decal.fixture.json" with { type: "json" };
 import lastFocusFixture from "./fixtures/api-players-last-focus-rewards.fixture.json" with { type: "json" };
 import lastSeasonFixture from "./fixtures/api-players-last-season-rewards.fixture.json" with { type: "json" };
 import unclaimedBalanceHistoryFixture from "./fixtures/api-players-unclaimed-balance-history.fixture.json" with { type: "json" };
@@ -136,4 +138,22 @@ it("accepts observed null profile fields and absent guild tournament data", () =
   expect(accepts({ ...body, guild: { ...guild, tournament_data: 42 } })).toBe(false);
   expect(accepts({ ...body, guild: { ...guild, tournament_data: {} } })).toBe(false);
   expect(accepts({ ...body, survival_bracket: "invalid" })).toBe(false);
+});
+
+it("accepts guild-less profiles and profiles with a null crest decal", () => {
+  const accepts = predicateFor(getCatalogueEntry("api.players.details").resultContract);
+  const base = structuredClone(detailsFixture.body) as Record<string, unknown>;
+  const guildless = { ...base, ...guildlessDetailsFixture.body };
+  expect(guildless.capture_rate).toBeNull();
+  expect(accepts(guildless)).toBe(true);
+
+  const guild = base.guild as Record<string, unknown>;
+  const guildData = guild.data as Record<string, unknown>;
+  const crest = guildData.crest as Record<string, unknown>;
+  const nullCrestGuild = nullCrestDetailsFixture.body.guild as { data: { crest: Record<string, unknown> } };
+  const nullCrest = {
+    ...base,
+    guild: { ...guild, data: { ...guildData, crest: { ...crest, ...nullCrestGuild.data.crest } } },
+  };
+  expect(accepts(nullCrest)).toBe(true);
 });

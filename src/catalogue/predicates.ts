@@ -71,6 +71,13 @@ export function predicateFor(contract: ResultContract): CataloguePredicate {
     return (body): body is unknown => {
       if (typeof body !== "object" || body === null || Array.isArray(body)) return false;
       const guild = (body as Record<string, unknown>).guild;
+      if (guild === null) {
+        return matchesResultContract(body, {
+          ...contract,
+          fingerprint: Object.fromEntries(Object.entries(contract.fingerprint).filter(([path]) => path !== "guild" && !path.startsWith("guild."))),
+          requiredKeyPaths: contract.requiredKeyPaths.filter(path => path !== "guild" && !path.startsWith("guild.")),
+        });
+      }
       if (typeof guild !== "object" || guild === null || Array.isArray(guild)) return false;
       const present = (path: string) => {
         if (path === "guild.tournament_status") return Object.hasOwn(guild, "tournament_status");

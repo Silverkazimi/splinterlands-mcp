@@ -39,6 +39,8 @@ Use one canonical public checkout for future work. Once initial publication is v
 
 Create a scoped branch, make the change and add evidence or tests appropriate to the behavior. Open a PR with a concise description and validation results. Review dependency and maintenance PRs before merging. The maintenance runbook explains workflow approval prompts and recovery when schedules are disabled.
 
+Before publishing, scan the release body and every outgoing commit message for internal identifiers.
+
 Release from a clean default-branch commit that passed hosted CI. Repeat the package and privacy review whenever files, dependencies or build rules change. Keep release artifacts and tags reproducible from the reviewed source.
 
 ## Recovery
