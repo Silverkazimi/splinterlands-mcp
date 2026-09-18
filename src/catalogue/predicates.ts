@@ -27,6 +27,17 @@ export const cataloguePredicates: Readonly<Record<string, CataloguePredicate>> =
 };
 
 export function predicateFor(contract: ResultContract): CataloguePredicate {
+  if (contract.predicateId === "cards.mint-history") {
+    return (body): body is unknown => {
+      if (typeof body !== "object" || body === null || Array.isArray(body)) return false;
+      const mints = (body as Record<string, unknown>).mints;
+      const selected = Array.isArray(mints) && mints.length === 0 ? {
+        ...contract,
+        fingerprint: Object.fromEntries(Object.entries(contract.fingerprint).filter(([path]) => !path.startsWith("mints[]."))),
+      } : contract;
+      return matchesResultContract(body, selected);
+    };
+  }
   if (contract.predicateId === "players.custom-avatar") {
     return (body): body is unknown => {
       if (typeof body !== "object" || body === null || Array.isArray(body)) return false;

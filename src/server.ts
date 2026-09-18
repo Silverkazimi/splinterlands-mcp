@@ -36,6 +36,7 @@ import { CARD_DETAILS_TTL_MS, COLLECTION_CACHE_TTL_MS, TtlCache } from "./http/c
 import { describeEndpoint, listEndpoints } from "./endpoint-knowledge.js";
 import { COLLECTION_PAGE_LIMIT, COLLECTION_TIMEOUT_MS, parseCardsCollection, type ProjectedCollection, type ProjectedCollectionCard } from "./cards-collection.js";
 import { z } from "zod";
+import { CARD_MINT_ENTRY_IDS, registerCardMints } from "./card-mints.js";
 
 const LAND_LIQUIDITY_POOLS_DESCRIPTION = "List the six liquidity-pool rows the upstream returns, as GET /land/liquidity/pools returns them. A successful response is {status, data}, where data is an array of pool objects. The wire types are intentionally mixed: resource_quantity, dec_quantity and total_shares are JSON strings, while resource_price and the resource and DEC volume fields are JSON numbers. This server returns every field exactly as received; it does not convert the string-valued decimals, and a wire-type change would be reported as a malformed response rather than converted silently. The six observed rows had ids 1, 34, 67, 68, 69 and 100 with symbols GRAIN, VOUCHER, WOOD, STONE, IRON and SPS. This tool reports the rows returned by the upstream and does not derive prices, volumes or shares.";
 const LAND_LIQUIDITY_POOL_BY_ID_DESCRIPTION = "Get one liquidity-pool object by id, as GET /land/liquidity/pools/{id} returns it. A real id returned a single object with a narrower field set than the list route, omitting the one-day and thirty-day volume fields. An unknown well-formed id returned HTTP 200 with data:null, while a malformed id returned HTTP 400; these are distinguishable upstream outcomes. The object fields retain the mixed wire types observed on the list route: resource_quantity, dec_quantity and total_shares are JSON strings, while prices are JSON numbers. This server returns the upstream response unchanged and does not turn data:null into an error or manufacture a pool object.";
@@ -116,6 +117,7 @@ export const TOOL_ENTRY_IDS = {
   ...VAPI_MARKET_ENTRY_IDS,
   ...RENTAL_ENTRY_IDS,
   ...COLLECTOR_ENTRY_IDS,
+  ...CARD_MINT_ENTRY_IDS,
   land_deed_by_plot: LAND_DEED_BY_PLOT_ENTRY_ID,
   land_deed_by_uid: LAND_DEED_BY_UID_ENTRY_ID,
   land_deeds_owned: LAND_DEEDS_OWNED_ENTRY_ID,
@@ -1820,6 +1822,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   registerDelegations(server, client);
   registerPowerCoreReads(server, client);
   registerCollector(server, client);
+  registerCardMints(server, client, now);
 
   return server;
 }

@@ -18,7 +18,7 @@ Each endpoint and parameter exposes the same five dimensions:
   captured-shape predicate, or an observation that explicitly records a
   captured shape. A merely non-empty declaration does not promote an
   unobserved response to measured shape.
-- `callable` comes from the exact catalogue entry IDs bound by the 169
+- `callable` comes from the exact catalogue entry IDs bound by the 172
   endpoint-calling registrations in `src/server.ts`. `owningTool` is only a
   catalogue label and is not callable evidence.
 - `proven-sufficient` comes only from a measured observation that says the
@@ -34,8 +34,8 @@ while the five dimensions are evidence. An `inertUpstream` value of `false` is
 the declaration default and is not a measurement, so it can appear beside an
 `observed-negative` value of `null`.
 
-The list summary reports 203 catalogued endpoints and 169 endpoint-calling
-tools. 169 catalogue entries are callable, leaving 34 catalogue entries
+The list summary reports 206 catalogued endpoints and 172 endpoint-calling
+tools. 172 catalogue entries are callable, leaving 34 catalogue entries
 uncovered. These include gated, non-functional, redundant, misleading,
 insufficiently observed, and oversized responses. The README's unsupported
 route tables record each route's dated classification and evidence. The two
@@ -101,3 +101,11 @@ primary route. See library/observations/plot-labels-2026-09-12.md.
 
 
 Collection color and sub_type are local join filters, like its local cursor and production-power threshold. They are not sent to /cards/collection. Collection execution may first fetch the full public /cards/get_details catalogue under the existing transport cap, cache only its projected join map, and then stream the collection. This two-source operation reports definition provenance separately and is limited to two distinct requests. Explicit include_plot_references permits one additional bounded account-scoped deed search, for a three-request ceiling; it adds verified display identities where resolved and retains unresolved labels as null. The independently callable cards_get_details tool retains its existing filtered-result policy.
+
+Card mint reads are three separate public routes. Mint history requires
+card_detail_id and foil, has a populated shape with an optional total_minted
+field, and does not use a success cache. Jackpot overview requires edition and
+is cached for 24 hours; gold-reward count remains a string. All list fields
+use the shared 100-row and 256 KiB bounds. The observed by_date mint-history
+form is documented in its catalogue note but is not exposed as a callable
+variant.

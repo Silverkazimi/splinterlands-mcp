@@ -220,6 +220,27 @@
   "api-cards-pack-data-wax.fixture.json": {
     "entryId": "api.cards.pack-data-wax"
   },
+  "api-cards-mint-history-card-detail-id-871-foil-2.fixture.json": {
+    "entryId": "api.cards.mint-history"
+  },
+  "api-cards-mint-history-card-detail-id-100-foil-0.fixture.json": {
+    "entryId": "api.cards.mint-history"
+  },
+  "api-cards-pack-jackpot-overview-edition-13.fixture.json": {
+    "entryId": "api.cards.pack-jackpot-overview"
+  },
+  "api-cards-pack-jackpot-overview-edition-15.fixture.json": {
+    "entryId": "api.cards.pack-jackpot-overview"
+  },
+  "api-cards-pack-jackpot-overview-edition-18.fixture.json": {
+    "entryId": "api.cards.pack-jackpot-overview"
+  },
+  "api-cards-pack-jackpot-overview-edition-19.fixture.json": {
+    "entryId": "api.cards.pack-jackpot-overview"
+  },
+  "api-cards-ca-gold-rewards.fixture.json": {
+    "entryId": "api.cards.ca-gold-rewards"
+  },
   "api-cards-skins.fixture.json": {
     "entryId": "api.cards.skins"
   },

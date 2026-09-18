@@ -41,7 +41,7 @@ it("validates a partial nightly recipe offline without printing account names", 
 }, 25_000);
 
 it("generates full templates with unresolved inputs that cannot accidentally be executed", () => {
-  for (const [mode, expected] of [["nightly", 169], ["fixtures", 239]] as const) {
+  for (const [mode, expected] of [["nightly", 172], ["fixtures", 246]] as const) {
     const child = spawnSync(process.execPath, ["--import", "tsx", "scripts/maintenance-template.ts", mode], {
       cwd: process.cwd(), encoding: "utf8", timeout: 20_000,
     });

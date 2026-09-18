@@ -1,0 +1,32 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00.000Z",
+    "fixtureSample": { "kind": "first", "limit": 5 },
+    "redaction": "Names are synthetic; free text and opaque strings are redacted. The upstream response had 31 rows; this fixture retains the first five complete rows."
+  },
+  "valueClasses": {
+    "body[0].count": { "valueClass": "numeric" },
+    "body[0].card_detail_id": { "valueClass": "id" },
+    "body[0].rarity": { "valueClass": "numeric" },
+    "body[1].count": { "valueClass": "numeric" },
+    "body[1].card_detail_id": { "valueClass": "id" },
+    "body[1].rarity": { "valueClass": "numeric" },
+    "body[2].count": { "valueClass": "numeric" },
+    "body[2].card_detail_id": { "valueClass": "id" },
+    "body[2].rarity": { "valueClass": "numeric" },
+    "body[3].count": { "valueClass": "numeric" },
+    "body[3].card_detail_id": { "valueClass": "id" },
+    "body[3].rarity": { "valueClass": "numeric" },
+    "body[4].count": { "valueClass": "numeric" },
+    "body[4].card_detail_id": { "valueClass": "id" },
+    "body[4].rarity": { "valueClass": "numeric" }
+  },
+  "body": [
+    { "count": "602", "card_detail_id": 873, "rarity": 2 },
+    { "count": "549", "card_detail_id": 874, "rarity": 2 },
+    { "count": "734", "card_detail_id": 875, "rarity": 3 },
+    { "count": "304", "card_detail_id": 876, "rarity": 4 },
+    { "count": "308", "card_detail_id": 877, "rarity": 4 }
+  ]
+}
