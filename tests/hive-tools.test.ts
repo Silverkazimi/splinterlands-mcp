@@ -103,7 +103,8 @@ describe("Hermes evidence tools", () => {
    const r = await c.callTool({ name: "list_endpoints", arguments: {} });
    expect(r.structuredContent).toMatchObject({ additionalReadTools: { hive_transaction: expect.any(String) } });
    const resources = await c.listResources();
-   expect(resources.resources).toHaveLength(6);
+   expect(resources.resources).toHaveLength(7);
+   expect(resources.resources.map((r) => r.uri)).toEqual(expect.arrayContaining(["splinterlands://land/rules/tax-and-trade", "splinterlands://hive/transaction-limits"]));
    const limits = await c.readResource({ uri: "splinterlands://hive/transaction-limits" });
    expect(JSON.parse((limits.contents[0] as { text: string }).text)).toMatchObject({ as_of: "2026-09-13", source_revision: expect.any(String) });
   });
