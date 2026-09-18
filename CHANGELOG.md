@@ -6,7 +6,7 @@ The initial release is being prepared. No release has been published from this w
 
 ### Documentation
 
-- Corrected the README release version and Node.js requirements, added a plain-language starting point, and recorded verified maintenance status.
+- Corrected the README release version and Node.js requirements, added a plain-language starting point with Codex explicitly listed, and recorded verified maintenance status.
 
 ### Added
 

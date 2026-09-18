@@ -2,7 +2,7 @@
 
 A read-only [Model Context Protocol](https://modelcontextprotocol.io) (MCP)
 server for [Splinterlands'](https://splinterlands.com) public API. It lets
-an MCP-capable assistant (Claude Desktop, Claude Code, and other MCP clients)
+an MCP-capable assistant (Codex, Claude Desktop, Claude Code, and other MCP clients)
 answer questions about Land, cards, and players by calling Splinterlands' own public endpoints.
 Version `1.0.0` is a release candidate awaiting final approval. Use a current Node.js 22 or 24 LTS patch release (minimum 22.13).
 
