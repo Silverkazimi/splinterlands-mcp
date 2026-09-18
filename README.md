@@ -9,7 +9,7 @@ transactions.
 The server is read-only. It never asks for your private keys and cannot sign
 transactions, spend funds, move cards, or change anything in your account.
 
-Version `1.0.0` is a release candidate awaiting final approval. It requires
+Version `1.0.0` requires
 a current Node.js 22 or 24 LTS patch release, with 22.13 as the minimum.
 
 ## Start here
@@ -415,7 +415,7 @@ about the account.
 
 ## Maintenance posture
 
-Nightly response checks, weekly specification comparisons and monthly fixture renewal are implemented. The four account-role secrets and complete request recipes have offline validation commands in the maintenance runbook. Hosted CI and bounded maintenance checks passed on the release candidate. Nightly response checks and monthly fixture renewal remain paused pending release approval; weekly specification checks remain enabled. The versioned release has not yet been published.
+Nightly response checks, weekly specification comparisons and monthly fixture renewal are implemented. The four account-role secrets and complete request recipes have offline validation commands in the maintenance runbook. Hosted CI and bounded nightly, weekly, and monthly maintenance checks were verified for 1.0.0. Workflow configuration and current run status are visible in the repository Actions tab.
 
 - Run npm run drift:check with approved MCP_DRIFT_INPUTS to compare bounded endpoint reads. Changes update endpoint-specific issues; two blocked endpoints stop the sweep and produce one runner-blocked issue.
 - Run npm run drift:spec to compare both official API specifications without GitHub writes. The hosted job prepares specification changes in a review PR, preserving verified runtime access rules.

@@ -1,8 +1,8 @@
 # Changelog
 
-## 1.0.0 - Release candidate
+## 1.0.0 - 2026-09-18
 
-The initial release is being prepared. No release has been published from this working tree.
+Initial GitHub release. npm registry publication is separate.
 
 ### Documentation
 
