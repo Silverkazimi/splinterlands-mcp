@@ -18,7 +18,7 @@ Each endpoint and parameter exposes the same five dimensions:
   captured-shape predicate, or an observation that explicitly records a
   captured shape. A merely non-empty declaration does not promote an
   unobserved response to measured shape.
-- `callable` comes from the exact catalogue entry IDs bound by the 154
+- `callable` comes from the exact catalogue entry IDs bound by the 157
   endpoint-calling registrations in `src/server.ts`. `owningTool` is only a
   catalogue label and is not callable evidence.
 - `proven-sufficient` comes only from a measured observation that says the
@@ -34,8 +34,8 @@ while the five dimensions are evidence. An `inertUpstream` value of `false` is
 the declaration default and is not a measurement, so it can appear beside an
 `observed-negative` value of `null`.
 
-The list summary reports 190 catalogued endpoints and 156 endpoint-calling
-tools. 156 catalogue entries are callable, leaving 34 catalogue entries
+The list summary reports 191 catalogued endpoints and 157 endpoint-calling
+tools. 157 catalogue entries are callable, leaving 34 catalogue entries
 uncovered. These include gated, non-functional, redundant, misleading,
 insufficiently observed, and oversized responses. The README's unsupported
 route tables record each route's dated classification and evidence. The two

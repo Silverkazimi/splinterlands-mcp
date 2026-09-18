@@ -20,6 +20,7 @@ import { RENTAL_ENTRY_IDS, registerRentals } from "./rentals.js";
 import { VAPI_MARKET_ENTRY_IDS, registerVapiMarket } from "./vapi-market.js";
 import { CONFLICT_PROPOSAL_ENTRY_IDS, registerConflictsProposals } from "./conflicts-proposals.js";
 import { GAME_METADATA_ENTRY_IDS, registerGameMetadata } from "./game-metadata.js";
+import { PRICES_ENTRY_IDS, registerPrices } from "./prices.js";
 import { GUILD_ENTRY_IDS, registerGuilds } from "./guilds.js";
 import { TOURNAMENT_ENTRY_IDS, registerTournaments } from "./tournaments.js";
 import { BATTLE_ENTRY_IDS, registerBattles } from "./battles.js";
@@ -108,6 +109,7 @@ export const TOOL_ENTRY_IDS = {
   ...TOURNAMENT_ENTRY_IDS,
   ...GUILD_ENTRY_IDS,
   ...GAME_METADATA_ENTRY_IDS,
+  ...PRICES_ENTRY_IDS,
   ...CONFLICT_PROPOSAL_ENTRY_IDS,
   ...VAPI_MARKET_ENTRY_IDS,
   ...RENTAL_ENTRY_IDS,
@@ -1808,6 +1810,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   registerTournaments(server, client);
   registerGuilds(server, client);
   registerGameMetadata(server, client, now);
+  registerPrices(server, client, now);
   registerConflictsProposals(server, client);
   registerVapiMarket(server, client);
   registerRentals(server, client);

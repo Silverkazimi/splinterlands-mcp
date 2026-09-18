@@ -1,6 +1,6 @@
 import { AUTH_TIER_TTL_MS, TtlCache } from "./cache.js";
 
-export type AllowedHost = "api.splinterlands.com" | "vapi.splinterlands.com";
+export type AllowedHost = "api.splinterlands.com" | "vapi.splinterlands.com" | "prices.splinterlands.com";
 
 export type OutcomeKind =
   | "upstream_malformed"
@@ -88,7 +88,7 @@ export class CircuitBreaker {
 
   tripAll(): void {
     const openUntil = this.now() + BREAKER_OPEN_MS;
-    for (const host of ["api.splinterlands.com", "vapi.splinterlands.com"] as const) {
+    for (const host of ["api.splinterlands.com", "vapi.splinterlands.com", "prices.splinterlands.com"] as const) {
       this.states.set(host, { consecutiveFailures: BREAKER_FAILURE_LIMIT, openUntil });
     }
   }
@@ -225,7 +225,7 @@ export function classifyResponse(options: ClassificationOptions): HttpResult<unk
     const signal = !isJson
       ? "a non-JSON body"
       : signals.hosts >= 2
-        ? "both API hosts returning 403"
+        ? "multiple approved API hosts returning 403"
         : signals.endpoints >= 2
           ? `${signals.endpoints} endpoints returning 403 within five minutes`
           : "a JSON error body from one endpoint";

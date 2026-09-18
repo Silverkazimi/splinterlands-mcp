@@ -1,0 +1,55 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-09-18T00:00:00Z",
+    "redaction": "Price values are public market data; the observed key set is open-ended."
+  },
+  "valueClasses": {
+    "body.dec": {
+      "valueClass": "numeric"
+    },
+    "body.etn": {
+      "valueClass": "numeric"
+    },
+    "body.glusd": {
+      "valueClass": "numeric"
+    },
+    "body.glx": {
+      "valueClass": "numeric"
+    },
+    "body.hbd": {
+      "valueClass": "numeric"
+    },
+    "body.hive": {
+      "valueClass": "numeric"
+    },
+    "body.sps": {
+      "valueClass": "numeric"
+    },
+    "body.swap.btc": {
+      "valueClass": "numeric"
+    },
+    "body.usdc": {
+      "valueClass": "numeric"
+    },
+    "body.voucher": {
+      "valueClass": "numeric"
+    },
+    "body.wax": {
+      "valueClass": "numeric"
+    }
+  },
+  "body": {
+    "hive": 0.0536241,
+    "hbd": 1,
+    "wax": 0.0052327,
+    "etn": 0.0010559,
+    "usdc": 0.999803,
+    "sps": 0.0039059,
+    "glusd": 0.0322549,
+    "glx": 0.0000479,
+    "dec": 0.000395,
+    "swap.btc": 82498.6153846,
+    "voucher": 0.0134292
+  }
+}

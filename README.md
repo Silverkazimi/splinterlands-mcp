@@ -89,7 +89,7 @@ results are cached, and their freshness is reported. Related reads can
 also happen at slightly different times, so they should not be treated
 as one perfectly synchronized view of the game.
 
-The reference below lists all 163 tools. For request budgets, exact
+The reference below lists all 164 tools. For request budgets, exact
 parameters, cache behavior, and recorded API quirks, see the
 [technical capability notes](library/capability-notes.md) and
 [safety boundaries](#what-it-is-and-what-it-will-never-do).
@@ -117,6 +117,7 @@ tools are local and make no upstream request.
 | `cards_lore` | `GET /cards/lore` |
 | `cards_pack_data_wax` | `GET /cards/pack_data_wax` |
 | `cards_skins` | `GET /cards/skins` |
+| `prices_current` | `GET /prices` |
 | `cards_trx_lookup` | `GET /cards/trx_lookup` |
 | `collector_stickers_tradeable` | `GET /collector/{player}/stickers/tradeable` |
 | `collector_config` | `GET /collector/config` |
@@ -294,7 +295,7 @@ counted by the first call.
   Splinterlands account credential, a Hive posting/active key, or any other
   secret. If you need an endpoint that requires login, this is the wrong
   tool for that endpoint — it will tell you so rather than pretend to work.
-- **Unsupported catalogue routes are excluded.** 34 of the 190 catalogued
+- **Unsupported catalogue routes are excluded.** 34 of the 191 catalogued
   routes are not advertised as tools because their dated probes did not
   produce a usable, distinct, or honestly-selected response. The first group contains three Land routes classified 2026-09-07
   and six market, rental and collector routes classified 2026-09-12:
@@ -392,7 +393,8 @@ claude mcp add splinterlands -- node "<checkout>/dist/index.js"
 
 The transport follows Splinterlands' [official API specification](https://api.splinterlands.com/)
 and [vapi specification](https://vapi.splinterlands.com/). These defaults
-apply process-wide, separately for each approved API host:
+apply process-wide, separately for each approved API host (`api.splinterlands.com`,
+`vapi.splinterlands.com`, and `prices.splinterlands.com`):
 
 | Control | Default |
 | --- | --- |
@@ -404,10 +406,10 @@ apply process-wide, separately for each approved API host:
 | Circuit breaker | 5 consecutive failures; open for 60 seconds |
 | Response cap | 2 MB, streamed |
 | Per-call budget | 1 logical upstream request; retries of that request are allowed |
-| Cache | In-memory only; settings use a one-hour success cache, card details a 24-hour metadata cache, collection pages a 60-second projected-page cache, and the auth tier a 15-minute cache |
-| Access changes | 401 is cached for 15 minutes; 403 stops traffic across both hosts for 60 seconds |
+| Cache | In-memory only; settings use a one-hour success cache, card details a 24-hour metadata cache, prices a five-minute success cache, collection pages a 60-second projected-page cache, and the auth tier a 15-minute cache |
+| Access changes | 401 is cached for 15 minutes; 403 stops traffic across all approved hosts for 60 seconds |
 
-Catalogue requests are HTTPS `GET`s to the two approved game hosts, with redirects refused and URL
+Catalogue requests are HTTPS `GET`s to the three approved Splinterlands hosts, with redirects refused and URL
 credentials rejected. The avatar route reads the `Location` header and never follows it. Responses include a trace ID and retrieval freshness.
 Empty, malformed, upstream-error, gated, blocked, and temporarily unavailable responses remain
 separate outcomes so a tool can explain what happened without making claims

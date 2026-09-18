@@ -2,11 +2,13 @@
 
 [Return to the README](../README.md). This reference preserves the detailed request limits and observed API behavior behind the introductory overview. Plain file paths below are relative to the repository root.
 
-**Version: 1.0.0.** 163 tools are registered (`src/server.ts`).
+**Version: 1.0.0.** 164 tools are registered (`src/server.ts`).
 66 call `vapi.splinterlands.com`: 40 Land routes covering deeds, projects,
 counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 90 call
 `api.splinterlands.com`: eight card tools, one item-metadata tool, and 30
-player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads. Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 190 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
+player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads.
+One tool calls `prices.splinterlands.com`: `prices_current` reads the public token-to-USD feed and uses a five-minute success cache because prices move.
+Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 191 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
 `library/endpoint-knowledge-tools.md` for the evidence model.
 
 A sixth offline resource, `splinterlands://hive/transaction-limits`, explains source-dated transaction limits and terminology. Three additional tools provide bounded Hive history, full transactions and combined game evidence; see [Hive transaction evidence](hive-transaction-evidence.md).
@@ -110,4 +112,3 @@ The tool requires either `player` or a place selector (`tract_id` or
 a project policy for honest scope reporting, not a requirement declared by the
 upstream specification. Each upstream result records whether the request used
 an explicit account or explicit geography; it never records an account value.
-

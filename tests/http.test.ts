@@ -20,6 +20,7 @@ import { HostRateLimiter } from "../src/http/ratelimit.js";
 
 const api: AllowedHost = "api.splinterlands.com";
 const vapi: AllowedHost = "vapi.splinterlands.com";
+const prices: AllowedHost = "prices.splinterlands.com";
 const path = createTestOnlyCataloguePath("/test");
 
 function jsonResponse(value: unknown, status = 200): Response {
@@ -321,7 +322,7 @@ describe("auth degradation", () => {
 
 describe("block classification", () => {
   /** Injection: return an HTML 403 and then a second endpoint 403 to expose auth misclassification or host-local breaking. */
-  it("classifies HTML 403 as blocked and trips both hosts", async () => {
+  it("classifies HTML 403 as blocked and trips all approved hosts", async () => {
     let calls = 0;
     const client = new SplinterlandsHttpClient({
       fetch: async () => {
@@ -340,9 +341,10 @@ describe("block classification", () => {
     expect(calls).toBe(1);
     expect(first.kind).toBe("upstream_blocked");
     expect(first.message.toLowerCase()).not.toContain("login");
-    expect(second.message).toContain("both API hosts");
+    expect(second.message).toContain("multiple approved API hosts");
     expect(breaker.canRequest(api)).toBe(false);
     expect(breaker.canRequest(vapi)).toBe(false);
+    expect(breaker.canRequest(prices)).toBe(false);
   });
 
   /** Injection: force isJson = true -> red; an HTML 403 on one endpoint is not an auth change. */

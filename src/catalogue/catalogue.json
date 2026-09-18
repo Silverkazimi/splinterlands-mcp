@@ -11084,6 +11084,96 @@
     }
   },
   {
+    "entryId": "prices.prices",
+    "host": "prices",
+    "method": "GET",
+    "pathTemplate": "/prices",
+    "pathParams": [],
+    "queryParams": [],
+    "tier": null,
+    "declared": {
+      "authTier": null,
+      "pagination": null
+    },
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "dec": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "etn": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "glusd": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "glx": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "hbd": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "hive": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "sps": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "swap.btc": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "usdc": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "voucher": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "wax": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
+      },
+      "observedKeyPaths": [
+        "dec",
+        "etn",
+        "glusd",
+        "glx",
+        "hbd",
+        "hive",
+        "sps",
+        "swap.btc",
+        "usdc",
+        "voucher",
+        "wax"
+      ],
+      "requiredKeyPaths": []
+    },
+    "owningTool": "prices_current",
+    "notes": "Measured live 2026-09-18: GET /prices returned HTTP 200 with a 184-byte bare object of token-to-USD numeric values. The observed key set is open-ended and may change upstream. Successful responses are cached for five minutes and retain the route and fetch time in provenance.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
     "entryId": "vapi.collector.binder",
     "host": "vapi",
     "method": "GET",
