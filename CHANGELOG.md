@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 - 2026-09-18
+
+### Added
+
+- Added officially sourced Land Aura and Research production rates plus harvest-tax, tax-claim, grain-cost and Trade Hub fee rule data.
+
 ## 1.0.1 - 2026-09-18
 
 ### Fixed

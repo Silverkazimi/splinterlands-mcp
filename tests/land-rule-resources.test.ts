@@ -3,9 +3,11 @@ import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { describe, expect, it } from "vitest";
 import { createServer } from "../src/server.js";
 import terrain from "../src/data/land-terrain-rules.json" with { type: "json" };
+import productionRules from "../src/data/land-production-rules.json" with { type: "json" };
+import taxAndTradeRules from "../src/data/land-tax-and-trade-rules.json" with { type: "json" };
 
 describe("public Land rule resources", () => {
-  it("discovers and reads all five resources without any upstream call", async () => {
+  it("discovers and reads all six resources without any upstream call", async () => {
     let requests = 0;
     const server = createServer({ fetch: async () => { requests += 1; throw new Error("Rules must be offline"); } });
     const client = new Client({ name: "land-rules-test", version: "0.0.0" });
@@ -14,8 +16,11 @@ describe("public Land rule resources", () => {
     try {
       const listed = await client.listResources();
       expect(listed.resources.filter((r) => r.uri.startsWith("splinterlands://land/")).map((r) => r.uri).sort()).toEqual([
-        "splinterlands://land/rules/cap", "splinterlands://land/rules/card-abilities", "splinterlands://land/rules/production", "splinterlands://land/rules/screen-fields", "splinterlands://land/rules/terrain",
+        "splinterlands://land/rules/cap", "splinterlands://land/rules/card-abilities", "splinterlands://land/rules/production", "splinterlands://land/rules/screen-fields", "splinterlands://land/rules/tax-and-trade", "splinterlands://land/rules/terrain",
       ]);
+      expect(listed.resources).toEqual(expect.arrayContaining([
+        expect.objectContaining({ name: "demeter-land-tax-and-trade", uri: "splinterlands://land/rules/tax-and-trade", title: "Land harvest tax and Trade Hub fees" }),
+      ]));
       const read = async (suffix: string) => {
         const result = await client.readResource({ uri: "splinterlands://land/rules/" + suffix });
         expect(result.contents).toHaveLength(1);
@@ -50,11 +55,30 @@ describe("public Land rule resources", () => {
       const table = await read("terrain");
       expect(table.modifiers).toEqual(terrain.modifiers);
       const production = await read("production");
-      expect(production.resourceOutputPerProductionPointPerHour).toEqual({ GRAIN: 0.02, WOOD: 0.005, STONE: 0.002, IRON: 0.0005 });
+      expect(production.resourceOutputPerProductionPointPerHour).toEqual({ GRAIN: 0.02, WOOD: 0.005, STONE: 0.002, IRON: 0.0005, AURA: 0.0005, RESEARCH: 0.0001 });
+      expect(productionRules.resourceOutputPerProductionPointPerHour).toMatchObject({ AURA: 0.0005, RESEARCH: 0.0001 });
       expect(production.grainConsumptionPerBaseProductionPointPerHour).toBe(0.01);
       const cap = await read("cap");
       expect(cap).toMatchObject({ worksiteBaseProductionCap: 100000, runiExcludedFromCap: true, appliesBeforeBoosts: true });
       expect(cap.buildingCap).toMatch(/lower/);
+      const taxAndTrade = await read("tax-and-trade");
+      expect(taxAndTrade).toMatchObject({
+        harvestTaxRate: 0.1,
+        taxClaimShare: { castleShareOfRegionTax: 0.2, keepShareOfTractTax: 0.5 },
+        taxClaimGrainCost: { KEEP: 1000, CASTLE: 10000 },
+        tradeHubSwapFee: 0.1,
+        tradeHubSwapFeeSplit: { toLiquidityProviders: 0.05, burnt: 0.05 },
+        crossRegionSameResourceSwapFee: 0.1,
+      });
+      expect(taxAndTrade.scope).toMatch(/shares of the applicable tax pool, not a split of the 10% rate/);
+      expect(taxAndTrade.scope).toMatch(/fixed costs per claim of accrued tax, not hourly upkeep/);
+      expect(taxAndTrade.scope).toMatch(/no per-hop or multi-hop fee is documented officially and none is claimed/);
+      expect(taxAndTradeRules).toEqual(taxAndTrade);
+      const sourceUrls = (value: unknown): string[] => value && typeof value === "object"
+        ? Object.values(value).flatMap(sourceUrls)
+        : typeof value === "string" ? [value] : [];
+      expect(sourceUrls(productionRules.sources).every((url) => url.startsWith("https://support.splinterlands.com/"))).toBe(true);
+      expect(sourceUrls(taxAndTradeRules.sources).every((url) => url.startsWith("https://support.splinterlands.com/"))).toBe(true);
       await expect(client.readResource({ uri: "splinterlands://land/rules/unverified" })).rejects.toThrow();
       expect(requests).toBe(0);
     } finally { await client.close(); await server.close(); }
