@@ -13,7 +13,7 @@ export class ScopedMcpServer extends McpServer {
     const invoke = callback as (...args: unknown[]) => CallToolResult | Promise<CallToolResult>;
     const scoped = (async (...args: unknown[]) => {
       try {
-        return await withCallScope(name, async () => plotKey ? callPlotTool(name, this.plotClient!, args, invoke) : invoke(...args), name === "land_lineup_snapshot" ? 10 : name === "cards_collection" && (args[0] as {include_plot_references?:boolean})?.include_plot_references === true ? 3 : plotKey || name === "cards_collection" || name === "transaction_inspect" ? 2 : 1);
+        return await withCallScope(name, async () => plotKey ? callPlotTool(name, this.plotClient!, args, invoke) : invoke(...args), name === "land_lineup_snapshot" ? 10 : name === "cards_collection" && (args[0] as {include_plot_references?:boolean})?.include_plot_references === true ? 3 : plotKey || name === "cards_collection" || name === "transaction_inspect" || name === "player_skins" ? 2 : 1);
       } catch (error) {
         if (!(error instanceof RefusalWouldFanOutError)) throw error;
         return {

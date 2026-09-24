@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.4 - 2026-09-24
+
+### Added
+
+- Included the public card name and an explicit name-lookup status beside each owned skin's existing `active` flag.
+- Added optional local `skin` and `active` filters to `player_skins`, with continuation positions over the matching rows.
+
+### Fixed
+
+- Accepted documented four-field `fragment_roll` objects in reward-action rows while retaining numeric field checks.
+- Returned complete `player_skins` inventories when they fit the 256 KiB bound, with local `start_index` continuation for larger results.
+
 ## 1.0.3 - 2026-09-18
 
 ### Added
