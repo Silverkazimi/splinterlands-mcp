@@ -340,6 +340,25 @@ describe("captured land result contracts", () => {
     expect(predicate(stringCapacity)).toBe(false);
   });
 
+  it("accepts a reward-action row with the documented four-field fragment roll", () => {
+    const predicate = predicateFor(getCatalogueEntry("vapi.land.resources.rewardactions").resultContract);
+    const row = {
+      ...rewardactions.data[0]!,
+      fragment_roll: {
+        fragment_type: "TOTEMFC",
+        fragment_found: true,
+        fragment_chance: 0.00464,
+        fragment_roll: 0.73125,
+      },
+    };
+    const singleRow = { status: rewardactions.status, data: [row] };
+    expect(predicate(singleRow)).toBe(true);
+
+    const malformedAmount = structuredClone(singleRow) as { data: Array<Record<string, unknown>> };
+    malformedAmount.data[0]!.amount_received = "17017.709";
+    expect(predicate(malformedAmount)).toBe(false);
+  });
+
   it("contracts reward actions, their count, and both transaction-history row sets", () => {
     const rewardactionsContract = getCatalogueEntry("vapi.land.resources.rewardactions").resultContract;
     const rewardactionsPredicate = predicateFor(rewardactionsContract);

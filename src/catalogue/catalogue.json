@@ -19670,10 +19670,6 @@
         "data[].fragment_roll": {
           "type": "object",
           "valueClass": "opaque"
-        },
-        "data[].fragment_roll.deed_uid": {
-          "type": "string",
-          "valueClass": "id"
         }
       },
       "observedKeyPaths": [

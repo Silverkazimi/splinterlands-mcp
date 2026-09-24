@@ -1806,7 +1806,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
     },
   );
 
-  registerPlayerCompletion(server, client);
+  registerPlayerCompletion(server, client, loadCardDefinitions);
   registerInventory(server, client);
   registerRankings(server, client);
   registerDraws(server, client, now);

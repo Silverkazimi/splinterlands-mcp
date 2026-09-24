@@ -15,6 +15,9 @@ export type ReadToolDefinition = {
   cacheTtlMs?: number;
   requiredAny?: readonly string[];
   exclusive?: readonly (readonly string[])[];
+  localContinuation?: { parameter: string };
+  localSkinFilters?: boolean;
+  enrichRows?: (rows: unknown[]) => Promise<unknown[]>;
 };
 
 const MAX_ROWS = 100;
@@ -30,13 +33,24 @@ export function registerReadTools(server: McpServer, client: SplinterlandsHttpCl
       if (!(key in base.shape)) throw new Error("Unknown fixed selector " + key);
       return [key, z.literal(value).default(value)];
     }));
-    const input = base.extend(literals);
+    const localShape = {
+      ...(definition.localContinuation ? { [definition.localContinuation.parameter]: z.number().int().nonnegative().default(0) } : {}),
+      ...(definition.localSkinFilters ? { skin: z.string().min(1).optional(), active: z.boolean().optional() } : {}),
+    };
+    if (Object.keys(localShape).some((key) => key in base.shape)) throw new Error("Local continuation parameter conflicts with upstream selector");
+    const input = base.extend({ ...literals, ...localShape });
     const schema = input.required(Object.fromEntries((definition.required ?? []).map((key) => {
       if (!(key in input.shape)) throw new Error(`Unknown required selector ${key} on ${definition.entryId}`);
       return [key, true as const];
     })));
+    const rowLimitDescription = definition.localContinuation
+      ? `The ${definition.listField ?? "array response"} is limited to complete rows within 256 KiB. Local filters run before pagination. Use ${definition.localContinuation.parameter} from nextPosition in metadata to continue the same filtered query; each invocation fetches the current inventory.`
+      : `${definition.listField ? `The ${definition.listField} list` : "Array responses"} are locally limited to 100 rows and 256 KiB, with truncation reported in text and metadata.`;
+    const requestDescription = definition.enrichRows
+      ? "Fetches the inventory and looks up public card names through the shared 24-hour definition cache (one additional GET on a cold cache)."
+      : definition.cacheTtlMs ? "Uses a bounded success cache keyed by exact supplied query, otherwise makes one logical GET request" : "Makes one logical GET request";
     server.registerTool(definition.toolName, {
-      description: `${definition.description} ${definition.cacheTtlMs ? "Uses a bounded success cache keyed by exact supplied query, otherwise makes one logical GET request" : "Makes one logical GET request"} and does not auto-fetch continuation pages. Required inputs reflect tool policy as well as measured upstream requirements. Other declared filters are forwarded as supplied; their effectiveness is not implied by the schema. ${definition.listField ? `The ${definition.listField} list` : "Array responses"} are locally limited to 100 rows and 256 KiB, with truncation reported in text and metadata. Oversized records are refused without partial fields.`,
+      description: `${definition.description} ${requestDescription} Does not auto-fetch continuation pages. Required inputs reflect tool policy as well as measured upstream requirements. Other declared filters are forwarded as supplied; their effectiveness is not implied by the schema. ${rowLimitDescription} Oversized records are refused without partial fields.`,
       inputSchema: schema,
     }, async (params) => {
       const parsed = schema.parse(params);
@@ -50,8 +64,14 @@ export function registerReadTools(server: McpServer, client: SplinterlandsHttpCl
         structuredContent: { kind: "invalid_input" },
       };
 
-      const bound = bindRequest(definition.entryId, parsed);
-      const key = JSON.stringify([definition.entryId, Object.entries(parsed).sort(([a], [b]) => a.localeCompare(b))]);
+      const continuationPosition = definition.localContinuation
+        ? parsed[definition.localContinuation.parameter] as number
+        : 0;
+      const upstreamParams = { ...parsed };
+      if (definition.localContinuation) delete upstreamParams[definition.localContinuation.parameter];
+      if (definition.localSkinFilters) { delete upstreamParams.skin; delete upstreamParams.active; }
+      const bound = bindRequest(definition.entryId, upstreamParams);
+      const key = JSON.stringify([definition.entryId, Object.entries(upstreamParams).sort(([a], [b]) => a.localeCompare(b))]);
       const cached = definition.cacheTtlMs ? cache.get(key) : undefined;
       let result: HttpResult<unknown>;
       if (cached && cached.expiresAt > now()) {
@@ -88,23 +108,50 @@ export function registerReadTools(server: McpServer, client: SplinterlandsHttpCl
         if (bytes(body) > MAX_BYTES) return oversized();
         return { content: [{ type: "text" as const, text: JSON.stringify(body) }], structuredContent: body, _meta: { provenance } };
       }
-      const rows = sourceRows.slice(0, MAX_ROWS);
-      const projected = () => array ? { data: rows } : definition.listEnvelope
+      const filteredRows = definition.localSkinFilters
+        ? sourceRows.filter((value) => {
+          const row = value as Record<string, unknown>;
+          return (parsed.skin === undefined || row.skin === parsed.skin)
+            && (parsed.active === undefined || row.active === parsed.active);
+        }) : sourceRows;
+      const sourcePosition = definition.localContinuation ? continuationPosition : 0;
+      const selectedRows = filteredRows.slice(sourcePosition);
+      const availableRows = definition.enrichRows ? await definition.enrichRows(selectedRows) : selectedRows;
+      if (availableRows.length !== selectedRows.length) throw new Error("Row enrichment changed continuation positions.");
+      const maxRows = definition.localContinuation ? availableRows.length : Math.min(availableRows.length, MAX_ROWS);
+      const projected = (rows: unknown[]) => array ? { data: rows } : definition.listEnvelope
         ? { ...body, [definition.listEnvelope]: { ...container, [definition.listField!]: rows } }
         : { ...body, [definition.listField!]: rows };
-      while (rows.length > 0 && bytes(projected()) > MAX_BYTES) rows.pop();
-      if (bytes(projected()) > MAX_BYTES || (rows.length === 0 && sourceRows.length > 0)) return oversized();
-      const truncated = rows.length < sourceRows.length;
-      const projectedText = JSON.stringify(array ? rows : projected());
+      const fits = (count: number) => bytes(projected(availableRows.slice(0, count))) <= MAX_BYTES;
+      if (!fits(0)) return oversized();
+      let fittingRows = 0;
+      let nextOutsideBound = maxRows + 1;
+      while (nextOutsideBound - fittingRows > 1) {
+        const candidate = Math.floor((fittingRows + nextOutsideBound) / 2);
+        if (fits(candidate)) fittingRows = candidate;
+        else nextOutsideBound = candidate;
+      }
+      const rows = availableRows.slice(0, fittingRows);
+      if (rows.length === 0 && availableRows.length > 0) return oversized();
+      const nextPosition = sourcePosition + rows.length;
+      const truncated = definition.localContinuation
+        ? nextPosition < filteredRows.length
+        : rows.length < sourceRows.length;
+      const projectedText = JSON.stringify(array ? rows : projected(rows));
+      const resultLimit = definition.localContinuation
+        ? { truncated, returnedRows: rows.length, upstreamRows: sourceRows.length, filteredRows: filteredRows.length, startPosition: sourcePosition, nextPosition: truncated ? nextPosition : null }
+        : { truncated, returnedRows: rows.length, upstreamRows: sourceRows.length };
       return {
         content: truncated
           ? [
-            { type: "text" as const, text: `This response was locally truncated to ${rows.length} of ${sourceRows.length} upstream rows. No continuation was fetched; this is not a complete result. Other upstream fields are retained unchanged.` },
+            { type: "text" as const, text: definition.localContinuation
+              ? `This response contains rows ${sourcePosition} through ${nextPosition - 1} of ${filteredRows.length} matching rows (${sourceRows.length} upstream). Continue with ${definition.localContinuation.parameter}=${nextPosition}; no continuation page was auto-fetched.`
+              : `This response was locally truncated to ${rows.length} of ${sourceRows.length} upstream rows. No continuation was fetched; this is not a complete result. Other upstream fields are retained unchanged.` },
             { type: "text" as const, text: projectedText },
           ]
           : [{ type: "text" as const, text: projectedText }],
-        structuredContent: projected(),
-        _meta: { provenance, resultLimit: { truncated, returnedRows: rows.length, upstreamRows: sourceRows.length } },
+        structuredContent: projected(rows),
+        _meta: { provenance, resultLimit },
       };
     });
   }

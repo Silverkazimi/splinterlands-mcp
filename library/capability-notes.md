@@ -2,7 +2,7 @@
 
 [Return to the README](../README.md). This reference preserves the detailed request limits and observed API behavior behind the introductory overview. Plain file paths below are relative to the repository root.
 
-**Version: 1.0.3.** 179 tools are registered (`src/server.ts` and its registration modules).
+**Version: 1.0.4.** 179 tools are registered (`src/server.ts` and its registration modules).
 66 call `vapi.splinterlands.com`: 40 Land routes covering deeds, projects,
 counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 105 call
 `api.splinterlands.com`: eleven card tools, one item-metadata tool, and 30
@@ -60,10 +60,23 @@ selector. `player_balances` accepts `players` and optional `token_type`;
 text incorrectly asking for `username`. `player_profile` uses `name`, and
 `player_recent_teams` uses `player`.
 
-The fourteen additional player tools make one logical GET each and do not
-auto-fetch continuation pages. Array results are locally bounded to 100 rows
-and 256 KiB, with truncation stated in text and metadata. Oversized object
-responses or single rows are refused without returning partial records.
+The additional player tools do not auto-fetch continuation pages. Most make
+one logical GET and bound array results to 100 rows and 256 KiB, with truncation
+stated in text and metadata. `player_skins` can return all complete rows within
+256 KiB; larger results accept local `start_index` continuation and report
+`nextPosition` in metadata. Optional exact-name `skin` and boolean `active`
+selectors filter the one player's rows locally before continuation; they are not
+sent to the game API. `filteredRows` reports matches and `upstreamRows` reports
+the full inventory count. Keep the same filters on subsequent `start_index` calls.
+Each skin row retains its upstream `active` value
+and adds `card_name` from the public card definition matching `card_detail_id`.
+`card_name_status` distinguishes `known`, `definition_missing`, and
+`definitions_unavailable`; a failed lookup does not hide owned skins. The public
+definition index is shared with card collection tools and cached for 24 hours.
+An uncached skin call can make one additional public definitions GET with no
+player identifier; a warm call reuses the index. Skin names and active flags
+can be grouped or filtered locally after reading the complete inventory. Oversized
+object responses or single rows are refused without returning partial records.
 `player_lp_claim_history` repeated the same rows with `offset=1`;
 `player_reward_delegation_history` returned an empty array with that offset.
 Neither behaviour establishes a working next page. The recent-teams tool
