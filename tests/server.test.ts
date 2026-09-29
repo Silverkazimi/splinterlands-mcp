@@ -1,4 +1,5 @@
 import { SCENARIO_TOOL_ROUTES } from "../src/land-scenario-snapshot.js";
+import { PLOT_SNAPSHOT_TOOL_ROUTE } from "../src/land-plot-snapshot.js";
 import { HIVE_TOOL_ROUTES } from "../src/hive-tools.js";
 import { PLOT_TOOL_KEYS } from "../src/plot-tool-adapter.js";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
@@ -121,7 +122,7 @@ describe("land deed MCP protocol", () => {
 
     const result = await protocol.listTools();
 
-    expect(result.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 3 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length);
+    expect(result.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 3 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length + Object.keys(PLOT_SNAPSHOT_TOOL_ROUTE).length);
     expect(result.tools).toEqual(expect.arrayContaining([
       expect.objectContaining({
         name: "land_deed_by_plot",
@@ -225,7 +226,7 @@ describe("land deed MCP protocol", () => {
       expect.objectContaining({ name: "describe_endpoint" }),
     ]));
 
-    const endpointTools = result.tools.filter((tool) => tool.name !== "list_endpoints" && tool.name !== "describe_endpoint" && tool.name !== "land_lineup_estimate" && !HIVE_TOOL_ROUTES[tool.name] && !SCENARIO_TOOL_ROUTES[tool.name]);
+    const endpointTools = result.tools.filter((tool) => tool.name !== "list_endpoints" && tool.name !== "describe_endpoint" && tool.name !== "land_lineup_estimate" && !HIVE_TOOL_ROUTES[tool.name] && !SCENARIO_TOOL_ROUTES[tool.name] && tool.name !== "land_plot_snapshot");
     expect(Object.keys(TOOL_ENTRY_IDS).sort()).toEqual(endpointTools.map((tool) => tool.name).sort());
     for (const tool of endpointTools) {
       const toolName = tool.name as keyof typeof TOOL_ENTRY_IDS;
@@ -718,7 +719,7 @@ describe("land deed MCP protocol", () => {
       },
     });
     expect(result.structuredContent).not.toHaveProperty("provenance");
-    expect(JSON.stringify(result)).not.toContain("__synthetic_player__");
+    expect(result.structuredContent).toHaveProperty("data.player", "__synthetic_player__");
   });
 
   it("F1 fails before Phase B and passes after the nullable fix", async () => {

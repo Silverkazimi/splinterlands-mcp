@@ -37,6 +37,14 @@ export function summarizeOperation(op: [string, Record<string, unknown>], index:
   const cards = record(parsed?.value)?.cards;
   const recognized = type === "custom_json" && payload.id === "sm_gift_cards";
   const validCards = recognized && Array.isArray(cards) && cards.every((c) => typeof c === "string");
+  const marketId = type === "custom_json" ? payload.id : null;
+  const marketItems = record(parsed?.value)?.items;
+  const purchaseItems = marketId === "sm_marketplace_purchase" && Array.isArray(marketItems)
+    && marketItems.every((item) => Number.isSafeInteger(record(item)?.listingItemId) && Number(record(item)?.listingItemId) > 0)
+    ? marketItems as Array<Record<string, unknown>> : null;
+  const listedItems = marketId === "sm_marketplace_list" && Array.isArray(marketItems)
+    && marketItems.every((item) => typeof record(item)?.itemId === "string" && String(record(item)?.itemId).length > 0)
+    ? marketItems as Array<Record<string, unknown>> : null;
   return {
     index, type, custom_json_id: type === "custom_json" ? payload.id ?? null : null,
     required_auths: payload.required_auths ?? null, required_posting_auths: payload.required_posting_auths ?? null,
@@ -45,6 +53,10 @@ export function summarizeOperation(op: [string, Record<string, unknown>], index:
     item_count: validCards ? cards.length : null,
     unique_item_count: validCards ? new Set(cards).size : null,
     item_ids: validCards ? cards : null,
+    marketplace_schema: purchaseItems ? "sm_marketplace_purchase.items[].listingItemId" : listedItems ? "sm_marketplace_list.items[].itemId" : null,
+    marketplace_entry_count: purchaseItems?.length ?? listedItems?.length ?? null,
+    listing_item_ids: purchaseItems?.map((item) => item.listingItemId) ?? null,
+    listed_item_ids: listedItems?.map((item) => item.itemId) ?? null,
   };
 }
 function output(body: Record<string, unknown>, isError = false) {

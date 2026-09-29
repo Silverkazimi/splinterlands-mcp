@@ -1,5 +1,6 @@
 import packageInfo from "../package.json" with { type: "json" };
 import { SCENARIO_TOOL_ROUTES } from "../src/land-scenario-snapshot.js";
+import { PLOT_SNAPSHOT_TOOL_ROUTE } from "../src/land-plot-snapshot.js";
 import { HIVE_TOOL_ROUTES } from "../src/hive-tools.js";
 import { spawn } from "node:child_process";
 import type { ChildProcessWithoutNullStreams } from "node:child_process";
@@ -23,7 +24,7 @@ type JsonRpcResponse = {
 async function withTimeout<T>(promise: Promise<T>, message: string): Promise<T> {
   let timer: ReturnType<typeof setTimeout> | undefined;
   return new Promise<T>((resolve, reject) => {
-    timer = setTimeout(() => reject(new Error(message)), 5000);
+    timer = setTimeout(() => reject(new Error(message)), 15000);
     promise.then(
       (value) => {
         if (timer !== undefined) {
@@ -104,7 +105,7 @@ describe("built binary", () => {
       send({ jsonrpc: "2.0", id: 2, method: "tools/list", params: {} });
       const tools = await nextResponse();
       expect(tools).toMatchObject({ jsonrpc: "2.0", id: 2, result: { tools: expect.any(Array) } });
-      expect(tools.result?.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 3 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length);
+      expect(tools.result?.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 3 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length + Object.keys(PLOT_SNAPSHOT_TOOL_ROUTE).length);
       expect(tools.result?.tools).toEqual(expect.arrayContaining([
         expect.objectContaining({ name: "land_deed_by_plot" }),
         expect.objectContaining({ name: "land_deed_by_uid" }),

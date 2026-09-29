@@ -2,6 +2,8 @@ import packageInfo from "../package.json" with { type: "json" };
 import { createAvatarRenderer, AvatarArtworkError } from "./avatar/artwork.js";
 import { collectionPlotReferences } from "./collection-plot-references.js";
 import { registerScenarioSnapshot, SCENARIO_TOOL_ROUTES } from "./land-scenario-snapshot.js";
+import { registerLandPlotSnapshot, PLOT_SNAPSHOT_TOOL_ROUTE } from "./land-plot-snapshot.js";
+import { registerV105PublicReads, V105_PUBLIC_READ_ENTRY_IDS } from "./v1-0-5-public-reads.js";
 import { POWER_CORE_ENTRY_IDS, registerPowerCoreReads } from "./power-core.js";
 import { DELEGATION_ENTRY_IDS, registerDelegations } from "./delegations.js";
 import { INVENTORY_ENTRY_IDS, registerInventory } from "./player-inventory.js";
@@ -118,6 +120,7 @@ export const TOOL_ENTRY_IDS = {
   ...RENTAL_ENTRY_IDS,
   ...COLLECTOR_ENTRY_IDS,
   ...CARD_MINT_ENTRY_IDS,
+  ...V105_PUBLIC_READ_ENTRY_IDS,
   land_deed_by_plot: LAND_DEED_BY_PLOT_ENTRY_ID,
   land_deed_by_uid: LAND_DEED_BY_UID_ENTRY_ID,
   land_deeds_owned: LAND_DEEDS_OWNED_ENTRY_ID,
@@ -188,7 +191,7 @@ const SEARCH_SCOPE_REFUSAL_TEXT = "Search requires a scope; none was supplied. P
 const LAND_RESOURCES_OWNED_SCOPE_REFUSAL_TEXT = "This tool requires both a player and a resource. The upstream returns data:null at HTTP 200 when either is missing, so this tool refuses a partly scoped call rather than return that response as though it described an empty holding.";
 const LAND_RESOURCES_RICHLIST_SCOPE_REFUSAL_TEXT = "This tool requires both a region and a resource. The upstream returned HTTP 400 when either was omitted, so this tool refuses a partly scoped call before making the request.";
 const LAND_RESOURCES_LEADERBOARDS_SCOPE_REFUSAL_TEXT = "This tool requires a resource and either a region or a territory. The upstream call without region or territory was measured to hang without an HTTP response, so this tool refuses that call before making the request.";
-const LAND_RESOURCES_BALANCES_HISTORY_DESCRIPTION = "List the resource-balance history rows the upstream returns for one account and optional dates, as GET /land/resources/balances/history/{player} returns them. The player is a path segment on this route, not a query parameter. A successful response is {status, data}, where data is an array of rows carrying id, region_number, player, amount, end_balance, operation_id, resource_id, trx_id, created_date, balance_history and counterparty. The numeric fields are JSON numbers, created_date is a timestamp string, balance_history is an array and counterparty is a string; this server returns these fields unchanged and does not convert, round, total or compare them. Both YYYY-MM-DD and full ISO-8601 timestamps were accepted for startDate and endDate and produced identical results for the same calendar range. A malformed date returned HTTP 500, while a far-past date range returned a successful empty array, so this tool does not describe malformed dates as empty or unfiltered results. An unknown player returned HTTP 200 with an empty array; an empty result therefore does not establish that the account exists or does not exist. The default response contained 100 newest rows. limit=1000 and limit=500 returned HTTP 400; limit=3 with offset=0 returned three rows; limit=3 with offset=1, offset=2 and offset=3 returned HTTP 200 with empty arrays. No offset value tried reached rows beyond the newest 100. This tool reports the rows returned by the upstream and nothing else.";
+const LAND_RESOURCES_BALANCES_HISTORY_DESCRIPTION = "List the resource-balance history rows the upstream returns for one account and optional dates, as GET /land/resources/balances/history/{player} returns them. The player is a path segment on this route, not a query parameter. A successful response is {status, data}, where data is an array of rows carrying id, region_number, player, amount, end_balance, operation_id, resource_id, trx_id, created_date, balance_history and counterparty. The numeric fields are JSON numbers, created_date is a timestamp string, balance_history is an array and counterparty is a string; a fresh 2026-09-29 row contained nested token legs with token, amount, type, counterparty and per-leg trx_id. This server returns these fields unchanged and does not convert, round, total or compare them. Both YYYY-MM-DD and full ISO-8601 timestamps were accepted for startDate and endDate and produced identical results for the same calendar range. A malformed date returned HTTP 500, while a far-past date range returned a successful empty array, so this tool does not describe malformed dates as empty or unfiltered results. An unknown player returned HTTP 200 with an empty array; an empty result therefore does not establish that the account exists or does not exist. The default response contained 100 newest rows. limit=1000 and limit=500 returned HTTP 400; limit=3 with offset=0 returned three rows; limit=3 with offset=1, offset=2 and offset=3 returned HTTP 200 with empty arrays. No offset value tried reached rows beyond the newest 100. This tool reports the rows returned by the upstream and nothing else.";
 const LAND_RESOURCES_BALANCES_HISTORY_COUNT_DESCRIPTION = "Get the resource-balance history count the upstream reports for one account and optional dates, as GET /land/resources/balances/history/{player}/count returns it. The player is a path segment on this route, not a query parameter. A successful response is {status, data}, where data is an object carrying count, a JSON number returned unchanged; this server does not convert, round or derive it. The measured count was 721. In the paired list probes, the default returned 100 newest rows, limit=3&offset=0 returned three rows, limit=3&offset=1, limit=3&offset=2 and limit=3&offset=3 returned empty arrays, and limit=500 and limit=1000 returned HTTP 400; those tried list parameters did not expose rows beyond the 100-row default, leaving 621 rows present in the count but absent from those list responses. The count and the list do not contradict each other: the count reports more rows than those responses contain. Whether the count covers exactly what the list would return was not verified, so this tool does not assert that relationship. A far-past date range returned count 0, matching the list route's empty result for the same range, and a malformed date returned HTTP 500. An unknown player returned count 0; that response does not establish that the account exists or does not exist. This tool reports the count returned by the upstream and nothing else.";
 const LAND_RESOURCES_TITLES_DESCRIPTION = "List the public land-title rows the upstream returns for one player, as GET /land/resources/titles?player= returns them. The player is a query parameter. A successful response is {status, data}, where data is an array of rows carrying title, player and created_date; title and player are strings and created_date is a timestamp string, and this server returns them unchanged. Omitting player returned HTTP 400. An unknown player returned HTTP 200 with data:[], an honest empty result. This route is well-behaved: a missing player is rejected with HTTP 400 and an unknown player gives an empty array. This tool reports the title rows returned by the upstream and nothing else.";
 const LAND_RESOURCES_TITLES_ASSIGNED_DESCRIPTION = "List the public title-assignment rows the upstream returns for one title, as GET /land/resources/titles/assigned?title= returns them. The title is a query parameter. A successful response is {status, data}, where data is an array of rows carrying title, player, created_date, avatar_id, league and modern_league. The title, player and created_date fields are strings or a timestamp string, and avatar_id, league and modern_league are JSON numbers; this server returns them unchanged. Warden and warden both succeeded. WARDEN returned HTTP 500, the same response as a nonexistent title and as a missing title parameter. A 500 does not establish whether the title exists. This route is not generally case-insensitive: two casings were observed to work and one failed. This tool sends the argument's case exactly as supplied and does not normalise it, because normalising toward an untested form could turn a working call into a 500. This tool reports the rows returned by the upstream and nothing else.";
@@ -226,18 +229,6 @@ const PLAYER_LAST_FOCUS_REWARDS_DESCRIPTION = "Return one account's last complet
 const PLAYER_UNCLAIMED_BALANCES_DESCRIPTION = "Return one account's unclaimed balances for one token from GET /players/unclaimed_balances. Both username and token_type are required: omitting token_type returns HTTP 200 carrying the message that player and token are required, which is an application error inside a success status rather than an HTTP failure. The measured response carried one row per reward type, each with the account, token, type, a string balance and a last-updated date, alongside a last_claim_date. On the captured account SPS returned rows while DEC and CREDITS returned an empty array, so an empty array means no unclaimed rows for that token, not an error. Only DEC, SPS and CREDITS were tried, so the accepted token_type set is not established.";
 const PLAYER_UNCLAIMED_BALANCE_HISTORY_DESCRIPTION = "Return one account's unclaimed-balance history for one token from GET /players/unclaimed_balance_history. Both username and token_type are required, and omitting token_type returns HTTP 200 carrying the message that player and token are required rather than an HTTP failure. The response is a bare array; each row carried a reward action, an id, the account, token, type, a string amount, a block number, a transaction id, dates, a destination account and a status. On the captured account SPS returned rows while DEC returned an empty array. Only DEC and SPS were tried on this route. This server applies its general 100-row and 256 KB result bounds to the array and does not claim the bounded answer is the full upstream history.";
 const CARDS_TRX_LOOKUP_DESCRIPTION = "Look up the transaction object returned by GET /cards/trx_lookup for a real trx_id. A bare call, card_detail_id alone and username alone returned the same HTTP-200 application error saying that trx_id was missing; a real trx_id returned a trx_info object with id, block_id, prev_block_id, type, player, data, success, error, block_num, created_date, result, steem_price and sbd_price. data and result are JSON-encoded strings inside the JSON response and are returned as strings; this server does not parse them a second time. player is transaction account attribution, not donor provenance. BCX and donor were absent in the measured response. This route is a single-transaction event lookup and is not cached as static metadata.";
-
-function redactPlayer(body: unknown): unknown {
-  if (typeof body !== "object" || body === null || Array.isArray(body)) {
-    return body;
-  }
-  const envelope = body as Record<string, unknown>;
-  if (typeof envelope.data !== "object" || envelope.data === null || Array.isArray(envelope.data)) {
-    return { ...envelope };
-  }
-  const { player: _player, ...data } = envelope.data as Record<string, unknown>;
-  return { ...envelope, data };
-}
 
 /**
  * A successful answer that holds no record. The upstream body is passed through
@@ -518,6 +509,8 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   const collectionCache = new TtlCache<CachedCollection>(now, 64);
   const loadCardDefinitions = createCardDefinitionLoader(client, now);
   registerScenarioSnapshot(server, client, loadCardDefinitions, now);
+  registerLandPlotSnapshot(server, client);
+  registerV105PublicReads(server, client);
   const landDeedByPlotInputSchema = inputSchemaFor(LAND_DEED_BY_PLOT_ENTRY_ID).extend({ plot_id: plotIdOrLabelSchema });
   const landDeedByUidInputSchema = inputSchemaFor(LAND_DEED_BY_UID_ENTRY_ID);
   const ownedInputSchema = inputSchemaFor(LAND_DEEDS_OWNED_ENTRY_ID);
@@ -595,7 +588,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       }
       const identity = plotIdentityFromResponse(result.data);
       const structuredContent = {
-        ...redactPlayer(result.data) as Record<string, unknown>,
+        ...result.data as Record<string, unknown>,
         ...(identity ? { plot_reference: identity } : {}),
       };
       if (isEmptyResult(result.data)) {
@@ -613,7 +606,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   server.registerTool(
     "land_deed_by_uid",
     {
-      description: "Get the public land-deed record for one deed uid.",
+      description: "Get the public land-deed record for one deed uid. The player field is the owner at read time; market listing fields describe current listing state, not purchase history.",
       inputSchema: landDeedByUidInputSchema.shape,
     },
     async (params) => {
@@ -622,7 +615,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       if (!result.ok) {
         return outcomeResult(result, bound.endpointTemplate, params);
       }
-      const structuredContent = redactPlayer(result.data) as Record<string, unknown>;
+      const structuredContent = result.data as Record<string, unknown>;
       if (isEmptyResult(result.data)) {
         return emptyResult(structuredContent, `Splinterlands holds no land deed for deed uid ${String(params.deed_uid)}.`, result, bound.endpointTemplate, params);
       }
@@ -1774,7 +1767,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       inputSchema: {},
     },
     async () => {
-      const structuredContent = { ...listEndpoints(CALLABLE_ENDPOINT_IDS), additionalReadTools: { ...HIVE_TOOL_ROUTES, ...SCENARIO_TOOL_ROUTES } };
+      const structuredContent = { ...listEndpoints(CALLABLE_ENDPOINT_IDS), additionalReadTools: { ...HIVE_TOOL_ROUTES, ...SCENARIO_TOOL_ROUTES, ...PLOT_SNAPSHOT_TOOL_ROUTE } };
       return {
         content: [{ type: "text" as const, text: JSON.stringify(structuredContent) }],
         structuredContent,

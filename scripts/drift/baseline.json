@@ -175,7 +175,7 @@
         "battle-queue.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.battle.result",
@@ -1058,7 +1058,7 @@
         "battle-result.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.battle.status",
@@ -1074,7 +1074,7 @@
         "empty:battle-status.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.ca-gold-rewards",
@@ -1121,7 +1121,7 @@
         "api-cards-ca-gold-rewards.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.collection",
@@ -1241,7 +1241,7 @@
         "api-cards-collection-maintenance.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.find",
@@ -1808,7 +1808,7 @@
         "api-cards-find.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.get-details",
@@ -2254,7 +2254,7 @@
         "card-definition-null-subtype.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.history",
@@ -2353,7 +2353,7 @@
         "api-cards-history.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.lore",
@@ -2390,7 +2390,7 @@
         "api-cards-lore.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.mint-history",
@@ -2552,7 +2552,7 @@
         "api-cards-mint-history-card-detail-id-871-foil-2.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.pack-data-wax",
@@ -2609,7 +2609,7 @@
         "api-cards-pack-data-wax.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.pack-jackpot-overview",
@@ -2684,7 +2684,7 @@
         "empty:api-cards-pack-jackpot-overview-edition-18.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.skins",
@@ -2751,7 +2751,7 @@
         "api-cards-skins.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.stats",
@@ -2828,7 +2828,7 @@
         "api-cards-stats.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.cards.trx-lookup",
@@ -2925,7 +2925,7 @@
         "api-cards-trx-lookup.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.conflicts.airdrop-distribution",
@@ -3105,7 +3105,7 @@
         "governance-conflict-airdrop.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.conflicts.leaderboard",
@@ -3331,7 +3331,7 @@
         "governance-conflict-leaderboard.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.conflicts.leaderboard-with-player",
@@ -3479,7 +3479,7 @@
         "governance-conflict-leaderboard-player.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.conflicts.players",
@@ -3576,7 +3576,7 @@
         "governance-conflict-players.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.conflicts.seasons",
@@ -3849,7 +3849,7 @@
         "governance-seasons.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.conflicts.status",
@@ -4189,7 +4189,7 @@
         "governance-status-wagons-one.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.conflicts.wagon",
@@ -4271,7 +4271,7 @@
         "governance-conflict-wagon.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.conflicts.wagon-eligible-cards",
@@ -4353,7 +4353,7 @@
         "governance-eligible.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.frontier-draws.available-prizes",
@@ -4420,7 +4420,7 @@
         "frontier_draws_available_prizes.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.frontier-draws.complete",
@@ -4512,7 +4512,7 @@
         "frontier_draws_complete.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.frontier-draws.entries-completed",
@@ -4559,7 +4559,7 @@
         "frontier_draws_entries_completed_id_1849.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.frontier-draws.prize-overview",
@@ -4631,7 +4631,7 @@
         "frontier_draws_prize_overview.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.frontier-draws.recent-prizes",
@@ -4773,7 +4773,7 @@
         "frontier_draws_recent_prizes.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.frontier-draws.status",
@@ -4830,7 +4830,7 @@
         "frontier_draws_status.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.guilds.brawl-records",
@@ -4972,7 +4972,7 @@
         "guild-records.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.guilds.brawl-sps-rewards",
@@ -5109,7 +5109,7 @@
         "guild-rewards-cycle.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.guilds.contributions",
@@ -5250,7 +5250,7 @@
         "guild-contributions-hall.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.guilds.find",
@@ -5568,7 +5568,7 @@
         "guild-find.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.guilds.list",
@@ -5716,7 +5716,7 @@
         "guild-list-name.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.guilds.members",
@@ -5841,7 +5841,7 @@
         "guild-members.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.last-block",
@@ -5873,7 +5873,7 @@
         "metadata-last-block.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.maintenance-schedule",
@@ -5935,7 +5935,7 @@
         "metadata-maintenance.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.active-rentals",
@@ -6122,7 +6122,7 @@
         "market-active-card.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.active-status",
@@ -6138,7 +6138,7 @@
         "empty:market-active-status-id.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.completed-status",
@@ -6154,7 +6154,7 @@
         "empty:market-completed-status-id.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.for-rent-grouped",
@@ -6248,7 +6248,7 @@
         "market-rent.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.for-sale-grouped",
@@ -6342,7 +6342,7 @@
         "market-sale.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.for-sale-packages",
@@ -6618,7 +6618,7 @@
         "market-packages.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.history",
@@ -6775,7 +6775,7 @@
         "market-history.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.market-query-by-card",
@@ -6952,7 +6952,7 @@
         "market-by-card.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.market-query-grouped",
@@ -7149,7 +7149,7 @@
         "market-grouped.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.rental-history",
@@ -7336,7 +7336,7 @@
         "market-rental-history.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.status",
@@ -7352,7 +7352,7 @@
         "empty:market-status-id.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.market.volume",
@@ -7399,7 +7399,7 @@
         "market-volume.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.archived-balances",
@@ -7452,7 +7452,7 @@
         "api-players-archived_balances.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.authorities",
@@ -7530,7 +7530,7 @@
         "api-players-authorities.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.avatar",
@@ -7572,7 +7572,7 @@
         "player-avatar.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.balances",
@@ -7636,7 +7636,7 @@
         "api-players-balances.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.burn-event-full-leaderboard",
@@ -7688,7 +7688,7 @@
         "ranking-burn-event-full.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.burn-event-leaderboard",
@@ -7816,7 +7816,7 @@
         "ranking-burn-event.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.card-airdrop",
@@ -8374,7 +8374,7 @@
         "api-players-card_airdrop.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.current-rewards",
@@ -8432,7 +8432,7 @@
         "api-players-current-rewards.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.custom-avatar",
@@ -8694,7 +8694,7 @@
         "player-custom-avatar.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.dec",
@@ -8776,7 +8776,7 @@
         "api-players-dec.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.details",
@@ -9444,7 +9444,7 @@
         "api-players-details.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.energy-purchase-information",
@@ -9496,7 +9496,7 @@
         "api-players-energy_purchase_information.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.inventory",
@@ -9682,7 +9682,7 @@
         "api-players-inventory.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.item-details",
@@ -9940,7 +9940,7 @@
         "api-players-item-details.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.last-focus-rewards",
@@ -10037,7 +10037,7 @@
         "api-players-last-focus-rewards.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.last-season-rewards",
@@ -10094,7 +10094,7 @@
         "api-players-last-season-rewards.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.leaderboard",
@@ -10232,7 +10232,7 @@
         "ranking-leaderboard.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.leaderboard-with-player",
@@ -10494,7 +10494,7 @@
         "ranking-leaderboard-with-player.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.lp-claim-history",
@@ -10556,7 +10556,7 @@
         "api-players-lp_claim_history.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.pack-purchases",
@@ -10608,7 +10608,7 @@
         "api-players-pack_purchases.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.quests",
@@ -10710,7 +10710,7 @@
         "api-players-quests.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.rebellion-presale-leaders",
@@ -11508,7 +11508,7 @@
         "ranking-presale.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.recent-teams",
@@ -11617,7 +11617,7 @@
         "api-players-recent_teams.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.reward-delegation-history",
@@ -11689,7 +11689,7 @@
         "api-players-reward_delegation_history.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.reward-delegations",
@@ -11756,7 +11756,7 @@
         "api-players-reward_delegations.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.richlist",
@@ -11838,7 +11838,7 @@
         "ranking-richlist-with-player.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.richlist-ranking",
@@ -11885,7 +11885,7 @@
         "ranking-richlist-ranking-retry.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.skins",
@@ -11947,7 +11947,7 @@
         "api-players-skins.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.unclaimed-balance-history",
@@ -12056,7 +12056,7 @@
         "api-players-unclaimed-balance-history.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.unclaimed-balances",
@@ -12123,7 +12123,7 @@
         "api-players-unclaimed-balances.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.players.voucher",
@@ -12160,7 +12160,7 @@
         "api-players-voucher.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.proposals.list",
@@ -12313,7 +12313,7 @@
         "governance-proposals.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.proposals.pending-proposal-count",
@@ -12345,7 +12345,7 @@
         "governance-proposal-count.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.proposals.votes",
@@ -12432,7 +12432,7 @@
         "governance-proposal-votes.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.purchases.check-uniswap-reward",
@@ -12519,7 +12519,7 @@
         "market-uniswap-zero.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.purchases.settings",
@@ -12571,7 +12571,7 @@
         "market-purchase-settings.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.purchases.stats",
@@ -12698,7 +12698,7 @@
         "market-purchase-stats.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.ranked-draws.available-prizes",
@@ -12765,7 +12765,7 @@
         "ranked_draws_available_prizes.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.ranked-draws.complete",
@@ -12857,7 +12857,7 @@
         "ranked_draws_complete.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.ranked-draws.entries-completed",
@@ -12904,7 +12904,7 @@
         "ranked_draws_entries_completed_id_48.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.ranked-draws.prize-overview",
@@ -12976,7 +12976,7 @@
         "ranked_draws_prize_overview.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.ranked-draws.recent-prizes",
@@ -13121,7 +13121,7 @@
         "ranked_draws_recent_prizes.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.ranked-draws.status",
@@ -13198,7 +13198,7 @@
         "ranked_draws_status.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.season",
@@ -13241,7 +13241,7 @@
         "ranking-season-valid.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.settings",
@@ -16273,7 +16273,7 @@
         "metadata-settings.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.battles",
@@ -17087,7 +17087,7 @@
         "tournament-battles-group-one.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.cancelled",
@@ -17450,7 +17450,7 @@
         "tournament-cancelled.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.completed",
@@ -17808,7 +17808,7 @@
         "tournament-completed.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.find",
@@ -18667,7 +18667,7 @@
         "tournament-find.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.find-brawl",
@@ -19038,7 +19038,7 @@
         "tournament-brawl.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.in-progress",
@@ -19378,7 +19378,7 @@
         "tournament-in_progress.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.mine",
@@ -19716,7 +19716,7 @@
         "tournament-mine-creator.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.prizes",
@@ -19753,7 +19753,7 @@
         "tournament-prizes.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.upcoming",
@@ -20093,7 +20093,7 @@
         "tournament-upcoming.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.tournaments.upcoming-official",
@@ -20432,7 +20432,7 @@
         "tournament-upcoming_official.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.transactions.lookup",
@@ -20529,7 +20529,7 @@
         "metadata-lookup.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "api.transactions.metrics",
@@ -20586,7 +20586,7 @@
         "metadata-metrics-filtered.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "prices.prices",
@@ -20668,7 +20668,7 @@
         "prices-prices.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.collector.binder",
@@ -20941,7 +20941,7 @@
         "collector-binder.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.collector.config",
@@ -21179,7 +21179,7 @@
         "collector-config.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.collector.player",
@@ -21311,7 +21311,7 @@
         "collector-player.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.collector.stickers.all",
@@ -21408,7 +21408,7 @@
         "collector-stickers.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.collector.stickers.tradeable",
@@ -21505,7 +21505,7 @@
         "collector-stickers-tradeable.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.rentals.bid",
@@ -21597,7 +21597,7 @@
         "rentals-bid.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.rentals.player",
@@ -21689,7 +21689,7 @@
         "rentals-player.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.v3.bids",
@@ -21829,7 +21829,7 @@
         "rental-bids.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.v3.bids.lowest-price",
@@ -21871,7 +21871,7 @@
         "rental-bids-lowest.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.v3.bids.player",
@@ -21968,7 +21968,7 @@
         "rental-bids-by-player.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.v3.offers",
@@ -22108,7 +22108,7 @@
         "rental-offers.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.v3.offers.lowest-price",
@@ -22150,7 +22150,7 @@
         "rental-offers-lowest.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.v3.offers.player",
@@ -22247,7 +22247,7 @@
         "rental-offers-by-player.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.v3.rentals.player",
@@ -22365,7 +22365,7 @@
         "rentals-v3-by-player.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation-rental.v3.rentals.player.role",
@@ -22483,7 +22483,7 @@
         "rentals-v3-by-role.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation.delegation",
@@ -22556,7 +22556,7 @@
         "delegation-to-target.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation.incoming",
@@ -22639,7 +22639,7 @@
         "delegations-incoming.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.delegation.outgoing",
@@ -22723,7 +22723,7 @@
         "delegations-outgoing.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.health",
@@ -22775,7 +22775,7 @@
         "metadata-health.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.deeds.by-plot",
@@ -23032,7 +23032,7 @@
         "plot-label-15001.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.deeds.details-by-id",
@@ -23274,7 +23274,7 @@
         "land-deed-listed.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.deeds.details-by-uid",
@@ -23528,7 +23528,7 @@
         "plot-uid-unlisted-15001.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.deeds.owned",
@@ -23581,7 +23581,7 @@
         "land-deeds-owned-hit.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.deeds.search",
@@ -24450,7 +24450,7 @@
         "land-deeds-search-limited.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.liquidity.allrewards",
@@ -24507,7 +24507,7 @@
         "land-liquidity-allrewards.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.liquidity.pools",
@@ -24629,7 +24629,7 @@
         "land-liquidity-pools.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.liquidity.pools-by-id",
@@ -24727,7 +24727,7 @@
         "land-liquidity-pool-by-id.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.liquidity.pools-by-symbol",
@@ -24845,7 +24845,7 @@
         "land-liquidity-pool-by-symbol.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.liquidity.quote",
@@ -24892,7 +24892,7 @@
         "land-liquidity-quote.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.liquidity.region",
@@ -24985,7 +24985,7 @@
         "land-liquidity-region.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.liquidity.resources",
@@ -25073,7 +25073,7 @@
         "land-liquidity-resources.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.projects.deed-active",
@@ -25408,7 +25408,7 @@
         "land-projects-active-single.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.projects.list",
@@ -25872,7 +25872,7 @@
         "land-projects-history-single.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.projects.list-count",
@@ -25928,7 +25928,7 @@
         "land-projects-count.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.projects.requirements",
@@ -26038,7 +26038,7 @@
         "land-projects-requirements-sentinel.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.regions.counts",
@@ -26126,7 +26126,7 @@
         "land-regions-counts-rows.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.balances-history",
@@ -26284,7 +26284,7 @@
         "land-resources-balances-history.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.balances-history-count",
@@ -26333,7 +26333,7 @@
         "land-resources-balances-history-count.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.fragment-history",
@@ -26483,7 +26483,7 @@
         "land-resources-fragment-history.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.history",
@@ -26581,7 +26581,7 @@
         "land-resources-history.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.leaderboards",
@@ -26668,7 +26668,7 @@
         "land-resources-leaderboards.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.liquidity.swaps",
@@ -26781,7 +26781,7 @@
         "land-resources-liquidity-swaps.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.owned",
@@ -26797,7 +26797,7 @@
         "empty:land-resources-owned-empty.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.production-region-harvestable",
@@ -26813,7 +26813,7 @@
         "empty:land-resources-production-region-harvestable-empty.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.rewardactions",
@@ -27053,7 +27053,7 @@
         "land-resources-rewardactions.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.rewardactions-count",
@@ -27095,7 +27095,7 @@
         "land-resources-rewardactions-count.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.richlist",
@@ -27157,7 +27157,7 @@
         "land-resources-richlist.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.taxes",
@@ -27212,7 +27212,7 @@
         "land-resources-taxes-unknown.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.titles",
@@ -27270,7 +27270,7 @@
         "land-resources-titles.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.resources.titles-assigned",
@@ -27342,7 +27342,7 @@
         "land-resources-titles-assigned.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.stake.dec-overall",
@@ -27379,7 +27379,7 @@
         "land-stake-dec-overall.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.stake.dec-region",
@@ -27436,7 +27436,7 @@
         "land-stake-dec-region-resolved.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.stake.dec-staked",
@@ -27519,7 +27519,7 @@
         "land-stake-decstaked-rows.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.stake.deed-details",
@@ -27844,7 +27844,7 @@
         "land-stake-deed-details-zeroed.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.stake.deeds-assets",
@@ -28168,7 +28168,7 @@
         "land-stake-assets-rows.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.stake.evp-pending-claim",
@@ -28210,7 +28210,7 @@
         "land-stake-evp-pending-claim.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.stake.items-available",
@@ -28262,7 +28262,7 @@
         "power-core-available.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.stake.items-grouped",
@@ -28329,7 +28329,7 @@
         "power-core-grouped.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.tracts.counts",
@@ -28407,7 +28407,7 @@
         "land-tracts-counts-rows.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.land.volume",
@@ -28454,7 +28454,7 @@
         "land-volume.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.market.estimated-price",
@@ -28521,7 +28521,7 @@
         "vapi-market-price.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.market.landing",
@@ -28689,7 +28689,7 @@
         "vapi-market-landing-two.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.market.meta.asset",
@@ -28987,7 +28987,7 @@
         "vapi-market-meta-totems.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.market.player.activity",
@@ -29109,7 +29109,7 @@
         "vapi-market-player-activity.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.market.player.all-listings",
@@ -29221,7 +29221,7 @@
         "vapi-market-player-all-listings.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.market.player.asset-detail-stats",
@@ -29268,7 +29268,7 @@
         "vapi-market-player-asset-detail-stats.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     },
     {
       "entryId": "vapi.market.player.listings",
@@ -29380,7 +29380,7 @@
         "vapi-market-player-listings.fixture.json"
       ],
       "truncatedAt": [],
-      "capturedAt": "2026-09-18"
+      "capturedAt": "2026-09-29"
     }
   ],
   "unbaselined": [
@@ -29405,7 +29405,23 @@
       "reason": "no fixture is bound to this catalogue entry"
     },
     {
+      "entryId": "api.players.burn-event-player",
+      "reason": "no fixture is bound to this catalogue entry"
+    },
+    {
+      "entryId": "api.players.burn-event-prizes",
+      "reason": "no fixture is bound to this catalogue entry"
+    },
+    {
+      "entryId": "api.players.daily-updates",
+      "reason": "no fixture is bound to this catalogue entry"
+    },
+    {
       "entryId": "api.players.details-by-id",
+      "reason": "no fixture is bound to this catalogue entry"
+    },
+    {
+      "entryId": "api.players.dyk",
       "reason": "no fixture is bound to this catalogue entry"
     },
     {
@@ -29454,6 +29470,10 @@
     },
     {
       "entryId": "vapi.delegation-rental.v3.offers.pending.player",
+      "reason": "no fixture is bound to this catalogue entry"
+    },
+    {
+      "entryId": "vapi.land.liquidity.all-no-vesting",
       "reason": "no fixture is bound to this catalogue entry"
     },
     {
@@ -29513,5 +29533,5 @@
       "reason": "no fixture is bound to this catalogue entry"
     }
   ],
-  "capturedAt": "2026-09-18"
+  "capturedAt": "2026-09-29"
 }

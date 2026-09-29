@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.0.5 - 2026-09-29
+
+[Plain-language release notes](library/release-notes-v1.0.5.md).
+
+### Added
+
+- Added public did-you-know, daily-update, burn-event player and prize reads, and a no-vesting Land liquidity read.
+- Added a verified four-request plot snapshot with all-or-nothing 256 KiB output.
+- Surfaced marketplace purchase listing-item IDs and list-operation item IDs in Hive summaries.
+
+### Corrected
+
+- Preserved the public deed owner field, and documented current listing fields separately from purchase history.
+- Documented sampled buyer and seller market activity, tested broken offsets, accepted market asset names and nested balance-history token legs.
+- Retained bounded local Hive history filtering after an inconclusive server-side cursor probe.
+
+
+
 ## 1.0.4 - 2026-09-24
 
 ### Added

@@ -3,6 +3,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { createServer } from "../src/server.js";
 import { HermesHiveReader, HIVE_URL } from "../src/hive-reader.js";
+import { summarizeOperation } from "../src/hive-tools.js";
 import { withCallScope } from "../src/http/callscope.js";
 const id = "a".repeat(40);
 const cards = ["card-1", "card-2", "card-3"];
@@ -11,6 +12,14 @@ const tx = (operations = [op()]) => ({ transaction_id: id, block_num: 123, opera
 const rpc = (result: unknown) => new Response(JSON.stringify({ jsonrpc: "2.0", id: 1, result }));
 const game = (success = true, result: unknown = { cards }) => new Response(JSON.stringify({ trx_info: { id, block_id: "synthetic-block", prev_block_id: "synthetic-prev", block_num: 123, created_date: "2026-09-13T11:00:00.000Z", steem_price: null, sbd_price: null, player: "sampleacct", type: "gift_cards", success, error: success ? null : "rejected", data: JSON.stringify({ cards }), result: JSON.stringify(result) } }), { headers: { "content-type": "application/json" } });
 const row = (index: number, operation = op()) => [index, { op: operation, trx_id: id, block: 123, op_in_trx: 0, timestamp: "2026-09-13T11:00:00" }];
+it("reports marketplace item references only for well-formed operations", () => {
+ const purchase = summarizeOperation(["custom_json", { id: "sm_marketplace_purchase", json: JSON.stringify({ items: [{ listingItemId: 123, quantity: 1 }] }) }], 0);
+ expect(purchase).toMatchObject({ marketplace_schema: "sm_marketplace_purchase.items[].listingItemId", marketplace_entry_count: 1, listing_item_ids: [123], listed_item_ids: null });
+ const listing = summarizeOperation(["custom_json", { id: "sm_marketplace_list", json: JSON.stringify({ items: [{ itemId: "fixture-deed", quantity: 1 }] }) }], 0);
+ expect(listing).toMatchObject({ marketplace_schema: "sm_marketplace_list.items[].itemId", listed_item_ids: ["fixture-deed"], listing_item_ids: null });
+ const malformed = summarizeOperation(["custom_json", { id: "sm_marketplace_purchase", json: JSON.stringify({ items: [{ listingItemId: "123" }] }) }], 0);
+ expect(malformed).toMatchObject({ marketplace_schema: null, marketplace_entry_count: null, listing_item_ids: null });
+});
 async function run(fetcher: typeof fetch, action: (c: Client) => Promise<void>) {
  const server = createServer({ fetch: fetcher, limiterOptions: { } });
  const client = new Client({ name: "hive-test", version: "0.0.0" });
