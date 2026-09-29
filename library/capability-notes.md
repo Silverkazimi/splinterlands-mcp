@@ -2,13 +2,13 @@
 
 [Return to the README](../README.md). This reference preserves the detailed request limits and observed API behavior behind the introductory overview. Plain file paths below are relative to the repository root.
 
-**Version: 1.0.4.** 179 tools are registered (`src/server.ts` and its registration modules).
-66 call `vapi.splinterlands.com`: 40 Land routes covering deeds, projects,
-counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 105 call
-`api.splinterlands.com`: eleven card tools, one item-metadata tool, and 30
+**Version: 1.0.5.** 185 tools are registered (`src/server.ts` and its registration modules).
+67 call `vapi.splinterlands.com`: 41 Land routes covering deeds, projects,
+counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 109 call
+`api.splinterlands.com`: eleven card tools, one item-metadata tool, and 34
 player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads.
 One tool calls `prices.splinterlands.com`: `prices_current` reads the public token-to-USD feed and uses a five-minute success cache because prices move.
-Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 206 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
+Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 211 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
 `library/endpoint-knowledge-tools.md` for the evidence model.
 
 The ranked-draw and frontier-draw families expose current status, completed
@@ -32,6 +32,8 @@ results include `plot_reference` with numeric ID, padded label and deed UID;
 resolution and target freshness are reported separately. Empty or mismatched
 resolution is unverified, not proof that the location does not exist. See
 `library/observations/plot-labels-2026-09-12.md`.
+
+`land_plot_snapshot` reads a verified deed, active project, stake details and stake assets within four public GETs. It rejects failed components without a partial result and caps the whole result at 256 KiB. Null active project is valid. These reads are not atomic. The independent `land_liquidity_positions_no_vesting` tool reads one explicit player; its route was live-observed but absent from the sampled VAPI specification. See `library/observations/v1-0-5-public-reads-2026-09-29.md`.
 
 `land_lineup_snapshot` accepts an explicit player and one plot reference, plus candidate card IDs or UIDs. It gathers current workers, regional power, production, candidates, verified available location labels and Power Core facts within ten logical GETs. The collection is streamed once, at most 100 matching cards are retained, and there is no automatic pagination. Only an agreeing backend baseline is returned for the offline estimator; reads are non-atomic and candidate cooldown/eligibility caveats remain visible. Use its baseline and selected candidate workers in a second `land_lineup_estimate` call. The two-call snapshot and estimator workflow has been verified against a populated Grain plot. Other scenarios still require their own agreeing baseline. Land stake changes are per plot; these tools perform no changes.
 
@@ -59,6 +61,8 @@ selector. `player_balances` accepts `players` and optional `token_type`;
 `player_archived_balances` also requires `players`, despite the upstream error
 text incorrectly asking for `username`. `player_profile` uses `name`, and
 `player_recent_teams` uses `player`.
+
+Four added public player reads return did-you-know content by explicit locale, daily updates, and burn-event player and prize records by explicit username. The two burn-event reads rejected missing usernames. Successful samples do not prove complete locale coverage or account existence.
 
 The additional player tools do not auto-fetch continuation pages. Most make
 one logical GET and bound array results to 100 rows and 256 KiB, with truncation

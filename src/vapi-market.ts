@@ -8,7 +8,7 @@ const definitions = [
     "entryId": "vapi.market.landing",
     "listField": "assets",
     "listEnvelope": "data",
-    "description": "Read public market asset summaries. assets accepts comma-separated asset names; PACKS and PACKS,LAND selected 15 and 18 rows. Unfiltered reads returned 979 rows and are locally truncated, not a complete inventory. An authorized player-specific PACKS read returned numOwned on all 15 rows; counts are passed through without inferring how listed items are counted."
+    "description": "Read public market asset summaries. assets accepts comma-separated asset names; PACKS, LAND and DEEDS were accepted in fresh public reads. PACKS and PACKS,LAND selected 15 and 18 rows. Unfiltered reads returned 979 rows and are locally truncated, not a complete inventory. An authorized player-specific PACKS read returned numOwned on all 15 rows; counts are passed through without inferring how listed items are counted."
   },
   {
     "toolName": "vapi_market_estimated_price",
@@ -41,7 +41,7 @@ const definitions = [
     "types",
     "sort"
   ],
-  "description": "Read account market purchases and sales. The public client uses types=purchase,sale and sort=desc; sale selected sales and asc selected older records. limit bounded returned rows. offset=1 did not select the second record of the unoffset response, so conventional row-offset paging is not established. No complete history claim."
+  "description": "Read account market purchases and sales. A fresh sample returned buyer-matched purchases, seller-matched sales and both for types=purchase,sale. Rows included trxId, itemId, detailId and usdValue. The public client uses types=purchase,sale and sort=desc; limit bounded returned rows. Omitted offset returned rows while explicit offset=0 and offset=1 returned none. Do not infer complete history or working pagination."
 },
 {
   "toolName": "vapi_market_player_listings",

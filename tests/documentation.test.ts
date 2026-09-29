@@ -1,4 +1,5 @@
 import { SCENARIO_TOOL_ROUTES } from "../src/land-scenario-snapshot.js";
+import { PLOT_SNAPSHOT_TOOL_ROUTE } from "../src/land-plot-snapshot.js";
 import { HIVE_TOOL_ROUTES } from "../src/hive-tools.js";
 import { readFileSync } from "node:fs";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
@@ -38,6 +39,8 @@ it("keeps public tool counts and routes aligned with the MCP interface", async (
         expect(route).toBe(`\`${entry.method} ${entry.pathTemplate}\``);
       } else if (SCENARIO_TOOL_ROUTES[name]) {
         expect(route).toBe(SCENARIO_TOOL_ROUTES[name]);
+      } else if (name === "land_plot_snapshot") {
+        expect(route).toBe(PLOT_SNAPSHOT_TOOL_ROUTE.land_plot_snapshot);
       } else if (HIVE_TOOL_ROUTES[name]) {
         expect(route).toBe(HIVE_TOOL_ROUTES[name]);
       } else if (name === "land_lineup_estimate") {

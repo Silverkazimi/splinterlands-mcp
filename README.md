@@ -89,7 +89,7 @@ results are cached, and their freshness is reported. Related reads can
 also happen at slightly different times, so they should not be treated
 as one perfectly synchronized view of the game.
 
-The reference below lists all 179 tools. For request budgets, exact
+The reference below lists all 185 tools. For request budgets, exact
 parameters, cache behavior, and recorded API quirks, see the
 [technical capability notes](library/capability-notes.md) and
 [safety boundaries](#what-it-is-and-what-it-will-never-do).
@@ -165,6 +165,7 @@ tools are local and make no upstream request.
 | `land_liquidity_allrewards` | `GET /land/liquidity/allrewards` |
 | `land_liquidity_pool_by_id` | `GET /land/liquidity/pools/{id}` |
 | `land_liquidity_pool_by_symbol` | `GET /land/liquidity/poolsbysymbol/{symbol}` |
+| `land_liquidity_positions_no_vesting` | `GET /land/liquidity/pools/{player}/all-no-vesting` |
 | `land_liquidity_pools` | `GET /land/liquidity/pools` |
 | `land_liquidity_quote` | `GET /land/liquidity/quote/{poolId}` |
 | `land_liquidity_region` | `GET /land/liquidity/region/{player}` |
@@ -198,6 +199,7 @@ tools are local and make no upstream request.
 | `land_stake_evp_pending_claim` | `GET /land/stake/evp/pending-claim` |
 | `land_tracts_counts` | `GET /land/tracts/counts` |
 | `land_volume` | `GET /land/volume` |
+| `land_plot_snapshot` | Four bounded public GETs: deed by plot, active project, stake details and stake assets |
 | `land_lineup_snapshot` | Bounded compound GETs; at most ten logical requests |
 | `land_lineup_estimate` | Offline; calculates a supplied Land lineup |
 | `hive_account_history` | Read-only RPC: condenser_api.get_account_history |
@@ -219,10 +221,13 @@ tools are local and make no upstream request.
 | `player_archived_balances` | `GET /players/archived_balances` |
 | `player_authorities` | `GET /players/authorities` |
 | `player_balances` | `GET /players/balances` |
+| `player_burn_event_player` | `GET /players/burn_event_player` |
+| `player_burn_event_prizes` | `GET /players/burn_event_prizes` |
 | `player_burn_event_full_leaderboard` | `GET /players/burn_event_full_leaderboard` |
 | `player_burn_event_leaderboard` | `GET /players/burn_event_leaderboard` |
 | `player_card_airdrop` | `GET /players/card_airdrop` |
 | `player_current_rewards` | `GET /players/current_rewards` |
+| `player_daily_updates` | `GET /players/daily_updates` |
 | `player_dec` | `GET /players/dec` |
 | `player_energy_purchase_information` | `GET /players/energy_purchase_information` |
 | `player_last_focus_rewards` | `GET /players/last_focus_rewards` |
@@ -234,6 +239,7 @@ tools are local and make no upstream request.
 | `player_presale_leaders` | `GET /players/rebellion_presale_leaders` |
 | `player_avatar` | `GET /players/avatar/{name}` |
 | `player_custom_avatar` | `GET /players/player_avatar/{name}` |
+| `player_dyk` | `GET /players/dyk/{locale}` |
 | `player_profile` | `GET /players/details` |
 | `player_quests` | `GET /players/quests` |
 | `player_recent_teams` | `GET /players/recent_teams` |
@@ -301,16 +307,16 @@ the first four rows of the omitted-offset response; no offset value tried
 reached later rows. This ranks the returned page, not necessarily every plot
 counted by the first call.
 
-## What it is, and what it will never do
+## What it is, and its current boundaries
 
 - **Read-only.** Catalogue endpoint tools wrap `GET` requests. The isolated Hive reader permits only two read-only JSON-RPC methods over POST. The two
   knowledge tools make no upstream request. Nothing in this server issues a
   write.
-- **No keys, ever.** This server never asks for, stores, or transmits a
-  Splinterlands account credential, a Hive posting/active key, or any other
-  secret. If you need an endpoint that requires login, this is the wrong
-  tool for that endpoint — it will tell you so rather than pretend to work.
-- **Unsupported catalogue routes are excluded.** 34 of the 206 catalogued
+- **No credentials today.** This server does not ask for, store, or transmit
+  Splinterlands account credentials, Hive keys, or other secrets. Endpoints
+  that require login are unavailable; the server reports that boundary rather
+  than pretending to provide their data.
+- **Unsupported catalogue routes are excluded.** 34 of the 211 catalogued
   routes are not advertised as tools because their dated probes did not
   produce a usable, distinct, or honestly-selected response. The first group contains three Land routes classified 2026-09-07
   and six market, rental and collector routes classified 2026-09-12:
@@ -370,8 +376,22 @@ counted by the first call.
 
 - **No design hook for authentication.** There is no config field, no
   commented-out branch, and no environment variable this server reads to
-  attach credentials to a request. Adding one is out of scope for this
-  project, by design.
+  attach credentials to a request. Adding one is outside the current scope
+  and contribution policy.
+
+## Not included: login-only balance history
+
+`GET /players/balance_history` can return a per-transaction balance change log,
+including token, amount, balance before and after, transaction type,
+counterparty, and transaction id. It requires a logged-in player token, so this
+read-only server does not expose it today.
+
+A future opt-in would require the user to supply a token for the request and
+would need a clear account and query scope. The design would have to explain
+consent, how the token is handled in transit, and logging and retention. A
+token must never be stored in the repository. This would require an explicit
+change to the server's authentication policy and a separate privacy
+review; it is not currently supported or a commitment to add one.
 
 ## Install
 
@@ -539,7 +559,7 @@ The `land_stake_deed_details` response adds `plot_view`: the public overview's `
 
 `player_inventory` requires username and an upstream type filter. The observed `Land` filter still includes Token rows. Optional `item_detail_id` filters all received rows locally before the 100-row/256-KiB result bound; upstream_rows, matched_rows and truncated describe the scope. It does not infer staking eligibility or full holdings. See `library/observations/player-inventory-2026-09-12.json`.
 
-Four account market tools read activity, per-asset listings, all-listing rows and owned/listed stats. Activity requires player, types and sort; the observed client defaults are `purchase,sale` and `desc`. `asc` returned older rows and `sale` selected sales. `offset=1` did not select the second unoffset record; do not assume conventional row-offset paging. The existing landing tool also returns player-specific numOwned when supplied. See `library/observations/vapi-market-account-2026-09-12.json`.
+Four account market tools read activity, per-asset listings, all-listing rows and owned/listed stats. Activity requires player, types and sort; the observed client defaults are `purchase,sale` and `desc`. A fresh sample returned buyer-matched purchases and seller-matched sales. `asc` returned older rows and `sale` selected sales. Omitted offset returned rows while explicit `offset=0` and `offset=1` returned none in that sample; do not assume conventional row-offset paging. The existing landing tool also returns player-specific numOwned when supplied. See `library/observations/v1-0-5-public-reads-2026-09-29.md`.
 
 player_avatar resolves a legacy profile image redirect, which may return RUNI artwork rather than the custom character. It returns avatar_url, image_url and redirect_status without downloading the image.
 

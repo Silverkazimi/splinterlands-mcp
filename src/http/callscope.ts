@@ -3,7 +3,7 @@ import { freshness, newTraceId, type UpstreamOutcome } from "./errors.js";
 
 type CallState = {
   tool: string;
-  maxRequests: 1 | 2 | 3 | 10;
+  maxRequests: 1 | 2 | 3 | 4 | 10;
   urls: Set<string>;
 };
 
@@ -25,7 +25,7 @@ export class RefusalWouldFanOutError extends Error implements UpstreamOutcome {
   }
 }
 
-export async function withCallScope<Value>(tool: string, operation: () => Promise<Value>, maxRequests: 1 | 2 | 3 | 10 = 1): Promise<Value> {
+export async function withCallScope<Value>(tool: string, operation: () => Promise<Value>, maxRequests: 1 | 2 | 3 | 4 | 10 = 1): Promise<Value> {
   if (storage.getStore()) return operation();
   return storage.run({ tool, maxRequests, urls: new Set<string>() }, operation);
 }

@@ -186,6 +186,7 @@ function collectFiles(directory: string, root: string, files: string[]): void {
       collectFiles(filePath, root, files);
     } else if (
       entry.isFile() &&
+      entry.name !== ".git" &&
       !isBinaryPath(filePath) &&
       normalizedPath(filePath, root) !== "scripts/leak-check.ts"
     ) {

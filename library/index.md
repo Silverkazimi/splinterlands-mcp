@@ -2,6 +2,17 @@
 
 Splinterlands API facts use its published specifications, support documentation and bounded public observations. Hive-specific facts use official Hive developer documentation and pinned openhive-network source. The transports and evidence scopes remain distinct.
 
+## Open work — start here
+
+- `library/LEADS-2026-09-29-market-and-land.md` — ten lead topics, partly checked: market and land reads (seller-indexed market
+  feed, deed owner field, reward-action actors, server-side Hive operation filter, market asset names, marketplace
+  operation shapes, nested balance legs), api2 and vapi spec coverage gaps, and a no-scan "who sold this deed" recipe. Leads, not evidence: re-derive each per the clean-room rule, test it, and
+  show the results to the maintainer before any push.
+
+- `library/observations/v1-0-5-public-reads-2026-09-29.md` — dated live checks for the v1.0.5 candidate and unresolved seller history.
+
+- `library/release-notes-v1.0.5.md` — plain-language release notes for v1.0.5.
+
 ## Official sources
 
 - `https://vapi.splinterlands.com/` — swagger spec for the `vapi` host

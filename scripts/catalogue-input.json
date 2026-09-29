@@ -3936,6 +3936,18 @@
         "data[].counterparty": {
           "type": "string",
           "valueClass": "enum"
+        },
+        "data[].balance_history[].token": {
+          "type": "string",
+          "valueClass": "enum"
+        },
+        "data[].balance_history[].amount": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "data[].balance_history[].trx_id": {
+          "type": "string",
+          "valueClass": "id"
         }
       },
       "observedKeyPaths": [
@@ -3952,7 +3964,10 @@
         "data[].trx_id",
         "data[].created_date",
         "data[].balance_history",
-        "data[].counterparty"
+        "data[].counterparty",
+        "data[].balance_history[].token",
+        "data[].balance_history[].amount",
+        "data[].balance_history[].trx_id"
       ],
       "requiredKeyPaths": [
         "status",
@@ -6155,12 +6170,29 @@
     "resultContract": {
       "envelope": "array",
       "fingerprint": {
-        "[]": { "type": "object", "valueClass": "opaque" },
-        "[].count": { "type": "string", "valueClass": "numeric" },
-        "[].card_detail_id": { "type": "number", "valueClass": "id" },
-        "[].rarity": { "type": "number", "valueClass": "numeric" }
+        "[]": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "[].count": {
+          "type": "string",
+          "valueClass": "numeric"
+        },
+        "[].card_detail_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "[].rarity": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
       },
-      "observedKeyPaths": ["[]", "[].count", "[].card_detail_id", "[].rarity"],
+      "observedKeyPaths": [
+        "[]",
+        "[].count",
+        "[].card_detail_id",
+        "[].rarity"
+      ],
       "requiredKeyPaths": []
     },
     "notes": "Measured live 2026-09-18: unauthenticated HTTP 200 from GET /cards/ca_gold_rewards returned a bare array of count, card_detail_id and rarity. count is a JSON string, not a number. The endpoint is cached for 24 hours and locally bounded to 100 rows and 256 KiB.",
@@ -6596,34 +6628,142 @@
     "resultContract": {
       "envelope": "bare",
       "fingerprint": {
-        "total": { "type": "number", "valueClass": "numeric" },
-        "mints": { "type": "array", "valueClass": "opaque" },
-        "mints[].uid": { "type": "string", "valueClass": "id" },
-        "mints[].card_detail_id": { "type": "number", "valueClass": "id" },
-        "mints[].xp": { "type": "number", "valueClass": "numeric" },
-        "mints[].gold": { "type": "boolean", "valueClass": "enum" },
-        "mints[].foil": { "type": "number", "valueClass": "numeric" },
-        "mints[].mint": { "type": "string", "valueClass": "enum" },
-        "mints[].mint_player": { "type": "string", "valueClass": "name", "nullable": true },
-        "mints[].mint_date": { "type": "string", "valueClass": "timestamp", "nullable": true },
-        "mints[].mint_block": { "type": "number", "valueClass": "numeric", "nullable": true },
-        "mints[].mint_tx": { "type": "string", "valueClass": "opaque", "nullable": true },
-        "mints[].edition": { "type": "number", "valueClass": "id" },
-        "mints[].tier": { "type": "number", "valueClass": "numeric" },
-        "mints[].guild_data": { "type": "string", "valueClass": "opaque", "nullable": true },
-        "mints[].guild_name": { "type": "string", "valueClass": "name", "nullable": true },
-        "mints[].guild": { "type": "string", "valueClass": "opaque", "nullable": true },
-        "mints[].modern_league": { "type": "number", "valueClass": "numeric", "nullable": true },
-        "mints[].league": { "type": "number", "valueClass": "numeric", "nullable": true },
-        "mints[].survival_league": { "type": "number", "valueClass": "numeric", "nullable": true },
-        "mints[].title_post": { "type": "string", "valueClass": "opaque", "nullable": true },
-        "mints[].title_pre": { "type": "string", "valueClass": "opaque", "nullable": true },
-        "mints[].player_avatar": { "type": "string", "valueClass": "opaque", "nullable": true }
+        "total": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "mints[].uid": {
+          "type": "string",
+          "valueClass": "id"
+        },
+        "mints[].card_detail_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "mints[].xp": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].gold": {
+          "type": "boolean",
+          "valueClass": "enum"
+        },
+        "mints[].foil": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].mint": {
+          "type": "string",
+          "valueClass": "enum"
+        },
+        "mints[].mint_player": {
+          "type": "string",
+          "valueClass": "name",
+          "nullable": true
+        },
+        "mints[].mint_date": {
+          "type": "string",
+          "valueClass": "timestamp",
+          "nullable": true
+        },
+        "mints[].mint_block": {
+          "type": "number",
+          "valueClass": "numeric",
+          "nullable": true
+        },
+        "mints[].mint_tx": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "mints[].edition": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "mints[].tier": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "mints[].guild_data": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "mints[].guild_name": {
+          "type": "string",
+          "valueClass": "name",
+          "nullable": true
+        },
+        "mints[].guild": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "mints[].modern_league": {
+          "type": "number",
+          "valueClass": "numeric",
+          "nullable": true
+        },
+        "mints[].league": {
+          "type": "number",
+          "valueClass": "numeric",
+          "nullable": true
+        },
+        "mints[].survival_league": {
+          "type": "number",
+          "valueClass": "numeric",
+          "nullable": true
+        },
+        "mints[].title_post": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "mints[].title_pre": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "mints[].player_avatar": {
+          "type": "string",
+          "valueClass": "opaque",
+          "nullable": true
+        }
       },
       "observedKeyPaths": [
-        "total", "mints", "mints[].uid", "mints[].card_detail_id", "mints[].xp", "mints[].gold", "mints[].foil", "mints[].mint", "mints[].mint_player", "mints[].mint_date", "mints[].mint_block", "mints[].mint_tx", "mints[].edition", "mints[].tier", "mints[].guild_data", "mints[].guild_name", "mints[].guild", "mints[].modern_league", "mints[].league", "mints[].survival_league", "mints[].title_post", "mints[].title_pre", "mints[].player_avatar", "total_minted"
+        "total",
+        "mints",
+        "mints[].uid",
+        "mints[].card_detail_id",
+        "mints[].xp",
+        "mints[].gold",
+        "mints[].foil",
+        "mints[].mint",
+        "mints[].mint_player",
+        "mints[].mint_date",
+        "mints[].mint_block",
+        "mints[].mint_tx",
+        "mints[].edition",
+        "mints[].tier",
+        "mints[].guild_data",
+        "mints[].guild_name",
+        "mints[].guild",
+        "mints[].modern_league",
+        "mints[].league",
+        "mints[].survival_league",
+        "mints[].title_post",
+        "mints[].title_pre",
+        "mints[].player_avatar",
+        "total_minted"
       ],
-      "requiredKeyPaths": ["total", "mints"],
+      "requiredKeyPaths": [
+        "total",
+        "mints"
+      ],
       "predicateId": "cards.mint-history"
     },
     "notes": "Measured live 2026-09-18: unauthenticated HTTP 200 from GET /cards/mint_history with card_detail_id and foil returned a bare object containing total and mints; the populated capture also carried total_minted, while the empty capture omitted total_minted. Mint rows included card identity, XP, foil/gold, mint numbering, date/block, optional transaction/guild/league/title/avatar fields and a public mint_player name. The by_date=true plus by_date_edition=18 observation returned {mints:[]} and is documented here but not exposed as a separate tool variant. Mint history is not cached; its mints list is locally bounded to 100 rows and 256 KiB with truncation reported explicitly.",
@@ -6735,16 +6875,49 @@
     "resultContract": {
       "envelope": "array",
       "fingerprint": {
-        "[]": { "type": "object", "valueClass": "opaque" },
-        "[].card_detail_id": { "type": "number", "valueClass": "id" },
-        "[].total_minted": { "type": "number", "valueClass": "numeric" },
-        "[].total": { "type": "number", "valueClass": "numeric" },
-        "[].foils": { "type": "array", "valueClass": "opaque" },
-        "[].foils[].foil": { "type": "number", "valueClass": "numeric" },
-        "[].foils[].minted": { "type": "number", "valueClass": "numeric" },
-        "[].foils[].total": { "type": "number", "valueClass": "numeric" }
+        "[]": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "[].card_detail_id": {
+          "type": "number",
+          "valueClass": "id"
+        },
+        "[].total_minted": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].total": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].foils": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "[].foils[].foil": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].foils[].minted": {
+          "type": "number",
+          "valueClass": "numeric"
+        },
+        "[].foils[].total": {
+          "type": "number",
+          "valueClass": "numeric"
+        }
       },
-      "observedKeyPaths": ["[]", "[].card_detail_id", "[].total_minted", "[].total", "[].foils", "[].foils[].foil", "[].foils[].minted", "[].foils[].total"],
+      "observedKeyPaths": [
+        "[]",
+        "[].card_detail_id",
+        "[].total_minted",
+        "[].total",
+        "[].foils",
+        "[].foils[].foil",
+        "[].foils[].minted",
+        "[].foils[].total"
+      ],
       "requiredKeyPaths": [],
       "predicateId": "array.empty-or-captured"
     },
@@ -17677,7 +17850,7 @@
         "name": "offset",
         "type": "number",
         "declaredRequired": true,
-        "measuredRequired": null,
+        "measuredRequired": false,
         "inertUpstream": false
       }
     ],
@@ -20303,8 +20476,7 @@
       "specFetchedAt": null,
       "observedAt": "2026-09-18T00:00:00Z"
     }
-  }
-,
+  },
   {
     "entryId": "api.ranked-draws.status",
     "host": "api",
@@ -21327,6 +21499,271 @@
       "specHash": null,
       "specFetchedAt": null,
       "observedAt": "2026-09-18T00:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.players.dyk",
+    "host": "api",
+    "pathTemplate": "/players/dyk/{locale}",
+    "pathParams": [
+      {
+        "name": "locale",
+        "type": "string",
+        "required": true,
+        "isPlayerName": false
+      }
+    ],
+    "queryParams": [],
+    "owningTool": "player_dyk",
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-29T17:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "tips": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "lore": {
+          "type": "array",
+          "valueClass": "opaque"
+        }
+      },
+      "observedKeyPaths": [
+        "tips",
+        "lore"
+      ],
+      "requiredKeyPaths": [
+        "tips",
+        "lore"
+      ]
+    },
+    "notes": "Fresh unauthenticated public response observed 2026-09-29. Scope and paging are limited to the recorded request; no complete-data claim.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-29T17:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.players.daily-updates",
+    "host": "api",
+    "pathTemplate": "/players/daily_updates",
+    "pathParams": [],
+    "queryParams": [],
+    "owningTool": "player_daily_updates",
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-29T17:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "enabled": {
+          "type": "boolean",
+          "valueClass": "enum"
+        },
+        "announcement": {
+          "type": "object",
+          "valueClass": "opaque",
+          "nullable": true
+        },
+        "did_you_know": {
+          "type": "array",
+          "valueClass": "opaque"
+        }
+      },
+      "observedKeyPaths": [
+        "enabled",
+        "announcement",
+        "did_you_know"
+      ],
+      "requiredKeyPaths": [
+        "enabled",
+        "did_you_know"
+      ]
+    },
+    "notes": "Fresh unauthenticated public response observed 2026-09-29. Scope and paging are limited to the recorded request; no complete-data claim.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-29T17:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.players.burn-event-player",
+    "host": "api",
+    "pathTemplate": "/players/burn_event_player",
+    "pathParams": [],
+    "queryParams": [
+      {
+        "name": "username",
+        "type": "string",
+        "declaredRequired": true,
+        "measuredRequired": true,
+        "inertUpstream": false
+      }
+    ],
+    "owningTool": "player_burn_event_player",
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-29T17:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "player": {
+          "type": "object",
+          "valueClass": "opaque",
+          "nullable": true
+        }
+      },
+      "observedKeyPaths": [
+        "player"
+      ],
+      "requiredKeyPaths": [
+        "player"
+      ]
+    },
+    "notes": "Fresh unauthenticated public response observed 2026-09-29. Scope and paging are limited to the recorded request; no complete-data claim.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-29T17:00:00Z"
+    }
+  },
+  {
+    "entryId": "api.players.burn-event-prizes",
+    "host": "api",
+    "pathTemplate": "/players/burn_event_prizes",
+    "pathParams": [],
+    "queryParams": [
+      {
+        "name": "username",
+        "type": "string",
+        "declaredRequired": true,
+        "measuredRequired": true,
+        "inertUpstream": false
+      }
+    ],
+    "owningTool": "player_burn_event_prizes",
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-29T17:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "bare",
+      "fingerprint": {
+        "prizes_ready": {
+          "type": "boolean",
+          "valueClass": "enum"
+        },
+        "has_claimed_prizes": {
+          "type": "boolean",
+          "valueClass": "enum"
+        },
+        "prizes": {
+          "type": "array",
+          "valueClass": "opaque"
+        },
+        "can_have_prizes": {
+          "type": "boolean",
+          "valueClass": "enum"
+        }
+      },
+      "observedKeyPaths": [
+        "prizes_ready",
+        "has_claimed_prizes",
+        "prizes",
+        "can_have_prizes"
+      ],
+      "requiredKeyPaths": [
+        "prizes_ready",
+        "has_claimed_prizes",
+        "prizes",
+        "can_have_prizes"
+      ]
+    },
+    "notes": "Fresh unauthenticated public response observed 2026-09-29. Scope and paging are limited to the recorded request; no complete-data claim.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-29T17:00:00Z"
+    }
+  },
+  {
+    "entryId": "vapi.land.liquidity.all-no-vesting",
+    "host": "vapi",
+    "pathTemplate": "/land/liquidity/pools/{player}/all-no-vesting",
+    "pathParams": [
+      {
+        "name": "player",
+        "type": "string",
+        "required": true,
+        "isPlayerName": true
+      }
+    ],
+    "queryParams": [],
+    "owningTool": "land_liquidity_positions_no_vesting",
+    "measured": {
+      "authTier": "public",
+      "pagination": null,
+      "observedAt": "2026-09-29T17:00:00Z"
+    },
+    "resultContract": {
+      "envelope": "vapi",
+      "fingerprint": {
+        "status": {
+          "type": "string",
+          "valueClass": "enum"
+        },
+        "data": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "data.all": {
+          "type": "object",
+          "valueClass": "opaque"
+        },
+        "data.all.positions": {
+          "type": "array",
+          "valueClass": "opaque"
+        }
+      },
+      "observedKeyPaths": [
+        "status",
+        "data",
+        "data.all",
+        "data.all.positions"
+      ],
+      "requiredKeyPaths": [
+        "status",
+        "data",
+        "data.all",
+        "data.all.positions"
+      ]
+    },
+    "notes": "Fresh unauthenticated public response observed 2026-09-29. Scope and paging are limited to the recorded request; no complete-data claim.",
+    "provenance": {
+      "source": "live-observation",
+      "sourceUrl": null,
+      "specHash": null,
+      "specFetchedAt": null,
+      "observedAt": "2026-09-29T17:00:00Z"
     }
   }
 ]

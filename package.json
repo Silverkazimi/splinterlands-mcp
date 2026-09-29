@@ -1,6 +1,6 @@
 {
   "name": "splinterlands-mcp",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Read-only MCP server for the Splinterlands public API.",
   "type": "module",
   "license": "MIT",
