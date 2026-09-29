@@ -5,8 +5,8 @@ This update makes several public Splinterlands records easier to explore, especi
 ## What you can do now
 
 - **See one plot in one answer.** The new `land_plot_snapshot` gathers the deed, active project, staking details, and staked assets for a plot. It checks that the deed matches the requested plot and returns a complete answer only when all four public reads succeed.
-- **Explore more public player information.** New tools show did-you-know tips and lore, daily updates, and a named player's burn-event record and prize summary.
-- **Check no-vesting Land liquidity positions.** A new tool reads the public positions and fee fields for an account you specify.
+- **Explore more public player information.** `player_dyk` shows did-you-know tips and lore for a locale; `player_daily_updates` reads daily updates; `player_burn_event_player` and `player_burn_event_prizes` read a named player's burn-event record and prize summary.
+- **Check no-vesting Land liquidity positions.** `land_liquidity_positions_no_vesting` reads public positions and fee fields for an account you specify.
 - **Understand marketplace operations more easily.** Hive transaction summaries now identify listing-item IDs in purchases and item IDs in listing operations. Deed lookups also retain the public owner field, which describes ownership at the time of the read.
 
 ## Clearer answers from existing tools
