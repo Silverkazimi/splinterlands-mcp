@@ -39,6 +39,8 @@ Public files use synthetic placeholders and contain no private identities or ses
 fixtures and observations must preserve that boundary while retaining enough provenance for their claims
 to be checked.
 
+[Card set and numeric edition observations](observations/card-set-vs-edition-2026-10-01.md) record the seven-account collection sample, 1,102 definition rows, shared Alpha/Beta IDs and limits behind `splinterlands://cards/editions`.
+
 ## Decisions
 
 `library/decisions.md` records design decisions as they are made (tool

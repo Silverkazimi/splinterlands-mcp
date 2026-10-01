@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Added a dated offline card-edition resource and clarified that `card_set` on collection and find rows names each copy's main set; numeric editions describe print identities.
+
 ## 1.0.5 - 2026-09-29
 
 [Plain-language release notes](library/release-notes-v1.0.5.md).

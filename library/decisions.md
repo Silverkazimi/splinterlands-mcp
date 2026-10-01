@@ -807,3 +807,7 @@ TTL expiration alone does not bound retained unique query keys. The shared cache
 The legacy avatar redirect can return RUNI art, so the avatar-builder character uses its distinct public metadata endpoint. Level remains metadata. An explicit render option composes the reviewed official layers without interface overlays or a level numeral.
 
 Asset downloads use a separate fixed CloudFront origin and path mapping; the existing two-host catalogue GET client is unchanged. Redirects, caller URLs, unsupported selections, oversized assets and partial renders are refused. A current, pinned sharp dependency provides bounded WebP decoding and PNG composition. The map can be reproduced with a static extractor that never executes downloaded client code; changes require review and live verification.
+
+## Card-edition resource and server file size (2026-10-01)
+
+The card-edition table and its MCP registration live in separate files. The existing `src/server.ts` is already over 1,200 lines because it holds the curated tool catalogue and descriptions. This change adds only one import, one registration call and three sentences in existing description constants. Splitting that catalogue during a scoped documentation/resource change would move unrelated tool code and increase review risk; a future catalogue refactor should split it by endpoint family.

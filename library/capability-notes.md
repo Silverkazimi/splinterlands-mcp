@@ -23,6 +23,8 @@ A sixth offline resource, `splinterlands://hive/transaction-limits`, explains so
 
 Five offline JSON resources provide dated public Land rules: splinterlands://land/rules/terrain (14 terrains by six elements), splinterlands://land/rules/production (baseline output and food rates), splinterlands://land/rules/cap (worksite cap and Runi exception), and splinterlands://land/rules/card-abilities (edition-19 level tables for five observed cards, activation and stacking rules), plus splinterlands://land/rules/screen-fields (public-client worker screen labels, cap allocation order and power slots). Discover them with resources/list and read them with resources/read; they make no API calls. Sources and scope are included. The offline lineup estimator uses these reference rules. Snapshot reads verify their baseline against current backend values before returning estimator inputs; this does not establish eligibility for a proposed change.
 
+The offline JSON resource `splinterlands://cards/editions` gives numeric edition labels and observed `card_set` values as of 2026-10-01. For an individual card's main set, use its `card_set` from `cards_collection` or `cards_find`; numeric `edition` is a print identity, and definition `editions` cannot settle the set for shared Alpha/Beta IDs. It makes no API calls. See [the dated observation](observations/card-set-vs-edition-2026-10-01.md) for sample limits.
+
 The 13 standard plot-scoped tools accept exactly one `plot_id` (a numeric ID or a
 display label such as `001-02-001` / `1-2-1`) or `deed_uid`. Routes with
 the original `deedUID` spelling still accept it. Shared resolution verifies

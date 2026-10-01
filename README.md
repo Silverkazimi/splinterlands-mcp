@@ -53,6 +53,12 @@ Land power, and staking state. They can also attach verified plot references
 where available. A card in cooldown may still refer to its former plot, so
 that reference is not proof that it is working there now.
 
+For a card copy's main set, use `card_set` from `cards_collection` or
+`cards_find`. Numeric `edition` and definition `editions` describe print
+identity and can cross sets. The offline
+[`splinterlands://cards/editions`](library/observations/card-set-vs-edition-2026-10-01.md)
+resource explains the labels and the shared Alpha/Beta cards.
+
 Account tools cover public profiles, balances, rewards, quests, skins,
 delegations, and other game records. Market tools provide sale and rental
 listings, prices, activity, and status. There are also reads for battles,
@@ -71,10 +77,25 @@ a limited window of an account's Hive history. A transaction appearing on
 the blockchain does not, by itself, prove that every game operation
 succeeded.
 
-The server includes reference information for Land production rules and
-Hive transaction limits. Each reference states its sources and scope.
+The server includes reference information for Land production rules, card
+editions and Hive transaction limits. Each reference states its sources and scope.
 These references help explain results; they do not replace checks against
 current game data.
+
+### Offline resources
+
+Discover these with MCP `resources/list` and read them with `resources/read`:
+
+| Resource | Reference |
+| --- | --- |
+| `splinterlands://cards/editions` | Card sets and numeric print identities |
+| `splinterlands://land/rules/screen-fields` | Land worker fields and screen labels |
+| `splinterlands://land/rules/card-abilities` | Land card abilities by level |
+| `splinterlands://land/rules/terrain` | Land terrain modifiers |
+| `splinterlands://land/rules/production` | Land production and food rates |
+| `splinterlands://land/rules/cap` | Land base-production cap |
+| `splinterlands://land/rules/tax-and-trade` | Land harvest tax and Trade Hub fees |
+| `splinterlands://hive/transaction-limits` | Hive transaction limits |
 
 ## Understanding the results
 

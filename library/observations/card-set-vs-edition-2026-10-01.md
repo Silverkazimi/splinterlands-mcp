@@ -1,0 +1,13 @@
+# Card set and numeric edition observations — 2026-10-01
+
+This note records the bounded public API measurements supplied for the 2026-10-01 review. The collection sample covered seven public accounts and 1,100 distinct `card_detail_id` values from `GET https://api.splinterlands.com/cards/collection/<player>`; the definition sample covered 1,102 rows from `GET https://api.splinterlands.com/cards/get_details`. Account names and per-card UIDs are omitted.
+
+The collection rows carried `card_set`, the main set of each copy. Values observed were `alpha`, `beta`, `untamed`, `chaos`, `rebellion`, `conclave`, `foundations`, `gladius`, `land`, and `other`. `other` covered the observed Nightmare/Soulkeep family; it is not a precise set name. Shared card-detail IDs 1–59 occurred with both `alpha` and `beta` across copies; 50 such IDs were seen in two accounts. Among the 87 identified Beta-era IDs in the 60–223 range, 86 owned cards carried `card_set: "beta"`; ID 205 was not owned by any sampled account, so its `card_set` was not observed. Therefore a definition ID alone does not always identify an individual copy's main set.
+
+The definition rows carried `editions` as a comma-separated numeric string, such as `"0,1"`, `"1"`, `"2"`, `"3"`, `"4"` or `"15,16"`, and did not carry `card_set`. Edition numbers 2 (Promo), 3 (Reward), and 17 (Extra) are print classes found within multiple main sets. For example, Highland Archer (ID 79) had `editions: "3"` and an owned copy with `card_set: "beta"`; ID 337 had numeric edition 3 and `card_set: "chaos"`. In the measured definitions, `editions: "1"` alone occurred for only 20 cards, IDs 60–113. A numeric edition is not a reliable replacement for `card_set`.
+
+Card UID prefixes such as `C1-`, `C2-`, and `C3-` do not name the set. Observed `C3-82-...` refers to a Beta-era card and `C3-337-...` to a Chaos card. Read `card_set` on the returned instance instead.
+
+Coverage limits: Verico/Visions of Verico was not seen. Foundations and Gladius were seen, but no ownership-based mapping of their individual numeric edition identities was established. IDs without an owned copy among the seven sampled accounts, including 205, cannot be assigned an observed `card_set` from this sample. The values above describe the measured rows, not all cards or all future sets.
+
+Sources: the two public Splinterlands GET routes named above, measured on 2026-10-01. The numeric label list was supplied for this review as coming from the game's public website bundle; the specific bundle file and revision were not present in this repository and were not fetched in this change. The offline resource `splinterlands://cards/editions` contains that label table and the measured limits.

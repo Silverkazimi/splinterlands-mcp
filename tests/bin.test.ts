@@ -51,7 +51,7 @@ describe("built binary", () => {
 
   // Re-adding the source shebang alongside tsup's banner must produce a nonzero child exit code.
   it("initializes, lists registered tools, and exits when stdin closes", async () => {
-    child = spawn(process.execPath, ["dist/index.js"], {
+    child = spawn(process.execPath, [process.env.SPLINTERLANDS_MCP_TEST_BIN_PATH ?? "dist/index.js"], {
       cwd: process.cwd(),
       stdio: ["pipe", "pipe", "pipe"] as ["pipe", "pipe", "pipe"],
     });
