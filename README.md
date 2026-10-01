@@ -53,11 +53,18 @@ Land power, and staking state. They can also attach verified plot references
 where available. A card in cooldown may still refer to its former plot, so
 that reference is not proof that it is working there now.
 
-For a card copy's main set, use `card_set` from `cards_collection` or
-`cards_find`. Numeric `edition` and definition `editions` describe print
-identity and can cross sets. The offline
+For a card copy's main set, use `main_set` (the copy's `card_set` value) from
+`cards_collection` or `cards_find`; `main_set_label` is its human label.
+`print_class` and `sub_set` come only from the copy's numeric `edition`.
+Promo, Reward, Extra, mini sets and soulbound tracks can sit within different
+main sets. For example, edition 3 is Reward while card 79 is Beta and card 337
+is Chaos. An unknown edition has null `print_class` and `sub_set` plus
+`edition_unmapped: true`; a missing `card_set` gives null `main_set` and label.
+`cards_collection` accepts case-insensitive local `main_set` and `print_class`
+filters alongside `card_set`, without extra requests. Definition `editions`
+describe possible prints, not a particular copy's main set. The offline
 [`splinterlands://cards/editions`](library/observations/card-set-vs-edition-2026-10-01.md)
-resource explains the labels and the shared Alpha/Beta cards.
+resource gives the dated hierarchy and evidence limits.
 
 Account tools cover public profiles, balances, rewards, quests, skins,
 delegations, and other game records. Market tools provide sale and rental

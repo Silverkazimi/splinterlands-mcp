@@ -16,7 +16,12 @@ export type ProjectedCollectionCard = {
   xp: number;
   bcx: number;
   collection_power: number;
-  card_set: string;
+  card_set?: string;
+  main_set?: string | null;
+  main_set_label?: string | null;
+  print_class?: "main" | "promo" | "reward" | "extra" | "mini_set" | "soulbound" | "outlier" | null;
+  sub_set?: string | null;
+  edition_unmapped?: true;
   land_base_pp?: string | null;
   land_dec_stake_needed?: number | null;
   element?: string;
@@ -308,7 +313,7 @@ async function parseCard(reader: JsonStreamReader): Promise<ProjectedCollectionC
     if (delimiter !== ",") throw new CollectionParseError("Collection card object had an invalid delimiter.");
   }
   for (const field of PROJECTED_FIELDS) {
-    if (!["land_base_pp", "land_dec_stake_needed", "stake_start_date", "stake_end_date", "stake_plot"].includes(field) && !(field in card)) {
+    if (!["card_set", "land_base_pp", "land_dec_stake_needed", "stake_start_date", "stake_end_date", "stake_plot"].includes(field) && !(field in card)) {
       throw new CollectionParseError(`Collection card omitted projected field '${field}'.`);
     }
   }

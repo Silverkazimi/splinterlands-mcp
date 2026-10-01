@@ -811,3 +811,9 @@ Asset downloads use a separate fixed CloudFront origin and path mapping; the exi
 ## Card-edition resource and server file size (2026-10-01)
 
 The card-edition table and its MCP registration live in separate files. The existing `src/server.ts` is already over 1,200 lines because it holds the curated tool catalogue and descriptions. This change adds only one import, one registration call and three sentences in existing description constants. Splitting that catalogue during a scoped documentation/resource change would move unrelated tool code and increase review risk; a future catalogue refactor should split it by endpoint family.
+
+## Copy main set and numeric print hierarchy (2026-10-01)
+
+A copy's `card_set` is authoritative for `main_set`; the numeric `edition` selects only print class and sub set. The offline edition table records associations in `underMainSet`, but the runtime never uses that association to repair, infer or replace a copy's main set. This keeps Reward edition 3 compatible with both Beta and Chaos and applies the same rule to every future combination. Missing and unknown values retain null labels rather than acquiring plausible names. The collection filters run after the existing projection and before paging, so they add no upstream request or retained full collection. The find route has no local filters and keeps its existing UID-only input. The upstream result-contract fingerprints remain descriptions of raw API responses; normalized output fields are documented as server-derived fields, not misrepresented as upstream wire keys.
+
+`src/server.ts` remains over roughly 1,200 lines. This change adds a shared small hierarchy module and narrowly scoped handler edits; splitting the large server catalogue is deferred under the existing rationale above.

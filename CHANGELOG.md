@@ -5,6 +5,7 @@
 ### Added
 
 - Added a dated offline card-edition resource and clarified that `card_set` on collection and find rows names each copy's main set; numeric editions describe print identities.
+- Added the explicit main-set/sub-set hierarchy, normalized `main_set`, `main_set_label`, `print_class` and `sub_set` card fields, and local collection filters for main set and print class. Unknown editions are flagged.
 
 ## 1.0.5 - 2026-09-29
 
