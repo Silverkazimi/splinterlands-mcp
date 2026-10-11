@@ -2,13 +2,32 @@
 
 ## 1.0.7 - 2026-10-11
 
-### Security
+A security maintenance release. It updates third-party packages that had published security advisories. The tools, their inputs and their outputs are unchanged, so updating from 1.0.6 needs no other change. `npm audit` now reports no known vulnerabilities, where 1.0.6 reported eight.
 
-- Updated `sharp` to 0.35.5 for the bundled librsvg vulnerability (GHSA-wq5f-xc86-pv6w).
-- Updated locked transitive dependencies for published advisories: `proxy-addr` 2.0.8 (critical, GHSA-jqcg-44mw-7w3h), `ip-address` 10.7.3, `hono` 4.13.13, `fast-uri` 3.1.8, `brace-expansion` 5.0.12 and `source-map-js` 1.2.2 (#67).
-- Updated `@modelcontextprotocol/sdk` to 1.32.1 (GHSA-6qxp-vccf-f47h) and the development toolchain (`eslint`, `typescript-eslint`, `tsx`, `vitest`, `@types/node`) to current patch releases. `npm audit` reports no vulnerabilities.
+### Do I need to update?
 
-No tool, input or output changed.
+Yes, but none of these advisories was a realistic risk for this server as normally run. It talks to its client over standard input and output, opens no network port, sends no credentials and decodes only WebP images. Updating removes the warnings and keeps the server safe if that ever changes.
+
+### What was fixed
+
+- **Image rendering (`sharp` 0.35.5).** The image library's bundled SVG decoder had a vulnerability ([GHSA-wq5f-xc86-pv6w](https://github.com/advisories/GHSA-wq5f-xc86-pv6w)). `player_custom_avatar` with `render: true` uses this library, but it accepts only WebP layers from Splinterlands, so the SVG decoder was never reached.
+- **MCP SDK (`@modelcontextprotocol/sdk` 1.32.1).** Older versions could let an MCP server steer a client's OAuth credentials to an authorization server of its choosing ([GHSA-6qxp-vccf-f47h](https://github.com/advisories/GHSA-6qxp-vccf-f47h)). That affects MCP clients that sign in with OAuth, not this server. 1.32.1 is now the minimum version.
+- **Packages the SDK depends on** (#67, contributed by a community developer):
+  - `proxy-addr` 2.0.8: trusted-proxy checks could be fooled by IPv4-mapped IPv6 addresses ([GHSA-jqcg-44mw-7w3h](https://github.com/advisories/GHSA-jqcg-44mw-7w3h), critical).
+  - `ip-address` 10.7.3: subnet checks across address families, and long-input slowdowns.
+  - `hono` 4.13.13: unescaped text in one JSX rendering path.
+  - `fast-uri` 3.1.8: inconsistent host-name normalization.
+
+  The first three serve the SDK's HTTP server mode, which this server does not use. `fast-uri` belongs to the SDK's JSON Schema validator, and the flaw affects only comparisons of web addresses.
+- **Development tools only.** These do not ship to users:
+  - `brace-expansion` 5.0.12 and `source-map-js` 1.2.2, both denial-of-service fixes.
+  - Routine patch updates to `eslint`, `typescript-eslint`, `tsx`, `vitest` and `@types/node`.
+
+### How it was checked
+
+- Typecheck, lint, the full privacy scan and all 597 tests pass on Node.js 22 and 24.
+- The built server was started and checked live: it registered 186 tools, read current game data and rendered an avatar PNG with the new image library.
+- An independent review confirmed that the dependency lockfile matches `package.json` and that no package moved back to a vulnerable version.
 
 ## 1.0.6 - 2026-10-11
 
