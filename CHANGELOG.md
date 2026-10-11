@@ -1,11 +1,22 @@
 # Changelog
 
-## Unreleased
+## 1.0.6 - 2026-10-11
+
+[Plain-language release notes](library/release-notes-v1.0.6.md).
 
 ### Added
 
 - Added a dated offline card-edition resource and clarified that `card_set` on collection and find rows names each copy's main set; numeric editions describe print identities.
 - Added the explicit main-set/sub-set hierarchy, normalized `main_set`, `main_set_label`, `print_class` and `sub_set` card fields, and local collection filters for main set and print class. Unknown editions are flagged.
+- Added `land_deeds_bundle`: every deed for one player or region from one streamed read, with staking and worksite state joined, paged from a 120-second cache.
+- Added ownership, delegation, rental, market-listing and lock fields to `cards_collection` rows; a field the upstream omits is listed in `ownership_unknown`.
+- Added a 120-second collection index so every `cards_collection` cursor and filter reuses one upstream read, plus a compact `all` projection and the index age on every page.
+- Added an `include` selector to `land_plot_snapshot`; its follow-up reads now run in parallel.
+
+### Corrected
+
+- `transaction_inspect` now reads every game record of a multi-operation transaction (`<trx_id>`, `<trx_id>-1`, …) and reports a combined `batch_status`; it previously read only the first.
+- Accepted game transaction records whose `result` is null, which `transaction_lookup` had refused as malformed.
 
 ## 1.0.5 - 2026-09-29
 

@@ -5,6 +5,18 @@ export const COLLECTION_HEAP_LIMIT_BYTES = 128 * 1024 * 1024;
 export const COLLECTION_RSS_LIMIT_BYTES = 358 * 1024 * 1024;
 export const COLLECTION_MEMORY_SAMPLE_CARDS = 256;
 export const COLLECTION_TIMEOUT_MS = 90 * 1000;
+// About 410 bytes of heap per projected card were measured on 2026-10-11. The parse guard compares absolute
+// heapUsed, so the held indexes (40,000 cards, about 16 MiB) plus one in-flight index (25,000 cards, about
+// 10 MiB) plus the measured 90.71 MiB streaming high-water mark must stay under its 128 MiB.
+export const COLLECTION_INDEX_CARD_LIMIT = 25_000;
+export const COLLECTION_INDEX_TOTAL_CARDS = 40_000;
+export const COLLECTION_INDEX_TTL_MS = 120 * 1000;
+// Ownership, delegation, rental and lock fields carried by every measured collection row (2026-10-11).
+export const OWNERSHIP_FIELDS = [
+  "owner", "delegated_to", "rental_type", "rental_date", "rental_days", "next_rental_payment",
+  "market_id", "market_listing_type", "market_listing_status", "lock_days", "unlock_date", "last_transferred_date",
+] as const;
+export type OwnershipField = typeof OWNERSHIP_FIELDS[number];
 
 export type ProjectedCollectionCard = {
   uid: string;
@@ -37,6 +49,19 @@ export type ProjectedCollectionCard = {
   color?: string;
   sub_type?: string | null;
   secondary_color?: string | null;
+  owner?: string;
+  delegated_to?: string | null;
+  rental_type?: string | null;
+  rental_date?: string | null;
+  rental_days?: number | null;
+  next_rental_payment?: string | null;
+  market_id?: string | null;
+  market_listing_type?: string | null;
+  market_listing_status?: number | null;
+  lock_days?: number | null;
+  unlock_date?: string | null;
+  last_transferred_date?: string | null;
+  ownership_unknown?: OwnershipField[];
 };
 
 export type ProjectedCollection = {
@@ -44,6 +69,8 @@ export type ProjectedCollection = {
   cards: ProjectedCollectionCard[];
   total: number;
   definition_missing_count?: number;
+  /** Every enriched card in wire order, or null when the collection exceeded retainAllLimit. */
+  index?: ProjectedCollectionCard[] | null;
 };
 
 export type CollectionPageOptions = {
@@ -53,6 +80,7 @@ export type CollectionPageOptions = {
   matches?: (card: ProjectedCollectionCard) => boolean;
   maxHeapBytes?: number;
   maxRssBytes?: number;
+  retainAllLimit?: number;
 };
 
 const PROJECTED_FIELDS = new Set<keyof ProjectedCollectionCard>([
@@ -69,7 +97,11 @@ const PROJECTED_FIELDS = new Set<keyof ProjectedCollectionCard>([
   "land_base_pp",
   "land_dec_stake_needed",
   "stake_start_date", "stake_end_date", "stake_plot",
+  ...OWNERSHIP_FIELDS,
 ]);
+const TIMESTAMP = /^\d{4}-\d{2}-\d{2}T.*(?:Z|[+-]\d{2}:\d{2})$/u;
+const timestampOrNull = (value: unknown) => value === null || (typeof value === "string" && TIMESTAMP.test(value) && Number.isFinite(Date.parse(value)));
+const OPTIONAL_FIELDS = new Set<string>(["card_set", "land_base_pp", "land_dec_stake_needed", "stake_start_date", "stake_end_date", "stake_plot", ...OWNERSHIP_FIELDS]);
 
 export class CollectionParseError extends Error {
   constructor(message: string) {
@@ -270,15 +302,19 @@ class JsonStreamReader {
 }
 
 function assertType(field: string, value: unknown): void {
-  const valid = field === "stake_start_date" || field === "stake_end_date"
-    ? value === null || (typeof value === "string" && /^\d{4}-\d{2}-\d{2}T.*(?:Z|[+-]\d{2}:\d{2})$/u.test(value) && Number.isFinite(Date.parse(value)))
+  const valid = ["stake_start_date", "stake_end_date", "rental_date", "next_rental_payment", "unlock_date", "last_transferred_date"].includes(field)
+    ? timestampOrNull(value)
+    : ["delegated_to", "rental_type", "market_id", "market_listing_type"].includes(field)
+    ? value === null || typeof value === "string"
+    : ["rental_days", "market_listing_status", "lock_days"].includes(field)
+    ? value === null || (typeof value === "number" && Number.isSafeInteger(value) && value >= 0)
     : field === "land_dec_stake_needed"
     ? value === null || (typeof value === "number" && Number.isFinite(value) && value >= 0)
     : field === "stake_plot"
     ? value === null || (typeof value === "number" && Number.isSafeInteger(value) && value > 0)
     : field === "land_base_pp"
     ? value === null || (typeof value === "string" && /^\d+(?:\.\d+)?$/u.test(value) && Number.isFinite(Number(value)))
-    : field === "uid" || field === "card_set"
+    : field === "uid" || field === "card_set" || field === "owner"
     ? typeof value === "string"
     : field === "gold"
     ? typeof value === "boolean"
@@ -297,7 +333,9 @@ async function parseCard(reader: JsonStreamReader): Promise<ProjectedCollectionC
     throw new CollectionParseError("Collection card object was empty.");
   }
   while (true) {
-    const field = await reader.string();
+    const wireField = await reader.string();
+    // The row's player is the owning account; it differs from the requested account for delegated-in or rented-in cards.
+    const field = wireField === "player" ? "owner" : wireField === "owner" ? "" : wireField;
     await reader.whitespace();
     await reader.consume(":");
     if (PROJECTED_FIELDS.has(field as keyof ProjectedCollectionCard)) {
@@ -313,10 +351,12 @@ async function parseCard(reader: JsonStreamReader): Promise<ProjectedCollectionC
     if (delimiter !== ",") throw new CollectionParseError("Collection card object had an invalid delimiter.");
   }
   for (const field of PROJECTED_FIELDS) {
-    if (!["card_set", "land_base_pp", "land_dec_stake_needed", "stake_start_date", "stake_end_date", "stake_plot"].includes(field) && !(field in card)) {
+    if (!OPTIONAL_FIELDS.has(field) && !(field in card)) {
       throw new CollectionParseError(`Collection card omitted projected field '${field}'.`);
     }
   }
+  const unknown = OWNERSHIP_FIELDS.filter((field) => !(field in card));
+  if (unknown.length > 0) card.ownership_unknown = unknown;
   return card as ProjectedCollectionCard;
 }
 
@@ -358,6 +398,8 @@ export async function parseCardsCollection(
   let total = 0;
   let parsedCards = 0;
   let missingDefinitions = 0;
+  const retainAllLimit = pageOptions.retainAllLimit;
+  let index: ProjectedCollectionCard[] | null | undefined = retainAllLimit === undefined ? undefined : [];
   try {
     await reader.whitespace();
     await reader.consume("{");
@@ -382,6 +424,10 @@ export async function parseCardsCollection(
             const card = pageOptions.enrich ? pageOptions.enrich(parsed) : parsed;
             if (pageOptions.enrich && card.name === undefined) missingDefinitions += 1;
             parsedCards += 1;
+            if (index) {
+              if (index.length < retainAllLimit!) index.push(card);
+              else index = null;
+            }
             if (pageOptions.matches?.(card) ?? true) {
               if (total >= cursor && cards.length < limit) {
                 cards.push(card);
@@ -414,7 +460,7 @@ export async function parseCardsCollection(
     if (player === undefined || cards === undefined) {
       throw new CollectionParseError("Collection response did not contain both player and cards.");
     }
-    return { player, cards, total, ...(pageOptions.enrich ? { definition_missing_count: missingDefinitions } : {}) };
+    return { player, cards, total, ...(pageOptions.enrich ? { definition_missing_count: missingDefinitions } : {}), ...(index === undefined ? {} : { index }) };
   } finally {
     await reader.close();
   }

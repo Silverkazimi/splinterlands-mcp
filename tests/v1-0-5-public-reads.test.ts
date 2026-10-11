@@ -34,6 +34,24 @@ it("reads exactly four fresh plot endpoints and preserves each upstream body", a
     expect(test.urls.map(url => url.pathname)).toEqual(Array(2).fill(["/land/deeds/101", "/land/projects/deed/fixture-deed/active", "/land/stake/deed/details/fixture-deed", "/land/stake/deeds/fixture-deed/assets"]).flat());
   } finally { await test.close(); }
 });
+it("reads only the included sections, in parallel after the deed", async () => {
+  const test = await rig({ "/land/deeds/101": deed, "/land/projects/deed/fixture-deed/active": active, "/land/stake/deed/details/fixture-deed": details, "/land/stake/deeds/fixture-deed/assets": assets });
+  try {
+    const lean = await test.call("land_plot_snapshot", { plot_id: "002-01-001", include: ["deed", "stake_details"] });
+    expect(lean.isError).not.toBe(true);
+    expect(lean.structuredContent).toMatchObject({ plot_reference: { deed_uid: "fixture-deed" }, deed, stake_details: details, included: ["deed", "stake_details"] });
+    expect(lean.structuredContent).not.toHaveProperty("active_project");
+    expect(lean.structuredContent).not.toHaveProperty("stake_assets");
+    expect(test.urls.map(url => url.pathname)).toEqual(["/land/deeds/101", "/land/stake/deed/details/fixture-deed"]);
+    const assetsOnly = await test.call("land_plot_snapshot", { plot_id: 101, include: ["stake_assets"] });
+    expect(assetsOnly.structuredContent).not.toHaveProperty("deed");
+    expect(assetsOnly.structuredContent).toMatchObject({ plot_reference: { plot_id: 101 }, stake_assets: assets });
+    expect(test.urls).toHaveLength(4);
+    expect((await test.call("land_plot_snapshot", { plot_id: 101, include: [] })).isError).toBe(true);
+    expect((await test.call("land_plot_snapshot", { plot_id: 101, include: ["owner"] })).isError).toBe(true);
+    expect(test.urls).toHaveLength(4);
+  } finally { await test.close(); }
+});
 it("rejects an unverified deed and accepts a null active project", async () => {
   const invalid = await rig({ "/land/deeds/101": { status: "success", data: null } });
   try { const result = await invalid.call("land_plot_snapshot", { plot_id: "002-01-001" }); expect(result.isError).toBe(true); expect(result.structuredContent).toMatchObject({ kind: "plot_resolution_unverified", stage: "deed" }); expect(invalid.urls).toHaveLength(1); } finally { await invalid.close(); }
@@ -42,7 +60,7 @@ it("rejects an unverified deed and accepts a null active project", async () => {
 });
 it("returns no partial snapshot when a follow-up fails or the result is oversized", async () => {
   const denied = await rig({ "/land/deeds/101": deed, "/land/projects/deed/fixture-deed/active": new Response("denied", { status: 401 }) });
-  try { const result = await denied.call("land_plot_snapshot", { plot_id: 101 }); expect(result.isError).toBe(true); expect(result.structuredContent).toMatchObject({ stage: "active_project" }); expect(result.structuredContent).not.toHaveProperty("deed"); expect(denied.urls).toHaveLength(2); } finally { await denied.close(); }
+  try { const result = await denied.call("land_plot_snapshot", { plot_id: 101 }); expect(result.isError).toBe(true); expect(result.structuredContent).toMatchObject({ stage: "active_project" }); expect(result.structuredContent).not.toHaveProperty("deed"); expect(denied.urls.length).toBeLessThanOrEqual(4); } finally { await denied.close(); }
   const oversized = await rig({ "/land/deeds/101": deed, "/land/projects/deed/fixture-deed/active": active, "/land/stake/deed/details/fixture-deed": details, "/land/stake/deeds/fixture-deed/assets": { ...assets, padding: "x".repeat(300_000) } });
   try { const result = await oversized.call("land_plot_snapshot", { plot_id: 101 }); expect(result.isError).toBe(true); expect(result.structuredContent).toMatchObject({ kind: "response_too_large", stage: "result" }); expect(result.structuredContent).not.toHaveProperty("deed"); expect(oversized.urls).toHaveLength(4); } finally { await oversized.close(); }
 });

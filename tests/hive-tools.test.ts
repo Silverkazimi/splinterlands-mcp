@@ -135,6 +135,28 @@ describe("Hermes evidence tools", () => {
    expect((await c.callTool({ name: "transaction_lookup", arguments: { trx_id: id } })).isError).not.toBe(true);
   });
  });
+ it("caps game lookups at nine and stops on an upstream failure", async () => {
+  const record = (trx: string) => new Response(JSON.stringify({ trx_info: { id: trx, block_id: "synthetic-block", prev_block_id: "synthetic-prev", created_date: "2026-10-11T08:48:57.000Z", steem_price: null, sbd_price: null, block_num: 123, player: "sampleacct", type: "land_operation", success: true, error: null, data: "{}", result: "{}" } }), { headers: { "content-type": "application/json" } });
+  for (const mode of ["twelve-ops", "mid-failure"]) {
+   const lookups: string[] = [];
+   await run(async (url) => {
+    if (String(url) === HIVE_URL) return rpc(tx(Array.from({ length: mode === "twelve-ops" ? 12 : 4 }, () => op())));
+    const trx = new URL(String(url)).searchParams.get("trx_id")!; lookups.push(trx);
+    if (mode === "mid-failure" && trx === `${id}-2`) return new Response(JSON.stringify({ unexpected: true }), { headers: { "content-type": "application/json" } });
+    return record(trx);
+   }, async (c) => {
+    const s = (await c.callTool({ name: "transaction_inspect", arguments: { trx_id: id } })).structuredContent as { game_records: Array<{ status: string }>; summary: { batch_status: string; game_coverage: string } };
+    if (mode === "twelve-ops") {
+     expect(lookups).toEqual([id, ...Array.from({ length: 8 }, (_, i) => `${id}-${i + 1}`)]);
+     expect(s.summary.game_coverage).toContain("stopped early");
+    } else {
+     expect(lookups).toEqual([id, `${id}-1`, `${id}-2`]);
+     expect(s.game_records.map((e) => e.status)).toEqual(["found", "found", "unavailable"]);
+    }
+    expect(s.summary.batch_status).toBe("unverified");
+   });
+  }
+ });
  it("rejects malformed suffixed transaction ids", async () => {
   await run(async () => { throw Error("unexpected fetch"); }, async (c) => {
    for (const trx_id of [`${id}-0`, `${id}-01`, `${id}-1000`, `${id}-x`])

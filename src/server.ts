@@ -3,6 +3,7 @@ import { createAvatarRenderer, AvatarArtworkError } from "./avatar/artwork.js";
 import { collectionPlotReferences } from "./collection-plot-references.js";
 import { registerScenarioSnapshot, SCENARIO_TOOL_ROUTES } from "./land-scenario-snapshot.js";
 import { registerLandPlotSnapshot, PLOT_SNAPSHOT_TOOL_ROUTE } from "./land-plot-snapshot.js";
+import { registerLandDeedsBundle, LAND_DEEDS_BUNDLE_TOOL_ROUTE } from "./land-deeds-bundle.js";
 import { registerV105PublicReads, V105_PUBLIC_READ_ENTRY_IDS } from "./v1-0-5-public-reads.js";
 import { POWER_CORE_ENTRY_IDS, registerPowerCoreReads } from "./power-core.js";
 import { DELEGATION_ENTRY_IDS, registerDelegations } from "./delegations.js";
@@ -38,7 +39,8 @@ import { SplinterlandsHttpClient, type ClientOptions } from "./http/client.js";
 import { isEmptyResult, type Freshness, type HttpResult, type UpstreamOutcome } from "./http/errors.js";
 import { CARD_DETAILS_TTL_MS, COLLECTION_CACHE_TTL_MS, TtlCache } from "./http/cache.js";
 import { describeEndpoint, listEndpoints } from "./endpoint-knowledge.js";
-import { COLLECTION_PAGE_LIMIT, COLLECTION_TIMEOUT_MS, parseCardsCollection, type ProjectedCollection, type ProjectedCollectionCard } from "./cards-collection.js";
+import { COLLECTION_INDEX_CARD_LIMIT, COLLECTION_INDEX_TTL_MS, COLLECTION_PAGE_LIMIT, COLLECTION_TIMEOUT_MS, parseCardsCollection, type ProjectedCollection, type ProjectedCollectionCard } from "./cards-collection.js";
+import { CollectionIndexCache } from "./collection-index.js";
 import { z } from "zod";
 import { CARD_MINT_ENTRY_IDS, registerCardMints } from "./card-mints.js";
 
@@ -222,7 +224,7 @@ const CARDS_SKINS_DESCRIPTION = "List the skin rows returned by GET /cards/skins
 const CARDS_PACK_DATA_WAX_DESCRIPTION = "List the pack metadata rows returned by GET /cards/pack_data_wax. The measured public response was a six-object bare array for ALPHA, BETA, ORB, UNTAMED, DICE and CHAOS, with symbol, template_id, max, minted and burned fields as JSON numbers. The measured response carried no BCX, donor or account-attribution field because it is WAX-bridge mint/burn metadata rather than per-card or per-owner data. Successful metadata responses are cached for 24 hours; provenance reports the route and the original fetch time. This tool returns the rows unchanged.";
 const CARDS_HISTORY_DESCRIPTION = "List the transfer records returned by GET /cards/history for one per-instance card UID. id is a card UID, not a card_detail_id: numeric ids silently returned [], while a real UID returned transfer records. A returned record carries card_id, transfer_date, transfer_type, transfer_tx, from_player, to_player, card_detail_id, xp, gold, edition, payment_amount, payment_currency and combined_cards. from_player and to_player are account-attribution fields for the transfer, not donor provenance. Donor and BCX were absent in the measured response. This route is a per-instance event lookup, not a card-definition lookup or an enumeration of history for a numeric card_detail_id. The result is limited by this server's 100-row and 256 KB bounds and is not cached as static metadata.";
 const CARDS_FIND_DESCRIPTION = "For each copy, `card_set` is the main set and `edition` is a numeric print identity (see splinterlands://cards/editions). Each copy also returns main_set, main_set_label, print_class and sub_set; unknown editions set edition_unmapped. Look up per-instance card records through GET /cards/find. Supply ids as one comma-separated string of full per-instance card UIDs; real 2-ID and 3-ID requests returned exactly the requested UIDs in order. Repeated ids=, ids[]= and JSON-array encodings are not valid: repeated and bracketed parameters return an unable-to-parse error, while a JSON array is split as literal comma-separated text. A matched record carries player, uid, card_detail_id, xp, gold, edition, card_set, collection_power, market and rental fields, and the measured bcx and bcx_unbound fields. BCX is therefore promised for this per-instance route only; it is not a claim about definition routes. player is current-owner attribution, not donor provenance, and donor was absent in the measured record. This result is bounded by this server's 100-row and 256 KB limits and is not cached as static metadata.";
-const CARDS_COLLECTION_DESCRIPTION = "For each copy, `card_set` is the main set and `edition` is a numeric print identity (see splinterlands://cards/editions). Each copy also returns main_set, main_set_label, print_class and sub_set; unknown editions set edition_unmapped. Optional include_plot_references adds reported_stake_plot_reference with verified padded label, numeric ID and deed UID to returned cards using at most one account-scoped deed search (limit 200); the call then permits three logical GETs instead of two. Unresolved or conflicting references remain null with explicit status and separate freshness. This is not complete holdings discovery. Cooling cards have left their old plot; a retained reference is historical. The projected collection cache is reused when only this option changes, and plot references are read afresh. Joined metadata exposes normalized element and secondary_element, plus only the selected level’s land_abilities and land_abilities_status. Missing level entries are unknown, never an invented empty ability list; absent ability tables mean no Land abilities in that definition. Raw numeric land_dec_stake_needed is retained if present. The element filter matches either normalized element. For known edition-19 cards, land_lineup_estimate resolves its dated abilities itself; omit an explicit abilities override there. Other cards can use the returned ability tuples, subject to estimator-supported codes. Optional stake_start_date, stake_end_date and numeric stake_plot are retained when present. staking_status and staking_observed_at classify one capture as staked, unstaking, unstaked, pending or unknown; cached pages preserve that classification time. Missing dates are unknown, not unstaked. Local staked=yes selects active staking, staked=no selects explicitly unstaked cards (not cooling or pending), and staked=plot requires numeric stake_plot_id. Plot labels are not inferred from an unverified numeric reference. These filters make no extra request. Stream the projected collection returned by GET /cards/collection/{username}. The upstream response has exactly {player,cards[]} and no total, count, cursor, page token or other pagination field; no narrower query was available in the measured collection evidence. The route-size and memory measurements are recorded in `library/observations/collection-streaming-memory-2026-09-08.md`. The server never materialises the upstream body: it parses cards[] incrementally, skips unprojected fields, counts matching cards, and retains only the projected cards in the requested page, up to 100. Each emitted card contains uid, card_detail_id, edition, gold, foil, level, xp, bcx, collection_power and card_set. The source card object carried 56 fields; this projection keeps the ten core fields plus land_base_pp when present, and makes no byte-saving claim. In the upstream wire types, land_base_pp and last_buy_price are numeric-looking JSON strings, while bcx, xp, collection_power and level are real JSON numbers; land_base_pp is retained as its original decimal string and last_buy_price is not projected. A missing land_base_pp stays absent; an observed null stays null. Both mean unknown production and never pass a min_land_base_pp filter, including a zero threshold. Malformed or non-finite production strings are refused; the latter four fields are returned as numbers. Card definitions are joined by card_detail_id, adding name, color, secondary_color when present and sub_type. Color and subtype filters are case-insensitive exact matches; color matches either primary or secondary color. Unknown definitions retain the instance without invented fields, never match metadata filters, and are counted in definition_missing_count across the full scanned collection before filtering. The complete definition catalogue is fetched under the existing 2 MiB cap and projected into one 24-hour cache; only joined page fields are returned. This tool may use two logical GET requests (definitions plus collection). Definition failure stops before reading the collection. Definition refresh invalidates the joined page cache, and metadata freshness is separate. Local filters are color, sub_type, gold, edition, foil, card_set, main_set, print_class, min_level, min_collection_power and min_land_base_pp; cursor is a zero-based filtered-result offset and limit defaults to 100 with a maximum of 100. This server's heap-occupancy guard is 128 MiB: the highest observed production-path value was 90.71 MiB of unforced heapUsed; the occupancy backstop is wider because GC timing can vary, so it needs operational slack. Production normally has no --expose-gc, so heapUsed is high-water heap occupancy including uncollected garbage, not a retention bound. If global.gc is exposed, as it may be in a diagnostic/test process, the server calls it before sampling to reduce transient garbage. Retention was measured separately at about 9.4 MiB flat under forced GC and is verified by test, not at runtime. A separate 358 MiB RSS operational ceiling is based on the highest RSS observed across the measurement rounds: 286.4 MiB in the forced-GC diagnosis, higher than the 278.08 MiB RSS maximum of the final production-path runs. RSS is a separate process-occupancy backstop, not a retention bound, and includes memory outside the V8 heap and uncollected garbage. Neither runtime number bounds retention: both are occupancy guards at different scopes, while retention is verified by measurement, not enforced at runtime. Memory is sampled every 256 parsed cards, plus once at the end when needed; on the measured 51,799-card run that means at most 203 cadence samples, and a regression is detected within 256 parsed cards without a memory call on every card. The route uses a 90-second timeout chosen by this server behind the measured 41-second fetch; a timeout is attempted once and is not retried. The global 2 MB response cap is unchanged for every other route and is not raised for this exception. One successful page is cached for 60 seconds per username, retaining at most that page; cache reuse requires the same filter, cursor and limit request. A different page or filter is a cache miss, re-streams and re-parses the full collection, and replaces that username's cached page because the upstream has no pagination; the cached page re-streams after expiry. The fixture is deliberately trimmed to three cards with representative raw fields rather than the measured 155 MiB response; the fixture declares every concrete array index and is only a contract sample. No account name is embedded in this server source.";
+const CARDS_COLLECTION_DESCRIPTION = "For each copy, `card_set` is the main set and `edition` is a numeric print identity (see splinterlands://cards/editions). Each copy also returns main_set, main_set_label, print_class and sub_set; unknown editions set edition_unmapped. Optional include_plot_references adds reported_stake_plot_reference with verified padded label, numeric ID and deed UID to returned cards using at most one account-scoped deed search (limit 200); the call then permits three logical GETs instead of two. Unresolved or conflicting references remain null with explicit status and separate freshness. This is not complete holdings discovery. Cooling cards have left their old plot; a retained reference is historical. The projected collection cache is reused when only this option changes, and plot references are read afresh. Joined metadata exposes normalized element and secondary_element, plus only the selected level’s land_abilities and land_abilities_status. Missing level entries are unknown, never an invented empty ability list; absent ability tables mean no Land abilities in that definition. Raw numeric land_dec_stake_needed is retained if present. The element filter matches either normalized element. For known edition-19 cards, land_lineup_estimate resolves its dated abilities itself; omit an explicit abilities override there. Other cards can use the returned ability tuples, subject to estimator-supported codes. Optional stake_start_date, stake_end_date and numeric stake_plot are retained when present. staking_status and staking_observed_at classify one capture as staked, unstaking, unstaked, pending or unknown; cached pages preserve that classification time. Missing dates are unknown, not unstaked. Local staked=yes selects active staking, staked=no selects explicitly unstaked cards (not cooling or pending), and staked=plot requires numeric stake_plot_id. Plot labels are not inferred from an unverified numeric reference. These filters make no extra request. Stream the projected collection returned by GET /cards/collection/{username}. The upstream response has exactly {player,cards[]} and no total, count, cursor, page token or other pagination field; no narrower query was available in the measured collection evidence. The route-size and memory measurements are recorded in `library/observations/collection-streaming-memory-2026-09-08.md`. The server never materialises the upstream body: it parses cards[] incrementally, skips unprojected fields, counts matching cards, and retains only the projected cards in the requested page, up to 100. Each emitted card contains uid, card_detail_id, edition, gold, foil, level, xp, bcx, collection_power and card_set. Each card also carries owner (the row's player field: the owning account, which differs from the requested username for delegated-in or rented-in cards), delegated_to, rental_type, rental_date, rental_days, next_rental_payment, market_id, market_listing_type, market_listing_status, lock_days, unlock_date and last_transferred_date, as measured on 2026-10-11. A null value is the upstream null. If the wire row omits one of these fields, the card lists it in ownership_unknown; an absent field is unknown, never a value meaning none. rental_type and market_listing_type also appear on cards that are only listed and not rented, so a rental is indicated by rental_date, not by rental_type alone. all=true returns a compact projection of uid, card_detail_id, level, bcx, foil, edition, card_set and land_base_pp, plus reported_stake_plot_reference when include_plot_references is set, in pages of up to 100. The source card object carried 56 fields in the 2026-09-08 capture and 60 in 2026-10-11; this projection keeps the ten core fields plus the optional land, staking and ownership fields described here, and makes no byte-saving claim. In the upstream wire types, land_base_pp and last_buy_price are numeric-looking JSON strings, while bcx, xp, collection_power and level are real JSON numbers; land_base_pp is retained as its original decimal string and last_buy_price is not projected. A missing land_base_pp stays absent; an observed null stays null. Both mean unknown production and never pass a min_land_base_pp filter, including a zero threshold. Malformed or non-finite production strings are refused; the latter four fields are returned as numbers. Card definitions are joined by card_detail_id, adding name, color, secondary_color when present and sub_type. Color and subtype filters are case-insensitive exact matches; color matches either primary or secondary color. Unknown definitions retain the instance without invented fields, never match metadata filters, and are counted in definition_missing_count across the full scanned collection before filtering. The complete definition catalogue is fetched under the existing 2 MiB cap and projected into one 24-hour cache; only joined page fields are returned. This tool may use two logical GET requests (definitions plus collection). Definition failure stops before reading the collection. Definition refresh invalidates the joined page cache, and metadata freshness is separate. Local filters are color, sub_type, gold, edition, foil, card_set, main_set, print_class, min_level, min_collection_power and min_land_base_pp; cursor is a zero-based filtered-result offset and limit defaults to 100 with a maximum of 100. This server's heap-occupancy guard is 128 MiB: the highest observed production-path value was 90.71 MiB of unforced heapUsed; the occupancy backstop is wider because GC timing can vary, so it needs operational slack. Production normally has no --expose-gc, so heapUsed is high-water heap occupancy including uncollected garbage, not a retention bound. If global.gc is exposed, as it may be in a diagnostic/test process, the server calls it before sampling to reduce transient garbage. Retention was measured separately at about 9.4 MiB flat under forced GC and is verified by test, not at runtime. A separate 358 MiB RSS operational ceiling is based on the highest RSS observed across the measurement rounds: 286.4 MiB in the forced-GC diagnosis, higher than the 278.08 MiB RSS maximum of the final production-path runs. RSS is a separate process-occupancy backstop, not a retention bound, and includes memory outside the V8 heap and uncollected garbage. Neither runtime number bounds retention: both are occupancy guards at different scopes, while retention is verified by measurement, not enforced at runtime. Memory is sampled every 256 parsed cards, plus once at the end when needed; on the measured 51,799-card run that means at most 203 cadence samples, and a regression is detected within 256 parsed cards without a memory call on every card. The route uses a 90-second timeout chosen by this server behind the measured 41-second fetch; a timeout is attempted once and is not retried. The global 2 MB response cap is unchanged for every other route and is not raised for this exception. A collection of up to 25,000 cards is read once and held as a projected index for 120 seconds per username (40,000 cards across all usernames, least recently used evicted first). Every cursor, filter and compact page is served from that index without another upstream read. Every page reports index.observed_at and index.age_ms, the time of the upstream read. A larger collection is not indexed: one successful page is cached for 60 seconds, and a different page or filter re-streams the full collection. index.source says which path served the page. A card-definition refresh invalidates the index. The fixture is deliberately trimmed to three cards with representative raw fields rather than the measured 155 MiB response; the fixture declares every concrete array index and is only a contract sample. No account name is embedded in this server source.";
 const PLAYERS_ITEM_DETAILS_DESCRIPTION = "List the full item-type catalogue returned by GET /players/item_details. The measured public response contained 320 items and was about 134 KB, with id, name, type, nullable sub_type, data, transferable, consumable, inventory, nullable print_limit, total_printed, nullable image_filename, nullable icon_filename, nullable description, nullable rarity and stake_type_id. The id parameter is inert: the no-id response and id=1 response were byte-identical, so this tool does not advertise id as an item lookup filter. The measured response carried no BCX, donor or account-attribution field. Successful metadata responses are cached for 24 hours; provenance reports the route and the original fetch time. This server applies its general 100-row and 256 KB result bounds to the returned array; it does not claim that the bounded response is the full upstream catalogue.";
 const PLAYER_PROFILE_DESCRIPTION = "Return one account's profile from GET /players/details. This route is ABSENT from the main host's published declaration and was found by probing; it answered publicly with no token, and its selector is name, not username. The captured response was about 4.7 KB and carried the account name, join date, ranked figures, collection power, league, a public guild record, a player_uuid and a season pass flag. Ranked figures appear per format: the wild figures are unprefixed, with modern_, survival_ and foundation_ fields alongside. player_avatar is a JSON-encoded string inside the JSON response and is returned as a string; this server does not parse it a second time. Four fields were null on the captured account, so no type is claimed for them. One account was captured, so which fields are always present is not established beyond the name.";
 const PLAYER_CURRENT_REWARDS_DESCRIPTION = "Return the current season's glint totals for one account from GET /players/current_rewards. The measured public response carried a season_reward_info object with the season number and a glint figure per format. Some per-format glint fields were observed null on the captured account and carry no declared type; the wild and survival figures were observed as numbers. A missing figure is not evidence that the account earned nothing. One account and one season were captured; no claim is made about which formats carry a figure in general.";
@@ -414,7 +416,10 @@ const cardsCollectionInputSchema = z.object({
   staked: z.enum(["yes", "no", "plot"]).optional(),
   stake_plot_id: z.number().int().positive().optional(),
   include_plot_references: z.boolean().optional(),
+  all: z.boolean().optional(),
 }).strict();
+
+const COMPACT_COLLECTION_FIELDS = ["uid", "card_detail_id", "level", "bcx", "foil", "edition", "card_set", "land_base_pp"] as const;
 
 type CardsCollectionParams = z.infer<typeof cardsCollectionInputSchema>;
 
@@ -514,9 +519,11 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   const now = clientOptions.now ?? Date.now;
   const metadataCache = new TtlCache<CachedMetadata>(now, 8);
   const collectionCache = new TtlCache<CachedCollection>(now, 64);
+  const collectionIndex = new CollectionIndexCache(now);
   const loadCardDefinitions = createCardDefinitionLoader(client, now);
   registerScenarioSnapshot(server, client, loadCardDefinitions, now);
   registerLandPlotSnapshot(server, client);
+  registerLandDeedsBundle(server, client, now);
   registerV105PublicReads(server, client);
   const landDeedByPlotInputSchema = inputSchemaFor(LAND_DEED_BY_PLOT_ENTRY_ID).extend({ plot_id: plotIdOrLabelSchema });
   const landDeedByUidInputSchema = inputSchemaFor(LAND_DEED_BY_UID_ENTRY_ID);
@@ -1487,42 +1494,74 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       const cacheKey = collectionParams.username;
       const definitions = await loadCardDefinitions();
       if (!definitions.ok) return outcomeResult(definitions, "/cards/get_details", {});
-      const requestKey = JSON.stringify([{...collectionParams, include_plot_references:undefined}, definitions.traceId]);
-      const cached = collectionCache.get(cacheKey);
+      const pageParams = { ...collectionParams, include_plot_references: undefined, all: undefined };
+      const requestKey = JSON.stringify([pageParams, definitions.traceId]);
+      const cursor = collectionParams.cursor ?? 0;
+      const limit = collectionParams.limit ?? COLLECTION_PAGE_LIMIT;
       let collection: ProjectedCollection;
       let result: Extract<HttpResult<ProjectedCollection>, { ok: true }>;
-      const cacheHit = cached !== undefined && cached.requestKey === requestKey;
-      if (cached !== undefined && cached.requestKey === requestKey) {
-        const fetchedAt = Date.parse(cached.result.freshness.retrievedAt);
-        result = {
-          ...cached.result,
-          freshness: {
-            retrievedAt: cached.result.freshness.retrievedAt,
-            ageMs: Number.isFinite(fetchedAt) ? Math.max(0, now() - fetchedAt) : cached.result.freshness.ageMs,
-          },
-        };
+      let cacheHit: boolean;
+      let indexState: { source: "index_cache" | "upstream" | "page_cache"; card_count: number | null; cached: boolean; reason?: string };
+      const indexed = collectionIndex.get(cacheKey, definitions.traceId);
+      const cached = indexed === undefined ? collectionCache.get(cacheKey) : undefined;
+      const age = (retrievedAt: string, fallback: number) => {
+        const fetchedAt = Date.parse(retrievedAt);
+        return Number.isFinite(fetchedAt) ? Math.max(0, now() - fetchedAt) : fallback;
+      };
+      if (indexed !== undefined) {
+        // One cached index serves every cursor and filter until it expires.
+        let total = 0;
+        const cards: ProjectedCollectionCard[] = [];
+        for (const card of indexed.cards) {
+          if (!collectionCardMatches(card, collectionParams)) continue;
+          if (total >= cursor && cards.length < limit) cards.push(card);
+          total += 1;
+        }
+        collection = { player: indexed.player, cards, total, ...(indexed.definitionMissingCount === undefined ? {} : { definition_missing_count: indexed.definitionMissingCount }) };
+        result = { ok: true, data: collection, endpoint: indexed.endpoint, traceId: indexed.traceId,
+          freshness: { retrievedAt: indexed.retrievedAt, ageMs: age(indexed.retrievedAt, 0) } };
+        cacheHit = true;
+        indexState = { source: "index_cache", card_count: indexed.cards.length, cached: true };
+      } else if (cached !== undefined && cached.requestKey === requestKey) {
+        result = { ...cached.result, freshness: { retrievedAt: cached.result.freshness.retrievedAt, ageMs: age(cached.result.freshness.retrievedAt, cached.result.freshness.ageMs) } };
         collection = result.data;
+        cacheHit = true;
+        indexState = { source: "page_cache", card_count: null, cached: false, reason: `collection exceeds the ${COLLECTION_INDEX_CARD_LIMIT}-card index limit` };
       } else {
         const stakingObservedAt = now();
         const streamed = await client.requestStreaming(bound.hostname, bound.path, {}, {
           endpointTemplate: bound.endpointTemplate,
           timeoutMs: COLLECTION_TIMEOUT_MS,
           consume: (response) => parseCardsCollection(response, {
-            ...(collectionParams.cursor === undefined ? {} : { cursor: collectionParams.cursor }),
-            ...(collectionParams.limit === undefined ? {} : { limit: collectionParams.limit }),
+            cursor, limit,
             enrich: (card) => withCollectionStaking(joinCardDefinition(withCardSetHierarchy(card), definitions.data), stakingObservedAt),
             matches: (card) => collectionCardMatches(card, collectionParams),
+            retainAllLimit: COLLECTION_INDEX_CARD_LIMIT,
           }),
         });
         if (!streamed.ok) return outcomeResult(streamed, bound.endpointTemplate, collectionParams);
-        result = streamed;
-        collection = streamed.data;
-        collectionCache.set(cacheKey, { requestKey, result: streamed }, COLLECTION_CACHE_TTL_MS);
+        const { index, ...page } = streamed.data;
+        collection = page;
+        result = { ...streamed, data: page };
+        cacheHit = false;
+        if (index) {
+          collectionIndex.set(cacheKey, { player: page.player, cards: index, definitionsTraceId: definitions.traceId,
+            definitionMissingCount: page.definition_missing_count, retrievedAt: streamed.freshness.retrievedAt,
+            endpoint: streamed.endpoint, traceId: streamed.traceId }, COLLECTION_INDEX_TTL_MS);
+          indexState = { source: "upstream", card_count: index.length, cached: true };
+        } else {
+          collectionCache.set(cacheKey, { requestKey, result }, COLLECTION_CACHE_TTL_MS);
+          indexState = { source: "upstream", card_count: null, cached: false, reason: `collection exceeds the ${COLLECTION_INDEX_CARD_LIMIT}-card index limit` };
+        }
       }
-      const cursor = collectionParams.cursor ?? 0;
       const plotReferences = collectionParams.include_plot_references
         ? await collectionPlotReferences(client,collectionParams.username,collection.cards) : undefined;
-      let cards = plotReferences?.cards ?? collection.cards;
+      const pageCards = plotReferences?.cards ?? collection.cards;
+      // A requested plot reference survives compaction; otherwise the deed search would be spent for nothing.
+      const compactFields: readonly string[] = plotReferences ? [...COMPACT_COLLECTION_FIELDS, "reported_stake_plot_reference"] : COMPACT_COLLECTION_FIELDS;
+      let cards: Array<ProjectedCollectionCard | Record<string, unknown>> = collectionParams.all
+        ? pageCards.map((card) => Object.fromEntries(compactFields.filter((field) => field in card).map((field) => [field, (card as Record<string, unknown>)[field]])))
+        : pageCards;
       let nextCursor = cursor + cards.length < collection.total ? cursor + cards.length : null;
       const structuredContent = {
         player: collection.player,
@@ -1531,6 +1570,8 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
         total: collection.total,
         definition_missing_count: collection.definition_missing_count,
         cache: cacheHit ? "hit" : "miss",
+        index: { ...indexState, observed_at: result.freshness.retrievedAt, age_ms: result.freshness.ageMs },
+        ...(collectionParams.all ? { projection: "compact" } : {}),
         ...(plotReferences ? {plot_references:plotReferences.metadata} : {}),
       };
       while (utf8Bytes(structuredContent) > MAX_RESULT_BYTES && cards.length > 0) {
@@ -1542,14 +1583,18 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       if (cards.length === 0 && collection.cards.length > 0) {
         return { isError: true, content: [{ type: "text" as const, text: OVERSIZED_RECORD_TEXT }] };
       }
-      const cacheText = cacheHit
-        ? "This page came from the 60-second page cache."
-        : "Cache miss: the full collection was streamed and only this projected page was retained in the 60-second page cache.";
+      const cacheText = indexState.source === "index_cache"
+        ? "This page came from the 120-second collection index; other cursors and filters reuse it without a new upstream read."
+        : indexState.source === "page_cache"
+        ? "This page came from the 60-second page cache; the collection is too large for the index, so a different page or filter re-streams it."
+        : indexState.cached
+        ? "Cache miss: the full collection was streamed once and indexed for 120 seconds; other cursors and filters reuse the index."
+        : "Cache miss: the collection is too large for the index, so only this projected page was retained in the 60-second page cache.";
       const pagingText = nextCursor === null
         ? "There is no next cursor."
         : `Request cursor ${nextCursor} for the next page.`;
       return {
-        content: [{ type: "text" as const, text: `${JSON.stringify(structuredContent)} ${cacheText} A different page or filter re-streams the full collection; after cache expiry, this page does too. ${pagingText}` }],
+        content: [{ type: "text" as const, text: `${JSON.stringify(structuredContent)} ${cacheText} ${pagingText}` }],
         structuredContent,
         _meta: { ...provenanceMeta(result, bound.endpointTemplate, collectionParams), card_definitions: {
           endpoint: "/cards/get_details", traceId: definitions.traceId,
@@ -1775,7 +1820,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       inputSchema: {},
     },
     async () => {
-      const structuredContent = { ...listEndpoints(CALLABLE_ENDPOINT_IDS), additionalReadTools: { ...HIVE_TOOL_ROUTES, ...SCENARIO_TOOL_ROUTES, ...PLOT_SNAPSHOT_TOOL_ROUTE } };
+      const structuredContent = { ...listEndpoints(CALLABLE_ENDPOINT_IDS), additionalReadTools: { ...HIVE_TOOL_ROUTES, ...SCENARIO_TOOL_ROUTES, ...PLOT_SNAPSHOT_TOOL_ROUTE, ...LAND_DEEDS_BUNDLE_TOOL_ROUTE } };
       return {
         content: [{ type: "text" as const, text: JSON.stringify(structuredContent) }],
         structuredContent,

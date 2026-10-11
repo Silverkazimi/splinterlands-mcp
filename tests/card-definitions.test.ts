@@ -90,7 +90,7 @@ describe("collection definition join", () => {
       expect(all.structuredContent).toMatchObject({ total: 3, definition_missing_count: 1 });
       const unknown = (all.structuredContent as { cards: Array<Record<string, unknown>> }).cards[2];
       expect(unknown).not.toHaveProperty("name");
-      expect(test.calls).toHaveLength(3);
+      expect(test.calls).toHaveLength(2); // the unfiltered page is served from the collection index
       test.advance(24 * 60 * 60 * 1000);
       await test.call();
       expect(test.calls.slice(-2)).toEqual(["/cards/get_details", "/cards/collection/fixture_account"]);

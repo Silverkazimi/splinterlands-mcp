@@ -117,7 +117,7 @@ results are cached, and their freshness is reported. Related reads can
 also happen at slightly different times, so they should not be treated
 as one perfectly synchronized view of the game.
 
-The reference below lists all 185 tools. For request budgets, exact
+The reference below lists all 186 tools. For request budgets, exact
 parameters, cache behavior, and recorded API quirks, see the
 [technical capability notes](library/capability-notes.md) and
 [safety boundaries](#what-it-is-and-what-it-will-never-do).
@@ -227,7 +227,8 @@ tools are local and make no upstream request.
 | `land_stake_evp_pending_claim` | `GET /land/stake/evp/pending-claim` |
 | `land_tracts_counts` | `GET /land/tracts/counts` |
 | `land_volume` | `GET /land/volume` |
-| `land_plot_snapshot` | Four bounded public GETs: deed by plot, active project, stake details and stake assets |
+| `land_plot_snapshot` | Up to four bounded public GETs: deed by plot, then active project, stake details and stake assets in parallel |
+| `land_deeds_bundle` | One bounded `GET /land/deeds` (limit 1000, 8 MiB), projected and cached locally |
 | `land_lineup_snapshot` | Bounded compound GETs; at most ten logical requests |
 | `land_lineup_estimate` | Offline; calculates a supplied Land lineup |
 | `hive_account_history` | Read-only RPC: condenser_api.get_account_history |
@@ -469,7 +470,7 @@ apply process-wide, separately for each approved API host (`api.splinterlands.co
 | Circuit breaker | 5 consecutive failures; open for 60 seconds |
 | Response cap | 2 MB, streamed |
 | Per-call budget | 1 logical upstream request; retries of that request are allowed |
-| Cache | In-memory only; settings use a one-hour success cache, card details a 24-hour metadata cache, prices a five-minute success cache, collection pages a 60-second projected-page cache, and the auth tier a 15-minute cache |
+| Cache | In-memory only; settings use a one-hour success cache, card details a 24-hour metadata cache, prices a five-minute success cache, collections a 120-second projected index (25,000 cards per account, 40,000 in total) with a 60-second page cache beyond that, deed bundles a 120-second projection cache, and the auth tier a 15-minute cache |
 | Access changes | 401 is cached for 15 minutes; 403 stops traffic across all approved hosts for 60 seconds |
 
 Catalogue requests are HTTPS `GET`s to the three approved Splinterlands hosts, with redirects refused and URL

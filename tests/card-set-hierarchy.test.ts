@@ -86,9 +86,9 @@ describe("main set and sub set hierarchy", () => {
       expect((chaos.structuredContent as { cards: Array<Record<string, unknown>> }).cards.map((row) => row.main_set)).toEqual(["chaos"]);
       const reward = await client.callTool({ name: "cards_collection", arguments: { username: "synthetic", print_class: "ReWaRd" } });
       expect((reward.structuredContent as { cards: Array<Record<string, unknown>> }).cards.map((row) => row.main_set)).toEqual(["beta", "chaos"]);
-      expect(calls).toBe(4); // find, definitions, then two collection streams
+      expect(calls).toBe(3); // find, definitions, then one collection stream that indexes both filters
       expect((await client.callTool({ name: "cards_collection", arguments: { username: "synthetic", print_class: "invented" } })).isError).toBe(true);
-      expect(calls).toBe(4);
+      expect(calls).toBe(3);
     } finally {
       await client.close();
       await server.close();
