@@ -12,6 +12,10 @@ export const HIVE_TOOL_ROUTES: Record<string, string> = {
 };
 const account = z.string().min(3).max(16).regex(/^[a-z][a-z0-9.-]+[a-z0-9]$/);
 const trxId = z.string().regex(/^[a-fA-F0-9]{40}$/).transform((v) => v.toLowerCase());
+// The game splits one Hive transaction into records <id>, <id>-1, <id>-2, ...; accept either form.
+const gameTrxId = z.string().regex(/^[a-fA-F0-9]{40}(-[1-9][0-9]{0,2})?$/).transform((v) => v.toLowerCase());
+// One Hive read plus at most nine game lookups keeps inspect inside the ten-request call scope.
+const MAX_GAME_RECORDS = 9;
 const object = z.record(z.string(), z.unknown());
 const operation = z.tuple([z.string(), object]);
 const historyRow = z.tuple([z.number().int().nonnegative(), z.object({
@@ -24,6 +28,7 @@ const transactionSchema = z.object({
 }).passthrough();
 const annotations = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true };
 function decoded(value: unknown): { value: unknown; warning?: string } {
+  if (value === null) return { value: null };
   if (typeof value !== "string") return { value, warning: "Expected a JSON-encoded string." };
   try { return { value: JSON.parse(value) as unknown }; }
   catch { return { value: null, warning: "Malformed embedded JSON; raw value is preserved." }; }
@@ -90,6 +95,33 @@ async function settledRead(action: () => Promise<unknown>) {
     return { ok: false as const, kind: error instanceof HiveReadError ? error.kind : "malformed_response" };
   }
 }
+type GameLookup = Awaited<ReturnType<ReturnType<typeof bindRequest>["execute"]>>;
+function gameRecord(id: string, outcome: GameLookup) {
+  if (!outcome.ok) {
+    const missing = outcome.kind === "upstream_error" && outcome.message.includes(`Transaction [${id}] not found`);
+    return { trx_id: id, status: missing ? "not_found" as const : "unavailable" as const, kind: missing ? null : outcome.kind };
+  }
+  const info = record(record(outcome.data)?.trx_info);
+  if (!info) return { trx_id: id, status: "unavailable" as const, kind: "upstream_malformed" };
+  return { trx_id: id, status: "found" as const, id_agrees: info.id === id, type: info.type ?? null, player: info.player ?? null,
+    success: typeof info.success === "boolean" ? info.success : null, error: info.error ?? null,
+    block_num: info.block_num ?? null, created_date: info.created_date ?? null,
+    data: decoded(info.data), result: decoded(info.result) };
+}
+async function gameRecords(client: SplinterlandsHttpClient, id: string, first: GameLookup, operationCount: number | undefined) {
+  const entries = [gameRecord(id, first)];
+  if (entries[0]!.status === "unavailable") return { entries, stopped: true };
+  const limit = Math.min(operationCount ?? MAX_GAME_RECORDS, MAX_GAME_RECORDS);
+  for (let index = 1; index < limit; index++) {
+    const suffixed = `${id}-${index}`;
+    const entry = gameRecord(suffixed, await bindRequest("api.transactions.lookup", { trx_id: suffixed }).execute(client));
+    entries.push(entry);
+    if (entry.status === "unavailable") return { entries, stopped: true };
+    // With a known operation count every suffix is checked; without one the first gap ends the scan.
+    if (entry.status === "not_found" && operationCount === undefined) return { entries, stopped: false };
+  }
+  return { entries, stopped: operationCount === undefined ? true : operationCount > MAX_GAME_RECORDS };
+}
 export function registerHiveTools(server: McpServer, client: SplinterlandsHttpClient, reader: HermesHiveReader): void {
   server.registerResource("hermes-transaction-limits", "splinterlands://hive/transaction-limits", { title: "Hive transaction terms and limits", mimeType: "application/json" }, async (uri) => ({ contents: [{ uri: uri.href, mimeType: "application/json", text: JSON.stringify(limits) }] }));
   server.registerTool("hive_account_history", {
@@ -120,9 +152,10 @@ export function registerHiveTools(server: McpServer, client: SplinterlandsHttpCl
     inputSchema: { trx_id: trxId }, annotations,
   }, async ({ trx_id }) => guarded(() => transaction(reader, trx_id)));
   server.registerTool("transaction_inspect", {
-    description: "Inspect one transaction using a full Hive read and the existing Splinterlands game-result lookup. Returns independent chain/game outcomes, decoded game JSON, and gift-card agreement where provable. A game record does not prove processing of every operation in a multi-operation transaction. At most two logical reads.",
-    inputSchema: { trx_id: trxId }, annotations,
-  }, async ({ trx_id }) => guarded(async () => {
+    description: "Inspect one transaction using a full Hive read and the Splinterlands game-result lookup. The game records a multi-operation Hive transaction as separate records <trx_id>, <trx_id>-1, <trx_id>-2 and so on, each with its own success and result (measured 2026-10-11: four sm_land_operation operations gave four records, and -4 was not found). This tool looks up every suffix up to the chain operation count; if the chain read fails, it stops at the first missing suffix. It returns one entry per record in game_records and a combined batch_status. A trx_id with a -N suffix inspects the whole transaction. A -N record is not proven to be Hive operation N. At most one Hive read and nine game lookups.",
+    inputSchema: { trx_id: gameTrxId }, annotations,
+  }, async ({ trx_id: requested }) => guarded(async () => {
+    const trx_id = requested.slice(0, 40);
     const chain = await settledRead(() => transaction(reader, trx_id));
     const game = await bindRequest("api.transactions.lookup", { trx_id }).execute(client);
     const info = game.ok ? record(record(game.data)?.trx_info) : undefined;
@@ -131,6 +164,11 @@ export function registerHiveTools(server: McpServer, client: SplinterlandsHttpCl
     const gameIdMatches = info?.id === trx_id;
     const success = gameIdMatches && info?.success === true ? "success" : gameIdMatches && info?.success === false ? "failed" : "unverified";
     const chainData = chain.ok ? chain.data as Awaited<ReturnType<typeof transaction>> : undefined;
+    const records = await gameRecords(client, trx_id, game, chainData?.operation_count);
+    const found = records.entries.filter((r) => r.status === "found");
+    const complete = chainData !== undefined && !records.stopped && found.length === chainData.operation_count && found.every((r) => r.id_agrees);
+    const batchStatus = found.some((r) => r.success === false) ? "failed"
+      : complete && found.every((r) => r.success === true) ? "success" : "unverified";
     const one = chainData?.operations.length === 1 ? chainData.operations[0] : undefined;
     const resultCards = record(result?.value)?.cards;
     const reportedCards = Array.isArray(resultCards) && resultCards.every((c) => typeof c === "string") ? resultCards : undefined;
@@ -138,14 +176,18 @@ export function registerHiveTools(server: McpServer, client: SplinterlandsHttpCl
     const sameContext = gameIdMatches && info?.block_num === chainData?.block_num && info?.type === "gift_cards" && Array.isArray(auths) && auths.includes(info?.player);
     const comparable = sameContext && one?.item_ids && reportedCards;
     const agreement = comparable ? JSON.stringify([...one.item_ids!].sort()) === JSON.stringify([...reportedCards!].sort()) : null;
-    return { trx_id, chain, game, game_decoded: info ? { data, result } : null,
-      summary: { game_status: success, operation_count: chainData?.operation_count ?? null,
+    return { trx_id, ...(requested !== trx_id ? { requested_trx_id: requested } : {}),
+      chain, game, game_decoded: info ? { data, result } : null, game_records: records.entries,
+      summary: { game_status: success, batch_status: batchStatus, game_record_count: found.length,
+        operation_count: chainData?.operation_count ?? null,
         signature_count: chainData?.signature_count ?? null,
         gift_item_count: one?.item_count ?? null, gift_result_agrees: agreement,
         game_transaction_id_agrees: info ? gameIdMatches : null,
         block_agrees: info && chainData ? info.block_num === chainData.block_num : null,
         verification: success === "success" && agreement === true ? "Single gift operation agrees with the successful game record." : "Evidence is partial or not comparable; inspect the independent outcomes.",
-        game_coverage: "One lookup record; completeness across multiple operations is not established." },
+        game_coverage: complete ? `Every one of the ${found.length} chain operations has a game record.`
+          : chainData === undefined ? `Chain read failed, so the operation count is unknown; ${found.length} game record(s) were found before ${records.stopped ? "the lookup budget or an upstream failure stopped the scan" : "the first missing suffix"}. Completeness is not established.`
+          : `${found.length} game record(s) for ${chainData.operation_count} chain operation(s)${records.stopped ? "; the scan stopped early" : ""}. Completeness is not established; an operation without a record may be a non-game operation or one the game did not process.` },
       retrieved_at: new Date().toISOString(),
     };
   }));
