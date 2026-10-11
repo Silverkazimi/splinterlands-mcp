@@ -145,4 +145,6 @@ rewritten.
 - [Collection index and deed bundle evidence](observations/collection-and-deeds-2026-10-11.md) — ownership fields on collection rows, per-card heap, the 3.6 MB region deed read and plot snapshot timings.
 
 - [Maintainer updates and specification review](maintenance.md)
-\n- [Releases and updates](releasing.md) — audited initial history, release checks, canonical checkout and recovery.\n
+- [Releases and updates](releasing.md) — audited initial history, release checks, canonical checkout and recovery.
+- [Capability notes](capability-notes.md) — per-tool request limits, caches and observed API behavior behind the README overview.
+- [Custom avatar data and artwork](avatar-artwork.md) — saved avatar settings and composed artwork.

@@ -29,7 +29,7 @@ Live public reads on 2026-10-11, without authentication.
   return their data. `offset=1000` for region 65 returned `{deeds: [], worksite_details: null, staking_details: null}`.
 - `data` is `{deeds, worksite_details, staking_details}`. In region 65 there were 998 staking rows and
   778 worksite rows for 1,000 deeds, joined by `deed_uid`; every deed had at most one worksite row.
-- `land_deeds_bundle` makes one such read through the streaming client, buffered up to an 8 MiB limit and parsed whole,, projects it and pages it from a 120-second cache:
+- `land_deeds_bundle` makes one such read through the streaming client, buffered up to an 8 MiB limit and parsed whole, projects it and pages it from a 120-second cache:
   region 65 gave 1,000 rows in 10 pages with one upstream GET, with 2 deeds missing a staking row.
 
 ## land_plot_snapshot
