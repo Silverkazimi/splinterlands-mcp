@@ -29,6 +29,15 @@ A source repository may be visible while release acceptance is still pending. Do
 
 For the first accepted release use version 1.0.0 after owner acceptance. Update package.json and package-lock.json together, move the relevant changelog notes into a dated release section, and ensure README installation instructions match the published artifact. Run release checks after the version change.
 
+Every release, including a dependency-only patch, needs a human-readable changelog entry. Write it for a user deciding whether and how to update, not as a list of package names. Each entry must state:
+
+- what changed, in plain words, with any tool, input or output changes named
+- whether users need to update; for a security fix, what the practical exposure was for this server as normally run, checked against the source
+- known limitations or behaviour to watch for
+- how the release was verified
+
+Link each security advisory and name the fixed version. Credit outside contributions by PR number. A larger release may put the full text in `library/release-notes-vX.Y.Z.md` and link it from the changelog. Use the same text, or a faithful summary of it, as the GitHub release body.
+
 Tag the exact reviewed commit only after hosted checks pass. Publish release notes describing capability scope, known limitations and the verification performed. Do not move a published tag. For a correction, prepare a new version and tag.
 
 npm publication requires separate registry authorization and maintainer approval. If it is requested, verify the package name, registry identity, access level and archive immediately before publishing. Do not introduce a persistent registry token into the server or its source.

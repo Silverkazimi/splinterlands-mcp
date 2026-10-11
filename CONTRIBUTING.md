@@ -39,4 +39,6 @@ Run these checks before opening a pull request:
 
 Use current supported Node 22 or 24 releases; the minimum is 22.13.0. Explain the changed behavior, evidence and validation in the PR. Retain failure and unknown states rather than making missing data look like a successful empty response.
 
+A user-visible change needs a human-readable changelog entry that says what changed and why it matters to a user, not only which code or package moved. library/releasing.md lists what a release entry must cover.
+
 See [maintenance](library/maintenance.md) for scheduled API checks and [releasing](library/releasing.md) for release preparation and updates.
