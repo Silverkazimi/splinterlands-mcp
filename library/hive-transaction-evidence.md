@@ -1,7 +1,7 @@
 # Hive transaction evidence
 
 As of 2026-09-13, three additional read tools use an isolated Hermes reader.
-The original 179-entry Splinterlands GET catalogue and its 144 bindings remain unchanged.
+At that date the Splinterlands GET catalogue had 179 entries and 144 bindings; those three tools did not change it. The current catalogue count is in the capability notes.
 No third-party Hive MCP installation or signing interface is required.
 
 Use `hive_account_history` with an explicit account, optionally filtering
@@ -13,10 +13,11 @@ Custom JSON account indexing concerns authorities; a recipient named only inside
 JSON may not have the operation in their account history.
 
 Pass a returned transaction ID to `transaction_inspect`. This performs one
-full Hive transaction read and reuses `transaction_lookup`'s existing game route.
+full Hive transaction read and reuses `transaction_lookup`'s game route for the plain ID and, as described below, for each further record of a multi-operation transaction (call scope: ten logical requests).
 It preserves raw evidence and separately reports game status, operation count,
 signature count, and recognized gift-card count. The game result is decoded with
-warnings for malformed JSON. Only a single gift operation with matching transaction,
+warnings for malformed JSON; a `null` result (measured 2026-10-11 on a successful
+delegation record) is accepted as null, not as malformed. Only a single gift operation with matching transaction,
 player authority, type and card multiplicities can produce a positive agreement.
 Chain inclusion does not establish irreversibility.
 
@@ -34,7 +35,7 @@ operation count, with at most nine game lookups. If the chain read fails, it sto
 missing suffix. It returns one `game_records` entry per record and a combined
 `batch_status`: `success` only when every chain operation has a found, matching
 record with `success: true`, `failed` when any record failed, `unverified`
-otherwise. `game_status` still describes the plain-ID record alone. A
+otherwise (also when the chain operation count exceeds nine, because the scan stops at nine records). `game_status` still describes the plain-ID record alone. A
 `-N` input inspects the whole transaction.
 
 A trailing non-game operation gets no record. Measured 2026-10-11 on two public
