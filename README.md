@@ -9,8 +9,8 @@ transactions.
 The server is read-only. It never asks for your private keys and cannot sign
 transactions, spend funds, move cards, or change anything in your account.
 
-Version `1.0.0` requires
-a current Node.js 22 or 24 LTS patch release, with 22.13 as the minimum.
+This server requires a current Node.js 22 or 24 LTS patch release, with 22.13
+as the minimum.
 
 ## Start here
 
