@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.7 - 2026-10-11
+
+### Security
+
+- Updated `sharp` to 0.35.5 for the bundled librsvg vulnerability (GHSA-wq5f-xc86-pv6w).
+- Updated locked transitive dependencies for published advisories: `proxy-addr` 2.0.8 (critical, GHSA-jqcg-44mw-7w3h), `ip-address` 10.7.3, `hono` 4.13.13, `fast-uri` 3.1.8, `brace-expansion` 5.0.12 and `source-map-js` 1.2.2 (#67).
+- Updated `@modelcontextprotocol/sdk` to 1.32.1 (GHSA-6qxp-vccf-f47h) and the development toolchain (`eslint`, `typescript-eslint`, `tsx`, `vitest`, `@types/node`) to current patch releases. `npm audit` reports no vulnerabilities.
+
+No tool, input or output changed.
+
 ## 1.0.6 - 2026-10-11
 
 [Plain-language release notes](library/release-notes-v1.0.6.md).
