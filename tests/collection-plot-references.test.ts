@@ -38,6 +38,18 @@ it("resolves verified labels in three reads and reuses the collection when only 
   expect(second.structuredContent).toMatchObject({cache:"hit",cards:[{stake_plot:101,reported_stake_plot_reference:{plot_id:101,plot_label:"002-01-001",deed_uid:deed.body.data.deed_uid}}],plot_references:{status:"resolved",unresolved_plot_ids:[]}});
  }finally{await r.close();}
 });
+it("keeps the requested plot reference in compact rows",async()=>{
+ const r=await rig();
+ try{
+  const result=await r.c.callTool({name:"cards_collection",arguments:{username:"synthetic",all:true,include_plot_references:true}});
+  expect(result.isError).not.toBe(true);
+  const card=(result.structuredContent as {cards:Array<Record<string,unknown>>}).cards[0]!;
+  expect(card).toMatchObject({reported_stake_plot_reference:{plot_id:101,plot_label:"002-01-001"}});
+  expect(card).not.toHaveProperty("stake_plot");
+  const plain=await r.c.callTool({name:"cards_collection",arguments:{username:"synthetic",all:true}});
+  expect((plain.structuredContent as {cards:Array<Record<string,unknown>>}).cards[0]).not.toHaveProperty("reported_stake_plot_reference");
+ }finally{await r.close();}
+});
 it.each(["missing","foreign","conflict","auth","empty"])("preserves unknown labels for %s without extra lookups",async mode=>{
  const r=await rig(mode);
  try{

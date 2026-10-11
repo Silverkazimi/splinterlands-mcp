@@ -12,6 +12,7 @@ Splinterlands API facts use its published specifications, support documentation 
 - `library/observations/v1-0-5-public-reads-2026-09-29.md` — dated live checks for the v1.0.5 candidate and unresolved seller history.
 
 - `library/release-notes-v1.0.5.md` — plain-language release notes for v1.0.5.
+- `library/release-notes-v1.0.6.md` — plain-language release notes for v1.0.6.
 
 ## Official sources
 
@@ -38,6 +39,8 @@ test — never carried over from an outside observation.
 Public files use synthetic placeholders and contain no private identities or session attribution. New
 fixtures and observations must preserve that boundary while retaining enough provenance for their claims
 to be checked.
+
+[Card set and numeric edition observations](observations/card-set-vs-edition-2026-10-01.md) record the seven-account collection sample, 1,102 definition rows, shared Alpha/Beta IDs and limits behind `splinterlands://cards/editions`.
 
 ## Decisions
 
@@ -139,6 +142,7 @@ rewritten.
 - [Hive transaction evidence](hive-transaction-evidence.md) — bounded history, full transaction and game reconciliation; dated limits resource.
 
 - [Rental, delegation and collector evidence](observations/account-families-2026-09-13.md) — route disposition, bounded filters and drift-fixture repair.
+- [Collection index and deed bundle evidence](observations/collection-and-deeds-2026-10-11.md) — ownership fields on collection rows, per-card heap, the 3.6 MB region deed read and plot snapshot timings.
 
 - [Maintainer updates and specification review](maintenance.md)
 \n- [Releases and updates](releasing.md) — audited initial history, release checks, canonical checkout and recovery.\n

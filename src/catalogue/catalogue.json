@@ -12666,7 +12666,8 @@
         },
         "trx_info.result": {
           "type": "string",
-          "valueClass": "opaque"
+          "valueClass": "opaque",
+          "nullable": true
         },
         "trx_info.success": {
           "type": "boolean",
@@ -12683,7 +12684,7 @@
       ]
     },
     "owningTool": "transaction_lookup",
-    "notes": "Read one game transaction by explicit trx_id. Transaction data and result retain their JSON-encoded string wire types. An unknown ID returned an error object. This never submits or retries a game transaction. Captured unauthenticated 2026-09-12; see library/observations/game-metadata-2026-09-12.md.",
+    "notes": "Read one game transaction by explicit trx_id. Transaction data and result retain their JSON-encoded string wire types; result was null on a successful delegate_cards record measured 2026-10-11. An unknown ID returned an error object. This never submits or retries a game transaction. Captured unauthenticated 2026-09-12; see library/observations/game-metadata-2026-09-12.md.",
     "provenance": {
       "source": "live-observation",
       "sourceUrl": "https://api2.splinterlands.com/transactions/lookup",

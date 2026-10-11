@@ -807,3 +807,17 @@ TTL expiration alone does not bound retained unique query keys. The shared cache
 The legacy avatar redirect can return RUNI art, so the avatar-builder character uses its distinct public metadata endpoint. Level remains metadata. An explicit render option composes the reviewed official layers without interface overlays or a level numeral.
 
 Asset downloads use a separate fixed CloudFront origin and path mapping; the existing two-host catalogue GET client is unchanged. Redirects, caller URLs, unsupported selections, oversized assets and partial renders are refused. A current, pinned sharp dependency provides bounded WebP decoding and PNG composition. The map can be reproduced with a static extractor that never executes downloaded client code; changes require review and live verification.
+
+## Card-edition resource and server file size (2026-10-01)
+
+The card-edition table and its MCP registration live in separate files. The existing `src/server.ts` is already over 1,200 lines because it holds the curated tool catalogue and descriptions. This change adds only one import, one registration call and three sentences in existing description constants. Splitting that catalogue during a scoped documentation/resource change would move unrelated tool code and increase review risk; a future catalogue refactor should split it by endpoint family.
+
+## Copy main set and numeric print hierarchy (2026-10-01)
+
+A copy's `card_set` is authoritative for `main_set`; the numeric `edition` selects only print class and sub set. The offline edition table records associations in `underMainSet`, but the runtime never uses that association to repair, infer or replace a copy's main set. This keeps Reward edition 3 compatible with both Beta and Chaos and applies the same rule to every future combination. Missing and unknown values retain null labels rather than acquiring plausible names. The collection filters run after the existing projection and before paging, so they add no upstream request or retained full collection. The find route has no local filters and keeps its existing UID-only input. The upstream result-contract fingerprints remain descriptions of raw API responses; normalized output fields are documented as server-derived fields, not misrepresented as upstream wire keys.
+
+`src/server.ts` remains over roughly 1,200 lines. This change adds a shared small hierarchy module and narrowly scoped handler edits; splitting the large server catalogue is deferred under the existing rationale above.
+
+## 2026-10-11 — collection index, deed bundle and lean plot snapshot
+
+The collection index and the deed bundle live in src/collection-index.ts and src/land-deeds-bundle.ts; the oversized server.ts receives the cards_collection handler change and wiring only. The index is bounded by card count rather than entry count, because one large account outweighs many small ones; collections over 25,000 cards keep the earlier one-page cache. The 40,000-card total keeps the held indexes (about 16 MiB), one in-flight index (about 10 MiB) and the measured 90.71 MiB streaming high-water mark under the unchanged 128 MiB heap guard, which compares absolute heapUsed. The deed bundle bypasses the 2 MB general response cap through a streamed read with its own 8 MiB limit, because a full region measured 3.6 MB; the cap for every other route is unchanged. land_plot_snapshot still always reads the deed, because the deed verifies plot identity and supplies the deed UID; include only removes sections from the result and from the follow-up reads.

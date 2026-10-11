@@ -7,6 +7,7 @@ import { CollectionParseError, parseCardsCollection, type ProjectedCollectionCar
 import { getCatalogueEntry } from "../src/catalogue/index.js";
 import { matchesResultContract } from "../src/catalogue/fingerprint.js";
 import { collectionCardMatches, createServer } from "../src/server.js";
+import { CollectionIndexCache } from "../src/collection-index.js";
 
 function streamedJson(value: unknown): Response {
   const bytes = new TextEncoder().encode(JSON.stringify(value));
@@ -33,7 +34,7 @@ describe("cards collection contract", () => {
     expect(entry.resultContract.fingerprint["cards[].bcx"]).toEqual({ type: "number", valueClass: "numeric" });
   });
 
-  it("retains one page, re-streams for a later cursor, and re-streams after cache expiry", async () => {
+  it("serves every cursor and filter from one indexed read and re-streams after expiry", async () => {
     let now = Date.parse("2026-09-08T00:00:00Z");
     let fetchCalls = 0;
     const server = createServer({
@@ -52,42 +53,72 @@ describe("cards collection contract", () => {
     await client.connect(clientTransport);
     try {
       const first = await client.callTool({ name: "cards_collection", arguments: { username: "fixture_account", limit: 1 } });
-      const firstBody = first.structuredContent as { cards: Array<Record<string, unknown>>; next_cursor: number | null; cache: string };
+      const firstBody = first.structuredContent as { cards: Array<Record<string, unknown>>; next_cursor: number | null; cache: string; index: Record<string, unknown> };
       expect(firstBody.cards).toHaveLength(1);
       expect(firstBody.cards[0]).toEqual(expect.objectContaining({ uid: "C3-79-0B847L3PGG", bcx: 1, xp: 1 }));
       expect(firstBody.cards[0]).toHaveProperty("land_base_pp", "1000.000");
       expect(firstBody.next_cursor).toBe(1);
       expect(firstBody.cache).toBe("miss");
+      expect(firstBody.index).toMatchObject({ source: "upstream", cached: true, card_count: 3, observed_at: "2026-09-08T00:00:00.000Z", age_ms: 0 });
 
+      now += 5_000;
       const second = await client.callTool({ name: "cards_collection", arguments: { username: "fixture_account", cursor: 1, limit: 1 } });
-      const secondBody = second.structuredContent as { cards: Array<Record<string, unknown>>; cache: string };
+      const secondBody = second.structuredContent as { cards: Array<Record<string, unknown>>; cache: string; index: Record<string, unknown> };
       expect(secondBody.cards[0]?.uid).toBe("C3-1-0B847L3PGH");
-      expect(secondBody.cache).toBe("miss");
-      expect(fetchCalls).toBe(2);
-
-      const secondAgain = await client.callTool({ name: "cards_collection", arguments: { username: "fixture_account", cursor: 1, limit: 1 } });
-      expect((secondAgain.structuredContent as { cache: string }).cache).toBe("hit");
-      expect(fetchCalls).toBe(2);
-
-      now += 60_001;
-      const third = await client.callTool({ name: "cards_collection", arguments: { username: "fixture_account", cursor: 1, limit: 1 } });
-      expect((third.structuredContent as { cache: string }).cache).toBe("miss");
-      expect(fetchCalls).toBe(3);
+      expect(secondBody.cache).toBe("hit");
+      expect(secondBody.index).toMatchObject({ source: "index_cache", observed_at: "2026-09-08T00:00:00.000Z", age_ms: 5_000 });
       const filtered = await client.callTool({ name: "cards_collection", arguments: { username: "fixture_account", min_land_base_pp: 250, limit: 1 } });
-      expect(filtered.structuredContent).toMatchObject({ total: 2, next_cursor: 1, cache: "miss", cards: [{ land_base_pp: "1000.000" }] });
-      const filteredAgain = await client.callTool({ name: "cards_collection", arguments: { username: "fixture_account", min_land_base_pp: 250, limit: 1 } });
-      expect(filteredAgain.structuredContent).toMatchObject({ cache: "hit" });
-      expect(fetchCalls).toBe(4);
+      expect(filtered.structuredContent).toMatchObject({ total: 2, next_cursor: 1, cache: "hit", cards: [{ land_base_pp: "1000.000" }] });
       const filteredNext = await client.callTool({ name: "cards_collection", arguments: { username: "fixture_account", min_land_base_pp: 250, limit: 1, cursor: 1 } });
       expect(filteredNext.structuredContent).toMatchObject({ total: 2, next_cursor: null, cards: [{ land_base_pp: "250.000" }] });
       const higher = await client.callTool({ name: "cards_collection", arguments: { username: "fixture_account", min_land_base_pp: 251 } });
-      expect(higher.structuredContent).toMatchObject({ total: 1, cache: "miss" });
-      expect(fetchCalls).toBe(6);
+      expect(higher.structuredContent).toMatchObject({ total: 1, cache: "hit" });
+      expect(fetchCalls).toBe(1);
 
+      now += 120_001;
+      const third = await client.callTool({ name: "cards_collection", arguments: { username: "fixture_account", cursor: 1, limit: 1 } });
+      expect((third.structuredContent as { cache: string }).cache).toBe("miss");
+      expect(fetchCalls).toBe(2);
     } finally {
       await client.close();
       await server.close();
     }
+  });
+
+  it("projects ownership, delegation, rental and lock fields and marks absent ones unknown", async () => {
+    const owned = { ...collectionFixture.body.cards[0] as Record<string, unknown>, player: "owner_account", delegated_to: "fixture_account",
+      rental_type: "daily", rental_date: "2025-03-01T12:16:42.000Z", rental_days: 615, next_rental_payment: "2026-10-11T12:16:42.000Z",
+      market_id: "a".repeat(40) + "-1", market_listing_type: "RENT", market_listing_status: 3, lock_days: 0, unlock_date: null, last_transferred_date: "2023-01-22T03:13:18.000Z" };
+    const parsed = await parseCardsCollection(streamedJson({ player: "fixture_account", cards: [owned, collectionFixture.body.cards[1]] }));
+    expect(parsed.cards[0]).toMatchObject({ owner: "owner_account", delegated_to: "fixture_account", rental_type: "daily", rental_days: 615,
+      market_listing_type: "RENT", market_listing_status: 3, lock_days: 0, unlock_date: null, last_transferred_date: "2023-01-22T03:13:18.000Z" });
+    expect(parsed.cards[0]).not.toHaveProperty("ownership_unknown");
+    expect(parsed.cards[0]).not.toHaveProperty("player");
+    expect(parsed.cards[1]?.ownership_unknown).toEqual(expect.arrayContaining(["owner", "delegated_to", "rental_type", "lock_days"]));
+    expect(parsed.cards[1]).not.toHaveProperty("delegated_to");
+    await expect(parseCardsCollection(streamedJson({ player: "fixture_account", cards: [{ ...owned, rental_days: "615" }] }))).rejects.toBeInstanceOf(CollectionParseError);
+  });
+
+  it("drops the full index past its card limit and bounds the shared index budget", async () => {
+    const template = collectionFixture.body.cards[0] as Record<string, unknown>;
+    const body = { player: "fixture_account", cards: Array.from({ length: 5 }, (_, i) => ({ ...template, uid: `C3-79-${i}` })) };
+    expect((await parseCardsCollection(streamedJson(body), { retainAllLimit: 5 })).index).toHaveLength(5);
+    const over = await parseCardsCollection(streamedJson(body), { retainAllLimit: 4, limit: 2 });
+    expect(over.index).toBeNull();
+    expect(over.cards).toHaveLength(2);
+    expect(over.total).toBe(5);
+    const now = 0;
+    const cache = new CollectionIndexCache(() => now, 10);
+    const entry = (count: number) => ({ player: "p", cards: Array.from({ length: count }, () => ({}) as ProjectedCollectionCard), definitionsTraceId: "t", definitionMissingCount: 0, retrievedAt: "", endpoint: "", traceId: "" });
+    cache.set("a", entry(6), 1000);
+    cache.set("b", entry(4), 1000);
+    expect(cache.heldCards()).toBe(10);
+    cache.set("c", entry(5), 1000);
+    expect(cache.get("a", "t")).toBeUndefined();
+    expect(cache.heldCards()).toBe(9);
+    cache.set("d", entry(11), 1000);
+    expect(cache.get("d", "t")).toBeUndefined();
+    expect(cache.get("b", "other-definitions")).toBeUndefined();
   });
 
   it("compares each limit against the metric it was derived from, not merely against some metric", async () => {

@@ -1,3 +1,4 @@
+import { LAND_DEEDS_BUNDLE_TOOL_ROUTE } from "../src/land-deeds-bundle.js";
 import packageInfo from "../package.json" with { type: "json" };
 import { SCENARIO_TOOL_ROUTES } from "../src/land-scenario-snapshot.js";
 import { PLOT_SNAPSHOT_TOOL_ROUTE } from "../src/land-plot-snapshot.js";
@@ -51,7 +52,7 @@ describe("built binary", () => {
 
   // Re-adding the source shebang alongside tsup's banner must produce a nonzero child exit code.
   it("initializes, lists registered tools, and exits when stdin closes", async () => {
-    child = spawn(process.execPath, ["dist/index.js"], {
+    child = spawn(process.execPath, [process.env.SPLINTERLANDS_MCP_TEST_BIN_PATH ?? "dist/index.js"], {
       cwd: process.cwd(),
       stdio: ["pipe", "pipe", "pipe"] as ["pipe", "pipe", "pipe"],
     });
@@ -105,7 +106,7 @@ describe("built binary", () => {
       send({ jsonrpc: "2.0", id: 2, method: "tools/list", params: {} });
       const tools = await nextResponse();
       expect(tools).toMatchObject({ jsonrpc: "2.0", id: 2, result: { tools: expect.any(Array) } });
-      expect(tools.result?.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 3 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length + Object.keys(PLOT_SNAPSHOT_TOOL_ROUTE).length);
+      expect(tools.result?.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 3 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length + Object.keys(PLOT_SNAPSHOT_TOOL_ROUTE).length + Object.keys(LAND_DEEDS_BUNDLE_TOOL_ROUTE).length);
       expect(tools.result?.tools).toEqual(expect.arrayContaining([
         expect.objectContaining({ name: "land_deed_by_plot" }),
         expect.objectContaining({ name: "land_deed_by_uid" }),

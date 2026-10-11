@@ -27,7 +27,7 @@ const definitions = [
     "required": [
       "trx_id"
     ],
-    "description": "Read one game transaction by explicit trx_id. Transaction data and result retain their JSON-encoded string wire types. An unknown ID returned an error object. This never submits or retries a game transaction."
+    "description": "Read one game transaction by explicit trx_id. Transaction data and result retain their JSON-encoded string wire types; result was null on a successful delegate_cards record measured 2026-10-11. A multi-operation Hive transaction has further records at <trx_id>-1, <trx_id>-2 and so on; transaction_inspect reads them all. An unknown ID returned an error object. This never submits or retries a game transaction."
   },
   {
     "toolName": "transaction_metrics",

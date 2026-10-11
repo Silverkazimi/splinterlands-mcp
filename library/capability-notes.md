@@ -2,7 +2,7 @@
 
 [Return to the README](../README.md). This reference preserves the detailed request limits and observed API behavior behind the introductory overview. Plain file paths below are relative to the repository root.
 
-**Version: 1.0.5.** 185 tools are registered (`src/server.ts` and its registration modules).
+**Version: 1.0.6.** 186 tools are registered (`src/server.ts` and its registration modules).
 67 call `vapi.splinterlands.com`: 41 Land routes covering deeds, projects,
 counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 109 call
 `api.splinterlands.com`: eleven card tools, one item-metadata tool, and 34
@@ -23,6 +23,8 @@ A sixth offline resource, `splinterlands://hive/transaction-limits`, explains so
 
 Five offline JSON resources provide dated public Land rules: splinterlands://land/rules/terrain (14 terrains by six elements), splinterlands://land/rules/production (baseline output and food rates), splinterlands://land/rules/cap (worksite cap and Runi exception), and splinterlands://land/rules/card-abilities (edition-19 level tables for five observed cards, activation and stacking rules), plus splinterlands://land/rules/screen-fields (public-client worker screen labels, cap allocation order and power slots). Discover them with resources/list and read them with resources/read; they make no API calls. Sources and scope are included. The offline lineup estimator uses these reference rules. Snapshot reads verify their baseline against current backend values before returning estimator inputs; this does not establish eligibility for a proposed change.
 
+The offline JSON resource `splinterlands://cards/editions` gives numeric edition labels and observed `card_set` values as of 2026-10-01. For an individual card's main set, use its `card_set` from `cards_collection` or `cards_find`; numeric `edition` is a print identity, and definition `editions` cannot settle the set for shared Alpha/Beta IDs. It makes no API calls. See [the dated observation](observations/card-set-vs-edition-2026-10-01.md) for sample limits.
+
 The 13 standard plot-scoped tools accept exactly one `plot_id` (a numeric ID or a
 display label such as `001-02-001` / `1-2-1`) or `deed_uid`. Routes with
 the original `deedUID` spelling still accept it. Shared resolution verifies
@@ -33,13 +35,16 @@ resolution and target freshness are reported separately. Empty or mismatched
 resolution is unverified, not proof that the location does not exist. See
 `library/observations/plot-labels-2026-09-12.md`.
 
-`land_plot_snapshot` reads a verified deed, active project, stake details and stake assets within four public GETs. It rejects failed components without a partial result and caps the whole result at 256 KiB. Null active project is valid. These reads are not atomic. The independent `land_liquidity_positions_no_vesting` tool reads one explicit player; its route was live-observed but absent from the sampled VAPI specification. See `library/observations/v1-0-5-public-reads-2026-09-29.md`.
+`land_plot_snapshot` reads a verified deed, then the selected active project, stake details and stake assets in parallel, within four public GETs; `include` narrows the sections and requests. It rejects failed components without a partial result and caps the whole result at 256 KiB. Null active project is valid. These reads are not atomic. `land_deeds_bundle` lists every deed for one player or region from one read buffered up to 8 MiB, joins staking and worksite rows by deed UID, and pages the projection from a 120-second cache. The independent `land_liquidity_positions_no_vesting` tool reads one explicit player; its route was live-observed but absent from the sampled VAPI specification. See `library/observations/v1-0-5-public-reads-2026-09-29.md`.
 
 `land_lineup_snapshot` accepts an explicit player and one plot reference, plus candidate card IDs or UIDs. It gathers current workers, regional power, production, candidates, verified available location labels and Power Core facts within ten logical GETs. The collection is streamed once, at most 100 matching cards are retained, and there is no automatic pagination. Only an agreeing backend baseline is returned for the offline estimator; reads are non-atomic and candidate cooldown/eligibility caveats remain visible. Use its baseline and selected candidate workers in a second `land_lineup_estimate` call. The two-call snapshot and estimator workflow has been verified against a populated Grain plot. Other scenarios still require their own agreeing baseline. Land stake changes are per plot; these tools perform no changes.
 
-`cards_collection` streams the complete upstream collection and retains at most
-100 projected cards for the requested local page. Optional include_plot_references adds verified reported_stake_plot_reference (padded label, numeric ID and deed UID) through one account-scoped deed search limited to 200 rows. Missing, conflicting or unavailable references remain null with separate status and freshness; there is no per-card lookup or pagination loop. A cooling card’s retained reference describes its former plot. Toggling only this option reuses the projected collection cache and reads plot references afresh. Card definitions add name, primary/secondary color and subtype; color and sub_type filters match case-insensitively before paging. The definition map is cached for 24 hours with separate provenance. Missing definitions are counted and retain the instance without invented metadata. Returned cards retain land_base_pp as the upstream decimal string when present; min_land_base_pp filters numerically before paging. Missing power does not count as zero. A later cursor re-streams
-the collection; an identical page request can use the 60-second page cache.
+`cards_collection` streams the complete upstream collection once. A collection of up to 25,000 cards is
+retained as a projected index for 120 seconds (40,000 cards across all usernames), and every cursor, filter
+and compact `all` page is served from it. A larger collection retains at most 100 projected cards for the
+requested page. Each card also carries owner, delegation, rental, market-listing and lock fields, with
+absent fields listed in ownership_unknown. Optional include_plot_references adds verified reported_stake_plot_reference (padded label, numeric ID and deed UID) through one account-scoped deed search limited to 200 rows. Missing, conflicting or unavailable references remain null with separate status and freshness; there is no per-card lookup or pagination loop. A cooling card’s retained reference describes its former plot. Toggling only this option reuses the projected collection cache and reads plot references afresh. Card definitions add name, primary/secondary color and subtype; color and sub_type filters match case-insensitively before paging. The definition map is cached for 24 hours with separate provenance. Missing definitions are counted and retain the instance without invented metadata. Returned cards retain land_base_pp as the upstream decimal string when present; min_land_base_pp filters numerically before paging. Missing power does not count as zero. For a collection over the index
+limit, a later cursor re-streams it, and only an identical page request can use the 60-second page cache.
 The route has a 90-second timeout, a 128 MiB heap guard, and a 358 MiB RSS
 ceiling instead of a fixed response-byte ceiling. The largest measured live
 response was 155 MiB; the separate synthetic memory measurements and their

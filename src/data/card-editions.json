@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 2,
+  "asOf": "2026-10-01",
+  "answerRule": "For each card copy, main_set is its card_set value; print_class and sub_set come only from that copy’s numeric edition. Numeric edition never supplies or overrides the main set.",
+  "fields": {
+    "card_set": "Main set of a particular copy; copies sharing a card_detail_id can have different values.",
+    "edition": "Numeric print identity on a card copy. It is not always the main set.",
+    "editions": "Comma-separated numeric print identities in a card definition. The definition has no card_set.",
+    "main_set": "Copy card_set value as-is, or null when absent.",
+    "main_set_label": "Human label for a known card_set value, otherwise null.",
+    "print_class": "Classification of the copy numeric edition, or null when unmapped.",
+    "sub_set": "Named subordinate print group for this numeric edition, or null.",
+    "edition_unmapped": "True when the numeric edition is absent from this table."
+  },
+  "numericEditions": [
+    {
+      "number": 0,
+      "label": "Alpha",
+      "role": "main set",
+      "printClass": "main",
+      "subSet": null,
+      "underMainSet": "alpha"
+    },
+    {
+      "number": 1,
+      "label": "Beta",
+      "role": "main set",
+      "printClass": "main",
+      "subSet": null,
+      "underMainSet": "beta"
+    },
+    {
+      "number": 2,
+      "label": "Promo",
+      "role": "print class",
+      "note": "Mixed legacy promo and reward print class; it does not name one main set.",
+      "printClass": "promo",
+      "subSet": "Promo",
+      "underMainSet": null
+    },
+    {
+      "number": 3,
+      "label": "Reward",
+      "role": "print class",
+      "note": "Seen inside Beta and Chaos main sets; it does not name one main set.",
+      "printClass": "reward",
+      "subSet": "Reward",
+      "underMainSet": null
+    },
+    {
+      "number": 4,
+      "label": "Untamed",
+      "role": "main set",
+      "printClass": "main",
+      "subSet": null,
+      "underMainSet": "untamed"
+    },
+    {
+      "number": 5,
+      "label": "Dice",
+      "role": "mini-set",
+      "printClass": "mini_set",
+      "subSet": "Dice",
+      "underMainSet": "untamed"
+    },
+    {
+      "number": 6,
+      "label": "Gladius",
+      "role": "main set",
+      "printClass": "main",
+      "subSet": null,
+      "underMainSet": null,
+      "note": "The observed gladius card_set was not matched to numeric edition 6 on an owned copy."
+    },
+    {
+      "number": 7,
+      "label": "Chaos Legion",
+      "role": "main set",
+      "printClass": "main",
+      "subSet": null,
+      "underMainSet": "chaos"
+    },
+    {
+      "number": 8,
+      "label": "Riftwatchers (Rift)",
+      "role": "mini-set",
+      "printClass": "mini_set",
+      "subSet": "Riftwatchers",
+      "underMainSet": "chaos"
+    },
+    {
+      "number": 9,
+      "label": "Nightmare",
+      "role": "outlier",
+      "printClass": "outlier",
+      "subSet": "Nightmare",
+      "underMainSet": null,
+      "note": "The observed other value covers a family, without a copy-level match to edition 9."
+    },
+    {
+      "number": 10,
+      "label": "Soulbound (Chaos Legion)",
+      "role": "print class",
+      "printClass": "soulbound",
+      "subSet": "Soulbound Chaos Legion",
+      "underMainSet": "chaos"
+    },
+    {
+      "number": 11,
+      "label": "Soulkeep Promo",
+      "role": "print class",
+      "printClass": "promo",
+      "subSet": "Soulkeep Promo",
+      "underMainSet": null,
+      "note": "The observed other value covers a family, without a copy-level match to edition 11."
+    },
+    {
+      "number": 12,
+      "label": "Rebellion",
+      "role": "main set",
+      "printClass": "main",
+      "subSet": null,
+      "underMainSet": "rebellion"
+    },
+    {
+      "number": 13,
+      "label": "Soulbound Rebellion",
+      "role": "print class",
+      "printClass": "soulbound",
+      "subSet": "Soulbound Rebellion",
+      "underMainSet": "rebellion"
+    },
+    {
+      "number": 14,
+      "label": "Conclave Arcana",
+      "role": "main set",
+      "printClass": "main",
+      "subSet": null,
+      "underMainSet": "conclave"
+    },
+    {
+      "number": 15,
+      "label": "Foundations",
+      "role": "main set",
+      "printClass": "main",
+      "subSet": null,
+      "underMainSet": null,
+      "note": "The observed foundations card_set was not matched to numeric edition 15 on an owned copy."
+    },
+    {
+      "number": 16,
+      "label": "Foundations Soulbound",
+      "role": "print class",
+      "printClass": "soulbound",
+      "subSet": "Foundations Soulbound",
+      "underMainSet": "foundations"
+    },
+    {
+      "number": 17,
+      "label": "Extra",
+      "role": "print class",
+      "note": "Cross-cutting print class; it does not name one main set. Cross-cutting Extra class; no single main set.",
+      "printClass": "extra",
+      "subSet": "Extra",
+      "underMainSet": null
+    },
+    {
+      "number": 18,
+      "label": "Soulbound Conclave",
+      "role": "print class",
+      "printClass": "soulbound",
+      "subSet": "Soulbound Conclave",
+      "underMainSet": "conclave"
+    },
+    {
+      "number": 19,
+      "label": "Land",
+      "role": "main set",
+      "printClass": "main",
+      "subSet": null,
+      "underMainSet": "land"
+    },
+    {
+      "number": 20,
+      "label": "Escalation",
+      "role": "mini-set",
+      "printClass": "mini_set",
+      "subSet": "Escalation",
+      "underMainSet": "conclave"
+    },
+    {
+      "number": 21,
+      "label": "Verico (Visions of Verico)",
+      "role": "mini-set",
+      "note": "Label supplied from the public website mapping; no copy was seen in the account sample. Verico was not observed in the account sample; no copy-level main-set mapping was established.",
+      "printClass": "mini_set",
+      "subSet": "Verico",
+      "underMainSet": null
+    }
+  ],
+  "cardSetValues": [
+    {
+      "value": "alpha",
+      "label": "Alpha",
+      "numericEditions": [
+        0
+      ],
+      "relationship": "Main set shown on observed copies; shared IDs 1–59 can also have Beta copies."
+    },
+    {
+      "value": "beta",
+      "label": "Beta",
+      "numericEditions": [
+        1
+      ],
+      "relationship": "Main set shown on observed copies, including some with numeric Reward edition 3. Shared IDs 1–59 can also have Alpha copies."
+    },
+    {
+      "value": "untamed",
+      "label": "Untamed",
+      "numericEditions": [
+        4
+      ],
+      "relationship": "Observed main set; number 4 has the matching set label, but do not replace the copy's card_set with a definition's editions."
+    },
+    {
+      "value": "chaos",
+      "label": "Chaos Legion",
+      "numericEditions": [
+        7
+      ],
+      "relationship": "Observed main set; numeric Reward edition 3 also appeared on a Chaos card."
+    },
+    {
+      "value": "rebellion",
+      "label": "Rebellion",
+      "numericEditions": [
+        12
+      ],
+      "relationship": "Observed main set; number 12 has the matching set label."
+    },
+    {
+      "value": "conclave",
+      "label": "Conclave Arcana",
+      "numericEditions": [
+        14
+      ],
+      "relationship": "Observed main set; number 14 has the matching set label."
+    },
+    {
+      "value": "foundations",
+      "label": "Foundations",
+      "numericEditions": [],
+      "relationship": "Observed card_set, but no owner-based numeric-edition match was established; names 15 and 16 suggest a relationship only."
+    },
+    {
+      "value": "gladius",
+      "label": "Gladius",
+      "numericEditions": [],
+      "relationship": "Observed card_set, but no owner-based numeric-edition match was established; name 6 suggests a relationship only."
+    },
+    {
+      "value": "land",
+      "label": "Land",
+      "numericEditions": [
+        19
+      ],
+      "relationship": "Observed main set; number 19 has the matching set label."
+    },
+    {
+      "value": "other",
+      "label": "Other (Nightmare/Soulkeep family)",
+      "numericEditions": [],
+      "relationship": "Observed value covers the Nightmare/Soulkeep family. The sample did not map each copy to numeric editions 9 or 11; other is not a precise set name."
+    }
+  ],
+  "sharedAlphaBeta": "Card-detail IDs 1–59 appeared with both alpha and beta across copies. Use the particular copy's card_set, not its shared ID.",
+  "uidPrefixWarning": "A C1-, C2- or C3- card UID prefix is not a set. Observed C3-82 was Beta-era and C3-337 was Chaos.",
+  "measurement": {
+    "date": "2026-10-01",
+    "publicAccounts": 7,
+    "distinctCollectionCardDetailIds": 1100,
+    "cardDefinitionRows": 1102,
+    "limits": "Verico/Visions of Verico was not seen. Foundations and Gladius were seen without an owner-based numeric-edition match. Some definition IDs, including 205, were not owned by sampled accounts."
+  },
+  "sources": [
+    "https://api.splinterlands.com/cards/collection/<player> (seven public accounts, 2026-10-01)",
+    "https://api.splinterlands.com/cards/get_details (1,102 rows, 2026-10-01)",
+    "Splinterlands public website bundle numeric edition labels; mapping supplied for this review, not independently fetched here",
+    "library/observations/card-set-vs-edition-2026-10-01.md"
+  ]
+}

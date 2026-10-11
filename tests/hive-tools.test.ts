@@ -93,6 +93,76 @@ describe("Hermes evidence tools", () => {
    if (mode === "mismatch" || mode === "duplicates") expect(s.summary.gift_result_agrees).toBe(false);
   });
  });
+ it("reads every suffixed game record of a multi-operation transaction", async () => {
+  const lookups: string[] = [];
+  const record = (trx: string, success = true) => new Response(JSON.stringify({ trx_info: { id: trx, block_id: "synthetic-block", prev_block_id: "synthetic-prev", created_date: "2026-10-11T08:48:57.000Z", steem_price: null, sbd_price: null, block_num: 123, player: "sampleacct", type: "land_operation", success, error: success ? null : "rejected", data: "{}", result: "{}" } }), { headers: { "content-type": "application/json" } });
+  const missing = (trx: string) => new Response(JSON.stringify({ error: `Transaction [${trx}] not found.`, error_code: 1 }), { headers: { "content-type": "application/json" } });
+  for (const mode of ["all", "one-failed", "chain-error", "suffix-input"]) {
+   lookups.length = 0;
+   await run(async (url) => {
+    if (String(url) === HIVE_URL) return mode === "chain-error" ? new Response(JSON.stringify({ jsonrpc: "2.0", id: 1, error: { code: -1 } })) : rpc(tx([op(), op(), op()]));
+    const trx = new URL(String(url)).searchParams.get("trx_id")!; lookups.push(trx);
+    if (trx === `${id}-3`) return missing(trx);
+    return record(trx, !(mode === "one-failed" && trx === `${id}-2`));
+   }, async (c) => {
+    const r = await c.callTool({ name: "transaction_inspect", arguments: { trx_id: mode === "suffix-input" ? `${id}-2` : id } });
+    expect(r.isError).not.toBe(true);
+    const s = r.structuredContent as { trx_id: string; requested_trx_id?: string; game_records: Array<{ trx_id: string; status: string }>; summary: { batch_status: string; game_record_count: number; game_coverage: string } };
+    expect(s.trx_id).toBe(id);
+    if (mode === "chain-error") {
+     expect(lookups).toEqual([id, `${id}-1`, `${id}-2`, `${id}-3`]);
+     expect(s.game_records.map((e) => e.status)).toEqual(["found", "found", "found", "not_found"]);
+     expect(s.summary).toMatchObject({ batch_status: "unverified", game_record_count: 3 });
+     expect(s.summary.game_coverage).toContain("not established");
+     return;
+    }
+    expect(lookups).toEqual([id, `${id}-1`, `${id}-2`]);
+    expect(s.summary.game_record_count).toBe(3);
+    expect(s.summary.batch_status).toBe(mode === "one-failed" ? "failed" : "success");
+    if (mode === "suffix-input") expect(s.requested_trx_id).toBe(`${id}-2`);
+   });
+  }
+ });
+ it("accepts a game record whose result is null", async () => {
+  await run(async (url) => {
+   if (String(url) === HIVE_URL) return rpc(tx([op()]));
+   const body = await game().json() as { trx_info: Record<string, unknown> };
+   body.trx_info.type = "delegate_cards"; body.trx_info.result = null;
+   return new Response(JSON.stringify(body), { headers: { "content-type": "application/json" } });
+  }, async (c) => {
+   const r = await c.callTool({ name: "transaction_inspect", arguments: { trx_id: id } });
+   expect(r.structuredContent).toMatchObject({ game: { ok: true }, game_records: [{ status: "found", success: true, result: { value: null } }], summary: { batch_status: "success" } });
+   expect((await c.callTool({ name: "transaction_lookup", arguments: { trx_id: id } })).isError).not.toBe(true);
+  });
+ });
+ it("caps game lookups at nine and stops on an upstream failure", async () => {
+  const record = (trx: string) => new Response(JSON.stringify({ trx_info: { id: trx, block_id: "synthetic-block", prev_block_id: "synthetic-prev", created_date: "2026-10-11T08:48:57.000Z", steem_price: null, sbd_price: null, block_num: 123, player: "sampleacct", type: "land_operation", success: true, error: null, data: "{}", result: "{}" } }), { headers: { "content-type": "application/json" } });
+  for (const mode of ["twelve-ops", "mid-failure"]) {
+   const lookups: string[] = [];
+   await run(async (url) => {
+    if (String(url) === HIVE_URL) return rpc(tx(Array.from({ length: mode === "twelve-ops" ? 12 : 4 }, () => op())));
+    const trx = new URL(String(url)).searchParams.get("trx_id")!; lookups.push(trx);
+    if (mode === "mid-failure" && trx === `${id}-2`) return new Response(JSON.stringify({ unexpected: true }), { headers: { "content-type": "application/json" } });
+    return record(trx);
+   }, async (c) => {
+    const s = (await c.callTool({ name: "transaction_inspect", arguments: { trx_id: id } })).structuredContent as { game_records: Array<{ status: string }>; summary: { batch_status: string; game_coverage: string } };
+    if (mode === "twelve-ops") {
+     expect(lookups).toEqual([id, ...Array.from({ length: 8 }, (_, i) => `${id}-${i + 1}`)]);
+     expect(s.summary.game_coverage).toContain("stopped early");
+    } else {
+     expect(lookups).toEqual([id, `${id}-1`, `${id}-2`]);
+     expect(s.game_records.map((e) => e.status)).toEqual(["found", "found", "unavailable"]);
+    }
+    expect(s.summary.batch_status).toBe("unverified");
+   });
+  }
+ });
+ it("rejects malformed suffixed transaction ids", async () => {
+  await run(async () => { throw Error("unexpected fetch"); }, async (c) => {
+   for (const trx_id of [`${id}-0`, `${id}-01`, `${id}-1000`, `${id}-x`])
+    expect((await c.callTool({ name: "transaction_inspect", arguments: { trx_id } })).isError).toBe(true);
+  });
+ });
  it("refuses oversized full output instead of truncating operations", async () => {
   await run(async () => rpc(tx([op({ cards: ["x".repeat(130_000)] })])), async (c) => {
    const r = await c.callTool({ name: "hive_transaction", arguments: { trx_id: id } });
@@ -112,7 +182,7 @@ describe("Hermes evidence tools", () => {
    const r = await c.callTool({ name: "list_endpoints", arguments: {} });
    expect(r.structuredContent).toMatchObject({ additionalReadTools: { hive_transaction: expect.any(String) } });
    const resources = await c.listResources();
-   expect(resources.resources).toHaveLength(7);
+   expect(resources.resources).toHaveLength(8);
    expect(resources.resources.map((r) => r.uri)).toEqual(expect.arrayContaining(["splinterlands://land/rules/tax-and-trade", "splinterlands://hive/transaction-limits"]));
    const limits = await c.readResource({ uri: "splinterlands://hive/transaction-limits" });
    expect(JSON.parse((limits.contents[0] as { text: string }).text)).toMatchObject({ as_of: "2026-09-13", source_revision: expect.any(String) });
