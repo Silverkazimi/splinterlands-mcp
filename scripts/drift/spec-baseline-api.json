@@ -1,6 +1,5 @@
 {
   "source": "https://api2.splinterlands.com/doc/swagger-ui-init.js",
-  "capturedAt": "2026-09-13T19:42:27.456Z",
   "paths": {
     "/last_block": "d39c6077ebeacf6870b2618fc9094d7e86c08ab526cc4e5ede03d53cedc8fa3e",
     "/maintenance_schedule": "cb715bcfc34ecc2ae07874ca76364b6ae96ae1c6dfb41a59cfdcea49909597a5",

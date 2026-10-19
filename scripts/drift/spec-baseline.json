@@ -1,6 +1,5 @@
 {
   "source": "https://vapi.splinterlands.com/swagger/swagger-ui-init.js",
-  "capturedAt": "2026-09-13T19:42:26.624Z",
   "paths": {
     "/": "b2f79d3b423c322690ee9d50f4ab20c91b331cf883a42492b09d0c057244e875",
     "/market/landing": "782fc42ba1e4f5bdacbcc89d7628d71d5868710ba77e2c1d248d899d1ee3070b",
@@ -91,6 +90,7 @@
     "/collector/me/binders/{binderId}/settings": "964c7f68e327ae9a3e92dbe291911f1c06a5e535e3037a0fdb4bf90e5177c1bb",
     "/collector/me/binders/order": "9c3d001998cb1c9c170c4da2cfba2fc982e37fa8f19878b3e6cc6c5df54b260b",
     "/collector/me/binders/{binderId}/pages/assign": "dc41c875d98153f077d17fe623d1e5c452a1fcc5e93be7ba080b1bffd82abcce",
+    "/collector/me/binders/{binderId}/pages/{pageId}/remove": "446bc170bdcb20590b03473e412def48c5bbcfce9c47e99779026fa6476c4553",
     "/collector/me/binders/{binderId}/cards/{cardUid}/note": "bd529d17825767832486fcd07d3157acf9b9bfed836a3820422b9b2fcb997120",
     "/collector/me/binders/{binderId}/cards/{cardUid}/note/clear": "e6cf139c3d7293fc5fc41877985c922423adf435591a8055c02c282005d068c9",
     "/collector/me/binders/{binderId}/stickers": "c9d16a251d495ae0ea05af77b8729d90384fa093f0a090a58ff4e98031746e60",
@@ -103,7 +103,7 @@
     "/collector/{player}": "25fe0e435c4140a29d155e2a0649d3c3e098d518bb23123e754e5f94c96eb3df",
     "/collector/{player}/{binderRef}": "f3e43c1634f8017e819b2d4d9bffcf0fd474ac754fd3843f15c1b351d419d92a"
   },
-  "components": "823d027123b9b78d1bbe168b67e4f9882da3466983d6d1592f0a40c9bf70ec68",
+  "components": "c32c09cdd3b781940b9987bd8012722b171a11cc1effbfc578c256991caf86bc",
   "definitions": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
   "shared": "c942d9ddbaf0a866c828a904b734915c84ec8b1137b04a698325500b40a2f238"
 }
