@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.1.0 - 2026-10-21
+
+### Changed (breaking)
+
+- `land_resources_balances_history` now requires `startDate` and `endDate` alongside `player`; its upstream `offset` input is removed, `limit` is capped at 10, and its output is a projected one-minute window with count-checked `complete`, `next_cursor` and `skip_cursor`. Clients using the old inputs or reading the old VAPI envelope must update. `skip_cursor` advances past an incomplete minute and leaves those rows unaccounted for. Empty minutes each cost a count request; a full 14-day range can take 20,160 page calls.
+
+### Added
+
+- `land_income_daily` summarizes up to 14 completed UTC days of raw resource balance movements, with no DEC valuation. Only live-observed Land mint leg types enter `production`; unknown legs are counted in `unclassified_types` and remain in `other`. No spend or transfer leg type was confirmed in the sampled account, so those categories remain zero. Each day reports whether its count-checked coverage is complete. The separate `current_rate_per_day` uses current deed `total_work_per_hour × 24` and is an estimate, not historical income.
+
+### Known limits and verification
+
+- The public API can time out on dense windows. The 32-read daily and 95-read call budgets can leave a day incomplete; same-timestamp groups larger than a page cannot be split by time. Check `complete` before using totals. Verified with bounded live public history and deed reads, redacted evidence, synthetic count/paging/classification tests, and the release checks.
+
 ## 1.0.7 - 2026-10-11
 
 A security maintenance release. It updates third-party packages that had published security advisories. The tools, their inputs and their outputs are unchanged, so updating from 1.0.6 needs no other change. `npm audit` now reports no known vulnerabilities, where 1.0.6 reported eight.

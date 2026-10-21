@@ -117,7 +117,7 @@ results are cached, and their freshness is reported. Related reads can
 also happen at slightly different times, so they should not be treated
 as one perfectly synchronized view of the game.
 
-The reference below lists all 186 tools. For request budgets, exact
+The reference below lists all 187 tools. For request budgets, exact
 parameters, cache behavior, and recorded API quirks, see the
 [technical capability notes](library/capability-notes.md) and
 [safety boundaries](#what-it-is-and-what-it-will-never-do).
@@ -204,7 +204,8 @@ tools are local and make no upstream request.
 | `land_projects_requirements` | `GET /land/projects/deed/{deed_uid}/requirements` |
 | `land_regions_counts` | `GET /land/regions/counts` |
 | `land_resources_balances_history_count` | `GET /land/resources/balances/history/{player}/count` |
-| `land_resources_balances_history` | `GET /land/resources/balances/history/{player}` |
+| `land_resources_balances_history` | `GET /land/resources/balances/history/{player}` plus `/count` in one-minute UTC windows |
+| `land_income_daily` | Count-checked `GET /land/resources/balances/history/{player}` windows plus a separate current deed work-rate estimate |
 | `land_resources_fragment_history` | `GET /land/resources/fragment_history/{trx_id}` |
 | `land_resources_history` | `GET /land/resources/history/{trx_id}` |
 | `land_resources_leaderboards` | `GET /land/resources/leaderboards` |
@@ -316,6 +317,8 @@ tools are local and make no upstream request.
 | `vapi_market_asset_metadata` | `GET /market/meta/asset/{assetName}` |
 | `vapi_market_estimated_price` | `GET /market/estimated-price` |
 | `vapi_market_landing` | `GET /market/landing` |
+
+`land_resources_balances_history` requires `player`, `startDate` and `endDate` (UTC dates; end exclusive). Optional `cursor` is a UTC millisecond timestamp and `limit` is 1–10 rows. `next_cursor` advances a complete one-minute window; when `complete=false`, `skip_cursor` advances past that minute while leaving its rows unaccounted for. Empty minutes each need a count request, so traversing 14 days can take 20,160 page calls. The route returns projected raw resource units, with no DEC valuation. `land_income_daily` summarizes at most 14 completed UTC days and exposes unknown nested leg types in `unclassified_types` and `unclassified_leg_count`; inspect `complete` before using totals. Only observed Land mint legs are classified as production. No spend or transfer leg type has been confirmed in this account sample. Its separate `current_rate_per_day` is current deed `total_work_per_hour × 24`, not realized history.
 
 ## Worked example
 

@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "source": "live-observation",
+    "observedAt": "2026-10-21T10:14:21.089351+00:00",
+    "path": "/land/resources/balances/history/{player}",
+    "query": {
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-19",
+      "limit": 3
+    },
+    "redaction": "Account names replaced with player_owner"
+  },
+  "response": {
+    "status": "success",
+    "data": [
+      {
+        "id": 40026006,
+        "region_number": 65,
+        "player": "player_owner",
+        "amount": -20288.296,
+        "end_balance": 16696030.92,
+        "operation_id": 26,
+        "resource_id": 1,
+        "trx_id": "9bdbe26bbce938e13b50ea32e35760f918a74cff",
+        "created_date": "2026-10-18T17:17:06.000Z",
+        "balance_history": [
+          {
+            "player": "player_owner",
+            "token": "DEC",
+            "amount": -2999.999,
+            "balance_start": 43934716.287,
+            "balance_end": 43931716.288,
+            "block_num": 110886695,
+            "trx_id": "9bdbe26bbce938e13b50ea32e35760f918a74cff",
+            "type": "swap_tokens",
+            "created_date": "2026-10-18T17:17:09.970Z",
+            "counterparty": "player_owner",
+            "last_update_date": "2026-10-18T17:17:09.998Z"
+          },
+          {
+            "player": "player_owner",
+            "token": "DEC",
+            "amount": 2999.999,
+            "balance_start": 2028.606,
+            "balance_end": 5028.605,
+            "block_num": 110886695,
+            "trx_id": "9bdbe26bbce938e13b50ea32e35760f918a74cff",
+            "type": "swap_tokens",
+            "created_date": "2026-10-18T17:17:09.970Z",
+            "counterparty": "player_owner",
+            "last_update_date": "2026-10-18T17:17:10.002Z"
+          }
+        ],
+        "counterparty": "player_owner"
+      },
+      {
+        "id": 40026005,
+        "region_number": 65,
+        "player": "player_owner",
+        "amount": -20288.296,
+        "end_balance": 16716319.216,
+        "operation_id": 25,
+        "resource_id": 1,
+        "trx_id": "9bdbe26bbce938e13b50ea32e35760f918a74cff",
+        "created_date": "2026-10-18T17:17:06.000Z",
+        "balance_history": [
+          {
+            "player": "player_owner",
+            "token": "DEC",
+            "amount": -2999.999,
+            "balance_start": 43934716.287,
+            "balance_end": 43931716.288,
+            "block_num": 110886695,
+            "trx_id": "9bdbe26bbce938e13b50ea32e35760f918a74cff",
+            "type": "swap_tokens",
+            "created_date": "2026-10-18T17:17:09.970Z",
+            "counterparty": "player_owner",
+            "last_update_date": "2026-10-18T17:17:09.998Z"
+          },
+          {
+            "player": "player_owner",
+            "token": "DEC",
+            "amount": 2999.999,
+            "balance_start": 2028.606,
+            "balance_end": 5028.605,
+            "block_num": 110886695,
+            "trx_id": "9bdbe26bbce938e13b50ea32e35760f918a74cff",
+            "type": "swap_tokens",
+            "created_date": "2026-10-18T17:17:09.970Z",
+            "counterparty": "player_owner",
+            "last_update_date": "2026-10-18T17:17:10.002Z"
+          }
+        ],
+        "counterparty": "player_owner"
+      },
+      {
+        "id": 40026004,
+        "region_number": 65,
+        "player": "player_owner",
+        "amount": -365189.33,
+        "end_balance": 16736607.512,
+        "operation_id": 19,
+        "resource_id": 1,
+        "trx_id": "9bdbe26bbce938e13b50ea32e35760f918a74cff",
+        "created_date": "2026-10-18T17:17:06.000Z",
+        "balance_history": [
+          {
+            "player": "player_owner",
+            "token": "DEC",
+            "amount": -2999.999,
+            "balance_start": 43934716.287,
+            "balance_end": 43931716.288,
+            "block_num": 110886695,
+            "trx_id": "9bdbe26bbce938e13b50ea32e35760f918a74cff",
+            "type": "swap_tokens",
+            "created_date": "2026-10-18T17:17:09.970Z",
+            "counterparty": "player_owner",
+            "last_update_date": "2026-10-18T17:17:09.998Z"
+          },
+          {
+            "player": "player_owner",
+            "token": "DEC",
+            "amount": 2999.999,
+            "balance_start": 2028.606,
+            "balance_end": 5028.605,
+            "block_num": 110886695,
+            "trx_id": "9bdbe26bbce938e13b50ea32e35760f918a74cff",
+            "type": "swap_tokens",
+            "created_date": "2026-10-18T17:17:09.970Z",
+            "counterparty": "player_owner",
+            "last_update_date": "2026-10-18T17:17:10.002Z"
+          }
+        ],
+        "counterparty": "player_owner"
+      }
+    ]
+  }
+}

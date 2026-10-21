@@ -1,0 +1,106 @@
+{
+  "source": "public read-only GET /land/deeds?player={owner}&limit=1000; account and deed identifiers omitted",
+  "observed_at": "2026-10-21",
+  "samples": [
+    {
+      "resource_id": 2,
+      "resource_symbol": "SPS",
+      "token_symbol": "SPS",
+      "total_work_per_hour": 7.872,
+      "rewards_per_hour": 7.431,
+      "resource_mint_rate": 0,
+      "projected_amount_received": 193.839,
+      "hours_since_last_op": 29.109
+    },
+    {
+      "resource_id": 6,
+      "resource_symbol": "STONE",
+      "token_symbol": "STONE",
+      "total_work_per_hour": 208.725,
+      "rewards_per_hour": 208.725,
+      "resource_mint_rate": 0.002,
+      "projected_amount_received": 5468.285,
+      "hours_since_last_op": 29.109
+    },
+    {
+      "resource_id": 7,
+      "resource_symbol": "IRON",
+      "token_symbol": "IRON",
+      "total_work_per_hour": 273.175,
+      "rewards_per_hour": 273.175,
+      "resource_mint_rate": 0.0005,
+      "projected_amount_received": 7156.779,
+      "hours_since_last_op": 29.109
+    },
+    {
+      "resource_id": 3,
+      "resource_symbol": "RESEARCH",
+      "token_symbol": "RESEARCH",
+      "total_work_per_hour": 0.033,
+      "rewards_per_hour": 0.033,
+      "resource_mint_rate": 0,
+      "projected_amount_received": 0.865,
+      "hours_since_last_op": 29.109
+    },
+    {
+      "resource_id": 3,
+      "resource_symbol": "RESEARCH",
+      "token_symbol": "RESEARCH",
+      "total_work_per_hour": 0.033,
+      "rewards_per_hour": 0.033,
+      "resource_mint_rate": 0,
+      "projected_amount_received": 0.865,
+      "hours_since_last_op": 29.109
+    },
+    {
+      "resource_id": 7,
+      "resource_symbol": "IRON",
+      "token_symbol": "IRON",
+      "total_work_per_hour": 0.085,
+      "rewards_per_hour": 0.085,
+      "resource_mint_rate": 0.0005,
+      "projected_amount_received": 2.233,
+      "hours_since_last_op": 29.109
+    },
+    {
+      "resource_id": 7,
+      "resource_symbol": "IRON",
+      "token_symbol": "IRON",
+      "total_work_per_hour": 0.083,
+      "rewards_per_hour": 0.083,
+      "resource_mint_rate": 0.0005,
+      "projected_amount_received": 2.161,
+      "hours_since_last_op": 29.109
+    },
+    {
+      "resource_id": 1,
+      "resource_symbol": "GRAIN",
+      "token_symbol": "GRAIN",
+      "total_work_per_hour": 44,
+      "rewards_per_hour": 44,
+      "resource_mint_rate": 0.02,
+      "projected_amount_received": 1152.735,
+      "hours_since_last_op": 29.109
+    },
+    {
+      "resource_id": 1,
+      "resource_symbol": "GRAIN",
+      "token_symbol": "GRAIN",
+      "total_work_per_hour": 5.459,
+      "rewards_per_hour": 5.459,
+      "resource_mint_rate": 0.02,
+      "projected_amount_received": 143.018,
+      "hours_since_last_op": 29.109
+    },
+    {
+      "resource_id": 5,
+      "resource_symbol": "WOOD",
+      "token_symbol": "WOOD",
+      "total_work_per_hour": 0.825,
+      "rewards_per_hour": 0.825,
+      "resource_mint_rate": 0.005,
+      "projected_amount_received": 21.614,
+      "hours_since_last_op": 29.109
+    }
+  ]
+}

@@ -123,7 +123,7 @@ describe("land deed MCP protocol", () => {
 
     const result = await protocol.listTools();
 
-    expect(result.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 3 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length + Object.keys(PLOT_SNAPSHOT_TOOL_ROUTE).length + Object.keys(LAND_DEEDS_BUNDLE_TOOL_ROUTE).length);
+    expect(result.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 4 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length + Object.keys(PLOT_SNAPSHOT_TOOL_ROUTE).length + Object.keys(LAND_DEEDS_BUNDLE_TOOL_ROUTE).length);
     expect(result.tools).toEqual(expect.arrayContaining([
       expect.objectContaining({
         name: "land_deed_by_plot",
@@ -227,7 +227,7 @@ describe("land deed MCP protocol", () => {
       expect.objectContaining({ name: "describe_endpoint" }),
     ]));
 
-    const endpointTools = result.tools.filter((tool) => tool.name !== "list_endpoints" && tool.name !== "describe_endpoint" && tool.name !== "land_lineup_estimate" && !HIVE_TOOL_ROUTES[tool.name] && !SCENARIO_TOOL_ROUTES[tool.name] && tool.name !== "land_plot_snapshot" && tool.name !== "land_deeds_bundle");
+    const endpointTools = result.tools.filter((tool) => tool.name !== "list_endpoints" && tool.name !== "describe_endpoint" && tool.name !== "land_lineup_estimate" && tool.name !== "land_income_daily" && !HIVE_TOOL_ROUTES[tool.name] && !SCENARIO_TOOL_ROUTES[tool.name] && tool.name !== "land_plot_snapshot" && tool.name !== "land_deeds_bundle");
     expect(Object.keys(TOOL_ENTRY_IDS).sort()).toEqual(endpointTools.map((tool) => tool.name).sort());
     for (const tool of endpointTools) {
       const toolName = tool.name as keyof typeof TOOL_ENTRY_IDS;
@@ -238,6 +238,10 @@ describe("land deed MCP protocol", () => {
       if (tool.name === "player_skins") keys.push("start_index", "skin", "active");
       if (tool.name === "player_inventory") keys.push("item_detail_id");
       if (tool.name === "cards_collection") keys.push("include_plot_references", "main_set", "print_class", "all");
+      if (tool.name === "land_resources_balances_history") {
+        keys.splice(keys.indexOf("offset"), 1);
+        keys.push("cursor");
+      }
       expect(Object.keys(tool.inputSchema.properties ?? {}).sort()).toEqual([...new Set(keys)].sort());
     }
     expect(result.tools.every((tool) => tool.inputSchema.type === "object")).toBe(true);

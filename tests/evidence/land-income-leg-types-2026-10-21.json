@@ -1,0 +1,256 @@
+{
+  "source": "public read-only VAPI, owner account; account names and transaction identifiers omitted",
+  "query": "three leading rows for each dated half-open window, limit=3",
+  "rows": [
+    {
+      "date": "2026-10-19",
+      "id": 40050840,
+      "operation_id": 3,
+      "resource_id": 1,
+      "amount": 83.717,
+      "created_date": "2026-10-19T11:48:00.000Z",
+      "legs": [
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": -83.717
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": 83.717
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -3.247
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": 3.247
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1.795
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": 1.795
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -4.26
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": 4.26
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "id": 40050839,
+      "operation_id": 1,
+      "resource_id": 1,
+      "amount": -38.438,
+      "created_date": "2026-10-19T11:48:00.000Z",
+      "legs": [
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": -83.717
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": 83.717
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -3.247
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": 3.247
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1.795
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": 1.795
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -4.26
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": 4.26
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "id": 40050838,
+      "operation_id": 3,
+      "resource_id": 1,
+      "amount": 93.291,
+      "created_date": "2026-10-19T11:48:00.000Z",
+      "legs": [
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": -93.291
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": 93.291
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -3.617
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": 3.617
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -2.001
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": 2.001
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -4.748
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": 4.748
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "id": 39847835,
+      "operation_id": 39,
+      "resource_id": 7,
+      "amount": 12164.783,
+      "created_date": "2026-10-12T10:02:36.000Z",
+      "legs": [
+        {
+          "token": "IRON",
+          "type": "land_player_resource_mint",
+          "amount": -12164.783
+        },
+        {
+          "token": "IRON",
+          "type": "land_player_resource_mint",
+          "amount": 12164.783
+        },
+        {
+          "token": "IRON",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -540.657
+        },
+        {
+          "token": "IRON",
+          "type": "land_uncaptured_tax_mint",
+          "amount": 540.657
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -260.867
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_castle_tax_mint",
+          "amount": 260.867
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -550.119
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_keep_tax_mint",
+          "amount": 550.119
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "id": 39847834,
+      "operation_id": 40,
+      "resource_id": 1,
+      "amount": -50221.185,
+      "created_date": "2026-10-12T10:02:36.000Z",
+      "legs": [
+        {
+          "token": "IRON",
+          "type": "land_player_resource_mint",
+          "amount": -12164.783
+        },
+        {
+          "token": "IRON",
+          "type": "land_player_resource_mint",
+          "amount": 12164.783
+        },
+        {
+          "token": "IRON",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -540.657
+        },
+        {
+          "token": "IRON",
+          "type": "land_uncaptured_tax_mint",
+          "amount": 540.657
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -260.867
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_castle_tax_mint",
+          "amount": 260.867
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -550.119
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_keep_tax_mint",
+          "amount": 550.119
+        }
+      ]
+    }
+  ]
+}
