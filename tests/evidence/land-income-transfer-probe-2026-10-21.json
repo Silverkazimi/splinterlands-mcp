@@ -1,9 +1,20 @@
 {
-  "source": "public read-only GET /land/resources/balances/history/{player}; owner account omitted",
-  "observed_at": "2026-10-21",
-  "query": { "startDate": "2026-09-19", "endDate": "2026-09-20", "limit": 2 },
+  "source": "synthetic fixture derived from public behavior; all row identifiers and numeric amounts replaced",
+  "observed_at": "synthetic",
+  "query": {
+    "startDate": "2026-09-19",
+    "endDate": "2026-09-20",
+    "limit": 2
+  },
   "rows": [
-    { "id": 39139268, "resource_id": 1, "operation_id": 23, "amount": -15000, "balance_history": [], "counterparty_present": true }
+    {
+      "id": 1,
+      "resource_id": 1,
+      "operation_id": 1,
+      "amount": -1,
+      "balance_history": [],
+      "counterparty_present": true
+    }
   ],
   "interpretation": "Potential outbound resource movement, but no nested transfer leg or operation-id mapping was verified; remains other."
 }

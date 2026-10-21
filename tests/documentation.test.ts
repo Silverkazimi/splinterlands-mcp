@@ -23,8 +23,8 @@ it("keeps public tool counts and routes aligned with the MCP interface", async (
   try {
     const names: string[] = [];
     const historyDescription = await client.callTool({ name: "describe_endpoint", arguments: { entryId: "vapi.land.resources.balances-history" } });
-    expect(historyDescription.structuredContent).toMatchObject({ toolInputs: { required: ["player", "startDate", "endDate"], optional: ["cursor", "limit"] } });
-    expect((historyDescription.structuredContent as { parameters: Array<{ name: string }> }).parameters.map((parameter) => parameter.name)).not.toContain("offset");
+    expect(historyDescription.structuredContent).not.toHaveProperty("toolInputs");
+    expect((historyDescription.structuredContent as { parameters: Array<{ name: string }> }).parameters.map((parameter) => parameter.name)).toContain("offset");
     let cursor: string | undefined;
     do {
       const page = await client.listTools(cursor ? { cursor } : {});
@@ -39,11 +39,11 @@ it("keeps public tool counts and routes aligned with the MCP interface", async (
       const name = row[1]!;
       const route = row[2]!;
       const id = bindings[name];
-      if (name === "land_resources_balances_history") {
-        expect(route).toBe("`GET /land/resources/balances/history/{player}` plus `/count` in one-minute UTC windows");
-      } else if (id) {
+      if (id) {
         const entry = getCatalogueEntry(id);
         expect(route).toBe(`\`${entry.method} ${entry.pathTemplate}\``);
+      } else if (name === "land_resources_balances_history_window") {
+        expect(route).toBe("Count-checked bounded windows for `GET /land/resources/balances/history/{player}`");
       } else if (name === "land_income_daily") {
         expect(route).toBe(LAND_INCOME_TOOL_ROUTES.land_income_daily);
       } else if (SCENARIO_TOOL_ROUTES[name]) {

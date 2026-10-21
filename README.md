@@ -117,7 +117,7 @@ results are cached, and their freshness is reported. Related reads can
 also happen at slightly different times, so they should not be treated
 as one perfectly synchronized view of the game.
 
-The reference below lists all 187 tools. For request budgets, exact
+The reference below lists all 188 tools. For request budgets, exact
 parameters, cache behavior, and recorded API quirks, see the
 [technical capability notes](library/capability-notes.md) and
 [safety boundaries](#what-it-is-and-what-it-will-never-do).
@@ -204,7 +204,8 @@ tools are local and make no upstream request.
 | `land_projects_requirements` | `GET /land/projects/deed/{deed_uid}/requirements` |
 | `land_regions_counts` | `GET /land/regions/counts` |
 | `land_resources_balances_history_count` | `GET /land/resources/balances/history/{player}/count` |
-| `land_resources_balances_history` | `GET /land/resources/balances/history/{player}` plus `/count` in one-minute UTC windows |
+| `land_resources_balances_history` | `GET /land/resources/balances/history/{player}` |
+| `land_resources_balances_history_window` | Count-checked bounded windows for `GET /land/resources/balances/history/{player}` |
 | `land_income_daily` | Count-checked `GET /land/resources/balances/history/{player}` windows plus a separate current deed work-rate estimate |
 | `land_resources_fragment_history` | `GET /land/resources/fragment_history/{trx_id}` |
 | `land_resources_history` | `GET /land/resources/history/{trx_id}` |
@@ -318,7 +319,9 @@ tools are local and make no upstream request.
 | `vapi_market_estimated_price` | `GET /market/estimated-price` |
 | `vapi_market_landing` | `GET /market/landing` |
 
-`land_resources_balances_history` requires `player`, `startDate` and `endDate` (UTC dates; end exclusive). Optional `cursor` is a UTC millisecond timestamp and `limit` is 1–10 rows. `next_cursor` advances a complete one-minute window; when `complete=false`, `skip_cursor` advances past that minute while leaving its rows unaccounted for. Empty minutes each need a count request, so traversing 14 days can take 20,160 page calls. The route returns projected raw resource units, with no DEC valuation. `land_income_daily` summarizes at most 14 completed UTC days and exposes unknown nested leg types in `unclassified_types` and `unclassified_leg_count`; inspect `complete` before using totals. Only observed Land mint legs are classified as production. No spend or transfer leg type has been confirmed in this account sample. Its separate `current_rate_per_day` is current deed `total_work_per_hour × 24`, not realized history.
+`land_resources_balances_history` retains the original player, optional date, limit and offset inputs and the upstream VAPI response envelope. Positive offset was measured not to page conventionally. Use `land_resources_balances_history_window` for bounded count-checked UTC windows; it checks row counts and skips empty stretches using larger-span counts. Its bounded leaf limit is 100, matching the measured upstream maximum. `land_income_daily` uses 25-row leaves by default and expanded per-day budgets. For a same-millisecond group too large to list, it reads one row (bounded to 1 MiB) to get the transaction ID, then uses the catalogue transaction lookup. Recognized `land_operation` / `harvest_all` results contribute received production, gross resource amounts, tax, grain eaten and consumed inputs. The day reports `basis`, `group_rows`, `matched_rows` and `unmatched_rows`; unmatched rows remain visible and force `complete=false` while transaction totals are still shown. Lookup calls count against the call budget and are cached by transaction ID. Other oversized groups, failed lookups and non-harvest transactions stay incomplete. Inspect `complete` before treating totals as full coverage. Its separate `current_rate_per_day` is current deed `total_work_per_hour × 24`, not realized history. See [the dated harvest observation](library/observations/land-income-harvest-transaction-2026-10-21.md).
+
+The upstream date filter is closed at millisecond precision. These tools retain half-open windows internally and send `endDate` one millisecond before each exclusive end, assigning split-boundary rows to the later window. See the closed-interval probe in [the dated history observation](library/observations/land-income-history-2026-10-21.md).
 
 ## Worked example
 

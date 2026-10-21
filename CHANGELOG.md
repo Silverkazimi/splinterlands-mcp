@@ -2,17 +2,18 @@
 
 ## 1.1.0 - 2026-10-21
 
-### Changed (breaking)
+### Changed
 
-- `land_resources_balances_history` now requires `startDate` and `endDate` alongside `player`; its upstream `offset` input is removed, `limit` is capped at 10, and its output is a projected one-minute window with count-checked `complete`, `next_cursor` and `skip_cursor`. Clients using the old inputs or reading the old VAPI envelope must update. `skip_cursor` advances past an incomplete minute and leaves those rows unaccounted for. Empty minutes each cost a count request; a full 14-day range can take 20,160 page calls.
+- `land_resources_balances_history` retains its original inputs, description and VAPI response envelope. A positive offset was measured not to page conventionally. The separate `land_resources_balances_history_window` tool provides bounded, count-checked timestamp windows and explicitly reports incomplete coverage.
 
 ### Added
 
-- `land_income_daily` summarizes up to 14 completed UTC days of raw resource balance movements, with no DEC valuation. Only live-observed Land mint leg types enter `production`; unknown legs are counted in `unclassified_types` and remain in `other`. No spend or transfer leg type was confirmed in the sampled account, so those categories remain zero. Each day reports whether its count-checked coverage is complete. The separate `current_rate_per_day` uses current deed `total_work_per_hour × 24` and is an estimate, not historical income.
+- `land_income_daily` summarizes up to 14 completed UTC days of raw resource balance movements, with no DEC valuation. For oversized same-millisecond groups it reads one bounded row, then uses a cached, budget-counted catalogue transaction lookup for recognized `land_operation` / `harvest_all` results. It reports `basis`, group/matched/unmatched row counts, and keeps unmatched days incomplete while showing transaction-derived production, gross, tax and consumption. See the dated redacted observation in `library/observations/land-income-harvest-transaction-2026-10-21.md`. The separate `current_rate_per_day` uses current deed `total_work_per_hour × 24` and is an estimate, not historical income.
+- Upstream date filters are closed at millisecond precision. Internal half-open windows send `endDate` one millisecond before the exclusive end, so midpoint and day-boundary rows are read once. Bulk transaction totals deduplicate by `trx_id`; resource row counts are reported per resource.
 
 ### Known limits and verification
 
-- The public API can time out on dense windows. The 32-read daily and 95-read call budgets can leave a day incomplete; same-timestamp groups larger than a page cannot be split by time. Check `complete` before using totals. Verified with bounded live public history and deed reads, redacted evidence, synthetic count/paging/classification tests, and the release checks.
+- Dense days use count-matched leaves (25 rows by default) and expanded bounded read budgets. For an oversized same-millisecond group, the tool attempts transaction-based harvest accounting from one bounded row and the catalogue lookup. Unmatched rows, failed lookups, upstream timeouts and count mismatches remain incomplete with a reason. The two requested production days could not be live-verified in this run because the daily MCP request timed out after 240 seconds without returning a result. Check `complete` before using totals.
 
 ## 1.0.7 - 2026-10-11
 
