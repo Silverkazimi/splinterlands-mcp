@@ -4,6 +4,7 @@ import { collectionPlotReferences } from "./collection-plot-references.js";
 import { registerScenarioSnapshot, SCENARIO_TOOL_ROUTES } from "./land-scenario-snapshot.js";
 import { registerLandPlotSnapshot, PLOT_SNAPSHOT_TOOL_ROUTE } from "./land-plot-snapshot.js";
 import { registerLandDeedsBundle, LAND_DEEDS_BUNDLE_TOOL_ROUTE } from "./land-deeds-bundle.js";
+import { LAND_INCOME_TOOL_ROUTES, registerLandIncome } from "./land-income.js";
 import { registerV105PublicReads, V105_PUBLIC_READ_ENTRY_IDS } from "./v1-0-5-public-reads.js";
 import { POWER_CORE_ENTRY_IDS, registerPowerCoreReads } from "./power-core.js";
 import { DELEGATION_ENTRY_IDS, registerDelegations } from "./delegations.js";
@@ -524,6 +525,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   registerScenarioSnapshot(server, client, loadCardDefinitions, now);
   registerLandPlotSnapshot(server, client);
   registerLandDeedsBundle(server, client, now);
+  registerLandIncome(server, client, now);
   registerV105PublicReads(server, client);
   const landDeedByPlotInputSchema = inputSchemaFor(LAND_DEED_BY_PLOT_ENTRY_ID).extend({ plot_id: plotIdOrLabelSchema });
   const landDeedByUidInputSchema = inputSchemaFor(LAND_DEED_BY_UID_ENTRY_ID);
@@ -1008,24 +1010,16 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
   server.registerTool(
     "land_resources_balances_history",
     {
-      description: LAND_RESOURCES_BALANCES_HISTORY_DESCRIPTION,
+      description: `${LAND_RESOURCES_BALANCES_HISTORY_DESCRIPTION} A positive offset was measured not to page conventionally; use land_resources_balances_history_window for bounded, count-checked windows.`,
       inputSchema: landResourcesBalancesHistoryInputSchema.shape,
     },
     async (params) => {
       const bound = bindRequest(LAND_RESOURCES_BALANCES_HISTORY_ENTRY_ID, params);
       const result = await bound.execute(client);
-      if (!result.ok) {
-        return outcomeResult(result, bound.endpointTemplate, params);
-      }
-      if (isEmptyResult(result.data)) {
-        return emptyResult(result.data, "The upstream returned no resource-balance history rows for this request.", result, bound.endpointTemplate, params);
-      }
+      if (!result.ok) return outcomeResult(result, bound.endpointTemplate, params);
+      if (isEmptyResult(result.data)) return emptyResult(result.data, "The upstream returned no resource-balance history rows for this request.", result, bound.endpointTemplate, params);
       const bounded = boundedResult(result.data as Record<string, unknown>);
-      return {
-        content: resultContent(bounded),
-        structuredContent: bounded.structuredContent,
-        _meta: provenanceMeta(result, bound.endpointTemplate, params),
-      };
+      return { content: resultContent(bounded), structuredContent: bounded.structuredContent, _meta: provenanceMeta(result, bound.endpointTemplate, params) };
     },
   );
 
@@ -1820,7 +1814,7 @@ export function createServer(clientOptions: ClientOptions = {}): McpServer {
       inputSchema: {},
     },
     async () => {
-      const structuredContent = { ...listEndpoints(CALLABLE_ENDPOINT_IDS), additionalReadTools: { ...HIVE_TOOL_ROUTES, ...SCENARIO_TOOL_ROUTES, ...PLOT_SNAPSHOT_TOOL_ROUTE, ...LAND_DEEDS_BUNDLE_TOOL_ROUTE } };
+      const structuredContent = { ...listEndpoints(CALLABLE_ENDPOINT_IDS), additionalReadTools: { ...HIVE_TOOL_ROUTES, ...SCENARIO_TOOL_ROUTES, ...PLOT_SNAPSHOT_TOOL_ROUTE, ...LAND_DEEDS_BUNDLE_TOOL_ROUTE, ...LAND_INCOME_TOOL_ROUTES } };
       return {
         content: [{ type: "text" as const, text: JSON.stringify(structuredContent) }],
         structuredContent,

@@ -1,0 +1,11 @@
+# Land balance history behavior — 2026-10-21
+
+Bounded public GET probes of the Land balance-history and count routes showed that the list accepts a row limit, while positive `offset` did not advance through rows. The original MCP tool therefore retains its inputs and upstream response envelope; callers needing explicit coverage can use `land_resources_balances_history_window`.
+
+Correction (2026-10-21): the upstream date filter is a closed interval at millisecond precision. A maintainer-account count probe for rows created at 11:40:36.000Z returned 279 for [11:40:35.999Z, 11:40:36.000Z], [11:40:36.000Z, 11:40:36.000Z], and [11:40:36.000Z, 11:40:36.001Z]; it returned 0 for [11:40:35.000Z, 11:40:35.999Z], [11:40:36.001Z, 11:40:37.000Z], and [11:40:35.998Z, 11:40:35.999Z]. Date-only 2026-10-20 to 2026-10-20 means midnight to midnight. Internal windows remain half-open [start,end); requests send endDate=end−1 ms. Thus a split-point row belongs to the later child and day-boundary rows are not double-counted. No transaction IDs or row IDs are retained.
+
+Counts locate dense spans before the reader descends to millisecond windows, so empty portions do not require one request per minute. Each returned leaf must match its count and contain unique row IDs before it is called complete. The upstream accepted a list limit of 100 in the checked behavior; higher limits were rejected. A dense same-timestamp group may be read together when its count fits that limit. If upstream times out or counts disagree, the affected day/window remains incomplete with a reason.
+
+Harvest rows included Land mint leg types, which are classified as production. Unrecognized legs remain `other` and are surfaced in `unclassified_types`; categories for spends and transfers are omitted until a type is confirmed. Amount sums are rounded to the upstream's three-decimal precision. Current deed work rate is reported separately from historical realized movements.
+
+The largest sampled dense-minute response held 21 rows in 19,428 bytes (about 925 bytes per row); the existing 512 KiB streamed-body ceiling is ample for bounded leaves of 25 rows. Evidence fixtures use synthetic row identifiers and amounts. No account name, transaction identifier, block number, deed/plot identifier or exact account balance is retained in this note or the new history fixtures.

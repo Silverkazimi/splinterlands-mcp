@@ -148,3 +148,4 @@ rewritten.
 - [Releases and updates](releasing.md) — audited initial history, release checks, canonical checkout and recovery.
 - [Capability notes](capability-notes.md) — per-tool request limits, caches and observed API behavior behind the README overview.
 - [Custom avatar data and artwork](avatar-artwork.md) — saved avatar settings and composed artwork.
+- [Land income history observations](observations/land-income-history-2026-10-21.md) — live timestamp-window paging, broken positive offsets, timeouts, and classification limits behind `land_income_daily`.

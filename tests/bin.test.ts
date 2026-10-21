@@ -106,7 +106,7 @@ describe("built binary", () => {
       send({ jsonrpc: "2.0", id: 2, method: "tools/list", params: {} });
       const tools = await nextResponse();
       expect(tools).toMatchObject({ jsonrpc: "2.0", id: 2, result: { tools: expect.any(Array) } });
-      expect(tools.result?.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 3 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length + Object.keys(PLOT_SNAPSHOT_TOOL_ROUTE).length + Object.keys(LAND_DEEDS_BUNDLE_TOOL_ROUTE).length);
+      expect(tools.result?.tools).toHaveLength(Object.keys(TOOL_ENTRY_IDS).length + 5 + Object.keys(HIVE_TOOL_ROUTES).length + Object.keys(SCENARIO_TOOL_ROUTES).length + Object.keys(PLOT_SNAPSHOT_TOOL_ROUTE).length + Object.keys(LAND_DEEDS_BUNDLE_TOOL_ROUTE).length);
       expect(tools.result?.tools).toEqual(expect.arrayContaining([
         expect.objectContaining({ name: "land_deed_by_plot" }),
         expect.objectContaining({ name: "land_deed_by_uid" }),

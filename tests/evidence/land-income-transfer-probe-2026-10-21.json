@@ -1,0 +1,20 @@
+{
+  "source": "synthetic fixture derived from public behavior; all row identifiers and numeric amounts replaced",
+  "observed_at": "synthetic",
+  "query": {
+    "startDate": "2026-09-19",
+    "endDate": "2026-09-20",
+    "limit": 2
+  },
+  "rows": [
+    {
+      "id": 1,
+      "resource_id": 1,
+      "operation_id": 1,
+      "amount": -1,
+      "balance_history": [],
+      "counterparty_present": true
+    }
+  ],
+  "interpretation": "Potential outbound resource movement, but no nested transfer leg or operation-id mapping was verified; remains other."
+}

@@ -34,6 +34,17 @@ function writeRepositoryFile(root: string, repositoryPath: string, contents: str
 }
 
 describe("leak-check red/green guards", () => {
+  it("rejects the former history fixture transaction and block identifiers", () => {
+    const root = temporaryRoot();
+    try {
+      const file = writeRepositoryFile(root, "tests/evidence/land-income.json", JSON.stringify({
+        trx_id: "0123456789abcdef0123456789abcdef01234567", block_num: 123456789,
+      }));
+      expect(runLeakCheck(root, "--full", false)).toBe(1);
+      writeFileSync(file, JSON.stringify({ trx_id: "synthetic-transaction-id", block_num: undefined }));
+      expect(runLeakCheck(root, "--full", false)).toBe(0);
+    } finally { rmSync(root, { recursive: true, force: true }); }
+  });
   it("rejects single-letter ticket identifiers in content and paths", () => {
     const root = temporaryRoot();
     const token = [String.fromCharCode(83), String(987654)].join("-");

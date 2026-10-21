@@ -14,7 +14,7 @@ const TIMEOUT_MS = 60 * 1000;
 const MAX_RESULT_BYTES = 256 * 1024;
 
 const DEED_FIELDS = ["deed_uid", "plot_id", "region_number", "tract_number", "plot_number", "region_uid", "territory", "player", "rarity",
-  "deed_type", "magic_type", "plot_status", "worksite_type", "resource_symbol", "listed", "in_use", "is_construction"] as const;
+  "deed_type", "magic_type", "plot_status", "worksite_type", "resource_id", "resource_symbol", "listed", "in_use", "is_construction"] as const;
 const STAKING_FIELDS = ["is_powered", "worker_count", "powered_worker_count", "max_workers_allowed", "total_harvest_pp", "total_base_pp_after_cap",
   "efficiency", "total_work_per_hour"] as const;
 const WORKSITE_FIELDS = ["is_active", "is_harvesting", "is_construction", "project_type", "token_symbol", "hours_till_next_op"] as const;
