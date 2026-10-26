@@ -1,14 +1,22 @@
 # Changelog
 
-## 1.2.0 - proposed
+## 1.2.0 - 2026-10-26
 
 ### Added
 
+- `cards_max_land_pp` supplies an offline max-level base Land PP reference by card set, rarity and foil; `cards_collection` adds `max_land_base_pp` to each row. Unknown print rules remain null and `no_pp` cards yield zero, supporting Land planning. See [the rule evidence](library/observations/max-land-pp-2026-10-26.md).
+- `hive_account` reads one explicit public Hive account, returning post count, raw and log-scale reputation, creation time, vote status and regenerated voting mana without keys, balances or free-text metadata. See [the account evidence](library/observations/hive-account-2026-10-26.md).
 - `cards_collection` now reports rarity, maximum level, required BCX, whether each copy is maxed, and any excess BCX, including compact pages. It accepts `maxed=true` or `maxed=false` and applies that filter across the full collection before paging, so callers can find maxed copies without fetching every page. A second call with `maxed=false, min_land_base_pp=1000` finds higher-power non-maxed copies. Missing definitions or uncertain caps remain null and are explained by a warning. See [the rule evidence](library/observations/collection-maxed-rules-2026-10-26.md).
 
-### Verification limits
+### Should you update?
 
-- Fixture tests cover rarity caps, Foundations, regular/gold/black foil examples, filtering and missing definitions. Live upstream comparison is pending maintainer verification; no release has been published.
+- Yes if you plan Land lineups or need to know which copies are maxed. All changes are additive: existing tools keep their inputs and outputs; new fields and tools are optional.
+
+### Known limits and verification
+
+- Max-level and maxed rules follow the published combine thresholds, keyed on `card_set` (not the numeric edition). Over-levelled copies count as maxed and report `overlevelled` and `excess_bcx`; black foils always count as maxed. Unknown prints stay null rather than guessed.
+- Later-set max-level Land PP comes from a measured reference, not an official table; a few maxed copies can show a current Land base PP that differs from the reference, so treat `max_land_base_pp` as a planning reference.
+- Verified with typecheck, lint, the full test suite, the full privacy scan and a packed-artifact check, plus a live read of a large real collection: the maxed count matched an independent implementation of the same rules exactly, and max-level Land PP matched it wherever both had a rule.
 
 ## 1.1.0 - 2026-10-21
 

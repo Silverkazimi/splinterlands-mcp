@@ -2,13 +2,13 @@
 
 [Return to the README](../README.md). This reference preserves the detailed request limits and observed API behavior behind the introductory overview. Plain file paths below are relative to the repository root.
 
-**Version: 1.1.0.** 188 tools are registered (`src/server.ts` and its registration modules).
+**Version: 1.1.0.** 190 tools are registered (`src/server.ts` and its registration modules).
 67 call `vapi.splinterlands.com`: 41 Land routes covering deeds, projects,
 counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 109 call
 `api.splinterlands.com`: eleven card tools, one item-metadata tool, and 34
 player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads.
 One tool calls `prices.splinterlands.com`: `prices_current` reads the public token-to-USD feed and uses a five-minute success cache because prices move.
-Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 211 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
+Four tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 211 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons; `cards_max_land_pp` supplies a static max-level Land PP reference. See
 `library/endpoint-knowledge-tools.md` for the evidence model.
 
 The ranked-draw and frontier-draw families expose current status, completed
@@ -19,7 +19,7 @@ explicit numeric draw id. Prize overviews and available-prize metadata use the
 server returns at most 100 rows and 256 KiB with an explicit truncation notice;
 the normal 2 MiB upstream response cap still applies.
 
-A sixth offline resource, `splinterlands://hive/transaction-limits`, explains source-dated transaction limits and terminology. Three additional tools provide bounded Hive history, full transactions and combined game evidence; see [Hive transaction evidence](hive-transaction-evidence.md).
+A sixth offline resource, `splinterlands://hive/transaction-limits`, explains source-dated transaction limits and terminology. Four additional tools provide a public account profile, bounded Hive history, full transactions and combined game evidence; see [Hive transaction evidence](hive-transaction-evidence.md).
 
 Five offline JSON resources provide dated public Land rules: splinterlands://land/rules/terrain (14 terrains by six elements), splinterlands://land/rules/production (baseline output and food rates), splinterlands://land/rules/cap (worksite cap and Runi exception), and splinterlands://land/rules/card-abilities (edition-19 level tables for five observed cards, activation and stacking rules), plus splinterlands://land/rules/screen-fields (public-client worker screen labels, cap allocation order and power slots). Discover them with resources/list and read them with resources/read; they make no API calls. Sources and scope are included. The offline lineup estimator uses these reference rules. Snapshot reads verify their baseline against current backend values before returning estimator inputs; this does not establish eligibility for a proposed change.
 

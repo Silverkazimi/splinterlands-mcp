@@ -7,10 +7,12 @@ import { HermesHiveReader, HiveReadError, HIVE_URL } from "./hive-reader.js";
 
 export const HIVE_TOOL_ROUTES: Record<string, string> = {
   hive_account_history: "Read-only RPC: condenser_api.get_account_history",
+  hive_account: "Read-only RPC: condenser_api.get_accounts",
   hive_transaction: "Read-only RPC: condenser_api.get_transaction",
   transaction_inspect: "Read-only Hive transaction RPC + GET /transactions/lookup",
 };
 const account = z.string().min(3).max(16).regex(/^[a-z][a-z0-9.-]+[a-z0-9]$/);
+const strictAccount = z.string().min(3).max(16).regex(/^[a-z][a-z0-9-]*(?:\.[a-z][a-z0-9-]*)*$/).refine(v => v.split(".").every(label => label.length >= 3 && /[a-z0-9]$/.test(label)));
 const trxId = z.string().regex(/^[a-fA-F0-9]{40}$/).transform((v) => v.toLowerCase());
 // The game splits one Hive transaction into records <id>, <id>-1, <id>-2, ...; accept either form.
 const gameTrxId = z.string().regex(/^[a-fA-F0-9]{40}(-[1-9][0-9]{0,2})?$/).transform((v) => v.toLowerCase());
@@ -35,6 +37,32 @@ function decoded(value: unknown): { value: unknown; warning?: string } {
 }
 function record(value: unknown): Record<string, unknown> | undefined {
   return value !== null && typeof value === "object" && !Array.isArray(value) ? value as Record<string, unknown> : undefined;
+}
+function reputationScore(raw: string): number | null {
+  if (!/^-?\d+$/.test(raw)) return null;
+  const magnitude = Math.abs(Number(raw));
+  if (!Number.isFinite(magnitude)) return null;
+  if (magnitude === 0) return 25;
+  const score = (Math.log10(magnitude) - 9) * 9 + 25;
+  return Number((magnitude < 0 ? 50 - score : score).toFixed(2));
+}
+function vests(value: string): number | null {
+  const match = /^(\d+(?:\.\d{1,6})?) VESTS$/.exec(value);
+  return match ? Number(match[1]) * 1_000_000 : null;
+}
+function currentVotingMana(row: Record<string, unknown>, observedAt: Date): { current_mana: number; max_mana: number; percent: number; last_update_time: number } | null {
+  const bar = record(row.voting_manabar);
+  const rawMana = typeof bar?.current_mana === "string" && /^\d+$/.test(bar.current_mana) ? Number(bar.current_mana) : bar?.current_mana;
+  if (!bar || !Number.isSafeInteger(rawMana) || !Number.isSafeInteger(bar.last_update_time)) return null;
+  const owned = typeof row.vesting_shares === "string" ? vests(row.vesting_shares) : null;
+  const received = typeof row.received_vesting_shares === "string" ? vests(row.received_vesting_shares) : null;
+  const delegated = typeof row.delegated_vesting_shares === "string" ? vests(row.delegated_vesting_shares) : null;
+  if (owned === null || received === null || delegated === null) return null;
+  const maxMana = owned + received - delegated;
+  if (!Number.isSafeInteger(maxMana) || maxMana <= 0 || Number(rawMana) < 0) return null;
+  const elapsed = Math.max(0, Math.floor(observedAt.getTime() / 1000) - Number(bar.last_update_time));
+  const current = Math.min(maxMana, Number(rawMana) + Math.floor(maxMana * elapsed / (5 * 24 * 60 * 60)));
+  return { current_mana: current, max_mana: maxMana, percent: Number((current / maxMana * 100).toFixed(2)), last_update_time: Number(bar.last_update_time) };
 }
 export function summarizeOperation(op: [string, Record<string, unknown>], index: number) {
   const [type, payload] = op;
@@ -124,6 +152,27 @@ async function gameRecords(client: SplinterlandsHttpClient, id: string, first: G
 }
 export function registerHiveTools(server: McpServer, client: SplinterlandsHttpClient, reader: HermesHiveReader): void {
   server.registerResource("hermes-transaction-limits", "splinterlands://hive/transaction-limits", { title: "Hive transaction terms and limits", mimeType: "application/json" }, async (uri) => ({ contents: [{ uri: uri.href, mimeType: "application/json", text: JSON.stringify(limits) }] }));
+  server.registerTool("hive_account", {
+    description: "Read one explicit Hive account's public profile counters and current voting mana. Voting mana regenerates over five days from voting_manabar; computed value is a node-time estimate. Returns selected fields only, no keys, balances or JSON metadata. One bounded read-only condenser_api.get_accounts call.",
+    inputSchema: { account: strictAccount }, annotations,
+  }, async ({ account: name }) => guarded(async () => {
+    const rows = z.array(z.record(z.string(), z.unknown())).max(1).parse(await reader.read("condenser_api.get_accounts", [[name]]));
+    if (rows.length === 0) return { account: name, found: false, source: HIVE_URL, rpc_method: "condenser_api.get_accounts", retrieved_at: new Date().toISOString() };
+    const row = rows[0]!;
+    if (row.name !== name) throw new HiveReadError("malformed_response", "Hive returned a different account.");
+    const fields = z.object({ post_count: z.number().int().nonnegative(), reputation: z.union([z.string(), z.number()]), created: z.string(),
+      voting_power: z.number().int().min(0).max(10000).optional(), can_vote: z.boolean().optional(), proxy: z.string().optional(),
+      last_vote_time: z.string().optional() }).parse(row);
+    const observedAt = new Date();
+    const rawReputation = String(fields.reputation);
+    const mana = currentVotingMana(row, observedAt);
+    return { account: name, found: true, post_count: fields.post_count, reputation_raw: rawReputation,
+      reputation_score: reputationScore(rawReputation), created: fields.created, can_vote: fields.can_vote ?? null,
+      proxy: fields.proxy ?? null, last_vote_time: fields.last_vote_time ?? null,
+      voting_power_raw: fields.voting_power ?? null, voting_mana: mana,
+      source: HIVE_URL, rpc_method: "condenser_api.get_accounts", retrieved_at: observedAt.toISOString(),
+      coverage: "One node's public account snapshot; voting mana is regenerated from its last update time." };
+  }));
   server.registerTool("hive_account_history", {
     description: "Search one bounded window of an explicit Hive account's authority-indexed history. Default: newest 100 records. Optional custom_json_id filter is applied locally. Returns next_start for an explicit later call, even when no matches occur. No automatic pagination; this is not complete incoming-recipient history. Oversized results are refused whole.",
     inputSchema: { account, start: z.number().int().min(-1).max(Number.MAX_SAFE_INTEGER).default(-1),

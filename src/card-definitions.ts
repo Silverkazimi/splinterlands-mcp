@@ -10,9 +10,25 @@ export type CardDefinition = {
   sub_type: string | null;
   rarity: number | null;
   maxLevel: number | null;
+  noPp: boolean;
   secondary_color?: string | null;
   landAbilities?: Array<Array<Array<string | number>>>;
 };
+
+// Official Land Production Points set table (Alpha 10x, Beta 5x, Untamed 2x):
+// https://splinterlands.gitbook.io/the-secret-of-praetoria/production-points/production-points
+// Chaos baseline and later sets are supported by maxed-copy comparisons;
+// see library/observations/max-land-pp-2026-10-26.md. Phase 1.5 docs alone do not cover later sets.
+export const MAX_LAND_PP_MULTIPLIERS = { alpha: 10, beta: 5, untamed: 2, chaos: 1, rebellion: 0.5, conclave: 0.5, land: 2 } as const;
+const CHAOS_MAX_LAND_PP = { regular: [1000, 1100, 1250, 1500], gold: [2000, 4000, 6000, 10000] } as const;
+export function maxLandBasePp(cardSet: string | null | undefined, rarity: number | null, foil: number, noPp = false): number | null {
+  if (noPp) return 0;
+  const multiplier = MAX_LAND_PP_MULTIPLIERS[cardSet?.trim().toLowerCase() as keyof typeof MAX_LAND_PP_MULTIPLIERS];
+  if (multiplier === undefined || rarity === null || !Number.isInteger(rarity) || rarity < 1 || rarity > 4) return null;
+  const baseline = foil === 0 ? CHAOS_MAX_LAND_PP.regular[rarity - 1]
+    : foil === 1 ? CHAOS_MAX_LAND_PP.gold[rarity - 1] : undefined;
+  return baseline === undefined ? null : baseline * multiplier;
+}
 
 // Maximum BCX per rarity (common, rare, epic, legendary). The modern and
 // Foundations values are the last entries of official /settings
@@ -75,7 +91,7 @@ export function indexCardDefinitions(data: unknown): Map<number, CardDefinition>
     const id = row.id as number;
     if (index.has(id)) throw new Error("Duplicate card definition identity.");
     index.set(id, {
-      name: row.name, color: row.color, sub_type: row.sub_type, rarity, maxLevel,
+      name: row.name, color: row.color, sub_type: row.sub_type, rarity, maxLevel, noPp: row.no_pp === true,
       ...(landAbilities == null ? {} : { landAbilities: landAbilities as Array<Array<Array<string | number>>> }),
       ...(row.secondary_color === undefined ? {} : { secondary_color: row.secondary_color as string | null }),
     });
@@ -112,8 +128,8 @@ export function createCardDefinitionLoader(client: SplinterlandsHttpClient, now:
 export function joinCardDefinition(card: ProjectedCollectionCard, definitions: Map<number, CardDefinition>): ProjectedCollectionCard {
   const definition = definitions.get(card.card_detail_id);
   // Black foils (3/4) are always max level, even when the definition is unknown (Ceres card_browser rule).
-  if (!definition) return { ...card, rarity: null, max_level: null, maxed: card.foil === 3 || card.foil === 4 ? true : null, bcx_max: null, overlevelled: null, excess_bcx: null };
-  const { landAbilities, rarity, maxLevel, ...fields } = definition;
+  if (!definition) return { ...card, rarity: null, max_level: null, max_land_base_pp: null, maxed: card.foil === 3 || card.foil === 4 ? true : null, bcx_max: null, overlevelled: null, excess_bcx: null };
+  const { landAbilities, rarity, maxLevel, noPp, ...fields } = definition;
   const defaultCaps = [10, 8, 6, 4];
   const foundationCaps = [5, 4, 3, 2];
   const set = card.card_set?.toLowerCase();
@@ -125,9 +141,16 @@ export function joinCardDefinition(card: ProjectedCollectionCard, definitions: M
   const element = colors[definition.color.toLowerCase()];
   const secondary = definition.secondary_color == null ? null : colors[definition.secondary_color.toLowerCase()];
   const abilities = landAbilities === undefined ? [] : landAbilities[card.level - 1];
+  const maxed = black ? true : cap === null || threshold === null ? null : card.bcx >= threshold;
+  const formulaPp = maxLandBasePp(card.card_set, rarity, card.foil, noPp);
+  const observedPp = card.land_base_pp == null ? null : Number(card.land_base_pp);
+  // A maxed copy is itself a PP measurement; Ceres also prefers it when positive
+  // and different from the general formula (including black foil copies).
+  const maxPp = maxed && observedPp !== null && Number.isFinite(observedPp) && observedPp > 0 && observedPp !== formulaPp
+    ? observedPp : formulaPp;
   return {
-    ...card, ...fields, rarity, max_level: cap, bcx_max: threshold,
-    maxed: black ? true : cap === null || threshold === null ? null : card.bcx >= threshold,
+    ...card, ...fields, rarity, max_level: cap, max_land_base_pp: maxPp, bcx_max: threshold,
+    maxed,
     overlevelled: threshold === null ? null : card.bcx > threshold,
     excess_bcx: threshold === null ? null : Math.max(0, card.bcx - threshold),
     ...(element === undefined ? {} : { element }),

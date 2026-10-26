@@ -56,6 +56,8 @@ it("keeps public tool counts and routes aligned with the MCP interface", async (
         expect(route).toBe(HIVE_TOOL_ROUTES[name]);
       } else if (name === "land_lineup_estimate") {
         expect(route).toBe("Offline; calculates a supplied Land lineup");
+      } else if (name === "cards_max_land_pp") {
+        expect(route).toBe("Offline max-level base Land PP reference");
       } else {
         expect(["list_endpoints", "describe_endpoint"]).toContain(name);
         expect(route).toBe("Offline; reads the local endpoint catalogue");

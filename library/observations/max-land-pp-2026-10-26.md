@@ -1,0 +1,7 @@
+# Max-level base Land PP rule — 2026-10-26
+
+`cards_max_land_pp` is an offline planning reference. It uses the max-level Chaos baseline by rarity: regular 1000/1100/1250/1500 and gold 2000/4000/6000/10000, then multiplies by `card_set`: Alpha 10, Beta 5, Untamed 2, Chaos 1, Rebellion 0.5, Conclave 0.5, Land 2. Numeric `edition` is a print identity and does not select the multiplier. `no_pp` yields 0. Unknown sets, rarity and foil codes 2–4 yield null because no general formula has been established for those prints. A maxed copy's observed PP can differ from this reference; callers should prefer its observed `land_base_pp` when inspecting that copy.
+
+Source: the [official Land Production Points page](https://splinterlands.gitbook.io/the-secret-of-praetoria/production-points/production-points) lists the Alpha, Beta and Untamed set multipliers. The Chaos baseline and later set factors follow the Ceres max-level Land PP reference, whose baseline was measured in August 2026 and whose formula was rechecked against maxed copies in an October 2026 snapshot. This public note was reviewed on 2026-10-26. The official Land document describes Phase 1.5 and does not alone establish later-set behavior; no private capture is included here.
+
+This reference supplies base PP only. It does not include plot, terrain, totem, card ability or other production modifiers. Collection rows add `max_land_base_pp` from this rule, except that a maxed copy's differing positive observed `land_base_pp` takes precedence. The observed `land_base_pp` itself is never replaced.
