@@ -2,21 +2,38 @@
 
 ## 1.2.0 - 2026-10-26
 
-### Added
+This update answers two questions that used to take dozens of calls: which of my cards are maxed, and how much Land PP a card reaches at max level. It also adds a first read of a Hive account itself. Everything is additive: existing tools keep their inputs and outputs, so updating from 1.1.0 needs no other change. The server remains read-only and requires no game login.
 
-- `cards_max_land_pp` supplies an offline max-level base Land PP reference by card set, rarity and foil; `cards_collection` adds `max_land_base_pp` to each row. Unknown print rules remain null and `no_pp` cards yield zero, supporting Land planning. See [the rule evidence](library/observations/max-land-pp-2026-10-26.md).
-- `hive_account` reads one explicit public Hive account, returning post count, raw and log-scale reputation, creation time, vote status and regenerated voting mana without keys, balances or free-text metadata. See [the account evidence](library/observations/hive-account-2026-10-26.md).
-- `cards_collection` now reports rarity, maximum level, required BCX, whether each copy is maxed, and any excess BCX, including compact pages. It accepts `maxed=true` or `maxed=false` and applies that filter across the full collection before paging, so callers can find maxed copies without fetching every page. A second call with `maxed=false, min_land_base_pp=1000` finds higher-power non-maxed copies. Missing definitions or uncertain caps remain null and are explained by a warning. See [the rule evidence](library/observations/collection-maxed-rules-2026-10-26.md).
+### Do I need to update?
 
-### Should you update?
+Yes, if you plan Land lineups, look for maxed or over-levelled cards, or want a Hive account's post count, reputation or voting mana. Otherwise nothing changes for you.
 
-- Yes if you plan Land lineups or need to know which copies are maxed. All changes are additive: existing tools keep their inputs and outputs; new fields and tools are optional.
+### What you can do now
 
-### Known limits and verification
+- **See at once which cards are maxed.** Every `cards_collection` row, including the compact `all: true` rows, now carries `rarity`, `max_level`, the BCX needed for max level (`bcx_max`), `maxed`, `overlevelled` and `excess_bcx`. The thresholds are the game's own combine rates, chosen by the card's `card_set` (Alpha, Beta, Foundations or the modern sets), never by the numeric `edition`. Example: finding every maxed card in an 8,125-card collection used to mean paging the whole collection and joining card definitions by hand, about 82 calls; now one filtered call returns them.
+- **Filter by maxed state across the whole collection.** `maxed: true` or `maxed: false` is applied to the full collection before paging. Combined with `min_land_base_pp`, two calls answer "all maxed cards, plus non-maxed cards at 1,000 PP or more".
+- **Over-levelled cards are handled.** A copy combined past max level counts as maxed, is flagged `overlevelled` and shows its surplus as `excess_bcx`. Black foils always count as maxed.
+- **Look up a card's Land PP at max level.** The new offline tool `cards_max_land_pp` takes a `card_set`, rarity and foil and returns the base Land PP at max level, for planning which prints reach a target before you buy or combine. Collection rows add the same value as `max_land_base_pp`. Cards without Land PP (`no_pp`) return 0.
+- **Read a Hive account.** The new `hive_account` returns one account's post count, reputation (raw and the usual score), creation date, vote status and current voting mana, regenerated to the time of the call. It never returns keys, balances or profile text.
 
-- Max-level and maxed rules follow the published combine thresholds, keyed on `card_set` (not the numeric edition). Over-levelled copies count as maxed and report `overlevelled` and `excess_bcx`; black foils always count as maxed. Unknown prints stay null rather than guessed.
-- Later-set max-level Land PP comes from a measured reference, not an official table; a few maxed copies can show a current Land base PP that differs from the reference, so treat `max_land_base_pp` as a planning reference.
-- Verified with typecheck, lint, the full test suite, the full privacy scan and a packed-artifact check, plus a live read of a large real collection: the maxed count matched an independent implementation of the same rules exactly, and max-level Land PP matched it wherever both had a rule.
+### Limits to keep in mind
+
+- **Unknown stays unknown.** If a card's definition or set rule can't be resolved, `rarity`, `max_level`, `maxed` and the PP reference are `null` with a warning, never a guess or `false`.
+- **Max-level Land PP is a planning reference, not an official table.** Alpha, Beta and Untamed multipliers come from the official Land documentation; the baseline for later sets was measured from maxed copies. Gold foils of some prints, black foils and sets without a known rule return `null`. A few maxed copies show a different current Land PP than the reference; their own `land_base_pp` is always kept and takes precedence on the row.
+- **Voting mana is an estimate** from the node's last update and the five-day regeneration rule, not a consensus measurement.
+- No login, signing, trading or other account-changing feature was added.
+
+### Verification
+
+The update passed typecheck, lint, the full privacy scan and **623 tests across 85 files** on Node.js 24; hosted CI repeats them on Node.js 22 and 24.
+
+Every new or changed tool was checked on 2026-10-26 against live public data through the server:
+
+- **`cards_collection` maxed fields:** on an 8,125-card collection, `maxed: true` returned 982 cards in 10 pages and `maxed: false` with `min_land_base_pp: 1000` returned 84 more. An independent implementation of the same rules, used by a separate Land tool, counted exactly the same 982 maxed cards, including 32 over-levelled ones.
+- **`max_land_base_pp`:** across all 8,125 cards it matched that independent formula wherever both had a rule. Every card the server reported at 0 really has 0 Land PP.
+- **`hive_account`:** a live account was found and its voting mana computed; nothing private was printed.
+
+The package dry run contains the executable and public evidence, with no tests or work files bundled. npm is not updated by this release.
 
 ## 1.1.0 - 2026-10-21
 
