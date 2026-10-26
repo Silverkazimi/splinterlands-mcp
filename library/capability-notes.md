@@ -2,13 +2,13 @@
 
 [Return to the README](../README.md). This reference preserves the detailed request limits and observed API behavior behind the introductory overview. Plain file paths below are relative to the repository root.
 
-**Version: 1.1.0.** 188 tools are registered (`src/server.ts` and its registration modules).
+**Version: 1.1.0.** 190 tools are registered (`src/server.ts` and its registration modules).
 67 call `vapi.splinterlands.com`: 41 Land routes covering deeds, projects,
 counts, staking, resources and liquidity pools, plus seven market reads, ten delegation-rental reads, three delegation reads, five collector configuration/account reads and the health root. 109 call
 `api.splinterlands.com`: eleven card tools, one item-metadata tool, and 34
 player and ranking tools, plus 15 market and purchase-read tools, three battle reads, ten tournament reads, six guild reads, five game metadata reads, and eleven conflict/proposal reads.
 One tool calls `prices.splinterlands.com`: `prices_current` reads the public token-to-USD feed and uses a five-minute success cache because prices move.
-Three tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 211 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons. See
+Four tools work offline: `list_endpoints` and `describe_endpoint` report the catalogue's 211 endpoints and their evidence; `land_lineup_estimate` evaluates supplied lineup snapshots and comparisons; `cards_max_land_pp` supplies a static max-level Land PP reference. See
 `library/endpoint-knowledge-tools.md` for the evidence model.
 
 The ranked-draw and frontier-draw families expose current status, completed
@@ -19,7 +19,7 @@ explicit numeric draw id. Prize overviews and available-prize metadata use the
 server returns at most 100 rows and 256 KiB with an explicit truncation notice;
 the normal 2 MiB upstream response cap still applies.
 
-A sixth offline resource, `splinterlands://hive/transaction-limits`, explains source-dated transaction limits and terminology. Three additional tools provide bounded Hive history, full transactions and combined game evidence; see [Hive transaction evidence](hive-transaction-evidence.md).
+A sixth offline resource, `splinterlands://hive/transaction-limits`, explains source-dated transaction limits and terminology. Four additional tools provide a public account profile, bounded Hive history, full transactions and combined game evidence; see [Hive transaction evidence](hive-transaction-evidence.md).
 
 Five offline JSON resources provide dated public Land rules: splinterlands://land/rules/terrain (14 terrains by six elements), splinterlands://land/rules/production (baseline output and food rates), splinterlands://land/rules/cap (worksite cap and Runi exception), and splinterlands://land/rules/card-abilities (edition-19 level tables for five observed cards, activation and stacking rules), plus splinterlands://land/rules/screen-fields (public-client worker screen labels, cap allocation order and power slots). Discover them with resources/list and read them with resources/read; they make no API calls. Sources and scope are included. The offline lineup estimator uses these reference rules. Snapshot reads verify their baseline against current backend values before returning estimator inputs; this does not establish eligibility for a proposed change.
 
@@ -44,6 +44,7 @@ Date filtering is closed at upstream millisecond precision. Internal windows are
 `land_lineup_snapshot` accepts an explicit player and one plot reference, plus candidate card IDs or UIDs. It gathers current workers, regional power, production, candidates, verified available location labels and Power Core facts within ten logical GETs. The collection is streamed once, at most 100 matching cards are retained, and there is no automatic pagination. Only an agreeing backend baseline is returned for the offline estimator; reads are non-atomic and candidate cooldown/eligibility caveats remain visible. Use its baseline and selected candidate workers in a second `land_lineup_estimate` call. The two-call snapshot and estimator workflow has been verified against a populated Grain plot. Other scenarios still require their own agreeing baseline. Land stake changes are per plot; these tools perform no changes.
 
 `cards_collection` streams the complete upstream collection once. A collection of up to 25,000 cards is
+enriched with rarity, max_level, bcx_max, maxed, overlevelled and excess_bcx from cached card definitions and official BCX thresholds. Missing or ambiguous caps are null; missing definitions also produce a warning. `maxed` filters before paging and combines with `min_land_base_pp` using AND. For the union of all maxed copies and non-maxed copies at 1000 PP or more, call `maxed=true` and `maxed=false, min_land_base_pp=1000` separately. The [dated rule note](observations/collection-maxed-rules-2026-10-26.md) cites official sources and the captured `/settings` tables. The collection is
 retained as a projected index for 120 seconds (40,000 cards across all usernames), and every cursor, filter
 and compact `all` page is served from it. A larger collection retains at most 100 projected cards for the
 requested page. Each card also carries owner, delegation, rental, market-listing and lock fields, with

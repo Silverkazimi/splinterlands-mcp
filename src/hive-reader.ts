@@ -1,7 +1,7 @@
 import { registerLogicalRequest } from "./http/callscope.js";
 
 export const HIVE_URL = "https://api.hive.blog";
-export const HIVE_METHODS = ["condenser_api.get_account_history", "condenser_api.get_transaction"] as const;
+export const HIVE_METHODS = ["condenser_api.get_account_history", "condenser_api.get_transaction", "condenser_api.get_accounts"] as const;
 export class HiveReadError extends Error {
   constructor(readonly kind: string, message: string) { super(message); }
 }
@@ -10,7 +10,7 @@ export class HermesHiveReader {
   private nextStart = 0;
   constructor(private readonly fetcher: typeof fetch = globalThis.fetch, private readonly timeoutMs = 20_000) {}
   async read(method: typeof HIVE_METHODS[number], params: unknown[]): Promise<unknown> {
-    if (!(HIVE_METHODS as readonly string[]).includes(method)) throw new HiveReadError("refused_method", "Only the two supported history reads are allowed.");
+    if (!(HIVE_METHODS as readonly string[]).includes(method)) throw new HiveReadError("refused_method", "Only supported read-only Hive RPC methods are allowed.");
     registerLogicalRequest(HIVE_URL + "#" + JSON.stringify([method, params]));
     if (this.active >= 2) throw new HiveReadError("busy", "Two Hive reads are already in flight; retry later.");
     this.active++;

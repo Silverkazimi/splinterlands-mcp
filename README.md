@@ -53,6 +53,22 @@ Land power, and staking state. They can also attach verified plot references
 where available. A card in cooldown may still refer to its former plot, so
 that reference is not proof that it is working there now.
 
+`cards_collection` rows (including compact `all=true` rows) now carry numeric
+`rarity` (1 common through 4 legendary), `max_level`, `bcx_max`, `maxed`,
+`overlevelled`, and `excess_bcx`. The BCX threshold comes from the official
+game `/settings` rarity, set and foil tables; `maxed` includes copies with
+extra BCX. Black foils are maxed at issue. A missing or ambiguous definition
+gives null fields and a warning. Filter with `maxed=true` or `maxed=false`
+before paging. Filters combine with AND; to obtain all maxed cards plus
+non-maxed cards with at least 1000 Land Base PP, make two calls: `maxed=true`,
+then `maxed=false, min_land_base_pp=1000`. See
+[the rule note](library/observations/collection-maxed-rules-2026-10-26.md).
+
+For Land planning, `cards_max_land_pp` returns offline max-level base PP for
+`card_set`, rarity (1–4) and foil (0 regular, 1 gold). Collection rows add
+`max_land_base_pp` without replacing observed `land_base_pp`. `no_pp` gives
+zero; unknown sets and special foils give null. See [the PP rule note](library/observations/max-land-pp-2026-10-26.md).
+
 For a card copy's main set, use `main_set` (the copy's `card_set` value) from
 `cards_collection` or `cards_find`; `main_set_label` is its human label.
 `print_class` and `sub_set` come only from the copy's numeric `edition`.
@@ -83,6 +99,10 @@ compare it with Splinterlands' record of what happened. They can also search
 a limited window of an account's Hive history. A transaction appearing on
 the blockchain does not, by itself, prove that every game operation
 succeeded.
+
+`hive_account` reads one explicit public account and returns selected counters,
+reputation, creation time and estimated current voting mana. It excludes keys,
+balances and free-text metadata. See [the account read note](library/observations/hive-account-2026-10-26.md).
 
 The server includes reference information for Land production rules, card
 editions and Hive transaction limits. Each reference states its sources and scope.
@@ -234,6 +254,8 @@ tools are local and make no upstream request.
 | `land_lineup_snapshot` | Bounded compound GETs; at most ten logical requests |
 | `land_lineup_estimate` | Offline; calculates a supplied Land lineup |
 | `hive_account_history` | Read-only RPC: condenser_api.get_account_history |
+| `hive_account` | Read-only RPC: condenser_api.get_accounts |
+| `cards_max_land_pp` | Offline max-level base Land PP reference |
 | `hive_transaction` | Read-only RPC: condenser_api.get_transaction |
 | `transaction_inspect` | Read-only Hive transaction RPC + GET /transactions/lookup |
 | `list_endpoints` | Offline; reads the local endpoint catalogue |
@@ -344,7 +366,7 @@ counted by the first call.
 
 ## What it is, and its current boundaries
 
-- **Read-only.** Catalogue endpoint tools wrap `GET` requests. The isolated Hive reader permits only two read-only JSON-RPC methods over POST. The two
+- **Read-only.** Catalogue endpoint tools wrap `GET` requests. The isolated Hive reader permits only three read-only JSON-RPC methods over POST. The two
   knowledge tools make no upstream request. Nothing in this server issues a
   write.
 - **No credentials today.** This server does not ask for, store, or transmit

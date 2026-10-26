@@ -149,3 +149,6 @@ rewritten.
 - [Capability notes](capability-notes.md) — per-tool request limits, caches and observed API behavior behind the README overview.
 - [Custom avatar data and artwork](avatar-artwork.md) — saved avatar settings and composed artwork.
 - [Land income history observations](observations/land-income-history-2026-10-21.md) — live timestamp-window paging, broken positive offsets, timeouts, and classification limits behind `land_income_daily`.
+
+- [Max-level Land base PP](observations/max-land-pp-2026-10-26.md) — offline set, rarity and foil reference and collection field.
+- [Hive account read](observations/hive-account-2026-10-26.md) — selected public fields and regenerated voting mana.
