@@ -53,7 +53,7 @@ describe("collection index", () => {
         expect(content.projection).toBe("compact");
         expect(typeof content.index.age_ms).toBe("number");
         for (const card of content.cards) {
-          expect(Object.keys(card).sort()).toEqual(["bcx", "card_detail_id", "card_set", "edition", "foil", "land_base_pp", "level", "uid"]);
+          expect(Object.keys(card).sort()).toEqual(["bcx", "bcx_max", "card_detail_id", "card_set", "edition", "excess_bcx", "foil", "land_base_pp", "level", "max_level", "maxed", "overlevelled", "rarity", "uid"]);
           seen.add(String(card.uid));
         }
         cursor = content.next_cursor;

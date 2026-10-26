@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0 - proposed
+
+### Added
+
+- `cards_collection` now reports rarity, maximum level, required BCX, whether each copy is maxed, and any excess BCX, including compact pages. It accepts `maxed=true` or `maxed=false` and applies that filter across the full collection before paging, so callers can find maxed copies without fetching every page. A second call with `maxed=false, min_land_base_pp=1000` finds higher-power non-maxed copies. Missing definitions or uncertain caps remain null and are explained by a warning. See [the rule evidence](library/observations/collection-maxed-rules-2026-10-26.md).
+
+### Verification limits
+
+- Fixture tests cover rarity caps, Foundations, regular/gold/black foil examples, filtering and missing definitions. Live upstream comparison is pending maintainer verification; no release has been published.
+
 ## 1.1.0 - 2026-10-21
 
 ### Changed

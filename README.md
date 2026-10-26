@@ -53,6 +53,17 @@ Land power, and staking state. They can also attach verified plot references
 where available. A card in cooldown may still refer to its former plot, so
 that reference is not proof that it is working there now.
 
+`cards_collection` rows (including compact `all=true` rows) now carry numeric
+`rarity` (1 common through 4 legendary), `max_level`, `bcx_max`, `maxed`,
+`overlevelled`, and `excess_bcx`. The BCX threshold comes from the official
+game `/settings` rarity, set and foil tables; `maxed` includes copies with
+extra BCX. Black foils are maxed at issue. A missing or ambiguous definition
+gives null fields and a warning. Filter with `maxed=true` or `maxed=false`
+before paging. Filters combine with AND; to obtain all maxed cards plus
+non-maxed cards with at least 1000 Land Base PP, make two calls: `maxed=true`,
+then `maxed=false, min_land_base_pp=1000`. See
+[the rule note](library/observations/collection-maxed-rules-2026-10-26.md).
+
 For a card copy's main set, use `main_set` (the copy's `card_set` value) from
 `cards_collection` or `cards_find`; `main_set_label` is its human label.
 `print_class` and `sub_set` come only from the copy's numeric `edition`.

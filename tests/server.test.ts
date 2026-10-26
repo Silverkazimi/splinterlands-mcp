@@ -237,7 +237,7 @@ describe("land deed MCP protocol", () => {
       if (tool.name === "player_custom_avatar") keys.push("render");
       if (tool.name === "player_skins") keys.push("start_index", "skin", "active");
       if (tool.name === "player_inventory") keys.push("item_detail_id");
-      if (tool.name === "cards_collection") keys.push("include_plot_references", "main_set", "print_class", "all");
+      if (tool.name === "cards_collection") keys.push("include_plot_references", "main_set", "print_class", "all", "maxed");
       expect(Object.keys(tool.inputSchema.properties ?? {}).sort()).toEqual([...new Set(keys)].sort());
     }
     expect(result.tools.every((tool) => tool.inputSchema.type === "object")).toBe(true);
