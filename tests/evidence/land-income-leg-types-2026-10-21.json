@@ -1,0 +1,257 @@
+{
+  "source": "synthetic fixture derived from public behavior; all row identifiers and numeric amounts replaced",
+  "query": "three leading rows for each dated half-open window, limit=3",
+  "rows": [
+    {
+      "date": "2026-10-19",
+      "id": 1,
+      "operation_id": 1,
+      "resource_id": 1,
+      "amount": -1,
+      "created_date": "2026-01-01T00:00:00.000Z",
+      "legs": [
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "id": 1,
+      "operation_id": 1,
+      "resource_id": 1,
+      "amount": -1,
+      "created_date": "2026-01-01T00:00:00.000Z",
+      "legs": [
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "id": 1,
+      "operation_id": 1,
+      "resource_id": 1,
+      "amount": -1,
+      "created_date": "2026-01-01T00:00:00.000Z",
+      "legs": [
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "GRAIN",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "id": 1,
+      "operation_id": 1,
+      "resource_id": 7,
+      "amount": -1,
+      "created_date": "2026-01-01T00:00:00.000Z",
+      "legs": [
+        {
+          "token": "IRON",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "id": 1,
+      "operation_id": 1,
+      "resource_id": 1,
+      "amount": -1,
+      "created_date": "2026-01-01T00:00:00.000Z",
+      "legs": [
+        {
+          "token": "IRON",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_player_resource_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_uncaptured_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_castle_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        },
+        {
+          "token": "IRON",
+          "type": "land_resource_keep_tax_mint",
+          "amount": -1
+        }
+      ]
+    }
+  ],
+  "observed_at": "synthetic"
+}

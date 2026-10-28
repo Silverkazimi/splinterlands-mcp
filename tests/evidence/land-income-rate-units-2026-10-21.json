@@ -1,0 +1,106 @@
+{
+  "source": "synthetic fixture derived from public behavior; all row identifiers and numeric amounts replaced",
+  "observed_at": "synthetic",
+  "samples": [
+    {
+      "resource_id": 2,
+      "resource_symbol": "SPS",
+      "token_symbol": "SPS",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    },
+    {
+      "resource_id": 6,
+      "resource_symbol": "STONE",
+      "token_symbol": "STONE",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    },
+    {
+      "resource_id": 7,
+      "resource_symbol": "IRON",
+      "token_symbol": "IRON",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    },
+    {
+      "resource_id": 3,
+      "resource_symbol": "RESEARCH",
+      "token_symbol": "RESEARCH",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    },
+    {
+      "resource_id": 3,
+      "resource_symbol": "RESEARCH",
+      "token_symbol": "RESEARCH",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    },
+    {
+      "resource_id": 7,
+      "resource_symbol": "IRON",
+      "token_symbol": "IRON",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    },
+    {
+      "resource_id": 7,
+      "resource_symbol": "IRON",
+      "token_symbol": "IRON",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    },
+    {
+      "resource_id": 1,
+      "resource_symbol": "GRAIN",
+      "token_symbol": "GRAIN",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    },
+    {
+      "resource_id": 1,
+      "resource_symbol": "GRAIN",
+      "token_symbol": "GRAIN",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    },
+    {
+      "resource_id": 5,
+      "resource_symbol": "WOOD",
+      "token_symbol": "WOOD",
+      "total_work_per_hour": 1,
+      "rewards_per_hour": 1,
+      "resource_mint_rate": 1,
+      "projected_amount_received": 1,
+      "hours_since_last_op": 1
+    }
+  ]
+}

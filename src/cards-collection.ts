@@ -27,6 +27,13 @@ export type ProjectedCollectionCard = {
   level: number;
   xp: number;
   bcx: number;
+  rarity?: number | null;
+  max_level?: number | null;
+  max_land_base_pp?: number | null;
+  maxed?: boolean | null;
+  bcx_max?: number | null;
+  overlevelled?: boolean | null;
+  excess_bcx?: number | null;
   collection_power: number;
   card_set?: string;
   main_set?: string | null;

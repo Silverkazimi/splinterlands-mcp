@@ -1,5 +1,6 @@
 import { SCENARIO_TOOL_ROUTES } from "../src/land-scenario-snapshot.js";
 import { LAND_DEEDS_BUNDLE_TOOL_ROUTE } from "../src/land-deeds-bundle.js";
+import { LAND_INCOME_TOOL_ROUTES } from "../src/land-income.js";
 import { PLOT_SNAPSHOT_TOOL_ROUTE } from "../src/land-plot-snapshot.js";
 import { HIVE_TOOL_ROUTES } from "../src/hive-tools.js";
 import { readFileSync } from "node:fs";
@@ -21,6 +22,9 @@ it("keeps public tool counts and routes aligned with the MCP interface", async (
   await client.connect(clientTransport);
   try {
     const names: string[] = [];
+    const historyDescription = await client.callTool({ name: "describe_endpoint", arguments: { entryId: "vapi.land.resources.balances-history" } });
+    expect(historyDescription.structuredContent).not.toHaveProperty("toolInputs");
+    expect((historyDescription.structuredContent as { parameters: Array<{ name: string }> }).parameters.map((parameter) => parameter.name)).toContain("offset");
     let cursor: string | undefined;
     do {
       const page = await client.listTools(cursor ? { cursor } : {});
@@ -38,6 +42,10 @@ it("keeps public tool counts and routes aligned with the MCP interface", async (
       if (id) {
         const entry = getCatalogueEntry(id);
         expect(route).toBe(`\`${entry.method} ${entry.pathTemplate}\``);
+      } else if (name === "land_resources_balances_history_window") {
+        expect(route).toBe("Count-checked bounded windows for `GET /land/resources/balances/history/{player}`");
+      } else if (name === "land_income_daily") {
+        expect(route).toBe(LAND_INCOME_TOOL_ROUTES.land_income_daily);
       } else if (SCENARIO_TOOL_ROUTES[name]) {
         expect(route).toBe(SCENARIO_TOOL_ROUTES[name]);
       } else if (name === "land_plot_snapshot") {
@@ -48,6 +56,8 @@ it("keeps public tool counts and routes aligned with the MCP interface", async (
         expect(route).toBe(HIVE_TOOL_ROUTES[name]);
       } else if (name === "land_lineup_estimate") {
         expect(route).toBe("Offline; calculates a supplied Land lineup");
+      } else if (name === "cards_max_land_pp") {
+        expect(route).toBe("Offline max-level base Land PP reference");
       } else {
         expect(["list_endpoints", "describe_endpoint"]).toContain(name);
         expect(route).toBe("Offline; reads the local endpoint catalogue");

@@ -1,5 +1,55 @@
 # Changelog
 
+## 1.2.0 - 2026-10-26
+
+This update answers two questions that used to take dozens of calls: which of my cards are maxed, and how much Land PP a card reaches at max level. It also adds a first read of a Hive account itself. Everything is additive: existing tools keep their inputs and outputs, so updating from 1.1.0 needs no other change. The server remains read-only and requires no game login.
+
+### Do I need to update?
+
+Yes, if you plan Land lineups, look for maxed or over-levelled cards, or want a Hive account's post count, reputation or voting mana. Otherwise nothing changes for you.
+
+### What you can do now
+
+- **See at once which cards are maxed.** Every `cards_collection` row, including the compact `all: true` rows, now carries `rarity`, `max_level`, the BCX needed for max level (`bcx_max`), `maxed`, `overlevelled` and `excess_bcx`. The thresholds are the game's own combine rates, chosen by the card's `card_set` (Alpha, Beta, Foundations or the modern sets), never by the numeric `edition`. Example: finding every maxed card in an 8,125-card collection used to mean paging the whole collection and joining card definitions by hand, about 82 calls; now one filtered call returns them.
+- **Filter by maxed state across the whole collection.** `maxed: true` or `maxed: false` is applied to the full collection before paging. Combined with `min_land_base_pp`, two calls answer "all maxed cards, plus non-maxed cards at 1,000 PP or more".
+- **Over-levelled cards are handled.** A copy combined past max level counts as maxed, is flagged `overlevelled` and shows its surplus as `excess_bcx`. Black foils always count as maxed.
+- **Look up a card's Land PP at max level.** The new offline tool `cards_max_land_pp` takes a `card_set`, rarity and foil and returns the base Land PP at max level, for planning which prints reach a target before you buy or combine. Collection rows add the same value as `max_land_base_pp`. Cards without Land PP (`no_pp`) return 0.
+- **Read a Hive account.** The new `hive_account` returns one account's post count, reputation (raw and the usual score), creation date, vote status and current voting mana, regenerated to the time of the call. It never returns keys, balances or profile text.
+
+### Limits to keep in mind
+
+- **Unknown stays unknown.** If a card's definition or set rule can't be resolved, `rarity`, `max_level`, `maxed` and the PP reference are `null` with a warning, never a guess or `false`.
+- **Max-level Land PP is a planning reference, not an official table.** Alpha, Beta and Untamed multipliers come from the official Land documentation; the baseline for later sets was measured from maxed copies. Gold foils of some prints, black foils and sets without a known rule return `null`. A few maxed copies show a different current Land PP than the reference; their own `land_base_pp` is always kept and takes precedence on the row.
+- **Voting mana is an estimate** from the node's last update and the five-day regeneration rule, not a consensus measurement.
+- No login, signing, trading or other account-changing feature was added.
+
+### Verification
+
+The update passed typecheck, lint, the full privacy scan and **623 tests across 85 files** on Node.js 24; hosted CI repeats them on Node.js 22 and 24.
+
+Every new or changed tool was checked on 2026-10-26 against live public data through the server:
+
+- **`cards_collection` maxed fields:** on an 8,125-card collection, `maxed: true` returned 982 cards in 10 pages and `maxed: false` with `min_land_base_pp: 1000` returned 84 more. An independent implementation of the same rules, used by a separate Land tool, counted exactly the same 982 maxed cards, including 32 over-levelled ones.
+- **`max_land_base_pp`:** across all 8,125 cards it matched that independent formula wherever both had a rule. Every card the server reported at 0 really has 0 Land PP.
+- **`hive_account`:** a live account was found and its voting mana computed; nothing private was printed.
+
+The package dry run contains the executable and public evidence, with no tests or work files bundled. npm is not updated by this release.
+
+## 1.1.0 - 2026-10-21
+
+### Changed
+
+- `land_resources_balances_history` retains its original inputs, description and VAPI response envelope. A positive offset was measured not to page conventionally. The separate `land_resources_balances_history_window` tool provides bounded, count-checked timestamp windows and explicitly reports incomplete coverage.
+
+### Added
+
+- `land_income_daily` summarizes up to 14 completed UTC days of raw resource balance movements, with no DEC valuation. For oversized same-millisecond groups it reads one bounded row, then uses a cached, budget-counted catalogue transaction lookup for recognized `land_operation` / `harvest_all` results. It reports `basis`, group/matched/unmatched row counts, and keeps unmatched days incomplete while showing transaction-derived production, gross, tax and consumption. See the dated redacted observation in `library/observations/land-income-harvest-transaction-2026-10-21.md`. The separate `current_rate_per_day` uses current deed `total_work_per_hour × 24` and is an estimate, not historical income.
+- Upstream date filters are closed at millisecond precision. Internal half-open windows send `endDate` one millisecond before the exclusive end, so midpoint and day-boundary rows are read once. Bulk transaction totals deduplicate by `trx_id`; resource row counts are reported per resource.
+
+### Known limits and verification
+
+- Dense days use count-matched leaves (25 rows by default) and expanded bounded read budgets. For an oversized same-millisecond group, the tool attempts transaction-based harvest accounting from one bounded row and the catalogue lookup. Unmatched rows, failed lookups, upstream timeouts and count mismatches remain incomplete with a reason. The two requested production days could not be live-verified in this run because the daily MCP request timed out after 240 seconds without returning a result. Check `complete` before using totals.
+
 ## 1.0.7 - 2026-10-11
 
 A security maintenance release. It updates third-party packages that had published security advisories. The tools, their inputs and their outputs are unchanged, so updating from 1.0.6 needs no other change. `npm audit` now reports no known vulnerabilities, where 1.0.6 reported eight.

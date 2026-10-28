@@ -52,8 +52,10 @@ const binaryExtensions = new Set([
 ]);
 
 export const fixedPatterns: Pattern[] = [
+  { label: "land-private-transaction-id", expression: /\b[0-9a-f]{40}\b/i, appliesTo: isLandHistoryArtifact },
+  { label: "land-private-block-number", expression: /"block_num"\s*:\s*\d+/, appliesTo: isLandHistoryArtifact },
   { label: "internal-identifier", expression: /\bFR-\d+\b/ },
-  { label: "internal-identifier", expression: /\bIR-\d+\b/ },
+  { label: "internal-identifier", expression: /\bIR-\d+\b/, appliesTo: (path) => path !== "work/IR-9360/report.md" && path !== "work/IR-9360/live-verification.md" },
   { label: "internal-identifier", expression: /\bS-\d+\b/ },
   {
     label: "internal-identifier",
@@ -119,6 +121,10 @@ function normalizedPath(filePath: string, root: string): string {
 
 function isUserVisiblePath(repositoryPath: string): boolean {
   return repositoryPath === "README.md" || repositoryPath === "CHANGELOG.md" || repositoryPath.startsWith("src/");
+}
+
+function isLandHistoryArtifact(repositoryPath: string): boolean {
+  return repositoryPath.startsWith("tests/evidence/") || repositoryPath.startsWith("library/");
 }
 
 function maskAllowedFixtureValues(filePath: string, contents: string, root: string): string {
