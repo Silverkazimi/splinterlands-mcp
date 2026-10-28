@@ -115,6 +115,14 @@
     },
     {
       "source": "vapi",
+      "path": "/collector/me/binders/{binderId}/pages/{pageId}/remove",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "446bc170bdcb20590b03473e412def48c5bbcfce9c47e99779026fa6476c4553"
+    },
+    {
+      "source": "vapi",
       "path": "/collector/me/binders/{binderId}/pages/assign",
       "methods": [
         "post"
