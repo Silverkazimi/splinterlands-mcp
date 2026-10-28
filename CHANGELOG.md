@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.2.1 - 2026-10-28
+
+A maintenance release: newer build and test tools, and an updated record of the game's public API. No tool was added, removed or changed; every tool keeps its inputs and outputs, so updating from 1.2.0 needs no other change. The server remains read-only and requires no game login.
+
+### Do I need to update?
+
+Only if you build the server yourself and want the current toolchain. Nothing changes for what the tools return.
+
+### What changed
+
+- **Build tool:** tsup 8.5.1 to 9.0.0. tsup 9 needs Node.js 22.18 or newer; the server is tested on Node.js 22 and 24.
+- **Libraries and test tools:** zod 4.6.5 to 4.6.7, eslint 10.12 to 10.13, typescript-eslint 8.71.1 to 8.72.0, vitest 5.0.3 to 5.0.5 (minor and patch updates).
+- **CI:** actions/setup-node 7.0.0 to 7.1.0.
+- **API record:** the stored fingerprints of the game's public API now include one new route upstream added, an owner-only write for removing a card from a collector binder page. The server does not call it and has no tool for it; it is recorded so future upstream changes are detected against the current state.
+
+### Verification
+
+The release passed typecheck, lint, the full privacy scan and the test suite on Node.js 24; hosted CI repeats them on Node.js 22 and 24.
+
 ## 1.2.0 - 2026-10-26
 
 This update answers two questions that used to take dozens of calls: which of my cards are maxed, and how much Land PP a card reaches at max level. It also adds a first read of a Hive account itself. Everything is additive: existing tools keep their inputs and outputs, so updating from 1.1.0 needs no other change. The server remains read-only and requires no game login.
