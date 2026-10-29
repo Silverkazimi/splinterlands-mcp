@@ -13,7 +13,7 @@ Only if you build the server yourself and want the current toolchain. Nothing ch
 - **Build tool:** tsup 8.5.1 to 9.0.0. tsup 9 needs Node.js 22.18 or newer; the server is tested on Node.js 22 and 24.
 - **Libraries and test tools:** zod 4.6.5 to 4.6.7, eslint 10.12 to 10.13, typescript-eslint 8.71.1 to 8.72.0, vitest 5.0.3 to 5.0.5 (minor and patch updates).
 - **CI:** actions/setup-node 7.0.0 to 7.1.0.
-- **Security fixes in indirect libraries:** body-parser 2.3.0 to 2.4.0 (a high-severity advisory, used through the MCP SDK's web server), qs 6.17.0, fast-uri 3.1.9 and ip-address 10.7.5 (moderate advisories). zod is at 4.6.7, past its advisory. `npm audit` now reports no known vulnerabilities.
+- **Security fixes in indirect libraries:** body-parser 2.3.0 to 2.4.0 (a high-severity advisory, used through the MCP SDK's web server), qs 6.17.0, fast-uri 3.1.9, ip-address 10.7.5 and @hono/node-server (moderate advisories; the last one decoded a static file path twice, used through the MCP SDK's web server). zod is at 4.6.7, past its advisory. `npm audit` now reports no known vulnerabilities.
 - **API record:** the stored fingerprints of the game's public API now include one new route upstream added, an owner-only write for removing a card from a collector binder page. The server does not call it and has no tool for it; it is recorded so future upstream changes are detected against the current state.
 
 ### Verification
