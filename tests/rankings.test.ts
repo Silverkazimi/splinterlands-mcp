@@ -3,6 +3,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { afterEach, describe, expect, it } from "vitest";
 import { createServer } from "../src/server.js";
+import { stripUntrustedFences } from "../src/untrusted.js";
 import { RANKING_ENTRY_IDS } from "../src/rankings.js";
 import { getCatalogueEntry } from "../src/catalogue/index.js";
 import { predicateFor } from "../src/catalogue/predicates.js";
@@ -40,7 +41,7 @@ describe("ranking tools", () => {
       expect(urls.length - previous).toBe(1);
       expect(urls.at(-1)?.pathname).toBe(getCatalogueEntry(RANKING_ENTRY_IDS[name]!).pathTemplate);
       expect(Object.fromEntries(urls.at(-1)!.searchParams)).toEqual(Object.fromEntries(Object.entries(args).map(([key, value]) => [key, String(value)])));
-      expect(result.structuredContent).toEqual(Array.isArray(body) ? { data: body } : body);
+      expect(stripUntrustedFences(result.structuredContent)).toEqual(Array.isArray(body) ? { data: body } : body);
     }
   }, 15000);
   it("refuses missing identity/currency and inert pagination without making an HTTP request", async () => {
@@ -62,7 +63,7 @@ describe("ranking tools", () => {
     const body = { ...captured, players: rows };
     await connect(async () => new Response(JSON.stringify(body)));
     const result = await client.callTool({ name: "player_presale_leaders", arguments: { username: "fixture_account" } });
-    const data = result.structuredContent as { players: unknown[]; [key: string]: unknown };
+    const data = stripUntrustedFences(result.structuredContent) as { players: unknown[]; [key: string]: unknown };
     expect(result.isError).not.toBe(true);
     expect(data.players.length).toBeLessThanOrEqual(100);
     expect(data.players.length).toBeGreaterThan(0);

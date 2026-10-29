@@ -3,6 +3,7 @@ import {Client} from "@modelcontextprotocol/sdk/client/index.js";
 import {InMemoryTransport} from "@modelcontextprotocol/sdk/inMemory.js";
 import {afterEach,expect,it} from "vitest";
 import {createServer} from "../src/server.js";
+import { stripUntrustedFences } from "../src/untrusted.js";
 import {getCatalogueEntry} from "../src/catalogue/index.js";
 import {GUILD_ENTRY_IDS} from "../src/guilds.js";
 const cases=[
@@ -69,7 +70,7 @@ it("calls all six guild routes with exact selectors and unmodified wire values",
   expect(result.isError,name).not.toBe(true);expect(urls.length-before).toBe(1);
   expect(urls.at(-1)!.pathname).toBe(getCatalogueEntry(GUILD_ENTRY_IDS[name]!).pathTemplate);
   expect(Object.fromEntries(urls.at(-1)!.searchParams)).toEqual(args);
-  expect(result.structuredContent).toEqual(Array.isArray(body)?{data:body}:body);
+  expect(stripUntrustedFences(result.structuredContent)).toEqual(Array.isArray(body)?{data:body}:body);
  }
 },15000);
 it("refuses absent scope, unproven member pagination and credentials before HTTP",async()=>{
@@ -107,7 +108,7 @@ it("bounds guild lists and brawl records while preserving surrounding fields",as
   body={...fixture,[field]:Array.from({length:120},()=>rows[0])};
   const result=await client.callTool({name,arguments:args});
   expect(result.isError).not.toBe(true);
-  expect(result.structuredContent).toEqual({...fixture,[field]:Array.from({length:100},()=>rows[0])});
+  expect(stripUntrustedFences(result.structuredContent)).toEqual({...fixture,[field]:Array.from({length:100},()=>rows[0])});
   expect(result._meta).toMatchObject({resultLimit:{truncated:true,upstreamRows:120,returnedRows:100}});
  }
 });
@@ -118,7 +119,7 @@ it("accepts nullable tournament fields but rejects incorrect non-null types",asy
  await connect(async()=>new Response(JSON.stringify(body)));
  const result=await client.callTool({name:"guild_list",arguments:{name:"fixture guild"}});
  expect(result.isError).not.toBe(true);
- expect(result.structuredContent).toEqual(body);
+ expect(stripUntrustedFences(result.structuredContent)).toEqual(body);
  for(const field of ["tournament_data","tournament_id","tournament_start_date","tournament_status"]){
   body.guilds[0]![field]=false;
   expect((await client.callTool({name:"guild_list",arguments:{name:"fixture guild"}})).isError).toBe(true);

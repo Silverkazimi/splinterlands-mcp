@@ -3,6 +3,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { afterEach, expect, it } from "vitest";
 import { createServer } from "../src/server.js";
+import { stripUntrustedFences } from "../src/untrusted.js";
 import { catalogue } from "../src/catalogue/index.js";
 
 function capture(label: string): unknown {
@@ -28,7 +29,7 @@ it("forwards explicit battle selectors and preserves encoded replay fields", asy
     expect(result.isError).not.toBe(true);expect(urls.length-before).toBe(1);
     expect(urls.at(-1)!.pathname).toBe(path);
     expect(Object.fromEntries(urls.at(-1)!.searchParams)).toEqual(args);
-    expect(result.structuredContent).toEqual(Array.isArray(body)?{data:body}:body);
+    expect(stripUntrustedFences(result.structuredContent)).toEqual(Array.isArray(body)?{data:body}:body);
   }
 });
 it("rejects missing IDs, credentials and excluded battle operations without HTTP",async()=>{

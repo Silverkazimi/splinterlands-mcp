@@ -2,6 +2,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { afterEach, describe, expect, it } from "vitest";
 import { createServer } from "../src/server.js";
+import { stripUntrustedFences } from "../src/untrusted.js";
 import mintHistory from "./fixtures/api-cards-mint-history-card-detail-id-871-foil-2.fixture.json" with { type: "json" };
 import mintHistoryEmpty from "./fixtures/api-cards-mint-history-card-detail-id-100-foil-0.fixture.json" with { type: "json" };
 import jackpot from "./fixtures/api-cards-pack-jackpot-overview-edition-19.fixture.json" with { type: "json" };
@@ -42,7 +43,7 @@ describe("card mint tools", () => {
 
     const mint = await client!.callTool({ name: "cards_mint_history", arguments: { card_detail_id: 871, foil: 2 } });
     expect(mint.isError).not.toBe(true);
-    expect(mint.structuredContent).toEqual(body(mintHistory));
+    expect(stripUntrustedFences(mint.structuredContent)).toEqual(body(mintHistory));
     expect(calls[0]?.hostname).toBe("api.splinterlands.com");
     expect(Object.fromEntries(calls[0]!.searchParams)).toEqual({ card_detail_id: "871", foil: "2" });
 

@@ -3,6 +3,7 @@ import {Client} from "@modelcontextprotocol/sdk/client/index.js";
 import {InMemoryTransport} from "@modelcontextprotocol/sdk/inMemory.js";
 import {afterEach,expect,it} from "vitest";
 import {createServer} from "../src/server.js";
+import { stripUntrustedFences } from "../src/untrusted.js";
 import {getCatalogueEntry} from "../src/catalogue/index.js";
 import {TOURNAMENT_ENTRY_IDS} from "../src/tournaments.js";
 const cases=[
@@ -85,7 +86,7 @@ it("calls ten distinct routes with exact selectors and preserved response fields
   expect(result.isError,name).not.toBe(true);expect(urls.length-before).toBe(1);
   expect(urls.at(-1)!.pathname).toBe(getCatalogueEntry(TOURNAMENT_ENTRY_IDS[name]!).pathTemplate);
   expect(Object.fromEntries(urls.at(-1)!.searchParams)).toEqual(args);
-  expect(result.structuredContent).toEqual(Array.isArray(body)?{data:body}:body);
+  expect(stripUntrustedFences(result.structuredContent)).toEqual(Array.isArray(body)?{data:body}:body);
  }
 },15000);
 it("rejects missing scope, ineffective undeclared paging and credentials before HTTP",async()=>{
@@ -114,7 +115,7 @@ it("preserves tournament totals, rounds and guild records while bounding player 
   body={...fixture,players:Array.from({length:120},()=>fixture.players[0])};
   const result=await client.callTool({name,arguments:args});
   expect(result.isError).not.toBe(true);
-  const data=result.structuredContent as {players:unknown[];[key:string]:unknown};
+  const data= stripUntrustedFences(result.structuredContent) as {players:unknown[];[key:string]:unknown};
   expect(data.players.length).toBeGreaterThan(0);expect(data.players.length).toBeLessThanOrEqual(100);
   expect({...data,players:undefined}).toEqual({...fixture,players:undefined});
   expect(result._meta).toMatchObject({resultLimit:{truncated:true,upstreamRows:120}});

@@ -4,6 +4,7 @@ import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { expect, it } from "vitest";
 import { bindRequest, inputSchemaFor } from "../src/catalogue/index.js";
 import { createServer, TOOL_ENTRY_IDS } from "../src/server.js";
+import { stripUntrustedFences } from "../src/untrusted.js";
 import { describeEndpoint } from "../src/endpoint-knowledge.js";
 
 it("binds working observed selectors while leaving inert observations uncallable", () => {
@@ -38,7 +39,7 @@ it("requires profile name, forwards it through MCP, and redacts it from provenan
     expect(urls).toHaveLength(1);
     expect(urls[0]?.pathname).toBe("/players/details");
     expect(urls[0]?.searchParams.get("name")).toBe("fixture_account");
-    expect(result.structuredContent).toEqual(fixture.body);
+    expect(stripUntrustedFences(result.structuredContent)).toEqual(fixture.body);
     expect(JSON.stringify(result._meta)).not.toContain("fixture_account");
   } finally { await client.close(); await server.close(); }
 });

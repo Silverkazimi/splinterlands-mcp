@@ -12,6 +12,12 @@ continuation. No automatic scan, recipient search, or complete-history claim is 
 Custom JSON account indexing concerns authorities; a recipient named only inside
 JSON may not have the operation in their account history.
 
+Memos, custom JSON and other text inside signed operations are written by the
+sender. The tools return those strings cleaned and fenced as untrusted player text,
+with `untrusted_text_note` on the result; see the capability notes. Account names,
+amounts, IDs and signatures stay unchanged, and custom JSON filtering uses the
+original values.
+
 Pass a returned transaction ID to `transaction_inspect`. This performs one
 full Hive transaction read and reuses `transaction_lookup`'s game route for the plain ID and, as described below, for each further record of a multi-operation transaction (call scope: ten logical requests).
 It preserves raw evidence and separately reports game status, operation count,
