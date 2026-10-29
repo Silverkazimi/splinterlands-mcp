@@ -148,12 +148,15 @@ outsiders. The server returns these strings inside a labelled fence:
 «untrusted:player-text nonce=<32 hex>»<text>«/untrusted nonce=<32 hex>»
 ```
 
-Before fencing, control characters (except tab and newline), zero-width and
-other invisible format characters, bidirectional overrides and isolates, Unicode
-tag characters and variation selectors are removed. Text longer than 8,192
-characters is cut and marked `[truncated N characters]`. The characters « and »
-inside the text become ‹ and ›, and look-alikes such as `</untrusted` are
-defanged, so the text cannot close the fence. Each result uses one fresh random
+Before fencing, line breaks become plain newlines, control characters (except
+tab and newline), zero-width and other invisible format characters,
+bidirectional overrides and isolates, Unicode tag characters and variation
+selectors are removed, and the text is normalised (NFC). The characters « and »
+inside the text become ‹ and ›, look-alikes such as `</untrusted` are defanged,
+and `BEGIN UNTRUSTED` / `END UNTRUSTED` become `BEGIN-UNTRUSTED` /
+`END-UNTRUSTED`, so the text cannot close this fence or a client's own wrapper.
+More than three blank lines in a row become three. Text longer than 8,192
+characters is cut and marked `[truncated N characters]`. Each result uses one fresh random
 nonce. A result that contains fenced text also carries `untrusted_text_note`,
 which says the fenced text is data, not instructions; a result whose text is a
 bare JSON list carries the note as a final text line instead. Field names and
