@@ -3,6 +3,7 @@ import { PLOT_TOOL_KEYS, callPlotTool, plotToolSchema } from "./plot-tool-adapte
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
 import { RefusalWouldFanOutError, withCallScope } from "./http/callscope.js";
+import { fenceToolResult } from "./untrusted-fields.js";
 
 export class ScopedMcpServer extends McpServer {
   private plotClient?: SplinterlandsHttpClient;
@@ -13,7 +14,8 @@ export class ScopedMcpServer extends McpServer {
     const invoke = callback as (...args: unknown[]) => CallToolResult | Promise<CallToolResult>;
     const scoped = (async (...args: unknown[]) => {
       try {
-        return await withCallScope(name, async () => plotKey ? callPlotTool(name, this.plotClient!, args, invoke) : invoke(...args), name === "land_income_daily" ? 2049 : name === "land_resources_balances_history_window" ? 64 : name === "land_lineup_snapshot" ? 10 : name === "land_plot_snapshot" ? 4 : name === "cards_collection" && (args[0] as {include_plot_references?:boolean})?.include_plot_references === true ? 3 : name === "transaction_inspect" ? 10 : plotKey || name === "cards_collection" || name === "player_skins" ? 2 : 1);
+        // Player-written text is fenced here, once, for every tool result that leaves the server.
+        return fenceToolResult(name, await withCallScope(name, async () => plotKey ? callPlotTool(name, this.plotClient!, args, invoke) : invoke(...args), name === "land_income_daily" ? 2049 : name === "land_resources_balances_history_window" ? 64 : name === "land_lineup_snapshot" ? 10 : name === "land_plot_snapshot" ? 4 : name === "cards_collection" && (args[0] as {include_plot_references?:boolean})?.include_plot_references === true ? 3 : name === "transaction_inspect" ? 10 : plotKey || name === "cards_collection" || name === "player_skins" ? 2 : 1));
       } catch (error) {
         if (!(error instanceof RefusalWouldFanOutError)) throw error;
         return {

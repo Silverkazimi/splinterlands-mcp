@@ -3,6 +3,7 @@ import {Client} from "@modelcontextprotocol/sdk/client/index.js";
 import {InMemoryTransport} from "@modelcontextprotocol/sdk/inMemory.js";
 import {afterEach,expect,it} from "vitest";
 import {createServer} from "../src/server.js";
+import { stripUntrustedFences } from "../src/untrusted.js";
 import {SETTINGS_TTL_MS} from "../src/http/cache.js";
 const fixture=(label:string):unknown=>JSON.parse(readFileSync(new URL(`./fixtures/metadata-${label}.fixture.json`,import.meta.url),"utf8")).body;
 let server:ReturnType<typeof createServer>;let client:Client;
@@ -28,7 +29,7 @@ it("calls each metadata route on its fixed host and preserves full captured valu
   expect(r.isError,name).not.toBe(true);expect(urls.length-before).toBe(1);
   expect(urls.at(-1)!.pathname).toBe(path);expect(urls.at(-1)!.hostname).toBe(host);
   expect(Object.fromEntries(urls.at(-1)!.searchParams)).toEqual(args);
-  expect(r.structuredContent).toEqual(Array.isArray(body)?{data:body}:body);
+  expect(stripUntrustedFences(r.structuredContent)).toEqual(Array.isArray(body)?{data:body}:body);
  }
 });
 it("caches settings by exact query for one hour, advances age, and expires without caching blocks",async()=>{

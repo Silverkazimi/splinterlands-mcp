@@ -3,6 +3,7 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import { expect, it } from "vitest";
 import { createServer } from "../src/server.js";
+import { stripUntrustedFences } from "../src/untrusted.js";
 const body = (name: string) => JSON.parse(readFileSync(new URL("./fixtures/collector-" + name + ".fixture.json", import.meta.url), "utf8")).body;
 async function rig(value: unknown) {
  const urls: URL[]=[];
@@ -19,7 +20,7 @@ it("preserves all three captured collector responses with one correctly scoped G
    expect(r.urls).toHaveLength(0);
    const args=suffix==="binder"?{player:"fixture_account",binderRef:"fixture-binder"}:{player:"fixture_account"};
    const result=await r.call("collector_"+suffix,args);
-   expect(result.isError).not.toBe(true);expect(result.structuredContent).toEqual(capture);
+   expect(result.isError).not.toBe(true);expect(stripUntrustedFences(result.structuredContent)).toEqual(capture);
    expect(r.urls).toHaveLength(1);
    expect(r.urls[0]!.pathname).toBe("/collector/fixture_account"+(suffix==="binder"?"/fixture-binder":suffix==="stickers"?"/stickers/all":""));
   } finally {await r.close();}

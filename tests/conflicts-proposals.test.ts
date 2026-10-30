@@ -3,6 +3,7 @@ import {Client} from "@modelcontextprotocol/sdk/client/index.js";
 import {InMemoryTransport} from "@modelcontextprotocol/sdk/inMemory.js";
 import {afterEach,expect,it} from "vitest";
 import {createServer} from "../src/server.js";
+import { stripUntrustedFences } from "../src/untrusted.js";
 import {getCatalogueEntry} from "../src/catalogue/index.js";
 import {CONFLICT_PROPOSAL_ENTRY_IDS} from "../src/conflicts-proposals.js";
 const cases=[
@@ -104,7 +105,7 @@ it("calls eleven read routes with exact selectors and unmodified captured values
   expect(result.isError,name).not.toBe(true);expect(urls.length-before).toBe(1);
   expect(urls.at(-1)!.pathname).toBe(getCatalogueEntry(CONFLICT_PROPOSAL_ENTRY_IDS[name]!).pathTemplate);
   expect(Object.fromEntries(urls.at(-1)!.searchParams)).toEqual(args);
-  expect(result.structuredContent).toEqual(Array.isArray(body)?{data:body}:body);
+  expect(stripUntrustedFences(result.structuredContent)).toEqual(Array.isArray(body)?{data:body}:body);
  }
 },15000);
 it("supports single-season and partial-status shapes without manufacturing omitted sections",async()=>{
@@ -164,7 +165,7 @@ it("bounds wagons and leaderboards while preserving independent totals and confi
   const fixture=capture(label) as Record<string,unknown>;const row=(fixture[field] as unknown[])[0];
   body={...fixture,[field]:Array.from({length:120},()=>row)};
   const result=await client.callTool({name,arguments:args});expect(result.isError).not.toBe(true);
-  expect(result.structuredContent).toEqual({...fixture,[field]:Array.from({length:100},()=>row)});
+  expect(stripUntrustedFences(result.structuredContent)).toEqual({...fixture,[field]:Array.from({length:100},()=>row)});
   expect(result._meta).toMatchObject({resultLimit:{truncated:true,upstreamRows:120}});
  }
 });

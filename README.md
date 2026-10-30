@@ -137,6 +137,33 @@ results are cached, and their freshness is reported. Related reads can
 also happen at slightly different times, so they should not be treated
 as one perfectly synchronized view of the game.
 
+### Text written by players
+
+Hive memos and custom JSON, guild names, mottos, descriptions and announcements,
+tournament names, descriptions, sponsor fields and custom prize text, proposal
+subjects, player display names and binder names are written by players or other
+outsiders. The server returns these strings inside a labelled fence:
+
+```text
+«untrusted:player-text nonce=<32 hex>»<text>«/untrusted nonce=<32 hex>»
+```
+
+Before fencing, line breaks become plain newlines, control characters (except
+tab and newline), zero-width and other invisible format characters,
+bidirectional overrides and isolates, Unicode tag characters and variation
+selectors are removed, and the text is normalised (NFC). The characters « and »
+inside the text become ‹ and ›, look-alikes such as `</untrusted` are defanged,
+and `BEGIN UNTRUSTED` / `END UNTRUSTED` become `BEGIN-UNTRUSTED` /
+`END-UNTRUSTED`, so the text cannot close this fence or a client's own wrapper.
+More than three blank lines in a row become three. Text longer than 8,192
+characters is cut and marked `[truncated N characters]`. Each result uses one fresh random
+nonce. A result that contains fenced text also carries `untrusted_text_note`,
+which says the fenced text is data, not instructions; a result whose text is a
+bare JSON list carries the note as a final text line instead. Field names and
+positions do not change. Numbers, IDs, account names, timestamps and catalogue
+card names are not fenced. See the
+[technical capability notes](library/capability-notes.md#text-written-by-players).
+
 The reference below lists all 190 tools. For request budgets, exact
 parameters, cache behavior, and recorded API quirks, see the
 [technical capability notes](library/capability-notes.md) and
