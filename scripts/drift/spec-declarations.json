@@ -51,6 +51,14 @@
     },
     {
       "source": "vapi",
+      "path": "/collector/card-progress",
+      "methods": [
+        "get"
+      ],
+      "fingerprint": "af173a186966d1ffa5fd49dcb690b2255f8161d9474df41e0c700c950f7a842f"
+    },
+    {
+      "source": "vapi",
       "path": "/collector/config",
       "methods": [
         "get"
@@ -64,6 +72,14 @@
         "get"
       ],
       "fingerprint": "5c1771da250205ff6b485c530129fd5920a51d3f435c8b1122b9f2a2f321d8be"
+    },
+    {
+      "source": "vapi",
+      "path": "/collector/me/active-prefix",
+      "methods": [
+        "post"
+      ],
+      "fingerprint": "b7f5b3d8499bca9cdec60ac99ab96bc586a5ad097c214f38a9e1c9992aea1a61"
     },
     {
       "source": "vapi",

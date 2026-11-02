@@ -81,6 +81,7 @@
     "/delegation-rental/v3/rentals/player/{player}": "980372d8fbace5508b13099d02c891a0b2ef65e291ab6888a6c6073f144feb6b",
     "/delegation-rental/v3/rentals/player/{player}/{role}": "a56db21785f93c8f6f57e9f931ff093540d139b4de72aa8653fc12968c5959f9",
     "/collector/config": "c152c08815eba0798d89e8d5561d394acf7d3a5dc484fcce091182e99f14a4d7",
+    "/collector/card-progress": "af173a186966d1ffa5fd49dcb690b2255f8161d9474df41e0c700c950f7a842f",
     "/collector/me": "5c1771da250205ff6b485c530129fd5920a51d3f435c8b1122b9f2a2f321d8be",
     "/collector/me/stickers": "13b131e9a510f0572926236ba75da18e16bd0320edbccf02f33b96ea1ba71d91",
     "/collector/me/room-settings": "850a48223562e81594b95f042a03eaea260395d2ab57fcd6042962f060470ac4",
@@ -101,9 +102,10 @@
     "/collector/{player}/stickers/tradeable": "5db0f69b1d2cd756229124f0ed03c798dd3f0b325c8969dd90cd9ccb9a20a941",
     "/collector/{player}/stickers/all": "1418740782c8b3e05f27b75b633d6b1c08cde049a78c4c74cf79b9ac05f2ad9f",
     "/collector/{player}": "25fe0e435c4140a29d155e2a0649d3c3e098d518bb23123e754e5f94c96eb3df",
-    "/collector/{player}/{binderRef}": "f3e43c1634f8017e819b2d4d9bffcf0fd474ac754fd3843f15c1b351d419d92a"
+    "/collector/{player}/{binderRef}": "f3e43c1634f8017e819b2d4d9bffcf0fd474ac754fd3843f15c1b351d419d92a",
+    "/collector/me/active-prefix": "b7f5b3d8499bca9cdec60ac99ab96bc586a5ad097c214f38a9e1c9992aea1a61"
   },
-  "components": "c32c09cdd3b781940b9987bd8012722b171a11cc1effbfc578c256991caf86bc",
+  "components": "bbd383ecc512a614ef9ab1cae16ee10aac118d5ed4f0cf37ffc4764ed732f2ec",
   "definitions": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
   "shared": "c942d9ddbaf0a866c828a904b734915c84ec8b1137b04a698325500b40a2f238"
 }
