@@ -31,19 +31,19 @@
     "drift:baseline": "tsx scripts/gen-drift-baseline.ts"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@modelcontextprotocol/sdk": "^1.32.2",
     "sharp": "0.35.5",
     "zod": "^4.6.7"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^22.20.5",
-    "eslint": "^10.13.0",
+    "eslint": "^10.14.0",
     "tsup": "^9.0.0",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.72.0",
-    "vitest": "^5.0.5"
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.1.0"
   },
   "overrides": {
     "esbuild": "^0.28.2"
